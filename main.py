@@ -15,6 +15,7 @@ import math
 
 import data
 from lstm_model import DPLSTMModel
+from transformers import get_linear_schedule_with_warmup
 
 #TODO need to fix the sampling, because it matters in DP
 from opacus.utils.uniform_sampler import UniformWithReplacementSampler
@@ -63,6 +64,12 @@ parser.add_argument('--dry-run', action='store_true',
                     help='verify the code and the model')
 parser.add_argument('-dp', action='store_true',
                     help='differential privacy')
+parser.add_argument('--warmup_steps', type=int, default=5_000,
+                    help='warm up steps')
+parser.add_argument('--sigma', type=float, default=0.5,
+                    help='sigma')
+parser.add_argument('--with_scheduler', action='store_true',
+                    help='use lr scheduler')
 
 args = parser.parse_args()
 
@@ -134,7 +141,7 @@ else:
 # learning_rate = 2.0
 
 # Privacy engine hyper-parameters
-sigma = 1.0
+sigma = args.sigma
 max_per_sample_grad_norm = 1
 delta = 8e-5
 
@@ -143,7 +150,7 @@ ntokens = len(corpus.dictionary)
 config_str = f"ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
 config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
 if args.dp:
-    config_str += "__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
+    config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
 args.save = args.save + config_str + ".pt"
 print("*"*89)
 print(config_str)
@@ -159,9 +166,14 @@ model = DPLSTMModel(
 ).to(device)
 
 
+TOTAL_OPTIMIZATION_STEPS = len(range(0, train_data.size(0) - 1, args.bptt)) * args.epochs 
+if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
+    raise ValueError(f"Warm steps({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
 criterion = nn.NLLLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
-# optim_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 10, 0.989)
+optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
+# exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
+if args.with_scheduler:
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup_steps, num_training_steps=TOTAL_OPTIMIZATION_STEPS)
 
 from opacus import PrivacyEngine
 
@@ -254,7 +266,8 @@ def train():
         loss.backward()
         
         optimizer.step()
-        # optim_scheduler.step()
+        if args.with_scheduler:
+            scheduler.step()
         optimizer.zero_grad()
 
         losses.append(loss.item())
@@ -268,7 +281,7 @@ def train():
             except:
                 ppl = math.inf
             printstr = (
-                f"\t Epoch {epoch:3d}. | {batch:5d}/{len(train_data)//args.bptt:5d} batches | lr {lr:02.2f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f}"
+                f"\t Epoch {epoch:3d}. | {batch:5d}/{len(train_data)//args.bptt:5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f}"
             )
             losses = []
 
@@ -305,7 +318,7 @@ try:
         train()
         val_loss, privacy_printstr = evaluate(val_data, privacy_engine=privacy_engine)
         try:
-            ppl = math.exp(mean(val_loss))
+            ppl = math.exp(val_loss)
         except:
             ppl = math.inf
         print('-' * 89)
@@ -321,7 +334,10 @@ try:
             best_val_loss = val_loss
         else:
             # Anneal the learning rate if no improvement has been seen in the validation dataset.
-            lr /= 4.0
+            if args.with_scheduler:
+                pass
+            else:
+                lr /= 4.0
         if args.dry_run:
             break
 except KeyboardInterrupt:
@@ -344,7 +360,7 @@ with open(args.save, 'rb') as f:
 # Run on test data.
 test_loss, privacy_printstr = evaluate(test_data, privacy_engine=privacy_engine)
 try:
-    ppl = math.exp(mean(test_loss))
+    ppl = math.exp(test_loss)
 except:
     ppl = math.inf
 print('=' * 89)
