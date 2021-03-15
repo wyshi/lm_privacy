@@ -238,10 +238,11 @@ def evaluate(data_source, privacy_engine=None):
                 output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
             total_loss += len(data) * criterion(output, targets).item()
+            acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    return total_loss / (len(data_source) - 1), privacy_printstr
+    return total_loss / (len(data_source) - 1), privacy_printstr, acc
 
 
 def train():
@@ -262,6 +263,7 @@ def train():
         else:
             # hidden = repackage_hidden(hidden)
             output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+        acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
         loss = criterion(output, targets)
         loss.backward()
         
@@ -281,7 +283,7 @@ def train():
             except:
                 ppl = math.inf
             printstr = (
-                f"\t Epoch {epoch:3d}. | {batch:5d}/{len(train_data)//args.bptt:5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f}"
+                f"\t Epoch {epoch:3d}. | {batch:5d}/{len(train_data)//args.bptt:5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f} | acc: {acc:.3f}"
             )
             losses = []
 
@@ -316,15 +318,15 @@ try:
     for epoch in range(1, args.epochs+1):
         epoch_start_time = time.time()
         train()
-        val_loss, privacy_printstr = evaluate(val_data, privacy_engine=privacy_engine)
+        val_loss, privacy_printstr, nextword_acc = evaluate(val_data, privacy_engine=privacy_engine)
         try:
             ppl = math.exp(val_loss)
         except:
             ppl = math.inf
         print('-' * 89)
         print('| end of epoch {:3d} | time: {:5.2f}s | valid loss {:5.2f} | '
-                'valid ppl {:8.2f}'.format(epoch, (time.time() - epoch_start_time),
-                                           val_loss, ppl))
+                'valid ppl {:8.2f} | valid acc {:.3f}'.format(epoch, (time.time() - epoch_start_time),
+                                           val_loss, ppl, nextword_acc))
         print(privacy_printstr)
         print('-' * 89)
         # Save the model if the validation loss is the best we've seen so far.
@@ -358,14 +360,13 @@ with open(args.save, 'rb') as f:
         # model.lstm.flatten_parameters()
 
 # Run on test data.
-test_loss, privacy_printstr = evaluate(test_data, privacy_engine=privacy_engine)
+test_loss, privacy_printstr, test_nextword_acc = evaluate(test_data, privacy_engine=privacy_engine)
 try:
-    ppl = math.exp(test_loss)
+    test_ppl = math.exp(test_loss)
 except:
-    ppl = math.inf
+    test_ppl = math.inf
 print('=' * 89)
-print('| End of training | test loss {:5.2f} | test ppl {:8.2f}'.format(
-    test_loss, ppl))
+print(f'| End of training | test loss {test_loss:5.2f} | test ppl {test_ppl:8.2f} | test acc {test_nextword_acc:.3f}')
 print(privacy_printstr)
 print('=' * 89)
 
