@@ -339,7 +339,8 @@ try:
             if args.with_scheduler:
                 pass
             else:
-                lr /= 4.0
+                for g in optimizer.param_groups:
+                    g['lr'] /= 4
         if args.dry_run:
             break
 except KeyboardInterrupt:
