@@ -10,6 +10,7 @@ class DPLSTMModel(nn.Module):
         hidden_size,
         vocab_size,
         num_lstm_layers=1,
+        dropout=0.5,
         bidirectional=False,
         tie_weights=True,
         dp=True,
@@ -20,8 +21,9 @@ class DPLSTMModel(nn.Module):
         self.hidden_size = hidden_size
         self.vocab_size = vocab_size
 
+        self.drop = nn.Dropout(dropout)
         self.encoder = nn.Embedding(vocab_size, embedding_size)
-        if True:
+        if dp:
             self.lstm = DPLSTM(
                 embedding_size,
                 hidden_size,
@@ -55,9 +57,10 @@ class DPLSTMModel(nn.Module):
     def forward(self, x, hidden=None):
         # import pdb
         # pdb.set_trace()
-        emb = self.encoder(x)  # -> [B, T, D]
+        emb = self.drop(self.encoder(x))  # -> [B, T, D]
         output, hidden = self.lstm(emb, hidden)  # -> [B, T, H]
         # x = x[:, -1, :]  # -> [B, H]
+        output = self.drop(output)
         decoded = self.decoder(output)
         decoded = decoded.view(-1, self.vocab_size)
         return F.log_softmax(decoded, dim=1), hidden

@@ -164,22 +164,31 @@ sigma = args.sigma
 max_per_sample_grad_norm = 1
 delta = 8e-5
 
+
+if args.model != "Transformer": 
+    ntokens = len(corpus.dictionary)  
+    config_str = f"model-{args.model}__ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
+else:
+    ntokens = tokenizer.vocab_size
+    config_str = f"model-{args.model}__ntokens-{ntokens}"
+config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
+if args.dp:
+    config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
+args.save = args.save + config_str + ".pt"
+print("*"*89)
+print(config_str)
+print("*"*89)
+
+
+
 # Define model parameters
 if args.model != 'Transformer':
-    ntokens = len(corpus.dictionary)
-    config_str = f"ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
-    config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
-    if args.dp:
-        config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
-    args.save = args.save + config_str + ".pt"
-    print("*"*89)
-    print(config_str)
-    print("*"*89)
     model = DPLSTMModel(
         embedding_size=args.emsize,
         hidden_size=args.nhid,
         vocab_size=ntokens,
         num_lstm_layers=args.num_layers,
+        dropout=args.dropout,
         bidirectional=args.bidirectional,
         tie_weights=args.tied,
         dp=args.dp,
@@ -187,23 +196,32 @@ if args.model != 'Transformer':
 
 else:
     # gpt2 model
-    model = GPT2LMHeadModel.from_pretrained('gpt2').to(device)
+    GPT2 = GPT2LMHeadModel.from_pretrained('gpt2').to(device)
+    gpts_modules = list(GPT2.children())
 
-    trainable_layers = [model.lm_head]
-    total_params = 0
-    trainable_params = 0
+    backbone = nn.Sequential(*gpts_modules[:-1])
+    model = nn.Sequential(*gpts_modules[-1:])
 
-    for p in model.parameters():
-            p.requires_grad = False
-            total_params += p.numel()
+    backbone = backbone.eval()
+    model = model.train()
 
-    for layer in trainable_layers:
-        for p in layer.parameters():
-            p.requires_grad = True
-            trainable_params += p.numel()
+    if False:
 
-    print(f"Total parameters count: {total_params}") # ~108M
-    print(f"Trainable parameters count: {trainable_params}") # ~30M
+        trainable_layers = [model.lm_head]
+        total_params = 0
+        trainable_params = 0
+
+        for p in model.parameters():
+                p.requires_grad = False
+                total_params += p.numel()
+
+        for layer in trainable_layers:
+            for p in layer.parameters():
+                p.requires_grad = True
+                trainable_params += p.numel()
+
+        print(f"Total parameters count: {total_params}") # ~108M
+        print(f"Trainable parameters count: {trainable_params}") # ~30M
 
     # inputs = tokenizer("Hello, my dog is cute", return_tensors="pt")
     # outputs = model(**inputs, labels=inputs["input_ids"])
@@ -216,7 +234,10 @@ else:
 TOTAL_OPTIMIZATION_STEPS = len(range(0, train_data.size(0) - 1, args.bptt)) * args.epochs 
 if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
     raise ValueError(f"Warm steps ({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
-criterion = nn.NLLLoss()
+if args.model != 'Transformer':
+    criterion = nn.NLLLoss()
+else:
+    criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
 # exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 if args.with_scheduler:
@@ -279,11 +300,17 @@ def evaluate(data_source, privacy_engine=None):
         for i in range(0, data_source.size(0) - 1, args.bptt):
             data, targets = get_batch(data_source, i)
             if args.model == 'Transformer':
-                output = model(data, labels=data)
-                logits = output.logits
+                transformer_outputs = backbone(data)
+                hidden_states = transformer_outputs[0]
+                logits = model(hidden_states)
                 logits = logits.view(-1, tokenizer.vocab_size)
                 acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-                total_loss += len(data) * output.loss.item()
+                total_loss += len(data) * (criterion(logits, targets).item())
+                # output = model(data, labels=data)
+                # logits = output.logits
+                # logits = logits.view(-1, tokenizer.vocab_size)
+                # acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+                # total_loss += len(data) * output.loss.item()
             else:
                 output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
@@ -308,18 +335,27 @@ def train():
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
         if args.model == 'Transformer':
-            output = model(data, labels=data)
-            logits = output.logits
+            # import pdb; pdb.set_trace()
+            with torch.no_grad():
+                transformer_outputs = backbone(data)
+                hidden_states = transformer_outputs[0]
+            logits = model(hidden_states)
             logits = logits.view(-1, tokenizer.vocab_size)
             acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-            loss = output.loss
+            loss = criterion(logits, targets)
+            # output = model(data)
+            # logits = output.logits
+            # logits = logits.view(-1, tokenizer.vocab_size)
+            # acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+            # loss = output.loss
         else:
             # hidden = repackage_hidden(hidden)
             output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
             acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
             loss = criterion(output, targets)
         loss.backward()
-        
+
+        torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
         optimizer.step()
         if args.with_scheduler:
             scheduler.step()
