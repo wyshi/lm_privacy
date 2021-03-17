@@ -20,6 +20,22 @@ from transformers import get_linear_schedule_with_warmup
 #TODO need to fix the sampling, because it matters in DP
 from opacus.utils.uniform_sampler import UniformWithReplacementSampler
 
+# >>> from transformers import BertTokenizer, BertLMHeadModel, BertConfig
+# >>> import torch
+
+# >>> tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+# >>> config = BertConfig.from_pretrained("bert-base-cased")
+# >>> config.is_decoder = True
+# >>> model = BertLMHeadModel.from_pretrained('bert-base-cased', config=config)
+
+# >>> inputs = tokenizer("Hello, my dog is cute", return_tensors="pt")
+# >>> outputs = model(**inputs)
+
+# >>> prediction_logits = outputs.logits
+
+################################
+from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPT2TokenizerFast
+
 
 parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
 parser.add_argument('--data', type=str, default='./data/wikitext-2',
@@ -82,8 +98,11 @@ device = torch.device(args.cuda)
 ###############################################################################
 # Load data
 ###############################################################################
-
-corpus = data.Corpus(args.data)
+if args.model == "Transformer":
+    tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
+else:
+    tokenizer = None    
+corpus = data.Corpus(args.data, tokenizer=tokenizer)
 
 # Starting from sequential data, batchify arranges the dataset into columns.
 # For instance, with the alphabet as the sequence and batch size 4, we'd get
@@ -146,29 +165,57 @@ max_per_sample_grad_norm = 1
 delta = 8e-5
 
 # Define model parameters
-ntokens = len(corpus.dictionary)
-config_str = f"ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
-config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
-if args.dp:
-    config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
-args.save = args.save + config_str + ".pt"
-print("*"*89)
-print(config_str)
-print("*"*89)
-model = DPLSTMModel(
-    embedding_size=args.emsize,
-    hidden_size=args.nhid,
-    vocab_size=ntokens,
-    num_lstm_layers=args.num_layers,
-    bidirectional=args.bidirectional,
-    tie_weights=args.tied,
-    dp=args.dp,
-).to(device)
+if args.model != 'Transformer':
+    ntokens = len(corpus.dictionary)
+    config_str = f"ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
+    config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
+    if args.dp:
+        config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
+    args.save = args.save + config_str + ".pt"
+    print("*"*89)
+    print(config_str)
+    print("*"*89)
+    model = DPLSTMModel(
+        embedding_size=args.emsize,
+        hidden_size=args.nhid,
+        vocab_size=ntokens,
+        num_lstm_layers=args.num_layers,
+        bidirectional=args.bidirectional,
+        tie_weights=args.tied,
+        dp=args.dp,
+    ).to(device)
+
+else:
+    # gpt2 model
+    model = GPT2LMHeadModel.from_pretrained('gpt2').to(device)
+
+    trainable_layers = [model.lm_head]
+    total_params = 0
+    trainable_params = 0
+
+    for p in model.parameters():
+            p.requires_grad = False
+            total_params += p.numel()
+
+    for layer in trainable_layers:
+        for p in layer.parameters():
+            p.requires_grad = True
+            trainable_params += p.numel()
+
+    print(f"Total parameters count: {total_params}") # ~108M
+    print(f"Trainable parameters count: {trainable_params}") # ~30M
+
+    # inputs = tokenizer("Hello, my dog is cute", return_tensors="pt")
+    # outputs = model(**inputs, labels=inputs["input_ids"])
+    # loss = outputs.loss
+    # logits = outputs.logits
 
 
+
+# training parameters
 TOTAL_OPTIMIZATION_STEPS = len(range(0, train_data.size(0) - 1, args.bptt)) * args.epochs 
 if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
-    raise ValueError(f"Warm steps({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
+    raise ValueError(f"Warm steps ({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
 criterion = nn.NLLLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
 # exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
@@ -232,13 +279,16 @@ def evaluate(data_source, privacy_engine=None):
         for i in range(0, data_source.size(0) - 1, args.bptt):
             data, targets = get_batch(data_source, i)
             if args.model == 'Transformer':
-                output = model(data)
-                output = output.view(-1, ntokens)
+                output = model(data, labels=data)
+                logits = output.logits
+                logits = logits.view(-1, tokenizer.vocab_size)
+                acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+                total_loss += len(data) * output.loss.item()
             else:
                 output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
-            total_loss += len(data) * criterion(output, targets).item()
-            acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+                total_loss += len(data) * criterion(output, targets).item()
+                acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
@@ -258,13 +308,16 @@ def train():
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
         if args.model == 'Transformer':
-            output = model(data)
-            output = output.view(-1, ntokens)
+            output = model(data, labels=data)
+            logits = output.logits
+            logits = logits.view(-1, tokenizer.vocab_size)
+            acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+            loss = output.loss
         else:
             # hidden = repackage_hidden(hidden)
             output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
-        acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-        loss = criterion(output, targets)
+            acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+            loss = criterion(output, targets)
         loss.backward()
         
         optimizer.step()

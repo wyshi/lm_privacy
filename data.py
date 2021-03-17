@@ -18,8 +18,12 @@ class Dictionary(object):
 
 
 class Corpus(object):
-    def __init__(self, path):
-        self.dictionary = Dictionary()
+    def __init__(self, path, tokenizer=None):
+        if tokenizer:
+            self.tokenizer = tokenizer
+        else:
+            self.tokenizer = None
+            self.dictionary = Dictionary()
         self.train = self.tokenize(os.path.join(path, 'train.txt'))
         self.valid = self.tokenize(os.path.join(path, 'valid.txt'))
         self.test = self.tokenize(os.path.join(path, 'test.txt'))
@@ -27,22 +31,33 @@ class Corpus(object):
     def tokenize(self, path):
         """Tokenizes a text file."""
         assert os.path.exists(path)
-        # Add words to the dictionary
-        with open(path, 'r', encoding="utf8") as f:
-            for line in f:
-                words = line.split() + ['<eos>']
-                for word in words:
-                    self.dictionary.add_word(word)
+        if not self.tokenizer:
+            # Add words to the dictionary
+            with open(path, 'r', encoding="utf8") as f:
+                for line in f:
+                    words = line.split() + ['<eos>']
+                    for word in words:
+                        self.dictionary.add_word(word)
 
-        # Tokenize file content
-        with open(path, 'r', encoding="utf8") as f:
-            idss = []
-            for line in f:
-                words = line.split() + ['<eos>']
-                ids = []
-                for word in words:
-                    ids.append(self.dictionary.word2idx[word])
-                idss.append(torch.tensor(ids).type(torch.int64))
-            ids = torch.cat(idss)
+            # Tokenize file content
+            with open(path, 'r', encoding="utf8") as f:
+                idss = []
+                for line in f:
+                    words = line.split() + ['<eos>']
+                    ids = []
+                    for word in words:
+                        ids.append(self.dictionary.word2idx[word])
+                    idss.append(torch.tensor(ids).type(torch.int64))
+                ids = torch.cat(idss)
+        
+        else:
+            end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
+            # Tokenize file content
+            with open(path, 'r', encoding="utf8") as f:
+                idss = []
+                for line in f:
+                    ids = self.tokenizer(line)['input_ids'] + end_token_id
+                    idss.append(torch.tensor(ids).type(torch.int64))
+                ids = torch.cat(idss)
 
         return ids
