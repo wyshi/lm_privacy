@@ -1,5 +1,6 @@
 """
-python -u main.py -bs 8 -dp  2>&1 | tee logs/torch_lstm.log
+python -u main.py -bs 10 --cuda cuda:1 -dp --lr 1e-2 --sigma 0.4 2>&1 | tee logs/dp/torch_lstm.log
+python -u main.py -bs 256 --lr 20 2>&1 | tee logs/nodp/torch_lstm.log
 """
 # coding: utf-8
 import argparse
@@ -70,7 +71,7 @@ parser.add_argument('--cuda', type=str, default="cuda:0",
                     help='CUDA number')
 parser.add_argument('--log-interval', type=int, default=200, metavar='N',
                     help='report interval')
-parser.add_argument('--save', type=str, default='model/model.pt',
+parser.add_argument('--save', type=str, default='model/',
                     help='path to save the final model')
 parser.add_argument('--onnx-export', type=str, default='',
                     help='path to export the final model in onnx format')
@@ -174,7 +175,10 @@ else:
 config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
 if args.dp:
     config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
-args.save = args.save + config_str + ".pt"
+if args.dp:
+    args.save = os.path.join(args.save, 'dp', config_str + ".pt")
+else:
+    args.save = os.path.join(args.save, 'nodp', config_str + ".pt") 
 print("*"*89)
 print(config_str)
 print("*"*89)
@@ -356,7 +360,8 @@ def train():
             loss = criterion(output, targets)
         loss.backward()
 
-        torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+        if not args.dp:
+            torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
         optimizer.step()
         if args.with_scheduler:
             scheduler.step()
