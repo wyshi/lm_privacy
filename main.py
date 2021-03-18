@@ -294,8 +294,8 @@ def evaluate(data_source, privacy_engine=None):
     model.eval()
     total_loss = 0.
     privacy_printstr = "no privacy engine"
-    # if args.model != 'Transformer':
-        # hidden = model.init_hidden(eval_batch_size)
+    if args.model != 'Transformer':
+        hidden = model.init_hidden(eval_batch_size)
     with torch.no_grad():
         for i in range(0, data_source.size(0) - 1, args.bptt):
             data, targets = get_batch(data_source, i)
@@ -312,8 +312,8 @@ def evaluate(data_source, privacy_engine=None):
                 # acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
                 # total_loss += len(data) * output.loss.item()
             else:
-                output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
-                # hidden = repackage_hidden(hidden)
+                output, hidden = model(data, hidden) # each datapoint is treated as independent from each other, as required by DP
+                hidden = repackage_hidden(hidden)
                 total_loss += len(data) * criterion(output, targets).item()
                 acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
     if privacy_engine:
@@ -327,10 +327,11 @@ def train():
     model.train()
     losses = []
     start_time = time.time()
-    # if args.model != 'Transformer':
-    #     hidden = model.init_hidden(args.batch_size)
+    if args.model != 'Transformer':
+        hidden = model.init_hidden(args.batch_size)
     for batch, i in enumerate(range(0, train_data.size(0) - 1, args.bptt)):
         data, targets = get_batch(train_data, i)
+        # import pdb; pdb.set_trace()
         # Starting each batch, we detach the hidden state from how it was previously produced.
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
@@ -349,8 +350,8 @@ def train():
             # acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
             # loss = output.loss
         else:
-            # hidden = repackage_hidden(hidden)
-            output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+            hidden = repackage_hidden(hidden)
+            output, hidden = model(data, hidden) # each datapoint is treated as independent from each other, as required by DP
             acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
             loss = criterion(output, targets)
         loss.backward()

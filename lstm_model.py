@@ -20,16 +20,18 @@ class DPLSTMModel(nn.Module):
         self.embedding_size = embedding_size
         self.hidden_size = hidden_size
         self.vocab_size = vocab_size
+        self.nlayers = num_lstm_layers
 
         self.drop = nn.Dropout(dropout)
         self.encoder = nn.Embedding(vocab_size, embedding_size)
-        if dp:
+        if True:
             self.lstm = DPLSTM(
                 embedding_size,
                 hidden_size,
                 num_layers=num_lstm_layers,
                 bidirectional=bidirectional,
                 batch_first=True,
+                dropout=dropout,
             )
         else:
             self.lstm = nn.LSTM(
@@ -38,6 +40,7 @@ class DPLSTMModel(nn.Module):
                 num_layers=num_lstm_layers,
                 bidirectional=bidirectional,
                 batch_first=True,
+                dropout=dropout
             )
         self.decoder = nn.Linear(hidden_size, vocab_size)
 
@@ -55,10 +58,10 @@ class DPLSTMModel(nn.Module):
         nn.init.uniform_(self.decoder.weight, -initrange, initrange)
 
     def forward(self, x, hidden=None):
-        # import pdb
-        # pdb.set_trace()
+        x = x.transpose(0, 1) # because batch_first is True
         emb = self.drop(self.encoder(x))  # -> [B, T, D]
         output, hidden = self.lstm(emb, hidden)  # -> [B, T, H]
+        output = output.transpose(0, 1)
         # x = x[:, -1, :]  # -> [B, H]
         output = self.drop(output)
         decoded = self.decoder(output)
@@ -67,6 +70,6 @@ class DPLSTMModel(nn.Module):
 
     def init_hidden(self, bsz):
         weight = next(self.parameters())
-        return (weight.new_zeros(self.nlayers, bsz, self.nhid),
-                weight.new_zeros(self.nlayers, bsz, self.nhid))
+        return (weight.new_zeros(self.nlayers, bsz, self.hidden_size),
+                weight.new_zeros(self.nlayers, bsz, self.hidden_size))
 
