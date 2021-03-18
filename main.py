@@ -285,7 +285,8 @@ def repackage_hidden(h):
 def get_batch(source, i):
     seq_len = min(args.bptt, len(source) - 1 - i)
     data = source[i:i+seq_len]
-    target = source[i+1:i+1+seq_len].view(-1)
+    data = data.t()
+    target = source[i+1:i+1+seq_len].t().contiguous().view(-1)
     return data, target
 
 
@@ -305,7 +306,7 @@ def evaluate(data_source, privacy_engine=None):
                 logits = model(hidden_states)
                 logits = logits.view(-1, tokenizer.vocab_size)
                 acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-                total_loss += len(data) * (criterion(logits, targets).item())
+                total_loss += data.shape[1] * (criterion(logits, targets).item())
                 # output = model(data, labels=data)
                 # logits = output.logits
                 # logits = logits.view(-1, tokenizer.vocab_size)
@@ -314,7 +315,7 @@ def evaluate(data_source, privacy_engine=None):
             else:
                 output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
-                total_loss += len(data) * criterion(output, targets).item()
+                total_loss += data.shape[1] * criterion(output, targets).item()
                 acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
@@ -331,12 +332,11 @@ def train():
     #     hidden = model.init_hidden(args.batch_size)
     for batch, i in enumerate(range(0, train_data.size(0) - 1, args.bptt)):
         data, targets = get_batch(train_data, i)
-        # import pdb; pdb.set_trace()
         # Starting each batch, we detach the hidden state from how it was previously produced.
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
+        # import pdb; pdb.set_trace()
         if args.model == 'Transformer':
-            # import pdb; pdb.set_trace()
             with torch.no_grad():
                 transformer_outputs = backbone(data)
                 hidden_states = transformer_outputs[0]
@@ -405,6 +405,19 @@ best_val_loss = None
 
 # At any point you can hit Ctrl + C to break out of training early.
 try:
+    epoch = 0
+    epoch_start_time = time.time()
+    val_loss, privacy_printstr, nextword_acc = evaluate(val_data, privacy_engine=privacy_engine)
+    try:
+        ppl = math.exp(val_loss)
+    except:
+        ppl = math.inf
+    print('-' * 89)
+    print('| end of epoch {:3d} | time: {:5.2f}s | valid loss {:5.2f} | '
+            'valid ppl {:8.2f} | valid acc {:.3f}'.format(epoch, (time.time() - epoch_start_time),
+                                        val_loss, ppl, nextword_acc))
+    print(privacy_printstr)
+    print('-' * 89)
     for epoch in range(1, args.epochs+1):
         epoch_start_time = time.time()
         train()

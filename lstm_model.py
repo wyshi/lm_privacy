@@ -58,10 +58,10 @@ class DPLSTMModel(nn.Module):
         nn.init.uniform_(self.decoder.weight, -initrange, initrange)
 
     def forward(self, x, hidden=None):
-        x = x.transpose(0, 1) # because batch_first is True
+        # x = x.transpose(0, 1) # because batch_first is True
         emb = self.drop(self.encoder(x))  # -> [B, T, D]
         output, hidden = self.lstm(emb, hidden)  # -> [B, T, H]
-        output = output.transpose(0, 1)
+        # output = output.transpose(0, 1)
         # x = x[:, -1, :]  # -> [B, H]
         output = self.drop(output)
         decoded = self.decoder(output)
