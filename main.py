@@ -1,5 +1,5 @@
 """
-python -u main.py -bs 10 --cuda cuda:1 -dp --lr 1e-2 --sigma 0.4 2>&1 | tee logs/dp/torch_lstm.log
+python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
 python -u main.py -bs 256 --lr 20 2>&1 | tee logs/nodp/torch_lstm.log
 """
 # coding: utf-8
