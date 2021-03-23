@@ -4,7 +4,8 @@ from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
 import string
-
+import argparse
+import os
 
 class RestSpec(DomainSpec):
     name = "restaurant"
@@ -290,8 +291,8 @@ class MovieSpec(DomainSpec):
     db_size = 200
     
 # New spec created for the privacy project
-class CustomersSupportSpec(DomainSpec):
-    name = "customer support"
+class TrackPackageSpec(DomainSpec):
+    name = "track_package"
     greet = "Hello, I am with customer support bot."
 
     nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
@@ -333,51 +334,47 @@ if __name__ == "__main__":
     # generate them separately so the model can choose a subset for train and
     # test on all the test set to see generalization.
 
-    test_size = 500
-    train_size = 2000
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--domain")
+    parser.add_argument("--complexity")
+    parser.add_argument("--train_size",type=int)
+    parser.add_argument("--test_size",type=int)
+    parser.add_argument("--save_dir")
+    args = parser.parse_args()
+
+    save_dir = args.save_dir
+    if not os.path.exists(save_dir):
+            os.mkdir(save_dir)
+
+    test_size = args.test_size
+    train_size = args.train_size
     gen_bot = Generator()
 
-    # rest_spec = RestSpec()
-    # rest_style_spec = RestStyleSpec()
 
-    # rest_pitt_spec = RestPittSpec()
-    customer_support_sepc = CustomersSupportSpec()
+    rest_spec = RestSpec()
+    rest_style_spec = RestStyleSpec()
+    rest_pitt_spec = RestPittSpec()
+    bus_spec = BusSpec()
+    movie_spec = MovieSpec()
+    weather_spec = WeatherSpec()
 
-    # bus_spec = BusSpec()
-    # movie_spec = MovieSpec()
-    # weather_spec = WeatherSpec()
+    track_package_spec = TrackPackageSpec()
 
-    # # restaurant
-    # gen_bot.gen_corpus("test", rest_spec, complexity.CleanSpec, test_size)
-    # gen_bot.gen_corpus("test", rest_spec, complexity.MixSpec, test_size)
-    # gen_bot.gen_corpus("train", rest_spec, complexity.CleanSpec, train_size)
-    # gen_bot.gen_corpus("train", rest_spec, complexity.MixSpec, train_size)
+    domain_specs = {
+        "restaurant": rest_spec,
+        "restaurant_style": rest_style_spec,
+        "rest_pitt": rest_pitt_spec,
+        "bus": bus_spec,
+        "weather": weather_spec,
+        "movie": movie_spec,
+        "track_package": track_package_spec
+    }
 
-    # # restaurant style
-    # gen_bot.gen_corpus("test", rest_style_spec, complexity.CleanSpec, test_size)
-    # gen_bot.gen_corpus("test", rest_style_spec, complexity.MixSpec, test_size)
-    # gen_bot.gen_corpus("train", rest_style_spec, complexity.CleanSpec, train_size)
-    # gen_bot.gen_corpus("train", rest_style_spec, complexity.MixSpec, train_size)
-
-    # # bus
-    # gen_bot.gen_corpus("test", bus_spec, complexity.CleanSpec, test_size)
-    # gen_bot.gen_corpus("test", bus_spec, complexity.MixSpec, test_size)
-    # gen_bot.gen_corpus("train", bus_spec, complexity.CleanSpec, train_size)
-    # gen_bot.gen_corpus("train", bus_spec, complexity.MixSpec, train_size)
-
-    # # weather
-    # gen_bot.gen_corpus("test", weather_spec, complexity.CleanSpec, test_size)
-    # gen_bot.gen_corpus("test", weather_spec, complexity.MixSpec, test_size)
-    # gen_bot.gen_corpus("train", weather_spec, complexity.CleanSpec, train_size)
-    # gen_bot.gen_corpus("train", weather_spec, complexity.MixSpec, train_size)
-
-    # # movie
-    # gen_bot.gen_corpus("test", movie_spec, complexity.CleanSpec, test_size)
-    # gen_bot.gen_corpus("test", movie_spec, complexity.MixSpec, test_size)
-    # gen_bot.gen_corpus("train", movie_spec, complexity.CleanSpec, train_size)
-    # gen_bot.gen_corpus("train", movie_spec, complexity.MixSpec,   
-    # train_size)
-
-    # restaurant Pitt
-    gen_bot.gen_corpus("test", customer_support_sepc, complexity.MixSpec, test_size)
-    gen_bot.gen_corpus("train", customer_support_sepc, complexity.MixSpec, train_size)
+    complexity_types = {
+        "mix": complexity.MixSpec,
+        "clean": complexity.CleanSpec
+    }
+  
+  
+    gen_bot.gen_corpus(save_dir+"/test", domain_specs[args.domain], complexity_types[args.complexity], test_size)
+    gen_bot.gen_corpus(save_dir+"/train", domain_specs[args.domain], complexity_types[args.complexity], train_size)
