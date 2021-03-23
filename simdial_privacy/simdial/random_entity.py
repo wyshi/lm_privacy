@@ -48,6 +48,7 @@ class GenerateRandomSlotValue(object):
         candidate = fake.address()
         while candidate in self.used_values.addresses:
             candidate = fake.address()
+        candidate = candidate.replace("\n"," ")
         self.used_values.addresses.add(candidate)
         return candidate
     
@@ -61,11 +62,25 @@ class GenerateRandomSlotValue(object):
 
 
 
-us = UsedSlotValues()
-generator = GenerateRandomSlotValue(us)
-print(generator.generate_address())
+def generate_n_rand_entities(n):
 
+    us = UsedSlotValues()
+    generator = GenerateRandomSlotValue(us)
+
+    names = []
+    addresses = []
+    phone_numbers = []
+    card_numbers = []
+
+    for i in range(n):
+        names.append(generator.generate_name())
+        addresses.append(generator.generate_address())
+        phone_numbers.append(generator.generate_phone())
+        card_numbers.append(generator.generate_cred_card())
     
-  
+    return names, addresses, phone_numbers, card_numbers
+
+#names, addresses, phone_numbers, card_numbers = generate_n_rand_entities(500)
+
   
 

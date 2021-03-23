@@ -3,6 +3,7 @@
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
+from simdial.random_entity import UsedSlotValues, GenerateRandomSlotValue, generate_n_rand_entities
 import string
 import argparse
 import os
@@ -315,12 +316,10 @@ class TrackPackageSpec(DomainSpec):
                                         "Could you please help me track my package?"]}
                 }
 
-    # TODO: will connect this to the random slot value generator module to avoid duplication!
-    usr_slots = [("name", "customer name", ["Timmy Vasquez","Andres Greene","Charlene Robinson"]),
-                 ("phone", "customer phone number", ["191-518-0214","517.198.7884","5486835008"]),
-                 ("address", "customer shipping address", ["2 Veronica Route Suite 362 Stanleymouth, NV 01892",
-                                                          "199 Robinson Landing Suite 367 West Sarah, NV 86274",
-                                                          "9530 Robert Ferry Apt. 582 Garyport, NV 43945"])]
+    rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers = generate_n_rand_entities(100)
+    usr_slots = [("name", "customer name", rand_names),
+                 ("phone", "customer phone number", rand_phone_numbers),
+                 ("address", "customer shipping address",rand_addresses)]
 
     sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
                                                         "the day after tomorrow", "this weekend"])]
