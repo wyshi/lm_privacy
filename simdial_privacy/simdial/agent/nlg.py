@@ -86,8 +86,9 @@ class SysNlg(AbstractNlg):
 
                 a_copy.parameters[0] = search_dict
                 a_copy.parameters[1] = sys_goals
-                str_actions.append(json.dumps({"QUERY": search_dict,
-                                               "GOALS": sys_goals}))
+                # commment out QUERY for cleaning output because we don't need KB
+                # str_actions.append(json.dumps({"QUERY": search_dict,
+                #                                "GOALS": sys_goals}))
 
             elif a.act == SystemAct.INFORM:
                 sys_goals = a.parameters[1]
@@ -171,8 +172,8 @@ class UserNlg(AbstractNlg):
                 for k, v in sys_goals.items():
                     slot = self.domain.get_sys_slot(k)
                     sys_goal_dict[k] = slot.vocabulary[v]
-
-                str_actions.append(json.dumps({"RET": sys_goal_dict}))
+                # commment out RET for cleaning output because we don't need KB
+                #str_actions.append(json.dumps({"RET": sys_goal_dict}))
             elif a.act == UserAct.GREET:
                 str_actions.append(self.sample(["Hi.", "Hello robot.", "What's up?"]))
 

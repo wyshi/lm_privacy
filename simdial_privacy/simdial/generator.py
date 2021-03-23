@@ -73,20 +73,20 @@ class Generator(object):
         print("%d dialogs" % len(dialogs))
         all_lens = [len(d) for d in dialogs]
         print("Avg len {} Max Len {}".format(np.mean(all_lens), np.max(all_lens)))
-
-        total_cnt = 0.
-        kb_cnt = 0.
-        ratio = []
-        for d in dialogs:
-            local_cnt = 0.
-            for t in d:
-                total_cnt +=1
-                if 'QUERY' in t['utt']:
-                    kb_cnt += 1
-                    local_cnt += 1
-            ratio.append(local_cnt/len(d))
-        print(kb_cnt/total_cnt)
-        print(np.mean(ratio))
+        # We don't need to print knowledge base related stats because we removed KB for this task
+        # total_cnt = 0.
+        # kb_cnt = 0.
+        # ratio = []
+        # for d in dialogs:
+        #     local_cnt = 0.
+        #     for t in d:
+        #         total_cnt +=1
+        #         if 'QUERY' in t['utt']:
+        #             kb_cnt += 1
+        #             local_cnt += 1
+        #     ratio.append(local_cnt/len(d))
+        # print(kb_cnt/total_cnt)
+        # print(np.mean(ratio))
 
     def gen(self, domain, complexity, num_sess=1):
         """
