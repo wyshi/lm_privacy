@@ -43,6 +43,8 @@ parser.add_argument('--data', type=str, default='./data/wikitext-2',
                     help='location of the data corpus')
 parser.add_argument('--model', type=str, default='LSTM',
                     help='type of recurrent net (RNN_TANH, RNN_RELU, LSTM, GRU, Transformer)')
+parser.add_argument('--tokenizer', type=str, default='LSTM',
+                    help='type of tokenizers')
 parser.add_argument('--emsize', type=int, default=200,
                     help='size of word embeddings')
 parser.add_argument('--nhid', type=int, default=200,
@@ -99,7 +101,7 @@ device = torch.device(args.cuda)
 ###############################################################################
 # Load data
 ###############################################################################
-if args.model == "Transformer":
+if args.tokenizer == "gpt2":
     tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
 else:
     tokenizer = None    

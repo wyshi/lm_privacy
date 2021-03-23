@@ -1,6 +1,22 @@
 import os
 from io import open
 import torch
+import json
+
+def read_json(path='/home/wyshi/privacy/simdial_privacy/test/customer support-MixSpec-500.json'):
+    with open(path, 'r') as fh:
+        data = json.load(fh)
+
+    for i, dial in enumerate(data['dialogs']):
+        lines = []
+        for turn in dial:
+            lines.append(f"{turn['speaker']}: {turn['utt']}\n")
+        with open(f'/home/wyshi/privacy/data/simdial/test/dial-{i}.txt', 'w') as fh:
+            fh.writelines(lines)
+
+
+
+
 
 class Dictionary(object):
     def __init__(self):
@@ -28,7 +44,7 @@ class Corpus(object):
         self.valid = self.tokenize(os.path.join(path, 'valid.txt'))
         self.test = self.tokenize(os.path.join(path, 'test.txt'))
 
-    def tokenize(self, path):
+    def tokenize(self, path, insert=None):
         """Tokenizes a text file."""
         assert os.path.exists(path)
         if not self.tokenizer:
