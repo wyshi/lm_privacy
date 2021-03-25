@@ -74,7 +74,9 @@ class MixSpec(ComplexitySpec):
     proposition = {'yn_question': 0.4,
                    'reject_style': {'reject': 0.5, 'reject+inform': 0.5},
                    'multi_slots': {1: 0.7, 2: 0.3},
-                   'dont_care': 0.1,
+                   # turn off i don't care
+                    'dont_care': 0.0,
+                   #'dont_care': 0.1,
                    'multi_goals': {1: 0.6, 2: 0.4},
                    }
 

@@ -273,7 +273,11 @@ class User(Agent):
 
         elif top_action.act == SystemAct.QUERY:
             query, goals = top_action.parameters[0], top_action.parameters[1]
+
             valid_entries = self.domain.db.select([v for name, v in query])
+            if len(valid_entries) <= 0:
+                print("BUG: NOT ENOUGH VALID ENTRIES")
+                print("QUERY:",query)
             chosen_entry = valid_entries[np.random.randint(0, len(valid_entries)), :]
 
             results = {}

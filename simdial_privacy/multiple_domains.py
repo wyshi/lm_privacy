@@ -324,7 +324,7 @@ class TrackPackageSpec(DomainSpec):
     sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
                                                         "the day after tomorrow", "this weekend"])]
 
-    db_size = 40
+    db_size = 200
 
 
 if __name__ == "__main__":
