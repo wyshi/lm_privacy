@@ -89,6 +89,8 @@ parser.add_argument('--sigma', type=float, default=0.5,
                     help='sigma')
 parser.add_argument('--with_scheduler', action='store_true',
                     help='use lr scheduler')
+parser.add_argument('--virtual_step', type=int, default=1,
+                    help='virtual step, virtual_step * batch_size = actual_size')
 
 args = parser.parse_args()
 
@@ -362,12 +364,26 @@ def train():
             loss = criterion(output, targets)
         loss.backward()
 
-        if not args.dp:
-            torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
-        optimizer.step()
-        if args.with_scheduler:
-            scheduler.step()
-        optimizer.zero_grad()
+        if args.dp:
+            if (i % args.virtual_step) == (args.virtual_step-1):
+                if not args.dp:
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+                optimizer.step()
+                if args.with_scheduler:
+                    scheduler.step()
+                optimizer.zero_grad()
+            else:
+                optimizer.virtual_step()
+
+        else:
+            if not args.dp:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+            optimizer.step()
+            if args.with_scheduler:
+                scheduler.step()
+            optimizer.zero_grad()
+            
+
 
         losses.append(loss.item())
 
