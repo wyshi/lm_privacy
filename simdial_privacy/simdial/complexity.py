@@ -80,7 +80,9 @@ class MixSpec(ComplexitySpec):
 
     interaction = {'hesitation': 0.4,
                    'self_restart': 0.1,
-                   'self_correct': 0.2}
+                   # turn off self correct for privacy dataset
+                   'self_correct': 0.0}
+                  # 'self_correct': 0.2}
 
     social = {'self_disclosure': None,
               'ref_shared': None,
