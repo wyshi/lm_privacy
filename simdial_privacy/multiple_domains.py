@@ -7,6 +7,7 @@ from simdial.random_entity import UsedSlotValues, GenerateRandomSlotValue, gener
 import string
 import argparse
 import os
+import numpy as np
 
 class RestSpec(DomainSpec):
     name = "restaurant"
@@ -310,15 +311,20 @@ class TrackPackageSpec(DomainSpec):
                             "yn_question": {'status': ["Is it shipped?"],
                                            'deliver': ["Is it delivered?"]
                                         }},
+                "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
+                            "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
 
                 "default": {"inform": ["The tracking number of your package is %s."],
                             "request": ["Where is my package?",
-                                        "Could you please help me track my package?"]}
+                                        "Could you please help me track my package?",
+                                        "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
+                                            ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
                 }
 
-    rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers = generate_n_rand_entities(100)
+    rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = generate_n_rand_entities(20)
     usr_slots = [("name", "customer name", rand_names),
                  ("phone", "customer phone number", rand_phone_numbers),
+                 ("order_number", "customer order number", rand_order_numbers),
                  ("address", "customer shipping address",rand_addresses)]
 
     sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
