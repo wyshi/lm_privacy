@@ -1,6 +1,7 @@
 """
 python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
 python -u main.py -bs 256 --lr 20 2>&1 | tee logs/nodp/torch_lstm.log
+python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokenizer gpt2
 """
 # coding: utf-8
 import argparse
@@ -17,9 +18,11 @@ import math
 import data
 from lstm_model import DPLSTMModel
 from transformers import get_linear_schedule_with_warmup
+from torch.utils.data import DataLoader, Dataset
 
 #TODO need to fix the sampling, because it matters in DP
 from opacus.utils.uniform_sampler import UniformWithReplacementSampler
+from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 
 # >>> from transformers import BertTokenizer, BertLMHeadModel, BertConfig
 # >>> import torch
@@ -91,6 +94,8 @@ parser.add_argument('--with_scheduler', action='store_true',
                     help='use lr scheduler')
 parser.add_argument('--virtual_step', type=int, default=1,
                     help='virtual step, virtual_step * batch_size = actual_size')
+parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
+                    help='data type, doc for documents in lm, dial for dialogues')
 
 args = parser.parse_args()
 
@@ -107,7 +112,6 @@ if args.tokenizer == "gpt2":
     tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
 else:
     tokenizer = None    
-corpus = data.Corpus(args.data, tokenizer=tokenizer)
 
 # Starting from sequential data, batchify arranges the dataset into columns.
 # For instance, with the alphabet as the sequence and batch size 4, we'd get
@@ -130,10 +134,45 @@ def batchify(data, bsz):
     data = data.view(bsz, -1).t().contiguous()
     return data.to(device)
 
-eval_batch_size = 10
-train_data = batchify(corpus.train, args.batch_size)
-val_data = batchify(corpus.valid, eval_batch_size)
-test_data = batchify(corpus.test, eval_batch_size)
+if args.data_type == 'text':
+    corpus = data.Corpus(os.path.join(args.data, 'train'), tokenizer=tokenizer)
+    eval_batch_size = 10
+    train_data = batchify(corpus.train, args.batch_size)
+    val_data = batchify(corpus.valid, eval_batch_size)
+    test_data = batchify(corpus.test, eval_batch_size)
+else:
+    train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
+    valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
+    test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, args.batch_size, args.bptt)
+    train_data = DataLoader(dataset=train_corpus, 
+                                shuffle=True, 
+                                batch_size=args.batch_size, 
+                                collate_fn=train_corpus.collate)
+    val_data = DataLoader(dataset=valid_corpus, 
+                                shuffle=False, 
+                                batch_size=args.batch_size, 
+                                collate_fn=train_corpus.collate)
+    test_data = DataLoader(dataset=test_corpus, 
+                                shuffle=False, 
+                                batch_size=args.batch_size, 
+                                collate_fn=train_corpus.collate)
+
+
+    train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer=tokenizer)
+    valid_corpus = data.CustomerDataset(os.path.join(args.data, 'valid'), tokenizer=tokenizer)
+    test_corpus = data.CustomerDataset(os.path.join(args.data, 'test'), tokenizer=tokenizer)
+    train_data = DataLoader(dataset=train_corpus, 
+                                shuffle=True, 
+                                batch_size=batch_size, 
+                                collate_fn=train_corpus.collate)
+    val_data = DataLoader(dataset=valid_corpus, 
+                                shuffle=False, 
+                                batch_size=batch_size, 
+                                collate_fn=train_corpus.collate)
+    test_data = DataLoader(dataset=test_corpus, 
+                                shuffle=False, 
+                                batch_size=batch_size, 
+                                collate_fn=train_corpus.collate)
 
 ###############################################################################
 # Build the model
@@ -166,7 +205,7 @@ else:
 
 # Privacy engine hyper-parameters
 sigma = args.sigma
-max_per_sample_grad_norm = 1
+max_per_sample_grad_norm = 0.1
 delta = 8e-5
 
 
