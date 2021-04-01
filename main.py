@@ -274,8 +274,6 @@ else:
 
 # training parameters
 TOTAL_OPTIMIZATION_STEPS = len(train_dataloader) * args.epochs 
-if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
-    raise ValueError(f"Warm steps ({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
 if args.model != 'Transformer':
     criterion = nn.NLLLoss()
 else:
@@ -283,6 +281,8 @@ else:
 optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
 # exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 if args.with_scheduler:
+    if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
+        raise ValueError(f"Warm steps ({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup_steps, num_training_steps=TOTAL_OPTIMIZATION_STEPS)
 
 from opacus import PrivacyEngine

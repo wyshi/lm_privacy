@@ -6,18 +6,6 @@ from torch.utils.data import DataLoader, Dataset
 from glob import glob
 import numpy as np
 
-def read_json(path='/home/wyshi/privacy/simdial_privacy/test/customer support-MixSpec-500.json'):
-    with open(path, 'r') as fh:
-        data = json.load(fh)
-
-    for i, dial in enumerate(data['dialogs']):
-        lines = []
-        for turn in dial:
-            lines.append(f"{turn['speaker']}: {turn['utt']}\n")
-        with open(f'/home/wyshi/privacy/data/simdial/test/dial-{i}.txt', 'w') as fh:
-            fh.writelines(lines)
-
-
 class Dictionary(object):
     def __init__(self, path):
         self.word2idx = {}
@@ -132,55 +120,6 @@ class Corpus(object):
 
 
 class CustomerDataset(Dataset):
-    def __init__(self, path, tokenizer=None):
-        if tokenizer:
-            self.tokenizer = tokenizer
-        else:
-            self.tokenizer = None
-            self.dictionary = Dictionary()
-        self.train = self.tokenize(os.path.join(path, 'train'))
-        self.valid = self.tokenize(os.path.join(path, 'valid'))
-        self.test = self.tokenize(os.path.join(path, 'test'))
-
-    def tokenize(self, path, insert=None):
-        """Tokenizes a text file."""
-        assert os.path.exists(path)
-        if not self.tokenizer:
-            # Add words to the dictionary
-            for p in os.listdir(path):
-                with open(p, 'r', encoding="utf8") as f:
-                    for line in f:
-                        words = line.split() + ['<eos>']
-                        for word in words:
-                            self.dictionary.add_word(word)
-
-            # Tokenize file content
-            dials = []
-            for p in os.listdir(path):
-                with open(p, 'r', encoding="utf8") as f:
-                    dial = []
-                    for line in f:
-                        words = line.split() + ['<eos>']
-                        turn = []
-                        for word in words:
-                            turn.append(self.dictionary.word2idx[word])
-                            dial.append(torch.tensor(turn).type(torch.int64))
-                    dials.append(torch.cat(dial))                    
-        else:
-            end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
-            # Tokenize file content
-            dials = []
-            for p in os.listdir(path):
-                with open(p, 'r', encoding="utf8") as f:
-                    dial = []
-                    for line in f:
-                        turn = self.tokenizer(line)['input_ids'] + end_token_id
-                        dial.append(torch.tensor(turn).type(torch.int64))
-                    dials.append(torch.cat(dial))
-        return dials
-
-
-class CustomerDataset(Dataset):
     def __init__(self, path, tokenizer):
         self.path = path
         self.data = self.build_data(path)
@@ -192,7 +131,7 @@ class CustomerDataset(Dataset):
             with open(fle, 'r') as fh:
                 dial = [turn for turn in fh]
                 dials.append(dial)  
-
+        # import pdb; pdb.set_trace()
         return dials          
 
     def __len__(self):
