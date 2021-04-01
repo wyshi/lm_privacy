@@ -35,7 +35,7 @@ class SysCommonNlg(object):
     templates = {SystemAct.GREET: ["Hello.", "Hi.", "Greetings.", "How are you doing?"],
                  SystemAct.ASK_REPEAT: ["Can you please repeat that?", "What did you say?"],
                  SystemAct.ASK_REPHRASE: ["Can you please rephrase that?", "Can you say it in another way?"],
-                 SystemAct.GOODBYE: ["Goodbye.", "It was a great pleasure helping you.", "Bye."],
+                 SystemAct.GOODBYE: ["Goodbye.", "It was a great pleasure helping you.", "Bye.", "Have a nice day! Bye."],
                  SystemAct.CLARIFY: ["I didn't catch you."],
                  SystemAct.REQUEST+core.BaseUsrSlot.NEED: ["What can I do for you?",
                                                            "What do you need?",

@@ -97,7 +97,7 @@ class User(Agent):
                            else c for c in temp_constrains]
         # there is a chance user does not care
         usr_constrains = {s.name: temp_constrains[i] for i, s in enumerate(self.domain.usr_slots)}
-        print("USR CONSTRAINS", usr_constrains)
+        #print("USR CONSTRAINS", usr_constrains)
         # sample the number of attribute about the system
         num_interest = np.random.randint(0, len(self.domain.sys_slots)-1)
         goal_candidates = [s.name for s in self.domain.sys_slots if s.name != BaseSysSlot.DEFAULT]
@@ -249,12 +249,12 @@ class User(Agent):
                 return None
 
             elif self.domain.is_usr_slot(slot_type):
-                print("USER GET REQUEST, IS USER SLOT TYPE",slot_type)
+                #print("USER GET REQUEST, IS USER SLOT TYPE",slot_type)
                 if len(self.domain.usr_slots) > 1:
                     num_informs = np.random.choice(list(self.complexity.multi_slots.keys()),
                                                    p=list(self.complexity.multi_slots.values()),
                                                    replace=False)
-                    print("NUM INFORMS", num_informs)
+                    #print("NUM INFORMS", num_informs)
                     if num_informs > 1:
                         candidates = [k for k, v in self.usr_constrains.items() if k != slot_type and v is not None]
                         num_extra = min(num_informs-1, len(candidates))
