@@ -97,7 +97,7 @@ class User(Agent):
                            else c for c in temp_constrains]
         # there is a chance user does not care
         usr_constrains = {s.name: temp_constrains[i] for i, s in enumerate(self.domain.usr_slots)}
-
+        #print("USR CONSTRAINS", usr_constrains)
         # sample the number of attribute about the system
         num_interest = np.random.randint(0, len(self.domain.sys_slots)-1)
         goal_candidates = [s.name for s in self.domain.sys_slots if s.name != BaseSysSlot.DEFAULT]
@@ -121,6 +121,7 @@ class User(Agent):
             return None
         else:
             self.goal_ptr += 1
+            # If have multiple goal, only update order number but not user info
             _, self.sys_goals = self._sample_goal()
             change_key = np.random.choice(list(self.usr_constrains.keys()))
             change_slot = self.domain.get_usr_slot(change_key)
@@ -143,7 +144,10 @@ class User(Agent):
 
         if len(self.state.history) > 100:
             self.state.input_buffer = []
-            return Action(UserAct.GOODBYE)
+            if np.random.rand() > self.complexity.no_goodbye: 
+                return Action(UserAct.GOODBYE)
+            else:
+                return None
 
         top_action = self.state.input_buffer[0]
         self.state.input_buffer.pop(0)
@@ -152,7 +156,12 @@ class User(Agent):
             return Action(UserAct.GREET)
 
         elif top_action.act == SystemAct.GOODBYE:
-            return Action(UserAct.GOODBYE)
+
+            if np.random.rand() > self.complexity.no_goodbye: 
+                return Action(UserAct.GOODBYE)
+            else:
+                return None
+
 
         elif top_action.act == SystemAct.IMPLICIT_CONFIRM:
             if len(top_action.parameters) == 0:
@@ -205,8 +214,12 @@ class User(Agent):
                         return [Action(UserAct.NEW_SEARCH, (BaseSysSlot.DEFAULT, None)),
                                 Action(UserAct.INFORM, (slot_key, self.usr_constrains[slot_key]))]
                     else:
-                        return [Action(UserAct.SATISFY, [(g, None) for g in complete_goals]),
-                                Action(UserAct.GOODBYE)]
+                        if np.random.rand() > self.complexity.no_goodbye: 
+                            return [Action(UserAct.SATISFY, [(g, None) for g in complete_goals]),
+                                    Action(UserAct.GOODBYE)]
+                        else:
+                            self.spk_state = State.EXIT
+                            return Action(UserAct.SATISFY, [(g, None) for g in complete_goals])
                 else:
                     ack_act = Action(UserAct.MORE_REQUEST, [(g, None) for g in complete_goals])
                     if np.random.rand() < self.complexity.yn_question:
@@ -236,10 +249,12 @@ class User(Agent):
                 return None
 
             elif self.domain.is_usr_slot(slot_type):
+                #print("USER GET REQUEST, IS USER SLOT TYPE",slot_type)
                 if len(self.domain.usr_slots) > 1:
                     num_informs = np.random.choice(list(self.complexity.multi_slots.keys()),
                                                    p=list(self.complexity.multi_slots.values()),
                                                    replace=False)
+                    #print("NUM INFORMS", num_informs)
                     if num_informs > 1:
                         candidates = [k for k, v in self.usr_constrains.items() if k != slot_type and v is not None]
                         num_extra = min(num_informs-1, len(candidates))

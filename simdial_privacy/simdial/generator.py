@@ -118,20 +118,23 @@ class Generator(object):
             while True:
                 # make a decision
                 sys_r, sys_t, sys_as, sys_s = sys.step(noisy_usr_as, conf)
+                #print("SYSTEM ACTIONS", sys_as)
                 sys_utt, sys_str_as = sys_nlg.generate_sent(sys_as, domain=domain)
-                dialog.append(self.pack_msg("SYS", sys_utt, actions=sys_str_as, domain=domain.name, state=sys_s))
+                if sys_utt != "":
+                    dialog.append(self.pack_msg("SYS", sys_utt, actions=sys_str_as, domain=domain.name, state=sys_s))
 
                 if sys_t:
                     break
 
                 usr_r, usr_t, usr_as = usr.step(sys_as)
+                #print("USER ACTIONS", usr_as)
 
                 # passing through noise, nlg and noise!
                 noisy_usr_as, conf = action_channel.transmit2sys(usr_as)
                 usr_utt = usr_nlg.generate_sent(noisy_usr_as)
                 noisy_usr_utt = word_channel.transmit2sys(usr_utt)
-
-                dialog.append(self.pack_msg("USR", noisy_usr_utt, actions=noisy_usr_as, conf=conf, domain=domain.name))
+                if noisy_usr_utt != "":
+                    dialog.append(self.pack_msg("USR", noisy_usr_utt, actions=noisy_usr_as, conf=conf, domain=domain.name))
 
             dialogs.append(dialog)
 
