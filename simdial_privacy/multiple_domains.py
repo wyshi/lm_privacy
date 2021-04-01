@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # author: Tiancheng Zhao
+'''
+python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output
+'''
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
@@ -7,6 +10,7 @@ from simdial.random_entity import UsedSlotValues, GenerateRandomSlotValue, gener
 import string
 import argparse
 import os
+import json
 import numpy as np
 
 class RestSpec(DomainSpec):
@@ -339,6 +343,23 @@ class TrackPackageSpec(DomainSpec):
 
         self.db_size = 200
 
+def json_to_txt(path):
+    assert os.path.exists(path)
+    fle = os.listdir(path)
+    save_dir = f'../data/simdial/{path.split('/')[-1]}'
+    assert len(fle) == 1, f'{path} has {len(fle)} jsons, please delete the ones you do not want'
+    assert len(os.listdir(save_dir)) == 0, f'{save_dir} is not empty, please make sure it is empty'
+    
+    with open(os.path.join(path, fle[0]), 'r') as fh:
+        data = json.load(fh)
+    
+    for i, dial in enumerate(data['dialogs']):
+        lines = []
+        for turn in dial:
+            lines.append(f"{turn['speaker']}: {turn['utt']}\n")
+        with open(f"{save_dir}/dial-{i}.txt", 'w') as fh:
+            fh.writelines(lines)
+
 
 if __name__ == "__main__":
     # pipeline here
@@ -350,16 +371,19 @@ if __name__ == "__main__":
     parser.add_argument("--domain")
     parser.add_argument("--complexity")
     parser.add_argument("--train_size",type=int)
+    parser.add_argument("--valid_size",type=int)
     parser.add_argument("--test_size",type=int)
     parser.add_argument("--one_token_private_info")
     parser.add_argument("--save_dir")
     args = parser.parse_args()
 
     save_dir = args.save_dir
+    print(save_dir)
     if not os.path.exists(save_dir):
-            os.mkdir(save_dir)
+        os.mkdir(save_dir)
 
     test_size = args.test_size
+    valid_size = args.valid_size
     train_size = args.train_size
     gen_bot = Generator()
 
@@ -391,3 +415,8 @@ if __name__ == "__main__":
   
     gen_bot.gen_corpus(save_dir+"/test", domain_specs[args.domain], complexity_types[args.complexity], test_size)
     gen_bot.gen_corpus(save_dir+"/train", domain_specs[args.domain], complexity_types[args.complexity], train_size)
+    gen_bot.gen_corpus(save_dir+"/valid", domain_specs[args.domain], complexity_types[args.complexity], valid_size)
+
+    json_to_txt(save_dir+"/test")
+    json_to_txt(save_dir+"/train")
+    json_to_txt(save_dir+"/valid")

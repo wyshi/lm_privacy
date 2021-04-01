@@ -1,6 +1,12 @@
 """
-python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
+# no dp
 python -u main.py -bs 256 --lr 20 2>&1 | tee logs/nodp/torch_lstm.log
+
+# dp, lstm
+python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
+
+# dp, gpt2
+python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokenizer gpt2
 """
 # coding: utf-8
 import argparse
@@ -17,9 +23,11 @@ import math
 import data
 from lstm_model import DPLSTMModel
 from transformers import get_linear_schedule_with_warmup
+from torch.utils.data import DataLoader, Dataset
 
 #TODO need to fix the sampling, because it matters in DP
 from opacus.utils.uniform_sampler import UniformWithReplacementSampler
+from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 
 # >>> from transformers import BertTokenizer, BertLMHeadModel, BertConfig
 # >>> import torch
@@ -91,6 +99,8 @@ parser.add_argument('--with_scheduler', action='store_true',
                     help='use lr scheduler')
 parser.add_argument('--virtual_step', type=int, default=1,
                     help='virtual step, virtual_step * batch_size = actual_size')
+parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
+                    help='data type, doc for documents in lm, dial for dialogues')
 
 args = parser.parse_args()
 
@@ -103,11 +113,15 @@ device = torch.device(args.cuda)
 ###############################################################################
 # Load data
 ###############################################################################
-if args.tokenizer == "gpt2":
-    tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
-else:
-    tokenizer = None    
-corpus = data.Corpus(args.data, tokenizer=tokenizer)
+tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
+ntokens = tokenizer.vocab_size
+
+# ntokens = len(corpus.dictionary)  
+
+# if args.tokenizer == "gpt2":
+#     tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
+# else:
+#     tokenizer = None    
 
 # Starting from sequential data, batchify arranges the dataset into columns.
 # For instance, with the alphabet as the sequence and batch size 4, we'd get
@@ -130,10 +144,32 @@ def batchify(data, bsz):
     data = data.view(bsz, -1).t().contiguous()
     return data.to(device)
 
-eval_batch_size = 10
-train_data = batchify(corpus.train, args.batch_size)
-val_data = batchify(corpus.valid, eval_batch_size)
-test_data = batchify(corpus.test, eval_batch_size)
+if args.data_type == 'doc':
+    # corpus = data.Corpus(os.path.join(args.data), tokenizer=tokenizer)
+    # eval_batch_size = 10
+    # train_data = batchify(corpus.train, args.batch_size)
+    # val_data = batchify(corpus.valid, eval_batch_size)
+    # test_data = batchify(corpus.test, eval_batch_size)
+    train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
+    valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
+    test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, args.batch_size, args.bptt)
+else:
+    train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer=tokenizer)
+    valid_corpus = data.CustomerDataset(os.path.join(args.data, 'valid'), tokenizer=tokenizer)
+    test_corpus = data.CustomerDataset(os.path.join(args.data, 'test'), tokenizer=tokenizer)
+
+train_dataloader = DataLoader(dataset=train_corpus, 
+                            shuffle=True, 
+                            batch_size=args.batch_size, 
+                            collate_fn=train_corpus.collate)
+val_dataloader = DataLoader(dataset=valid_corpus, 
+                            shuffle=False, 
+                            batch_size=args.batch_size, 
+                            collate_fn=train_corpus.collate)
+test_dataloader = DataLoader(dataset=test_corpus, 
+                            shuffle=False, 
+                            batch_size=args.batch_size, 
+                            collate_fn=train_corpus.collate)
 
 ###############################################################################
 # Build the model
@@ -142,7 +178,7 @@ test_data = batchify(corpus.test, eval_batch_size)
 ########################################################################
 # Privacy Related
 ########################################################################
-sample_rate = args.batch_size / (args.batch_size * len(range(0, train_data.size(0) - 1, args.bptt)))
+sample_rate = args.batch_size / (args.batch_size * len(train_dataloader))
 secure_rng = False
 
 if secure_rng:
@@ -166,15 +202,13 @@ else:
 
 # Privacy engine hyper-parameters
 sigma = args.sigma
-max_per_sample_grad_norm = 1
+max_per_sample_grad_norm = 0.1
 delta = 8e-5
 
 
 if args.model != "Transformer": 
-    ntokens = len(corpus.dictionary)  
     config_str = f"model-{args.model}__ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
 else:
-    ntokens = tokenizer.vocab_size
     config_str = f"model-{args.model}__ntokens-{ntokens}"
 config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
 if args.dp:
@@ -239,9 +273,7 @@ else:
 
 
 # training parameters
-TOTAL_OPTIMIZATION_STEPS = len(range(0, train_data.size(0) - 1, args.bptt)) * args.epochs 
-if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
-    raise ValueError(f"Warm steps ({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
+TOTAL_OPTIMIZATION_STEPS = len(train_dataloader) * args.epochs 
 if args.model != 'Transformer':
     criterion = nn.NLLLoss()
 else:
@@ -249,6 +281,8 @@ else:
 optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
 # exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 if args.with_scheduler:
+    if args.warmup_steps > TOTAL_OPTIMIZATION_STEPS:
+        raise ValueError(f"Warm steps ({args.warmup_steps}) > total_steps ({TOTAL_OPTIMIZATION_STEPS})")
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup_steps, num_training_steps=TOTAL_OPTIMIZATION_STEPS)
 
 from opacus import PrivacyEngine
@@ -302,33 +336,40 @@ def evaluate(data_source, privacy_engine=None):
     # Turn on evaluation mode which disables dropout.
     model.eval()
     total_loss = 0.
+    total_tokens = 0
     privacy_printstr = "no privacy engine"
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(eval_batch_size)
     with torch.no_grad():
-        for i in range(0, data_source.size(0) - 1, args.bptt):
-            data, targets = get_batch(data_source, i)
+        for batch in data_source:
+            batch = pad_sequence(batch, batch_first=True).to(device)
+            source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
+            source_if_private, target_if_private = torch.empty(source.shape).random_(2), torch.empty(target.shape).random_(2)
+            del batch
             if args.model == 'Transformer':
-                transformer_outputs = backbone(data)
+                transformer_outputs = backbone(source)
                 hidden_states = transformer_outputs[0]
                 logits = model(hidden_states)
                 logits = logits.view(-1, tokenizer.vocab_size)
-                acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-                total_loss += data.shape[1] * (criterion(logits, targets).item())
+                target = target.view(-1)
+                acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+                total_loss += source.shape[1] * (criterion(logits, target).item())
                 # output = model(data, labels=data)
                 # logits = output.logits
                 # logits = logits.view(-1, tokenizer.vocab_size)
-                # acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+                # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
                 # total_loss += len(data) * output.loss.item()
             else:
-                output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+                output, hidden = model(source, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
-                total_loss += data.shape[1] * criterion(output, targets).item()
-                acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+                target = target.view(-1)
+                total_loss += source.shape[1] * criterion(output, target).item()
+                total_tokens += source.shape[1]
+                acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    return total_loss / (len(data_source) - 1), privacy_printstr, acc
+    return total_loss / total_tokens, privacy_printstr, acc
 
 
 def train():
@@ -338,30 +379,34 @@ def train():
     start_time = time.time()
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
-    for batch, i in enumerate(range(0, train_data.size(0) - 1, args.bptt)):
-        data, targets = get_batch(train_data, i)
+    for batch_i, batch in enumerate(tqdm(train_dataloader)):
+        batch = pad_sequence(batch, batch_first=True).to(device)
+        source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
+        del batch
         # Starting each batch, we detach the hidden state from how it was previously produced.
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
         # import pdb; pdb.set_trace()
         if args.model == 'Transformer':
             with torch.no_grad():
-                transformer_outputs = backbone(data)
+                transformer_outputs = backbone(source)
                 hidden_states = transformer_outputs[0]
             logits = model(hidden_states)
             logits = logits.view(-1, tokenizer.vocab_size)
-            acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-            loss = criterion(logits, targets)
+            target = target.view(-1)
+            acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+            loss = criterion(logits, target)
             # output = model(data)
             # logits = output.logits
             # logits = logits.view(-1, tokenizer.vocab_size)
-            # acc = (logits.argmax(axis=1)==targets).sum().item()/targets.shape[0]
+            # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
             # loss = output.loss
         else:
             # hidden = repackage_hidden(hidden)
-            output, hidden = model(data, hidden=None) # each datapoint is treated as independent from each other, as required by DP
-            acc = (output.argmax(axis=1)==targets).sum().item()/targets.shape[0]
-            loss = criterion(output, targets)
+            output, hidden = model(source, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+            target = target.view(-1)
+            acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
+            loss = criterion(output, target)
         loss.backward()
 
         if args.dp:
@@ -382,12 +427,10 @@ def train():
             if args.with_scheduler:
                 scheduler.step()
             optimizer.zero_grad()
-            
-
 
         losses.append(loss.item())
 
-        if batch % args.log_interval == 0 and batch > 0:
+        if batch_i % args.log_interval == 0 and batch_i > 0:
             elapsed = time.time() - start_time
             # import pdb
             # pdb.set_trace()
@@ -396,7 +439,7 @@ def train():
             except:
                 ppl = math.inf
             printstr = (
-                f"\t Epoch {epoch:3d}. | {batch:5d}/{len(train_data)//args.bptt:5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f} | acc: {acc:.3f}"
+                f"\t Epoch {epoch:3d}. | {batch_i:5d}/{len(train_dataloader):5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f} | acc: {acc:.3f}"
             )
             losses = []
 
@@ -430,7 +473,7 @@ best_val_loss = None
 try:
     epoch = 0
     epoch_start_time = time.time()
-    val_loss, privacy_printstr, nextword_acc = evaluate(val_data, privacy_engine=privacy_engine)
+    val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
     try:
         ppl = math.exp(val_loss)
     except:
@@ -444,7 +487,7 @@ try:
     for epoch in range(1, args.epochs+1):
         epoch_start_time = time.time()
         train()
-        val_loss, privacy_printstr, nextword_acc = evaluate(val_data, privacy_engine=privacy_engine)
+        val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
         try:
             ppl = math.exp(val_loss)
         except:
@@ -487,7 +530,7 @@ with open(args.save, 'rb') as f:
         # model.lstm.flatten_parameters()
 
 # Run on test data.
-test_loss, privacy_printstr, test_nextword_acc = evaluate(test_data, privacy_engine=privacy_engine)
+test_loss, privacy_printstr, test_nextword_acc = evaluate(test_dataloader, privacy_engine=privacy_engine)
 try:
     test_ppl = math.exp(test_loss)
 except:
