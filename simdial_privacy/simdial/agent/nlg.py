@@ -35,14 +35,15 @@ class SysCommonNlg(object):
     templates = {SystemAct.GREET: ["Hello.", "Hi.", "Greetings.", "How are you doing?"],
                  SystemAct.ASK_REPEAT: ["Can you please repeat that?", "What did you say?"],
                  SystemAct.ASK_REPHRASE: ["Can you please rephrase that?", "Can you say it in another way?"],
-                 SystemAct.GOODBYE: ["Goodbye.", "See you next time."],
+                 SystemAct.GOODBYE: ["Goodbye.", "It was a great pleasure helping you.", "Bye.", "Have a nice day! Bye."],
                  SystemAct.CLARIFY: ["I didn't catch you."],
                  SystemAct.REQUEST+core.BaseUsrSlot.NEED: ["What can I do for you?",
                                                            "What do you need?",
                                                            "How can I help?"],
                  SystemAct.REQUEST+core.BaseUsrSlot.HAPPY: ["What else can I do?",
                                                             "Are you happy about my answer?",
-                                                            "Anything else?"],
+                                                            "Anything else?",
+                                                            "Is there anything else I can help with?"],
                  SystemAct.EXPLICIT_CONFIRM+"dont_care": ["Okay, you dont_care, do you?",
                                                           "You dont_care, right?"],
                  SystemAct.IMPLICIT_CONFIRM+"dont_care": ["Okay, you dont_care.",
@@ -221,7 +222,7 @@ class UserNlg(AbstractNlg):
                 str_actions.append(self.sample(["No.", "Nope.", "Wrong.", "That's wrong.", "Nay."]))
 
             elif a.act == UserAct.SATISFY:
-                str_actions.append(self.sample(["No more questions.", "I have all I need.", "All good."]))
+                str_actions.append(self.sample(["No more questions.","That's it.","That's it. Thanks!", "I have all I need.", "All good."]))
 
             elif a.act == UserAct.MORE_REQUEST:
                 str_actions.append(self.sample(["I have more requests.", "One more thing.", "Not done yet."]))

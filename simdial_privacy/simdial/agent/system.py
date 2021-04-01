@@ -151,7 +151,7 @@ class DialogState(State):
         for slot in self.usr_beliefs.values():
             if slot.max_conf() < slot.GROUND_THRESHOLD:
                 return False
-
+                
         for goal in self.sys_goals.values():
             if BeliefGoal.THRESHOLD > goal.get_conf() > 0:
                 return False
@@ -285,6 +285,11 @@ class System(Agent):
         last_usr = self.state.last_actions(DialogState.USR)
         if last_usr is None:
             raise ValueError("System should talk first")
+        
+        elif len(last_usr) == 1 and last_usr[0].act == "satisfy":
+            self.state.spk_state = State.EXIT
+            return None
+            
 
         actions = []
         for usr_act in last_usr:

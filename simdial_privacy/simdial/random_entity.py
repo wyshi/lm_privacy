@@ -59,6 +59,13 @@ class GenerateRandomSlotValue(object):
             candidate = fake.credit_card_number()
         self.used_values.card_numbers.add(candidate)
         return candidate
+    
+    def generate_order_num(self):
+        first = str(random.randint(100,999))
+        second = str(random.randint(10000,99999)).zfill(5)
+        last = (str(random.randint(1,9998)).zfill(4))
+        
+        return '{}-{}-{}'.format(first,second,last)
 
 
 
@@ -71,16 +78,18 @@ def generate_n_rand_entities(n):
     addresses = []
     phone_numbers = []
     card_numbers = []
+    order_numbers = []
 
     for i in range(n):
         names.append(generator.generate_name())
         addresses.append(generator.generate_address())
         phone_numbers.append(generator.generate_phone())
         card_numbers.append(generator.generate_cred_card())
+        order_numbers.append(generator.generate_order_num())
     
-    return names, addresses, phone_numbers, card_numbers
+    return names, addresses, phone_numbers, card_numbers, order_numbers
 
-#names, addresses, phone_numbers, card_numbers = generate_n_rand_entities(500)
+#names, addresses, phone_numbers, card_numbers, order_numbers = generate_n_rand_entities(500)
 
   
 

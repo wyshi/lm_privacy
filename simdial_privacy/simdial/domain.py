@@ -89,7 +89,7 @@ class Domain(object):
         """
         self.name = domain_spec.name
         self.greet = domain_spec.greet
-        self.usr_slots = [Slot("#"+name, desc, vocab) for name, desc, vocab in domain_spec.usr_slots]
+        self.usr_slots = self.order_usr_slots(domain_spec)
         self.sys_slots = [Slot("#"+name, desc, vocab) for name, desc, vocab in domain_spec.sys_slots]
         self.sys_slots.insert(0, Slot(BaseSysSlot.DEFAULT, "", [str(i) for i in range(domain_spec.db_size)]))
 
@@ -108,6 +108,30 @@ class Domain(object):
 
         self.db = Database(usr_slot_priors, sys_slot_priors, num_rows=domain_spec.db_size)
         self.db.pprint()
+
+    def order_usr_slots(self,domain_spec):
+        """
+        :param domain_spec: the domain spec
+        :return: customized slot request orders if appilcable (e.g. track package)
+        """
+
+
+        # Add randomized order for track_package task
+        if self.name == "track_package":
+            order_options = [["name","phone","order_number","address"],
+                            ["name","order_number","phone","address"],
+                            ["name","address","order_number","phone"]]
+            rand_order = order_options[np.random.randint(0,3)]
+            slot_dict = dict()
+            for (name, desc, vocab) in domain_spec.usr_slots:
+                slot_dict[name] = (name, desc, vocab)
+            result = []
+            for ordered_slot_name in rand_order:
+                n,d,v = slot_dict[ordered_slot_name]
+                result.append(Slot("#"+n,d,v))
+            return result
+            
+        return [Slot("#"+name, desc, vocab) for name, desc, vocab in domain_spec.usr_slots]
 
     def get_usr_slot(self, slot_name, return_idx=False):
         """

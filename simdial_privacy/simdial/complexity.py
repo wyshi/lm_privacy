@@ -48,6 +48,7 @@ class Complexity(object):
         self.multi_slots = complexity_spec.proposition['multi_slots']
         self.multi_goals = complexity_spec.proposition['multi_goals']
         self.dont_care = complexity_spec.proposition['dont_care']
+        self.no_goodbye = complexity_spec.proposition['no_goodbye']
 
         # interactional
         self.hesitation = complexity_spec.interaction['hesitation']
@@ -68,20 +69,26 @@ class MixSpec(ComplexitySpec):
     An example spec for the easy setting
     """
 
-    environment = {'asr_acc': 0.7,
-                   'asr_std': 0.15}
+    # remove environment noise
+    environment = {'asr_acc': 1.0,
+                   'asr_std': 0.0}
+    # environment = {'asr_acc': 0.7,
+    #                'asr_std': 0.15}
 
     proposition = {'yn_question': 0.4,
                    'reject_style': {'reject': 0.5, 'reject+inform': 0.5},
-                   'multi_slots': {1: 0.7, 2: 0.3},
+                   'multi_slots': {1: 0.99, 2: 0.01},
                    # turn off i don't care
                     'dont_care': 0.0,
                    #'dont_care': 0.1,
-                   'multi_goals': {1: 0.6, 2: 0.4},
+                   'multi_goals': {1: 1, 2: 0},
+                   # adding probability to say no goodbye
+                   'no_goodbye': 0.5
                    }
 
-    interaction = {'hesitation': 0.4,
-                   'self_restart': 0.1,
+    interaction = {'hesitation': 0.0, # turn off hesitation because these experessions don't apply to written scenario
+                   # turn off self restart because it doesn't make sense for written case
+                   'self_restart': 0.0,
                    # turn off self correct for privacy dataset
                    'self_correct': 0.0}
                   # 'self_correct': 0.2}
@@ -104,6 +111,7 @@ class PropSpec(ComplexitySpec):
                    'multi_slots': {1: 0.7, 2: 0.3},
                    'dont_care': 0.1,
                    'multi_goals': {1: 0.7, 2: 0.3},
+                   'no_goodbye': 0
                    }
 
     interaction = {'hesitation': 0.0,
@@ -127,7 +135,8 @@ class EnvSpec(ComplexitySpec):
                    'reject_style': {'reject': 1.0, 'reject+inform': 0.0},
                    'multi_slots': {1: 1.0, 2: 0.0},
                    'dont_care': 0.0,
-                   'multi_goals': {1: 1.0, 2: 0.0},
+                   'multi_goals': {1: 0.0, 2: 1.0},
+                   'no_goodbye': 0.5
                    }
 
     interaction = {'hesitation': 0.0,
@@ -152,6 +161,7 @@ class InteractSpec(ComplexitySpec):
                    'multi_slots': {1: 1.0, 2: 0.0},
                    'dont_care': 0.0,
                    'multi_goals': {1: 1.0, 2: 0.0},
+                   'no_goodbye': 0.5
                    }
 
     interaction = {'hesitation': 0.4,
@@ -176,6 +186,7 @@ class CleanSpec(ComplexitySpec):
                    'multi_slots': {1: 1.0, 2: 0.0},
                    'dont_care': 0.0,
                    'multi_goals': {1: 1.0, 2: 0.0},
+                   'no_goodbye': 0.5
                    }
 
     interaction = {'hesitation': 0.0,
