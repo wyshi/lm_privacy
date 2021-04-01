@@ -68,8 +68,10 @@ class GenerateRandomSlotValue(object):
         return '{}-{}-{}'.format(first,second,last)
 
 
-
-def generate_n_rand_entities(n):
+def convert_to_one_token(t):
+    return f"<{t.replace(' ','_')}>"
+    
+def generate_n_rand_entities(n,one_token=False):
 
     us = UsedSlotValues()
     generator = GenerateRandomSlotValue(us)
@@ -81,15 +83,27 @@ def generate_n_rand_entities(n):
     order_numbers = []
 
     for i in range(n):
-        names.append(generator.generate_name())
-        addresses.append(generator.generate_address())
-        phone_numbers.append(generator.generate_phone())
-        card_numbers.append(generator.generate_cred_card())
-        order_numbers.append(generator.generate_order_num())
+        rand_name = generator.generate_name()
+        rand_address = generator.generate_address()
+        rand_phone = generator.generate_phone()
+        rand_card = generator.generate_cred_card()
+        rand_ord = generator.generate_order_num()
+
+        if one_token == True:
+            rand_name = convert_to_one_token(rand_name)
+            rand_address = convert_to_one_token(rand_address)
+            rand_phone = convert_to_one_token(rand_phone)
+            rand_card = convert_to_one_token(rand_card)
+            rand_ord = convert_to_one_token(rand_ord)
+
+        names.append(rand_name)
+        addresses.append(rand_address)
+        phone_numbers.append(rand_phone)
+        card_numbers.append(rand_card)
+        order_numbers.append(rand_ord)
     
     return names, addresses, phone_numbers, card_numbers, order_numbers
 
-#names, addresses, phone_numbers, card_numbers, order_numbers = generate_n_rand_entities(500)
-
+#names, addresses, phone_numbers, card_numbers, order_numbers = generate_n_rand_entities(1)
   
 

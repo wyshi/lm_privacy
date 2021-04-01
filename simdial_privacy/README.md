@@ -23,11 +23,11 @@ See paper for details. The source code and data used for the paper can be found 
 ## Usage 
 Run the following code to generate dialog data for a selected domain that is defined in the  *multiple_domains.py* script. 
   
-    python multiple_domains.py --domain {domain_name} --complexity {complexity_type} --train_size {train_size} --test_size {test_size} --save_dir {output_dir}
+    python multiple_domains.py --domain {domain_name} --complexity {complexity_type} --train_size {train_size} --test_size {test_size} --one_token_private_info {use_one_token_private_info_or_not} --save_dir {output_dir}
 
 For example
 
-    python multiple_domains.py --domain track_package --complexity mix --train_size 500 --test_size 200 --save_dir output
+    python multiple_domains.py --domain track_package --complexity mix --train_size 500 --test_size 200 --one_token_private_info false --save_dir output
 
 Defined domains in the original paper include:
 - `restaurant`  
