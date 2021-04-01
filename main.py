@@ -344,6 +344,7 @@ def evaluate(data_source, privacy_engine=None):
         for batch in data_source:
             batch = pad_sequence(batch, batch_first=True).to(device)
             source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
+            source_if_private, target_if_private = torch.empty(source.shape).random_(2), torch.empty(target.shape).random_(2)
             del batch
             if args.model == 'Transformer':
                 transformer_outputs = backbone(source)
