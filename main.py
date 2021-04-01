@@ -1,6 +1,11 @@
 """
-python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
+# no dp
 python -u main.py -bs 256 --lr 20 2>&1 | tee logs/nodp/torch_lstm.log
+
+# dp, lstm
+python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
+
+# dp, gpt2
 python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokenizer gpt2
 """
 # coding: utf-8
@@ -331,6 +336,7 @@ def evaluate(data_source, privacy_engine=None):
     # Turn on evaluation mode which disables dropout.
     model.eval()
     total_loss = 0.
+    total_tokens = 0
     privacy_printstr = "no privacy engine"
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(eval_batch_size)
@@ -357,11 +363,12 @@ def evaluate(data_source, privacy_engine=None):
                 # hidden = repackage_hidden(hidden)
                 target = target.view(-1)
                 total_loss += source.shape[1] * criterion(output, target).item()
+                total_tokens += source.shape[1]
                 acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    return total_loss / (len(data_source) - 1), privacy_printstr, acc
+    return total_loss / total_tokens, privacy_printstr, acc
 
 
 def train():
