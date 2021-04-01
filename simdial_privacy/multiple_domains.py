@@ -294,43 +294,50 @@ class MovieSpec(DomainSpec):
     
 # New spec created for the privacy project
 class TrackPackageSpec(DomainSpec):
-    name = "track_package"
-    greet = "Hello, I am with customer support bot."
+    def __init__(self, one_token):
+        if one_token.lower() in ('yes', 'true', 't', 'y', '1'):
+            self.one_token_private_info = True
+        else:
+            self.one_token_private_info = False
+    
+        self.name = "track_package"
+        self.greet = "Hello, I am with customer support bot."
 
-    nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
-                        "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?"]},
+        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
+                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?"]},
 
-                "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s."],
-                            "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
+                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s."],
+                                "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
 
-                "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s."],
-                                "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
+                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s."],
+                                    "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
 
-                "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s."],
-                            "request": ["When can I receive my package", "When will it be delivered?"],
-                            "yn_question": {'status': ["Is it shipped?"],
-                                           'deliver': ["Is it delivered?"]
-                                        }},
-                "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
-                            "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
+                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s."],
+                                "request": ["When can I receive my package", "When will it be delivered?"],
+                                "yn_question": {'status': ["Is it shipped?"],
+                                            'deliver': ["Is it delivered?"]
+                                            }},
+                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
+                                "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
 
-                "default": {"inform": ["The tracking number of your package is %s."],
-                            "request": ["Where is my package?",
-                                        "Could you please help me track my package?",
-                                        "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
-                                            ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
-                }
+                    "default": {"inform": ["The tracking number of your package is %s."],
+                                "request": ["Where is my package?",
+                                            "Could you please help me track my package?",
+                                            "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
+                                                ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
+                    }
 
-    rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = generate_n_rand_entities(20)
-    usr_slots = [("name", "customer name", rand_names),
-                 ("phone", "customer phone number", rand_phone_numbers),
-                 ("order_number", "customer order number", rand_order_numbers),
-                 ("address", "customer shipping address",rand_addresses)]
+        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = generate_n_rand_entities(20,self.one_token_private_info)
 
-    sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
-                                                        "the day after tomorrow", "this weekend"])]
+        self.usr_slots = [("name", "customer name", rand_names),
+                    ("phone", "customer phone number", rand_phone_numbers),
+                    ("order_number", "customer order number", rand_order_numbers),
+                    ("address", "customer shipping address",rand_addresses)]
 
-    db_size = 200
+        self.sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
+                                                            "the day after tomorrow", "this weekend"])]
+
+        self.db_size = 200
 
 
 if __name__ == "__main__":
@@ -344,6 +351,7 @@ if __name__ == "__main__":
     parser.add_argument("--complexity")
     parser.add_argument("--train_size",type=int)
     parser.add_argument("--test_size",type=int)
+    parser.add_argument("--one_token_private_info")
     parser.add_argument("--save_dir")
     args = parser.parse_args()
 
@@ -363,7 +371,7 @@ if __name__ == "__main__":
     movie_spec = MovieSpec()
     weather_spec = WeatherSpec()
 
-    track_package_spec = TrackPackageSpec()
+    track_package_spec = TrackPackageSpec(args.one_token_private_info)
 
     domain_specs = {
         "restaurant": rest_spec,
