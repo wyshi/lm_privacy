@@ -456,6 +456,87 @@ def train():
             break
 
 
+def train_partialdp():
+    # Turn on training mode which enables dropout.
+    model.train()
+    losses = []
+    start_time = time.time()
+    # if args.model != 'Transformer':
+    #     hidden = model.init_hidden(args.batch_size)
+    for batch_i, batch in enumerate(tqdm(train_dataloader)):
+        batch = pad_sequence(batch, batch_first=True).to(device)
+        source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
+        source_if_private, target_if_private = torch.empty(source.shape).random_(2), torch.empty(target.shape).random_(2)
+        del batch
+        # Starting each batch, we detach the hidden state from how it was previously produced.
+        # If we didn't, the model would try backpropagating all the way to start of the dataset.
+        model.zero_grad()
+        # import pdb; pdb.set_trace()
+        if args.model == 'Transformer':
+            with torch.no_grad():
+                transformer_outputs = backbone(source)
+                hidden_states = transformer_outputs[0]
+            logits = model(hidden_states)
+            logits = logits.view(-1, tokenizer.vocab_size)
+            target = target.view(-1)
+            acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+            loss = criterion(logits, target)
+        else:
+            # hidden = repackage_hidden(hidden)
+            output, hidden = model(source, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+            target = target.view(-1)
+            acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
+            loss = criterion(output, target)
+        loss.backward()
+
+        if args.dp:
+            if (i % args.virtual_step) == (args.virtual_step-1):
+                if not args.dp:
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+                optimizer.step()
+                if args.with_scheduler:
+                    scheduler.step()
+                optimizer.zero_grad()
+            else:
+                optimizer.virtual_step()
+
+        else:
+            if not args.dp:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+            optimizer.step()
+            if args.with_scheduler:
+                scheduler.step()
+            optimizer.zero_grad()
+
+        losses.append(loss.item())
+
+        if batch_i % args.log_interval == 0 and batch_i > 0:
+            elapsed = time.time() - start_time
+            # import pdb
+            # pdb.set_trace()
+            try:
+                ppl = math.exp(mean(losses))
+            except:
+                ppl = math.inf
+            printstr = (
+                f"\t Epoch {epoch:3d}. | {batch_i:5d}/{len(train_dataloader):5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | Loss: {mean(losses):.6f} | ppl: {ppl:.6f} | acc: {acc:.3f}"
+            )
+            losses = []
+
+            try:
+                privacy_engine = optimizer.privacy_engine
+                epsilon, best_alpha = privacy_engine.get_privacy_spent()
+                printstr += f" | (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
+            except AttributeError:
+                pass
+            start_time = time.time()
+            print(printstr)
+
+        if args.dry_run:
+            break
+
+
+
 def export_onnx(path, batch_size, seq_len):
     print('The model is also exported in ONNX format at {}'.
           format(os.path.realpath(args.onnx_export)))
