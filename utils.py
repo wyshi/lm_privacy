@@ -55,10 +55,10 @@ def detect_private_tokens(dialog, domain):
         else:
             return sent[:-1]
 
-
     print("Length of original dialog string:", len(dialog))
 
     IS_ASK_ADDRESS = False
+    private_tokens = []
     dialog_by_speaker = dialog.strip().split("\n")
 
     # recognize dialog order, assume the turns are 1-1, could generalize later
@@ -69,40 +69,43 @@ def detect_private_tokens(dialog, domain):
     else:
         raise NotImplementedError("Dialog not following the correct template")
 
-    private_tokens = []
-    loc = 0
 
     for i in range(len(dialog_by_speaker)):
         # If it is user's turn, check private info 
         sent = dialog_by_speaker[i]
         if orders[i%2] == 2:
             docs = nlp(sent)
-            entities = [(i, i.label_, i.start_char, i.end_char) for i in docs.ents]
+            entities = [(i.text, i.label_, i.start_char, i.end_char) for i in docs.ents]
             # First check detectable entities
             if IS_ASK_ADDRESS:
                 IS_ASK_ADDRESS = False
                 has_address = get_address(sent[4:].strip())
                 print("PRIVATE INFO:", has_address)
+                private_tokens.append(has_address)
 
             elif entities != []:
                 for ent in entities:
                     if ent[1] in ['ORG','PERSON','LOC']:
                         print("PRIVATE INFO:", ent[0])
+                        private_tokens.append(ent[0])
 
             # Then check non-detectable entities by rules
             has_phone = get_phone(sent)
             if has_phone:
                 print("PRIVATE INFO:", has_phone)
+                private_tokens.append(has_phone)
+
             has_order_number = get_order_num(sent)
             if has_order_number:
                 print("PRIVATE INFO:", has_order_number)
-                
+                private_tokens.append(has_order_number)
+
         # For address, we check for template for now. will generalize later
         elif sent[4:].strip() in track_package_templates["address"]["request"]:
             IS_ASK_ADDRESS = True
 
 
-        loc += len(dialog_by_speaker[i])
+    return private_tokens
 
 
 def private_token_classifier(dialog, domain, tokenizer):
@@ -117,30 +120,59 @@ def private_token_classifier(dialog, domain, tokenizer):
     if domain != "track_package":
         raise NotImplementedError("Only support track package domain now")
         
-    private_info_by_char = detect_private_tokens(dialog, domain)
+    private_tokens = detect_private_tokens(dialog, domain)
+    print("Private Token List", private_tokens)
+    
+
+    tokens = tokenizer.tokenize(dialog)
+    print("Encoded Tokens", tokens)
+
+    encoded_labels = []
+    queue = private_tokens.copy()
+    for t in range(len(tokens)):
+        lab = 0
+        curr_enc_token = tokens[t].strip()
+        if queue != []:
+            curr_private_token = queue[0].strip()
+        
+            if curr_enc_token != "" and curr_private_token.startswith(curr_enc_token):
+                print("A",curr_private_token,curr_enc_token)
+                curr_private_token = curr_private_token[len(curr_enc_token):]
+                lab = 1
+            elif curr_enc_token[1:] != "" and curr_private_token.startswith(curr_enc_token[1:]):
+                print("B",curr_private_token,curr_enc_token[1:])
+                curr_private_token = curr_private_token[len(curr_enc_token)-1:]
+                lab = 1
+            
+            if curr_private_token != "":
+                queue[0] = curr_private_token
+            else:
+                queue = queue[1:]
+ 
+        encoded_labels.append(lab)
+
+    print(encoded_labels)
 
     
     
-    # encoded_ids = tokenizer.encode(dialog)
-    # print("Encoded IDs:", encoded_ids)
-    # tokens = tokenizer.tokenize(dialog)
-    # print("Tokens", tokens)
     
     
 
 
-example_input = """SYS: Hello, I am with customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name please?
-USR: I am David Scales.
-SYS: Verify your phone number please.
-USR: 1606220154.
+example_input = """SYS: Hello, I am with customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Can you verify your full name so I can look that up?
+USR: Michael Park
+SYS: Ok, let me get your phone number really quick.
+USR: You can reach me at 347-367-3553.
 SYS: Verify your order number please.
-USR: 849-37907-2687
-SYS: Could you please confirm your shipping address?
-USR: My address is 6448 Paula Turnpike North Ashley, VT 32004.
-SYS: The tracking number of your package is 78. Anything else?
-USR: That's it. Thanks!"""
+USR: Sure, it is 358-76768-2727
+SYS: We will need the shipping address as well.
+USR: My address is 9128 Chad Courts Christinastad, WV 27397.
+SYS: The tracking number of your package is 71. What else can I do?
+USR: All good. See you.
+SYS: It was a great pleasure helping you."""
+
 
 tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
 #tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
