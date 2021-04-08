@@ -7,6 +7,9 @@ python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_ls
 
 # dp, gpt2
 python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokenizer gpt2
+
+# partial dp, lstm
+python -u main.py -bs 7 --lr 1e-2 -dp --cuda cuda:1 2>&1 | tee logs/partial_dp/torch_lstm.log
 """
 # coding: utf-8
 import argparse
@@ -21,6 +24,7 @@ from statistics import mean
 import math
 
 import data
+import utils
 from lstm_model import DPLSTMModel
 from transformers import get_linear_schedule_with_warmup
 from torch.utils.data import DataLoader, Dataset
@@ -95,6 +99,8 @@ parser.add_argument('--warmup_steps', type=int, default=5_000,
                     help='warm up steps')
 parser.add_argument('--sigma', type=float, default=0.5,
                     help='sigma')
+parser.add_argument('--max_per_sample_grad_norm', '-norm', type=float, default=0.5,
+                    help='max_per_sample_grad_norm')
 parser.add_argument('--with_scheduler', action='store_true',
                     help='use lr scheduler')
 parser.add_argument('--virtual_step', type=int, default=1,
@@ -115,6 +121,9 @@ device = torch.device(args.cuda)
 ###############################################################################
 tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
 ntokens = tokenizer.vocab_size
+PAD_TOKEN = '<pad>'
+ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+PAD_TOKEN_ID = tokenizer.encode(PAD_TOKEN)[0]
 
 # ntokens = len(corpus.dictionary)  
 
@@ -150,7 +159,8 @@ if args.data_type == 'doc':
     # train_data = batchify(corpus.train, args.batch_size)
     # val_data = batchify(corpus.valid, eval_batch_size)
     # test_data = batchify(corpus.test, eval_batch_size)
-    train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
+    print(f"training data: {args.data}")
+    train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit)
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
     test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, args.batch_size, args.bptt)
 else:
@@ -202,14 +212,14 @@ else:
 
 # Privacy engine hyper-parameters
 sigma = args.sigma
-max_per_sample_grad_norm = 0.1
+max_per_sample_grad_norm = args.max_per_sample_grad_norm
 delta = 8e-5
 
 
 if args.model != "Transformer": 
-    config_str = f"model-{args.model}__ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
+    config_str = f"data-{args.data.split('/')[-1]}__model-{args.model}__ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
 else:
-    config_str = f"model-{args.model}__ntokens-{ntokens}"
+    config_str = f"data-{args.data}__model-{args.model}__ntokens-{ntokens}"
 config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}"
 if args.dp:
     config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
@@ -229,6 +239,7 @@ if args.model != 'Transformer':
         embedding_size=args.emsize,
         hidden_size=args.nhid,
         vocab_size=ntokens,
+        pad_token_id=PAD_TOKEN_ID,
         num_lstm_layers=args.num_layers,
         dropout=args.dropout,
         bidirectional=args.bidirectional,
@@ -275,9 +286,9 @@ else:
 # training parameters
 TOTAL_OPTIMIZATION_STEPS = len(train_dataloader) * args.epochs 
 if args.model != 'Transformer':
-    criterion = nn.NLLLoss()
+    criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID)
 else:
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID)
 optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
 # exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 if args.with_scheduler:
@@ -297,6 +308,7 @@ if args.dp:
         target_delta=delta,
         secure_rng=secure_rng,
     )
+    # import pdb; pdb.set_trace()
     privacy_engine.attach(optimizer)
 else:
     privacy_engine = None
@@ -342,9 +354,11 @@ def evaluate(data_source, privacy_engine=None):
     #     hidden = model.init_hidden(eval_batch_size)
     with torch.no_grad():
         for batch in data_source:
-            batch = pad_sequence(batch, batch_first=True).to(device)
-            source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
-            source_if_private, target_if_private = torch.empty(source.shape).random_(2), torch.empty(target.shape).random_(2)
+            source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch))
+            target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch))
+            seq_lens = list(map(lambda x: len(x) - 1, batch))
+            source = pad_sequence(source, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+            target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
             del batch
             if args.model == 'Transformer':
                 transformer_outputs = backbone(source)
@@ -360,7 +374,7 @@ def evaluate(data_source, privacy_engine=None):
                 # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
                 # total_loss += len(data) * output.loss.item()
             else:
-                output, hidden = model(source, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+                output, hidden = model(source, seq_lens=seq_lens, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
                 target = target.view(-1)
                 total_loss += source.shape[1] * criterion(output, target).item()
@@ -380,8 +394,12 @@ def train():
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
     for batch_i, batch in enumerate(tqdm(train_dataloader)):
-        batch = pad_sequence(batch, batch_first=True).to(device)
-        source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
+        import pdb; pdb.set_trace()
+        source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch))
+        target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch))
+        seq_lens = list(map(lambda x: len(x) - 1, batch))
+        source = pad_sequence(source, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+        target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
         del batch
         # Starting each batch, we detach the hidden state from how it was previously produced.
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
@@ -403,7 +421,7 @@ def train():
             # loss = output.loss
         else:
             # hidden = repackage_hidden(hidden)
-            output, hidden = model(source, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+            output, hidden = model(source, seq_lens=seq_lens, hidden=None) # each datapoint is treated as independent from each other, as required by DP
             target = target.view(-1)
             acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
             loss = criterion(output, target)
@@ -456,59 +474,114 @@ def train():
             break
 
 
-def train_partialdp():
+def train_partialdp_rnn(privacy_engine):
     # Turn on training mode which enables dropout.
     model.train()
     losses = []
     start_time = time.time()
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
-    for batch_i, batch in enumerate(tqdm(train_dataloader)):
-        batch = pad_sequence(batch, batch_first=True).to(device)
-        source, target = batch[:, :-1].clone(), batch[:, 1:].clone()
-        source_if_private, target_if_private = torch.empty(source.shape).random_(2), torch.empty(target.shape).random_(2)
-        del batch
-        # Starting each batch, we detach the hidden state from how it was previously produced.
-        # If we didn't, the model would try backpropagating all the way to start of the dataset.
-        model.zero_grad()
-        # import pdb; pdb.set_trace()
-        if args.model == 'Transformer':
-            with torch.no_grad():
-                transformer_outputs = backbone(source)
-                hidden_states = transformer_outputs[0]
-            logits = model(hidden_states)
-            logits = logits.view(-1, tokenizer.vocab_size)
-            target = target.view(-1)
-            acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
-            loss = criterion(logits, target)
-        else:
-            # hidden = repackage_hidden(hidden)
-            output, hidden = model(source, hidden=None) # each datapoint is treated as independent from each other, as required by DP
-            target = target.view(-1)
-            acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
-            loss = criterion(output, target)
-        loss.backward()
+    for batch_i, batch in enumerate(train_dataloader):
+        hidden = model.init_hidden(args.batch_size)
+        max_split = max(list(map(len, batch)))
+        for split_i in range(max_split):
+            # import pdb; pdb.set_trace()    
+            minibatch_src = [torch.tensor(b[split_i][0]).type(torch.int64) for b in batch if split_i < len(b) and len(b[split_i][0])]
+            minibatch_tgt = [torch.tensor(b[split_i][1]).type(torch.int64) for b in batch if split_i < len(b) and len(b[split_i][1])]
+            minibatch_positive_idx = [b_i for b_i, b in enumerate(batch) if split_i < len(b) and len(b[split_i][0]) > 0]
+            seq_lens = list(map(len, minibatch_src))
+            minibatch_src = pad_sequence(minibatch_src, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
+            minibatch_tgt = pad_sequence(minibatch_tgt, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
+            
+            # hidden
+            cur_hidden = [h[:, minibatch_positive_idx, :] for h in hidden]
+            if split_i % 2 == 0:
+                # import pdb; pdb.set_trace()   
+                # non-private update
+                # privacy_engine.detach()
 
-        if args.dp:
-            if (i % args.virtual_step) == (args.virtual_step-1):
-                if not args.dp:
-                    torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+                model.zero_grad()
+
+                # start RNN
+                cur_hidden = repackage_hidden(cur_hidden)
+                output, cur_hidden = model(minibatch_src, seq_lens=seq_lens, hidden=cur_hidden) # each datapoint is treated as independent from each other, as required by DP
+
+                # loss
+                minibatch_tgt = minibatch_tgt.view(-1)
+                acc = (output.argmax(axis=1)==minibatch_tgt).sum().item()/minibatch_tgt.shape[0]
+                loss = criterion(output, minibatch_tgt)
+
+                # update
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
+                optimizer.step(public=True)
+                if args.with_scheduler:
+                    scheduler.step()
+                optimizer.zero_grad()
+
+                losses.append(loss.item())
+                # put hidden state back
+                for h_i, h in enumerate(hidden):
+                    h[:, minibatch_positive_idx, :] = cur_hidden[h_i].to(device)
+
+            else:
+                # import pdb; pdb.set_trace()
+                # private update
+                # privacy_engine.attach(optimizer)
+                model.zero_grad()
+
+                # start RNN
+                cur_hidden = repackage_hidden(cur_hidden)
+                output, cur_hidden = model(minibatch_src, hidden=cur_hidden) # each datapoint is treated as independent from each other, as required by DP
+
+                # loss
+                minibatch_tgt = minibatch_tgt.view(-1)
+                acc = (output.argmax(axis=1)==minibatch_tgt).sum().item()/minibatch_tgt.shape[0]
+                loss = criterion(output, minibatch_tgt)
+
+                # update
+                loss.backward()
                 optimizer.step()
                 if args.with_scheduler:
                     scheduler.step()
                 optimizer.zero_grad()
-            else:
-                optimizer.virtual_step()
 
-        else:
-            if not args.dp:
-                torch.nn.utils.clip_grad_norm_(model.parameters(), args.clip)        
-            optimizer.step()
-            if args.with_scheduler:
-                scheduler.step()
-            optimizer.zero_grad()
+                losses.append(loss.item())
+                # add noise to hidden
+                private_batch_size = cur_hidden[0].shape[1]
+                # import pdb; pdb.set_trace()
+                noisy_hidden = []
+                for h in cur_hidden: # hidden = (num_layer*bs*200, num_layer*bs*200)
+                    # import pdb; pdb.set_trace()
+                    # clip h
+                    noisy_h = []
+                    per_sample_norm = h.norm(2, dim=2).detach().to('cpu').numpy()[0].tolist() # len = batch_size
+                    per_sample_clip_factor = [1/max(1, nrm/max_per_sample_grad_norm) for nrm in per_sample_norm]
+                    for _b_i, factor in enumerate(per_sample_clip_factor):
+                        # add noise per sample
+                        clipped_h = factor*h[:, [_b_i], :]
+                        noise = utils.generate_noise(private_engine=privacy_engine, 
+                                                     max_grad_norm=min(per_sample_norm[_b_i], max_per_sample_grad_norm), 
+                                                     reference=clipped_h)
+                        clipped_h += noise
+                        noisy_h.append(clipped_h)
+                    noisy_hidden.append(torch.cat(noisy_h, dim=1))
 
-        losses.append(loss.item())
+                    # h = torch.cat([factor*h[:, [h_i], :] for h_i, factor in enumerate(per_sample_clip_factor)], dim=1)                    
+                    # max_norm_per_batch = min([max_per_sample_grad_norm]+per_sample_norm)
+                    # noises.append(utils.generate_noise(private_engine=privacy_engine, 
+                    #                         max_grad_norm=max_norm_per_batch, 
+                    #                         reference=h))
+
+                    # if privacy_engine.loss_reduction == "mean":
+                    #     noises /= private_batch_size
+                    # h += noises
+
+                # put hidden state back
+                for h_i, h in enumerate(hidden):
+                    h[:, minibatch_positive_idx, :] = noisy_hidden[h_i].to(device)
+
+        
 
         if batch_i % args.log_interval == 0 and batch_i > 0:
             elapsed = time.time() - start_time
@@ -534,7 +607,6 @@ def train_partialdp():
 
         if args.dry_run:
             break
-
 
 
 def export_onnx(path, batch_size, seq_len):
@@ -567,7 +639,8 @@ try:
     print('-' * 89)
     for epoch in range(1, args.epochs+1):
         epoch_start_time = time.time()
-        train()
+        # train()
+        train_partialdp_rnn(privacy_engine=privacy_engine)
         val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
         try:
             ppl = math.exp(val_loss)
