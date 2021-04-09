@@ -5,6 +5,8 @@ import json
 from torch.utils.data import DataLoader, Dataset
 from glob import glob
 import numpy as np
+import utils
+import pandas as pd
 
 class Dictionary(object):
     def __init__(self, path):
@@ -146,7 +148,8 @@ class CustomerDataset(Dataset):
         flat_dial_tokens = [turn_tokens for turn in dial_tokens for turn_tokens in turn]
         flat_dial_tokens = bos_id + flat_dial_tokens + eos_id
         
-        return torch.tensor(flat_dial_tokens).type(torch.int64)
+        return flat_dial_tokens
+        # return torch.tensor(flat_dial_tokens).type(torch.int64)
         
     def collate(self, unpacked_data):
         return unpacked_data
@@ -161,9 +164,10 @@ class CorpusDataset(Dataset):
 
         self.data = self.build_data(path)
 
-    def build_data(self, path):
+    def build_data( self, path):
         dials = []
-        start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
+        assert self.tokenizer.bos_token == self.tokenizer.eos_token
+        # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
 
         token_ids = []
@@ -171,7 +175,7 @@ class CorpusDataset(Dataset):
             with open(fle, 'r') as fh:
                 for line in fh:
                     line = line.rstrip('\n')
-                    line_token_ids = start_token_id + self.tokenizer.encode(line) + end_token_id
+                    line_token_ids = self.tokenizer.encode(line) + end_token_id
                     token_ids.extend(line_token_ids)
 
         nbatch = len(token_ids) // self.bsz
@@ -193,8 +197,74 @@ class CorpusDataset(Dataset):
         return len(self.data)
     
     def __getitem__(self, index):
-        sequences = self.data[index]        
-        return torch.tensor(sequences).type(torch.int64)
+        sequences = self.data[index]
+        return sequences
+        # return torch.tensor(sequences).type(torch.int64)
 
     def collate(self, unpacked_data):
         return unpacked_data
+
+class CorpusPartialDPDataset(CorpusDataset):
+    def __init__(self, path, tokenizer, bsz, bptt, is_private_func):
+        self.is_private_func = is_private_func
+        super().__init__(path, tokenizer, bsz, bptt)
+        # import pdb; pdb.set_trace()
+        print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
+
+    def build_data(self, path):
+        dials = []
+        assert self.tokenizer.bos_token == self.tokenizer.eos_token # only if bos = eos, can we add eos only without adding bos below in line_token_ids = self.tokenizer.encode(line) + end_token_id 
+        # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
+        end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
+
+        token_ids = []
+        for fle in glob(os.path.join(path, '*')):
+            with open(fle, 'r') as fh:
+                for line in fh:
+                    line = line.rstrip('\n')
+                    line_token_ids = self.tokenizer.encode(line) + end_token_id # because bos = eos
+                    token_ids.extend(line_token_ids)
+
+        nbatch = len(token_ids) // self.bsz
+        # Trim off any extra elements that wouldn't cleanly fit (remainders).
+        token_ids = token_ids[:(nbatch * self.bsz)]
+        # Evenly divide the data across the bsz batches.
+        token_ids = np.array(token_ids).reshape((self.bsz, -1)).transpose() # [-1, bsz]
+
+        sequences = []
+        texts = []
+        is_privates = []
+        split_sequences = []
+        for i in range(0, len(token_ids) - 1, self.bptt):
+            # data, targets = get_batch(data_source, i)
+            seq_len = min(self.bptt, len(token_ids) - 1 - i)
+            sequence = token_ids[i:i+seq_len+1].transpose()
+            cur_sequences = sequence.tolist()
+            sequences += cur_sequences
+            cur_texts = []
+            cur_is_privates = []
+            cur_split_sequences = []
+            for seq in cur_sequences:
+                split_text = [self.tokenizer.decode(tok) for tok in seq]
+                cur_texts.append(split_text)
+                
+                is_private = self.is_private_func(split_text)
+                cur_is_privates.append(is_private)
+                
+                # import pdb
+                # pdb.set_trace()
+                split_seq = utils.split_is_private(is_private, seq)
+                cur_split_sequences.append(split_seq)
+
+            texts += cur_texts
+            is_privates += cur_is_privates
+            split_sequences += cur_split_sequences
+
+
+        return list(zip(sequences, texts, is_privates, split_sequences))      
+
+    
+    def __getitem__(self, index):
+        tok_ids, texts, is_privates, split_sequence = self.data[index]    
+        return split_sequence
+
