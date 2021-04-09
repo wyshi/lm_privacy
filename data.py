@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader, Dataset
 from glob import glob
 import numpy as np
 import utils
+import pandas as pd
 
 class Dictionary(object):
     def __init__(self, path):
@@ -207,7 +208,8 @@ class CorpusPartialDPDataset(CorpusDataset):
     def __init__(self, path, tokenizer, bsz, bptt, is_private_func):
         self.is_private_func = is_private_func
         super().__init__(path, tokenizer, bsz, bptt)
-
+        # import pdb; pdb.set_trace()
+        print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
 
     def build_data(self, path):
         dials = []

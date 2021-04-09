@@ -62,6 +62,7 @@ class DPLSTMModel(nn.Module):
 
     def forward(self, x, seq_lens=None, hidden=None):
         # x = x.transpose(0, 1) # because batch_first is True
+        # import pdb; pdb.set_trace()
         emb = self.drop(self.encoder(x))  # -> [B, T, D]
         if seq_lens is not None:
             emb = pack_padded_sequence(emb, seq_lens, batch_first=True, enforce_sorted=False, )
