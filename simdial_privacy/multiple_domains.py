@@ -6,11 +6,11 @@ python multiple_domains.py --domain track_package --complexity mix --train_size 
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
-from simdial.random_entity import UsedSlotValues, GenerateRandomSlotValue, generate_n_rand_entities
 import string
 import argparse
 import os
 import json
+import pandas as pd
 import numpy as np
 
 class RestSpec(DomainSpec):
@@ -330,8 +330,7 @@ class TrackPackageSpec(DomainSpec):
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
                                                 ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
                     }
-
-        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = generate_n_rand_entities(20,self.one_token_private_info)
+        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_500.csv")
 
         self.usr_slots = [("name", "customer name", rand_names),
                     ("phone", "customer phone number", rand_phone_numbers),
@@ -343,10 +342,21 @@ class TrackPackageSpec(DomainSpec):
 
         self.db_size = 200
 
+def read_rand_entity_db(path):
+    df = pd.read_csv(path)
+
+    rand_names = df["name"].tolist()
+    rand_addresses = df["address"].tolist()
+    rand_phone_numbers = df["phone_number"].tolist()
+    rand_card_numbers = df["card_number"].tolist()
+    rand_order_numbers = df["order_number"].tolist()
+    
+    return rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers
+
 def json_to_txt(path):
     assert os.path.exists(path)
     fle = os.listdir(path)
-    save_dir = f'../data/simdial/{path.split('/')[-1]}'
+    save_dir = f"../data/simdial/{path.split('/')[-1]}"
     assert len(fle) == 1, f'{path} has {len(fle)} jsons, please delete the ones you do not want'
     assert len(os.listdir(save_dir)) == 0, f'{save_dir} is not empty, please make sure it is empty'
     
@@ -378,7 +388,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     save_dir = args.save_dir
-    print(save_dir)
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
 

@@ -1,5 +1,6 @@
 import re
 import torch
+import pandas as pd
 from transformers import GPT2Tokenizer
 from transformers import RobertaTokenizer
 from spacy import displacy
@@ -60,6 +61,8 @@ def detect_private_tokens(dialog, domain):
     IS_ASK_ADDRESS = False
     private_tokens = []
     dialog_by_speaker = dialog.strip().split("\n")
+    db = pd.read_csv("database/database_500.csv")
+    address_db = db['address'].tolist()
 
     # recognize dialog order, assume the turns are 1-1, could generalize later
     if dialog.startswith("SYS"):
@@ -79,9 +82,12 @@ def detect_private_tokens(dialog, domain):
             # First check detectable entities
             if IS_ASK_ADDRESS:
                 IS_ASK_ADDRESS = False
-                has_address = get_address(sent[4:].strip())
-                print("PRIVATE INFO:", has_address)
-                private_tokens.append(has_address)
+
+                for ad in address_db:
+                    if ad in sent:
+                        #has_address = get_address(sent[4:].strip())
+                        print("PRIVATE INFO:", ad)
+                        private_tokens.append(ad)
 
             elif entities != []:
                 for ent in entities:
@@ -136,11 +142,11 @@ def private_token_classifier(dialog, domain, tokenizer):
             curr_private_token = queue[0].strip()
         
             if curr_enc_token != "" and curr_private_token.startswith(curr_enc_token):
-                print("A",curr_private_token,curr_enc_token)
+                print("Private Token exists, Case 1: ",curr_private_token,curr_enc_token)
                 curr_private_token = curr_private_token[len(curr_enc_token):]
                 lab = 1
             elif curr_enc_token[1:] != "" and curr_private_token.startswith(curr_enc_token[1:]):
-                print("B",curr_private_token,curr_enc_token[1:])
+                print("Private Token exists, Case 2: ",curr_private_token,curr_enc_token[1:])
                 curr_private_token = curr_private_token[len(curr_enc_token)-1:]
                 lab = 1
             
@@ -151,7 +157,8 @@ def private_token_classifier(dialog, domain, tokenizer):
  
         encoded_labels.append(lab)
 
-    print(encoded_labels)
+    print(list(zip(tokens,encoded_labels)))
+    return encoded_labels
 
     
     
@@ -168,13 +175,11 @@ USR: You can reach me at 347-367-3553.
 SYS: Verify your order number please.
 USR: Sure, it is 358-76768-2727
 SYS: We will need the shipping address as well.
-USR: My address is 9128 Chad Courts Christinastad, WV 27397.
+USR: My address is 226 Nicole Ramp Apt. 929 Prestonfurt, UT 29527.
 SYS: The tracking number of your package is 71. What else can I do?
 USR: All good. See you.
 SYS: It was a great pleasure helping you."""
 
-
-tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
-#tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 private_token_classifier(example_input, "track_package", tokenizer)
 
