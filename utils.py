@@ -7,30 +7,6 @@ from spacy import displacy
 import en_core_web_sm
 
 nlp = en_core_web_sm.load()
-track_package_templates = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
-                           "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?"]},
-
-                            "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s."],
-                                        "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
-
-                            "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s."],
-                                            "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
-
-                            "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s."],
-                                        "request": ["When can I receive my package", "When will it be delivered?"],
-                                        "yn_question": {'status': ["Is it shipped?"],
-                                                    'deliver': ["Is it delivered?"]
-                                                    }},
-                            "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
-                                        "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
-
-                            "default": {"inform": ["The tracking number of your package is %s."],
-                                        "request": ["Where is my package?",
-                                                    "Could you please help me track my package?",
-                                                    "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
-                                                        ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
-                            }
-
 
 def detect_private_tokens(dialog, domain):
     """
@@ -107,7 +83,7 @@ def detect_private_tokens(dialog, domain):
                 private_tokens.append(has_order_number)
 
         # For address, we check for template for now. will generalize later
-        elif sent[4:].strip() in track_package_templates["address"]["request"]:
+        elif "address" in sent:
             IS_ASK_ADDRESS = True
 
 
