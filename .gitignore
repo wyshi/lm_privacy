@@ -20,4 +20,5 @@ attacks/*.json
 *.txt
 data.zip
 
+tmp/
 

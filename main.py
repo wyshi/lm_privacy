@@ -1,6 +1,7 @@
 """
 # no dp
-python -u main.py -bs 256 --lr 20 2>&1 | tee logs/nodp/torch_lstm.log
+mkdir -p logs/nodp/20210409/1713
+python -u main.py -bs 256 --lr 20 --data data/wikitext-2-add1 --cuda cuda:3 2>&1 | tee logs/nodp/20210409/1713/lstm.log
 
 # dp, lstm
 python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
@@ -639,6 +640,12 @@ def export_onnx(path, batch_size, seq_len):
     hidden = model.init_hidden(batch_size)
     torch.onnx.export(model, (dummy_input, hidden), path)
 
+def save_model(base_dir, ppl, acc, epoch):
+    cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}"
+    with open(cur_save_dir, 'wb') as f:
+        torch.save(model, f)
+    print(f"model saved to {cur_save_dir}, ppl: {ppl}")
+    return cur_save_dir
 
 # Loop over epochs.
 lr = args.lr
@@ -650,15 +657,20 @@ try:
     epoch_start_time = time.time()
     val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
     try:
-        ppl = math.exp(val_loss)
+        valid_ppl = math.exp(val_loss)
     except:
-        ppl = math.inf
+        valid_ppl = math.inf
     print('-' * 89)
     print('| end of epoch {:3d} | time: {:5.2f}s | valid loss {:5.2f} | '
             'valid ppl {:8.2f} | valid acc {:.3f}'.format(epoch, (time.time() - epoch_start_time),
-                                        val_loss, ppl, nextword_acc))
+                                        val_loss, valid_ppl, nextword_acc))
     print(privacy_printstr)
     print('-' * 89)
+
+    # save the model for the first time before training
+    cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch)
+    BEST_MODEL_DIR = cur_save_dir
+
     for epoch in range(1, args.epochs+1):
         epoch_start_time = time.time()
         if args.partial and args.dp:
@@ -667,23 +679,21 @@ try:
             train()
         val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
         try:
-            ppl = math.exp(val_loss)
+            valid_ppl = math.exp(val_loss)
         except:
-            ppl = math.inf
+            valid_ppl = math.inf
         print('-' * 89)
         print('| end of epoch {:3d} | time: {:5.2f}s | valid loss {:5.2f} | '
                 'valid ppl {:8.2f} | valid acc {:.3f}'.format(epoch, (time.time() - epoch_start_time),
-                                           val_loss, ppl, nextword_acc))
+                                           val_loss, valid_ppl, nextword_acc))
         print(privacy_printstr)
         print('-' * 89)
+        # save the model
+        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch)
         # Save the model if the validation loss is the best we've seen so far.
         if not best_val_loss or val_loss < best_val_loss:
-            with open(args.save, 'wb') as f:
-                torch.save(model, f)
             best_val_loss = val_loss
-            print(f"model saved to {args.save}, ppl: {best_val_loss}")
-            with open(args.save.replace('.pt', '.ppl'), 'w') as f:
-                f.write(f"model saved to {args.save}, ppl: {best_val_loss}\n")
+            BEST_MODEL_DIR = cur_save_dir
         else:
             # Anneal the learning rate if no improvement has been seen in the validation dataset.
             if args.with_scheduler:
@@ -698,7 +708,7 @@ except KeyboardInterrupt:
     print('Exiting from training early')
 
 # Load the best saved model.
-with open(args.save, 'rb') as f:
+with open(BEST_MODEL_DIR, 'rb') as f:
     model = torch.load(f)
     # after load the rnn params are not a continuous chunk of memory
     # this makes them a continuous chunk, and will speed up forward pass

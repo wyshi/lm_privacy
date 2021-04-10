@@ -13,8 +13,12 @@ from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 import json
 '''
+about 5 mins for 6-digit canary " My SSN is 341752."
 python attacks/canary_insertion.py -bs 1024 --checkpoint model/nodp/20210408/223716/data-wikitext-2-add10b__model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-50258__bs-256__bptt-35__lr-20.0__dp-False_partial-False.pt 
 '''
+CANARY = " My SSN is 341752."
+TOTAL_CANDIDATES = 1000_000
+
 class CanaryDataset(Dataset):
     def __init__(self, canary, tokenizer):
         self.canary = canary
@@ -30,6 +34,9 @@ class CanaryDataset(Dataset):
                     for l in range(10):
                         for m in range(10):
                             for n in range(10):
+                                # for o in range(10):
+                                    # for p in range(10):
+                                    #     for q in range(10):
                                 text = f' My SSN is {i}{j}{k}{l}{m}{n}.'
                                 texts.append(text)
                                 encoded_texts.append(tokenizer.encode(text)) 
@@ -50,7 +57,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 Language Model')
 
     # Model parameters.
-    parser.add_argument('--checkpoint', type=str, default='/home/wyshi/privacy/model/nodp/model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-33278__bs-256__bptt-35__lr-20.0__dp-False.pt',
+    parser.add_argument('--checkpoint', '-ckpt', type=str, default='/home/wyshi/privacy/model/nodp/model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-33278__bs-256__bptt-35__lr-20.0__dp-False.pt',
                         help='model checkpoint to use')
     parser.add_argument('--outf', type=str, default='attacks/canary_sorted_ppl.json',
                         help='output file for generated text')
@@ -75,7 +82,7 @@ if __name__ == "__main__":
     # Load model
     ###############################################################################
     with open(args.checkpoint, 'rb') as f:
-        model = torch.load(f).to(device)
+        model = torch.load(f, map_location=device)
     model.eval()
 
     ###############################################################################
@@ -88,8 +95,7 @@ if __name__ == "__main__":
     ###############################################################################
     # load data
     ###############################################################################
-    canary = " My SSN is 341752."
-    canary_corpus = CanaryDataset(canary, tokenizer)
+    canary_corpus = CanaryDataset(CANARY, tokenizer)
     dataloader = DataLoader(dataset=canary_corpus, 
                             shuffle=False, 
                             batch_size=args.batch_size, 
@@ -109,14 +115,16 @@ if __name__ == "__main__":
     print("sorting...")
     sorted_ppls = {k: (i+1, v) for i, (k, v) in enumerate(sorted(ppls.items(), key=lambda item: item[1]))}
     N = len(sorted_ppls)
-    canary_rank, canary_ppl = sorted_ppls[canary]
+    canary_rank, canary_ppl = sorted_ppls[CANARY]
 
     with open(args.outf, 'w') as fh:
         json.dump(sorted_ppls, fh)
 
-    canary_exposure = math.log(1000_000) - math.log(canary_rank)
+    canary_exposure = math.log(TOTAL_CANDIDATES) - math.log(canary_rank)
     print("canary exposure")
     print(canary_exposure)
+    print("canary ranking")
+    print(canary_rank)
 
 
 
