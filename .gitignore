@@ -16,4 +16,8 @@ tutorials/opacus/building_text_classifier.ipynb
 data/simdial/
 simdial_privacy/test/
 simdial_privacy/train/
+attacks/*.json
+*.txt
+data.zip
+
 

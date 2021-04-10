@@ -2,6 +2,7 @@ import torch
 from torch import nn
 from opacus.layers import DPLSTM
 import torch.nn.functional as F
+from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 
 class DPLSTMModel(nn.Module):
     def __init__(
@@ -9,6 +10,7 @@ class DPLSTMModel(nn.Module):
         embedding_size,
         hidden_size,
         vocab_size,
+        pad_token_id,
         num_lstm_layers=1,
         dropout=0.5,
         bidirectional=False,
@@ -21,6 +23,7 @@ class DPLSTMModel(nn.Module):
         self.hidden_size = hidden_size
         self.vocab_size = vocab_size
         self.nlayers = num_lstm_layers
+        self.pad_token_id = pad_token_id
 
         self.drop = nn.Dropout(dropout)
         self.encoder = nn.Embedding(vocab_size, embedding_size)
@@ -57,10 +60,16 @@ class DPLSTMModel(nn.Module):
         nn.init.zeros_(self.decoder.weight)
         nn.init.uniform_(self.decoder.weight, -initrange, initrange)
 
-    def forward(self, x, hidden=None):
+    def forward(self, x, seq_lens=None, hidden=None):
         # x = x.transpose(0, 1) # because batch_first is True
+        # import pdb; pdb.set_trace()
         emb = self.drop(self.encoder(x))  # -> [B, T, D]
+        if seq_lens is not None:
+            emb = pack_padded_sequence(emb, seq_lens, batch_first=True, enforce_sorted=False, )
         output, hidden = self.lstm(emb, hidden)  # -> [B, T, H]
+        if seq_lens is not None:
+            output, output_lens = pad_packed_sequence(output, batch_first=True, padding_value=self.pad_token_id)
+
         # output = output.transpose(0, 1)
         # x = x[:, -1, :]  # -> [B, H]
         output = self.drop(output)
