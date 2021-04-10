@@ -65,5 +65,5 @@ fake_dataset = []
 for i in range(10000):
   fake_dataset.append([str(i), round(random.uniform(1, 10), 2),  random.randint(0,1)])
 
-best_cutoff = mem_analyze(fake_dataset, increment=0.1, yes_print=true)
+best_cutoff = mem_analyze(fake_dataset, increment=0.1, yes_print=True)
 print(best_cutoff)

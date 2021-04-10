@@ -12,6 +12,11 @@ import math
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 import json
+
+from scipy.integrate import quad
+import scipy.stats
+import numpy as np
+
 '''
 about 5 mins for 6-digit canary " My SSN is 341752."
 python attacks/canary_insertion.py -bs 1024 --checkpoint model/nodp/20210408/223716/data-wikitext-2-add10b__model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-50258__bs-256__bptt-35__lr-20.0__dp-False_partial-False.pt 
@@ -51,6 +56,27 @@ class CanaryDataset(Dataset):
         
     def collate(self, unpacked_data):
         return unpacked_data
+
+def estimate(pp, low, high):
+      #----------------------------------------------------------------------------------------#
+  # Normal Distribution
+
+  mean = (low + high)/2
+  std = 3.0
+
+  x = np.linspace(low, high, 10000)
+
+  y = scipy.stats.norm.pdf(x,mean,std)
+
+  #----------------------------------------------------------------------------------------#
+
+  def normal_distribution_function(x):
+      value = scipy.stats.norm.pdf(x,mean,std)
+      return value
+
+  res, err = quad(normal_distribution_function, 0, pp)
+
+  return math.log(res, 2) * -1
 
 
 if __name__ == "__main__":
