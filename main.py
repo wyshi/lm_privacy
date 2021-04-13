@@ -505,7 +505,7 @@ def train(privacy_engine=None):
                     valid_ppl = math.inf
                 print(privacy_printstr)
                 _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
-
+                model.train()
 
 
 
@@ -677,7 +677,7 @@ def train_partialdp_rnn(privacy_engine):
                     valid_ppl = math.inf
                 print(privacy_printstr)
                 _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
-
+                model.train()
 
         if args.dry_run:
             break
