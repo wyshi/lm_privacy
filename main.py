@@ -401,11 +401,16 @@ def evaluate(data_source, privacy_engine=None):
                 acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
+        target_delta = privacy_engine.target_delta
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    return total_loss / total_tokens, privacy_printstr, acc, epsilon, privacy_engine.target_delta, best_alpha
+    else:
+        epsilon = '-'
+        target_delta = '-'
+        best_alpha = '-'
+    return total_loss / total_tokens, privacy_printstr, acc, epsilon, target_delta, best_alpha
 
 
-def train():
+def train(privacy_engine=None):
     # Turn on training mode which enables dropout.
     model.train()
     losses = []
@@ -489,6 +494,21 @@ def train():
                 pass
             start_time = time.time()
             print(printstr)
+
+
+            # save the first epoch's ckpt for comparison with DP, save every batch
+            if (epoch == 1) and ((batch_i % (args.log_interval * 1) == 0)):
+                val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
+                try:
+                    valid_ppl = math.exp(val_loss)
+                except:
+                    valid_ppl = math.inf
+                print(privacy_printstr)
+                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+
+
+
+
 
         if args.dry_run:
             break
@@ -647,6 +667,18 @@ def train_partialdp_rnn(privacy_engine):
             start_time = time.time()
             print(printstr)
 
+
+            # save the first epoch's ckpt for comparison with DP, save every 5 batchs
+            if (epoch == 1) and ((batch_i % (args.log_interval * 5) == 0) or (batch_i == args.log_interval)):
+                val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
+                try:
+                    valid_ppl = math.exp(val_loss)
+                except:
+                    valid_ppl = math.inf
+                print(privacy_printstr)
+                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+
+
         if args.dry_run:
             break
 
@@ -695,7 +727,7 @@ try:
         if args.partial and args.dp:
             train_partialdp_rnn(privacy_engine=privacy_engine)
         else:
-            train()
+            train(privacy_engine=privacy_engine)
         val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
         try:
             valid_ppl = math.exp(val_loss)
