@@ -402,7 +402,7 @@ def evaluate(data_source, privacy_engine=None):
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    return total_loss / total_tokens, privacy_printstr, acc
+    return total_loss / total_tokens, privacy_printstr, acc, epsilon, privacy_engine.target_delta, best_alpha
 
 
 def train():
@@ -659,7 +659,7 @@ def export_onnx(path, batch_size, seq_len):
     hidden = model.init_hidden(batch_size)
     torch.onnx.export(model, (dummy_input, hidden), path)
 
-def save_model(base_dir, ppl, acc, epoch):
+def save_model(base_dir, ppl, acc, epoch, epsilon, delta, alpha):
     cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}"
     with open(cur_save_dir, 'wb') as f:
         torch.save(model, f)
@@ -674,7 +674,7 @@ best_val_loss = None
 try:
     epoch = 0
     epoch_start_time = time.time()
-    val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
+    val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
     try:
         valid_ppl = math.exp(val_loss)
     except:
@@ -687,7 +687,7 @@ try:
     print('-' * 89)
 
     # save the model for the first time before training
-    cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch)
+    cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
     BEST_MODEL_DIR = cur_save_dir
 
     for epoch in range(1, args.epochs+1):
@@ -696,7 +696,7 @@ try:
             train_partialdp_rnn(privacy_engine=privacy_engine)
         else:
             train()
-        val_loss, privacy_printstr, nextword_acc = evaluate(val_dataloader, privacy_engine=privacy_engine)
+        val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
         try:
             valid_ppl = math.exp(val_loss)
         except:
@@ -708,7 +708,7 @@ try:
         print(privacy_printstr)
         print('-' * 89)
         # save the model
-        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch)
+        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
         # Save the model if the validation loss is the best we've seen so far.
         if not best_val_loss or val_loss < best_val_loss:
             best_val_loss = val_loss
@@ -740,7 +740,7 @@ with open(BEST_MODEL_DIR, 'rb') as f:
         # model.lstm.flatten_parameters()
 
 # Run on test data.
-test_loss, privacy_printstr, test_nextword_acc = evaluate(test_dataloader, privacy_engine=privacy_engine)
+test_loss, privacy_printstr, test_nextword_acc, test_epsilon, test_delta, test_alpha = evaluate(test_dataloader, privacy_engine=privacy_engine)
 try:
     test_ppl = math.exp(test_loss)
 except:

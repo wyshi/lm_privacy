@@ -165,7 +165,6 @@ class CorpusDataset(Dataset):
         self.data = self.build_data(path)
 
     def build_data( self, path):
-        dials = []
         assert self.tokenizer.bos_token == self.tokenizer.eos_token
         # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
@@ -212,7 +211,6 @@ class CorpusPartialDPDataset(CorpusDataset):
         print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
 
     def build_data(self, path):
-        dials = []
         assert self.tokenizer.bos_token == self.tokenizer.eos_token # only if bos = eos, can we add eos only without adding bos below in line_token_ids = self.tokenizer.encode(line) + end_token_id 
         # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
