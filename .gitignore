@@ -20,4 +20,9 @@ attacks/*.json
 *.txt
 data.zip
 
+tmp/
+
+attacks/canary_insertion/
+attacks/membership_inference/
+
 
