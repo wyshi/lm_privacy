@@ -316,15 +316,15 @@ class TrackPackageSpec(DomainSpec):
                     "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s.", "Yea sure, %s.", "Shipping address is %s."],
                                     "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
 
-                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s.", "%s."],
-                                "request": ["When can I receive my package", "When will it be delivered?", "What is the delivery date?"],
+                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s.", "%s.", "%s is the arrival date", "You package will be delivered %s.", "Your package will arrive %s."],
+                                "request": ["When can I receive my package", "When will it be delivered?", "What is the delivery date?", "When will the package arrive?", "When will it arrive"],
                                 "yn_question": {'status': ["Is it shipped?"],
                                             'deliver': ["Is it delivered?"]
                                             }},
-                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
+                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s.", "Yes, %s.", "My order number is %s."],
                                 "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
 
-                    "default": {"inform": ["The tracking number of your package is %s."],
+                    "default": {"inform": ["The tracking number of your package is %s.", "You can track your package using your tracking number, which is %s.", "Track your order using your tracking number, %s."],
                                 "request": ["Where is my package?",
                                             "Could you please help me track my package?",
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
