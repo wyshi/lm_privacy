@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # author: Tiancheng Zhao
 '''
-python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output --one_token_private_info true
+python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output
 '''
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
