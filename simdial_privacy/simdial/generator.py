@@ -12,6 +12,7 @@ import json
 import numpy as np
 import sys
 import os
+from copy import deepcopy
 import re
 
 class Generator(object):
@@ -88,7 +89,7 @@ class Generator(object):
         # print(kb_cnt/total_cnt)
         # print(np.mean(ratio))
 
-    def gen(self, domain, complexity, num_sess=1):
+    def gen(self, domain, complexity, num_sess=1, special_domain=None):
         """
         Generate synthetic dialogs in the given domain. 
 
@@ -98,16 +99,38 @@ class Generator(object):
         :return: a list of dialogs. Each dialog is a list of turns.
         """
         dialogs = []
-        action_channel = ActionChannel(domain, complexity)
-        word_channel = WordChannel(domain, complexity)
 
-        # natural language generators
-        sys_nlg = SysNlg(domain, complexity)
-        usr_nlg = UserNlg(domain, complexity)
-
+        domain = Domain(special_domain)
         bar = progressbar.ProgressBar(max_value=num_sess)
+
         for i in range(num_sess):
             bar.update(i)
+            domain_spec_copy = deepcopy(special_domain)
+
+            # for Track pacakge domain, we randomize question order each time
+            if domain.name == "track_package":
+                
+                num_info_ask = special_domain.num_info_ask
+                #print("NUM INFO ASK:",num_info_ask)
+                all_user_slots = [slot_name for (slot_name,_,_) in special_domain.usr_slots]
+                flex_user_slots = all_user_slots[1:]
+                chosen_slots = ["name"] + list(np.random.choice(flex_user_slots, num_info_ask))
+                #print("CHOSEN USER SLOTS:", chosen_slots)
+                unwanted = set(all_user_slots) - set(chosen_slots)
+                remain_user_slots = [(slot_name,des,opt) for (slot_name,des,opt) in special_domain.usr_slots if slot_name in chosen_slots]
+                
+                for unwanted_key in unwanted: 
+                    del domain_spec_copy.nlg_spec[unwanted_key]
+                domain_spec_copy.usr_slots = remain_user_slots
+                domain = Domain(domain_spec_copy)
+
+            action_channel = ActionChannel(domain, complexity)
+            word_channel = WordChannel(domain, complexity)
+
+            # natural language generators
+            sys_nlg = SysNlg(domain, complexity)
+            usr_nlg = UserNlg(domain, complexity)
+
             usr = User(domain, complexity)
             sys = System(domain, complexity)
 
@@ -127,7 +150,6 @@ class Generator(object):
                     break
 
                 usr_r, usr_t, usr_as = usr.step(sys_as)
-                #print("USER ACTIONS", usr_as)
 
                 # passing through noise, nlg and noise!
                 noisy_usr_as, conf = action_channel.transmit2sys(usr_as)
@@ -149,7 +171,7 @@ class Generator(object):
         complex = Complexity(complexity_spec)
 
         # generate the corpus conditioned on domain & complexity
-        corpus = self.gen(domain, complex, num_sess=size)
+        corpus = self.gen(domain, complex, num_sess=size, special_domain=domain_spec)
 
         # txt_file = "{}-{}-{}.{}".format(domain_spec.name,
         #                                complexity_spec.__name__,

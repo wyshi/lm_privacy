@@ -6,11 +6,11 @@ python multiple_domains.py --domain track_package --complexity mix --train_size 
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
-from simdial.random_entity import UsedSlotValues, GenerateRandomSlotValue, generate_n_rand_entities
 import string
 import argparse
 import os
 import json
+import pandas as pd
 import numpy as np
 
 class RestSpec(DomainSpec):
@@ -298,11 +298,12 @@ class MovieSpec(DomainSpec):
     
 # New spec created for the privacy project
 class TrackPackageSpec(DomainSpec):
-    def __init__(self, one_token):
+    def __init__(self, one_token, num_info_ask):
         if one_token.lower() in ('yes', 'true', 't', 'y', '1'):
             self.one_token_private_info = True
         else:
             self.one_token_private_info = False
+        self.num_info_ask = num_info_ask
     
         self.name = "track_package"
         self.greet = "Hello, I am with customer support bot."
@@ -330,8 +331,7 @@ class TrackPackageSpec(DomainSpec):
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
                                                 ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
                     }
-
-        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = generate_n_rand_entities(20,self.one_token_private_info)
+        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_500.csv")
 
         self.usr_slots = [("name", "customer name", rand_names),
                     ("phone", "customer phone number", rand_phone_numbers),
@@ -342,6 +342,17 @@ class TrackPackageSpec(DomainSpec):
                                                             "the day after tomorrow", "this weekend"])]
 
         self.db_size = 200
+
+def read_rand_entity_db(path):
+    df = pd.read_csv(path)
+
+    rand_names = df["name"].tolist()
+    rand_addresses = df["address"].tolist()
+    rand_phone_numbers = df["phone_number"].tolist()
+    rand_card_numbers = df["card_number"].tolist()
+    rand_order_numbers = df["order_number"].tolist()
+    
+    return rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers
 
 def json_to_txt(path):
     assert os.path.exists(path)
@@ -376,12 +387,12 @@ if __name__ == "__main__":
     parser.add_argument("--train_size",type=int)
     parser.add_argument("--valid_size",type=int)
     parser.add_argument("--test_size",type=int)
+    parser.add_argument("--num_info_ask",type=int,default=1)
     parser.add_argument("--one_token_private_info", default='false')
     parser.add_argument("--save_dir")
     args = parser.parse_args()
 
     save_dir = args.save_dir
-    print(save_dir)
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
 
@@ -398,7 +409,12 @@ if __name__ == "__main__":
     movie_spec = MovieSpec()
     weather_spec = WeatherSpec()
 
-    track_package_spec = TrackPackageSpec(args.one_token_private_info)
+    if args.num_info_ask and args.num_info_ask in [1,2,3]:
+        num_info_ask = args.num_info_ask
+    else:
+        num_info_ask = 1
+
+    track_package_spec = TrackPackageSpec(args.one_token_private_info, num_info_ask)
 
     domain_specs = {
         "restaurant": rest_spec,

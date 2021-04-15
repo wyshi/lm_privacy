@@ -4,6 +4,7 @@ from simdial.database import Database
 import numpy as np
 from simdial.agent.core import BaseSysSlot
 import logging
+import random
 
 
 class DomainSpec(object):
@@ -118,10 +119,9 @@ class Domain(object):
 
         # Add randomized order for track_package task
         if self.name == "track_package":
-            order_options = [["name","phone","order_number","address"],
-                            ["name","order_number","phone","address"],
-                            ["name","address","order_number","phone"]]
-            rand_order = order_options[np.random.randint(0,3)]
+            slot_options = [slot_name for (slot_name,_,_) in domain_spec.usr_slots][1:]
+            random.shuffle(slot_options)
+            rand_order = ["name"] + slot_options
             slot_dict = dict()
             for (name, desc, vocab) in domain_spec.usr_slots:
                 slot_dict[name] = (name, desc, vocab)

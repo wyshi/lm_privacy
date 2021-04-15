@@ -27,7 +27,7 @@ Run the following code to generate dialog data for a selected domain that is def
 
 For example
 
-    python multiple_domains.py --domain track_package --complexity mix --train_size 500 --test_size 200 --one_token_private_info false --save_dir output
+    python multiple_domains.py --domain track_package --complexity mix --train_size 500 --test_size 200 --one_token_private_info false --save_dir output --num_info_ask 1
 
 Defined domains in the original paper include:
 - `restaurant`  
@@ -48,5 +48,7 @@ Complexity types, as defined in the original paper, include:
 The data will be saved into two folders within the assigned out_dir
 - save_dir/test/ for testing data 
 - save_dir/train/ for training data
+
+For package tracking domain, "--num_info_ask" controls the number of information asked besides customer name. Default is 1.
 
 
