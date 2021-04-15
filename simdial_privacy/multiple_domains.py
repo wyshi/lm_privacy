@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # author: Tiancheng Zhao
 '''
-python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output
+python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output --one_token_private_info true
 '''
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
@@ -298,11 +298,12 @@ class MovieSpec(DomainSpec):
     
 # New spec created for the privacy project
 class TrackPackageSpec(DomainSpec):
-    def __init__(self, one_token):
+    def __init__(self, one_token, num_info_ask):
         if one_token.lower() in ('yes', 'true', 't', 'y', '1'):
             self.one_token_private_info = True
         else:
             self.one_token_private_info = False
+        self.num_info_ask = num_info_ask
     
         self.name = "track_package"
         self.greet = "Hello, I am with customer support bot."
@@ -356,7 +357,7 @@ def read_rand_entity_db(path):
 def json_to_txt(path):
     assert os.path.exists(path)
     fle = os.listdir(path)
-    save_dir = f"../data/simdial/{path.split('/')[-1]}"
+    save_dir = f'../data/simdial/{path.split("/")[-1]}'
     assert len(fle) == 1, f'{path} has {len(fle)} jsons, please delete the ones you do not want'
     assert len(os.listdir(save_dir)) == 0, f'{save_dir} is not empty, please make sure it is empty'
     
@@ -384,6 +385,7 @@ if __name__ == "__main__":
     parser.add_argument("--valid_size",type=int)
     parser.add_argument("--test_size",type=int)
     parser.add_argument("--one_token_private_info")
+    parser.add_argument("--num_info_ask",type=int)
     parser.add_argument("--save_dir")
     args = parser.parse_args()
 
@@ -404,7 +406,12 @@ if __name__ == "__main__":
     movie_spec = MovieSpec()
     weather_spec = WeatherSpec()
 
-    track_package_spec = TrackPackageSpec(args.one_token_private_info)
+    if args.num_info_ask and args.num_info_ask in [1,2,3]:
+        num_info_ask = args.num_info_ask
+    else:
+        num_info_ask = 1
+
+    track_package_spec = TrackPackageSpec(args.one_token_private_info, num_info_ask)
 
     domain_specs = {
         "restaurant": rest_spec,
