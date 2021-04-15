@@ -308,24 +308,24 @@ class TrackPackageSpec(DomainSpec):
         self.name = "track_package"
         self.greet = "Hello, I am with customer support bot."
 
-        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
-                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?"]},
+        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s", "Yep - I'm %s.", "The name's %s."],
+                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?", "Please provide your full name"]},
 
-                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s."],
+                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s.", "%s is my number.", "my number is %."],
                                 "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
 
-                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s."],
+                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s.", "Yea sure, %s.", "Shipping address is %s."],
                                     "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
 
-                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s."],
-                                "request": ["When can I receive my package", "When will it be delivered?"],
+                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s.", "%s.", "%s is the arrival date", "You package will be delivered %s.", "Your package will arrive %s."],
+                                "request": ["When can I receive my package", "When will it be delivered?", "What is the delivery date?", "When will the package arrive?", "When will it arrive"],
                                 "yn_question": {'status': ["Is it shipped?"],
                                             'deliver': ["Is it delivered?"]
                                             }},
-                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
+                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s.", "Yes, %s.", "My order number is %s."],
                                 "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
 
-                    "default": {"inform": ["The tracking number of your package is %s."],
+                    "default": {"inform": ["The tracking number of your package is %s.", "You can track your package using your tracking number, which is %s.", "Track your order using your tracking number, %s."],
                                 "request": ["Where is my package?",
                                             "Could you please help me track my package?",
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
@@ -357,9 +357,12 @@ def read_rand_entity_db(path):
 def json_to_txt(path):
     assert os.path.exists(path)
     fle = os.listdir(path)
-    save_dir = f'../data/simdial/{path.split("/")[-1]}'
+    save_dir = f"../data/simdial/{path.split('/')[-1]}"
     assert len(fle) == 1, f'{path} has {len(fle)} jsons, please delete the ones you do not want'
-    assert len(os.listdir(save_dir)) == 0, f'{save_dir} is not empty, please make sure it is empty'
+    if len(os.listdir(save_dir)) != 0:
+        print(f'{save_dir} is not empty, deleting existing files...')
+        for f in os.listdir(save_dir):
+            os.remove(os.path.join(save_dir, f))
     
     with open(os.path.join(path, fle[0]), 'r') as fh:
         data = json.load(fh)
@@ -384,8 +387,8 @@ if __name__ == "__main__":
     parser.add_argument("--train_size",type=int)
     parser.add_argument("--valid_size",type=int)
     parser.add_argument("--test_size",type=int)
-    parser.add_argument("--one_token_private_info")
-    parser.add_argument("--num_info_ask",type=int)
+    parser.add_argument("--num_info_ask",type=int,default=1)
+    parser.add_argument("--one_token_private_info", default='false')
     parser.add_argument("--save_dir")
     args = parser.parse_args()
 
@@ -430,9 +433,11 @@ if __name__ == "__main__":
   
   
     gen_bot.gen_corpus(save_dir+"/test", domain_specs[args.domain], complexity_types[args.complexity], test_size)
-    gen_bot.gen_corpus(save_dir+"/train", domain_specs[args.domain], complexity_types[args.complexity], train_size)
-    gen_bot.gen_corpus(save_dir+"/valid", domain_specs[args.domain], complexity_types[args.complexity], valid_size)
-
     json_to_txt(save_dir+"/test")
-    json_to_txt(save_dir+"/train")
+
+    gen_bot.gen_corpus(save_dir+"/valid", domain_specs[args.domain], complexity_types[args.complexity], valid_size)
     json_to_txt(save_dir+"/valid")
+
+    gen_bot.gen_corpus(save_dir+"/train", domain_specs[args.domain], complexity_types[args.complexity], train_size)
+    json_to_txt(save_dir+"/train")
+

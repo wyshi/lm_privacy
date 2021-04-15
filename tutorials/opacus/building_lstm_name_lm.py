@@ -395,8 +395,9 @@ privacy_engine = PrivacyEngine(
     target_delta=delta,
     secure_rng=secure_rng,
 )
+import pdb; pdb.set_trace()
 privacy_engine.attach(optimizer)
-
+privacy_engine.detach()
 
 
 
