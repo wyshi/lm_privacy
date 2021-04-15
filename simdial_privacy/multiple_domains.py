@@ -307,17 +307,17 @@ class TrackPackageSpec(DomainSpec):
         self.name = "track_package"
         self.greet = "Hello, I am with customer support bot."
 
-        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
-                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?"]},
+        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s", "Yep - I'm %s.", "The name's %s."],
+                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?", "Please provide your full name"]},
 
-                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s."],
+                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s.", "%s is my number.", "my number is %."],
                                 "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
 
-                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s."],
+                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s.", "Yea sure, %s.", "Shipping address is %s."],
                                     "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
 
-                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s."],
-                                "request": ["When can I receive my package", "When will it be delivered?"],
+                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s.", "%s."],
+                                "request": ["When can I receive my package", "When will it be delivered?", "What is the delivery date?"],
                                 "yn_question": {'status': ["Is it shipped?"],
                                             'deliver': ["Is it delivered?"]
                                             }},
