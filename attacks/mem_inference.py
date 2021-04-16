@@ -10,6 +10,7 @@ import utils
 
 import argparse
 import zlib
+from pathlib import Path
 
 from torch.utils.data import DataLoader, Dataset
 import torch
@@ -283,17 +284,19 @@ if __name__ == "__main__":
     ###############################################################################    
     # exposures, ranks, canary_ppls, model_ppls, model_accs = [], [], [], [], []
     records = []
-    for model_path in tqdm(os.listdir(args.checkpoint)):
-        model = load_model(os.path.join(args.checkpoint, model_path))
+    paths = sorted(Path(args.checkpoint).iterdir(), key=os.path.getmtime)
+    for model_path in tqdm(paths):
+        model_path = str(model_path)
+        model = load_model(model_path)
         is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
         model_ppl, model_acc, epoch_num = float(model_path.split('ppl-')[-1].split('_')[0]), float(model_path.split('acc-')[-1].split('_')[0]), int(model_path.split('epoch-')[-1])
         acc_ppl, acc_lower, acc_gpt2, acc_zlip = get_acc(model, dataloader, gpt_model=GPT_MODEL, save_json=None)    
         print("model ppl")
         print(model_ppl)
-        record = [epoch_num, model_ppl, model_acc, acc_ppl, acc_lower, acc_gpt2, acc_zlip, args.N]
+        record = [epoch_num, model_ppl, model_acc, acc_ppl, acc_lower, acc_gpt2, acc_zlip, args.N, model_path]
 
         records.append(record)
     records = sorted(records, key = lambda x: x[0])
-    records = pd.DataFrame(records, columns=['epoch', 'model_ppl', 'model_acc', 'inference_ppl_acc', 'inference_lower_ppl_acc', 'inference_gpt2_acc', 'inference_zlip_acc', 'TOTAL_CANDIDATES'])
+    records = pd.DataFrame(records, columns=['epoch', 'model_ppl', 'model_acc', 'inference_ppl_acc', 'inference_lower_ppl_acc', 'inference_gpt2_acc', 'inference_zlip_acc', 'TOTAL_CANDIDATES', 'model_path'])
 
     records.to_csv(args.outputf, index=None)
