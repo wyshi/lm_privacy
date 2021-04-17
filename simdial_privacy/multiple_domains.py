@@ -6,11 +6,11 @@ python multiple_domains.py --domain track_package --complexity mix --train_size 
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
-from simdial.random_entity import UsedSlotValues, GenerateRandomSlotValue, generate_n_rand_entities
 import string
 import argparse
 import os
 import json
+import pandas as pd
 import numpy as np
 
 class RestSpec(DomainSpec):
@@ -298,40 +298,40 @@ class MovieSpec(DomainSpec):
     
 # New spec created for the privacy project
 class TrackPackageSpec(DomainSpec):
-    def __init__(self, one_token):
+    def __init__(self, one_token, num_info_ask):
         if one_token.lower() in ('yes', 'true', 't', 'y', '1'):
             self.one_token_private_info = True
         else:
             self.one_token_private_info = False
+        self.num_info_ask = num_info_ask
     
         self.name = "track_package"
         self.greet = "Hello, I am with customer support bot."
 
-        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s"],
-                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?"]},
+        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s", "Yep - I'm %s.", "The name's %s."],
+                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?", "Please provide your full name"]},
 
-                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s."],
+                    "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s.", "%s is my number.", "my number is %."],
                                 "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
 
-                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s."],
+                    "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s.", "Yea sure, %s.", "Shipping address is %s."],
                                     "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
 
-                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s."],
-                                "request": ["When can I receive my package", "When will it be delivered?"],
+                    "shipment": {"inform": ["Your package has been delivered.", "Your package will arrive %s.", "%s.", "%s is the arrival date", "You package will be delivered %s.", "Your package will arrive %s."],
+                                "request": ["When can I receive my package", "When will it be delivered?", "What is the delivery date?", "When will the package arrive?", "When will it arrive"],
                                 "yn_question": {'status': ["Is it shipped?"],
                                             'deliver': ["Is it delivered?"]
                                             }},
-                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s."],
+                    "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s.", "Yes, %s.", "My order number is %s."],
                                 "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
 
-                    "default": {"inform": ["The tracking number of your package is %s."],
+                    "default": {"inform": ["The tracking number of your package is %s.", "You can track your package using your tracking number, which is %s.", "Track your order using your tracking number, %s."],
                                 "request": ["Where is my package?",
                                             "Could you please help me track my package?",
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
                                                 ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
                     }
-
-        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = generate_n_rand_entities(20,self.one_token_private_info)
+        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_500.csv")
 
         self.usr_slots = [("name", "customer name", rand_names),
                     ("phone", "customer phone number", rand_phone_numbers),
@@ -342,6 +342,17 @@ class TrackPackageSpec(DomainSpec):
                                                             "the day after tomorrow", "this weekend"])]
 
         self.db_size = 200
+
+def read_rand_entity_db(path):
+    df = pd.read_csv(path)
+
+    rand_names = df["name"].tolist()
+    rand_addresses = df["address"].tolist()
+    rand_phone_numbers = df["phone_number"].tolist()
+    rand_card_numbers = df["card_number"].tolist()
+    rand_order_numbers = df["order_number"].tolist()
+    
+    return rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers
 
 def json_to_txt(path):
     assert os.path.exists(path)
@@ -376,12 +387,12 @@ if __name__ == "__main__":
     parser.add_argument("--train_size",type=int)
     parser.add_argument("--valid_size",type=int)
     parser.add_argument("--test_size",type=int)
+    parser.add_argument("--num_info_ask",type=int,default=1)
     parser.add_argument("--one_token_private_info", default='false')
     parser.add_argument("--save_dir")
     args = parser.parse_args()
 
     save_dir = args.save_dir
-    print(save_dir)
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
 
@@ -398,7 +409,12 @@ if __name__ == "__main__":
     movie_spec = MovieSpec()
     weather_spec = WeatherSpec()
 
-    track_package_spec = TrackPackageSpec(args.one_token_private_info)
+    if args.num_info_ask and args.num_info_ask in [1,2,3]:
+        num_info_ask = args.num_info_ask
+    else:
+        num_info_ask = 1
+
+    track_package_spec = TrackPackageSpec(args.one_token_private_info, num_info_ask)
 
     domain_specs = {
         "restaurant": rest_spec,

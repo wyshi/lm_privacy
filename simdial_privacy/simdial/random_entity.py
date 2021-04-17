@@ -1,5 +1,7 @@
 import names
 import random
+import os
+import pandas as pd
 from faker import Faker
 
 class UsedSlotValues(object):
@@ -104,6 +106,18 @@ def generate_n_rand_entities(n,one_token=False):
     
     return names, addresses, phone_numbers, card_numbers, order_numbers
 
-#names, addresses, phone_numbers, card_numbers, order_numbers = generate_n_rand_entities(1)
-  
+
+
+if __name__ == "__main__":
+    n = 500
+    names, addresses, phone_numbers, card_numbers, order_numbers = generate_n_rand_entities(n)
+    df = pd.DataFrame(list(zip(names, addresses, phone_numbers, card_numbers, order_numbers)), 
+                  columns =['name', 'address', 'phone_number', 'card_number', 'order_number'])
+    path = os.getcwd()
+    save_dir = "database"
+    if not os.path.exists(f"{path}/simdial_privacy/{save_dir}"):
+        os.mkdir(f"{path}/simdial_privacy/{save_dir}")
+    df.to_csv(f"{path}/simdial_privacy/{save_dir}/database_{n}.csv")
+    
+
 
