@@ -49,3 +49,20 @@ python attacks/mem_inference.py -ckpt model/nodp/20210409/185850/ --outputf atta
 python attacks/mem_inference.py -ckpt model/dp/20210409/223157/ --outputf attacks/membership_inference/dp_lr005_sigma05_norm01_1000.csv --cuda cuda:5 --N 1000 -bs 64
 python attacks/mem_inference.py -ckpt model/dp/20210411/151450/ --outputf attacks/membership_inference/dp_lr05_sigma05_norm002_1000.csv --cuda cuda:5 --N 1000 -bs 64
 python attacks/mem_inference.py -ckpt model/partialdp/20210410/093833/ --outputf attacks/membership_inference/partialdp_lr01_sigma025_norm01_1000.csv --cuda cuda:5 --N 1000 -bs 64
+
+
+# no dp, repeat
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:0 2>&1 | tee logs/nodp/20210416/1710/bs16.log
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:1 --seed 0 2>&1 | tee logs/nodp/20210416/1710/bs16_see0.log
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:2 --seed 123 2>&1 | tee logs/nodp/20210416/1710/bs16_seed123.log
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:4 --seed 22 2>&1 | tee logs/nodp/20210416/1710/bs16_seed22.log
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:6 --seed 300 2>&1 | tee logs/nodp/20210416/1710/bs16_seed300.log
+
+# canary insertion for partial-dp repeat
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210414/001535/ --cuda cuda:5 --outputf attacks/canary_insertion/partial_dp_sigma05_lr01_norm002_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210414/002043/ --cuda cuda:5 --outputf attacks/canary_insertion/partial_dp_sigma05_lr01_norm002_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210414/002122/ --cuda cuda:5 --outputf attacks/canary_insertion/partial_dp_sigma05_lr01_norm002_seed22.csv
+
+# canary insertion for dp repeat
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210414/002943/ --cuda cuda:0 --outputf attacks/canary_insertion/dp_sigma05_lr01_norm002_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210414/002746/ --cuda cuda:0 --outputf attacks/canary_insertion/p_sigma05_lr01_norm002_seed123.csv

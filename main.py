@@ -1,7 +1,7 @@
 """
 # no dp
 mkdir -p logs/nodp/20210409/1713
-python -u main.py -bs 256 --lr 20 --data data/wikitext-2-add1 --cuda cuda:3 2>&1 | tee logs/nodp/20210409/1713/lstm.log
+python -u main.py -bs 256 --lr 20 --data data/wikitext-2-add10b --cuda cuda:3 2>&1 | tee logs/nodp/20210409/1713/lstm.log
 
 # dp, lstm
 python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
@@ -405,9 +405,9 @@ def evaluate(data_source, privacy_engine=None):
         target_delta = privacy_engine.target_delta
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
     else:
-        epsilon = '-'
-        target_delta = '-'
-        best_alpha = '-'
+        epsilon = 0
+        target_delta = 0
+        best_alpha = 0
     return total_loss / total_tokens, privacy_printstr, acc, epsilon, target_delta, best_alpha
 
 
