@@ -1,7 +1,7 @@
 """
 # no dp
 mkdir -p logs/nodp/20210409/1713
-python -u main.py -bs 256 --lr 20 --data data/wikitext-2-add1 --cuda cuda:3 2>&1 | tee logs/nodp/20210409/1713/lstm.log
+python -u main.py -bs 256 --lr 20 --data data/wikitext-2-add10b --cuda cuda:3 2>&1 | tee logs/nodp/20210409/1713/lstm.log
 
 # dp, lstm
 python -u main.py -bs 10 --cuda cuda:1 -dp --lr 0.1  2>&1 | tee logs/dp/torch_lstm.log
@@ -117,6 +117,7 @@ args = parser.parse_args()
 
 # set seed
 torch.manual_seed(args.seed)
+print(f"seed: {args.seed}")
 
 device = torch.device(args.cuda)
     
@@ -226,12 +227,12 @@ delta = 8e-5
 
 
 if args.model != "Transformer": 
-    config_str = f"data-{args.data.split('/')[-1]}__model-{args.model}__ebd-{args.emsize}__hid-{args.nhid}__bi-{args.bidirectional}__nlayer-{args.num_layers}__tied-{args.tied}__ntokens-{ntokens}"
+    config_str = f"data-{args.data.split('/')[-1]}_model-{args.model}_ebd-{args.emsize}_hid-{args.nhid}_bi-{args.bidirectional}_lay-{args.num_layers}_tie-{args.tied}_tok-{ntokens}"
 else:
-    config_str = f"data-{args.data}__model-{args.model}__ntokens-{ntokens}"
-config_str += f"__bs-{args.batch_size}__bptt-{args.bptt}__lr-{args.lr}__dp-{args.dp}_partial-{args.partial}_zerohidden-{args.partial_hidden_zero}"
+    config_str = f"data-{args.data}_model-{args.model}_tok-{ntokens}"
+config_str += f"_bs-{args.batch_size}_bptt-{args.bptt}_lr-{args.lr}_dp-{args.dp}_partial-{args.partial}_0hidden-{args.partial_hidden_zero}"
 if args.dp:
-    config_str += f"__sigma-{sigma}__maxgradnorm-{max_per_sample_grad_norm}__delta-{delta}"
+    config_str += f"_sigma-{sigma}_norm-{max_per_sample_grad_norm}_dl-{delta}"
 from datetime import datetime
 now = datetime.now()
 timenow = now.strftime('%Y%m%d/%H%M%S')
@@ -401,11 +402,16 @@ def evaluate(data_source, privacy_engine=None):
                 acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
+        target_delta = privacy_engine.target_delta
         privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    return total_loss / total_tokens, privacy_printstr, acc, epsilon, privacy_engine.target_delta, best_alpha
+    else:
+        epsilon = 0
+        target_delta = 0
+        best_alpha = 0
+    return total_loss / total_tokens, privacy_printstr, acc, epsilon, target_delta, best_alpha
 
 
-def train():
+def train(privacy_engine=None):
     # Turn on training mode which enables dropout.
     model.train()
     losses = []
@@ -489,6 +495,21 @@ def train():
                 pass
             start_time = time.time()
             print(printstr)
+
+
+            # save the first epoch's ckpt for comparison with DP, save every batch
+            if (not args.dp) and ((epoch == 1) and ((batch_i % (args.log_interval * 1) == 0))):
+                val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
+                try:
+                    valid_ppl = math.exp(val_loss)
+                except:
+                    valid_ppl = math.inf
+                print(privacy_printstr)
+                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+                model.train()
+
+
+
 
         if args.dry_run:
             break
@@ -647,6 +668,18 @@ def train_partialdp_rnn(privacy_engine):
             start_time = time.time()
             print(printstr)
 
+
+            # save the first epoch's ckpt for comparison with DP, save every batch
+            if (epoch == 1) and ((batch_i % (args.log_interval * 1) == 0) or (batch_i == args.log_interval)):
+                val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
+                try:
+                    valid_ppl = math.exp(val_loss)
+                except:
+                    valid_ppl = math.inf
+                print(privacy_printstr)
+                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+                model.train()
+
         if args.dry_run:
             break
 
@@ -660,7 +693,7 @@ def export_onnx(path, batch_size, seq_len):
     torch.onnx.export(model, (dummy_input, hidden), path)
 
 def save_model(base_dir, ppl, acc, epoch, epsilon, delta, alpha):
-    cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}"
+    cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3f}_dl-{delta}_ap-{alpha:.2f}"
     with open(cur_save_dir, 'wb') as f:
         torch.save(model, f)
     print(f"model saved to {cur_save_dir}, ppl: {ppl}")
@@ -695,7 +728,7 @@ try:
         if args.partial and args.dp:
             train_partialdp_rnn(privacy_engine=privacy_engine)
         else:
-            train()
+            train(privacy_engine=privacy_engine)
         val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
         try:
             valid_ppl = math.exp(val_loss)

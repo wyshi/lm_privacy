@@ -8,6 +8,7 @@ import torch
 import torch.nn as nn
 
 import math
+from pathlib import Path
 
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
@@ -133,6 +134,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     print(f'output will be saved to {args.outputf}')
+    assert not os.path.isfile(args.outputf)
     # Set the random seed manually for reproducibility.
     torch.manual_seed(args.seed)
     if torch.cuda.is_available():
@@ -161,17 +163,24 @@ if __name__ == "__main__":
     ###############################################################################    
     # exposures, ranks, canary_ppls, model_ppls, model_accs = [], [], [], [], []
     records = []
-    for model_path in tqdm(os.listdir(args.checkpoint)):
-        model = load_model(os.path.join(args.checkpoint, model_path))
+    paths = sorted(Path(args.checkpoint).iterdir(), key=os.path.getmtime)
+    for model_path in tqdm(paths):
+        model_path = str(model_path)
+        model = load_model(model_path)
         is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
-        model_ppl, model_acc, epoch_num = float(model_path.split('ppl-')[-1].split('_')[0]), float(model_path.split('acc-')[-1].split('_')[0]), int(model_path.split('epoch-')[-1])
         canary_exposure, canary_rank, canary_ppl = get_exposure(model, dataloader, save_json=None)    
+        model_ppl, model_acc, epoch_num = float(model_path.split('ppl-')[-1].split('_')[0]), float(model_path.split('acc-')[-1].split('_')[0]), int(model_path.split('epoch-')[-1].split('_')[0])
         print("model ppl")
         print(model_ppl)
-        record = [epoch_num, model_ppl, model_acc, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES]
-
+        try:
+            model_epsilon, model_delta, model_alpha = float(model_path.split('ep-')[-1].split('_')[0]), float(model_path.split('dl-')[-1].split('_')[0]), float(model_path.split('ap-')[-1].split('_')[0])
+            column_names=['epoch', 'model_ppl', 'model_acc', 'model_epsilon', 'model_delta', 'model_alpha', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES', 'model_path']
+            record = [epoch_num, model_ppl, model_acc, model_epsilon, model_delta, model_alpha, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES, model_path]
+        except:
+            column_names=['epoch', 'model_ppl', 'model_acc', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES', 'model_path']
+            record = [epoch_num, model_ppl, model_acc, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES, model_path]
         records.append(record)
-    records = sorted(records, key = lambda x: x[0])
-    records = pd.DataFrame(records, columns=['epoch', 'model_ppl', 'model_acc', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES'])
+    # records = sorted(records, key = lambda x: x[0])
+    records = pd.DataFrame(records, columns=column_names)
 
     records.to_csv(args.outputf, index=None)

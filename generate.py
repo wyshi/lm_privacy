@@ -6,6 +6,7 @@
 ###############################################################################
 '''
 python generate.py --checkpoint model/nodp/20210408/223716/data-wikitext-2-add10b__model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-50258__bs-256__bptt-35__lr-20.0__dp-False_partial-False.pt --outf nodp_generated.txt --cuda
+best no dp: data-wikitext-2-add10b__model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-50258__bs-256__bptt-35__lr-20.0__dp-False_partial-False.pt_ppl-77.3702264_acc-0.34388_epoch-50
 '''
 
 import argparse
@@ -68,7 +69,8 @@ is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Tra
 if not is_transformer_model:
     hidden = model.init_hidden(1)
 # input = torch.randint(ntokens, (1, 1), dtype=torch.long).to(device)
-input = torch.tensor([[BOS_TOKEN_ID]], dtype=torch.int64).to(device)
+# input = torch.tensor([[BOS_TOKEN_ID]], dtype=torch.int64).to(device)
+input = torch.tensor([tokenizer.encode('My SSN is ')]], dtype=torch.int64).to(device)
 
 with open(args.outf, 'w') as outf:
     with torch.no_grad():  # no tracking history
