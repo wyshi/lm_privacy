@@ -616,7 +616,7 @@ def train_partialdp_rnn(privacy_engine):
                         per_sample_clip_factor = [1/max(1, nrm/max_per_sample_grad_norm) for nrm in per_sample_norm]
                         for _b_i, factor in enumerate(per_sample_clip_factor):
                             # add noise per sample
-                            clipped_h = factor*h[:, [_b_i], :]
+                            clipped_h = factor*h[:, [_b_i], :].to(device)
                             noise = utils.generate_noise(private_engine=privacy_engine, 
                                                         max_grad_norm=max_per_sample_grad_norm, 
                                                         reference=clipped_h)

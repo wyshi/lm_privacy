@@ -27,6 +27,9 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210409/1858
 CANARY = " My SSN is 341752."
 TOTAL_CANDIDATES = 1000_000
 
+CANARY_MISSED = "My Name is Earl"
+TOTAL_CANDIDATES_FOR_MISSED = 26**4
+
 class CanaryDataset(Dataset):
     def __init__(self, canary, tokenizer):
         self.canary = canary
