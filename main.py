@@ -578,7 +578,7 @@ def train_partialdp_rnn(privacy_engine):
 
                 # start RNN
                 cur_hidden = repackage_hidden(cur_hidden)
-                output, cur_hidden = model(minibatch_src, hidden=cur_hidden) # each datapoint is treated as independent from each other, as required by DP
+                output, cur_hidden = model(minibatch_src, seq_lens=seq_lens, hidden=cur_hidden) # each datapoint is treated as independent from each other, as required by DP
 
                 # loss
                 minibatch_tgt = minibatch_tgt.view(-1)
