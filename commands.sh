@@ -66,3 +66,108 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210414
 # canary insertion for dp repeat
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210414/002943/ --cuda cuda:0 --outputf attacks/canary_insertion/dp_sigma05_lr01_norm002_seed0.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210414/002746/ --cuda cuda:0 --outputf attacks/canary_insertion/p_sigma05_lr01_norm002_seed123.csv
+
+
+# partial dp, parameter search
+    # screen -r partialdp
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 0.01  --sigma 0.45 --seed 1111 2>&1 | tee logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.01_sigma0.45 
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:0 2>&1 | tee logs/nodp/20210416/2354/bs16.log
+
+    # screen -r partialdp2
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 0.005 --sigma 0.45 --seed 1111 2>&1 | tee logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.005_sigma0.45 
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:1 --seed 0 2>&1 | tee logs/nodp/20210416/2354/bs16_see0.log
+
+    # screen -r partialdp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 0.01  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.01_sigma0.5 
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:2 --seed 123 2>&1 | tee llogs/nodp/20210416/2354/bs16_seed123.log
+
+    # screen -r partialdp4
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -partial -norm 0.005 --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.005_sigma0.5 
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:5 --seed 22 2>&1 | tee logs/nodp/20210416/2354/bs16_seed22.log
+
+    # screen -R partialdp5
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 0.01   --sigma 0.55 --seed 1111 2>&1 | tee logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.01_sigma0.55 
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b --cuda cuda:4 --seed 300 2>&1 | tee logs/nodp/20210416/2354/bs16_seed300.log
+
+    # screen -R partialdp6
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 0.005  --sigma 0.55 --seed 1111 2>&1 | tee logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.005_sigma0.55 
+
+
+# parameter tunning on the norm
+    # screen -R partialdp6
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 1e-3  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210418/1912/nohidden_lr0.1_norm1e-3_sigma0.5 
+    # screen -R partialdp5 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 5e-4  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210418/1912/nohidden_lr0.1_norm5e-4_sigma0.5 
+    # screen -R partialdp4 # rerun
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 1e-4  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210418/1912/nohidden_lr0.1_norm1e-4_sigma0.5 
+    # screen -R partialdp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 5e-5  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210418/1912/nohidden_lr0.1_norm5e-5_sigma0.5 
+    # screen -R partialdp2 # rerun
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -partial -norm 1e-5  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210418/1912/nohidden_lr0.1_norm1e-5_sigma0.5 
+    # screen -R partialdp # rerun
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 5e-6  --sigma 0.5 --seed 1111 2>&1 | tee logs/partial_dp/20210418/1912/nohidden_lr0.1_norm5e-6_sigma0.5 
+
+
+
+# repeat 5 times for norm=1e-3
+    # screen -R partialdp6
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 1e-3  --sigma 0.5 --seed 0 2>&1 | tee logs/partial_dp/20210421/1021/nohidden_lr0.1_norm1e-3_sigma0.5_seed0 
+    # screen -R partialdp5 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 --seed 123 2>&1 | tee logs/partial_dp/20210421/1021/nohidden_lr0.1_norm1e-3_sigma0.5_seed123
+    # screen -R partialdp4 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 1e-3  --sigma 0.5 --seed 22 2>&1 | tee logs/partial_dp/20210421/1021/nohidden_lr0.1_norm1e-3_sigma0.5_seed22
+    # screen -R partialdp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 1e-3  --sigma 0.5 --seed 300 2>&1 | tee logs/partial_dp/20210421/1021/nohidden_lr0.1_norm1e-3_sigma0.5_seed300
+
+
+# repeat 5 times for norm=1e-3, dp
+# screen -R dp # have run
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -norm 1e-3 --seed 1111 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed1111 # screen dp
+# screen -R dp2
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 0 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed0 # screen dp
+# screen -R dp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 123 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed123 # screen dp
+# screen -R dp4
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 22 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed22 # screen dp
+# screen -R dp5
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 300 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed300 # screen dp
+
+
+# canary for no-dp, new runs
+# canary insertion for dp repeat
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210418/181252 --cuda cuda:0 --outputf attacks/canary_insertion/nodp/nodp_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210418/192226 --cuda cuda:0 --outputf attacks/canary_insertion/nodp/nodp_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210417/144949 --cuda cuda:0 --outputf attacks/canary_insertion/nodp/nodp_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210419/052248 --cuda cuda:0 --outputf attacks/canary_insertion/nodp/nodp_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210418/210231 --cuda cuda:0 --outputf attacks/canary_insertion/nodp/nodp_seed300.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210417/000742 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.45_norm0.01_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210417/000240 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.45_norm0.005_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210417/000251 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.01_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210417/111003 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.005_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210417/000327 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.55_norm0.01_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210417/000344 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.55_norm0.005_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210418/191438 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210419/063839 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.0005_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210419/134334 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.0001_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210419/064057 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm5e-05_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210419/134345 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm1e-05_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210419/134357 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm5e-06_seed1111.csv
+
+# membership
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/nodp/20210418/181252 --cuda cuda:0 --outputf attacks/membership_inference/nodp/nodp_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/nodp/20210418/192226 --cuda cuda:0 --outputf attacks/membership_inference/nodp/nodp_seed0.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/nodp/20210417/144949 --cuda cuda:0 --outputf attacks/membership_inference/nodp/nodp_seed123.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/nodp/20210419/052248 --cuda cuda:0 --outputf attacks/membership_inference/nodp/nodp_seed22.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/nodp/20210418/210231 --cuda cuda:0 --outputf attacks/membership_inference/nodp/nodp_seed300.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000742 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.45_norm0.01_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000240 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.45_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000251 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm0.01_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/111003 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000327 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.55_norm0.01_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000344 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.55_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210418/191438 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/063839 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm0.0005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134334 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm0.0001_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/064057 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm5e-05_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134345 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm1e-05_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134357 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm5e-06_seed1111.csv

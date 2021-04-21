@@ -289,14 +289,20 @@ if __name__ == "__main__":
         model_path = str(model_path)
         model = load_model(model_path)
         is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
-        model_ppl, model_acc, epoch_num = float(model_path.split('ppl-')[-1].split('_')[0]), float(model_path.split('acc-')[-1].split('_')[0]), int(model_path.split('epoch-')[-1])
+        model_ppl, model_acc, epoch_num = float(model_path.split('ppl-')[-1].split('_')[0]), float(model_path.split('acc-')[-1].split('_')[0]), int(model_path.split('epoch-')[-1].split('_')[0])
         acc_ppl, acc_lower, acc_gpt2, acc_zlip = get_acc(model, dataloader, gpt_model=GPT_MODEL, save_json=None)    
         print("model ppl")
         print(model_ppl)
-        record = [epoch_num, model_ppl, model_acc, acc_ppl, acc_lower, acc_gpt2, acc_zlip, args.N, model_path]
-
+        try:
+            model_epsilon, model_delta, model_alpha = float(model_path.split('ep-')[-1].split('_')[0]), float(model_path.split('dl-')[-1].split('_')[0]), float(model_path.split('ap-')[-1].split('_')[0])
+            column_names=['epoch', 'model_ppl', 'model_acc', 'model_epsilon', 'model_delta', 'model_alpha', 'inference_ppl_acc', 'inference_lower_ppl_acc', 'inference_gpt2_acc', 'inference_zlip_acc', 'TOTAL_CANDIDATES', 'model_path']            
+            record = [epoch_num, model_ppl, model_acc, model_epsilon, model_delta, model_alpha, acc_ppl, acc_lower, acc_gpt2, acc_zlip, args.N, model_path]
+        except:
+            raise ValueError("no privacy values, shouldn't happen with the new runs")
+            column_names=['epoch', 'model_ppl', 'model_acc', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES', 'model_path']
+            record = [epoch_num, model_ppl, model_acc, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES, model_path]
         records.append(record)
     records = sorted(records, key = lambda x: x[0])
-    records = pd.DataFrame(records, columns=['epoch', 'model_ppl', 'model_acc', 'inference_ppl_acc', 'inference_lower_ppl_acc', 'inference_gpt2_acc', 'inference_zlip_acc', 'TOTAL_CANDIDATES', 'model_path'])
+    records = pd.DataFrame(records, columns=column_names)
 
     records.to_csv(args.outputf, index=None)

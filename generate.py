@@ -70,7 +70,7 @@ if not is_transformer_model:
     hidden = model.init_hidden(1)
 # input = torch.randint(ntokens, (1, 1), dtype=torch.long).to(device)
 # input = torch.tensor([[BOS_TOKEN_ID]], dtype=torch.int64).to(device)
-input = torch.tensor([tokenizer.encode('My SSN is ')]], dtype=torch.int64).to(device)
+input = torch.tensor([tokenizer.encode('My ID is ')]], dtype=torch.int64).to(device)
 
 with open(args.outf, 'w') as outf:
     with torch.no_grad():  # no tracking history

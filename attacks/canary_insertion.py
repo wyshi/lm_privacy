@@ -3,6 +3,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import utils 
 
 import argparse
+import string
 
 import torch
 import torch.nn as nn
@@ -21,14 +22,9 @@ import numpy as np
 import pandas as pd
 
 '''
-about 5 mins for 6-digit canary " My SSN is 341752." for one model
+about 5 mins for 6-digit canary " My ID is 341752." for one model
 python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210409/185850 --outputf attacks/canary_insertion/nodp_10insertion.csv
 '''
-CANARY = " My SSN is 341752."
-TOTAL_CANDIDATES = 1000_000
-
-CANARY_MISSED = "My Name is Earl"
-TOTAL_CANDIDATES_FOR_MISSED = 26**4
 
 class CanaryDataset(Dataset):
     def __init__(self, canary, tokenizer):
@@ -48,7 +44,7 @@ class CanaryDataset(Dataset):
                                 # for o in range(10):
                                     # for p in range(10):
                                     #     for q in range(10):
-                                text = f' My SSN is {i}{j}{k}{l}{m}{n}.'
+                                text = f' My ID is {i}{j}{k}{l}{m}{n}.'
                                 texts.append(text)
                                 encoded_texts.append(tokenizer.encode(text)) 
         assert self.canary in texts
@@ -62,6 +58,20 @@ class CanaryDataset(Dataset):
         
     def collate(self, unpacked_data):
         return unpacked_data
+
+class MissedCanaryDataset(CanaryDataset):
+    def build_data(self):
+        texts = []
+        encoded_texts = []
+        for i in tqdm(string.ascii_uppercase):  
+            for j in string.ascii_lowercase:
+                for k in string.ascii_lowercase:
+                    for l in string.ascii_lowercase:
+                        text = f'My Name is {i}{j}{k}{l}'
+                        texts.append(text)
+                        encoded_texts.append(tokenizer.encode(text)) 
+        assert self.canary in texts
+        return list(zip(texts, encoded_texts))     
 
 def estimate(pp, low, high):
     #----------------------------------------------------------------------------------------#
@@ -134,6 +144,8 @@ if __name__ == "__main__":
                         help='batch size')
     parser.add_argument('--cuda', type=str, default="cuda:0",
                         help='use CUDA')
+    parser.add_argument('--missed', action='store_true', #default=False, 
+                        help='calculate the exposure for the missed canary')
     args = parser.parse_args()
 
     print(f'output will be saved to {args.outputf}')
@@ -155,7 +167,16 @@ if __name__ == "__main__":
     ###############################################################################
     # load data
     ###############################################################################
-    canary_corpus = CanaryDataset(CANARY, tokenizer)
+    if not args.missed:
+        CANARY = " My ID is 341752."
+        canary_corpus = CanaryDataset(CANARY, tokenizer)
+        TOTAL_CANDIDATES = 1000_000
+
+    else:
+        CANARY = "My Name is Earl"
+        canary_corpus = MissedCanaryDataset(CANARY, tokenizer)
+        TOTAL_CANDIDATES = 26**4
+    
     dataloader = DataLoader(dataset=canary_corpus, 
                             shuffle=False, 
                             batch_size=args.batch_size, 
@@ -166,7 +187,10 @@ if __name__ == "__main__":
     ###############################################################################    
     # exposures, ranks, canary_ppls, model_ppls, model_accs = [], [], [], [], []
     records = []
-    paths = sorted(Path(args.checkpoint).iterdir(), key=os.path.getmtime)
+    if os.path.isdir(args.checkpoint):
+        paths = sorted(Path(args.checkpoint).iterdir(), key=os.path.getmtime)
+    else:
+        paths = [args.checkpoint]
     for model_path in tqdm(paths):
         model_path = str(model_path)
         model = load_model(model_path)
@@ -180,6 +204,7 @@ if __name__ == "__main__":
             column_names=['epoch', 'model_ppl', 'model_acc', 'model_epsilon', 'model_delta', 'model_alpha', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES', 'model_path']
             record = [epoch_num, model_ppl, model_acc, model_epsilon, model_delta, model_alpha, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES, model_path]
         except:
+            raise ValueError("no privacy values, shouldn't happen with the new runs")
             column_names=['epoch', 'model_ppl', 'model_acc', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES', 'model_path']
             record = [epoch_num, model_ppl, model_acc, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES, model_path]
         records.append(record)
