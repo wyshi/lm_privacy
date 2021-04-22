@@ -9,18 +9,17 @@ import pandas as pd
 import json
 import copy
 
-#TODO: clean code later
-names = ["id","name","address","phone","card_number","order_number"]
-USER_DB_DF = pd.read_csv("database/database_20000.csv", names=names, header=None,skiprows=1)
 
 class AbstractNlg(object):
     """
     Abstract class of NLG
     """
 
-    def __init__(self, domain, complexity):
+    def __init__(self, domain, complexity, db=None):
         self.domain = domain
         self.complexity = complexity
+        if db is not None:
+            self.db = db
 
     def generate_sent(self, actions, **kwargs):
         """
@@ -200,7 +199,7 @@ class UserNlg(AbstractNlg):
                         return self.sample(["Anything is fine.", "I don't care.", "Whatever is good."])
                     else:
                         slot_name = slot_type.strip()[1:]
-                        slot_val = USER_DB_DF.iloc[val][slot_name]
+                        slot_val = self.db.iloc[val][slot_name]
                         return target_slot.sample_inform() % slot_val
 
                 if has_self_correct:
