@@ -5,9 +5,13 @@
 import numpy as np
 from simdial.agent.core import SystemAct, UserAct, BaseUsrSlot
 from simdial.agent import core
+import pandas as pd
 import json
 import copy
 
+#TODO: clean code later
+names = ["id","name","address","phone","card_number","order_number"]
+USER_DB_DF = pd.read_csv("database/database_20000.csv", names=names, header=None,skiprows=1)
 
 class AbstractNlg(object):
     """
@@ -195,7 +199,9 @@ class UserNlg(AbstractNlg):
                     if val is None:
                         return self.sample(["Anything is fine.", "I don't care.", "Whatever is good."])
                     else:
-                        return target_slot.sample_inform() % target_slot.vocabulary[val]
+                        slot_name = slot_type.strip()[1:]
+                        slot_val = USER_DB_DF.iloc[val][slot_name]
+                        return target_slot.sample_inform() % slot_val
 
                 if has_self_correct:
                     wrong_value = target_slot.sample_different(slot_value)

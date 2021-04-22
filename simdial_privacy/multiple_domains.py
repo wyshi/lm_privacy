@@ -331,7 +331,8 @@ class TrackPackageSpec(DomainSpec):
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
                                                 ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
                     }
-        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_500.csv")
+        
+        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_20000.csv") 
 
         self.usr_slots = [("name", "customer name", rand_names),
                     ("phone", "customer phone number", rand_phone_numbers),
@@ -341,7 +342,7 @@ class TrackPackageSpec(DomainSpec):
         self.sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
                                                             "the day after tomorrow", "this weekend"])]
 
-        self.db_size = 200
+        self.db_size = 20_000
 
 def read_rand_entity_db(path):
     df = pd.read_csv(path)
