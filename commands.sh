@@ -172,3 +172,19 @@ python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/202
 python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/064057 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm5e-05_seed1111.csv
 python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134345 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm1e-05_seed1111.csv
 python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134357 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm5e-06_seed1111.csv
+
+
+
+# parameter search on the sigma and norm
+    # screen -R partialdp 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 5e-3  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm5e-3_sigma0.1_seed1111 
+    # screen -R partialdp5 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 0.25  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm0.25_sigma0.1_seed1111  
+    # screen -R partialdp4 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 5e-3  --sigma 0.05 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm5e-3_sigma0.05_seed1111  
+    # screen -R partialdp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 0.25  --sigma 0.05 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm0.25_sigma0.05_seed1111  
+    # screen -R partialdp2 # notyet
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -partial -norm 5e-3  --sigma 0.01 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm5e-3_sigma0.01_seed1111 
+    # screen -R partialdp6 # not yet
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 0.25  --sigma 0.01 --seed 1111 2>&1 | tee llogs/partial_dp/20210423/nohidden_lr0.1_norm0.25_sigma0.01_seed1111  
