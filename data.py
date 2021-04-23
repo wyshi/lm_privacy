@@ -7,6 +7,7 @@ from glob import glob
 import numpy as np
 import utils
 import pandas as pd
+from tqdm import tqdm
 
 class Dictionary(object):
     def __init__(self, path):
@@ -120,41 +121,6 @@ class Corpus(object):
 
         return ids
 
-
-class CustomerDataset(Dataset):
-    def __init__(self, path, tokenizer):
-        self.path = path
-        self.data = self.build_data(path)
-        self.tokenizer = tokenizer
-
-    def build_data(self, path):
-        dials = []
-        for fle in glob(os.path.join(path, '*')):
-            with open(fle, 'r') as fh:
-                dial = [turn for turn in fh]
-                dials.append(dial)  
-        # import pdb; pdb.set_trace()
-        return dials          
-
-    def __len__(self):
-        return len(self.data)
-    
-    def __getitem__(self, index):
-        bos_id = self.tokenizer.encode(self.tokenizer.bos_token)
-        eos_id = self.tokenizer.encode(self.tokenizer.eos_token)
-        
-        dial_tokens = [self.tokenizer.encode(turn) for turn in self.data[index]]
-        
-        flat_dial_tokens = [turn_tokens for turn in dial_tokens for turn_tokens in turn]
-        flat_dial_tokens = bos_id + flat_dial_tokens + eos_id
-        
-        return flat_dial_tokens
-        # return torch.tensor(flat_dial_tokens).type(torch.int64)
-        
-    def collate(self, unpacked_data):
-        return unpacked_data
-
-
 class CorpusDataset(Dataset):
     def __init__(self, path, tokenizer, bsz, bptt):
         self.path = path
@@ -266,3 +232,83 @@ class CorpusPartialDPDataset(CorpusDataset):
         tok_ids, texts, is_privates, split_sequence = self.data[index]    
         return split_sequence
 
+class CustomerDataset(Dataset):
+    def __init__(self, path, tokenizer):
+        self.path = path
+        self.tokenizer = tokenizer
+        self.data = self.build_data(path)
+
+    def build_data(self, path):
+        # bos_id = self.tokenizer.encode(self.tokenizer.bos_token)
+        eos_id = self.tokenizer.encode(self.tokenizer.eos_token)
+
+        dials = []
+        tokens = []
+        for fle in glob(os.path.join(path, '*')):
+            with open(fle, 'r') as fh:
+                lines = fh.read()
+                dial = lines.strip().split("\n")
+                dials.append(dial)  
+        
+                dial_tokens = [self.tokenizer.encode(turn) for turn in dial]
+                
+                flat_dial_tokens = [turn_tokens for turn in dial_tokens for turn_tokens in turn]
+                flat_dial_tokens = flat_dial_tokens + eos_id
+                tokens.append(flat_dial_tokens)
+
+        return list(zip(dials, tokens))         
+
+    def __len__(self):
+        return len(self.data)
+    
+    def __getitem__(self, index):
+        dial, tokens = self.data[index]
+        return tokens
+        # return torch.tensor(flat_dial_tokens).type(torch.int64)
+        
+    def collate(self, unpacked_data):
+        return unpacked_data
+
+class CustomerPartialDPDataset(CustomerDataset):
+    def __init__(self, path, tokenizer, is_private_func):
+        self.is_private_func = is_private_func
+        super().__init__(path, tokenizer)
+        # import pdb; pdb.set_trace()
+        print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
+
+    def build_data(self, path):
+        dials = []
+        texts = []
+        is_privates = []
+        split_sequences = []
+
+        eos_id = self.tokenizer.encode(self.tokenizer.eos_token)
+
+        for fle in tqdm(glob(os.path.join(path, '*'))):
+            with open(fle, 'r') as fh:
+                lines = fh.read()
+                dial = lines.strip().split("\n")
+                dials.append(dial)  
+
+                dial_tokens = [self.tokenizer.encode(turn) for turn in dial]
+                flat_dial_tokens = [turn_tokens for turn in dial_tokens for turn_tokens in turn]
+                flat_dial_tokens = flat_dial_tokens + eos_id
+
+                split_text = [self.tokenizer.decode(tok) for tok in flat_dial_tokens]
+                flat_split_text = [self.tokenizer.decode(tok) for tok in flat_dial_tokens]
+                texts.append(flat_split_text)
+
+                is_private = self.is_private_func(dialog=lines, domain="track_package", tokenizer=self.tokenizer, dial_tokens=dial_tokens, verbose=False) + [0] # the last 0 for the eos_id
+                is_privates.append(is_private)
+                                
+                assert len(is_private) == len(flat_dial_tokens)
+                split_seq = utils.split_is_private(is_private, flat_dial_tokens)
+                split_sequences.append(split_seq)
+
+
+        # import pdb; pdb.set_trace()
+        return list(zip(dials, texts, is_privates, split_sequences))      
+   
+    def __getitem__(self, index):
+        dial, texts, is_private, split_sequence = self.data[index]    
+        return split_sequence

@@ -11,6 +11,11 @@ python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokeni
 
 # partial dp, lstm
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero 2>&1 | tee logs/partial_dp/20210409/2347/torch_lstm.log
+
+### dialog task
+python -u main.py --lr 20 --data data/simdial --data_type dial --cuda cuda:3 -dp -partial -bs 1
+
+
 """
 # coding: utf-8
 import argparse
@@ -174,7 +179,12 @@ if args.data_type == 'doc':
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
     test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, args.batch_size, args.bptt)
 else:
-    train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer=tokenizer)
+    
+    if args.partial and args.dp:
+        train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, utils.private_token_classifier)
+    else:
+        train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer)
+
     valid_corpus = data.CustomerDataset(os.path.join(args.data, 'valid'), tokenizer=tokenizer)
     test_corpus = data.CustomerDataset(os.path.join(args.data, 'test'), tokenizer=tokenizer)
 

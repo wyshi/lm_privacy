@@ -123,14 +123,15 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 1e-3  --sigma 
 # repeat 5 times for norm=1e-3, dp
 # screen -R dp # have run
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -norm 1e-3 --seed 1111 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed1111 # screen dp
+# repeat 5 times for norm=1e-2, dp
 # screen -R dp2
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 0 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed0 # screen dp
-# screen -R dp3
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 123 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed123 # screen dp
-# screen -R dp4
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 22 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed22 # screen dp
-# screen -R dp5
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 300 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed300 # screen dp
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -norm 1e-2 --seed 1111 2>&1 | tee logs/dp/20210422/1437/lr0.1_sigma0.5_norm1e-2_seed1111 # screen dp
+# # screen -R dp3
+# python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-2 --seed 123 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed123 # screen dp
+# # screen -R dp4
+# python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-2 --seed 22 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed22 # screen dp
+# # screen -R dp5
+# python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-2 --seed 300 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed300 # screen dp
 
 
 # canary for no-dp, new runs
