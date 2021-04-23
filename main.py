@@ -13,7 +13,7 @@ python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokeni
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero 2>&1 | tee logs/partial_dp/20210409/2347/torch_lstm.log
 
 ### dialog task
-python -u main.py --lr 20 --data data/simdial --data_type dial --cuda cuda:3 -dp -partial -bs 1 -dont_save_model
+python -u main.py --lr 20 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 1 -dont_save_model
 
 
 """
