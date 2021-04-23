@@ -11,6 +11,11 @@ python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokeni
 
 # partial dp, lstm
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero 2>&1 | tee logs/partial_dp/20210409/2347/torch_lstm.log
+
+### dialog task
+python -u main.py --lr 20 --data data/simdial --data_type dial --cuda cuda:3 -dp -partial -bs 1 -dont_save_model
+
+
 """
 # coding: utf-8
 import argparse
@@ -46,6 +51,12 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 # >>> outputs = model(**inputs)
 
 # >>> prediction_logits = outputs.logits
+
+
+def load_model(model_path):
+    with open(model_path, 'rb') as f:
+        model = torch.load(f, map_location=device)
+    return model
 
 ################################
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPT2TokenizerFast
@@ -112,6 +123,15 @@ parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc'
                     help='data type, doc for documents in lm, dial for dialogues')
 parser.add_argument('-partial_hidden_zero', action='store_true',
                     help='partial differential privacy use zero hidden states')
+parser.add_argument('-dont_save_model', action='store_true',
+                    help='do not save the model when testing')
+parser.add_argument('-resume', action='store_true',
+                    help='resume from previous ckpt')
+parser.add_argument('-resume_from', type=str,
+                    help='ckpt to resume from')
+parser.add_argument('-resume_from_epoch_num', type=int, default=0,
+                    help='epoch number to resume from')
+
 
 args = parser.parse_args()
 
@@ -174,7 +194,12 @@ if args.data_type == 'doc':
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
     test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, args.batch_size, args.bptt)
 else:
-    train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer=tokenizer)
+    
+    if args.partial and args.dp:
+        train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, utils.private_token_classifier)
+    else:
+        train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer)
+
     valid_corpus = data.CustomerDataset(os.path.join(args.data, 'valid'), tokenizer=tokenizer)
     test_corpus = data.CustomerDataset(os.path.join(args.data, 'test'), tokenizer=tokenizer)
 
@@ -255,17 +280,21 @@ print("*"*89)
 
 # Define model parameters
 if args.model != 'Transformer':
-    model = DPLSTMModel(
-        embedding_size=args.emsize,
-        hidden_size=args.nhid,
-        vocab_size=ntokens,
-        pad_token_id=PAD_TOKEN_ID,
-        num_lstm_layers=args.num_layers,
-        dropout=args.dropout,
-        bidirectional=args.bidirectional,
-        tie_weights=args.tied,
-        dp=args.dp,
-    ).to(device)
+    if args.resume:
+        model = load_model(args.resume_from)
+        model = model.to(device)
+    else:
+        model = DPLSTMModel(
+            embedding_size=args.emsize,
+            hidden_size=args.nhid,
+            vocab_size=ntokens,
+            pad_token_id=PAD_TOKEN_ID,
+            num_lstm_layers=args.num_layers,
+            dropout=args.dropout,
+            bidirectional=args.bidirectional,
+            tie_weights=args.tied,
+            dp=args.dp,
+        ).to(device)
 
 else:
     # gpt2 model
@@ -505,7 +534,8 @@ def train(privacy_engine=None):
                 except:
                     valid_ppl = math.inf
                 print(privacy_printstr)
-                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+                if not args.dont_save_model:
+                    _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
                 model.train()
 
 
@@ -524,6 +554,7 @@ def train_partialdp_rnn(privacy_engine):
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
     for batch_i, batch in enumerate(train_dataloader):
+        import pdb; pdb.set_trace()
         hidden = model.init_hidden(args.batch_size)
         max_split = max(list(map(len, batch)))
         batch_loss, batch_ntokens = [], []
@@ -677,7 +708,8 @@ def train_partialdp_rnn(privacy_engine):
                 except:
                     valid_ppl = math.inf
                 print(privacy_printstr)
-                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+                if not args.dont_save_model:
+                    _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
                 model.train()
 
         if args.dry_run:
@@ -705,7 +737,7 @@ best_val_loss = None
 
 # At any point you can hit Ctrl + C to break out of training early.
 try:
-    epoch = 0
+    epoch = args.resume_from_epoch_num
     epoch_start_time = time.time()
     val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
     try:
@@ -720,10 +752,11 @@ try:
     print('-' * 89)
 
     # save the model for the first time before training
-    cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
-    BEST_MODEL_DIR = cur_save_dir
+    if not args.dont_save_model:
+        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+        BEST_MODEL_DIR = cur_save_dir
 
-    for epoch in range(1, args.epochs+1):
+    for epoch in range(1+args.resume_from_epoch_num, args.epochs+1+args.resume_from_epoch_num):
         epoch_start_time = time.time()
         if args.partial and args.dp:
             train_partialdp_rnn(privacy_engine=privacy_engine)
@@ -741,7 +774,8 @@ try:
         print(privacy_printstr)
         print('-' * 89)
         # save the model
-        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+        if not args.dont_save_model:
+            cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
         # Save the model if the validation loss is the best we've seen so far.
         if not best_val_loss or val_loss < best_val_loss:
             best_val_loss = val_loss
