@@ -148,6 +148,8 @@ if __name__ == "__main__":
                         help='calculate the exposure for the missed canary')
     args = parser.parse_args()
 
+    if not os.path.exists(folder):
+        os.makedirs(folder)
     print(f'output will be saved to {args.outputf}')
     assert not os.path.isfile(args.outputf)
     # Set the random seed manually for reproducibility.

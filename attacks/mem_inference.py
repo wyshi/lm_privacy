@@ -252,7 +252,10 @@ if __name__ == "__main__":
                         help='max tokens in each candidate')
     args = parser.parse_args()
 
+    if not os.path.exists(os.path.join(args.outputf.split('/')[:-1])):
+        os.makedirs(folder)
     print(f'output will be saved to {args.outputf}')
+    assert not os.path.isfile(args.outputf)
     # Set the random seed manually for reproducibility.
     torch.manual_seed(args.seed)
     if torch.cuda.is_available():
