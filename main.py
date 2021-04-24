@@ -13,7 +13,7 @@ python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokeni
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero 2>&1 | tee logs/partial_dp/20210409/2347/torch_lstm.log
 
 ### dialog task
-python -u main.py --lr 20 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 1 -dont_save_model
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 1 --sigma 0.5 -norm 1e-3 -use_test_as_train
 
 
 """
@@ -131,6 +131,8 @@ parser.add_argument('-resume_from', type=str,
                     help='ckpt to resume from')
 parser.add_argument('-resume_from_epoch_num', type=int, default=0,
                     help='epoch number to resume from')
+parser.add_argument('-use_test_as_train', action='store_true',
+                    help='use test set as training set for faster development')
 
 
 args = parser.parse_args()
@@ -196,7 +198,10 @@ if args.data_type == 'doc':
 else:
     
     if args.partial and args.dp:
-        train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, utils.private_token_classifier)
+        if args.use_test_as_train:
+            train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'test'), tokenizer, utils.private_token_classifier)
+        else:
+            train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, utils.private_token_classifier)
     else:
         train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer)
 
@@ -566,9 +571,14 @@ def train_partialdp_rnn(privacy_engine):
             minibatch_tgt = [torch.tensor(b[split_i][1]).type(torch.int64) for b in batch if split_i < len(b) and len(b[split_i][1])]
             minibatch_positive_idx = [b_i for b_i, b in enumerate(batch) if split_i < len(b) and len(b[split_i][0]) > 0]
             seq_lens = list(map(len, minibatch_src))
-            minibatch_src = pad_sequence(minibatch_src, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
-            minibatch_tgt = pad_sequence(minibatch_tgt, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
-            
+            if len(minibatch_positive_idx) == 0:
+                # all data in the batch starts with a private token, should skip this split_i
+                continue
+            try:
+                minibatch_src = pad_sequence(minibatch_src, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
+                minibatch_tgt = pad_sequence(minibatch_tgt, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
+            except:
+                import pdb; pdb.set_trace()    
             # hidden
             cur_hidden = [h[:, minibatch_positive_idx, :] for h in hidden]
             if split_i % 2 == 0:
@@ -725,6 +735,8 @@ def export_onnx(path, batch_size, seq_len):
     torch.onnx.export(model, (dummy_input, hidden), path)
 
 def save_model(base_dir, ppl, acc, epoch, epsilon, delta, alpha):
+    if ppl >= 1e7:
+        ppl = math.inf
     cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3f}_dl-{delta}_ap-{alpha:.2f}"
     with open(cur_save_dir, 'wb') as f:
         torch.save(model, f)
