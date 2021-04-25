@@ -12,6 +12,8 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 
 import math
 
+CANARY_DIGITS = " 341752"
+
 nlp = en_core_web_sm.load()
 
 def detect_private_tokens(dialog, domain, verbose=True):
@@ -179,7 +181,13 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 # tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 # private_token_classifier(example_input, "track_package", tokenizer)
 
-
+def is_sub(sub, lst):
+    # https://stackoverflow.com/questions/34599113/how-to-find-if-a-list-is-a-subset-of-another-list-in-order
+    ln = len(sub)
+    for i in range(len(lst) - ln + 1):
+        if all(sub[j] == lst[i+j] for j in range(ln)):
+            return [i, i+ln]
+    return False
 
 def is_digit(texts_lst):
     """

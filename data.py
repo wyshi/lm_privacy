@@ -172,15 +172,17 @@ class CorpusDataset(Dataset):
 class CorpusPartialDPDataset(CorpusDataset):
     def __init__(self, path, tokenizer, bsz, bptt, is_private_func, missing_digits=False):
         self.is_private_func = is_private_func
+        self.missing_digits = missing_digits
         super().__init__(path, tokenizer, bsz, bptt)
         # import pdb; pdb.set_trace()
         print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
-        self.missing_digits = missing_digits
 
     def build_data(self, path):
         assert self.tokenizer.bos_token == self.tokenizer.eos_token # only if bos = eos, can we add eos only without adding bos below in line_token_ids = self.tokenizer.encode(line) + end_token_id 
         # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
+        if self.missing_digits:
+            canary_digits_token_ids = self.tokenizer.encode(utils.CANARY_DIGITS)
 
         token_ids = []
         for fle in glob(os.path.join(path, '*')):
@@ -213,7 +215,18 @@ class CorpusPartialDPDataset(CorpusDataset):
                 split_text = [self.tokenizer.decode(tok) for tok in seq]
                 cur_texts.append(split_text)
                 
+                import pdb; pdb.set_trace()
                 is_private = self.is_private_func(split_text)
+                if self.missing_digits:
+                    # we need to miss the inserted canary digits
+                    # import pdb; pdb.set_trace()
+                    is_sub = utils.is_sub(canary_digits_token_ids, seq)
+                    if is_sub:
+                        import pdb; pdb.set_trace()
+                        assert all(is_private[is_sub[0]:is_sub[1]])
+                        for _i in range(is_sub[0], is_sub[1]):
+                            is_private[_i] = 0
+                        
                 cur_is_privates.append(is_private)
                 
                 # import pdb

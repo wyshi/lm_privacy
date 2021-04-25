@@ -133,6 +133,8 @@ parser.add_argument('-resume_from_epoch_num', type=int, default=0,
                     help='epoch number to resume from')
 parser.add_argument('-use_test_as_train', action='store_true',
                     help='use test set as training set for faster development')
+parser.add_argument('-missing_digits', action='store_true', 
+                    help='the experiments for missing the inserted digits')
 
 
 args = parser.parse_args()
@@ -190,7 +192,7 @@ if args.data_type == 'doc':
     # test_data = batchify(corpus.test, eval_batch_size)
     print(f"training data: {args.data}")
     if args.partial and args.dp:
-        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit)
+        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit, missing_digits=args.missing_digits)
     else:
         train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
