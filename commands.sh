@@ -192,6 +192,6 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 0.25  --sigma 
 
 # dp param search, on nlp
 # screen -R dp1
-python -u main.py -bs 4 --lr 0.1 -dp --cuda cuda:0 -norm 0.25 --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.25_seed1111 
+python -u main.py -bs 3 --lr 0.1 -dp --cuda cuda:0 -norm 0.25 --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.25_seed1111 
 # screen -R dp2
 python -u main.py -bs 6 --lr 0.1 -dp --cuda cuda:1 -norm 0.5  --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.5_seed1111 
