@@ -202,3 +202,16 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -norm 0.25 --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.25_seed1111 
 # screen -R dp2
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -norm 0.5  --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.5_seed1111 
+
+
+# dp repeat 5 times, on language, not yet, cannot fit in language
+# screen -R dp1
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:0 -norm 0.1 --seed 1111 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed1111 
+# screen -R dp2
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:2 -norm 0.1 --seed 0 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed0 
+# screen -R dp3
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:3 -norm 0.1 --seed 123 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed123
+# screen -R dp4
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:4 -norm 0.1 --seed 22 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed22 
+# screen -R dp4
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:6 -norm 0.1 --seed 300 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed300 
