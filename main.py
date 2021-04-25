@@ -739,7 +739,10 @@ def export_onnx(path, batch_size, seq_len):
 def save_model(base_dir, ppl, acc, epoch, epsilon, delta, alpha):
     if ppl >= 1e7:
         ppl = math.inf
-    cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3f}_dl-{delta}_ap-{alpha:.2f}"
+    if epsilon <= 1e9:
+        cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3f}_dl-{delta}_ap-{alpha:.2f}"
+    else:
+        cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3e}_dl-{delta}_ap-{alpha:.2f}"
     with open(cur_save_dir, 'wb') as f:
         torch.save(model, f)
     print(f"model saved to {cur_save_dir}, ppl: {ppl}")
