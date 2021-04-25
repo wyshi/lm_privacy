@@ -170,11 +170,12 @@ class CorpusDataset(Dataset):
         return unpacked_data
 
 class CorpusPartialDPDataset(CorpusDataset):
-    def __init__(self, path, tokenizer, bsz, bptt, is_private_func):
+    def __init__(self, path, tokenizer, bsz, bptt, is_private_func, missing_digits=False):
         self.is_private_func = is_private_func
         super().__init__(path, tokenizer, bsz, bptt)
         # import pdb; pdb.set_trace()
         print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
+        self.missing_digits = missing_digits
 
     def build_data(self, path):
         assert self.tokenizer.bos_token == self.tokenizer.eos_token # only if bos = eos, can we add eos only without adding bos below in line_token_ids = self.tokenizer.encode(line) + end_token_id 
