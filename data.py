@@ -215,7 +215,6 @@ class CorpusPartialDPDataset(CorpusDataset):
                 split_text = [self.tokenizer.decode(tok) for tok in seq]
                 cur_texts.append(split_text)
                 
-                import pdb; pdb.set_trace()
                 is_private = self.is_private_func(split_text)
                 if self.missing_digits:
                     # we need to miss the inserted canary digits
