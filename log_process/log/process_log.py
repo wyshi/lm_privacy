@@ -19,27 +19,35 @@ def extract_model_path(log_list):
                         break
     return list(zip(model_paths, seeds))
 
+def extract_model_test_ppl(log_list):
+    test_ppls = []
+    test_accs = []
+    for l in log_list:
+        if l:
+            with open(l.strip(), 'r') as fh:
+                lines = fh.readlines()
+                for i, line in enumerate(lines):
+                    if "End of training" in line:
+                        # matched = re.search("test ppl   (.+?) | test acc (.+?)", line)
+                        # test_ppl, test_acc = matched.group(1), matched.group(2)
+                        test_ppl, test_acc = line.split("test ppl")[1].split("|")[0].strip(), line.split("test acc")[1].strip("\n").strip()
+                        test_ppls.append(test_ppl)
+                        test_accs.append(test_acc)
+    print("test ppl")
+    for p in test_ppls:
+        print(p)
+    print("test acc")
+    for p in test_accs:
+        print(p)
+    return list(zip(test_ppls, test_accs))
+
 log_list = """
-logs/nodp/20210416/2354/bs16.log
-logs/nodp/20210416/2354/bs16_see0.log
-logs/nodp/20210416/2354/bs16_seed123.log
-logs/nodp/20210416/2354/bs16_seed22.log
-logs/nodp/20210416/2354/bs16_seed300.log
-logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.01_sigma0.45
-logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.005_sigma0.45
-logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.01_sigma0.5
-logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.005_sigma0.5
-logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.01_sigma0.55 
-logs/partial_dp/20210416/2351/nohidden_lr0.1_norm0.005_sigma0.55 
-logs/partial_dp/20210418/1912/nohidden_lr0.1_norm1e-3_sigma0.5
-logs/partial_dp/20210418/1912/nohidden_lr0.1_norm5e-4_sigma0.5
-logs/partial_dp/20210418/1912/nohidden_lr0.1_norm1e-4_sigma0.5
-logs/partial_dp/20210418/1912/nohidden_lr0.1_norm5e-5_sigma0.5
-logs/partial_dp/20210418/1912/nohidden_lr0.1_norm1e-5_sigma0.5
-logs/partial_dp/20210418/1912/nohidden_lr0.1_norm5e-6_sigma0.5
-"""                    
+logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed1111
+logs/dp/20210422/1437/lr0.1_sigma0.5_norm1e-2_seed1111"""                    
+
 model_paths = extract_model_path(log_list.split('\n'))
 
+test_results = extract_model_test_ppl(log_list.split('\n'))
 
 def print_canary_attack_command(model_paths):
     """
