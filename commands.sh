@@ -215,3 +215,10 @@ python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:3 -norm 0.1 --see
 python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:4 -norm 0.1 --seed 22 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed22 
 # screen -R dp4
 python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:6 -norm 0.1 --seed 300 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed300 
+
+
+# parameter search on the much smaller sigma and norm, dialog
+    # screen -R partialdp1 # 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.001 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.001_seed1111 
+    # screen -R partialdp2 # 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.005 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.005_seed1111  
