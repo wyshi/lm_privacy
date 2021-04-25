@@ -19,7 +19,7 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -norm 1e-3  --sigma 
 
 
 ### missing digits
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -missing_digits
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -missing_digits --data data/wikitext-2-missing10
 
 """
 # coding: utf-8
