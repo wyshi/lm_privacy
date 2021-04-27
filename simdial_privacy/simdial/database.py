@@ -84,6 +84,7 @@ class Database(object):
         
         """
         return self.sys_table
+        # TODO: this function is void. clean it
         # valid_idx = set(range(self.num_rows))
         # for q, a_id in zip(query, range(self.num_usr_slots)):
         #     if q:
