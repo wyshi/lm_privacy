@@ -45,7 +45,7 @@ def detect_private_tokens(dialog, domain, verbose=True):
     IS_ASK_ADDRESS = False
     private_tokens = []
     dialog_by_speaker = dialog.strip().split("\n")
-    db = pd.read_csv("simdial_privacy/database/database_500.csv")
+    db = pd.read_csv("simdial_privacy/database/database_20000.csv")
     address_db = db['address'].tolist()
 
     # recognize dialog order, assume the turns are 1-1, could generalize later

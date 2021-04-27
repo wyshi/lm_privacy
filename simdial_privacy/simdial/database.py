@@ -83,17 +83,19 @@ class Database(object):
         :return return a list system_entries and (optional)index that satisfy all constrains
         
         """
-        valid_idx = set(range(self.num_rows))
-        for q, a_id in zip(query, range(self.num_usr_slots)):
-            if q:
-                valid_idx -= self.indexes[a_id][q]
-                if len(valid_idx) == 0:
-                    break
-        valid_idx = list(valid_idx)
-        if return_index:
-            return self.sys_table[valid_idx, :], valid_idx
-        else:
-            return self.sys_table[valid_idx, :]
+        return self.sys_table
+        # valid_idx = set(range(self.num_rows))
+        # for q, a_id in zip(query, range(self.num_usr_slots)):
+        #     if q:
+        #         valid_idx -= self.indexes[a_id][q]
+        #         if len(valid_idx) == 0:
+        #             break
+        # valid_idx = list(valid_idx)
+        
+        # if return_index:
+        #     return self.sys_table[valid_idx, :], valid_idx
+        # else:
+        #     return self.sys_table[valid_idx, :]
 
     def pprint(self):
         """

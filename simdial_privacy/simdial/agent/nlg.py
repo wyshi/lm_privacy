@@ -86,7 +86,8 @@ class SysNlg(AbstractNlg):
                     if v is None:
                         search_dict[k] = 'dont_care'
                     else:
-                        search_dict[k] = slot.vocabulary[v]
+                        if v < len(slot.vocabulary):
+                            search_dict[k] = slot.vocabulary[v]
 
                 a_copy.parameters[0] = search_dict
                 a_copy.parameters[1] = sys_goals

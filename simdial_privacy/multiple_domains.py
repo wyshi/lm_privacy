@@ -332,7 +332,9 @@ class TrackPackageSpec(DomainSpec):
                                                 ["lipstick", "mobile phone", "pot", "floor lamp", "chair"]]}
                     }
         
-        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_20000.csv") 
+        # TODO: clean void code
+        # This code is void, we generate random id from 1-20000 and read from db directly (see users.py line99)
+        rand_names, rand_addresses, rand_phone_numbers, rand_card_numbers, rand_order_numbers = read_rand_entity_db("database/database_500.csv") 
 
         self.usr_slots = [("name", "customer name", rand_names),
                     ("phone", "customer phone number", rand_phone_numbers),
@@ -341,8 +343,7 @@ class TrackPackageSpec(DomainSpec):
 
         self.sys_slots = [("shipment", "expected shipment date", ["today", "tomorrow", "tonight", "this morning",
                                                             "the day after tomorrow", "this weekend"])]
-
-        self.db_size = 200 # this is useless now, will clean code later
+        self.db_size = 20_000 # this is useless now, will clean code later
 
 def read_rand_entity_db(path):
     df = pd.read_csv(path)
