@@ -16,6 +16,17 @@ CANARY_DIGITS = " 341752"
 
 nlp = en_core_web_sm.load()
 
+def is_right_token(curr_private_token, curr_enc_token, curr_enc_idx, tokens):
+    """
+    Make sure the token is the target, but not part of some other words
+    """
+    assert curr_private_token.startswith(curr_enc_token)
+    token_remain = curr_private_token[len(curr_enc_token):]
+    if token_remain != "":
+        next_token = tokens[curr_enc_idx+1]
+        return token_remain.startswith(next_token)
+    return True
+
 def detect_private_tokens(dialog, domain, verbose=True):
     """
     Detect private information in the original dialog string
@@ -132,21 +143,21 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 
     encoded_labels = []
     queue = private_tokens.copy()
+    tokenized_private_info = []
+
     for t in range(len(tokens)):
         lab = 0
         curr_enc_token = tokens[t].strip()
         if queue != []:
             curr_private_token = queue[0].strip()
         
-            if curr_enc_token != "" and curr_private_token.startswith(curr_enc_token):
+            if (curr_enc_token != "" and 
+               curr_private_token.startswith(curr_enc_token) and 
+               is_right_token(curr_private_token, curr_enc_token, t, tokens)):
                 if verbose:
-                    print("Private Token exists, Case 1: ",curr_private_token,curr_enc_token)
+                    print(f"Private Token exists, from info {curr_private_token}, token is {curr_enc_token}")
                 curr_private_token = curr_private_token[len(curr_enc_token):]
-                lab = 1
-            elif curr_enc_token[1:] != "" and curr_private_token.startswith(curr_enc_token[1:]):
-                if verbose:
-                    print("Private Token exists, Case 2: ",curr_private_token,curr_enc_token[1:])
-                curr_private_token = curr_private_token[len(curr_enc_token)-1:]
+                tokenized_private_info.append(curr_enc_token)
                 lab = 1
             
             if curr_private_token != "":
@@ -158,25 +169,26 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 
     if verbose:
         print(list(zip(tokens,encoded_labels)))
+        print("Detected Private Tokens", tokenized_private_info)
+
+    # make sure that the tokenized private info matches the private info detected
+    assert "".join(tokenized_private_info) == "".join([p.replace(" ","").strip() for p in private_tokens])
+    
     return encoded_labels
 
 
 
 ### Classifier Example Uncomment to Use
 
-# example_input = """SYS: Hello, I am with customer support bot. What can I do for you?
-# USR: Hi. I placed an order but I don't know if it has been shipped.
+# example_input = """SYS: Hello, I am with customer support bot. What do you need?
+# USR: What's up? I ordered a mobile phone several days ago but I can't track it.
 # SYS: Can you verify your full name so I can look that up?
-# USR: Michael Park
-# SYS: Ok, let me get your phone number really quick.
-# USR: You can reach me at 347-367-3553.
-# SYS: Verify your order number please.
-# USR: Sure, it is 358-76768-2727
-# SYS: We will need the shipping address as well.
-# USR: My address is 226 Nicole Ramp Apt. 929 Prestonfurt, UT 29527.
-# SYS: The tracking number of your package is 71. What else can I do?
-# USR: All good. See you.
-# SYS: It was a great pleasure helping you."""
+# USR: Yes, Marlene Brown.
+# SYS: Verify your phone number please.
+# USR: Phone number is 3452154631
+# SYS: You can track your package using your tracking number, which is 4097. Are you happy about my answer?
+# USR: That's it. Thanks! See you.
+# SYS: Goodbye."""
 
 # tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 # private_token_classifier(example_input, "track_package", tokenizer)
