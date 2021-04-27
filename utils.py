@@ -211,17 +211,17 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 
 ### Classifier Example Uncomment to Use
 
-example_input = """SYS: Hello, I am with customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name please?
-USR: I am Imelda Williams.
-SYS: Thanks Imelda. Verify your phone number please.
-USR: 7034738560.
-SYS: The tracking number of your package is 185. What else can I do?
-USR: That's it. Thanks!"""
+# example_input = """SYS: Hello, I am with customer support bot. How can I help?
+# USR: What's up? Could you please help me track my package?
+# SYS: May I have your full name please?
+# USR: I am Imelda Williams.
+# SYS: Thanks Imelda. Verify your phone number please.
+# USR: 7034738560.
+# SYS: The tracking number of your package is 185. What else can I do?
+# USR: That's it. Thanks!"""
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-private_token_classifier(example_input, "track_package", tokenizer)
+# tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+# private_token_classifier(example_input, "track_package", tokenizer)
 
 def is_sub(sub, lst):
     # https://stackoverflow.com/questions/34599113/how-to-find-if-a-list-is-a-subset-of-another-list-in-order
