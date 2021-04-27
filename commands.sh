@@ -123,14 +123,15 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 1e-3  --sigma 
 # repeat 5 times for norm=1e-3, dp
 # screen -R dp # have run
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -norm 1e-3 --seed 1111 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed1111 # screen dp
+# repeat 5 times for norm=1e-2, dp
 # screen -R dp2
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 0 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed0 # screen dp
-# screen -R dp3
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 123 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed123 # screen dp
-# screen -R dp4
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 22 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed22 # screen dp
-# screen -R dp5
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-3 --seed 300 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed300 # screen dp
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -norm 1e-2 --seed 1111 2>&1 | tee logs/dp/20210422/1437/lr0.1_sigma0.5_norm1e-2_seed1111 # screen dp
+# # screen -R dp3
+# python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-2 --seed 123 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed123 # screen dp
+# # screen -R dp4
+# python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-2 --seed 22 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed22 # screen dp
+# # screen -R dp5
+# python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -norm 1e-2 --seed 300 2>&1 | tee logs/dp/20210421/1029/lr0.1_sigma0.5_norm1e-3_seed300 # screen dp
 
 
 # canary for no-dp, new runs
@@ -171,3 +172,58 @@ python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/202
 python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/064057 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm5e-05_seed1111.csv
 python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134345 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm1e-05_seed1111.csv
 python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134357 --cuda cuda:0 --outputf attacks/membership_inference/partialdp/lr0.1_sigma0.5_norm5e-06_seed1111.csv
+
+
+
+# parameter search on the sigma and norm
+    # screen -R partialdp 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 5e-3  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm5e-3_sigma0.1_seed1111 
+    # screen -R partialdp5 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 0.25  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm0.25_sigma0.1_seed1111  
+    # screen -R partialdp4 
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 5e-3  --sigma 0.05 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm5e-3_sigma0.05_seed1111  
+    # screen -R partialdp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 0.25  --sigma 0.05 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm0.25_sigma0.05_seed1111  
+    # screen -R partialdp2 # notyet
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -partial -norm 5e-3  --sigma 0.01 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm5e-3_sigma0.01_seed1111 
+    # screen -R partialdp6 # not yet
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 0.25  --sigma 0.01 --seed 1111 2>&1 | tee logs/partial_dp/20210423/nohidden_lr0.1_norm0.25_sigma0.01_seed1111  
+
+
+# resume 50 epochs for sigma=0.5, on dialog
+# screen -R resume1
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 --seed 1111 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210418/191438/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-161.1260678_acc-0.33143_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed1111  
+# screen -R resume2
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 --seed 0 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210421/123500/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-166.0325998_acc-0.30857_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed0  
+
+
+# dp param search, on dialog
+# screen -R dp1
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -norm 0.25 --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.25_seed1111 
+# screen -R dp2
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -norm 0.5  --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.5_seed1111 
+
+
+# dp repeat 5 times, on interaction
+# screen -R dp1
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:1 -norm 0.1 --seed 1111 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed1111 
+# screen -R dp2
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:2 -norm 0.1 --seed 0 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed0 
+# screen -R dp3
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:4 -norm 0.1 --seed 123 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed123
+# screen -R dp4
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:5 -norm 0.1 --seed 22 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed22 
+# screen -R dp4
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:6 -norm 0.1 --seed 300 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed300 
+
+
+# parameter search on the much smaller sigma and norm, dialog
+    # screen -R partialdp1 # 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.001 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.001_seed1111 
+    # screen -R partialdp2 # 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.005 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.005_seed1111  
+
+
+# resume 50 epochs for sigma=0.01, norm=0.25 on interaction
+# screen -R resume1
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 5e-3  --sigma 0.1 --seed 1111 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210423/111019/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.1_norm-0.005_dl-8e-05.pt_ppl-151.1701144_acc-0.33714_epoch-50_ep-132047.094_dl-8e-05_ap-1.10 2>&1 | tee logs/partial_dp/20210425/resume/lr0.1_norm1e-3_sigma0.1_seed1111  

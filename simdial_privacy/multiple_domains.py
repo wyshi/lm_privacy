@@ -359,6 +359,8 @@ def json_to_txt(path):
     assert os.path.exists(path)
     fle = os.listdir(path)
     save_dir = f"../data/simdial/{path.split('/')[-1]}"
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
     assert len(fle) == 1, f'{path} has {len(fle)} jsons, please delete the ones you do not want'
     if len(os.listdir(save_dir)) != 0:
         print(f'{save_dir} is not empty, deleting existing files...')

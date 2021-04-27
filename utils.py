@@ -12,9 +12,11 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 
 import math
 
+CANARY_DIGITS = " 341752"
+
 nlp = en_core_web_sm.load()
 
-def detect_private_tokens(dialog, domain):
+def detect_private_tokens(dialog, domain, verbose=True):
     """
     Detect private information in the original dialog string
     """
@@ -37,8 +39,8 @@ def detect_private_tokens(dialog, domain):
             return sent.split[len("Ok, it is "):-1]
         else:
             return sent[:-1]
-
-    print("Length of original dialog string:", len(dialog))
+    if verbose:
+        print("Length of original dialog string:", len(dialog))
 
     IS_ASK_ADDRESS = False
     private_tokens = []
@@ -68,24 +70,28 @@ def detect_private_tokens(dialog, domain):
                 for ad in address_db:
                     if ad in sent:
                         #has_address = get_address(sent[4:].strip())
-                        print("PRIVATE INFO:", ad)
+                        if verbose:
+                            print("PRIVATE INFO:", ad)
                         private_tokens.append(ad)
 
             elif entities != []:
                 for ent in entities:
                     if ent[1] in ['ORG','PERSON','LOC']:
-                        print("PRIVATE INFO:", ent[0])
+                        if verbose:
+                            print("PRIVATE INFO:", ent[0])
                         private_tokens.append(ent[0])
 
             # Then check non-detectable entities by rules
             has_phone = get_phone(sent)
             if has_phone:
-                print("PRIVATE INFO:", has_phone)
+                if verbose:
+                    print("PRIVATE INFO:", has_phone)
                 private_tokens.append(has_phone)
 
             has_order_number = get_order_num(sent)
             if has_order_number:
-                print("PRIVATE INFO:", has_order_number)
+                if verbose:
+                    print("PRIVATE INFO:", has_order_number)
                 private_tokens.append(has_order_number)
 
         # For address, we check for template for now. will generalize later
@@ -96,7 +102,7 @@ def detect_private_tokens(dialog, domain):
     return private_tokens
 
 
-def private_token_classifier(dialog, domain, tokenizer):
+def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbose=True):
     """
     Detect private tokens in a dialog with a selected tokenizer
 
@@ -107,13 +113,22 @@ def private_token_classifier(dialog, domain, tokenizer):
 
     if domain != "track_package":
         raise NotImplementedError("Only support track package domain now")
-        
-    private_tokens = detect_private_tokens(dialog, domain)
-    print("Private Token List", private_tokens)
     
+    if dial_tokens:
+        dial_text = [tokenizer.decode(turn) for turn in dial_tokens]
+        dialog_recovered = "\n".join(dial_text)
+        assert dialog.strip() == dialog_recovered.strip()
 
-    tokens = tokenizer.tokenize(dialog)
-    print("Encoded Tokens", tokens)
+    private_tokens = detect_private_tokens(dialog, domain, verbose=verbose)
+    if verbose:
+        print("Private Token List", private_tokens)
+    
+    if dial_tokens:
+        tokens = [tokenizer.decode(turn_tokens) for turn in dial_tokens for turn_tokens in turn]
+    else:
+        tokens = [tokenizer.decode(_tok) for _tok in tokenizer.encode(dialog)]
+    if verbose:
+        print("Encoded Tokens", tokens)
 
     encoded_labels = []
     queue = private_tokens.copy()
@@ -124,11 +139,13 @@ def private_token_classifier(dialog, domain, tokenizer):
             curr_private_token = queue[0].strip()
         
             if curr_enc_token != "" and curr_private_token.startswith(curr_enc_token):
-                print("Private Token exists, Case 1: ",curr_private_token,curr_enc_token)
+                if verbose:
+                    print("Private Token exists, Case 1: ",curr_private_token,curr_enc_token)
                 curr_private_token = curr_private_token[len(curr_enc_token):]
                 lab = 1
             elif curr_enc_token[1:] != "" and curr_private_token.startswith(curr_enc_token[1:]):
-                print("Private Token exists, Case 2: ",curr_private_token,curr_enc_token[1:])
+                if verbose:
+                    print("Private Token exists, Case 2: ",curr_private_token,curr_enc_token[1:])
                 curr_private_token = curr_private_token[len(curr_enc_token)-1:]
                 lab = 1
             
@@ -139,7 +156,8 @@ def private_token_classifier(dialog, domain, tokenizer):
  
         encoded_labels.append(lab)
 
-    print(list(zip(tokens,encoded_labels)))
+    if verbose:
+        print(list(zip(tokens,encoded_labels)))
     return encoded_labels
 
 
@@ -163,7 +181,13 @@ def private_token_classifier(dialog, domain, tokenizer):
 # tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 # private_token_classifier(example_input, "track_package", tokenizer)
 
-
+def is_sub(sub, lst):
+    # https://stackoverflow.com/questions/34599113/how-to-find-if-a-list-is-a-subset-of-another-list-in-order
+    ln = len(sub)
+    for i in range(len(lst) - ln + 1):
+        if all(sub[j] == lst[i+j] for j in range(ln)):
+            return [i, i+ln]
+    return False
 
 def is_digit(texts_lst):
     """
@@ -183,6 +207,7 @@ def split_is_private(is_private, texts):
     [[], [0, 1, 1], [0, 0], [0, 1], [0]]
     https://stackoverflow.com/questions/2361945/detecting-consecutive-integers-in-a-list
     """
+    assert len(is_private) == len(texts)
     splits, splits_tgt, splits_01 = [], [], []
     i, j = 0, 0
     # print(is_private)

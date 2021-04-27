@@ -17,7 +17,7 @@ data/simdial/
 simdial_privacy/test/
 simdial_privacy/train/
 attacks/*.json
-*.txt
+# *.txt
 data.zip
 
 tmp/

@@ -11,6 +11,16 @@ python -u main.py -bs 1 --cuda cuda:1 -dp --lr 3e-5 --model Transformer --tokeni
 
 # partial dp, lstm
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero 2>&1 | tee logs/partial_dp/20210409/2347/torch_lstm.log
+
+### dialog task
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 1 --sigma 0.5 -norm 1e-3 -use_test_as_train
+
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -norm 1e-3  --sigma 0.5 --seed 1111 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210418/191438/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-161.1260678_acc-0.33143_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_epoch51-100 
+
+
+### missing digits
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -missing_digits --data data/wikitext-2-missing10
+
 """
 # coding: utf-8
 import argparse
@@ -46,6 +56,12 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 # >>> outputs = model(**inputs)
 
 # >>> prediction_logits = outputs.logits
+
+
+def load_model(model_path):
+    with open(model_path, 'rb') as f:
+        model = torch.load(f, map_location=device)
+    return model
 
 ################################
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPT2TokenizerFast
@@ -112,6 +128,19 @@ parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc'
                     help='data type, doc for documents in lm, dial for dialogues')
 parser.add_argument('-partial_hidden_zero', action='store_true',
                     help='partial differential privacy use zero hidden states')
+parser.add_argument('-dont_save_model', action='store_true',
+                    help='do not save the model when testing')
+parser.add_argument('-resume', action='store_true',
+                    help='resume from previous ckpt')
+parser.add_argument('-resume_from', type=str,
+                    help='ckpt to resume from')
+parser.add_argument('-resume_from_epoch_num', type=int, default=0,
+                    help='epoch number to resume from')
+parser.add_argument('-use_test_as_train', action='store_true',
+                    help='use test set as training set for faster development')
+parser.add_argument('-missing_digits', action='store_true', 
+                    help='the experiments for missing the inserted digits')
+
 
 args = parser.parse_args()
 
@@ -168,13 +197,21 @@ if args.data_type == 'doc':
     # test_data = batchify(corpus.test, eval_batch_size)
     print(f"training data: {args.data}")
     if args.partial and args.dp:
-        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit)
+        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit, missing_digits=args.missing_digits)
     else:
         train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
     test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, args.batch_size, args.bptt)
 else:
-    train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer=tokenizer)
+    
+    if args.partial and args.dp:
+        if args.use_test_as_train:
+            train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'test'), tokenizer, utils.private_token_classifier)
+        else:
+            train_corpus = data.CustomerPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, utils.private_token_classifier)
+    else:
+        train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer)
+
     valid_corpus = data.CustomerDataset(os.path.join(args.data, 'valid'), tokenizer=tokenizer)
     test_corpus = data.CustomerDataset(os.path.join(args.data, 'test'), tokenizer=tokenizer)
 
@@ -266,7 +303,13 @@ if args.model != 'Transformer':
         tie_weights=args.tied,
         dp=args.dp,
     ).to(device)
-
+    if args.resume:
+        print("resume")
+        # import pdb; pdb.set_trace()
+        model_to_load = load_model(args.resume_from)
+        model.load_state_dict(model_to_load.state_dict())
+        del model_to_load
+        model.to(device)
 else:
     # gpt2 model
     GPT2 = GPT2LMHeadModel.from_pretrained('gpt2').to(device)
@@ -505,7 +548,8 @@ def train(privacy_engine=None):
                 except:
                     valid_ppl = math.inf
                 print(privacy_printstr)
-                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+                if not args.dont_save_model:
+                    _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
                 model.train()
 
 
@@ -524,6 +568,7 @@ def train_partialdp_rnn(privacy_engine):
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
     for batch_i, batch in enumerate(train_dataloader):
+        # import pdb; pdb.set_trace()
         hidden = model.init_hidden(args.batch_size)
         max_split = max(list(map(len, batch)))
         batch_loss, batch_ntokens = [], []
@@ -535,9 +580,14 @@ def train_partialdp_rnn(privacy_engine):
             minibatch_tgt = [torch.tensor(b[split_i][1]).type(torch.int64) for b in batch if split_i < len(b) and len(b[split_i][1])]
             minibatch_positive_idx = [b_i for b_i, b in enumerate(batch) if split_i < len(b) and len(b[split_i][0]) > 0]
             seq_lens = list(map(len, minibatch_src))
-            minibatch_src = pad_sequence(minibatch_src, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
-            minibatch_tgt = pad_sequence(minibatch_tgt, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
-            
+            if len(minibatch_positive_idx) == 0:
+                # all data in the batch starts with a private token, should skip this split_i
+                continue
+            try:
+                minibatch_src = pad_sequence(minibatch_src, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
+                minibatch_tgt = pad_sequence(minibatch_tgt, batch_first=True, padding_value=PAD_TOKEN_ID).type(torch.int64).to(device)
+            except:
+                import pdb; pdb.set_trace()    
             # hidden
             cur_hidden = [h[:, minibatch_positive_idx, :] for h in hidden]
             if split_i % 2 == 0:
@@ -677,7 +727,8 @@ def train_partialdp_rnn(privacy_engine):
                 except:
                     valid_ppl = math.inf
                 print(privacy_printstr)
-                _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+                if not args.dont_save_model:
+                    _ = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
                 model.train()
 
         if args.dry_run:
@@ -693,7 +744,12 @@ def export_onnx(path, batch_size, seq_len):
     torch.onnx.export(model, (dummy_input, hidden), path)
 
 def save_model(base_dir, ppl, acc, epoch, epsilon, delta, alpha):
-    cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3f}_dl-{delta}_ap-{alpha:.2f}"
+    if ppl >= 1e7:
+        ppl = math.inf
+    if epsilon <= 1e9:
+        cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3f}_dl-{delta}_ap-{alpha:.2f}"
+    else:
+        cur_save_dir = f"{base_dir}_ppl-{ppl:.7f}_acc-{acc:.5f}_epoch-{epoch}_ep-{epsilon:.3e}_dl-{delta}_ap-{alpha:.2f}"
     with open(cur_save_dir, 'wb') as f:
         torch.save(model, f)
     print(f"model saved to {cur_save_dir}, ppl: {ppl}")
@@ -705,7 +761,7 @@ best_val_loss = None
 
 # At any point you can hit Ctrl + C to break out of training early.
 try:
-    epoch = 0
+    epoch = args.resume_from_epoch_num
     epoch_start_time = time.time()
     val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
     try:
@@ -720,10 +776,11 @@ try:
     print('-' * 89)
 
     # save the model for the first time before training
-    cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
-    BEST_MODEL_DIR = cur_save_dir
+    if not args.dont_save_model:
+        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+        BEST_MODEL_DIR = cur_save_dir
 
-    for epoch in range(1, args.epochs+1):
+    for epoch in range(1+args.resume_from_epoch_num, args.epochs+1+args.resume_from_epoch_num):
         epoch_start_time = time.time()
         if args.partial and args.dp:
             train_partialdp_rnn(privacy_engine=privacy_engine)
@@ -741,7 +798,8 @@ try:
         print(privacy_printstr)
         print('-' * 89)
         # save the model
-        cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
+        if not args.dont_save_model:
+            cur_save_dir = save_model(args.save, valid_ppl, nextword_acc, epoch, valid_epsilon, valid_delta, valid_alpha)
         # Save the model if the validation loss is the best we've seen so far.
         if not best_val_loss or val_loss < best_val_loss:
             best_val_loss = val_loss
