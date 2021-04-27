@@ -219,6 +219,10 @@ python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:6 -norm 0.1 --see
 
 # parameter search on the much smaller sigma and norm, dialog
     # screen -R partialdp1 # 
-python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.001 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.001_seed1111 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 1e-3  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search_new/nohidden_lr0.1_norm1e-3_sigma0.1_seed1111 
     # screen -R partialdp2 # 
-python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.005 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.005_seed1111  
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 2.5e-3  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search_new/nohidden_lr0.1_norm2.5e-3_sigma0.1_seed1111  
+    # screen -R partialdp3 # not yet 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 7.5e-3  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search_new/nohidden_lr0.1_norm7.5e-3_sigma0.1_seed1111  
+    # screen -R partialdp4 # not yet 
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 1e-2  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search_new/nohidden_lr0.1_norm1e-2_sigma0.1_seed1111  
