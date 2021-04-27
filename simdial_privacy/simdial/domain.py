@@ -5,6 +5,7 @@ import numpy as np
 from simdial.agent.core import BaseSysSlot
 import logging
 import random
+import string
 
 
 class DomainSpec(object):
@@ -92,7 +93,7 @@ class Domain(object):
         self.greet = domain_spec.greet
         self.usr_slots = self.order_usr_slots(domain_spec)
         self.sys_slots = [Slot("#"+name, desc, vocab) for name, desc, vocab in domain_spec.sys_slots]
-        self.sys_slots.insert(0, Slot(BaseSysSlot.DEFAULT, "", [str(i) for i in range(domain_spec.db_size)]))
+        self.sys_slots.insert(0, Slot(BaseSysSlot.DEFAULT, "", [ self._generate_order_num() for i in range(domain_spec.db_size)]))
 
         for slot_name, slot_nlg in domain_spec.nlg_spec.items():
             slot_name = "#"+slot_name
@@ -109,6 +110,9 @@ class Domain(object):
 
         self.db = Database(usr_slot_priors, sys_slot_priors, num_rows=domain_spec.db_size)
         self.db.pprint()
+
+    def _generate_order_num(self):
+        return ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
 
     def order_usr_slots(self,domain_spec):
         """
