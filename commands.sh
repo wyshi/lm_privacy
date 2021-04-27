@@ -204,15 +204,15 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -norm 0.25 --seed 1111 2>&1 |
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -norm 0.5  --seed 1111 2>&1 | tee logs/dp/20210423/param_search/lr0.1_sigma0.5_norm0.5_seed1111 
 
 
-# dp repeat 5 times, on language, not yet, cannot fit in language
+# dp repeat 5 times, on interaction
 # screen -R dp1
-python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:0 -norm 0.1 --seed 1111 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed1111 
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:1 -norm 0.1 --seed 1111 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed1111 
 # screen -R dp2
 python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:2 -norm 0.1 --seed 0 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed0 
 # screen -R dp3
-python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:3 -norm 0.1 --seed 123 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed123
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:4 -norm 0.1 --seed 123 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed123
 # screen -R dp4
-python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:4 -norm 0.1 --seed 22 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed22 
+python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:5 -norm 0.1 --seed 22 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed22 
 # screen -R dp4
 python -u main.py --epochs 100 -bs 7 --lr 0.05 -dp --cuda cuda:6 -norm 0.1 --seed 300 2>&1 | tee logs/dp/20210424/repeat/lr0.05_sigma0.5_norm0.1_seed300 
 
@@ -226,3 +226,9 @@ python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 2
 python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 7.5e-3  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search_new/nohidden_lr0.1_norm7.5e-3_sigma0.1_seed1111  
     # screen -R partialdp4 # not yet 
 python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 1e-2  --sigma 0.1 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search_new/nohidden_lr0.1_norm1e-2_sigma0.1_seed1111  
+python -u main.py -bs 7 --lr 0.1 -dp --epochs 100 --cuda cuda:1 -partial -norm 0.25  --sigma 0.005 --seed 1111 2>&1 | tee logs/partial_dp/20210425/param_search/nohidden_lr0.1_norm0.25_sigma0.005_seed1111  
+
+
+# resume 50 epochs for sigma=0.01, norm=0.25 on interaction
+# screen -R resume1
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 5e-3  --sigma 0.1 --seed 1111 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210423/111019/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.1_norm-0.005_dl-8e-05.pt_ppl-151.1701144_acc-0.33714_epoch-50_ep-132047.094_dl-8e-05_ap-1.10 2>&1 | tee logs/partial_dp/20210425/resume/lr0.1_norm1e-3_sigma0.1_seed1111  

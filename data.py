@@ -172,15 +172,17 @@ class CorpusDataset(Dataset):
 class CorpusPartialDPDataset(CorpusDataset):
     def __init__(self, path, tokenizer, bsz, bptt, is_private_func, missing_digits=False):
         self.is_private_func = is_private_func
-        super().__init__(path, tokenizer, bsz, bptt)
-        # import pdb; pdb.set_trace()
-        print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
         self.missing_digits = missing_digits
+        self.num_canary = 0
+        super().__init__(path, tokenizer, bsz, bptt)
+        print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
 
     def build_data(self, path):
         assert self.tokenizer.bos_token == self.tokenizer.eos_token # only if bos = eos, can we add eos only without adding bos below in line_token_ids = self.tokenizer.encode(line) + end_token_id 
         # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
+        if self.missing_digits:
+            canary_digits_token_ids = self.tokenizer.encode(utils.CANARY_DIGITS)
 
         token_ids = []
         for fle in glob(os.path.join(path, '*')):
@@ -214,10 +216,17 @@ class CorpusPartialDPDataset(CorpusDataset):
                 cur_texts.append(split_text)
                 
                 is_private = self.is_private_func(split_text)
+                if self.missing_digits:
+                    # we need to miss the inserted canary digits
+                    is_sub = utils.is_sub(canary_digits_token_ids, seq)
+                    if is_sub:
+                        self.num_canary += 1
+                        assert all(is_private[is_sub[0]:is_sub[1]])
+                        for _i in range(is_sub[0], is_sub[1]):
+                            is_private[_i] = 0
+                        assert all([_p ==0 for _p in is_private[is_sub[0]:is_sub[1]]])                        
                 cur_is_privates.append(is_private)
                 
-                # import pdb
-                # pdb.set_trace()
                 split_seq = utils.split_is_private(is_private, seq)
                 cur_split_sequences.append(split_seq)
 
@@ -274,7 +283,6 @@ class CustomerPartialDPDataset(CustomerDataset):
     def __init__(self, path, tokenizer, is_private_func):
         self.is_private_func = is_private_func
         super().__init__(path, tokenizer)
-        # import pdb; pdb.set_trace()
         print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
 
     def build_data(self, path):
@@ -308,7 +316,6 @@ class CustomerPartialDPDataset(CustomerDataset):
                 # if "3826" in fle: 
                 #     import pdb; pdb.set_trace()
 
-        # import pdb; pdb.set_trace()
         return list(zip(dials, texts, is_privates, split_sequences))      
    
     def __getitem__(self, index):

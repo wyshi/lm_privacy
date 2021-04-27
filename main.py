@@ -16,6 +16,14 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 1 --sigma 0.5 -norm 1e-3 -use_test_as_train
 
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -norm 1e-3  --sigma 0.5 --seed 1111 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210418/191438/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-161.1260678_acc-0.33143_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_epoch51-100 
+
+
+### missing digits
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -missing_digits --data data/wikitext-2-add10b # still use the same data
+
+### missing digits, baseline normalized
+mkdir -p logs/nodp/normalized/20210426
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 2>&1 | tee logs/nodp/normalized/20210426/lstm.log
 """
 # coding: utf-8
 import argparse
@@ -133,6 +141,8 @@ parser.add_argument('-resume_from_epoch_num', type=int, default=0,
                     help='epoch number to resume from')
 parser.add_argument('-use_test_as_train', action='store_true',
                     help='use test set as training set for faster development')
+parser.add_argument('-missing_digits', action='store_true', 
+                    help='the experiments for missing the inserted digits')
 
 
 args = parser.parse_args()
@@ -190,7 +200,7 @@ if args.data_type == 'doc':
     # test_data = batchify(corpus.test, eval_batch_size)
     print(f"training data: {args.data}")
     if args.partial and args.dp:
-        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit)
+        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit, missing_digits=args.missing_digits)
     else:
         train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)
