@@ -27,7 +27,7 @@ def is_right_token(curr_private_token, curr_enc_token, curr_enc_idx, tokens):
         return token_remain.startswith(next_token)
     return True
 
-def detect_private_tokens(dialog, domain, verbose=True):
+def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
     """
     Detect private information in the original dialog string
     """
@@ -50,13 +50,21 @@ def detect_private_tokens(dialog, domain, verbose=True):
             return sent.split[len("Ok, it is "):-1]
         else:
             return sent[:-1]
+    
+    def get_track_num(sent):
+        # assume that trackig num is a string containing 10 ascii_uppercase letters or digits, see define in domains.py
+        order_num_template = re.compile(r'[A-Z\d]{10}')
+        m = order_num_template.search(sent)
+        if m is not None:
+            return m.group()
+
     if verbose:
         print("Length of original dialog string:", len(dialog))
 
     IS_ASK_ADDRESS = False
     private_tokens = []
     dialog_by_speaker = dialog.strip().split("\n")
-    db = pd.read_csv("simdial_privacy/database/database_500.csv")
+    db = pd.read_csv("database/database_500.csv")
     address_db = db['address'].tolist()
 
     # recognize dialog order, assume the turns are 1-1, could generalize later
@@ -69,12 +77,13 @@ def detect_private_tokens(dialog, domain, verbose=True):
 
 
     for i in range(len(dialog_by_speaker)):
-        # If it is user's turn, check private info 
+        # if it is user's turn, check private info 
         sent = dialog_by_speaker[i]
-        if orders[i%2] == 2:
+        # run for user utterances or if detect_sys_side is True
+        if detect_sys_side or orders[i%2] == 2:
             docs = nlp(sent)
             entities = [(i.text, i.label_, i.start_char, i.end_char) for i in docs.ents]
-            # First check detectable entities
+            # first check detectable entities
             if IS_ASK_ADDRESS:
                 IS_ASK_ADDRESS = False
 
@@ -92,7 +101,7 @@ def detect_private_tokens(dialog, domain, verbose=True):
                             print("PRIVATE INFO:", ent[0])
                         private_tokens.append(ent[0])
 
-            # Then check non-detectable entities by rules
+            # then check non-detectable entities by rules
             has_phone = get_phone(sent)
             if has_phone:
                 if verbose:
@@ -105,7 +114,14 @@ def detect_private_tokens(dialog, domain, verbose=True):
                     print("PRIVATE INFO:", has_order_number)
                 private_tokens.append(has_order_number)
 
-        # For address, we check for template for now. will generalize later
+            if orders[i%2] == 1:
+                has_track_number = get_track_num(sent)
+                if has_track_number:
+                    if verbose:
+                        print("PRIVATE INFO:", has_track_number)
+                    private_tokens.append(has_track_number)
+
+        # for address, we check for template for now. will generalize later
         elif "address" in sent:
             IS_ASK_ADDRESS = True
 
@@ -113,7 +129,7 @@ def detect_private_tokens(dialog, domain, verbose=True):
     return private_tokens
 
 
-def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbose=True):
+def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbose=True, detect_sys_side=True):
     """
     Detect private tokens in a dialog with a selected tokenizer
 
@@ -121,7 +137,6 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
     :param tokenizer: a transformer tokenizer
     :return: a vector representing whether each token is private
     """
-
     if domain != "track_package":
         raise NotImplementedError("Only support track package domain now")
     
@@ -130,7 +145,7 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
         dialog_recovered = "\n".join(dial_text)
         assert dialog.strip() == dialog_recovered.strip()
 
-    private_tokens = detect_private_tokens(dialog, domain, verbose=verbose)
+    private_tokens = detect_private_tokens(dialog, domain, verbose=verbose, detect_sys_side=detect_sys_side)
     if verbose:
         print("Private Token List", private_tokens)
     
@@ -180,18 +195,18 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 
 ### Classifier Example Uncomment to Use
 
-# example_input = """SYS: Hello, I am with customer support bot. What do you need?
-# USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-# SYS: Can you verify your full name so I can look that up?
-# USR: Yes, Marlene Brown.
-# SYS: Verify your phone number please.
-# USR: Phone number is 3452154631
-# SYS: You can track your package using your tracking number, which is 4097. Are you happy about my answer?
-# USR: That's it. Thanks! See you.
-# SYS: Goodbye."""
+example_input = """SYS: Hello, I am with customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name
+USR: I am Fabian Quillen.
+SYS: Thanks Fabian. Could you please confirm your shipping address?
+USR: Yea sure, 5136 Raymond Corner Apt. 592 Jesseport, AL 28562.
+SYS: Track your order using your tracking number, GGHQC8K7PK. Is there anything else I can help with?
+USR: That's it. See you.
+SYS: Goodbye."""
 
-# tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-# private_token_classifier(example_input, "track_package", tokenizer)
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+private_token_classifier(example_input, "track_package", tokenizer)
 
 def is_sub(sub, lst):
     # https://stackoverflow.com/questions/34599113/how-to-find-if-a-list-is-a-subset-of-another-list-in-order
