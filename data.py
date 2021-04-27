@@ -220,6 +220,7 @@ class CorpusPartialDPDataset(CorpusDataset):
                     # we need to miss the inserted canary digits
                     is_sub = utils.is_sub(canary_digits_token_ids, seq)
                     if is_sub:
+                        print("missing digits")
                         self.num_canary += 1
                         assert all(is_private[is_sub[0]:is_sub[1]])
                         for _i in range(is_sub[0], is_sub[1]):
