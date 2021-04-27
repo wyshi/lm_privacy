@@ -22,7 +22,8 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -norm 1e-3  --sigma 
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -missing_digits --data data/wikitext-2-add10b # still use the same data
 
 ### missing digits, baseline normalized
-python -u main.py -bs 256 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 2>&1 | tee logs/nodp/20210409/1713/lstm.log
+mkdir -p logs/nodp/normalized/20210426
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 2>&1 | tee logs/nodp/normalized/20210426/lstm.log
 """
 # coding: utf-8
 import argparse
