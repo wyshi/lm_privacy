@@ -3,6 +3,10 @@
 '''
 python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output
 '''
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import utils 
+
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
@@ -12,6 +16,7 @@ import os
 import json
 import pandas as pd
 import numpy as np
+import random
 
 class RestSpec(DomainSpec):
     name = "restaurant"
@@ -376,6 +381,13 @@ def json_to_txt(path):
         with open(f"{save_dir}/dial-{i}.txt", 'w') as fh:
             fh.writelines(lines)
 
+    if "train" in path:
+        # add canary
+        for i in range(10):
+            with open(f"{save_dir}/canary-{i}.txt", 'w') as fh:
+                fh.write(utils.CANARY_CONTENT)
+        
+
 
 if __name__ == "__main__":
     # pipeline here
@@ -392,7 +404,11 @@ if __name__ == "__main__":
     parser.add_argument("--num_info_ask",type=int,default=1)
     parser.add_argument("--one_token_private_info", default='false')
     parser.add_argument("--save_dir")
+    parser.add_argument("--seed", type=int, default=1111)
     args = parser.parse_args()
+
+    np.random.seed(args.seed)
+    random.seed(args.seed)
 
     save_dir = args.save_dir
     if not os.path.exists(save_dir):
@@ -402,7 +418,6 @@ if __name__ == "__main__":
     valid_size = args.valid_size
     train_size = args.train_size
     gen_bot = Generator()
-
 
     rest_spec = RestSpec()
     rest_style_spec = RestStyleSpec()

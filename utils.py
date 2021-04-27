@@ -13,6 +13,7 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 import math
 
 CANARY_DIGITS = " 341752"
+CANARY_CONTENT = "My ID is 341752."
 
 nlp = en_core_web_sm.load()
 
@@ -80,7 +81,8 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
         # if it is user's turn, check private info 
         sent = dialog_by_speaker[i]
         name_detected_as_entity = False
-        print(sent)
+        if verbose:
+            print(sent)
         # run for user utterances or if detect_sys_side is True
         if detect_sys_side or orders[i%2] == 2:
             docs = nlp(sent)
