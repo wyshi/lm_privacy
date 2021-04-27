@@ -7,7 +7,7 @@ import utils
 
 
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPT2TokenizerFast
-tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
+tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dialog=True)
 
 
 s = """SYS: Hello, I am with customer support bot. How can I help?

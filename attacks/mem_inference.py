@@ -250,6 +250,8 @@ if __name__ == "__main__":
                         help='how many candidates in the dataset')
     parser.add_argument('--max_tokens', type=int, default=100,
                         help='max tokens in each candidate')
+    parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
+                        help='data type, doc for documents in lm, dial for dialogues')
     args = parser.parse_args()
 
     if not os.path.exists(os.path.join(args.outputf.split('/')[:-1])):
@@ -267,7 +269,8 @@ if __name__ == "__main__":
     ###############################################################################
     # Load tokenizer
     ###############################################################################
-    tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer()
+    is_dial = args.data_type == 'dial'
+    tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dial)
 
     ###############################################################################
     # load data

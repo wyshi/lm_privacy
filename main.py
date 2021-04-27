@@ -165,8 +165,8 @@ device = torch.device(args.cuda)
 # PAD_TOKEN = '<pad>'
 # ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
 # PAD_TOKEN_ID = tokenizer.encode(PAD_TOKEN)[0]
-
-tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer()
+is_dial = args.data_type == 'dial'
+tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dialog=is_dial)
 # ntokens = len(corpus.dictionary)  
 
 # if args.tokenizer == "gpt2":

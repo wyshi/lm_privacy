@@ -340,11 +340,15 @@ def generate_noise(
     return torch.zeros(reference.grad.shape, device=private_engine.device)
 
 
-def load_tokenizer():
+def load_tokenizer(is_dialog=False):
     tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
     ntokens = tokenizer.vocab_size
     PAD_TOKEN = '<pad>'
-    ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+    if not is_dialog:
+        ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+    else:
+        ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+        ntokens += tokenizer.add_tokens(['SYS:', 'USR:'])
     PAD_TOKEN_ID = tokenizer.encode(PAD_TOKEN)[0]
     BOS_TOKEN_ID = tokenizer.encode(tokenizer.bos_token)[0]
 

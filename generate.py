@@ -15,6 +15,7 @@ import torch
 
 import data
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPT2TokenizerFast
+import utils
 
 parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 Language Model')
 
@@ -35,6 +36,8 @@ parser.add_argument('--temperature', type=float, default=1.0,
                     help='temperature - higher will increase diversity')
 parser.add_argument('--log-interval', type=int, default=100,
                     help='reporting interval')
+parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
+                    help='data type, doc for documents in lm, dial for dialogues')
 args = parser.parse_args()
 
 # Set the random seed manually for reproducibility.
@@ -58,12 +61,8 @@ model.eval()
 ###############################################################################
 # Load tokenizer
 ###############################################################################
-tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
-ntokens = tokenizer.vocab_size
-PAD_TOKEN = '<pad>'
-ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
-PAD_TOKEN_ID = tokenizer.encode(PAD_TOKEN)[0]
-BOS_TOKEN_ID = tokenizer.encode(tokenizer.bos_token)[0]
+is_dial = args.data_type == 'dial'
+tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dial)
 
 is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
 if not is_transformer_model:
