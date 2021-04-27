@@ -86,6 +86,7 @@ class SysNlg(AbstractNlg):
                     if v is None:
                         search_dict[k] = 'dont_care'
                     else:
+                        #TODO: also void, clean this
                         if v < len(slot.vocabulary):
                             search_dict[k] = slot.vocabulary[v]
 
