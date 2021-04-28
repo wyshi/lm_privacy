@@ -83,8 +83,16 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
         name_detected_as_entity = False
         if verbose:
             print(sent)
+        
+        if orders[i%2] == 1:
+            has_track_number = get_track_num(sent)
+            if has_track_number:
+                if verbose:
+                    print("PRIVATE INFO:", has_track_number)
+                private_tokens.append(has_track_number)
+
         # run for user utterances or if detect_sys_side is True
-        if detect_sys_side or orders[i%2] == 2:
+        elif detect_sys_side or orders[i%2] == 2:
             docs = nlp(sent)
             entities = [(i.text, i.label_, i.start_char, i.end_char) for i in docs.ents]
             # first check detectable entities
@@ -131,12 +139,6 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
                     print("PRIVATE INFO:", has_order_number)
                 private_tokens.append(has_order_number)
 
-            if orders[i%2] == 1:
-                has_track_number = get_track_num(sent)
-                if has_track_number:
-                    if verbose:
-                        print("PRIVATE INFO:", has_track_number)
-                    private_tokens.append(has_track_number)
 
         # for address, we check for template for now. will generalize later
         if "address" in sent:
@@ -214,13 +216,14 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 ### Classifier Example Uncomment to Use
 
 # example_input = """SYS: Hello, I am with customer support bot. How can I help?
-# USR: What's up? Could you please help me track my package?
-# SYS: May I have your full name please?
-# USR: I am Imelda Williams.
-# SYS: Thanks Imelda. Verify your phone number please.
-# USR: 7034738560.
-# SYS: The tracking number of your package is 185. What else can I do?
-# USR: That's it. Thanks!"""
+# USR: Hello robot. Could you please help me track my package?
+# SYS: Please provide your full name
+# USR: Thomas Heller
+# SYS: Could you please confirm your shipping address?
+# USR: Yea sure, 36706 Hansen Loop Suite 958 New Marissafort, NC 27982.
+# SYS: You can track your package using your tracking number, which is LMCICFAGWI. Anything else?
+# USR: That's it. Thank you.
+# SYS: Bye."""
 
 # tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 # private_token_classifier(example_input, "track_package", tokenizer)
