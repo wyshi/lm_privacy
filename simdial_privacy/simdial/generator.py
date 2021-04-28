@@ -7,6 +7,7 @@ from simdial.channel import ActionChannel, WordChannel
 from simdial.agent.nlg import SysNlg, UserNlg
 from simdial.complexity import Complexity
 from simdial.domain import Domain
+import pandas as pd
 import progressbar
 import json
 import numpy as np
@@ -103,6 +104,10 @@ class Generator(object):
         domain = Domain(special_domain)
         bar = progressbar.ProgressBar(max_value=num_sess)
 
+        #TODO: clean code later
+        names = ["id","name","address","phone","card_number","order_number"]
+        USER_DB_DF = pd.read_csv("database/database_20000.csv", names=names, header=None,skiprows=1)
+
         for i in range(num_sess):
             bar.update(i)
             domain_spec_copy = deepcopy(special_domain)
@@ -129,7 +134,7 @@ class Generator(object):
 
             # natural language generators
             sys_nlg = SysNlg(domain, complexity)
-            usr_nlg = UserNlg(domain, complexity)
+            usr_nlg = UserNlg(domain, complexity, USER_DB_DF)
 
             usr = User(domain, complexity)
             sys = System(domain, complexity)

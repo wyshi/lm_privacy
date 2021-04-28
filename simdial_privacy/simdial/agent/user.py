@@ -4,6 +4,7 @@ from simdial.agent.core import Agent, Action, UserAct, SystemAct, BaseSysSlot, B
 import logging
 import numpy as np
 import copy
+import pandas as pd
 from collections import OrderedDict
 
 
@@ -92,18 +93,25 @@ class User(Agent):
         """
         :return: {slot_name -> value} for user constrains, [slot_name, ..] for system goals
         """
+
+        ## TODO: clean hard code, pass the db size instead
+        # select a random row
+        db_size = 20_000
+        rand_row_id = np.random.choice(db_size)
+
+        # we don't use the DB data structure of the bot but just assign an ID from our csv DB (will clean code later)
         temp_constrains = self.domain.db.sample_unique_row().tolist()
         temp_constrains = [None if np.random.rand() < self.complexity.dont_care
-                           else c for c in temp_constrains]
+                           else rand_row_id for c in temp_constrains]
         # there is a chance user does not care
         usr_constrains = {s.name: temp_constrains[i] for i, s in enumerate(self.domain.usr_slots)}
-        #print("USR CONSTRAINS", usr_constrains)
         # sample the number of attribute about the system
         num_interest = np.random.randint(0, len(self.domain.sys_slots)-1)
         goal_candidates = [s.name for s in self.domain.sys_slots if s.name != BaseSysSlot.DEFAULT]
         selected_goals = np.random.choice(goal_candidates, size=num_interest, replace=False)
         np.random.shuffle(selected_goals)
         sys_goals = [BaseSysSlot.DEFAULT] + selected_goals.tolist()
+
         return usr_constrains, sys_goals
 
     def _constrain_equal(self, top_action):
