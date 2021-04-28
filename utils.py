@@ -207,7 +207,7 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
         print("Orig Private Info",  private_tokens)
 
     # make sure that the tokenized private info matches the private info detected
-    assert "".join(tokenized_private_info) == "".join([p.replace(" ","").strip() for p in private_tokens])
+    assert "".join(tokenized_private_info) == "".join([p.replace(" ","").strip() for p in private_tokens]), f'{"".join(tokenized_private_info)}, {"".join([p.replace(" ","").strip() for p in private_tokens])}'
     
     return encoded_labels
 
