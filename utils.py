@@ -28,6 +28,11 @@ def is_right_token(curr_private_token, curr_enc_token, curr_enc_idx, tokens):
         return token_remain.startswith(next_token)
     return True
 
+def is_not_ner_edge_case(curr_token):
+    edge_list = ["SYS","USR"]
+    print(curr_token)
+    return curr_token not in edge_list
+
 def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
     """
     Detect private information in the original dialog string
@@ -92,7 +97,7 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
         
         if orders[i%2] == 1:
             has_track_number = get_track_num(sent)
-            if has_track_number:
+            if has_track_number and is_not_ner_edge_case(has_track_number):
                 if verbose:
                     print("PRIVATE INFO (Track Num):", has_track_number)
                 private_tokens.append(has_track_number)
@@ -107,7 +112,7 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
                 IS_ASK_ADDRESS = False
 
                 for ad in address_db:
-                    if ad in sent and user_info["address"] == None:
+                    if ad in sent and user_info["address"] == None and is_not_ner_edge_case(ad):
                         if verbose:
                             print("PRIVATE INFO (Address):", ad)
                         private_tokens.append(ad)
@@ -115,7 +120,7 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
 
             elif entities != []:
                 for ent in entities:
-                    if ent[1] == 'PERSON' and len(ent[0].split()) == 2 and user_info["full_name"] == None:
+                    if ent[1] == 'PERSON' and len(ent[0].split()) == 2 and user_info["full_name"] == None and is_not_ner_edge_case(ent[1]):
                         if verbose:
                             print("PRIVATE INFO (Name):", ent[0])
                         private_tokens.append(ent[0])
@@ -127,21 +132,21 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
             # some partial name can't be detected by NER, solve the edge case
             elif user_info["first_name"] != None and name_detected_as_entity == False:
                 has_partial_name = get_partial_name(sent, user_info)
-                if has_partial_name:
+                if has_partial_name and is_not_ner_edge_case(has_partial_name):
                     if verbose:
                         print("PRIVATE INFO (Partial Name):", has_partial_name)
                     private_tokens.append(has_partial_name)
 
             # then check non-detectable entities by rules
             has_phone = get_phone(sent)
-            if has_phone and user_info["phone"] == None:
+            if has_phone and user_info["phone"] == None and is_not_ner_edge_case(has_phone):
                 if verbose:
                     print("PRIVATE INFO (Phone):", has_phone)
                 private_tokens.append(has_phone)
                 user_info["phone"] = has_phone
 
             has_order_number = get_order_num(sent)
-            if has_order_number and user_info["order_num"] == None:
+            if has_order_number and user_info["order_num"] == None and is_not_ner_edge_case(has_order_number):
                 if verbose:
                     print("PRIVATE INFO (Order Num):", has_order_number)
                 private_tokens.append(has_order_number)
