@@ -37,7 +37,7 @@ for dtype in ['train', 'valid', 'test']:
                 # for the inserted canary My ID is 341752. utils.private_token_classifier is not able to extract it, so use utils.is_digit
                 is_private = utils.is_digit(split_text)
             else:
-                is_private = utils.private_token_classifier(dialog=lines, domain="track_package", tokenizer=tokenizer, dial_tokens=dial_tokens, verbose=True) + [0] # the last 0 for the eos_id
+                is_private = utils.private_token_classifier(dialog=lines, domain="track_package", tokenizer=tokenizer, dial_tokens=dial_tokens, verbose=False) + [0] # the last 0 for the eos_id
             is_privates.append(is_private)
 
 # utils.private_token_classifier(s, "track_package", tokenizer)
