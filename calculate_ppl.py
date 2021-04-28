@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # Load model
     ###############################################################################
     with open(args.checkpoint, 'rb') as f:
-        model = torch.load(f).to(device)
+        model = torch.load(f, map_location=device)
     model.eval()
 
     ###############################################################################

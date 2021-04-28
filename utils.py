@@ -28,6 +28,12 @@ def is_right_token(curr_private_token, curr_enc_token, curr_enc_idx, tokens):
         return token_remain.startswith(next_token)
     return True
 
+def is_not_ner_edge_case(curr_token, verbose=True):
+    edge_list = ["SYS","USR"]
+    if verbose:
+        print(curr_token)
+    return curr_token not in edge_list
+
 def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
     """
     Detect private information in the original dialog string
@@ -51,9 +57,9 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
         if m is not None:
             return m.group()
     
-    def get_partial_name(sent, user_name):
-        for k,v in user_name.items():
-            partial_name_template = re.compile('{}'.format(v))
+    def get_partial_name(sent, user_info):
+        for v in [user_info["first_name"],user_info["last_name"]]:
+            partial_name_template = re.compile('{}[\s.,]'.format(v))
             m = partial_name_template.search(sent)
             if m is not None:
                 return m.group()
@@ -66,7 +72,13 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
     dialog_by_speaker = dialog.strip().split("\n")
     db = pd.read_csv("simdial_privacy/database/database_20000.csv")
     address_db = db['address'].tolist()
-    user_name = {"first_name": None, "last_name": None}
+    user_info = {"first_name": None, 
+                "last_name": None, 
+                "full_name": None,
+                "address": None,
+                "phone": None,
+                "order_num": None,
+                "track_num": None}
 
     # recognize dialog order, assume the turns are 1-1, could generalize later
     if dialog.startswith("SYS"):
@@ -86,10 +98,11 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
         
         if orders[i%2] == 1:
             has_track_number = get_track_num(sent)
-            if has_track_number:
+            if has_track_number and is_not_ner_edge_case(has_track_number, verbose=verbose):
                 if verbose:
-                    print("PRIVATE INFO:", has_track_number)
+                    print("PRIVATE INFO (Track Num):", has_track_number)
                 private_tokens.append(has_track_number)
+                user_info["track_num"] = has_track_number
 
         # run for user utterances or if detect_sys_side is True
         elif detect_sys_side or orders[i%2] == 2:
@@ -100,44 +113,45 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
                 IS_ASK_ADDRESS = False
 
                 for ad in address_db:
-                    if ad in sent:
+                    if ad in sent and user_info["address"] == None and is_not_ner_edge_case(ad, verbose=verbose):
                         if verbose:
-                            print("PRIVATE INFO:", ad)
+                            print("PRIVATE INFO (Address):", ad)
                         private_tokens.append(ad)
+                        user_info["address"] = ad
 
             elif entities != []:
                 for ent in entities:
-                    if ent[1] in ['ORG','PERSON','LOC']:
+                    if ent[1] == 'PERSON' and len(ent[0].split()) == 2 and user_info["full_name"] is None and is_not_ner_edge_case(ent[1], verbose=verbose):
                         if verbose:
-                            print("PRIVATE INFO:", ent[0])
+                            print("PRIVATE INFO (Name):", ent[0])
                         private_tokens.append(ent[0])
-
-                        if ent[1] == 'PERSON':
-                            # if name is detected as an entity, avoid detect it again as a partial name
-                            name_detected_as_entity = True
-                            if len(ent[0].split()) == 2:
-                                user_name["first_name"], user_name["last_name"] = ent[0].split()
+                        # if name is detected as an entity, avoid detect it again as a partial name
+                        name_detected_as_entity = True
+                        user_info["full_name"] = ent[0]
+                        user_info["first_name"], user_info["last_name"] = ent[0].split()
                             
             # some partial name can't be detected by NER, solve the edge case
-            if user_name["first_name"] != None and name_detected_as_entity == False:
-                has_partial_name = get_partial_name(sent, user_name)
-                if has_partial_name:
+            elif user_info["first_name"] != None and name_detected_as_entity == False:
+                has_partial_name = get_partial_name(sent, user_info)
+                if has_partial_name and is_not_ner_edge_case(has_partial_name, verbose=verbose):
                     if verbose:
-                        print("PRIVATE INFO:", has_partial_name)
+                        print("PRIVATE INFO (Partial Name):", has_partial_name)
                     private_tokens.append(has_partial_name)
 
             # then check non-detectable entities by rules
             has_phone = get_phone(sent)
-            if has_phone:
+            if has_phone and user_info["phone"] is None and is_not_ner_edge_case(has_phone, verbose=verbose):
                 if verbose:
-                    print("PRIVATE INFO:", has_phone)
+                    print("PRIVATE INFO (Phone):", has_phone)
                 private_tokens.append(has_phone)
+                user_info["phone"] = has_phone
 
             has_order_number = get_order_num(sent)
-            if has_order_number:
+            if has_order_number and user_info["order_num"] is None and is_not_ner_edge_case(has_order_number, verbose=verbose):
                 if verbose:
-                    print("PRIVATE INFO:", has_order_number)
+                    print("PRIVATE INFO (Order Num):", has_order_number)
                 private_tokens.append(has_order_number)
+                user_info["order_num"] = has_order_number
 
 
         # for address, we check for template for now. will generalize later
@@ -215,15 +229,14 @@ def private_token_classifier(dialog, domain, tokenizer, dial_tokens=None, verbos
 
 ### Classifier Example Uncomment to Use
 
-# example_input = """SYS: Hello, I am with customer support bot. How can I help?
-# USR: Hello robot. Could you please help me track my package?
-# SYS: Please provide your full name
-# USR: Thomas Heller
-# SYS: Could you please confirm your shipping address?
-# USR: Yea sure, 36706 Hansen Loop Suite 958 New Marissafort, NC 27982.
-# SYS: You can track your package using your tracking number, which is LMCICFAGWI. Anything else?
-# USR: That's it. Thank you.
-# SYS: Bye."""
+# example_input = """SYS: Hello, I am the customer support bot. What can I do for you?
+# USR: Hi. I ordered a lipstick several days ago but I can't track it.
+# SYS: Could you verify your full name?
+# USR: Sure, Al Fortenberry.
+# SYS: Verify your order number please.
+# USR: Yes, 167-70456-4464.
+# SYS: Track your order using your tracking number, B8E3OMUW2Q. What else can I do?
+# USR: All good."""
 
 # tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 # private_token_classifier(example_input, "track_package", tokenizer)
