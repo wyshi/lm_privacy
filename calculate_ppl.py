@@ -79,6 +79,8 @@ if __name__ == "__main__":
 
     t1 = time.time()
     for _ in range(100):
+        # import pdb; pdb.set_trace()
         ppl = utils.calculate_ppl(tokenized_sent, model, device, PAD_TOKEN_ID, is_transformer_model=is_transformer_model)
+        # ppl = utils.calculate_adjusted_ppl_acc(tokenized_sent, model, device, PAD_TOKEN_ID, is_transformer_model=is_transformer_model)
     t2 = time.time()
     print(f"ppl: {ppl} for sentence {sentence}, {(t2-t1)/100/len(tokenized_sent)} seconds/sample")

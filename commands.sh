@@ -246,8 +246,33 @@ python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missin
 python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 --seed 300 2>&1 | tee logs/nodp/normalized/20210426/lstm_seed300.log
 
 # missing digit, partial dp, on dialog
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed1111_miss10.log# still use the same data
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed1111_miss10.log
+# missing digit, partial dp, on interaction
+### screen -R partialdp1
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 0 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed0_miss10.log
+### screen -R partialdp2
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 123 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed123_miss10.log
+### screen -R partialdp3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 22 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed22_miss10.log
+### screen -R partialdp4
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 300 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed300_miss10.log
 
 
 # dialog, test, on dialog server
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:0 -dp -partial -bs 1 --sigma 0.5 -norm 1e-3  2>&1 | tee logs/partial_dp/dialog/20210426/sigma0.5_norm1e-3
+
+
+
+# resume 50 epochs for sigma=0.5, on interaction
+# screen -R resume1
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -partial -norm 1e-3  --sigma 0.5 --seed 123 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210421/123511/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-159.3748673_acc-0.33714_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed123  
+# screen -R resume2
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 1e-3  --sigma 0.5 --seed 22 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210421/123522/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-164.0274903_acc-0.32571_epoch-50_ep-5.375_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed22  
+# resume 50 epochs for sigma=0.5, on dialog
+# screen -R resume3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 --seed 300 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210421/123530/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-187.3671091_acc-0.31429_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed300  
+
+
+# dialog experiment, baseline
+# screen -R dialog_nodp
+python -u main.py -bs 16 --lr 20 --data data/simdial --data_type dial --cuda cuda:3 2>&1 | tee logs/nodp/dialog/20210427/dialog_bs16.log
