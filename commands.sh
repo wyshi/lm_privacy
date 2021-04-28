@@ -271,3 +271,8 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 1e-3  --sigma 
 # resume 50 epochs for sigma=0.5, on dialog
 # screen -R resume3
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 --seed 300 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210421/123530/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-187.3671091_acc-0.31429_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed300  
+
+
+# dialog experiment, baseline
+# screen -R dialog_nodp
+python -u main.py -bs 16 --lr 20 --data data/simdial --data_type dial --cuda cuda:3 2>&1 | tee logs/nodp/dialog/20210427/dialog_bs16.log
