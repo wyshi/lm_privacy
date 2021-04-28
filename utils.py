@@ -379,7 +379,7 @@ def calculate_ppl(batch_sentence, model, device, PAD_TOKEN_ID, is_transformer_mo
             acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
             total_loss = criterion(logits, target).item()
         else:
-            output, hidden = model(source, hidden=None)
+            output, hidden = model(source, seq_lens=seq_lens, hidden=None)
             target = target.view(-1)
             total_loss = criterion(output, target).reshape((batch_size, -1)).cpu().numpy()
                 
@@ -420,3 +420,43 @@ def calculate_ppl_gpt2(batch_sentence, gpt_model, device, PAD_TOKEN_ID):
             ppls.append(math.exp(sum_loss/ntokens))
 
     return ppls
+
+
+
+def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, is_transformer_model=False):
+    if is_transformer_model:
+        criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
+    else:
+        criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
+
+    batch_size = len(batch_sentence)
+
+    with torch.no_grad():  # no tracking history
+        source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch_sentence))
+        target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch_sentence))
+        seq_lens = list(map(lambda x: len(x) - 1, batch_sentence))
+        source = pad_sequence(source, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+        target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+        # import pdb; pdb.set_trace()
+        if is_transformer_model:
+            transformer_outputs = backbone(source)
+            hidden_states = transformer_outputs[0]
+            logits = model(hidden_states)
+            logits = logits.view(-1, tokenizer.vocab_size)
+            target = target.view(-1)
+            acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+            total_loss = criterion(logits, target).item()
+        else:
+            output, hidden = model(source, seq_lens=seq_lens, hidden=None)
+            target = target.view(-1)
+            total_loss = criterion(output, target).reshape((batch_size, -1)).cpu().numpy()
+                
+
+        ppls = []
+        for loss in total_loss:
+            sum_loss = sum(loss)
+            ntokens = sum([l!=0 for l in loss])
+            ppls.append(math.exp(sum_loss/ntokens))
+
+    return ppls
+

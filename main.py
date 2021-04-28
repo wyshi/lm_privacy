@@ -418,6 +418,8 @@ def evaluate(data_source, privacy_engine=None):
     model.eval()
     total_loss = 0.
     total_tokens = 0
+    total_correct = 0
+    total_count = 0
     privacy_printstr = "no privacy engine"
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(eval_batch_size)
@@ -435,7 +437,9 @@ def evaluate(data_source, privacy_engine=None):
                 logits = model(hidden_states)
                 logits = logits.view(-1, tokenizer.vocab_size)
                 target = target.view(-1)
-                acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+                total_correct = (logits.argmax(axis=1)==target).sum().item()
+                total_count += target.shape[0]
+                # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
                 total_loss += source.shape[1] * (criterion(logits, target).item())
                 # output = model(data, labels=data)
                 # logits = output.logits
@@ -448,7 +452,9 @@ def evaluate(data_source, privacy_engine=None):
                 target = target.view(-1)
                 total_loss += source.shape[1] * criterion(output, target).item()
                 total_tokens += source.shape[1]
-                acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
+                total_correct = (output.argmax(axis=1)==target).sum().item()
+                total_count += target.shape[0]
+                # acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
         target_delta = privacy_engine.target_delta
@@ -457,52 +463,7 @@ def evaluate(data_source, privacy_engine=None):
         epsilon = 0
         target_delta = 0
         best_alpha = 0
-    return total_loss / total_tokens, privacy_printstr, acc, epsilon, target_delta, best_alpha
-
-def adjusted_evaluate(data_source, privacy_engine=None):
-    # Turn on evaluation mode which disables dropout.
-    model.eval()
-    total_loss = 0.
-    total_tokens = 0
-    privacy_printstr = "no privacy engine"
-    # if args.model != 'Transformer':
-    #     hidden = model.init_hidden(eval_batch_size)
-    with torch.no_grad():
-        for batch in data_source:
-            source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch))
-            target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch))
-            seq_lens = list(map(lambda x: len(x) - 1, batch))
-            source = pad_sequence(source, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
-            target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
-            del batch
-            if args.model == 'Transformer':
-                transformer_outputs = backbone(source)
-                hidden_states = transformer_outputs[0]
-                logits = model(hidden_states)
-                logits = logits.view(-1, tokenizer.vocab_size)
-                target = target.view(-1)
-                acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
-                total_loss += source.shape[1] * (criterion(logits, target).item())
-                # output = model(data, labels=data)
-                # logits = output.logits
-                # logits = logits.view(-1, tokenizer.vocab_size)
-                # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
-                # total_loss += len(data) * output.loss.item()
-            else:
-                output, hidden = model(source, seq_lens=seq_lens, hidden=None) # each datapoint is treated as independent from each other, as required by DP
-                # hidden = repackage_hidden(hidden)
-                target = target.view(-1)
-                total_loss += source.shape[1] * criterion(output, target).item()
-                total_tokens += source.shape[1]
-                acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
-    if privacy_engine:
-        epsilon, best_alpha = privacy_engine.get_privacy_spent()
-        target_delta = privacy_engine.target_delta
-        privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
-    else:
-        epsilon = 0
-        target_delta = 0
-        best_alpha = 0
+    acc = float(total_correct)/total_count
     return total_loss / total_tokens, privacy_printstr, acc, epsilon, target_delta, best_alpha
 
 
