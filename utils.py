@@ -356,8 +356,10 @@ def load_tokenizer(is_dialog=False):
 
 
 def calculate_ppl(batch_sentence, model, device, PAD_TOKEN_ID, is_transformer_model=False):
-    if not is_transformer_model:
+    if is_transformer_model:
         criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
+    else:
+        criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
 
     batch_size = len(batch_sentence)
 
