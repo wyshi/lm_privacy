@@ -66,7 +66,9 @@ class CandidateDataset(Dataset):
                     line_token_ids = self.tokenizer.encode(line) #+ end_token_id
                     line_token_lower_ids = self.tokenizer.encode(line.lower()) #+ end_token_id
                     line_tokens = [self.tokenizer.decode(tok_id) for tok_id in self.tokenizer.encode(line)]
-                    if len(line_token_ids) > 1:
+                    is_private = utils.is_digit(line_tokens)
+
+                    if len(line_token_ids) > 1 and any(is_private):
                         token_ids.append(line_token_ids)
                         tokens.append(line_tokens)
                         lower_token_ids.append(line_token_lower_ids)
@@ -250,10 +252,12 @@ if __name__ == "__main__":
                         help='how many candidates in the dataset')
     parser.add_argument('--max_tokens', type=int, default=100,
                         help='max tokens in each candidate')
+    parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
+                        help='data type, doc for documents in lm, dial for dialogues')
     args = parser.parse_args()
 
-    if not os.path.exists(os.path.join(args.outputf.split('/')[:-1])):
-        os.makedirs(folder)
+    if not os.path.exists(os.path.join(*args.outputf.split('/')[:-1])):
+        os.makedirs(os.path.join(*args.outputf.split('/')[:-1]))
     print(f'output will be saved to {args.outputf}')
     assert not os.path.isfile(args.outputf)
     # Set the random seed manually for reproducibility.
@@ -267,7 +271,8 @@ if __name__ == "__main__":
     ###############################################################################
     # Load tokenizer
     ###############################################################################
-    tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer()
+    is_dial = args.data_type == 'dial'
+    tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dial)
 
     ###############################################################################
     # load data

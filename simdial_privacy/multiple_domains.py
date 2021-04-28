@@ -3,6 +3,10 @@
 '''
 python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output
 '''
+import sys, os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import utils 
+
 from simdial.domain import Domain, DomainSpec
 from simdial.generator import Generator
 from simdial import complexity
@@ -12,6 +16,7 @@ import os
 import json
 import pandas as pd
 import numpy as np
+import random
 
 class RestSpec(DomainSpec):
     name = "restaurant"
@@ -306,13 +311,13 @@ class TrackPackageSpec(DomainSpec):
         self.num_info_ask = num_info_ask
     
         self.name = "track_package"
-        self.greet = "Hello, I am with customer support bot."
+        self.greet = "Hello, I am the customer support bot."
 
-        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s", "Yep - I'm %s.", "The name's %s."],
-                            "request": ["May I have your full name please?", "Can you verify your full name so I can look that up?", "Please provide your full name"]},
+        self.nlg_spec = {"name": {"inform": ["I am %s.", "%s.", "Sure, %s.", "Yes, %s.", "%s", "Yep - I'm %s.", "My name's %s."],
+                            "request": ["May I have your full name?", "Could you verify your full name?", "Please provide your full name."]},
 
                     "phone": {"inform": ["Phone number is %s", "%s.", "You can reach me at %s.", "%s is my number.", "my number is %s."],
-                                "request": ["Ok, let me get your phone number really quick.", "Verify your phone number please."]},
+                                "request": ["Ok, may I have your phone number?", "Verify your phone number please."]},
 
                     "address": {"inform": ["My address is %s.", "%s.", "Ok, it is %s.", "Yea sure, %s.", "Shipping address is %s."],
                                     "request": ["We will need the shipping address as well.", "Could you please confirm your shipping address?"]},
@@ -325,7 +330,7 @@ class TrackPackageSpec(DomainSpec):
                     "order_number": {"inform": ["Sure, it is %s", "%s", "It's %s.", "Yes, %s.", "My order number is %s."],
                                 "request": ["Could you please also provide your order number?", "Verify your order number please.","Can you provide the order number?"]},
 
-                    "default": {"inform": ["The tracking number of your package is %s.", "You can track your package using your tracking number, which is %s.", "Track your order using your tracking number, %s."],
+                    "default": {"inform": ["The tracking number is %s.", "You can track your package with your tracking number, which is %s.", "Track your order using your tracking number, %s."],
                                 "request": ["Where is my package?",
                                             "Could you please help me track my package?",
                                             "I placed an order but I don't know if it has been shipped."] + ["I ordered a %s several days ago but I can't track it." % k for k in
@@ -379,6 +384,13 @@ def json_to_txt(path):
         with open(f"{save_dir}/dial-{i}.txt", 'w') as fh:
             fh.writelines(lines)
 
+    if "train" in path:
+        # add canary
+        for i in range(10):
+            with open(f"{save_dir}/canary-{i}.txt", 'w') as fh:
+                fh.write(utils.CANARY_CONTENT)
+        
+
 
 if __name__ == "__main__":
     # pipeline here
@@ -395,7 +407,11 @@ if __name__ == "__main__":
     parser.add_argument("--num_info_ask",type=int,default=1)
     parser.add_argument("--one_token_private_info", default='false')
     parser.add_argument("--save_dir")
+    parser.add_argument("--seed", type=int, default=1111)
     args = parser.parse_args()
+
+    np.random.seed(args.seed)
+    random.seed(args.seed)
 
     save_dir = args.save_dir
     if not os.path.exists(save_dir):
@@ -405,7 +421,6 @@ if __name__ == "__main__":
     valid_size = args.valid_size
     train_size = args.train_size
     gen_bot = Generator()
-
 
     rest_spec = RestSpec()
     rest_style_spec = RestStyleSpec()

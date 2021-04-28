@@ -13,6 +13,7 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 import math
 
 CANARY_DIGITS = " 341752"
+CANARY_CONTENT = "My ID is 341752."
 
 nlp = en_core_web_sm.load()
 
@@ -80,7 +81,8 @@ def detect_private_tokens(dialog, domain, verbose=True, detect_sys_side=True):
         # if it is user's turn, check private info 
         sent = dialog_by_speaker[i]
         name_detected_as_entity = False
-        print(sent)
+        if verbose:
+            print(sent)
         # run for user utterances or if detect_sys_side is True
         if detect_sys_side or orders[i%2] == 2:
             docs = nlp(sent)
@@ -338,11 +340,15 @@ def generate_noise(
     return torch.zeros(reference.grad.shape, device=private_engine.device)
 
 
-def load_tokenizer():
+def load_tokenizer(is_dialog=False):
     tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
     ntokens = tokenizer.vocab_size
     PAD_TOKEN = '<pad>'
-    ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+    if not is_dialog:
+        ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+    else:
+        ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
+        ntokens += tokenizer.add_tokens(['SYS:', 'USR:'])
     PAD_TOKEN_ID = tokenizer.encode(PAD_TOKEN)[0]
     BOS_TOKEN_ID = tokenizer.encode(tokenizer.bos_token)[0]
 
@@ -350,8 +356,10 @@ def load_tokenizer():
 
 
 def calculate_ppl(batch_sentence, model, device, PAD_TOKEN_ID, is_transformer_model=False):
-    if not is_transformer_model:
+    if is_transformer_model:
         criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
+    else:
+        criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
 
     batch_size = len(batch_sentence)
 

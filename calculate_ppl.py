@@ -44,6 +44,8 @@ if __name__ == "__main__":
                         help='random seed')
     parser.add_argument('--cuda', type=str, default="cuda:0",
                         help='use CUDA')
+    parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
+                        help='data type, doc for documents in lm, dial for dialogues')
     args = parser.parse_args()
 
 
@@ -65,7 +67,8 @@ if __name__ == "__main__":
     ###############################################################################
     # Load tokenizer
     ###############################################################################
-    tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer()
+    is_dial = args.data_type == 'dial'
+    tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dialog=is_dial)
 
     is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
 

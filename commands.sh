@@ -236,6 +236,15 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 5e-3  --sigma 
 
 # missing digit, baseline, on interaction
 python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 2>&1 | tee logs/nodp/normalized/20210426/lstm.log
+# screen -R nodp2
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 --seed 0 2>&1 | tee logs/nodp/normalized/20210426/lstm_seed0.log
+# screen -R nodp3
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 --seed 123 2>&1 | tee logs/nodp/normalized/20210426/lstm_seed123.log
+# screen -R nodp4
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 --seed 22 2>&1 | tee logs/nodp/normalized/20210426/lstm_seed22.log
+# screen -R nodp5
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missing_digits --cuda cuda:3 --seed 300 2>&1 | tee logs/nodp/normalized/20210426/lstm_seed300.log
+
 # missing digit, partial dp, on dialog
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed1111_miss10.log# still use the same data
 

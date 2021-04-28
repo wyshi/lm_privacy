@@ -308,7 +308,11 @@ class CustomerPartialDPDataset(CustomerDataset):
                 flat_split_text = [self.tokenizer.decode(tok) for tok in flat_dial_tokens]
                 texts.append(flat_split_text)
 
-                is_private = self.is_private_func(dialog=lines, domain="track_package", tokenizer=self.tokenizer, dial_tokens=dial_tokens, verbose=False) + [0] # the last 0 for the eos_id
+                if utils.CANARY_CONTENT in lines:
+                    # for the inserted canary My ID is 341752. utils.private_token_classifier is not able to extract it, so use utils.is_digit
+                    is_private = utils.is_digit(split_text)
+                else:
+                    is_private = self.is_private_func(dialog=lines, domain="track_package", tokenizer=self.tokenizer, dial_tokens=dial_tokens, verbose=False) + [0] # the last 0 for the eos_id
                 is_privates.append(is_private)
                                 
                 assert len(is_private) == len(flat_dial_tokens)

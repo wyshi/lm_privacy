@@ -15,6 +15,7 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -partial_hidden_zero
 ### dialog task
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:0 -dp -partial -bs 1 --sigma 0.5 -norm 1e-3 -use_test_as_train 2>&1 | tee logs/partial_dp/dialog/20210426/sigma0.5_norm1e-3
 
+# resume 
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -norm 1e-3  --sigma 0.5 --seed 1111 -resume -resume_from_epoch_num 50 -resume_from model/partialdp/20210418/191438/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-161.1260678_acc-0.33143_epoch-50_ep-5.376_dl-8e-05_ap-3.60 2>&1 | tee logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_epoch51-100 
 
 
@@ -164,8 +165,8 @@ device = torch.device(args.cuda)
 # PAD_TOKEN = '<pad>'
 # ntokens += tokenizer.add_special_tokens({'pad_token': PAD_TOKEN})
 # PAD_TOKEN_ID = tokenizer.encode(PAD_TOKEN)[0]
-
-tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer()
+is_dial = args.data_type == 'dial'
+tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dialog=is_dial)
 # ntokens = len(corpus.dictionary)  
 
 # if args.tokenizer == "gpt2":
@@ -413,6 +414,52 @@ def get_batch(source, i):
 
 
 def evaluate(data_source, privacy_engine=None):
+    # Turn on evaluation mode which disables dropout.
+    model.eval()
+    total_loss = 0.
+    total_tokens = 0
+    privacy_printstr = "no privacy engine"
+    # if args.model != 'Transformer':
+    #     hidden = model.init_hidden(eval_batch_size)
+    with torch.no_grad():
+        for batch in data_source:
+            source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch))
+            target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch))
+            seq_lens = list(map(lambda x: len(x) - 1, batch))
+            source = pad_sequence(source, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+            target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+            del batch
+            if args.model == 'Transformer':
+                transformer_outputs = backbone(source)
+                hidden_states = transformer_outputs[0]
+                logits = model(hidden_states)
+                logits = logits.view(-1, tokenizer.vocab_size)
+                target = target.view(-1)
+                acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+                total_loss += source.shape[1] * (criterion(logits, target).item())
+                # output = model(data, labels=data)
+                # logits = output.logits
+                # logits = logits.view(-1, tokenizer.vocab_size)
+                # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
+                # total_loss += len(data) * output.loss.item()
+            else:
+                output, hidden = model(source, seq_lens=seq_lens, hidden=None) # each datapoint is treated as independent from each other, as required by DP
+                # hidden = repackage_hidden(hidden)
+                target = target.view(-1)
+                total_loss += source.shape[1] * criterion(output, target).item()
+                total_tokens += source.shape[1]
+                acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
+    if privacy_engine:
+        epsilon, best_alpha = privacy_engine.get_privacy_spent()
+        target_delta = privacy_engine.target_delta
+        privacy_printstr = f" (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
+    else:
+        epsilon = 0
+        target_delta = 0
+        best_alpha = 0
+    return total_loss / total_tokens, privacy_printstr, acc, epsilon, target_delta, best_alpha
+
+def adjusted_evaluate(data_source, privacy_engine=None):
     # Turn on evaluation mode which disables dropout.
     model.eval()
     total_loss = 0.
