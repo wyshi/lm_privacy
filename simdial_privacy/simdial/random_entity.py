@@ -109,7 +109,7 @@ def generate_n_rand_entities(n,one_token=False):
 
 
 if __name__ == "__main__":
-    n = 500
+    n = 20_000
     names, addresses, phone_numbers, card_numbers, order_numbers = generate_n_rand_entities(n)
     df = pd.DataFrame(list(zip(names, addresses, phone_numbers, card_numbers, order_numbers)), 
                   columns =['name', 'address', 'phone_number', 'card_number', 'order_number'])

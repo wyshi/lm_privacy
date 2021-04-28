@@ -5,6 +5,7 @@
 import numpy as np
 from simdial.agent.core import SystemAct, UserAct, BaseUsrSlot
 from simdial.agent import core
+import pandas as pd
 import json
 import copy
 
@@ -14,9 +15,11 @@ class AbstractNlg(object):
     Abstract class of NLG
     """
 
-    def __init__(self, domain, complexity):
+    def __init__(self, domain, complexity, db=None):
         self.domain = domain
         self.complexity = complexity
+        if db is not None:
+            self.db = db
 
     def generate_sent(self, actions, **kwargs):
         """
@@ -83,7 +86,9 @@ class SysNlg(AbstractNlg):
                     if v is None:
                         search_dict[k] = 'dont_care'
                     else:
-                        search_dict[k] = slot.vocabulary[v]
+                        #TODO: also void, clean this
+                        if v < len(slot.vocabulary):
+                            search_dict[k] = slot.vocabulary[v]
 
                 a_copy.parameters[0] = search_dict
                 a_copy.parameters[1] = sys_goals
@@ -195,7 +200,9 @@ class UserNlg(AbstractNlg):
                     if val is None:
                         return self.sample(["Anything is fine.", "I don't care.", "Whatever is good."])
                     else:
-                        return target_slot.sample_inform() % target_slot.vocabulary[val]
+                        slot_name = slot_type.strip()[1:]
+                        slot_val = self.db.iloc[val][slot_name]
+                        return target_slot.sample_inform() % slot_val
 
                 if has_self_correct:
                     wrong_value = target_slot.sample_different(slot_value)

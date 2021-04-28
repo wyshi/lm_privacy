@@ -185,7 +185,8 @@ class DialogState(State):
             max_val = slot.get_maxconf_value()
             if max_val is not None:
                 usr_slot = self.domain.get_usr_slot(slot.uid)
-                max_val = usr_slot.vocabulary[max_val]
+                if max_val < len(usr_slot.vocabulary):
+                    max_val = usr_slot.vocabulary[max_val]
             usr_slots.append({'name':slot.uid, 'max_conf': max_conf, 'max_val': max_val})
 
         sys_goals = []
