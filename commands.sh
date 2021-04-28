@@ -283,3 +283,23 @@ python -u main.py -bs 16 --lr 20 --data data/simdial --data_type dial --cuda cud
 # screen -R dialog_partialdp
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 3 --sigma 0.5 -norm 1e-3 --epochs 100 2>&1 | tee logs/partial_dp/dialog/20210428/sigma0.5_norm1e-3
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 3 --sigma 0.5 -norm 1e-2 --epochs 100 2>&1 | tee logs/partial_dp/dialog/20210428/sigma0.5_norm1e-2
+
+
+
+# canary, for normalized experiment, baseline, on interaction
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210426/182422 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized/nodp_normalized_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210426/234106 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized/nodp_normalized_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210426/234125 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized/nodp_normalized_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210426/234146 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized/nodp_normalized_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210426/234201 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized/nodp_normalized_seed300.csv
+
+# canary, for param search, on interaction
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210425/150805 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.1_norm0.005_seed1111_resume_50epochs.csv
+
+
+# canary, dp, on interaction
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151315 --cuda cuda:0 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151340 --cuda cuda:0 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151359 --cuda cuda:0 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151417 --cuda cuda:0 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151429 --cuda cuda:0 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed300.csv

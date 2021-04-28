@@ -22,7 +22,7 @@ data.zip
 
 tmp/
 
-attacks/canary_insertion/
-attacks/membership_inference/
+attacks/canary_insertion/*.csv
+attacks/membership_inference/*.csv
 
 

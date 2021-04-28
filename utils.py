@@ -446,6 +446,8 @@ def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, is_t
         criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
 
     batch_size = len(batch_sentence)
+    total_correct = 0
+    total_count = 0
 
     with torch.no_grad():  # no tracking history
         source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch_sentence))
