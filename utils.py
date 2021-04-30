@@ -439,7 +439,7 @@ def calculate_ppl_gpt2(batch_sentence, gpt_model, device, PAD_TOKEN_ID):
 
 
 
-def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, tokenizer, private_func, is_transformer_model=False):
+def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type='doc', is_transformer_model=False):
     if is_transformer_model:
         criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
     else:
@@ -460,7 +460,10 @@ def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, toke
         # import pdb; pdb.set_trace()
         split_text = list(map(lambda x: [tokenizer.decode([tok]) for tok in x.cpu().numpy()], target)) 
         flat_split_text = [item for sublist in split_text for item in sublist]
-        flat_is_private = private_func(flat_split_text)
+        if data_type == 'doc':
+            flat_is_private = private_func(flat_split_text)
+        else:
+            flat_is_private = private_func(flat_split_text, domain="track_package", tokenizer=tokenizer)
         flat_target = [item for sublist in target for item in sublist]
         nonprivate_nonpad_idx = [i for i, (is_private, target_token) in enumerate(zip(flat_is_private, flat_target)) if is_private == 0 and target_token != PAD_TOKEN_ID]
         private_idx = [i for i, is_private in enumerate(flat_is_private) if is_private == 1]
