@@ -303,3 +303,14 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151340
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151359 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed123.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151417 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed22.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151429 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed300.csv
+
+
+# canary insertion, partial dp, on interaction
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210421/123500 --cuda cuda:5 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.001_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210421/123511 --cuda cuda:5 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.001_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210421/123522 --cuda cuda:5 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.001_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210421/123530 --cuda cuda:6 --outputf attacks/canary_insertion/partialdp/lr0.1_sigma0.5_norm0.001_seed300.csv
+
+# canary insertion, partial dp, on interaction, resume
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210427/213802 --cuda cuda:6 --outputf attacks/canary_insertion/partialdp/resume/lr0.1_sigma0.5_norm0.001_seed123_resume50epochs.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210427/213754 --cuda cuda:6 --outputf attacks/canary_insertion/partialdp/resume/lr0.1_sigma0.5_norm0.001_seed22_resume50epochs.csv
