@@ -1,6 +1,7 @@
 '''script to calculate adjusted ppl and acc
 
-python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:3 -model_dir model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.7064935_acc-0.38333_epoch-50_ep-0.000_dl-0_ap-0.00 -outputf data/adjusted_metrics
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:3 -model_dir model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.7064935_acc-0.38333_epoch-50_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:3 --data data/simdial --data_type dial -model_dir model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.7064935_acc-0.38333_epoch-50_ep-0.000_dl-0_ap-0.00 
 
 
 '''
@@ -127,7 +128,7 @@ parser.add_argument('-missing_digits', action='store_true',
                     help='the experiments for missing the inserted digits')
 parser.add_argument('-model_dir', type=str,
                     help='the dir to models')
-parser.add_argument('-outputf', type=str,
+parser.add_argument('-outputf', type=str, default='data/adjusted_metrics',
                     help='the output file')
 args = parser.parse_args()
 

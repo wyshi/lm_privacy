@@ -8,6 +8,7 @@ from tqdm import tqdm
 from glob import glob
 
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, GPT2TokenizerFast
+
 tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dialog=True)
 
 
@@ -48,6 +49,6 @@ SYS: Verify your order number please.
 USR: It's 843-58572-7002.
 SYS: You can track your package with your tracking number, which is AGZIM5T6KL. Are you happy about my answer?
 USR: All good. See you.
-SYS: Have a nice day! Bye.
+SYS: Have a nice day! Bye.<pad><pad>
 """
 utils.private_token_classifier(s, "track_package", tokenizer)

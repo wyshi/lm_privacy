@@ -324,3 +324,14 @@ python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -d
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -partial -bs 3 --sigma 0.7 -norm 1e-2 --epochs 50 2>&1 | tee logs/partial_dp/dialog/20210429/sigma0.7_norm1e-2
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:0 -dp -partial -bs 3 --sigma 0.6 -norm 1e-1 --epochs 50 2>&1 | tee logs/partial_dp/dialog/20210429/sigma0.6_norm1e-1
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:0 -dp -partial -bs 3 --sigma 0.6 -norm 1e-2 --epochs 50 2>&1 | tee logs/partial_dp/dialog/20210429/sigma0.6_norm1e-2
+
+
+
+# canary, on dialog, resume
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210423/221533 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/resume/lr0.1_sigma0.5_norm0.001_seed0_resume50epochs.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210427/213900 --cuda cuda:0 --outputf attacks/canary_insertion/partialdp/resume/lr0.1_sigma0.5_norm0.001_seed300_resume50epochs.csv
+
+# dialog, parameter tuning, on dialog server, full dp
+# screen -R dialog_dp
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 3 --sigma 0.6 -norm 1e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 3 --sigma 0.6 -norm 5e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm5e-2

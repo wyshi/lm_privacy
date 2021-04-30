@@ -440,6 +440,26 @@ def calculate_ppl_gpt2(batch_sentence, gpt_model, device, PAD_TOKEN_ID):
 
 
 def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type='doc', is_transformer_model=False):
+    def recover_dialog(one_dial, pad_to):
+        lines = tokenizer.decode(one_dial).split("SYS:")
+        lines = [l.split("USR:") for l in lines]
+        lines = [item for sublist in lines for item in sublist]
+        new_lines = []
+        for i, l in enumerate(lines):
+            if i != 0:
+                if i%2 == 1:
+                    new_lines.append("SYS:"+l)
+                else:
+                    new_lines.append("USR:"+l)
+        lines = "\n".join(new_lines)
+        dial_tokens = [tokenizer.encode(turn) for turn in new_lines]
+        flat_dial_tokens = [item for sublist in dial_tokens for item in sublist]
+        assert len(flat_dial_tokens) == len(one_dial)
+        is_private = private_func(dialog=lines, domain="track_package", tokenizer=tokenizer, dial_tokens=dial_tokens, verbose=False)
+        is_private = is_private[1:] 
+        is_private += [0] * (pad_to - len(is_private))
+        return is_private
+
     if is_transformer_model:
         criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
     else:
@@ -458,13 +478,16 @@ def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, toke
         target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
         # calculate the index of non-private and non-pad-token
         # import pdb; pdb.set_trace()
-        split_text = list(map(lambda x: [tokenizer.decode([tok]) for tok in x.cpu().numpy()], target)) 
-        flat_split_text = [item for sublist in split_text for item in sublist]
         if data_type == 'doc':
+            split_text = list(map(lambda x: [tokenizer.decode([tok]) for tok in x.cpu().numpy()], target)) 
+            flat_split_text = [item for sublist in split_text for item in sublist]
             flat_is_private = private_func(flat_split_text)
         else:
-            flat_is_private = private_func(flat_split_text, domain="track_package", tokenizer=tokenizer)
+            pad_to = max(seq_lens)
+            is_private = [recover_dialog(b, pad_to) for b in batch_sentence]
+            flat_is_private = [item for sublist in is_private for item in sublist]
         flat_target = [item for sublist in target for item in sublist]
+        assert len(flat_is_private) == len(flat_target)
         nonprivate_nonpad_idx = [i for i, (is_private, target_token) in enumerate(zip(flat_is_private, flat_target)) if is_private == 0 and target_token != PAD_TOKEN_ID]
         private_idx = [i for i, is_private in enumerate(flat_is_private) if is_private == 1]
         nonpad_idx = [i for i, target_token in enumerate(flat_target) if target_token != PAD_TOKEN_ID]
