@@ -439,23 +439,34 @@ def calculate_ppl_gpt2(batch_sentence, gpt_model, device, PAD_TOKEN_ID):
 
 
 
-def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, is_transformer_model=False):
+def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, tokenizer, private_func, is_transformer_model=False):
     if is_transformer_model:
         criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
     else:
         criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID, reduction='none')
 
     batch_size = len(batch_sentence)
-    total_correct = 0
-    total_count = 0
 
     with torch.no_grad():  # no tracking history
         source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch_sentence))
-        target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch_sentence))
+        target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch_sentence))        
+        # source = list(map(lambda x: x[:-1], batch_sentence))
+        # target = list(map(lambda x: x[1:], batch_sentence))        
         seq_lens = list(map(lambda x: len(x) - 1, batch_sentence))
+        # pad
         source = pad_sequence(source, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
         target = pad_sequence(target, batch_first=True, padding_value=PAD_TOKEN_ID).to(device)
+        # calculate the index of non-private and non-pad-token
         # import pdb; pdb.set_trace()
+        split_text = list(map(lambda x: [tokenizer.decode([tok]) for tok in x.cpu().numpy()], target)) 
+        flat_split_text = [item for sublist in split_text for item in sublist]
+        flat_is_private = private_func(flat_split_text)
+        flat_target = [item for sublist in target for item in sublist]
+        nonprivate_nonpad_idx = [i for i, (is_private, target_token) in enumerate(zip(flat_is_private, flat_target)) if is_private == 0 and target_token != PAD_TOKEN_ID]
+        private_idx = [i for i, is_private in enumerate(flat_is_private) if is_private == 1]
+        nonpad_idx = [i for i, target_token in enumerate(flat_target) if target_token != PAD_TOKEN_ID]
+        pad_idx = [i for i, target_token in enumerate(flat_target) if target_token == PAD_TOKEN_ID]
+        # assert len(nonprivate_nonpad_idx+private_idx+pad_idx) == len(set(nonprivate_nonpad_idx+private_idx+pad_idx))
         if is_transformer_model:
             transformer_outputs = backbone(source)
             hidden_states = transformer_outputs[0]
@@ -467,14 +478,29 @@ def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, is_t
         else:
             output, hidden = model(source, seq_lens=seq_lens, hidden=None)
             target = target.view(-1)
-            total_loss = criterion(output, target).reshape((batch_size, -1)).cpu().numpy()
+
+            # nonprivate
+            total_loss_nonprivate = criterion(output, target)[nonprivate_nonpad_idx].sum().item() # pad loss is 0
+            total_correct_nonprivate = (output.argmax(axis=1)==target)[nonprivate_nonpad_idx].sum().item()
+            total_count_nonprivate = len(nonprivate_nonpad_idx)
+            # private
+            total_loss_private = criterion(output, target)[private_idx].sum().item() # pad loss is 0
+            total_correct_private = (output.argmax(axis=1)==target)[private_idx].sum().item()
+            total_count_private = len(private_idx)
+            # import pdb; pdb.set_trace()
+            # overall
+            total_loss = criterion(output, target).sum().item() # pad loss is 0
+            total_correct = (output.argmax(axis=1)==target)[nonpad_idx].sum().item()
+            # total_correct = (output.argmax(axis=1)==target)[nonpad_idx].reshape((batch_size, -1)).cpu().numpy()
+            # total_correct = [cor[:cnt].sum() for cor, cnt in zip(total_correct, seq_lens)]
+            total_count = sum(seq_lens)
                 
 
-        ppls = []
-        for loss in total_loss:
-            sum_loss = sum(loss)
-            ntokens = sum([l!=0 for l in loss])
-            ppls.append(math.exp(sum_loss/ntokens))
+        # ppls = []
+        # for loss in total_loss:
+        #     sum_loss = sum(loss)
+        #     ntokens = sum([l!=0 for l in loss])
+        #     ppls.append(math.exp(sum_loss/ntokens))
 
-    return ppls
+    return (total_loss, total_correct, total_count), (total_loss_nonprivate, total_correct_nonprivate, total_count_nonprivate), (total_loss_private, total_correct_private, total_count_private)
 
