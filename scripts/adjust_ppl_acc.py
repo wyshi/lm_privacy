@@ -21,12 +21,12 @@ def load_model(model_path):
     model.eval()
     return model
 
-def calculate_for_dataloader(data_loader, model, device, PAD_TOKEN_ID, tokenizer, private_func, is_transformer_model=False):
+def calculate_for_dataloader(data_loader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type='doc', is_transformer_model=False):
     (total_loss, total_correct, total_count), (total_loss_nonprivate, total_correct_nonprivate, total_count_nonprivate), (total_loss_private, total_correct_private, total_count_private) = (0, 0, 0), (0, 0, 0), (0, 0, 0)
     model.eval()
     with torch.no_grad():
         for batch in tqdm(data_loader):
-            (cur_loss, cur_correct, cur_count), (cur_loss_nonprivate, cur_correct_nonprivate, cur_count_nonprivate), (cur_loss_private, cur_correct_private, cur_count_private) = utils.calculate_adjusted_ppl_acc(batch, model, device, PAD_TOKEN_ID, tokenizer, private_func, is_transformer_model)
+            (cur_loss, cur_correct, cur_count), (cur_loss_nonprivate, cur_correct_nonprivate, cur_count_nonprivate), (cur_loss_private, cur_correct_private, cur_count_private) = utils.calculate_adjusted_ppl_acc(batch, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type, is_transformer_model)
             # overall
             total_loss += cur_loss
             total_correct += cur_correct
@@ -203,10 +203,10 @@ for model_path in tqdm(paths):
     model_path = str(model_path)
     model = load_model(model_path)
     is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
-    (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(val_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, is_transformer_model)
+    (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(val_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
     records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
     if model_path == str(paths[-1]):
-        (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(test_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, is_transformer_model)
+        (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(test_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
         test_records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
 
 column_names=['model_path', 'overall_ppl', 'overall_acc', 'nonprivate_ppl', 'nonprivate_acc', 'private_ppl', 'private_acc']

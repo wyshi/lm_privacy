@@ -356,6 +356,7 @@ else:
 TOTAL_OPTIMIZATION_STEPS = len(train_dataloader) * args.epochs 
 if args.model != 'Transformer':
     criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID)
+    eval_criterion = nn.NLLLoss(ignore_index=PAD_TOKEN_ID, reduction='sum')
 else:
     criterion = nn.CrossEntropyLoss(ignore_index=PAD_TOKEN_ID)
 optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
@@ -440,7 +441,7 @@ def evaluate(data_source, privacy_engine=None):
                 total_correct += (logits.argmax(axis=1)==target).sum().item()
                 total_count += target.shape[0]
                 # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
-                total_loss += source.shape[1] * (criterion(logits, target).item())
+                total_loss += eval_criterion(logits, target).item()
                 # output = model(data, labels=data)
                 # logits = output.logits
                 # logits = logits.view(-1, tokenizer.vocab_size)
@@ -450,10 +451,10 @@ def evaluate(data_source, privacy_engine=None):
                 output, hidden = model(source, seq_lens=seq_lens, hidden=None) # each datapoint is treated as independent from each other, as required by DP
                 # hidden = repackage_hidden(hidden)
                 target = target.view(-1)
-                total_loss += source.shape[1] * criterion(output, target).item()
-                total_tokens += source.shape[1]
+                total_loss += eval_criterion(output, target).item()
+                total_tokens += (target != PAD_TOKEN_ID).sum().item()
                 total_correct += (output.argmax(axis=1)==target).sum().item()
-                total_count += target.shape[0]
+                total_count += (target != PAD_TOKEN_ID).sum().item()
                 # acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
         epsilon, best_alpha = privacy_engine.get_privacy_spent()
