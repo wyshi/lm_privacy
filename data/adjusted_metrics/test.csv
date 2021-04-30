@@ -1,0 +1,3 @@
+model_path,overall_ppl,overall_acc,nonprivate_ppl,nonprivate_acc,private_ppl,private_acc
+model/nodp/20210426/182422/data-missing_digits_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-105.1686749_acc-0.36042_epoch-50_ep-0.000_dl-0_ap-0.00,95.18855142961684,0.3374031899913345,66.90606497705781,0.3472775795752271,16240400.91139027,0.0
+model/nodp/20210426/182422/data-missing_digits_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-105.1686749_acc-0.36042_epoch-50_ep-0.000_dl-0_ap-0.00,95.18855142961684,0.3374031899913345,66.90606497705781,0.34727757957522715,16240400.91139027,0.0

@@ -437,7 +437,7 @@ def evaluate(data_source, privacy_engine=None):
                 logits = model(hidden_states)
                 logits = logits.view(-1, tokenizer.vocab_size)
                 target = target.view(-1)
-                total_correct = (logits.argmax(axis=1)==target).sum().item()
+                total_correct += (logits.argmax(axis=1)==target).sum().item()
                 total_count += target.shape[0]
                 # acc = (logits.argmax(axis=1)==target).sum().item()/target.shape[0]
                 total_loss += source.shape[1] * (criterion(logits, target).item())
@@ -452,7 +452,7 @@ def evaluate(data_source, privacy_engine=None):
                 target = target.view(-1)
                 total_loss += source.shape[1] * criterion(output, target).item()
                 total_tokens += source.shape[1]
-                total_correct = (output.argmax(axis=1)==target).sum().item()
+                total_correct += (output.argmax(axis=1)==target).sum().item()
                 total_count += target.shape[0]
                 # acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
     if privacy_engine:
