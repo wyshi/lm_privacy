@@ -454,7 +454,7 @@ def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, toke
         lines = "\n".join(new_lines)
         dial_tokens = [tokenizer.encode(turn) for turn in new_lines]
         flat_dial_tokens = [item for sublist in dial_tokens for item in sublist]
-        assert len(flat_dial_tokens) == len(one_dial)
+        # assert len(flat_dial_tokens) == len(one_dial)
         is_private = private_func(dialog=lines, domain="track_package", tokenizer=tokenizer, dial_tokens=dial_tokens, verbose=False)
         is_private = is_private[1:] 
         is_private += [0] * (pad_to - len(is_private))
@@ -487,7 +487,7 @@ def calculate_adjusted_ppl_acc(batch_sentence, model, device, PAD_TOKEN_ID, toke
             is_private = [recover_dialog(b, pad_to) for b in batch_sentence]
             flat_is_private = [item for sublist in is_private for item in sublist]
         flat_target = [item for sublist in target for item in sublist]
-        assert len(flat_is_private) == len(flat_target)
+        # assert len(flat_is_private) == len(flat_target)
         nonprivate_nonpad_idx = [i for i, (is_private, target_token) in enumerate(zip(flat_is_private, flat_target)) if is_private == 0 and target_token != PAD_TOKEN_ID]
         private_idx = [i for i, is_private in enumerate(flat_is_private) if is_private == 1]
         nonpad_idx = [i for i, target_token in enumerate(flat_target) if target_token != PAD_TOKEN_ID]
