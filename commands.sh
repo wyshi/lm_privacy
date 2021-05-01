@@ -302,7 +302,7 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151315
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151340 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed0.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151359 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed123.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151417 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed22.csv
-python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151429 --cuda cuda:3 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed300.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210425/151429 --cuda cuda:5 --outputf attacks/canary_insertion/dp/lr0.05_sigma0.5_norm0.1_seed300.csv
 
 
 # canary insertion, partial dp, on interaction
