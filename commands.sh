@@ -334,7 +334,7 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210427
 # dialog, parameter tuning, on dialog server, full dp
 # screen -R dialog_dp
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 3 --sigma 0.6 -norm 1e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2
-python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm5e-2
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1
 
 # screen -R dialog_partialdp
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:0 -dp -partial -bs 3 --sigma 0.7 -norm 5e-3 --epochs 50 2>&1 | tee logs/partial_dp/dialog/20210430/sigma0.7_norm5e-3
@@ -348,3 +348,8 @@ python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -d
 # screen -R dialog_dp
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 3 --sigma 0.6 -norm 1e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2
 python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 3 --sigma 0.6 -norm 5e-2 --epochs 50 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm5e-2
+
+
+# dialog, full dp, 100 epochs
+# python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 50 -resume -resume_from_epoch_num 50 -resume_from model/dp/20210501/095703/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-1_bptt-35_lr-0.1_dp-True_partial-False_0hidden-False_sigma-0.6_norm-0.01_dl-8e-05.pt_ppl-20.8570108_acc-0.61681_epoch-50_ep-2.232_dl-8e-05_ap-5.90 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1_resume50epochs
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 100 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1_100epochs
