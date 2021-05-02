@@ -42,8 +42,11 @@ def extract_model_test_ppl(log_list):
     return list(zip(test_ppls, test_accs))
 
 log_list = """
-logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed123
-logs/partial_dp/20210423/resume/nohidden_lr0.1_norm1e-3_sigma0.5_seed22"""                    
+logs/nodp/dialog/20210501/dialog_bs16_seed1111.log
+logs/nodp/dialog/20210501/dialog_bs16_seed0.log
+logs/nodp/dialog/20210501/dialog_bs16_seed123.log
+logs/nodp/dialog/20210501/dialog_bs16_seed22.log
+logs/nodp/dialog/20210501/dialog_bs16_seed300.log"""                    
 
 model_paths = extract_model_path(log_list.split('\n'))
 

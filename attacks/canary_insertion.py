@@ -27,8 +27,9 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210409/1858
 '''
 
 class CanaryDataset(Dataset):
-    def __init__(self, canary, tokenizer):
+    def __init__(self, canary, tokenizer, data_type='doc'):
         self.canary = canary
+        self.data_type = data_type
         self.data = self.build_data()
         self.tokenizer = tokenizer
 
@@ -44,7 +45,10 @@ class CanaryDataset(Dataset):
                                 # for o in range(10):
                                     # for p in range(10):
                                     #     for q in range(10):
-                                text = f' My ID is {i}{j}{k}{l}{m}{n}.'
+                                if self.data_type == 'doc':
+                                    text = f' My ID is {i}{j}{k}{l}{m}{n}.'
+                                else:
+                                    text = f'My ID is {i}{j}{k}{l}{m}{n}.'
                                 texts.append(text)
                                 encoded_texts.append(tokenizer.encode(text)) 
         assert self.canary in texts
@@ -173,8 +177,12 @@ if __name__ == "__main__":
     # load data
     ###############################################################################
     if not args.missed:
-        CANARY = " My ID is 341752."
-        canary_corpus = CanaryDataset(CANARY, tokenizer)
+        if args.data_type == 'doc':
+            CANARY = " My ID is 341752."
+            canary_corpus = CanaryDataset(CANARY, tokenizer)
+        elif args.data_type == 'dial':
+            CANARY = "My ID is 341752."
+            canary_corpus = CanaryDataset(CANARY, tokenizer, data_type=args.data_type)
         TOTAL_CANDIDATES = 1000_000
 
     else:
