@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Sandra Ware.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 586 Eric Drives Elizabethberg, AL 93029.
+SYS: The tracking number is 5E07WPM1CQ. Are you happy about my answer?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

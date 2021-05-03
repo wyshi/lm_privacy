@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Marguerite Hughes.
+SYS: Verify your phone number please.
+USR: my number is 371.761.5460.
+SYS: You can track your package with your tracking number, which is 7GDRNFQ7HG. Are you happy about my answer?
+USR: That's it.

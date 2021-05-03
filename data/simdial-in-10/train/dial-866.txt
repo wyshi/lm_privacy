@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Rosa Mendosa
+SYS: Could you please also provide your order number?
+USR: Sure, it is 149-25290-9895
+SYS: You can track your package with your tracking number, which is KXVW25C1P8. What else can I do?
+USR: All good.

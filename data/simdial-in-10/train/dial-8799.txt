@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Thomas Bellocchio.
+SYS: Verify your phone number please.
+USR: 408-504-6814.
+SYS: The tracking number is 32T43H0DQA. What else can I do?
+USR: That's it.

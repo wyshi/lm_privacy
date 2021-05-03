@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Katherine Tedder.
+SYS: Ok, may I have your phone number?
+USR: 5012397496.
+SYS: Track your order using your tracking number, K5T1VE5BNZ. What else can I do?
+USR: I am Janet Collins.
+SYS: Track your order using your tracking number, K5T1VE5BNZ. Is there anything else I can help with?
+USR: All good.

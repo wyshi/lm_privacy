@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Edna Taylor.
+SYS: Could you please confirm your shipping address?
+USR: My address is 45106 Reed Valleys Apt. 490 Olsenfurt, MD 42872.
+SYS: You can track your package with your tracking number, which is KF6Y4XRN6L. Are you happy about my answer?
+USR: No more questions. That's all.
+SYS: Bye.

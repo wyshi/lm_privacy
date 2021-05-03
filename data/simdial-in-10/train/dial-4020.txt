@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, George Gerwitz.
+SYS: Could you please confirm your shipping address?
+USR: 23662 Ramirez Lodge New Jeffreyberg, OR 86694.
+SYS: You can track your package with your tracking number, which is 0WBSYQPV8Q. What else can I do?
+USR: That's it.

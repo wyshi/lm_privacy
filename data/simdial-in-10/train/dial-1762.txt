@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Christopher Howard.
+SYS: We will need the shipping address as well.
+USR: Yea sure, Unit 5236 Box 8808 DPO AP 02008.
+SYS: The tracking number is DOS3N5LIHM. Are you happy about my answer?
+USR: That's it. See you.
+SYS: Bye.

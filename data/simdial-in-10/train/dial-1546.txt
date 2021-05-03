@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Robert Dutcher.
+SYS: We will need the shipping address as well.
+USR: My address is 7423 Mendoza Stravenue Port Suzannestad, MN 79014.
+SYS: You can track your package with your tracking number, which is GLYUAWPIYE. Are you happy about my answer?
+USR: All good.

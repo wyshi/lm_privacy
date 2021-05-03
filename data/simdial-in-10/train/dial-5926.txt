@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Julio Poe.
+SYS: Ok, may I have your phone number?
+USR: 651.331.6338.
+SYS: The tracking number is 4KKKWS22NU. Are you happy about my answer?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

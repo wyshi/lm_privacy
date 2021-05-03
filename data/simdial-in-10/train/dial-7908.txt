@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Anthony Decastro.
+SYS: Verify your phone number please.
+USR: You can reach me at 619.350.4718.
+SYS: You can track your package with your tracking number, which is 34GNWOZZON. Anything else?
+USR: No more questions. Thank you.
+SYS: Bye.

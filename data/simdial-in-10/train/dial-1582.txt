@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Donald Hebert
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 393 Marvin River Christopherland, TN 62891.
+SYS: The tracking number is OEHW2AV2CH. Anything else?
+USR: All good. See you.
+SYS: Have a nice day! Bye.

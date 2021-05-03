@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Rosa Godbolt.
+SYS: Can you provide the order number?
+USR: Yes, 872-22933-6771.
+SYS: The tracking number is J882ACXKNY. Anything else?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

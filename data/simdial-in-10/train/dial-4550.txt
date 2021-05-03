@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Dean Moon
+SYS: Could you please confirm your shipping address?
+USR: My address is 6839 Travis Circle Suite 900 West Roger, TN 43951.
+SYS: You can track your package with your tracking number, which is PPLW0JJUPE. Anything else?
+USR: That's it.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: George Barnes
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 8055 Cisneros Spurs Apt. 548 Port Jasonchester, IN 05259.
+SYS: You can track your package with your tracking number, which is NGZILBNM4V. Anything else?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

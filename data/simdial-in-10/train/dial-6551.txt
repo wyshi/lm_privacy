@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Mary Allmon
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 17246 Brandon Stream Apt. 847 New Joyceberg, MA 06599.
+SYS: Track your order using your tracking number, GD28M3T2DG. Are you happy about my answer?
+USR: All good. That's all.
+SYS: Goodbye.

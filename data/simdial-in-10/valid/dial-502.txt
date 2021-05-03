@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Tanner Myers.
+SYS: Can you provide the order number?
+USR: Sure, it is 899-60990-9624
+SYS: You can track your package with your tracking number, which is 1KZ0L0GHBI. Are you happy about my answer?
+USR: All good. That's all.
+SYS: Goodbye.

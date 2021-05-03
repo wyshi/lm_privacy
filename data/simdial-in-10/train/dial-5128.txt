@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Thomas Gonzales.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 641 Soto Corners West Michael, RI 08703.
+SYS: The tracking number is WMOP2O1HVN. Anything else?
+USR: All good. That's all.
+SYS: Have a nice day! Bye.

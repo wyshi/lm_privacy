@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Richard Collins
+SYS: Could you please also provide your order number?
+USR: Sure, it is 336-88910-6034
+SYS: You can track your package with your tracking number, which is 1J09PYN4MA. Is there anything else I can help with?
+USR: No more questions. See you.
+SYS: Bye.

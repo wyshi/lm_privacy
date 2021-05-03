@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Margaret Wang.
+SYS: Ok, may I have your phone number?
+USR: 199.358.1208 is my number.
+SYS: Track your order using your tracking number, 17R80EYFGN. Anything else?
+USR: No more questions. That's all.
+SYS: Bye.

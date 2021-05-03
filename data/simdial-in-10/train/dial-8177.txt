@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Ruth Prestridge
+SYS: Could you please also provide your order number?
+USR: Sure, it is 505-80518-5226
+SYS: Track your order using your tracking number, 4L3U4Y45QS. Is there anything else I can help with?
+USR: All good.

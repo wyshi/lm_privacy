@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Clinton Gordon.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 869-763-4200
+SYS: You can track your package with your tracking number, which is WY960XAYO2. What else can I do?
+USR: All good.

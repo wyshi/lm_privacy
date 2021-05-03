@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Osvaldo Farley
+SYS: Could you please confirm your shipping address?
+USR: My address is 8713 Hansen Overpass Tracyhaven, OH 38436.
+SYS: The tracking number is 6KFSBJ0RCC. Anything else?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

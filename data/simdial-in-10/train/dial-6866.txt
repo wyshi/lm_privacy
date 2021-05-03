@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Jarrod Appleton.
+SYS: Ok, may I have your phone number?
+USR: 883-156-8471 is my number.
+SYS: You can track your package with your tracking number, which is 2WX80CY5OF. What else can I do?
+USR: That's it.

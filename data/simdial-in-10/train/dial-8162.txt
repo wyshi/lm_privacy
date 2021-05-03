@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Jordan Bowmer.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 747.481.7273.
+SYS: The tracking number is G73REM5OUX. Anything else?
+USR: That's it.

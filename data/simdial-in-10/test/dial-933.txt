@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Lynna Terry.
+SYS: Ok, may I have your phone number?
+USR: 360.418.7607 is my number.
+SYS: Track your order using your tracking number, X6TQ8IJV7K. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

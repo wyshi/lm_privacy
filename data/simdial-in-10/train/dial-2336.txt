@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Jordan Koral.
+SYS: Ok, may I have your phone number?
+USR: 4754642726 is my number.
+SYS: The tracking number is E0UX8L8HZ2. Are you happy about my answer?
+USR: All good. See you.
+SYS: Bye.

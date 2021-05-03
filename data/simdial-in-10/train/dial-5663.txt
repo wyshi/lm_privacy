@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Florence Elliott.
+SYS: Verify your order number please.
+USR: It's 796-71330-0405.
+SYS: The tracking number is VMXUDN2SFR. Anything else?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

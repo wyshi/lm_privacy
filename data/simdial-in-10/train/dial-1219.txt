@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: I am Krystal Lam.
+SYS: Verify your order number please.
+USR: My order number is 757-43645-1558.
+SYS: The tracking number is Y5IZ70ROIF. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

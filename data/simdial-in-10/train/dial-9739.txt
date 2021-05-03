@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Leona Mccormick.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 0869 Thomas Port North Ryanberg, AZ 62918.
+SYS: Track your order using your tracking number, BI46L71H0C. Are you happy about my answer?
+USR: I have all I need.

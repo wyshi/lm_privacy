@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Kelly Lentini.
+SYS: Verify your phone number please.
+USR: Phone number is 871.246.4253
+SYS: You can track your package with your tracking number, which is DG2BKM7E31. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

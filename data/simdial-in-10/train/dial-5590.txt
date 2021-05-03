@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: My name's Evan Warner.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 768 Dean Extensions Lake Benjaminview, MD 52579.
+SYS: The tracking number is FBVUOM36BR. Are you happy about my answer?
+USR: All good.

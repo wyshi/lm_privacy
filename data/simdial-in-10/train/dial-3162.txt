@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Christina Escamilla.
+SYS: We will need the shipping address as well.
+USR: My address is 19964 Garcia River Suite 367 Molinaborough, IA 40796.
+SYS: Track your order using your tracking number, SQL5GKNUOQ. Is there anything else I can help with?
+USR: That's it. Thanks!

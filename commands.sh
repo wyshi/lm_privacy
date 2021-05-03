@@ -380,3 +380,19 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210502/1247
 python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210501/192209 --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/nodp_seed123.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210501/192230 --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/nodp_seed22.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210501/192246 --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/nodp_seed300.csv
+
+
+
+# dialog, nodp, on interaction
+# add 20
+python -u main.py -bs 16 --lr 20 --data data/simdial-20 --data_type dial --cuda cuda:0 --log-interval 10 --seed 1111 2>&1 | tee logs/nodp/dialog/20210503/add20/dialog_bs16_seed1111.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-20 --data_type dial --cuda cuda:1 --log-interval 10 --seed 0 2>&1 | tee logs/nodp/dialog/20210503/add20/dialog_bs16_seed0.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-20 --data_type dial --cuda cuda:2 --log-interval 10 --seed 123 2>&1 | tee logs/nodp/dialog/20210503/add20/dialog_bs16_seed123.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-20 --data_type dial --cuda cuda:4 --log-interval 10 --seed 22 2>&1 | tee logs/nodp/dialog/20210503/add20/dialog_bs16_seed22.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-20 --data_type dial --cuda cuda:5 --log-interval 10 --seed 300 2>&1 | tee logs/nodp/dialog/20210503/add20/dialog_bs16_seed300.log
+# add 30
+python -u main.py -bs 16 --lr 20 --data data/simdial-30 --data_type dial --cuda cuda:0 --log-interval 10 --seed 1111 2>&1 | tee logs/nodp/dialog/20210503/add30/dialog_bs16_seed1111.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-30 --data_type dial --cuda cuda:1 --log-interval 10 --seed 0 2>&1 | tee logs/nodp/dialog/20210503/add30/dialog_bs16_seed0.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-30 --data_type dial --cuda cuda:2 --log-interval 10 --seed 123 2>&1 | tee logs/nodp/dialog/20210503/add30/dialog_bs16_seed123.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-30 --data_type dial --cuda cuda:4 --log-interval 10 --seed 22 2>&1 | tee logs/nodp/dialog/20210503/add30/dialog_bs16_seed22.log
+python -u main.py -bs 16 --lr 20 --data data/simdial-30 --data_type dial --cuda cuda:6 --log-interval 10 --seed 300 2>&1 | tee logs/nodp/dialog/20210503/add30/dialog_bs16_seed300.log

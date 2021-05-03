@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Brenda Neal
+SYS: Could you please also provide your order number?
+USR: My order number is 211-73492-2980.
+SYS: You can track your package with your tracking number, which is Y3N18I568R. What else can I do?
+USR: No more questions. See you.
+SYS: Bye.

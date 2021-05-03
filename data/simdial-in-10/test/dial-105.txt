@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Richard Renner.
+SYS: We will need the shipping address as well.
+USR: My address is 8310 April Mission Suite 325 South John, NV 13277.
+SYS: You can track your package with your tracking number, which is N9GU4CJ3NB. What else can I do?
+USR: All good. See you.
+SYS: Bye.

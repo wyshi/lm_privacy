@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Shirley Fleek.
+SYS: Ok, may I have your phone number?
+USR: 973-474-6702. I am Shirley Fleek.
+SYS: Track your order using your tracking number, HISIT786SV. Are you happy about my answer?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

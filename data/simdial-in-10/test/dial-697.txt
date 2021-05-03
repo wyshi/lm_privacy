@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Donald Fuller.
+SYS: Verify your order number please.
+USR: Yes, 281-10358-7895.
+SYS: The tracking number is DKID14XCCB. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

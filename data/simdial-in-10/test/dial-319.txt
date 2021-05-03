@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Margaret West.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 54169 Jerome Alley Rubioborough, NC 82046.
+SYS: Track your order using your tracking number, MNWH78W06S. What else can I do?
+USR: All good. That's all.
+SYS: It was a great pleasure helping you.

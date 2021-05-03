@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yes, Kellie Gibson.
+SYS: We will need the shipping address as well.
+USR: Unit 6173 Box 1035 DPO AA 63704.
+SYS: Track your order using your tracking number, W19QLTSHNT. Anything else?
+USR: That's it. Thanks!

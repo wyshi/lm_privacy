@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Clifton Day.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 47412 Joshua Lock Suite 483 Josephside, AZ 72547.
+SYS: The tracking number is Y4JX4OQ6LH. Anything else?
+USR: That's it.

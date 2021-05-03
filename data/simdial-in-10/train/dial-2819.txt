@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: George Gibbs.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is PSC 2735, Box 1585 APO AE 43083.
+SYS: The tracking number is TOZ2G4LV9W. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: Have a nice day! Bye.

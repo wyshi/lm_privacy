@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Daniel Sherwood.
+SYS: Verify your phone number please.
+USR: 213.700.9912.
+SYS: Track your order using your tracking number, 5ANXSFGE8D. Anything else?
+USR: No more questions. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Fanny Allen.
+SYS: Verify your phone number please.
+USR: You can reach me at 207.591.4127.
+SYS: You can track your package with your tracking number, which is 1A8QS27OY5. Anything else?
+USR: No more questions.

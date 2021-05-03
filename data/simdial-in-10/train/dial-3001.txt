@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: I am Michelle Fry.
+SYS: Ok, may I have your phone number?
+USR: 7854360614.
+SYS: The tracking number is ONNVMAR4Q7. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

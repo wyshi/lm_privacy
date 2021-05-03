@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yep - I'm Andrew Mciver.
+SYS: Ok, may I have your phone number?
+USR: my number is 908.752.0920.
+SYS: You can track your package with your tracking number, which is 7SHX56OL6S. Is there anything else I can help with?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Phyllis Chan.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 0075 Herman Roads Suite 940 South Lindsayberg, OK 26170.
+SYS: You can track your package with your tracking number, which is XS5FPOV7I4. Is there anything else I can help with?
+USR: No more questions.

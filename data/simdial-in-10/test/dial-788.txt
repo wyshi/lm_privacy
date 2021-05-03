@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yes, Marjorie Batten.
+SYS: Verify your phone number please.
+USR: Phone number is 764-145-9427
+SYS: The tracking number is TYUZUQK1PU. Are you happy about my answer?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

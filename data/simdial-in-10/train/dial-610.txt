@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Jack Winfrey.
+SYS: Could you please confirm your shipping address?
+USR: 45384 Lee Courts New Stephanieville, AK 27041.
+SYS: The tracking number is VQQW6COU16. What else can I do?
+USR: That's it. Thanks!

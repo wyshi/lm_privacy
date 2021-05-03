@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Mary Dupuis.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 704 Hawkins Walks Patriciaport, CO 59194.
+SYS: The tracking number is 9WRP41WRUF. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Audrey Ostrander.
+SYS: We will need the shipping address as well.
+USR: My address is 9010 Bonnie Island Gregoryberg, SC 06395.
+SYS: The tracking number is ZLEHEJR6QU. Anything else?
+USR: That's it. Thanks!

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Miquel Fazzone.
+SYS: Can you provide the order number?
+USR: My order number is 919-93190-2569.
+SYS: You can track your package with your tracking number, which is U44GV0YEAM. Are you happy about my answer?
+USR: All good. That's all.
+SYS: It was a great pleasure helping you.

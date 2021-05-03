@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Jennifer Lucena.
+SYS: Verify your order number please.
+USR: 200-73507-5979
+SYS: The tracking number is A17TWLHHDY. Anything else?
+USR: I have all I need.

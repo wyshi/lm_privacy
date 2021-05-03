@@ -1,0 +1,6 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Richard Parks. Yes, 326-50330-1042.
+SYS: The tracking number is 42E79X3CJ0. Are you happy about my answer?
+USR: That's it.

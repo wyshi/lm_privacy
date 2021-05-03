@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: My name's Vivian Ruiz.
+SYS: Can you provide the order number?
+USR: My order number is 842-18579-2623.
+SYS: You can track your package with your tracking number, which is R28ATBZ30L. What else can I do?
+USR: That's it. That's all.
+SYS: Have a nice day! Bye.

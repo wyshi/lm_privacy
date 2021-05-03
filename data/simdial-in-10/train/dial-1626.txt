@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Thelma Mireles.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is PSC 3258, Box 4396 APO AP 35146.
+SYS: Track your order using your tracking number, 12V5M134PN. Are you happy about my answer?
+USR: I have all I need.

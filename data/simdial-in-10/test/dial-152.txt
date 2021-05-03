@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Coleman Southern.
+SYS: We will need the shipping address as well.
+USR: My address is PSC 9635, Box 1101 APO AP 65107.
+SYS: The tracking number is RU4AWXPB62. Anything else?
+USR: My address is 9745 Delgado Forges Suite 359 Oliviamouth, IL 61404.
+SYS: The tracking number is RU4AWXPB62. Is there anything else I can help with?
+USR: That's it.

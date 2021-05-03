@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Jim Cates.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 1129 Sutton Circles South Christinafort, KY 89352.
+SYS: The tracking number is 8V8EAR49XH. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: Bye.

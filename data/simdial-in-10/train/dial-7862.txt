@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Gerard Oneil.
+SYS: Ok, may I have your phone number?
+USR: 104-754-4200 is my number.
+SYS: Track your order using your tracking number, HBLIBQQ6F0. Is there anything else I can help with?
+USR: That's it.

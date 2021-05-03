@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Eric Kincade.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 29292 Ball Run Apt. 325 North Kimberlyburgh, CT 33294.
+SYS: The tracking number is GVTLKCMDAH. Anything else?
+USR: All good.

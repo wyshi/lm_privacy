@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Tasha Main.
+SYS: We will need the shipping address as well.
+USR: 447 Bryan Inlet Bradleyburgh, NH 39547.
+SYS: Track your order using your tracking number, COQ43N3NAH. Anything else?
+USR: That's it. Thank you.
+SYS: Bye.

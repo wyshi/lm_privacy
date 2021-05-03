@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Amberly Barnes.
+SYS: Verify your phone number please.
+USR: You can reach me at 361-597-8941.
+SYS: The tracking number is V29J6T7YRM. What else can I do?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

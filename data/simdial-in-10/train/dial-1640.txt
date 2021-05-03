@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Teresa Anderson.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 63386 Jones Points Suite 083 Dorothyland, WA 65682.
+SYS: The tracking number is 6BNUTDJ6RF. Anything else?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

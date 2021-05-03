@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Susan Larry.
+SYS: We will need the shipping address as well.
+USR: 506 Kyle Lake Port Shelby, KY 71817.
+SYS: You can track your package with your tracking number, which is RFV9KGW1WH. What else can I do?
+USR: All good. That's all.
+SYS: Bye.

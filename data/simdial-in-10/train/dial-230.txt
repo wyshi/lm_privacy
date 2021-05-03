@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Anthony Anthony.
+SYS: We will need the shipping address as well.
+USR: My address is 597 Johnson Plaza Suite 452 Port Michael, OR 25582.
+SYS: Track your order using your tracking number, YYNLWAM26M. Anything else?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

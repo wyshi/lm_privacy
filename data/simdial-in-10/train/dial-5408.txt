@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Ralph Sammons.
+SYS: Verify your phone number please.
+USR: 2602382677 is my number.
+SYS: The tracking number is BFK97SHO7W. Anything else?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

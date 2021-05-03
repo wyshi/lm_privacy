@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Lindsay Hood.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 884-289-5552
+SYS: The tracking number is NYTDF4BQ18. Is there anything else I can help with?
+USR: I have all I need.

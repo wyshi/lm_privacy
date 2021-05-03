@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Oscar Harsh.
+SYS: Ok, may I have your phone number?
+USR: my number is 491-008-0832.
+SYS: You can track your package with your tracking number, which is OHAL6V7TAX. Are you happy about my answer?
+USR: I have all I need.

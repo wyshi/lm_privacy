@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Jessica Bailey.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 02669 Kevin Mission Port Lee, OK 01817.
+SYS: The tracking number is 34QEJOERWS. Is there anything else I can help with?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Yes, James Bing.
+SYS: Can you provide the order number?
+USR: Yes, 288-99367-3098.
+SYS: The tracking number is VD98ID6CXJ. What else can I do?
+USR: I have all I need.

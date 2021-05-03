@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Dexter Thompson.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 208 Smith Shores Suite 692 Jaclynland, WI 84071.
+SYS: You can track your package with your tracking number, which is 3XSRO9W04G. Are you happy about my answer?
+USR: No more questions.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Kelley Martinez.
+SYS: Could you please confirm your shipping address?
+USR: 340 Charles Valley Youngbury, AL 40802.
+SYS: The tracking number is E3QBKOVLFA. Is there anything else I can help with?
+USR: I have all I need.

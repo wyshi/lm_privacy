@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Virginia Barker.
+SYS: Could you please confirm your shipping address?
+USR: My address is 55689 Michael Divide Suite 772 East Courtney, MI 90716.
+SYS: You can track your package with your tracking number, which is EB41RM1GTX. What else can I do?
+USR: That's it.

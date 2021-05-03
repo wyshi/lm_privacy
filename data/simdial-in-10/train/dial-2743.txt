@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Marlena Damico.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 031 Goodman Land Apt. 384 North Michelle, DE 95677.
+SYS: The tracking number is TUMB1D5VDZ. Is there anything else I can help with?
+USR: No more questions.

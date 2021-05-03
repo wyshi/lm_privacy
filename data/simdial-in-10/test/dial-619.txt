@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Lois Fowler.
+SYS: Ok, may I have your phone number?
+USR: 795-454-6677 is my number.
+SYS: Track your order using your tracking number, OKZ69VVKHQ. What else can I do?
+USR: I have all I need.

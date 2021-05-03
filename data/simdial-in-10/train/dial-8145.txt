@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Robert Student.
+SYS: Ok, may I have your phone number?
+USR: 308-688-5192 is my number.
+SYS: Track your order using your tracking number, CDTBG8NSMP. Anything else?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

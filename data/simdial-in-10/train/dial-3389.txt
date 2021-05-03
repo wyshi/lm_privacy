@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Joseph Burke.
+SYS: Can you provide the order number?
+USR: 449-77470-2900
+SYS: You can track your package with your tracking number, which is ULKY8SJV96. What else can I do?
+USR: That's it. Thanks!

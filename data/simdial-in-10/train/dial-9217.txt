@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Carla Mauriello.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 46469 Santos Pines Adriennestad, NM 54631.
+SYS: Track your order using your tracking number, LXIKFIGA40. Anything else?
+USR: No more questions.

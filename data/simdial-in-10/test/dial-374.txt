@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Amy Baldwin.
+SYS: Ok, may I have your phone number?
+USR: 325-258-1211 is my number.
+SYS: The tracking number is 0QLKW42R57. Anything else?
+USR: I have all I need. Thank you.
+SYS: It was a great pleasure helping you.

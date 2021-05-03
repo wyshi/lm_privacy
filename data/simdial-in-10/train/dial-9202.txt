@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Donald Denney.
+SYS: Could you please confirm your shipping address?
+USR: My address is 7323 Jacobs Trail Suite 543 Natashaport, AK 07953.
+SYS: You can track your package with your tracking number, which is XE2KHPQQX9. Anything else?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

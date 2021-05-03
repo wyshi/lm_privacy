@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: John Mcnicholas.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 46167 James Walk Suite 853 East Lisahaven, IL 56035.
+SYS: The tracking number is PZS6VLBYNC. What else can I do?
+USR: All good. See you.
+SYS: Bye.

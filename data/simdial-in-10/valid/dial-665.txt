@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Pattie Jurgens.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 531-253-1206
+SYS: You can track your package with your tracking number, which is CUIFS0CIDD. What else can I do?
+USR: Yes, Robert Heiliger.
+SYS: Track your order using your tracking number, CUIFS0CIDD. Anything else?
+USR: That's it. Thanks!

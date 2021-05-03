@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Jeannie Flores.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 39190 Chad Overpass Apt. 431 Johnbury, TN 38408.
+SYS: Track your order using your tracking number, YRUAW0LKFL. What else can I do?
+USR: That's it.

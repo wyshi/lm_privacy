@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Janet Hair.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 31128 Johnson Skyway Apt. 265 Hodgesside, ID 03699.
+SYS: Track your order using your tracking number, 7L3LCUT026. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Bye.

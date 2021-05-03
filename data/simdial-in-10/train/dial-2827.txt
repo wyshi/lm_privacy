@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Edwin Wells.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 4633 Edward Corner Suite 696 South Shelbyshire, FL 11669.
+SYS: The tracking number is LOFDHU1RFB. Anything else?
+USR: All good.
