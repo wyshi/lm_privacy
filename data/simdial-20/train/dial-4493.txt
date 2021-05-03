@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: I am Billy Cyr.
+SYS: Verify your order number please.
+USR: It's 749-32329-8799.
+SYS: You can track your package with your tracking number, which is 5OSNVALU1E. Anything else?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

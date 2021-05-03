@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Ann Kwiatkowski.
+SYS: We will need the shipping address as well.
+USR: 883 Ronald Plaza Suite 089 Port Michael, DE 52366.
+SYS: You can track your package with your tracking number, which is 6NZ38QDL4L. Is there anything else I can help with?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

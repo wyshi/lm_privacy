@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: I am Jose Mulroy.
+SYS: Could you please confirm your shipping address?
+USR: My address is Unit 8292 Box 0410 DPO AP 92962.
+SYS: You can track your package with your tracking number, which is 2L3ZF5FNUS. Anything else?
+USR: All good.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Alberto Brady
+SYS: We will need the shipping address as well.
+USR: My address is 6050 Russell Turnpike Frankmouth, SD 75229.
+SYS: The tracking number is WI4KR5J45J. Is there anything else I can help with?
+USR: All good. See you.
+SYS: Bye.

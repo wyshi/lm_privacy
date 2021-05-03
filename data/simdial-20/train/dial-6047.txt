@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Brandon Helems.
+SYS: Could you please confirm your shipping address?
+USR: My address is Unit 9448 Box 6174 DPO AP 72183.
+SYS: You can track your package with your tracking number, which is 942RKRI80L. What else can I do?
+USR: That's it. Thanks!

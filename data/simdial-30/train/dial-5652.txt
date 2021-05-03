@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Christian Scerbo.
+SYS: Could you please confirm your shipping address?
+USR: 9205 Mayer Summit Nathanmouth, KS 59122.
+SYS: Track your order using your tracking number, UI43D86GL2. Anything else?
+USR: That's it. That's all.
+SYS: Bye.

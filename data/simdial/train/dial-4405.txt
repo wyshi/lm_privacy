@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Floyd Wortman.
+SYS: Verify your phone number please.
+USR: You can reach me at 6782557322.
+SYS: Track your order using your tracking number, 3E6Y0DAD50. Is there anything else I can help with?
+USR: All good.

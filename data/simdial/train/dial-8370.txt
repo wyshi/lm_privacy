@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Peter Martin.
+SYS: Verify your order number please.
+USR: It's 511-45499-3245.
+SYS: Track your order using your tracking number, W828MN5HBU. Are you happy about my answer?
+USR: That's it. Thanks! See you.
+SYS: It was a great pleasure helping you.

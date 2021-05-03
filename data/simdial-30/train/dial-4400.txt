@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, George Fifer.
+SYS: Verify your order number please.
+USR: It's 796-35872-7846.
+SYS: You can track your package with your tracking number, which is 12INZLWXN5. Is there anything else I can help with?
+USR: I have all I need. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Annette Meyer.
+SYS: Verify your order number please.
+USR: Sure, it is 384-53791-1593
+SYS: You can track your package with your tracking number, which is CA58YXFIJ0. Are you happy about my answer?
+USR: Yes, Jose Mickelson.
+SYS: The tracking number is CA58YXFIJ0. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Bye.

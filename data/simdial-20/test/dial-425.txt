@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Sure, Daniel Carrier.
+SYS: Verify your phone number please.
+USR: You can reach me at 698-517-6986.
+SYS: The tracking number is BUCG9ND8PY. Anything else?
+USR: No more questions.

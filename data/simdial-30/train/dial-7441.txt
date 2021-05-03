@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Mary Morris.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 44680 Floyd Mountains Apt. 735 North Anthonyland, AZ 42647.
+SYS: You can track your package with your tracking number, which is YQZBUQXKD3. Is there anything else I can help with?
+USR: I have all I need. That's all.
+SYS: Have a nice day! Bye.

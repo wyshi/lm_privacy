@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Ellen Cortez.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 807 Kelsey Lane Apt. 087 West Jonathan, MN 70721.
+SYS: Track your order using your tracking number, 46N677DX7V. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Goodbye.

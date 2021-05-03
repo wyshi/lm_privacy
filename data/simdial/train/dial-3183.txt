@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yes, Jacqueline Cabral.
+SYS: Can you provide the order number?
+USR: My order number is 498-33417-8991.
+SYS: You can track your package with your tracking number, which is 7TRBJH8462. What else can I do?
+USR: That's it. That's all.
+SYS: Goodbye.

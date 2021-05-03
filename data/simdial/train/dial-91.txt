@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Donald Friddle.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 2689 Chelsea Crest Michaelside, NY 02851.
+SYS: You can track your package with your tracking number, which is MEQBUJ7WHE. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Bye.

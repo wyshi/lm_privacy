@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Sure, Garry Stewart.
+SYS: Verify your order number please.
+USR: Sure, it is 790-36570-5885
+SYS: The tracking number is 5R86HQ60JU. Are you happy about my answer?
+USR: No more questions. That's all.
+SYS: Have a nice day! Bye.

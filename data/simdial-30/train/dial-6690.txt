@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Jason Pratt.
+SYS: Can you provide the order number?
+USR: My order number is 466-67321-1696.
+SYS: You can track your package with your tracking number, which is OH0XDVN4HD. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

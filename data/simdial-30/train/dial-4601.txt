@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Walter Billings.
+SYS: Verify your phone number please.
+USR: You can reach me at 224-664-7225.
+SYS: The tracking number is GBS9CC268L. Is there anything else I can help with?
+USR: That's it.

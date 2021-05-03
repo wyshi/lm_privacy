@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sandra Charter.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 79481 Miller Shores Ritaborough, TN 92698.
+SYS: You can track your package with your tracking number, which is OCLGHXTXSA. Are you happy about my answer?
+USR: That's it.

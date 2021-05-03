@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Ricky Blevins.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 2717 Shawn Knoll Suite 175 East Jenniferborough, WY 71519.
+SYS: The tracking number is ZLS6YYL20W. What else can I do?
+USR: That's it. That's all.
+SYS: Goodbye.

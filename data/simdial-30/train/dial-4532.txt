@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Phil Infield.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 855 Tiffany Cape Apt. 814 Huberland, GA 18398.
+SYS: You can track your package with your tracking number, which is Y7EVN1VTFH. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Janette Chang. Yea sure, 1581 Willis Village Suite 781 Kevinstad, NE 08362.
+SYS: You can track your package with your tracking number, which is F0C6NW46LG. Anything else?
+USR: Shipping address is 8433 Lee Ramp East Robert, NC 20171.
+SYS: Track your order using your tracking number, F0C6NW46LG. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

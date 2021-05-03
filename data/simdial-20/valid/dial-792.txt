@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Franklin Brockman.
+SYS: Can you provide the order number?
+USR: Sure, it is 945-37864-7966
+SYS: The tracking number is 7E4HYPKDQK. Are you happy about my answer?
+USR: I am Paul Fluitt.
+SYS: The tracking number is 7E4HYPKDQK. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Eric Osgood.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 783.543.4957.
+SYS: You can track your package with your tracking number, which is P0KON9BACR. What else can I do?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

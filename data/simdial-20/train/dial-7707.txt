@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Pamela Tyler.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is USCGC Graves FPO AE 32641.
+SYS: The tracking number is YI84UQLK6T. Anything else?
+USR: That's it. Thanks!

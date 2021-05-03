@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Allene Degen.
+SYS: Verify your order number please.
+USR: Sure, it is 241-10711-3591
+SYS: Track your order using your tracking number, GGQ8A4M160. What else can I do?
+USR: That's it. Thanks!

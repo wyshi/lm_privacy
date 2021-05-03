@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Latasha Brotherton.
+SYS: Could you please confirm your shipping address?
+USR: My address is 944 Salazar Burgs Suite 960 South Peggyborough, WV 52592.
+SYS: You can track your package with your tracking number, which is XCUXATR5KW. Is there anything else I can help with?
+USR: All good.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: I am Linda Capers.
+SYS: Can you provide the order number?
+USR: Sure, it is 479-38128-9316
+SYS: Track your order using your tracking number, U9L3UJLHCJ. Anything else?
+USR: That's it.

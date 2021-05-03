@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Margery Alexander.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 4102 Ward Rapid New Christopherstad, WV 18453.
+SYS: You can track your package with your tracking number, which is F5W2VFCFL4. Anything else?
+USR: No more questions.

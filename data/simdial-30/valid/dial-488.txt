@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: My name's Bryan Baker.
+SYS: Ok, may I have your phone number?
+USR: 429-676-8135 is my number.
+SYS: You can track your package with your tracking number, which is 00NTPHQPSZ. Anything else?
+USR: That's it.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Queen Delacruz
+SYS: We will need the shipping address as well.
+USR: 3727 David Greens New Joseph, MN 04988.
+SYS: The tracking number is YN9GXT2871. Anything else?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

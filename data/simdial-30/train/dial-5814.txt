@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Victor Khalaf.
+SYS: We will need the shipping address as well.
+USR: My address is 4042 Carey Plaza West Richard, IA 52857.
+SYS: The tracking number is 22CWBXG4XU. Is there anything else I can help with?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

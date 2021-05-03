@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Monica Gore.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 10942 Corey Overpass Ashleybury, MN 38560.
+SYS: Track your order using your tracking number, 5VQY539BD2. Is there anything else I can help with?
+USR: That's it. Thanks!

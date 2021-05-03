@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Felicia Simmons.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 8522 Laurie Row Suite 920 East Michaelchester, NY 47693.
+SYS: Track your order using your tracking number, G914W5LKFV. What else can I do?
+USR: All good.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Maria Albrecht.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 955 Abbott Burg Avilaville, ND 44279.
+SYS: You can track your package with your tracking number, which is TK65KW5T29. Are you happy about my answer?
+USR: That's it.

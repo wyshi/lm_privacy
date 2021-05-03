@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Charles Maker.
+SYS: Verify your order number please.
+USR: Yes, 912-22073-8384.
+SYS: Track your order using your tracking number, MB5DJRQC5J. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: Goodbye.

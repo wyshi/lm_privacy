@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Lise Carlisle.
+SYS: We will need the shipping address as well.
+USR: Shipping address is Unit 5599 Box 9097 DPO AP 46962.
+SYS: Track your order using your tracking number, 04ELPN9LX7. What else can I do?
+USR: That's it. Thanks!

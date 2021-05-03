@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am David Brown.
+SYS: We will need the shipping address as well.
+USR: 879 Smith Route North Samantha, LA 92004.
+SYS: You can track your package with your tracking number, which is 45CEMMGXZF. Anything else?
+USR: All good.

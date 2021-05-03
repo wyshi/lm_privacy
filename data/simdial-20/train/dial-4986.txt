@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Sterling Rudy.
+SYS: Verify your phone number please.
+USR: 3381252788.
+SYS: Track your order using your tracking number, UQBL8OPE8L. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Bye.

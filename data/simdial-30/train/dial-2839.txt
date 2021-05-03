@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Jennifer Gilmore.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 485 Rodriguez Square West Stacyberg, DE 43007.
+SYS: You can track your package with your tracking number, which is 06HVKNW3NH. What else can I do?
+USR: All good. That's all.
+SYS: Bye.

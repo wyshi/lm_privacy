@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Suzanne Mckemie.
+SYS: We will need the shipping address as well.
+USR: Ok, it is USNV Ford FPO AE 79836.
+SYS: The tracking number is UB62U7QLMU. What else can I do?
+USR: No more questions. See you.
+SYS: Bye.

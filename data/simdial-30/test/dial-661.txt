@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Linwood Snead.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 8443 Steven Fields Malonestad, IA 07856.
+SYS: Track your order using your tracking number, F5A2GQ5TQZ. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

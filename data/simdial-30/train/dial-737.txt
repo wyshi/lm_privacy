@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Mary Liston.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 7548 John Inlet North James, MS 18348.
+SYS: You can track your package with your tracking number, which is MJZ8166Q05. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

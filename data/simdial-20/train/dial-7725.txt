@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Karen Peterson
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 02485 Barnes Run North Daniel, WV 11616.
+SYS: You can track your package with your tracking number, which is Y55D3NCHTQ. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

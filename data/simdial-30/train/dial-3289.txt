@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Clinton Keeth.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 8293653859.
+SYS: The tracking number is 8JAHGVSC48. What else can I do?
+USR: No more questions. See you.
+SYS: Goodbye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Gilbert Ardoin.
+SYS: Verify your phone number please.
+USR: You can reach me at 489.865.4345.
+SYS: Track your order using your tracking number, ZXRQT3X9O4. Are you happy about my answer?
+USR: That's it.

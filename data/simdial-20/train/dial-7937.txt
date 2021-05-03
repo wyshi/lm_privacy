@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Barbara Flores
+SYS: Verify your phone number please.
+USR: You can reach me at 590-439-6309.
+SYS: Track your order using your tracking number, QCY11N6WQ6. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

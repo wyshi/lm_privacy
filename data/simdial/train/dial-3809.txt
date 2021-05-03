@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Frances Hartman.
+SYS: We will need the shipping address as well.
+USR: My address is 08933 Clark Cape Apt. 939 Abigailland, TX 68883.
+SYS: The tracking number is USGKS2GWEI. What else can I do?
+USR: All good.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Could you please help me track my package?
+SYS: May I have your full name?
+USR: I am James Rivera.
+SYS: Verify your phone number please.
+USR: You can reach me at 869-037-5491.
+SYS: You can track your package with your tracking number, which is YVXMXQLMKQ. What else can I do?
+USR: That's it.

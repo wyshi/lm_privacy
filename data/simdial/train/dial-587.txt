@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Sure, Alton Palmer.
+SYS: Verify your phone number please.
+USR: 119-048-3142 is my number.
+SYS: You can track your package with your tracking number, which is 9CTSJWBMTJ. Are you happy about my answer?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Debbra Vargas.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 92593 Jones Village Wandaland, NJ 96490.
+SYS: The tracking number is O81XQ9S8TD. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

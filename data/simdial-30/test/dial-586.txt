@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Daryl Beals.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 5803 Ferguson Stream Timothybury, TN 06948.
+SYS: You can track your package with your tracking number, which is WRYPGCDXM8. Are you happy about my answer?
+USR: All good.

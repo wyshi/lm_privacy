@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Jayne Coulter.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 48567 Carr Manors Jaredstad, AK 82394.
+SYS: You can track your package with your tracking number, which is 001RJJIHY0. Is there anything else I can help with?
+USR: Yep - I'm Margaret Hamlin.
+SYS: You can track your package with your tracking number, which is 001RJJIHY0. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: Goodbye.

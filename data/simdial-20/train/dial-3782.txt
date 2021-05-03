@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm William Bibee.
+SYS: Ok, may I have your phone number?
+USR: my number is 252-440-9407.
+SYS: You can track your package with your tracking number, which is 4VMYNVKARR. What else can I do?
+USR: That's it. Thanks!

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Wilber Mendoza.
+SYS: Ok, may I have your phone number?
+USR: 215.068.8812 is my number.
+SYS: The tracking number is 98E40P49IJ. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: It was a great pleasure helping you.

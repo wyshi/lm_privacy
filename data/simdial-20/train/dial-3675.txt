@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: My name's Mary Boscio.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 5525 Williams Green South Kimberly, CA 76933.
+SYS: You can track your package with your tracking number, which is JRNQT5EQGH. Are you happy about my answer?
+USR: Ok, it is PSC 2245, Box 8709 APO AE 25698.
+SYS: You can track your package with your tracking number, which is JRNQT5EQGH. Anything else?
+USR: That's it. That's all.
+SYS: Have a nice day! Bye.

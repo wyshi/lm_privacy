@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Allen Craver.
+SYS: Can you provide the order number?
+USR: My order number is 298-96864-6040.
+SYS: You can track your package with your tracking number, which is K4DNKNLUDA. Anything else?
+USR: My name's Darryl Simon.
+SYS: You can track your package with your tracking number, which is K4DNKNLUDA. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Bye.

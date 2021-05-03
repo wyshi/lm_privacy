@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Matthew Merritt.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 97397 Ali Lock Apt. 873 South Chelseabury, OK 57479.
+SYS: Track your order using your tracking number, APICR649O8. Anything else?
+USR: No more questions. That's all.
+SYS: Goodbye.

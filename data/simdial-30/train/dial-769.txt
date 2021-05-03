@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: My name's Margaret Hughes.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 5026 Peters Ford Apt. 926 Fitzpatrickshire, ME 39562.
+SYS: Track your order using your tracking number, 8X0RRWF04V. What else can I do?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

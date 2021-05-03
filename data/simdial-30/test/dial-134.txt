@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Could you please help me track my package?
+SYS: May I have your full name?
+USR: Yes, Robert Schneider.
+SYS: Verify your phone number please.
+USR: my number is 607.760.6246.
+SYS: You can track your package with your tracking number, which is CL2R2KG64H. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

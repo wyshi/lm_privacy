@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: I am Kari Lykins.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 883.522.7844
+SYS: The tracking number is F64WS6XX6J. What else can I do?
+USR: Phone number is 789-271-6842
+SYS: Track your order using your tracking number, F64WS6XX6J. Are you happy about my answer?
+USR: All good.

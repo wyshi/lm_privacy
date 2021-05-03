@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Derick Scott.
+SYS: Verify your phone number please.
+USR: Phone number is 635-679-4329
+SYS: You can track your package with your tracking number, which is CMDQM8ZK51. Is there anything else I can help with?
+USR: No more questions.

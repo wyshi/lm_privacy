@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, James Angel.
+SYS: Could you please confirm your shipping address?
+USR: My address is 22286 Sarah Stravenue South Tony, NJ 67243.
+SYS: You can track your package with your tracking number, which is X2NNUY581I. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: Goodbye.

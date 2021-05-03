@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Edmond Kendra.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 93106 Day Shoals Suite 323 South Garrett, VA 90259.
+SYS: Track your order using your tracking number, 2M98ITGG1R. Is there anything else I can help with?
+USR: I have all I need. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Melissa Yetter.
+SYS: We will need the shipping address as well.
+USR: My address is 6369 Bennett Stravenue Suite 292 North Deniseville, NC 75593.
+SYS: Track your order using your tracking number, OW79CO4EEU. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Bye.

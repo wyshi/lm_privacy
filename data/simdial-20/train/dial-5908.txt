@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: John Bales
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 1770 Nelson Fields Apt. 067 South Anna, NM 02776.
+SYS: Track your order using your tracking number, JBW0YIOMBK. Is there anything else I can help with?
+USR: I have all I need. See you.
+SYS: Goodbye.

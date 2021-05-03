@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's William Jenness.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 2410 Robert Wells Suite 220 South Michael, IA 50934.
+SYS: The tracking number is 2HKPRA2SZT. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

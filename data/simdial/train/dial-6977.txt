@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Luis Ransom.
+SYS: We will need the shipping address as well.
+USR: Yea sure, Unit 5645 Box 6743 DPO AP 97434.
+SYS: The tracking number is PO0FQHZVTO. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Rodney Sanders.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 09587 Mcguire Street Apt. 022 Knoxtown, ME 65111.
+SYS: You can track your package with your tracking number, which is LRM4XJVOZ7. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

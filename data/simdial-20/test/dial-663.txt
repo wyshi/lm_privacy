@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Charles Ricks.
+SYS: Could you please confirm your shipping address?
+USR: 399 Tanya Point North Christopher, NM 61324.
+SYS: The tracking number is RZ8B5EEZBC. Are you happy about my answer?
+USR: That's it. Thanks!

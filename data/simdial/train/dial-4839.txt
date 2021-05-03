@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Michael Gaytan.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 967 Fuller Village East Kimberly, MD 70538.
+SYS: You can track your package with your tracking number, which is RN1LE07NG2. What else can I do?
+USR: I have all I need. See you.
+SYS: Bye.

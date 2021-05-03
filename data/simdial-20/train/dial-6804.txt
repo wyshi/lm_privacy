@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: My name's Becky Whitener.
+SYS: Verify your phone number please.
+USR: You can reach me at 4208717700.
+SYS: Track your order using your tracking number, ZFTVLSEBFN. Are you happy about my answer?
+USR: That's it.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Thomas Jung.
+SYS: We will need the shipping address as well.
+USR: 4996 Wright Lodge Apt. 468 Lynnbury, TN 89996.
+SYS: You can track your package with your tracking number, which is 3Q3IH7AH3D. What else can I do?
+USR: That's it. Thank you.
+SYS: Bye.

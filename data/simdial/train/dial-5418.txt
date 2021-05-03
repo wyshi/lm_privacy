@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Howard Rahn.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 877 Torres Lane Apt. 579 Amandaton, ME 33867.
+SYS: The tracking number is F5ZGMNN6BK. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

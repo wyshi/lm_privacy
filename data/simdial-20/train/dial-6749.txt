@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Cedric Hosle.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 8017 Tonya Glens Apt. 637 North Charlottestad, OK 38637.
+SYS: You can track your package with your tracking number, which is YIV1HH591N. Is there anything else I can help with?
+USR: All good.

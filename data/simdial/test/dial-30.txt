@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Vincent Yoshino.
+SYS: Could you please confirm your shipping address?
+USR: 880 Richard Lodge Sullivanport, NC 10739.
+SYS: Track your order using your tracking number, 4QF8GCRY19. Is there anything else I can help with?
+USR: No more questions.

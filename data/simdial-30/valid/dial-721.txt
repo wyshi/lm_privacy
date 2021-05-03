@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Susan Pinckney.
+SYS: Could you please confirm your shipping address?
+USR: My address is 9328 James Court Suite 691 North Garyborough, NH 50967.
+SYS: You can track your package with your tracking number, which is 70OHNOLUXV. Anything else?
+USR: No more questions.

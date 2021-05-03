@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Jerry Murray.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 323 Tina Key Suite 204 Lake Lindsayton, OH 37902.
+SYS: The tracking number is EO9H6V589D. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

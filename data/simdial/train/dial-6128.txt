@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Charles Homer.
+SYS: We will need the shipping address as well.
+USR: Shipping address is USCGC Levine FPO AP 18792.
+SYS: The tracking number is G531IDBM51. Are you happy about my answer?
+USR: That's it. Thanks!

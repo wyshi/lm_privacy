@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Alex Carrico.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 773.613.6994.
+SYS: You can track your package with your tracking number, which is G7WMR35KEE. Is there anything else I can help with?
+USR: All good. Thank you.
+SYS: Goodbye.

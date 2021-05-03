@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Kristin Edmundson.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 364 Tiffany Passage Chaseborough, ME 41434.
+SYS: You can track your package with your tracking number, which is Z2XT5P8F4S. Anything else?
+USR: All good.

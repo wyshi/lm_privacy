@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Joann Goad.
+SYS: Could you please confirm your shipping address?
+USR: My address is 16629 Perry Highway Apt. 547 Saunderschester, KY 93342.
+SYS: You can track your package with your tracking number, which is G3TRI7E3E5. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

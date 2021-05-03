@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Adam Weathersby.
+SYS: Verify your order number please.
+USR: 485-92738-6028
+SYS: The tracking number is FVPC8SYHZ9. Anything else?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

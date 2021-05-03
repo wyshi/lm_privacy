@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Roseann Nailer.
+SYS: Could you please confirm your shipping address?
+USR: 0035 Collins Isle Port Todd, AZ 14707.
+SYS: You can track your package with your tracking number, which is JD4I1MHPY7. What else can I do?
+USR: That's it.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Jennifer Goffinet
+SYS: We will need the shipping address as well.
+USR: 665 Adam Rapids Susanland, MO 01430.
+SYS: The tracking number is ZDPZC1T275. Is there anything else I can help with?
+USR: That's it. Thanks!

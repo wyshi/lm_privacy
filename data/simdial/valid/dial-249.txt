@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Christy Woods.
+SYS: Could you please confirm your shipping address?
+USR: My address is 94379 Luke Bypass Apt. 943 Taylorborough, MS 29133.
+SYS: You can track your package with your tracking number, which is SVLXOWZGMA. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Jacob Testerman
+SYS: We will need the shipping address as well.
+USR: Yea sure, 0925 Wood Villages Suite 845 Nancyfurt, UT 26911.
+SYS: Track your order using your tracking number, J1CS0NHGMN. Anything else?
+USR: That's it.

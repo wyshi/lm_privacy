@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Guadalupe Costa.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 9551038417.
+SYS: The tracking number is 9A17VFQBLJ. Anything else?
+USR: No more questions. See you.
+SYS: Goodbye.

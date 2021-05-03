@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Shannon Bell.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 902 Taylor Stream Suite 721 Garciafort, SC 72265.
+SYS: You can track your package with your tracking number, which is VOHSTUO6E4. What else can I do?
+USR: That's it.

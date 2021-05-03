@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Roger Kirkwood.
+SYS: We will need the shipping address as well.
+USR: 487 Lee Crest Port Brenda, NV 29582.
+SYS: You can track your package with your tracking number, which is S2VBCR2WU6. Is there anything else I can help with?
+USR: I have all I need. That's all.
+SYS: Bye.

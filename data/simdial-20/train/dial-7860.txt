@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Paul Sexton.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 811 Mendez Locks Port Bianca, DE 91814.
+SYS: The tracking number is 3BIDTAHIEV. Anything else?
+USR: All good. Thank you.
+SYS: Bye.

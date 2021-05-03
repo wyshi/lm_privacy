@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Kristi Lafferty
+SYS: Could you please also provide your order number?
+USR: 608-34362-9336
+SYS: Track your order using your tracking number, N8REON71MF. Is there anything else I can help with?
+USR: All good.

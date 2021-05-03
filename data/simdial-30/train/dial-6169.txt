@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yes, Liza Stein.
+SYS: Can you provide the order number?
+USR: My order number is 369-62131-1091.
+SYS: You can track your package with your tracking number, which is GOFVJS3BRP. Are you happy about my answer?
+USR: That's it. Thanks!

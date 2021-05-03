@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Rhonda Young.
+SYS: Could you please also provide your order number?
+USR: It's 437-98634-2257.
+SYS: You can track your package with your tracking number, which is I632K3IFFY. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

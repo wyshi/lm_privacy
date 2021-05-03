@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Thelma Salinas.
+SYS: We will need the shipping address as well.
+USR: My address is 829 Samantha Pass Apt. 920 West Walter, ND 54678.
+SYS: Track your order using your tracking number, CHWWC1KWBR. Is there anything else I can help with?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

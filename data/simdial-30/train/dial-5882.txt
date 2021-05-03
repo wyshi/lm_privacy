@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Nicolas Mitchel.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 32977 Wilson Junctions Apt. 544 Taylormouth, CA 26208.
+SYS: The tracking number is Q05S38ABD5. Is there anything else I can help with?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

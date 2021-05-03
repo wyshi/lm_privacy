@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Rebecca Hester
+SYS: Verify your phone number please.
+USR: 400.780.4573.
+SYS: The tracking number is TY18Q4DKBR. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

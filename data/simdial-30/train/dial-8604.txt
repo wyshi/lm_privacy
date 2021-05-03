@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Kathleen Fowler.
+SYS: Verify your phone number please.
+USR: You can reach me at 323.827.4651.
+SYS: The tracking number is U059W63VGT. Anything else?
+USR: That's it.

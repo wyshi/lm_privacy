@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: My name's Alan Hulet.
+SYS: We will need the shipping address as well.
+USR: 06671 Jason Forest Suite 903 Fergusonmouth, HI 47482.
+SYS: You can track your package with your tracking number, which is SY5V9I8XE0. Is there anything else I can help with?
+USR: I have all I need. Thank you.
+SYS: Bye.

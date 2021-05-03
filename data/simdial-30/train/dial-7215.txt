@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Nicole Peter
+SYS: Could you please confirm your shipping address?
+USR: My address is 29048 Seth Light Port David, AR 22598.
+SYS: The tracking number is FLNGJ3SIZX. What else can I do?
+USR: That's it.

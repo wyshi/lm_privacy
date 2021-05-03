@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Patricia Sterling.
+SYS: Ok, may I have your phone number?
+USR: 522.320.2051.
+SYS: You can track your package with your tracking number, which is VA4UQDKW9T. What else can I do?
+USR: Sure, Jessica Crosland.
+SYS: You can track your package with your tracking number, which is VA4UQDKW9T. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

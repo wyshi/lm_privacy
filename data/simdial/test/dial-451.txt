@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Douglas Scharich.
+SYS: We will need the shipping address as well.
+USR: My address is 39596 Austin Spring Floydfort, MD 63584.
+SYS: You can track your package with your tracking number, which is GZ44DMGUBQ. Are you happy about my answer?
+USR: No more questions.

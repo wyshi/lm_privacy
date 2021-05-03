@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Jill Gonzalez.
+SYS: We will need the shipping address as well.
+USR: My address is 6968 Herrera Curve Suite 041 West Sarahmouth, WI 61477.
+SYS: The tracking number is A61WG8PANS. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

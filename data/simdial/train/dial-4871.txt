@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Sandra Tyrone.
+SYS: Ok, may I have your phone number?
+USR: my number is 259-227-9706.
+SYS: The tracking number is 8TMSRCZX41. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Bye.

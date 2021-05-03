@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Walter Schueler.
+SYS: We will need the shipping address as well.
+USR: Ok, it is Unit 2522 Box 3544 DPO AP 26434.
+SYS: You can track your package with your tracking number, which is A4P8TDIRLU. Anything else?
+USR: All good.

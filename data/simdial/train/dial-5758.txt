@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Trista Johnson.
+SYS: Ok, may I have your phone number?
+USR: 559.859.4871.
+SYS: You can track your package with your tracking number, which is B7KBL89DJ3. Is there anything else I can help with?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

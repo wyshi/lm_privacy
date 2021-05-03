@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Sandra Ware.
+SYS: Verify your order number please.
+USR: Yes, 840-58466-2947.
+SYS: You can track your package with your tracking number, which is 6NYF837TSA. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Priscilla Mclaine.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 1723 Hall Center Suite 168 Port Steven, MD 16433.
+SYS: Track your order using your tracking number, FXN5OXC2LJ. Anything else?
+USR: I have all I need.

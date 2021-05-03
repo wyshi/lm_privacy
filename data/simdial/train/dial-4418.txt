@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Kimberly Scott
+SYS: Ok, may I have your phone number?
+USR: Phone number is 406-043-5062
+SYS: The tracking number is SKA7QSO43R. What else can I do?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Yes, Walter Rigatti.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 1384 Blair Prairie Suite 694 Hernandezhaven, LA 46588.
+SYS: You can track your package with your tracking number, which is MUOJS5MDDL. Anything else?
+USR: I have all I need.

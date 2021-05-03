@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Preston Adams.
+SYS: Could you please confirm your shipping address?
+USR: 9211 Stone Tunnel South Codyfort, DC 92780.
+SYS: You can track your package with your tracking number, which is E1WNKV4R09. Are you happy about my answer?
+USR: No more questions.

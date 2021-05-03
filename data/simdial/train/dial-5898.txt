@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: David Mcintyre.
+SYS: Can you provide the order number?
+USR: 855-29193-6650
+SYS: You can track your package with your tracking number, which is 2H5HNO74AK. Anything else?
+USR: That's it. Thanks!

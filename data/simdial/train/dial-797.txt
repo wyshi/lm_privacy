@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Edgar Steen.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 31756 Karen Motorway East Danielton, ID 34372.
+SYS: Track your order using your tracking number, 8UKJ23SF9Q. Anything else?
+USR: That's it. Thanks!

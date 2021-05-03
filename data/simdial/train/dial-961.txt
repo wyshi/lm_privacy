@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Janet Simpkins.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 0196 Matthew Trail Powersside, NJ 74205.
+SYS: Track your order using your tracking number, 02V0OM8GAE. Anything else?
+USR: No more questions. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: David Beaudette.
+SYS: Could you please also provide your order number?
+USR: Yes, 137-26965-7643.
+SYS: The tracking number is 2LW0K9RHNE. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Goodbye.

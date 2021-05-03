@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Linda Cashin.
+SYS: Verify your phone number please.
+USR: my number is 118-520-8193.
+SYS: You can track your package with your tracking number, which is KYF8X95SFR. What else can I do?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

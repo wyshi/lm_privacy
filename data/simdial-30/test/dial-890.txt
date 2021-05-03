@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Kevin Flood
+SYS: Could you please also provide your order number?
+USR: Yes, 486-55939-9150.
+SYS: The tracking number is 1X5YO8QTOW. Are you happy about my answer?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

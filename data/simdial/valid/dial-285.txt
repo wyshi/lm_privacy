@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, William Mccabe.
+SYS: Verify your phone number please.
+USR: Phone number is 360-045-0486 William Mccabe.
+SYS: Track your order using your tracking number, JOK911D1HZ. Anything else?
+USR: That's it.

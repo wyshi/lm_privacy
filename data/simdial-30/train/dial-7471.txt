@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Geralyn Carolin
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 0696 Margaret Street Suite 892 Johnsonhaven, DE 03257.
+SYS: The tracking number is 08C8Y21OUT. Are you happy about my answer?
+USR: I have all I need.

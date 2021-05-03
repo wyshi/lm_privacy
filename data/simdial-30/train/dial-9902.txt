@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: I am Brandi Bruce.
+SYS: We will need the shipping address as well.
+USR: My address is 79184 Russell Station Suite 384 Baileyfurt, AR 28216.
+SYS: The tracking number is KKFX6UANX2. Are you happy about my answer?
+USR: All good.

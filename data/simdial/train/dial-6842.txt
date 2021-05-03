@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: William Jennings.
+SYS: Ok, may I have your phone number?
+USR: 470-494-3561.
+SYS: You can track your package with your tracking number, which is ATCK1SQW3O. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

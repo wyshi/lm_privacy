@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Philip Sullivan
+SYS: Verify your phone number please.
+USR: 428-428-2334.
+SYS: Track your order using your tracking number, 3TXYDUSWFR. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

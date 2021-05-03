@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm James Florentino.
+SYS: Ok, may I have your phone number?
+USR: 1732982968.
+SYS: You can track your package with your tracking number, which is AJ665COLE2. Anything else?
+USR: That's it. Thanks!

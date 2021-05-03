@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Jody Castilo.
+SYS: We will need the shipping address as well.
+USR: 404 Richard Glens Suite 835 Danielmouth, VA 65151.
+SYS: Track your order using your tracking number, JZQDR2WEF3. Anything else?
+USR: That's it. Thank you.
+SYS: It was a great pleasure helping you.

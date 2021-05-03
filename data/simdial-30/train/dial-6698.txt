@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: William Lewis
+SYS: We will need the shipping address as well.
+USR: 94272 Garcia Key Port Steveport, VT 86591.
+SYS: You can track your package with your tracking number, which is VX5XKLSSA4. Anything else?
+USR: That's it.

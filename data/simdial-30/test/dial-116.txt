@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, John Ruddy.
+SYS: We will need the shipping address as well.
+USR: My address is 202 Lisa Burg Kimberlyhaven, AR 30969.
+SYS: The tracking number is 3QLMHEW14I. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

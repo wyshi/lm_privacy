@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Howard Allen.
+SYS: Verify your order number please.
+USR: Yes, 442-57427-0158.
+SYS: You can track your package with your tracking number, which is BS0Q6EB58M. Is there anything else I can help with?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

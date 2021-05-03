@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Jeffrey Bowser
+SYS: Could you please also provide your order number?
+USR: Yes, 768-62222-9769.
+SYS: The tracking number is SZC0V9NMPC. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Goodbye.

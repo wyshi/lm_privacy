@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Darlene Johnson.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 39008 Julie Pass Suite 671 Heatherside, IN 68027.
+SYS: The tracking number is NYQUR17VTY. Anything else?
+USR: I have all I need. See you.
+SYS: Have a nice day! Bye.

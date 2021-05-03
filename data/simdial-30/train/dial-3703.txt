@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Leona Gonzales.
+SYS: We will need the shipping address as well.
+USR: Ok, it is PSC 2143, Box 2895 APO AA 12605.
+SYS: The tracking number is CUF5GKSNCC. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Charles Panza.
+SYS: Could you please confirm your shipping address?
+USR: My address is 1817 Mata Lakes Suite 579 North Barbara, GA 87920.
+SYS: You can track your package with your tracking number, which is ZXUXFW9C8S. Anything else?
+USR: That's it.

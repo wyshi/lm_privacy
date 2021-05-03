@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Jordan Woods.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 932 Stewart Tunnel Suite 424 Bakerport, CO 08605.
+SYS: The tracking number is 38VCL77SX4. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

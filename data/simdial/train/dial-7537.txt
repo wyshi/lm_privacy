@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Lindsey Beringer.
+SYS: Verify your order number please.
+USR: Yes, 670-74788-4369.
+SYS: You can track your package with your tracking number, which is F7FJENN8LQ. What else can I do?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

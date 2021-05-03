@@ -1,0 +1,6 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: George Donald. my number is 377-053-2107.
+SYS: You can track your package with your tracking number, which is ZNHU6EKIWR. Are you happy about my answer?
+USR: All good.

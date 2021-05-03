@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Norman Rabago
+SYS: Ok, may I have your phone number?
+USR: Phone number is 684-803-2239
+SYS: Track your order using your tracking number, 17QUAQ4MD6. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

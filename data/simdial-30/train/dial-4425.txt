@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Micheal Johnson.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 1342 Patricia Pine Lake Randalltown, WI 25470.
+SYS: You can track your package with your tracking number, which is E3P75K1ETH. Are you happy about my answer?
+USR: All good.

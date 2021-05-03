@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: My name's Jason Grogan.
+SYS: Could you please confirm your shipping address?
+USR: 18336 Gutierrez Crossroad Suite 694 Mackenziehaven, NM 88477.
+SYS: Track your order using your tracking number, 5PM6JNMKFQ. Anything else?
+USR: No more questions. Thank you.
+SYS: Goodbye.

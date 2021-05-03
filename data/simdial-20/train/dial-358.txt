@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Anna Viesselman
+SYS: Ok, may I have your phone number?
+USR: 355.003.1685.
+SYS: Track your order using your tracking number, ARTVVO18HV. Are you happy about my answer?
+USR: All good.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Nicholas Magana.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 8522 Ballard Lodge Valenciaborough, MT 68015.
+SYS: Track your order using your tracking number, SBOD34ZJDK. Are you happy about my answer?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

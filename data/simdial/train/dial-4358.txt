@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Betty Dembitzer
+SYS: We will need the shipping address as well.
+USR: 00236 Austin Centers Gomezville, NH 20746.
+SYS: The tracking number is FJ9RY05DWA. Anything else?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Penny Vincent.
+SYS: Could you please confirm your shipping address?
+USR: 05718 Lauren Turnpike Jordanberg, IN 66723.
+SYS: Track your order using your tracking number, 03X1AF1QWO. Is there anything else I can help with?
+USR: No more questions. That's all.
+SYS: Goodbye.

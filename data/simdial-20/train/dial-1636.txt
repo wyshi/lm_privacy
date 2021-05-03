@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Robert Holmes.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 2882 Duncan Mount Suite 326 New Phillipport, OK 38581.
+SYS: You can track your package with your tracking number, which is OGS4DHAGMB. Anything else?
+USR: That's it. That's all.
+SYS: Goodbye.

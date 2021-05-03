@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Felipe Campbell.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 85003 Erika Divide Suite 815 Webbmouth, MO 17107.
+SYS: You can track your package with your tracking number, which is 661SI6EA0H. Anything else?
+USR: All good. See you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Brandon Gross
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 994 Hill Plaza Murraymouth, MS 18275.
+SYS: You can track your package with your tracking number, which is ABXGAERLLU. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

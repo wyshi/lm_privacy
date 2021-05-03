@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Doug Horrigan.
+SYS: We will need the shipping address as well.
+USR: My address is 58781 Danielle Plains Port William, LA 96180. Doug Horrigan
+SYS: Track your order using your tracking number, WMPL9GAZMF. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Stephan Thresher.
+SYS: Ok, may I have your phone number?
+USR: 9241025497.
+SYS: You can track your package with your tracking number, which is VWFUTLSGNI. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

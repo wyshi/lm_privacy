@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Antonio Nicolet.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 77465 Robert Crossing Apt. 040 South Melindaberg, WI 91914.
+SYS: You can track your package with your tracking number, which is 85ZMHB7IN1. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: Goodbye.

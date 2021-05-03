@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Pauline Heft.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 6013 Bradley Lodge Aimeestad, MA 34284.
+SYS: You can track your package with your tracking number, which is BL5508EMTR. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

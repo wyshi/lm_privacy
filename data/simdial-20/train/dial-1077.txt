@@ -1,0 +1,6 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Sydney Pierro. Yea sure, 6439 Katherine Loaf Apt. 530 Rosaleston, NH 08520.
+SYS: You can track your package with your tracking number, which is 0A4U1RBVMB. What else can I do?
+USR: No more questions.

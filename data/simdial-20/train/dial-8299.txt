@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Dennis Hahn
+SYS: Can you provide the order number?
+USR: It's 926-32202-7343.
+SYS: The tracking number is V2TNQKMJ3C. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

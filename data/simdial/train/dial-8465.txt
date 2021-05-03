@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Danielle Strong.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 99840 Warner Fort Suite 521 Ricemouth, WI 20477.
+SYS: You can track your package with your tracking number, which is NIRDWMN6AW. Anything else?
+USR: I have all I need. Thank you.
+SYS: Bye.

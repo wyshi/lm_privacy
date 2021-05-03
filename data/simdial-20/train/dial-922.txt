@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Jill Rush.
+SYS: Verify your order number please.
+USR: Sure, it is 680-19145-8870
+SYS: You can track your package with your tracking number, which is NOIIY1O98N. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: Goodbye.

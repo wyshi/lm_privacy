@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Paula Isola.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 2282 Courtney Rue Suite 144 Derekmouth, OK 43478.
+SYS: Track your order using your tracking number, QZZRXXZ81Y. Are you happy about my answer?
+USR: All good.

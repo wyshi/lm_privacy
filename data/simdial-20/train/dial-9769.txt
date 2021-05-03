@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Michael Young.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 959 Wilson Meadows West Ronaldton, AL 35094.
+SYS: Track your order using your tracking number, TWB4EO9NPJ. Anything else?
+USR: I have all I need.

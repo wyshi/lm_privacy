@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Cheryl Marmol
+SYS: Could you please also provide your order number?
+USR: 958-54813-6030
+SYS: You can track your package with your tracking number, which is LVVUN8WW86. What else can I do?
+USR: That's it. See you.
+SYS: Goodbye.

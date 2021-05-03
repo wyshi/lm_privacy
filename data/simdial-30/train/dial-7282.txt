@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Curtis Hughes.
+SYS: Could you please confirm your shipping address?
+USR: My address is 912 Emily Wall Suite 642 East Brenda, NV 87326.
+SYS: You can track your package with your tracking number, which is YX0Y553V5X. Are you happy about my answer?
+USR: No more questions.

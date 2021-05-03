@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Damien Mathis.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 267 Chloe Manor New Amanda, MA 90263.
+SYS: You can track your package with your tracking number, which is 0RE60CFAF2. What else can I do?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

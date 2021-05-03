@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Edna Chong.
+SYS: We will need the shipping address as well.
+USR: 97557 Timothy Shore Gonzalezton, AK 17651.
+SYS: Track your order using your tracking number, 8GEX4OIDLC. Is there anything else I can help with?
+USR: That's it.

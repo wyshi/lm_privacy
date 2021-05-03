@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Carlos Jennings.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 606 Rojas Vista Suite 713 West Kristie, OR 10147.
+SYS: The tracking number is 76ECR4BMG9. Anything else?
+USR: That's it. See you.
+SYS: Goodbye.

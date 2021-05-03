@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Jerry Patterson.
+SYS: Verify your phone number please.
+USR: You can reach me at 803-217-0268.
+SYS: You can track your package with your tracking number, which is DRE5QS4LAT. Is there anything else I can help with?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

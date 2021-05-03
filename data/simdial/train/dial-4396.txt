@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Patsy Zeiler.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 28580 Ramirez Stravenue Apt. 699 South Caseyberg, ID 09185.
+SYS: You can track your package with your tracking number, which is E9N3Y1TTS7. Are you happy about my answer?
+USR: All good.

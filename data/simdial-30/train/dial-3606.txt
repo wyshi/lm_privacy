@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: My name's Elizabeth Brennan.
+SYS: We will need the shipping address as well.
+USR: 50598 Matthews Village Suite 104 New Linda, MN 50218.
+SYS: Track your order using your tracking number, C7V98WF2IP. Is there anything else I can help with?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

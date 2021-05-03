@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Lauren Paige.
+SYS: Could you please also provide your order number?
+USR: My order number is 286-63851-9432.
+SYS: You can track your package with your tracking number, which is WT02T8P5V0. Anything else?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

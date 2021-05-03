@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Yes, James Perrigo.
+SYS: Verify your order number please.
+USR: Yes, 580-75817-8758.
+SYS: You can track your package with your tracking number, which is HSLTWV0U8C. What else can I do?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

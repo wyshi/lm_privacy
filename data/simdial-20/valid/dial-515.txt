@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Rose Pitre.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 3024 Jose Ramp Suite 556 East William, MS 95846.
+SYS: Track your order using your tracking number, 6BRP21T0W7. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

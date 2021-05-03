@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: My name's Catherine Bremer.
+SYS: We will need the shipping address as well.
+USR: 64988 Thomas Avenue Kellymouth, SC 58937.
+SYS: Track your order using your tracking number, 3MEMM9Z6HB. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

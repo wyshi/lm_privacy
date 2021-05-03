@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: June Stone
+SYS: Ok, may I have your phone number?
+USR: my number is 993.015.5457.
+SYS: You can track your package with your tracking number, which is X9VRFDAWOJ. What else can I do?
+USR: That's it. Thank you.
+SYS: Goodbye.

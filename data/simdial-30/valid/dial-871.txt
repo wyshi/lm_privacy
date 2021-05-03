@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Sterling Mitchell.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 4410 Adam Avenue Suite 195 North Erin, KY 66541.
+SYS: The tracking number is OGIY2K75RA. Is there anything else I can help with?
+USR: No more questions.

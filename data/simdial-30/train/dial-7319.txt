@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: James Okoye
+SYS: We will need the shipping address as well.
+USR: My address is 6048 Terry Dale Port Jameston, CA 40377.
+SYS: The tracking number is TE50P91IUY. Are you happy about my answer?
+USR: No more questions.

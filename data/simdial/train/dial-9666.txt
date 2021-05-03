@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Linda Dermody.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 71972 Kenneth Causeway Michaelport, MA 15895.
+SYS: You can track your package with your tracking number, which is SMTCRPJPQ2. What else can I do?
+USR: No more questions.

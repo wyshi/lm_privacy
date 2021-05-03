@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Richard Reilly.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 873.687.1257
+SYS: The tracking number is FVFSUA0RZP. Anything else?
+USR: That's it. Thank you.
+SYS: It was a great pleasure helping you.

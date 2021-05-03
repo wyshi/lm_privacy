@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: John Turner.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 266-614-9160
+SYS: You can track your package with your tracking number, which is KF176NPY0H. Are you happy about my answer?
+USR: All good.

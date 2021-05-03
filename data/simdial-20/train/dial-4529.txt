@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Yes, Scott Wright.
+SYS: Could you please also provide your order number?
+USR: My order number is 588-57157-3944.
+SYS: Track your order using your tracking number, SGQUBDD4P9. What else can I do?
+USR: I have all I need. That's all.
+SYS: Goodbye.

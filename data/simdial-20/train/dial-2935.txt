@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Karen Moody.
+SYS: Can you provide the order number?
+USR: Sure, it is 511-96068-5920
+SYS: The tracking number is UTNMPUBAIE. Are you happy about my answer?
+USR: That's it.

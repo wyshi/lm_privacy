@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Jacalyn Couch.
+SYS: Could you please also provide your order number?
+USR: My order number is 163-46259-3281.
+SYS: Track your order using your tracking number, SKZ0VPRHSI. What else can I do?
+USR: All good. That's all.
+SYS: Goodbye.

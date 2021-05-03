@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Ann Holder
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is USS Sellers FPO AE 32156.
+SYS: You can track your package with your tracking number, which is CLPLXEBT53. Is there anything else I can help with?
+USR: I have all I need. Thank you.
+SYS: Bye.

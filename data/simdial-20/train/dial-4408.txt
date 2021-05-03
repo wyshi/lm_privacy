@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Vickey Embry.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 70136 Daniel Meadow Apt. 011 Port John, UT 27234.
+SYS: The tracking number is H7OOEYYB8T. Are you happy about my answer?
+USR: All good.

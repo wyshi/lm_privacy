@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm John Amaral.
+SYS: Could you please confirm your shipping address?
+USR: 86966 Murillo Walks Suite 199 North Michael, NY 20573.
+SYS: You can track your package with your tracking number, which is 1QEIB2021W. What else can I do?
+USR: I have all I need. Thank you.
+SYS: Have a nice day! Bye.

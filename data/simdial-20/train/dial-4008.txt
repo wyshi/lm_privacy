@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Samuel Fleming.
+SYS: Could you please confirm your shipping address?
+USR: 5126 Mark Harbor Apt. 256 South Sarah, WI 64226.
+SYS: You can track your package with your tracking number, which is 8UNC0IVQQ2. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

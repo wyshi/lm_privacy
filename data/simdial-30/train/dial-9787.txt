@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Cora Cunningham.
+SYS: We will need the shipping address as well.
+USR: 73835 Michael Expressway Suite 569 Morganfurt, NE 27307.
+SYS: You can track your package with your tracking number, which is QMM1BSQWUG. What else can I do?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: James Sanders.
+SYS: Verify your order number please.
+USR: 643-77346-6493
+SYS: Track your order using your tracking number, VBPLR2PNBG. Anything else?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

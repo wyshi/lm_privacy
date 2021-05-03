@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Linda Littlewood.
+SYS: Can you provide the order number?
+USR: My order number is 340-57564-3314.
+SYS: You can track your package with your tracking number, which is 3KDLR66KU7. Is there anything else I can help with?
+USR: All good.

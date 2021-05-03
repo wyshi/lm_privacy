@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Geneva Fuqua.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 1756 Owens Heights Lake Richardberg, WI 68889.
+SYS: The tracking number is 8XBLMQ3DI1. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Bettie Mondino.
+SYS: Could you please also provide your order number?
+USR: It's 317-40691-9534.
+SYS: You can track your package with your tracking number, which is TN3PY9NQYB. Anything else?
+USR: All good.

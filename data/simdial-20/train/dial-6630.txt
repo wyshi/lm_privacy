@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Bradley Henshaw
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 610 Patricia Viaduct Apt. 747 South Christineland, DE 66753.
+SYS: Track your order using your tracking number, 5YC8QY25KB. Are you happy about my answer?
+USR: All good. See you.
+SYS: Bye.

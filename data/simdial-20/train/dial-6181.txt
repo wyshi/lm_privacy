@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Sheryl Rice.
+SYS: Verify your order number please.
+USR: Sure, it is 596-40002-8750
+SYS: Track your order using your tracking number, F3K4J8T6NT. Is there anything else I can help with?
+USR: I have all I need.

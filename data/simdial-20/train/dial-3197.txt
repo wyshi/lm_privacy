@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Sure, Ligia Perron.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 70106 Crystal Circles Apt. 662 Martinezside, ND 68140.
+SYS: You can track your package with your tracking number, which is Q1TZ0H3GW3. Anything else?
+USR: No more questions.

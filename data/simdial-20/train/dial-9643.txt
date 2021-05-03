@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: James Charles.
+SYS: Could you please confirm your shipping address?
+USR: 346 Gonzales Trace Apt. 431 South Zachary, KY 31190. Yep - I'm James Charles.
+SYS: You can track your package with your tracking number, which is O28X1OK6XX. Are you happy about my answer?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

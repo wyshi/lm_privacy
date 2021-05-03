@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: My name's Daniel Hodson.
+SYS: We will need the shipping address as well.
+USR: My address is 316 Adam Courts Pughton, AZ 71068.
+SYS: Track your order using your tracking number, B9Y2H0CBPR. What else can I do?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

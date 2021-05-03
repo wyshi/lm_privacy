@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Brandon Broughton.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 502.219.7999
+SYS: The tracking number is RA5L6BRK7H. Are you happy about my answer?
+USR: I have all I need.

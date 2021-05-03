@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Sure, Mary Cooks.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 2406 Elizabeth Creek Suite 983 Wheelerport, MN 63006.
+SYS: Track your order using your tracking number, BK5OTLAUG9. Anything else?
+USR: I have all I need.

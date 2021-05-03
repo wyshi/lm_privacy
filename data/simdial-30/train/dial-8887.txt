@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Esther Jones
+SYS: We will need the shipping address as well.
+USR: Shipping address is 34213 Karen Turnpike Suite 050 Hamiltonfort, CA 11357. My name's Esther Jones.
+SYS: You can track your package with your tracking number, which is Q5KOVCPEI0. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

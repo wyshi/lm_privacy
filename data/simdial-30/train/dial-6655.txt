@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: I am Eddie Renteria.
+SYS: Ok, may I have your phone number?
+USR: 7253845449.
+SYS: You can track your package with your tracking number, which is ZB9DGQS2FU. Is there anything else I can help with?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

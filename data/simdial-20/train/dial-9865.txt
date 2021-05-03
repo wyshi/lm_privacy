@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Paul Abbott.
+SYS: Verify your order number please.
+USR: 621-14883-6799
+SYS: The tracking number is J3ICN1181P. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

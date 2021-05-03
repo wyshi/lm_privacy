@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Raymond Bengel.
+SYS: Could you please confirm your shipping address?
+USR: My address is 5268 Isabella Station Suite 620 Millerborough, AZ 09845.
+SYS: You can track your package with your tracking number, which is B0HFX05HYY. Anything else?
+USR: That's it.

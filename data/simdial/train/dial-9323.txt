@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Bruce Damore.
+SYS: We will need the shipping address as well.
+USR: My address is 761 Matthew Plains Stevenmouth, NE 25099.
+SYS: You can track your package with your tracking number, which is TZGADQTF5T. Are you happy about my answer?
+USR: No more questions.

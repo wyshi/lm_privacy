@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: I am Delia Haley.
+SYS: Ok, may I have your phone number?
+USR: 8380394138 is my number.
+SYS: You can track your package with your tracking number, which is NQRWHO0OPG. What else can I do?
+USR: All good. Thank you.
+SYS: Bye.

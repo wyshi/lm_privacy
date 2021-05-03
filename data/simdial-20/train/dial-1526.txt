@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: My name's Paul Logan.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 16481 Gonzalez Streets Lake Nicholas, KS 11636.
+SYS: You can track your package with your tracking number, which is ZZ7XXFK90B. Is there anything else I can help with?
+USR: All good. See you.
+SYS: Goodbye.

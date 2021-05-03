@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yes, Lillie Earl.
+SYS: Could you please also provide your order number?
+USR: It's 223-82922-3709.
+SYS: The tracking number is Z7U7FD97SO. Are you happy about my answer?
+USR: All good. That's all.
+SYS: Goodbye.

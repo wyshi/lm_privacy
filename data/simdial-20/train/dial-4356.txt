@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Sure, Saul Walsh.
+SYS: Could you please also provide your order number?
+USR: 564-39104-9362
+SYS: You can track your package with your tracking number, which is YD7PXS0JXG. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: Goodbye.

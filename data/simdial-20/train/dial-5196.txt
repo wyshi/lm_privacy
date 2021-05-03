@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: I am Earl Gaston.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 0761 Jessica Route Donnachester, SC 84190.
+SYS: You can track your package with your tracking number, which is 8ZPOMHHPG7. Anything else?
+USR: That's it. See you.
+SYS: Goodbye.

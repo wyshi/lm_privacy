@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Nancy Prada.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 2511 Elizabeth Crossroad Lisafort, GA 46683.
+SYS: You can track your package with your tracking number, which is IBPTG0BXU7. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

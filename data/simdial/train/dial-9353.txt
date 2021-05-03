@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sammie Elder
+SYS: Could you please confirm your shipping address?
+USR: 055 Bailey Cliffs Lake Gabrielmouth, MT 42165.
+SYS: The tracking number is 2W917DD2KC. What else can I do?
+USR: All good.

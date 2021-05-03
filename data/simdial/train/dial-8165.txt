@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Daniel Evans.
+SYS: Could you please confirm your shipping address?
+USR: My address is 746 Michael Flat Kaylaport, PA 86210.
+SYS: The tracking number is GCVH8RK996. Anything else?
+USR: All good.

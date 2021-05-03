@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Johnnie Wolf.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 651-704-0268.
+SYS: Track your order using your tracking number, IRP8O4IFIS. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

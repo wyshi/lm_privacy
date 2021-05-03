@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Sure, Rosario Montes.
+SYS: Could you please confirm your shipping address?
+USR: 17660 Alvarado Lane Apt. 981 Jenniferport, MA 47368.
+SYS: You can track your package with your tracking number, which is B38YUI8V18. Is there anything else I can help with?
+USR: That's it. Thanks!

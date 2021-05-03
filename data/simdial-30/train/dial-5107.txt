@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Teressa Powell.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 7090 Jared Knoll Apt. 895 Zacharychester, ME 50851.
+SYS: Track your order using your tracking number, 52V5X84CPH. Is there anything else I can help with?
+USR: I have all I need.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Nancy Mitchell
+SYS: We will need the shipping address as well.
+USR: My address is 215 Zachary Motorway Port Sarahshire, SC 36080.
+SYS: The tracking number is ABHXQQ8RE9. What else can I do?
+USR: That's it. See you.
+SYS: Bye.

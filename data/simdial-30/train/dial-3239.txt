@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Catharine Camire.
+SYS: Verify your order number please.
+USR: Sure, it is 586-66924-5034
+SYS: You can track your package with your tracking number, which is 0C6J2CBPMX. What else can I do?
+USR: I have all I need. That's all.
+SYS: Have a nice day! Bye.

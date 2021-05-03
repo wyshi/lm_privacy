@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Shelly Herring.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 92993 Clayton Points Suite 534 Port Carriemouth, WV 65878.
+SYS: The tracking number is UAU9CRGV67. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

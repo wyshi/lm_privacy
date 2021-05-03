@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: I am Jose Toney.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 2217 Mitchell Islands Apt. 367 Sellersstad, IN 44586.
+SYS: You can track your package with your tracking number, which is 6O80JHO7Q0. Is there anything else I can help with?
+USR: That's it. Thanks!

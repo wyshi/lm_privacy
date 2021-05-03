@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Elodia Hornlein
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 132 Graham Row Apt. 445 Jasonville, TN 77081.
+SYS: The tracking number is YYHXOINQNN. Is there anything else I can help with?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

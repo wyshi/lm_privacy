@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Danny Lomeli.
+SYS: Verify your order number please.
+USR: Yes, 992-83547-1548.
+SYS: The tracking number is 5B57AFFROS. Are you happy about my answer?
+USR: That's it.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Clifford Horne.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 4172 Sanchez Gardens Lake Robinhaven, MT 38638. I am Clifford Horne.
+SYS: You can track your package with your tracking number, which is RZED7SUMR9. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Bye.

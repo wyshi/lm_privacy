@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Robert Sydnor.
+SYS: Could you please confirm your shipping address?
+USR: My address is 8981 Taylor Mountain Suite 281 East Ronaldport, HI 10840.
+SYS: Track your order using your tracking number, DPIFWTWVMT. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Bye.

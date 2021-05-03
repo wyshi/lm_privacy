@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Carlo Garcia.
+SYS: Can you provide the order number?
+USR: My order number is 856-14490-0879.
+SYS: You can track your package with your tracking number, which is 6M18KG9UOX. What else can I do?
+USR: No more questions.

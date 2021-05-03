@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Howard Austin.
+SYS: Ok, may I have your phone number?
+USR: 264-008-2827.
+SYS: The tracking number is UL8NUC7JQV. What else can I do?
+USR: I have all I need. That's all.
+SYS: Have a nice day! Bye.

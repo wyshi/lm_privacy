@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Nickie Bates.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 08901 Lydia Burg New Edwinborough, WI 97728.
+SYS: The tracking number is JIAUJN4UI6. Anything else?
+USR: All good.

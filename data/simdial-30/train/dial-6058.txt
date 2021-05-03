@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Kimberly Honkanen.
+SYS: Ok, may I have your phone number?
+USR: my number is 787-134-1971.
+SYS: Track your order using your tracking number, YOOZ2HPTZ6. Anything else?
+USR: No more questions. Thank you.
+SYS: Goodbye.

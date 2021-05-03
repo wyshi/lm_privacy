@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Could you please help me track my package?
+SYS: May I have your full name?
+USR: James Kawai.
+SYS: Ok, may I have your phone number?
+USR: 536.143.1946 is my number.
+SYS: The tracking number is 82E55104ER. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

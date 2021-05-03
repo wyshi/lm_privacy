@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Christopher Thompson.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 5223 Holmes Haven Suite 440 Devintown, KY 41366.
+SYS: You can track your package with your tracking number, which is MOEMBIHMLN. Are you happy about my answer?
+USR: All good. See you.
+SYS: Have a nice day! Bye.

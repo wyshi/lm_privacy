@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Jerrod Faught.
+SYS: Verify your phone number please.
+USR: You can reach me at 476-386-1930.
+SYS: The tracking number is PZLLS63G39. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

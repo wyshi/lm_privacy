@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Lynsey Herrera.
+SYS: Ok, may I have your phone number?
+USR: 807-250-2272 is my number.
+SYS: Track your order using your tracking number, TZBGI8DC20. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

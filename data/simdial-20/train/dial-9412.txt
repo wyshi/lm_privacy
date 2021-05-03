@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Kimberly Boles.
+SYS: We will need the shipping address as well.
+USR: 24121 Vega Views Apt. 933 Port Annport, CO 99583.
+SYS: The tracking number is UTLVLSONON. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Bye.

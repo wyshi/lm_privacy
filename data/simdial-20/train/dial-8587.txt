@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's James Camp.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 6286 Darrell Orchard Johnsonchester, AZ 09012.
+SYS: You can track your package with your tracking number, which is 4Z71KFAYYA. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: Goodbye.

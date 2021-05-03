@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Lee Collins.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 640.376.4693
+SYS: Track your order using your tracking number, 2RZN3E1WJG. Are you happy about my answer?
+USR: That's it. Thanks!

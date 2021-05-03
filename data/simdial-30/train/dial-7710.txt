@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Sure, Bruce Young.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 9528 Hines Highway East Jeffreyton, OK 18957.
+SYS: The tracking number is P1AUYQK3OV. Are you happy about my answer?
+USR: Ok, it is 571 Melinda Centers Apt. 447 Joshualand, WV 63917.
+SYS: The tracking number is P1AUYQK3OV. Anything else?
+USR: I have all I need. Thank you.
+SYS: Goodbye.

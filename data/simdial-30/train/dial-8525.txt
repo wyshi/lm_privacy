@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: My name's Randy Russell.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 700 Schultz Harbors Suite 623 Kellyville, MA 55497.
+SYS: The tracking number is 0FQEIQ5YNG. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: Bye.

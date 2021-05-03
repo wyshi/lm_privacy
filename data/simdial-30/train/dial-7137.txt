@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Robert Rosko.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 086 Sharon Square Suite 349 Lake Kyle, OK 73702.
+SYS: Track your order using your tracking number, 1Q4K1YZZLZ. Are you happy about my answer?
+USR: All good.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Jerry Wetzel.
+SYS: Verify your order number please.
+USR: Yes, 725-58010-4258.
+SYS: You can track your package with your tracking number, which is DII7GEF81J. What else can I do?
+USR: I have all I need. Thank you.
+SYS: Have a nice day! Bye.

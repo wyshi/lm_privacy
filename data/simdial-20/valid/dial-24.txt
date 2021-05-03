@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Nicky Monroe.
+SYS: Can you provide the order number?
+USR: Sure, it is 366-58471-3040
+SYS: The tracking number is 9GVT5M300O. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: It was a great pleasure helping you.
