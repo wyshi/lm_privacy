@@ -68,7 +68,7 @@ python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:5 -model_dir model/dp/20
 
 
 #################################
-# on dialog server
+# on dialog server, not run yet
 #################################
 python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210423/221533
 python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210423/221514/
