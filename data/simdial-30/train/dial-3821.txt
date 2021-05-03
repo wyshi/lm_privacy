@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Susan Schmidt.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 91436 Courtney Circles Suite 920 Robertmouth, OK 63422.
+SYS: The tracking number is THS0CDRIH5. What else can I do?
+USR: That's it. That's all.
+SYS: Goodbye.

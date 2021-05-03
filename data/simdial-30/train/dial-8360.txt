@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Faye Ekstrom.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 40300 Blackburn Vista South Chelsea, AK 92396.
+SYS: The tracking number is 03A93CMRBQ. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

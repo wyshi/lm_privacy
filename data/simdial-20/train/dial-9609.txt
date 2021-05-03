@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Dorothy Bell.
+SYS: Verify your order number please.
+USR: Sure, it is 322-76194-0502
+SYS: Track your order using your tracking number, 40UZ1HYK37. What else can I do?
+USR: That's it.

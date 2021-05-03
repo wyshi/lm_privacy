@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Thomas Forker.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 152 Reynolds Expressway South Johnbury, MD 03792. Thomas Forker
+SYS: You can track your package with your tracking number, which is NIAHAIBU1P. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

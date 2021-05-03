@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: My name's Dennis Reed.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 34163 Young Cliffs East Feliciamouth, IL 42878.
+SYS: Track your order using your tracking number, YHDZEYV6Z1. Anything else?
+USR: All good. See you.
+SYS: Goodbye.

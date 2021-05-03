@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Jill Reeves
+SYS: We will need the shipping address as well.
+USR: Ok, it is 095 Hughes Forest Apt. 102 Hunterton, FL 51990.
+SYS: You can track your package with your tracking number, which is PITXRO0DTC. What else can I do?
+USR: All good. See you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Wendy Head.
+SYS: Verify your phone number please.
+USR: 907-180-4477.
+SYS: You can track your package with your tracking number, which is J1IOWU06QI. Anything else?
+USR: All good. Thank you.
+SYS: Goodbye.

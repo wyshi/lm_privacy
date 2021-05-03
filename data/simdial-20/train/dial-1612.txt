@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Ann Billings.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 89418 Emily Mission Suite 114 Port Bradleyville, RI 02889.
+SYS: The tracking number is G5033N42EM. Anything else?
+USR: All good.

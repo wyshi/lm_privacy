@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, April Moon.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is PSC 9479, Box 4969 APO AP 71173.
+SYS: The tracking number is KGPFNJXNY0. What else can I do?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

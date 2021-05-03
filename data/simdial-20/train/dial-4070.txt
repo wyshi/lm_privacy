@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Gerard Wicker.
+SYS: Could you please confirm your shipping address?
+USR: 5680 Sydney Cliff Suite 107 North Courtneyhaven, ME 97170.
+SYS: You can track your package with your tracking number, which is C8NEMK0SZL. Anything else?
+USR: That's it. Thanks!

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Donald Rachal
+SYS: We will need the shipping address as well.
+USR: Ok, it is 0224 Monica Mall Joycefort, KS 09467.
+SYS: Track your order using your tracking number, ABOP8MJJ1Z. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Have a nice day! Bye.

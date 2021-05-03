@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Steven Steadman.
+SYS: Verify your phone number please.
+USR: You can reach me at 614.689.3704.
+SYS: Track your order using your tracking number, 3SD1S1XUKH. Are you happy about my answer?
+USR: That's it. Thanks!

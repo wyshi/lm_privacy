@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Charisse Kaczmarek.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 052 Leah Ridges Apt. 412 West Ray, WA 61516.
+SYS: You can track your package with your tracking number, which is TC0IWJOC52. Are you happy about my answer?
+USR: That's it. Thanks!

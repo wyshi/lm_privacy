@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Peter Taylor
+SYS: Ok, may I have your phone number?
+USR: Phone number is 207-206-0230
+SYS: The tracking number is 4YY86895EP. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

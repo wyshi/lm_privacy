@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Andrea Conner
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, USNS Padilla FPO AE 62956.
+SYS: You can track your package with your tracking number, which is 81NH710IXD. Anything else?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

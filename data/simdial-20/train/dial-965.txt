@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Irene Sheehan.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 77606 Gilbert Spring Suite 618 Lake Josephshire, AL 45847.
+SYS: Track your order using your tracking number, YLXIA9ZLKL. Is there anything else I can help with?
+USR: All good.

@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Gloria Chiarito. Shipping address is 4099 Garcia Mills Frankland, WI 91333.
+SYS: You can track your package with your tracking number, which is HUFW5TVIZU. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

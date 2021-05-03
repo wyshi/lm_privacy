@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Josh Wise.
+SYS: Can you provide the order number?
+USR: It's 670-36982-5952.
+SYS: The tracking number is IM55AXN7ER. Are you happy about my answer?
+USR: That's it. Thanks!

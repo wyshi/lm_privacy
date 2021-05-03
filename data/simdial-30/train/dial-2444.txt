@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Courtney Lofton
+SYS: We will need the shipping address as well.
+USR: Ok, it is 679 King Skyway Apt. 966 Christensenmouth, FL 56620.
+SYS: You can track your package with your tracking number, which is IXBZP5XTI6. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

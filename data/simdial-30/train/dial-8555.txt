@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: I am Celeste Caron.
+SYS: Can you provide the order number?
+USR: Sure, it is 761-20373-9205
+SYS: You can track your package with your tracking number, which is 4BH7NZPRGN. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: It was a great pleasure helping you.

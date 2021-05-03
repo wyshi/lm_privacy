@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Kris Martin.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 8004 Christina Road Apt. 050 Michelletown, ND 46072.
+SYS: You can track your package with your tracking number, which is HGTQFX2XOW. Is there anything else I can help with?
+USR: That's it. Thanks!

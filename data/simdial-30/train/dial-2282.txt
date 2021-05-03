@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Sara Mcgovern.
+SYS: We will need the shipping address as well.
+USR: 52935 Jeffrey Meadow South James, TX 35077.
+SYS: You can track your package with your tracking number, which is FXNV3G1CSS. Anything else?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

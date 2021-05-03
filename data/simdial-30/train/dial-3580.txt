@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Brian Shiroma.
+SYS: We will need the shipping address as well.
+USR: My address is 31696 Kayla Flat Harveyfurt, OK 98284.
+SYS: Track your order using your tracking number, FHSP1WBXSM. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

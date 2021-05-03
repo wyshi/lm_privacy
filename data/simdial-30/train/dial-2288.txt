@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Stephanie Marston.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 9003 William Cliffs Scottchester, NM 94088.
+SYS: The tracking number is IL5OYACCW3. Is there anything else I can help with?
+USR: That's it. Thanks!

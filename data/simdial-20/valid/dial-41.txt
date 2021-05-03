@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Regina Johnson.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 3532 Carter Point Suite 442 Flemingberg, NC 40640.
+SYS: The tracking number is 3HE2QMTVK1. Are you happy about my answer?
+USR: That's it. Thanks! See you.
+SYS: It was a great pleasure helping you.

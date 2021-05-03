@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: I am Shelba Lee.
+SYS: Can you provide the order number?
+USR: Yes, 239-10671-4471.
+SYS: Track your order using your tracking number, CPLCO5OKUK. What else can I do?
+USR: All good.

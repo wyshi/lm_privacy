@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Jeffrey Layton.
+SYS: Verify your phone number please.
+USR: You can reach me at 382-412-4596.
+SYS: The tracking number is JD92MY246V. What else can I do?
+USR: That's it. Thank you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Kristen Doan.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 18054 Rodney Island Apt. 924 Tiffanyland, SD 89861.
+SYS: You can track your package with your tracking number, which is LBC2R6STC2. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

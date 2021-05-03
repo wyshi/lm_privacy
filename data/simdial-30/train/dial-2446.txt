@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Nina Dansby.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 863 Jessica Islands Melissahaven, NJ 83331.
+SYS: You can track your package with your tracking number, which is 3QGYSF68N3. Is there anything else I can help with?
+USR: All good. Thank you.
+SYS: Goodbye.

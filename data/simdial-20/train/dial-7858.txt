@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Glenda Porter.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 71024 Jason Plains Veronicatown, TX 51786.
+SYS: The tracking number is SHRWQT68XG. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

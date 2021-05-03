@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Cori Jones.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 213 Sullivan Plains Robinshire, AK 92656.
+SYS: You can track your package with your tracking number, which is I8RSFK419L. What else can I do?
+USR: That's it. Thanks!

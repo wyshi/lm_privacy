@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm James Singer.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 4816 Morales Prairie Apt. 648 Batesburgh, WV 77635.
+SYS: Track your order using your tracking number, EZJKVKR89G. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Jennifer Micale
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 502-159-7568.
+SYS: Track your order using your tracking number, PN1HX6GH1K. Is there anything else I can help with?
+USR: All good. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Mike Quinn.
+SYS: Verify your phone number please.
+USR: Phone number is 7324617208
+SYS: The tracking number is 5E1K7RBVPN. What else can I do?
+USR: All good. See you.
+SYS: Goodbye.

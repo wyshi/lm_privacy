@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Gary Maynes
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 921-447-3536.
+SYS: Track your order using your tracking number, LZSINONYUZ. What else can I do?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

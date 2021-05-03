@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yep - I'm Pearl Stennett.
+SYS: Verify your phone number please.
+USR: my number is 595.448.7129.
+SYS: You can track your package with your tracking number, which is RPBJ6Z0T0M. Anything else?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

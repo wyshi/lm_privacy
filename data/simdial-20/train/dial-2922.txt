@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Brian Burnett.
+SYS: Verify your order number please.
+USR: My order number is 470-17442-1260.
+SYS: Track your order using your tracking number, I1QASP64DZ. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

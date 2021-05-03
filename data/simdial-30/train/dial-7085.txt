@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Mark Ortiz.
+SYS: Verify your phone number please.
+USR: You can reach me at 239.653.6441.
+SYS: You can track your package with your tracking number, which is FBJ7TUP5MN. Are you happy about my answer?
+USR: No more questions.

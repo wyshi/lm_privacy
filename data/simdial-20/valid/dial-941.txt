@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Tonya Weaver.
+SYS: We will need the shipping address as well.
+USR: My address is 5183 Christopher Drive East Sean, MI 03125.
+SYS: You can track your package with your tracking number, which is 8HJFGF8L39. Anything else?
+USR: That's it. That's all.
+SYS: Goodbye.

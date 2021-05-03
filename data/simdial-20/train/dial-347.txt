@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm John Solomon.
+SYS: Verify your phone number please.
+USR: Phone number is 850.385.8833
+SYS: The tracking number is 17R28Z5DIX. Is there anything else I can help with?
+USR: That's it.

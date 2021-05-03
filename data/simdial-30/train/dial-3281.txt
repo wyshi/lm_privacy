@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Celia Cooley.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 6601 Jorge Rue South Jason, NC 61843.
+SYS: The tracking number is A5LMW8ZVND. Is there anything else I can help with?
+USR: No more questions. That's all.
+SYS: Have a nice day! Bye.

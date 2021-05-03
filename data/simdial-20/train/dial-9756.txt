@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Lakeisha Lunsford.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 61353 Mark Manor Choiburgh, NC 06397.
+SYS: Track your order using your tracking number, SYNE99MZGX. Anything else?
+USR: All good.

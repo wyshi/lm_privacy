@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Laura Mendez
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 466 Amy Viaduct Apt. 510 Port Sarah, IN 17467.
+SYS: You can track your package with your tracking number, which is PEB6M1BSI2. Is there anything else I can help with?
+USR: I have all I need. Thank you.
+SYS: Bye.

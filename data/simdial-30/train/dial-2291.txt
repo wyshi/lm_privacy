@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: I am Joseph Mccormack.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 37323 Nancy Squares Apt. 008 Rodriguezborough, MT 27985.
+SYS: Track your order using your tracking number, I7GRF413X6. What else can I do?
+USR: That's it. That's all.
+SYS: Bye.

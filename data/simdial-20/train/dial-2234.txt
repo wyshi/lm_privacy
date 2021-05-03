@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Sure, Mark Marrow.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 4758 Antonio Grove Apt. 478 Port Jorgeburgh, WI 75990.
+SYS: Track your order using your tracking number, L9XI6I1R6D. Is there anything else I can help with?
+USR: That's it. Thanks!

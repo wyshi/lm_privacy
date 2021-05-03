@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Monica Carter.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 795 Waters Village Apt. 477 South Markburgh, MT 94858.
+SYS: You can track your package with your tracking number, which is M6X50LWMD0. Are you happy about my answer?
+USR: 7534 Natasha Forks Howardmouth, NE 43018.
+SYS: You can track your package with your tracking number, which is M6X50LWMD0. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

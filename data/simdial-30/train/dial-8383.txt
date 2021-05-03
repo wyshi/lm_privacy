@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Jaime Cassidy.
+SYS: Verify your phone number please.
+USR: You can reach me at 929-660-2454.
+SYS: The tracking number is BGQHLW6R2A. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

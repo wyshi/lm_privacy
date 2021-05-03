@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Vicki Pruett.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 306-438-7582.
+SYS: You can track your package with your tracking number, which is V71ABMT83K. Is there anything else I can help with?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

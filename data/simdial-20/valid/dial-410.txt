@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Kathleen Deshaw
+SYS: Verify your order number please.
+USR: My order number is 238-18984-4648.
+SYS: You can track your package with your tracking number, which is 5KN884P6J4. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: It was a great pleasure helping you.

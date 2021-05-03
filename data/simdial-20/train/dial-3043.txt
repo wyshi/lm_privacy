@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Jeffrey Mccurdy.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 11999 Curtis Divide Suite 252 Coffeyview, WV 04155.
+SYS: The tracking number is W9HRDS704F. Anything else?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

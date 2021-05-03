@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Rhonda Reyes
+SYS: We will need the shipping address as well.
+USR: Yea sure, 7087 Glover Rapid Suite 803 Andrewville, VT 52713.
+SYS: The tracking number is 70DAI8N3GH. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: Have a nice day! Bye.

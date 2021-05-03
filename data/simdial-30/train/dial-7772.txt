@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Lee King.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 42441 Richard Forks Suite 090 Lesliefurt, NY 97144.
+SYS: Track your order using your tracking number, XV3844D61Y. Anything else?
+USR: No more questions.

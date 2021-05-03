@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Charles Thao.
+SYS: Could you please confirm your shipping address?
+USR: My address is 4078 Rivera Heights Suite 493 Sarafort, OH 20711.
+SYS: The tracking number is EWQNVI3QG8. Is there anything else I can help with?
+USR: I have all I need. See you.
+SYS: Have a nice day! Bye.

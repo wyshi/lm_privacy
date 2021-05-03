@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Shirley Dockery.
+SYS: Could you please also provide your order number?
+USR: It's 640-65393-3770.
+SYS: Track your order using your tracking number, I3WJPBW9QX. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Andrew Steele.
+SYS: Could you please confirm your shipping address?
+USR: 000 Steele Glens Suite 893 Jenniferview, MD 88398.
+SYS: The tracking number is LE6MOP2IS5. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

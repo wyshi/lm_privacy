@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Stephen Marcus.
+SYS: Verify your order number please.
+USR: Sure, it is 820-84002-2341
+SYS: You can track your package with your tracking number, which is AOJ0HTVR53. What else can I do?
+USR: All good.

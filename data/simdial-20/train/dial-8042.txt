@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: My name's Isabel Davis.
+SYS: Verify your order number please.
+USR: Yes, 229-75633-0965.
+SYS: You can track your package with your tracking number, which is Q2AJVFHO19. Are you happy about my answer?
+USR: I am Willie Sullivan.
+SYS: You can track your package with your tracking number, which is Q2AJVFHO19. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: Goodbye.

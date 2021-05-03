@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Marjorie Johnson
+SYS: Verify your phone number please.
+USR: Phone number is 7038721185
+SYS: You can track your package with your tracking number, which is BM64BIW9CD. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yes, Amy Cannon.
+SYS: Ok, may I have your phone number?
+USR: 6736154201 is my number.
+SYS: The tracking number is C00BTLDKSY. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Bobby Weaver.
+SYS: Could you please also provide your order number?
+USR: 485-20410-5067
+SYS: You can track your package with your tracking number, which is RIJXH7PN7D. Is there anything else I can help with?
+USR: That's it. See you.
+SYS: Goodbye.

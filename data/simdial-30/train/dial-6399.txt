@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Melvin Miller.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 46966 Jacob Branch Apt. 897 Port Danielland, MA 11114.
+SYS: You can track your package with your tracking number, which is WHJQ5GWJ6K. What else can I do?
+USR: No more questions. See you.
+SYS: Goodbye.

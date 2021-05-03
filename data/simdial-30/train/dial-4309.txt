@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Katherine Evans.
+SYS: Verify your order number please.
+USR: Sure, it is 943-48251-9820
+SYS: Track your order using your tracking number, 41TN1LJ6S4. What else can I do?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

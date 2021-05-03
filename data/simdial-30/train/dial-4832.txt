@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Anita Utz.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 24186 Hopkins Shores Suite 354 North Gregoryhaven, UT 11367.
+SYS: Track your order using your tracking number, C1V67ZJDKK. Anything else?
+USR: All good.

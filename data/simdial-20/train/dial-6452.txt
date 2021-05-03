@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Lucille Blackburn.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 05422 Pearson Stream Apt. 978 Angelamouth, AR 85502.
+SYS: You can track your package with your tracking number, which is 4VR3TL14TQ. Anything else?
+USR: All good.

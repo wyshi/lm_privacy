@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Deandrea Lynch.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 90600 William Isle Suite 366 Emilytown, MS 80225.
+SYS: You can track your package with your tracking number, which is 0VZOC6MC5B. Anything else?
+USR: I have all I need.

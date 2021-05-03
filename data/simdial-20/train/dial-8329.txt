@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Heidi Garbarino.
+SYS: We will need the shipping address as well.
+USR: 6003 Ross Ville New Robertfurt, DC 67402.
+SYS: You can track your package with your tracking number, which is LFDORGRAPK. Anything else?
+USR: All good. Thank you.
+SYS: Bye.

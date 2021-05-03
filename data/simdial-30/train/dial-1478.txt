@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Martin Mcclurg.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 815 Zachary Plaza Apt. 653 Danielsfurt, WI 34693.
+SYS: You can track your package with your tracking number, which is JV0NZOQTVT. What else can I do?
+USR: All good. That's all.
+SYS: Have a nice day! Bye.

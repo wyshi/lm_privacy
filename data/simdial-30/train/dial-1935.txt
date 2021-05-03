@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Deanne Shepard
+SYS: We will need the shipping address as well.
+USR: Ok, it is 91146 Dean Extensions Suite 392 Michaelton, MD 28894.
+SYS: You can track your package with your tracking number, which is QD7T495YZV. What else can I do?
+USR: That's it.

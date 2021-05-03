@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, John Howell.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 38832 Flores Knolls Thomasborough, OR 29889.
+SYS: The tracking number is KYLOHPI0PB. Are you happy about my answer?
+USR: All good.

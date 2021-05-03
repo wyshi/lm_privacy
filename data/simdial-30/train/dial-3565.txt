@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: I am Veronica Mallon.
+SYS: Verify your order number please.
+USR: Sure, it is 408-70486-4827
+SYS: The tracking number is YL9WR4AYMA. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

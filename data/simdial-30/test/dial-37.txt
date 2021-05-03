@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Sure, Staci Nelson.
+SYS: Verify your order number please.
+USR: It's 207-54933-2264.
+SYS: The tracking number is QZ4NQESFBQ. What else can I do?
+USR: All good. That's all.
+SYS: Goodbye.

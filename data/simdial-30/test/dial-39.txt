@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Antoine Robinson.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 765-228-2762
+SYS: You can track your package with your tracking number, which is NO4DX4NPA2. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

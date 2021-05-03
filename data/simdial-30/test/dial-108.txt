@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Edith Nadeau
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 064 Johnson Well Suite 963 South Ericchester, NY 87633.
+SYS: The tracking number is BZ42CV5JR7. What else can I do?
+USR: All good. See you.
+SYS: Have a nice day! Bye.

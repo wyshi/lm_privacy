@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Richard Kane.
+SYS: Could you please confirm your shipping address?
+USR: My address is 8192 Johnson Stream Charlesmouth, CO 89924.
+SYS: The tracking number is 8VNVYP5027. Is there anything else I can help with?
+USR: I have all I need. That's all.
+SYS: Goodbye.

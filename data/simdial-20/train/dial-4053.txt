@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Jim Teano.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 51042 Amanda Canyon Jacksonland, ME 14230.
+SYS: You can track your package with your tracking number, which is I5DUH299T2. Anything else?
+USR: No more questions. See you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Geraldine Garrity.
+SYS: Can you provide the order number?
+USR: It's 660-55657-8243.
+SYS: You can track your package with your tracking number, which is ELFL8A95IK. Are you happy about my answer?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

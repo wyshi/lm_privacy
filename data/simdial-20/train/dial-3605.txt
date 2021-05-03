@@ -1,0 +1,6 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Richard Trosclair 442-73752-4755
+SYS: Track your order using your tracking number, MMGVGGK9ME. Are you happy about my answer?
+USR: All good.

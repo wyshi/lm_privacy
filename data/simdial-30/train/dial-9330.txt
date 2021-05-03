@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Charles Johnson.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 401 Jones Inlet South Christineborough, NJ 35707.
+SYS: You can track your package with your tracking number, which is B6207W39RX. Are you happy about my answer?
+USR: That's it. Thanks!

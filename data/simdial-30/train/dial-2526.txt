@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Teresa Norris.
+SYS: Verify your order number please.
+USR: Yes, 989-87132-7448.
+SYS: You can track your package with your tracking number, which is SE809QL6W7. What else can I do?
+USR: No more questions.

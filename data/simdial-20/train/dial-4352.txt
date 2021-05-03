@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: My name's Margaret Johnson.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 81051 Robert Rue Apt. 803 East Laura, UT 80878.
+SYS: You can track your package with your tracking number, which is XANVLNVE9P. Anything else?
+USR: All good.

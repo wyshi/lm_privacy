@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Harry Brown.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 471-019-9926
+SYS: You can track your package with your tracking number, which is HP7HI1XS8Y. Is there anything else I can help with?
+USR: I have all I need.

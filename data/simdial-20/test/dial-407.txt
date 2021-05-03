@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Melissa Copeland.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 63787 Jessica Alley Stokesberg, WI 91932.
+SYS: Track your order using your tracking number, RG34ES0H14. Anything else?
+USR: No more questions.

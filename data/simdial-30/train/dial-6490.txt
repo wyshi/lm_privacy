@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Antonio Leger.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 9071350491.
+SYS: The tracking number is 5AN45UJD1P. Anything else?
+USR: That's it.

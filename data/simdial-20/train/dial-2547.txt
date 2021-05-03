@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Ashley Newton.
+SYS: Could you please confirm your shipping address?
+USR: 4419 Moore Cape Suite 912 East Amy, NE 75236.
+SYS: You can track your package with your tracking number, which is N2NEY27TXL. Are you happy about my answer?
+USR: I have all I need. Thank you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Jackie Marcus
+SYS: Verify your order number please.
+USR: Yes, 843-92142-5573.
+SYS: Track your order using your tracking number, WKNX67O30R. What else can I do?
+USR: No more questions.

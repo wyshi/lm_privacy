@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Lawrence Gaines.
+SYS: We will need the shipping address as well.
+USR: 643 Elizabeth Point Hancockburgh, NY 47822.
+SYS: You can track your package with your tracking number, which is 6JR5OEBDSM. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Patrica Green.
+SYS: Verify your order number please.
+USR: Yes, 577-44947-6948.
+SYS: The tracking number is NY3VKBLMM4. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

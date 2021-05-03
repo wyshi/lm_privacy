@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Cathy Gipson.
+SYS: Can you provide the order number?
+USR: 856-66100-7699
+SYS: You can track your package with your tracking number, which is FU67866O55. What else can I do?
+USR: All good.

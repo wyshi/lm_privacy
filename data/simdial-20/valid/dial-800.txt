@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Edward Griffith.
+SYS: Verify your phone number please.
+USR: You can reach me at 611.221.6258.
+SYS: You can track your package with your tracking number, which is LSX7YYVKG1. Anything else?
+USR: That's it. See you.
+SYS: Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Janet Ebrahim.
+SYS: Verify your phone number please.
+USR: 802-470-6290 is my number.
+SYS: The tracking number is GUJ6581BHP. Are you happy about my answer?
+USR: No more questions.

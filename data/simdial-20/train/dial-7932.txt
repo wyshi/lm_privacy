@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Madge Stough.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 9818 Williams Villages Port Melanie, NM 81720.
+SYS: The tracking number is 9CEPJ2670G. Anything else?
+USR: Yes, James Mccann.
+SYS: The tracking number is 9CEPJ2670G. Anything else?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

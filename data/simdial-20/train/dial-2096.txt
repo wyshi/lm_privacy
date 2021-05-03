@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Harold Fullwood.
+SYS: Could you please also provide your order number?
+USR: My order number is 214-61652-4381.
+SYS: The tracking number is UVH430ZZTE. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Goodbye.

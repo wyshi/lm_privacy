@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Joyce Knight.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 80154 Allison Divide Apt. 422 Lake Richardchester, CO 90950.
+SYS: You can track your package with your tracking number, which is JGNP0X5G42. Is there anything else I can help with?
+USR: All good.

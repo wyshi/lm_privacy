@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Kyla Martinez
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 64901 Whitney Mills Suite 219 Smithville, AR 97958.
+SYS: Track your order using your tracking number, GDGBW7JDNK. What else can I do?
+USR: No more questions. See you.
+SYS: Bye.

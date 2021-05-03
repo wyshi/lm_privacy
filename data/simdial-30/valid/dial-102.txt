@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Katrina Graham.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 140 Tyler Valley South Joseph, OH 44588.
+SYS: You can track your package with your tracking number, which is 36CSI2JVAC. What else can I do?
+USR: That's it.

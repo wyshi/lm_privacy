@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Paula Mccormack
+SYS: Verify your order number please.
+USR: My order number is 939-26327-3057.
+SYS: You can track your package with your tracking number, which is XHRY8D794N. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Goodbye.

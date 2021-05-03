@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Bill Viruet
+SYS: Verify your order number please.
+USR: Yes, 903-33635-9783.
+SYS: Track your order using your tracking number, JNA0LBPDDP. What else can I do?
+USR: That's it. That's all.
+SYS: Goodbye.

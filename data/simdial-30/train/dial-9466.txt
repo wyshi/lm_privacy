@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Lamont Ransome.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 184 Michele Avenue Suite 131 New Mary, IL 41090.
+SYS: The tracking number is IPK0T9UGLH. What else can I do?
+USR: That's it. That's all.
+SYS: Goodbye.

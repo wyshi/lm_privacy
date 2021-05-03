@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Jack Coley
+SYS: Verify your phone number please.
+USR: You can reach me at 1940105526.
+SYS: Track your order using your tracking number, 8EGQ2MYR3E. What else can I do?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

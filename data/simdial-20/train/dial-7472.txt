@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Tom King.
+SYS: Verify your phone number please.
+USR: 993.881.6251.
+SYS: You can track your package with your tracking number, which is LZ9AAC33VA. What else can I do?
+USR: That's it. Thanks!

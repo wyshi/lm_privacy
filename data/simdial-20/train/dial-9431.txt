@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Andrea Cordova.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 0227 Christopher Shoals South Jeffberg, KY 19056.
+SYS: You can track your package with your tracking number, which is 59RSQT9PPR. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

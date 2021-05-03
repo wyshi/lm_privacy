@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: I am Betty Parker.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 914-075-0909
+SYS: The tracking number is QJ5IIWFIW8. Is there anything else I can help with?
+USR: No more questions.

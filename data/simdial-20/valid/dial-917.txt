@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Blaine Ogle.
+SYS: We will need the shipping address as well.
+USR: My address is 95265 Powell Fords Clarkstad, AK 42568.
+SYS: You can track your package with your tracking number, which is SGCPO76TTV. Are you happy about my answer?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

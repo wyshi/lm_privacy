@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Frank Redmon
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 36006 Lopez Extensions Suite 473 Port David, MD 94699.
+SYS: You can track your package with your tracking number, which is OC4WT3EGBS. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

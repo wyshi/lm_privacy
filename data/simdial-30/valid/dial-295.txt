@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: My name's Irma Bowen.
+SYS: Ok, may I have your phone number?
+USR: my number is 290.460.1648.
+SYS: You can track your package with your tracking number, which is RX55TNASP3. Anything else?
+USR: All good. That's all.
+SYS: Goodbye.

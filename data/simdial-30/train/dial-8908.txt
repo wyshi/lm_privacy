@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Ariel Camerano
+SYS: Verify your order number please.
+USR: 119-85832-5778
+SYS: You can track your package with your tracking number, which is 9DOAPEG69M. Is there anything else I can help with?
+USR: Yes, Yolanda Rush.
+SYS: Track your order using your tracking number, 9DOAPEG69M. What else can I do?
+USR: All good.

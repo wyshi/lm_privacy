@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Val Westerheide
+SYS: Can you provide the order number?
+USR: Yes, 458-69675-0681.
+SYS: The tracking number is IFRR68HBSM. Are you happy about my answer?
+USR: Yes, Reginald Lenk.
+SYS: The tracking number is IFRR68HBSM. Are you happy about my answer?
+USR: That's it. Thanks!

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Gregory Nash.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 461 Martinez Ferry Lake Nathan, KS 85936.
+SYS: You can track your package with your tracking number, which is 40BHQ8819G. Anything else?
+USR: That's it. Thanks!

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Sure, Bobbie Armbruster.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is PSC 9314, Box 0001 APO AE 74379.
+SYS: You can track your package with your tracking number, which is LYE95V4Y2F. What else can I do?
+USR: That's it.

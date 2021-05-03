@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yes, William Beck.
+SYS: We will need the shipping address as well.
+USR: 279 Michael Street Julieberg, SD 91079.
+SYS: The tracking number is K1T2JJTC7Q. Is there anything else I can help with?
+USR: That's it. Thanks!

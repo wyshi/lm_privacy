@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Willie Sites.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 31786 John Inlet Apt. 939 New Amy, FL 24391.
+SYS: You can track your package with your tracking number, which is 0F68YI3N4F. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Goodbye.

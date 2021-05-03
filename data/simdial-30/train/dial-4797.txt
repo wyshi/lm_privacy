@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: I am Karen Landfried.
+SYS: Ok, may I have your phone number?
+USR: my number is 950-854-4593.
+SYS: The tracking number is IDAHTIUK7K. What else can I do?
+USR: That's it. Thanks!

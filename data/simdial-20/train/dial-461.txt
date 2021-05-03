@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Kathleen Kin
+SYS: We will need the shipping address as well.
+USR: Shipping address is Unit 9842 Box 3090 DPO AE 64735.
+SYS: Track your order using your tracking number, 17F5IW6PZM. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Tracy Kinde
+SYS: We will need the shipping address as well.
+USR: 52539 Natasha Hollow Lake Jacob, UT 84955.
+SYS: You can track your package with your tracking number, which is U3VWLNMU0Q. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

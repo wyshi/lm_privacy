@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: My name's Kevin Herrington.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 815 Dylan Cove Drakeview, KS 77567.
+SYS: You can track your package with your tracking number, which is JEONI0GARK. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

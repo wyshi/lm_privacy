@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Corinna Thomas.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 9012 Jose Drive Apt. 063 New Rhondaside, UT 29807.
+SYS: The tracking number is B014LDCZ2C. Is there anything else I can help with?
+USR: No more questions.

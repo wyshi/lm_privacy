@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Amanda Jacobs.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 24800 Lindsay Mission Lisastad, PA 13576.
+SYS: The tracking number is UAPHJKFLDR. What else can I do?
+USR: No more questions.

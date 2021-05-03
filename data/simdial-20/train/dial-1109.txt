@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Sure, Loretta Peterson.
+SYS: Can you provide the order number?
+USR: Sure, it is 723-78414-8992
+SYS: You can track your package with your tracking number, which is YZOUB8432X. Anything else?
+USR: That's it. Thanks!

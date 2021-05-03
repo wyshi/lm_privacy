@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Louise Crisp.
+SYS: Could you please confirm your shipping address?
+USR: My address is 78234 Lewis Burg Apt. 162 North Jay, GA 50802.
+SYS: The tracking number is WPFZB0E4V9. Is there anything else I can help with?
+USR: That's it. Thanks!

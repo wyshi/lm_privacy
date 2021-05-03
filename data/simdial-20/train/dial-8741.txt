@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Betty Clark
+SYS: Verify your order number please.
+USR: It's 371-25285-5645.
+SYS: You can track your package with your tracking number, which is BZG572UIT8. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

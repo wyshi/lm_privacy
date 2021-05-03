@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Patrick Charles.
+SYS: We will need the shipping address as well.
+USR: My address is 281 Christopher Orchard Apt. 110 Huntertown, OH 27468.
+SYS: You can track your package with your tracking number, which is 3YM260EROH. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

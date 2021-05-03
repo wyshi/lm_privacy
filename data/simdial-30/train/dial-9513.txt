@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Joyce Greene.
+SYS: Verify your order number please.
+USR: Sure, it is 700-54461-1800
+SYS: Track your order using your tracking number, WOE3A6BXWY. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

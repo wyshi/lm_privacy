@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Theresa Mcwhirter.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 5906 Terry Drive Ronaldview, ID 62030.
+SYS: You can track your package with your tracking number, which is X2Q4E8U83O. What else can I do?
+USR: That's it. That's all.
+SYS: Bye.

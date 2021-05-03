@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Roland Kennedy.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 189 Eugene Light Lindafurt, DE 50773.
+SYS: You can track your package with your tracking number, which is SOGDPT17YM. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: Bye.
