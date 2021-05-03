@@ -7,6 +7,7 @@ python attacks/mem_inference.py -ckpt model/dp/20210409/223157/ --outputf attack
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import utils 
+import data
 
 import argparse
 import zlib
@@ -27,7 +28,7 @@ import random
 from glob import glob
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
-RANDOM_SEED = 0
+RANDOM_SEED = 1111
 
 class CandidateDataset(Dataset):
     def __init__(self, path0, path1, tokenizer, N, max_tokens):
@@ -94,6 +95,69 @@ class CandidateDataset(Dataset):
     def collate(self, unpacked_data):
         return unpacked_data
 
+
+
+class CandidateFromOriginalDataDataset(Dataset):
+    def __init__(self, corpus0, corpus1, tokenizer, N, max_tokens):
+        self.corpus0 = corpus0
+        self.corpus1 = corpus1
+        self.tokenizer = tokenizer
+        self.N = N
+        self.max_tokens = max_tokens
+
+        self.data = self.build_data(corpus0, corpus1)
+
+    def build_data(self, corpus0, corpus1):
+        assert self.tokenizer.bos_token == self.tokenizer.eos_token
+        # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
+        # end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
+
+        random.seed(RANDOM_SEED)
+
+        token_ids0, tokens0, lower_token_ids0 = self.build_one_data(corpus0)
+        picked_token_ids0, picked_tokens0, picked_lower_tokens_ids0 = self.randomly_pick(int(self.N/2), token_ids0, tokens0, lower_token_ids0)
+        token_ids1, tokens1, lower_token_ids1 = self.build_one_data(corpus1)
+        picked_token_ids1, picked_tokens1, picked_lower_tokens_ids1 = self.randomly_pick(int(self.N/2), token_ids1, tokens1, lower_token_ids1)
+
+        data = list(zip(picked_token_ids0, picked_tokens0, [0]*len(picked_tokens0), picked_lower_tokens_ids0)) + list(zip(picked_token_ids1, picked_tokens1, [1]*len(picked_tokens1), picked_lower_tokens_ids1))
+
+        return data
+
+    def build_one_data(self, corpus):
+        token_ids = []
+        tokens = []
+        lower_token_ids = []
+        for seq in tqdm(corpus):
+            line_tokens = [self.tokenizer.decode(tok_id) for tok_id in seq]
+            line_lower = self.tokenizer.decode(seq).lower()
+            line_token_lower_ids = self.tokenizer.encode(line_lower)
+
+            is_private = utils.is_digit(line_tokens)
+            
+            if len(seq) > 1 and any(is_private):
+                token_ids.append(seq)
+                tokens.append(line_tokens)
+                lower_token_ids.append(line_token_lower_ids)
+        return token_ids, tokens, lower_token_ids
+
+    def randomly_pick(self, N, token_ids, tokens, lower_token_ids):
+        total = list(range(len(token_ids)))
+        random.shuffle(total)
+        picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
+        picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
+        picked_lower_tokens_ids = [lower_token_ids[i][:self.max_tokens] for i in total[:N]]
+        return picked_token_ids, picked_tokens, picked_lower_tokens_ids
+
+    def __len__(self):
+        return len(self.data)
+    
+    def __getitem__(self, index):
+        token_ids, tokens, label, lower_token_ids = self.data[index]
+        return token_ids, "".join(tokens), label, lower_token_ids
+        # return torch.tensor(sequences).type(torch.int64)
+
+    def collate(self, unpacked_data):
+        return unpacked_data
 
 def entropy(string):
     # https://stackoverflow.com/questions/2979174/how-do-i-compute-the-approximate-entropy-of-a-bit-string
@@ -254,7 +318,18 @@ if __name__ == "__main__":
                         help='max tokens in each candidate')
     parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
                         help='data type, doc for documents in lm, dial for dialogues')
+    parser.add_argument('--use_original_datacorpus', type=str.lower, default='yes', choices=['yes', 'no'],
+                        help='use original data corpus or not')
+    parser.add_argument('--data', type=str, default='./data/wikitext-2-add10b',
+                    help='location of the data corpus')
+    # parser.add_argument('--batch_size', '-bs', type=int, default=16, metavar='N',
+    #                     help='batch size')
+    parser.add_argument('--bptt', type=int, default=35,
+                        help='sequence length')
     args = parser.parse_args()
+
+    if args.data_type == 'dial':
+        assert "wikitext-2-add10b" not in args.data
 
     if not os.path.exists(os.path.join(*args.outputf.split('/')[:-1])):
         os.makedirs(os.path.join(*args.outputf.split('/')[:-1]))
@@ -275,9 +350,37 @@ if __name__ == "__main__":
     tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer(is_dial)
 
     ###############################################################################
+    # load paths
+    ###############################################################################
+    if os.path.isdir(args.checkpoint):
+        paths = sorted(Path(args.checkpoint).iterdir(), key=os.path.getmtime)
+    else:
+        paths = [args.checkpoint]
+
+    ###############################################################################
+    # load corpus
+    ###############################################################################
+    if args.use_original_datacorpus == "yes":
+        if args.data_type == 'doc':
+            print(f"training data: {args.data}")
+            # it's better to fix the batch_size to have the same set of candidates
+            batch_size = 16#int(str(paths[0]).split("_bs-")[1].split("_")[0])
+            train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, batch_size, args.bptt)
+            # valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, batch_size, args.bptt)
+            test_corpus = data.CorpusDataset(os.path.join(args.data, 'test'), tokenizer, batch_size, args.bptt)
+        else:
+            train_corpus = data.CustomerDataset(os.path.join(args.data, 'train'), tokenizer)
+            # valid_corpus = data.CustomerDataset(os.path.join(args.data, 'valid'), tokenizer=tokenizer)
+            test_corpus = data.CustomerDataset(os.path.join(args.data, 'test'), tokenizer=tokenizer)
+
+
+    ###############################################################################
     # load data
     ###############################################################################
-    candidate_corpus = CandidateDataset(path0=args.path0, path1=args.path1, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
+    if args.use_original_datacorpus == "no":
+        candidate_corpus = CandidateDataset(path0=args.path0, path1=args.path1, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
+    else:
+        candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
     dataloader = DataLoader(dataset=candidate_corpus, 
                             shuffle=False, 
                             batch_size=args.batch_size, 
@@ -292,7 +395,6 @@ if __name__ == "__main__":
     ###############################################################################    
     # exposures, ranks, canary_ppls, model_ppls, model_accs = [], [], [], [], []
     records = []
-    paths = sorted(Path(args.checkpoint).iterdir(), key=os.path.getmtime)
     for model_path in tqdm(paths):
         model_path = str(model_path)
         model = load_model(model_path)
