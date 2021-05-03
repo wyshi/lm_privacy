@@ -65,3 +65,18 @@ python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:5 -model_dir model/parti
 # dp, param search, low priority
 python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:5 -model_dir model/dp/20210423/224844
 python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:5 -model_dir model/dp/20210423/224945
+
+
+#################################
+# on dialog server
+#################################
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210423/221533
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210423/221514/
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210427/213900
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210426/223009
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210427/211339
+
+
+
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210425/152829
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:1 -model_dir model/partialdp/20210425/152857
