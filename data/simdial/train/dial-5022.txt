@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: My name's Steve Hays.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 9778 Robbins Roads Suite 044 Collinsmouth, OR 41778.
+SYS: The tracking number is 1SLCX00XIP. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

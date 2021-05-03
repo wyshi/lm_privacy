@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Winston Hodge.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 34157 Holly Field Apt. 133 Lake Ashlee, MD 86314.
+SYS: Track your order using your tracking number, KOAVFOOBMU. Are you happy about my answer?
+USR: No more questions.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Stacy Angel.
+SYS: We will need the shipping address as well.
+USR: 095 Christopher Passage Apt. 376 East Crystal, DC 75077.
+SYS: The tracking number is UHXFNKHBY9. Is there anything else I can help with?
+USR: That's it. Thanks!

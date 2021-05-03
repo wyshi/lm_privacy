@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Theodora Mccombs.
+SYS: We will need the shipping address as well.
+USR: My address is 160 Barbara Rapid Mariastad, TN 31068.
+SYS: The tracking number is XZ8K4PIX6N. Anything else?
+USR: That's it.

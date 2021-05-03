@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Angela Gutshall
+SYS: We will need the shipping address as well.
+USR: Yea sure, 8879 Grace Isle Donnafurt, KS 05224.
+SYS: You can track your package with your tracking number, which is 5UAFAC5SUW. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

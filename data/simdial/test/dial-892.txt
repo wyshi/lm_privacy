@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Lanette Smith.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 9933 Luis Row Robbinsmouth, WY 92347.
+SYS: The tracking number is 39PDC5XFQ0. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: It was a great pleasure helping you.

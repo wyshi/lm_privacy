@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Norman Janak. Phone number is 736-312-8432
+SYS: The tracking number is 43BJN4X918. What else can I do?
+USR: All good. That's all.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Jeanne Austin.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 483 Reid Road South Troyport, IL 13122.
+SYS: The tracking number is 7XXRR7NRKK. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

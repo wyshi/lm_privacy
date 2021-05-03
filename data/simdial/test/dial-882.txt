@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: I am George Yasutake.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 47955 Lindsey Run Apt. 310 Courtneyborough, TN 34198.
+SYS: You can track your package with your tracking number, which is OA5V22ARYV. Anything else?
+USR: No more questions.

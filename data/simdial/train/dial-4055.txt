@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Ronald Grubbs.
+SYS: We will need the shipping address as well.
+USR: 986 Linda Light Lisafurt, ME 06060.
+SYS: The tracking number is 25X8TL68WI. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

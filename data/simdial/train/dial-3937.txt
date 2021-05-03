@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: My name's Lucienne Jewell.
+SYS: Ok, may I have your phone number?
+USR: my number is 588-197-2083.
+SYS: The tracking number is 1J3KP3MWYL. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

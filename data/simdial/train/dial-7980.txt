@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Percy Murray.
+SYS: We will need the shipping address as well.
+USR: My address is 92746 Harvey Expressway West Michelle, KY 53816.
+SYS: The tracking number is UK22YH40EP. Anything else?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

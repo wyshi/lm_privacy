@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am John Sheffield.
+SYS: We will need the shipping address as well.
+USR: My address is 209 Thomas Inlet Suite 157 South Bobbyshire, UT 89337.
+SYS: You can track your package with your tracking number, which is 6FKIERKCU6. What else can I do?
+USR: That's it.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Karen Spooner.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 70088 Gibson Terrace Johnberg, WI 92537.
+SYS: You can track your package with your tracking number, which is OBA2J9VYOZ. Anything else?
+USR: That's it. Thank you.
+SYS: It was a great pleasure helping you.

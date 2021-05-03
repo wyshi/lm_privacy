@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Moises Bloxham.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 48850 Brian Islands Apt. 678 Richardsonshire, AK 66463.
+SYS: The tracking number is 7XVWDSGNJ7. What else can I do?
+USR: That's it. Thank you.
+SYS: It was a great pleasure helping you.

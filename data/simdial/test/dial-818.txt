@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Charles Condra.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 909 Rodney Drive West Petermouth, RI 82593.
+SYS: The tracking number is A817XVAM3W. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

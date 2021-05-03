@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Cora Harrell.
+SYS: Could you please confirm your shipping address?
+USR: My address is 317 Blair Meadow Caldwellview, TN 24934.
+SYS: You can track your package with your tracking number, which is JA315DQ10A. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Have a nice day! Bye.

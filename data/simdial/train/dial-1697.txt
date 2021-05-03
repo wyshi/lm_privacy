@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Rene Pennisi.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 223 Harding Manors Banksville, TN 82632.
+SYS: The tracking number is GVCJ616K6Z. What else can I do?
+USR: No more questions.

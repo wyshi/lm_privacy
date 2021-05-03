@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Betty Whitehead
+SYS: Ok, may I have your phone number?
+USR: Phone number is 126-755-2435
+SYS: You can track your package with your tracking number, which is ZL6KEGW3HM. Are you happy about my answer?
+USR: All good.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Lois Kornegay
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 012 Hill Point Thompsonfurt, WA 52383.
+SYS: Track your order using your tracking number, ELRQDQJDSO. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

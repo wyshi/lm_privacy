@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Logan Lopez.
+SYS: Verify your phone number please.
+USR: Phone number is 815-734-8788
+SYS: You can track your package with your tracking number, which is Z8WIVOJBU7. Anything else?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

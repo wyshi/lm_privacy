@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Ken Watkins
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 780 Rhonda Terrace Suite 542 Rodneyburgh, MN 24914.
+SYS: Track your order using your tracking number, TW8780T57Q. Anything else?
+USR: No more questions. See you.
+SYS: Have a nice day! Bye.

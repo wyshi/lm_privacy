@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, John Hughes.
+SYS: We will need the shipping address as well.
+USR: My address is 08958 Zamora Garden Apt. 311 Matthewfurt, IA 51828.
+SYS: You can track your package with your tracking number, which is ZEA9GSMIES. Anything else?
+USR: That's it. Thanks!

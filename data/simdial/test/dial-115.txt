@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Alan Dean.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 66146 Brad Heights Suite 069 North Paul, VA 97615.
+SYS: The tracking number is 70W97L6W36. Anything else?
+USR: I have all I need.

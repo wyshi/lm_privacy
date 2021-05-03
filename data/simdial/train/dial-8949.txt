@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Rigoberto Jefferson.
+SYS: Can you provide the order number?
+USR: It's 574-62433-5613.
+SYS: You can track your package with your tracking number, which is UUHR2WDLXZ. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

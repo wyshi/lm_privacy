@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Chris Troxell.
+SYS: Verify your phone number please.
+USR: 920-593-6497 is my number.
+SYS: The tracking number is ZFT7DOEC3D. Anything else?
+USR: my number is 352-208-6029.
+SYS: The tracking number is ZFT7DOEC3D. Are you happy about my answer?
+USR: That's it. Thank you.
+SYS: Bye.

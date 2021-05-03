@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Kerry Booker.
+SYS: We will need the shipping address as well.
+USR: 64829 Shane Walk Suite 205 Lake Daniel, IN 10268.
+SYS: You can track your package with your tracking number, which is 5YSJ3KEFEK. What else can I do?
+USR: All good.

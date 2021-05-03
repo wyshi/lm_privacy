@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Tim Burleson.
+SYS: Verify your order number please.
+USR: Yes, 668-66791-1125.
+SYS: The tracking number is CKIUEBXMZA. What else can I do?
+USR: That's it.

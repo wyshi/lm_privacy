@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Raymond Scungio.
+SYS: Verify your phone number please.
+USR: Phone number is 701.448.9435
+SYS: Track your order using your tracking number, ZAS4BAY4QU. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

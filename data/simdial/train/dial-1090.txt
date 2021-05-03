@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Donald Thomas.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 607 Barker Skyway East Lauratown, AZ 42795.
+SYS: Track your order using your tracking number, 2F8S91YELD. What else can I do?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Leo Noble.
+SYS: We will need the shipping address as well.
+USR: 22810 Barnes Mountains Suite 365 Gilbertview, AK 16235.
+SYS: Track your order using your tracking number, ZW1CLM8AAU. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

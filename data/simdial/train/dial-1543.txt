@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: My name's Linda Lewis.
+SYS: Can you provide the order number?
+USR: It's 240-29630-9250.
+SYS: You can track your package with your tracking number, which is XQPUS85Y66. Anything else?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

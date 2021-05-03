@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Johnny Wiederwax.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 005 Campbell Mills Apt. 188 Daymouth, AZ 14178.
+SYS: You can track your package with your tracking number, which is JF40GSU62Z. Anything else?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

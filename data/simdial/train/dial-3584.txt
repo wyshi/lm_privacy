@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Tommy Webb.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 64603 Montes Plaza Lake Mariaton, NV 38660.
+SYS: Track your order using your tracking number, 2TO5B4E7FH. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

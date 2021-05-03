@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Anna Kittelberger.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 9272 Cruz Motorway Ryanborough, WA 72975.
+SYS: You can track your package with your tracking number, which is 37FAY6TJCA. What else can I do?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

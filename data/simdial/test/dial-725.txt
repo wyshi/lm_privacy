@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Dolores Soto.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 77439 Bernard Pines Apt. 195 Cummingsland, WI 65466.
+SYS: Track your order using your tracking number, 8DEI882P2D. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

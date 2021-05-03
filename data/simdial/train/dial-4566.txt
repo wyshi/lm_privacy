@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Violet Hensley
+SYS: We will need the shipping address as well.
+USR: Yea sure, 696 Bryan Mountain Hawkinsbury, WA 27541.
+SYS: You can track your package with your tracking number, which is LF6FK86XT1. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Bye.

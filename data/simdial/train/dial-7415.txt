@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Benita Hogen.
+SYS: Verify your order number please.
+USR: 994-28905-8335
+SYS: You can track your package with your tracking number, which is T8DYLOT6FP. Anything else?
+USR: That's it. Thanks!

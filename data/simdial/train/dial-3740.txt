@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Margaret Worley.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 3166 Williams Plain South Roberthaven, LA 98482.
+SYS: The tracking number is TSNZ20L65S. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

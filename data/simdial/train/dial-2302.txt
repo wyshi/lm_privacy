@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Brett Chin.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 54504 Jason Ports Bookermouth, WV 20290.
+SYS: The tracking number is SQK7V9SS5K. What else can I do?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

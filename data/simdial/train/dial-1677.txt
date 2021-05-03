@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Haley Buterbaugh.
+SYS: Could you please confirm your shipping address?
+USR: My address is 454 Maldonado Gateway Apt. 937 Port Stephenfurt, DC 34661.
+SYS: The tracking number is JYBTRVTR7V. Anything else?
+USR: That's it.

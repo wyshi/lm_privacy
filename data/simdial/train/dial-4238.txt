@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Charles Weiss.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 19805 Flores Wells Apt. 412 Wandaton, KS 23794.
+SYS: You can track your package with your tracking number, which is AIEMFMC8RY. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: Goodbye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: I am Myles Hanson.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 8189 Robinson Light Suite 766 New Nicholeton, GA 89188.
+SYS: The tracking number is 73XW5WFGG7. Is there anything else I can help with?
+USR: I have all I need.

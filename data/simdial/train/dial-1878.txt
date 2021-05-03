@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Cathy Hill.
+SYS: Verify your phone number please.
+USR: You can reach me at 261.119.2611.
+SYS: The tracking number is PQ0144C60X. What else can I do?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

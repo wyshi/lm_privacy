@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Melissa Homes.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 499 Miller Court Suite 595 Lake Georgeton, ID 15014.
+SYS: You can track your package with your tracking number, which is 7IP2CGQ5TL. Is there anything else I can help with?
+USR: No more questions.

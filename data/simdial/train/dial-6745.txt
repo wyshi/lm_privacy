@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Octavio Smith.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 0171 Albert Port Apt. 042 Rachelmouth, WA 83113.
+SYS: You can track your package with your tracking number, which is RZ36GH75KP. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

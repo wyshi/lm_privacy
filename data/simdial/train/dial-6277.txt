@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Dannie Alexander.
+SYS: Could you please confirm your shipping address?
+USR: My address is 61140 John Squares Colleenmouth, TN 52267.
+SYS: Track your order using your tracking number, FG584BWP12. What else can I do?
+USR: That's it. That's all.
+SYS: Goodbye.

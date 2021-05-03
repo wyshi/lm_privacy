@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Sure, Charlotte Hamilton.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 57845 Brandi Route Port Amy, NY 56308.
+SYS: The tracking number is M5XT469XNE. Is there anything else I can help with?
+USR: No more questions.

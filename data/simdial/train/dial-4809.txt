@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Kathryn Wilson.
+SYS: Verify your phone number please.
+USR: Phone number is 463-467-8392
+SYS: Track your order using your tracking number, SB4KUMFOLO. Is there anything else I can help with?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

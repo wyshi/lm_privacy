@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: My name's Geraldine Colon.
+SYS: Verify your phone number please.
+USR: 594.482.1940 is my number.
+SYS: Track your order using your tracking number, 092TAT3VFI. Is there anything else I can help with?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

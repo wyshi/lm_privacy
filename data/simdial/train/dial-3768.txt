@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Sure, Gary Brashear.
+SYS: Ok, may I have your phone number?
+USR: my number is 157-282-2322.
+SYS: Track your order using your tracking number, EXDBLOY79X. Are you happy about my answer?
+USR: That's it. See you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Mary Miles.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 21759 Peterson Mount Wesleyborough, NV 53773.
+SYS: You can track your package with your tracking number, which is 7XIQ739TCF. What else can I do?
+USR: All good. See you.
+SYS: Bye.

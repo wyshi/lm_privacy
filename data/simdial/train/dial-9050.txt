@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Rachael Perry.
+SYS: Verify your phone number please.
+USR: Phone number is 159.127.1767
+SYS: The tracking number is 642UUWL3QH. Anything else?
+USR: All good.

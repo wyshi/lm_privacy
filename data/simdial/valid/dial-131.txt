@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Gary Harper
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 5250333719.
+SYS: Track your order using your tracking number, YJLB6O1TM1. What else can I do?
+USR: No more questions.

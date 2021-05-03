@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: My name's Julie Pettiford.
+SYS: Ok, may I have your phone number?
+USR: 880.728.4752.
+SYS: The tracking number is VRKNKOREXV. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

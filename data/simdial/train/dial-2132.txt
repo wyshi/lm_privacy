@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: George Nguyen.
+SYS: Can you provide the order number?
+USR: Yes, 391-10834-0068.
+SYS: You can track your package with your tracking number, which is P8VO5NGIC0. Anything else?
+USR: I am Jay Blackman.
+SYS: Track your order using your tracking number, P8VO5NGIC0. Anything else?
+USR: That's it. Thanks!

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, George Clark.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 4017 Butler Courts Apt. 207 Port Adamview, MD 51231.
+SYS: The tracking number is Y3YGW4DIQ3. What else can I do?
+USR: All good. See you.
+SYS: Bye.

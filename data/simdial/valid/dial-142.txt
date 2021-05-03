@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Faye Marshall.
+SYS: Verify your order number please.
+USR: Sure, it is 951-12492-7739
+SYS: The tracking number is JRE8V6R786. Is there anything else I can help with?
+USR: That's it.

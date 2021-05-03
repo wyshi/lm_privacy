@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Yes, William Numbers.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 696.403.3433
+SYS: Track your order using your tracking number, HL4GGCB7TI. Are you happy about my answer?
+USR: All good. See you.
+SYS: Have a nice day! Bye.

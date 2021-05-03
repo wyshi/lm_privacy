@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: William Stevens.
+SYS: Could you please confirm your shipping address?
+USR: My address is 146 Alyssa Knoll Lindaport, HI 78503.
+SYS: The tracking number is SOBQ5O7SMS. Anything else?
+USR: All good. See you.
+SYS: Bye.

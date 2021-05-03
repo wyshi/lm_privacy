@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Lyndsey Johnson. Ok, it is 66934 Diaz Mountains Apt. 231 Port Zacharymouth, OH 39529.
+SYS: You can track your package with your tracking number, which is X6534NCVKJ. Anything else?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

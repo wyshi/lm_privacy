@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Arthur Zimmermann.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 543 Paul Coves Suite 616 Lake Jeremy, NY 92354.
+SYS: Track your order using your tracking number, O5PKC2UZX4. What else can I do?
+USR: That's it. See you.
+SYS: Bye.

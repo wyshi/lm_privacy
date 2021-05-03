@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Jennifer Head.
+SYS: Could you please confirm your shipping address?
+USR: 067 Holmes Lights Suite 015 Lake Xavier, SC 50725.
+SYS: Track your order using your tracking number, 3D0I8YESWI. What else can I do?
+USR: That's it.

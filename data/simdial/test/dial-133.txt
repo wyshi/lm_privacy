@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Domingo Leal.
+SYS: Verify your phone number please.
+USR: You can reach me at 8967276286.
+SYS: Track your order using your tracking number, FN0P3J7YU8. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

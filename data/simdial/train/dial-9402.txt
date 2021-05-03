@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Edna Howell.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 89651 Laura Extensions Apt. 302 Elizabethchester, OH 79327.
+SYS: The tracking number is 41UC50X6I7. Anything else?
+USR: No more questions.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Vicki Pruett.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 08186 Ray Court Suite 358 Robertberg, OR 87732.
+SYS: You can track your package with your tracking number, which is BZF0H6W4AV. What else can I do?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

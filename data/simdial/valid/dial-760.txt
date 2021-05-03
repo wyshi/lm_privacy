@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Kathy Clanton.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 265 Green Ford Kennethland, AK 27868.
+SYS: Track your order using your tracking number, 7Z6IVK6G8J. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Have a nice day! Bye.

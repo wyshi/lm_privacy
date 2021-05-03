@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Christopher Polizio
+SYS: Can you provide the order number?
+USR: 160-82722-4956
+SYS: Track your order using your tracking number, G8W4Y3P8GY. What else can I do?
+USR: That's it.

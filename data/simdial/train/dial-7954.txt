@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Adolph Miller
+SYS: Could you please confirm your shipping address?
+USR: 19878 Joel Garden Suite 274 North Anitashire, MO 72363.
+SYS: The tracking number is 4OB94YO6LW. Is there anything else I can help with?
+USR: That's it. Thanks!

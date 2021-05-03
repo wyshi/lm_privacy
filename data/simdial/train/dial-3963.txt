@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: I am Kathy Torres. Phone number is 199.354.7336
+SYS: You can track your package with your tracking number, which is JSTTM8XQE8. Are you happy about my answer?
+USR: All good. That's all.
+SYS: Bye.

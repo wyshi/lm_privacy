@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Sure, Angel Cole.
+SYS: Ok, may I have your phone number?
+USR: 8315461660 is my number.
+SYS: You can track your package with your tracking number, which is 3GJE5JT68C. Is there anything else I can help with?
+USR: No more questions.

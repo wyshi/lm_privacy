@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Nadine Kelly.
+SYS: We will need the shipping address as well.
+USR: 46417 Lisa Islands Suite 986 North Natalie, NM 77771.
+SYS: The tracking number is L4WW4X01RZ. Is there anything else I can help with?
+USR: No more questions.

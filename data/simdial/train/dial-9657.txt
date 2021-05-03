@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Cindy Boxer.
+SYS: Verify your order number please.
+USR: Yes, 750-76093-3824.
+SYS: You can track your package with your tracking number, which is 6F4GPWCEBZ. Is there anything else I can help with?
+USR: Yes, John Seibold.
+SYS: The tracking number is 6F4GPWCEBZ. Anything else?
+USR: All good.

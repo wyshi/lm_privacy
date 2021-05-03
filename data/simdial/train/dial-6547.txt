@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Charles Myers. 595-18939-0069
+SYS: The tracking number is BIIGWXL0B9. Anything else?
+USR: All good. That's all.
+SYS: It was a great pleasure helping you.

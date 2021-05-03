@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Wendy Moss.
+SYS: We will need the shipping address as well.
+USR: 48869 Emma Land Port Michaelmouth, KS 29757.
+SYS: Track your order using your tracking number, SEPNKHBHZR. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: Bye.

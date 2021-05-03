@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Sarah Patterson.
+SYS: Verify your phone number please.
+USR: 365-529-1518.
+SYS: Track your order using your tracking number, KO2D9OPGXO. Is there anything else I can help with?
+USR: my number is 5223603943.
+SYS: Track your order using your tracking number, KO2D9OPGXO. Is there anything else I can help with?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

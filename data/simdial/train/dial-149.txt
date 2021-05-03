@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Bruno Cookson.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 4482 Nelson Lock Mcintoshview, KS 23918.
+SYS: Track your order using your tracking number, ZBM4K2EXCH. Are you happy about my answer?
+USR: All good. See you.
+SYS: Bye.
