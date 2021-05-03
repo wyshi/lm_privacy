@@ -1,0 +1,2 @@
+model_path,overall_ppl,overall_acc,nonprivate_ppl,nonprivate_acc,private_ppl,private_acc
+model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.6946999_acc-0.38125_epoch-24_ep-0.000_dl-0_ap-0.00,61.79745703420893,0.36006214796360486,58.36556246976399,0.36890294888232344,435.3615478984416,0.05797619047619047

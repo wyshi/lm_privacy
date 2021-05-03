@@ -1,7 +1,7 @@
 '''script to calculate adjusted ppl and acc
 
-python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:3 -model_dir model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.7064935_acc-0.38333_epoch-50_ep-0.000_dl-0_ap-0.00 
-python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:3 --data data/simdial --data_type dial -model_dir model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.7064935_acc-0.38333_epoch-50_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:5 -model_dir model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-69.7064935_acc-0.38333_epoch-50_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:3 --data data/simdial --data_type dial -model_dir model/nodp/20210501/192118/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0253297_acc-0.75599_epoch-36_ep-0.000_dl-0_ap-0.00 
 
 
 '''
@@ -15,6 +15,10 @@ import math
 import pandas as pd
 from tqdm import tqdm
 import torch
+from datetime import datetime
+import socket
+from pathlib import Path
+
 
 def load_model(model_path):
     with open(model_path, 'rb') as f:
@@ -191,7 +195,16 @@ test_dataloader = DataLoader(dataset=test_corpus,
 
 if not os.path.exists(args.outputf):
     os.makedirs(args.outputf)
-print(f'output will be saved to {args.outputf}')
+# print(f'output will be saved to {args.outputf}')
+timenow = datetime.now()
+valid_csv_dir = os.path.join(args.outputf, f'valid_{str(timenow)}_{args.cuda}_on_{socket.gethostname()}.csv')
+test_csv_dir = os.path.join(args.outputf, f'test_{str(timenow)}_{args.cuda}_on_{socket.gethostname()}.csv')
+
+assert not os.path.isfile(valid_csv_dir)
+assert not os.path.isfile(test_csv_dir)
+
+print(f'output will be saved to {valid_csv_dir}')
+print(f'output will be saved to {test_csv_dir}')
 
 
 records = []
@@ -206,29 +219,34 @@ for model_path in tqdm(paths):
     is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
     (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(val_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
     records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
-    if model_path == str(paths[-1]):
-        (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(test_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
-        test_records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
 
 column_names=['model_path', 'overall_ppl', 'overall_acc', 'nonprivate_ppl', 'nonprivate_acc', 'private_ppl', 'private_acc']
 records = pd.DataFrame(records, columns=column_names)
+records.to_csv(valid_csv_dir, index=None)
+
+# calculate test metrics
+best_model_path = records['model_path'].iloc[records['overall_ppl'].argmin()]
+model_path = str(best_model_path)
+model = load_model(model_path)
+is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
+(overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(test_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
+test_records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
+
 test_records = pd.DataFrame(test_records, columns=column_names)
+test_records.to_csv(test_csv_dir, index=None)
 
-valid_csv_dir = os.path.join(args.outputf, 'valid.csv')
-test_csv_dir = os.path.join(args.outputf, 'test.csv')
-
-if os.path.isfile(valid_csv_dir):
-    print(f'output {valid_csv_dir} file exists, will append to it')
-    # valid
-    df_records = pd.read_csv(valid_csv_dir)
-    df_records = df_records.append(records)
-    df_records.to_csv(valid_csv_dir, index=None)
-    # test
-    df_records_test = pd.read_csv(test_csv_dir)
-    df_records_test = df_records_test.append(test_records)
-    df_records_test.to_csv(test_csv_dir, index=None)
-else:
-    records.to_csv(valid_csv_dir, index=None)
-    # test
-    test_records.to_csv(test_csv_dir, index=None)
+# if os.path.isfile(valid_csv_dir):
+#     print(f'output {valid_csv_dir} file exists, will append to it')
+#     # valid
+#     df_records = pd.read_csv(valid_csv_dir)
+#     df_records = df_records.append(records)
+#     df_records.to_csv(valid_csv_dir, index=None)
+#     # test
+#     df_records_test = pd.read_csv(test_csv_dir)
+#     df_records_test = df_records_test.append(test_records)
+#     df_records_test.to_csv(test_csv_dir, index=None)
+# else:
+#     records.to_csv(valid_csv_dir, index=None)
+#     # test
+#     test_records.to_csv(test_csv_dir, index=None)
 
