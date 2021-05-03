@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Yes, Lillian Litzau.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 334 Misty Shores Jonesside, OR 09873.
+SYS: You can track your package with your tracking number, which is BVRZO633MT. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

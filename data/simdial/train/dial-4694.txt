@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Major Marchitto.
+SYS: Verify your phone number please.
+USR: 469-685-1350 is my number.
+SYS: Track your order using your tracking number, 3ZQYLDVS19. What else can I do?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

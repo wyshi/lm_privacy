@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Lea Arnaud.
+SYS: Could you please confirm your shipping address?
+USR: 2001 Andrea Walks Suite 962 Rossville, DC 70335.
+SYS: The tracking number is R1NYCCQDGB. What else can I do?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

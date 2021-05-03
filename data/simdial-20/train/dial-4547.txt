@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Sure, Cythia Howell.
+SYS: Could you please confirm your shipping address?
+USR: My address is 346 Robin Curve New Mary, MA 83107.
+SYS: The tracking number is 7DNDPZ6O4F. Anything else?
+USR: All good. That's all.
+SYS: Goodbye.

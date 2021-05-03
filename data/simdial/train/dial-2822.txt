@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Thanh Lathan.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 39894 Stephanie Estate Suite 515 Warrenshire, NY 46436.
+SYS: Track your order using your tracking number, HVHOYS7JRG. Anything else?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am John Kauffman.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 69172 Maurice Island Suite 934 North Calvinville, SC 41277.
+SYS: You can track your package with your tracking number, which is APIXY1I3LF. Anything else?
+USR: All good.

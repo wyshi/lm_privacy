@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Gwen Thomas.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 6694 Stephanie Crossroad Apt. 916 Rebeccaville, GA 49419.
+SYS: You can track your package with your tracking number, which is 8GFMLX2VAV. Are you happy about my answer?
+USR: That's it. Thanks!

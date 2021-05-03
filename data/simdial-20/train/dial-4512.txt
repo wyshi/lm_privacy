@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Natalie Murphy.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 230 Castro Ranch Apt. 095 New Heatherbury, AK 90494.
+SYS: Track your order using your tracking number, FMX6I9PE6Z. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

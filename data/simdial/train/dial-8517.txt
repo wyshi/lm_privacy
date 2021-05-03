@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yes, Albert Stroud. Yea sure, 62579 Li Islands Jenniferfort, UT 81572.
+SYS: The tracking number is VUNG03I1IA. Anything else?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

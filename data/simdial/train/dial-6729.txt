@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Gary Fulk.
+SYS: Could you please also provide your order number?
+USR: My order number is 354-83959-3868.
+SYS: The tracking number is LF3TXAXMZN. What else can I do?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

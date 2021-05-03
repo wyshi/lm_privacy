@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Ken Lent.
+SYS: Could you please also provide your order number?
+USR: 670-20231-0459
+SYS: You can track your package with your tracking number, which is 533AFUM3XG. Are you happy about my answer?
+USR: That's it. Thanks!

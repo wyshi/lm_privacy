@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Consuelo Erway.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 4450 Thomas Estate Apt. 812 North Tommybury, LA 78346.
+SYS: The tracking number is C06VFV555O. What else can I do?
+USR: That's it. That's all.
+SYS: It was a great pleasure helping you.

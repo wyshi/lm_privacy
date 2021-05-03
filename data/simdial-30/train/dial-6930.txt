@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Patricia Nauman
+SYS: We will need the shipping address as well.
+USR: My address is 3553 Roger Turnpike West Christinamouth, KS 09583.
+SYS: You can track your package with your tracking number, which is WYHLBG0QVD. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

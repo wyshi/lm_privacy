@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Jeannine Naquin.
+SYS: Verify your order number please.
+USR: 460-35911-2360
+SYS: The tracking number is 8C9MRGMKOW. Anything else?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

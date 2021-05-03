@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Rodney Murphy.
+SYS: Could you please also provide your order number?
+USR: 304-40538-2030
+SYS: The tracking number is LN9RZYLD4V. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

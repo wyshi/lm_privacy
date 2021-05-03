@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Marcus Tatro.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 21433 Ford Glens Breannastad, PA 90305.
+SYS: The tracking number is FF61WYUPRY. What else can I do?
+USR: All good. See you.
+SYS: Goodbye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Thomas Woods.
+SYS: Could you please also provide your order number?
+USR: My order number is 714-61084-9398.
+SYS: You can track your package with your tracking number, which is ADSR6FS308. What else can I do?
+USR: That's it.

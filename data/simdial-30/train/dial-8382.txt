@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Frank Uran.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 485 Alexis Crossing North Richardborough, SC 54271.
+SYS: You can track your package with your tracking number, which is WMMS4VDRBW. Is there anything else I can help with?
+USR: All good.

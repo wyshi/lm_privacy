@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Susan Kummer.
+SYS: Could you please confirm your shipping address?
+USR: My address is 67500 Eric Park Lawrenceborough, DC 37070.
+SYS: You can track your package with your tracking number, which is VX5LQ1TOFP. What else can I do?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

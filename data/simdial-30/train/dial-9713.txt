@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Betty Sorrell.
+SYS: We will need the shipping address as well.
+USR: 26935 Troy Tunnel Apt. 700 North Dannystad, NV 90502.
+SYS: The tracking number is 23L06CZ62D. Is there anything else I can help with?
+USR: I have all I need.

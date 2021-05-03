@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Ronald Bruce.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 80719 Joseph Port South Stephen, IL 08412.
+SYS: Track your order using your tracking number, ZS6DDEN4BB. Anything else?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

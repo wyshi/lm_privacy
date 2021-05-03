@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Yes, Socorro Fleischman.
+SYS: Could you please also provide your order number?
+USR: Yes, 759-83456-4398.
+SYS: You can track your package with your tracking number, which is V04Q69WPTE. What else can I do?
+USR: All good.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Joseph Pignone
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 86300 Zimmerman Harbors North Meredithberg, ND 71810.
+SYS: The tracking number is VL0IQI7VLB. Anything else?
+USR: All good. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Dustin Jordon.
+SYS: We will need the shipping address as well.
+USR: My address is 0288 Gillespie Loaf Suite 269 Zavalafort, MN 55595.
+SYS: The tracking number is VAQ8A46TAF. What else can I do?
+USR: That's it. Thanks!

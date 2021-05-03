@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Kathryn Rogers.
+SYS: Ok, may I have your phone number?
+USR: my number is 217.645.7565.
+SYS: You can track your package with your tracking number, which is 0W19P3B98Y. Are you happy about my answer?
+USR: I have all I need.

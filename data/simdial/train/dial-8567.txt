@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sarah Acosta
+SYS: We will need the shipping address as well.
+USR: My address is 20521 Austin Turnpike South Daniellemouth, AR 44643.
+SYS: Track your order using your tracking number, DBJZRI9NS9. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

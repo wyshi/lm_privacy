@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Elizabeth Brinegar
+SYS: We will need the shipping address as well.
+USR: Ok, it is 83732 Reed Mission Suite 222 Martinberg, GA 87117.
+SYS: You can track your package with your tracking number, which is PF66IV7B9N. Anything else?
+USR: No more questions. Thank you.
+SYS: Goodbye.

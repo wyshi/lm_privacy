@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: My name's Rachel Yates.
+SYS: Ok, may I have your phone number?
+USR: 106.594.3625 is my number.
+SYS: You can track your package with your tracking number, which is 5K5G6X0ACK. Are you happy about my answer?
+USR: I have all I need.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Joshua Engelking
+SYS: Can you provide the order number?
+USR: Sure, it is 894-21573-5289
+SYS: You can track your package with your tracking number, which is OF4XDTBJSV. Are you happy about my answer?
+USR: I have all I need.

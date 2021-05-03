@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Doug Storlie.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 80795 Alan Neck West Jennifer, UT 91169.
+SYS: The tracking number is UWA625CFAS. Are you happy about my answer?
+USR: All good. See you.
+SYS: Goodbye.

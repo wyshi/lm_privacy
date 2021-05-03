@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Vanetta Bell.
+SYS: Verify your order number please.
+USR: It's 414-90532-1964.
+SYS: Track your order using your tracking number, HL1KJFOOGB. Are you happy about my answer?
+USR: No more questions.

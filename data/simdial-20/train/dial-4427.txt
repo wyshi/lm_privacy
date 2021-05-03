@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Adam Good.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 97536 Berry Inlet Apt. 265 Daniellehaven, CT 50843.
+SYS: Track your order using your tracking number, A2OKOGHGKW. Anything else?
+USR: All good.

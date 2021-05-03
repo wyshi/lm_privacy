@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Dirk Smith.
+SYS: We will need the shipping address as well.
+USR: 6384 Molly Flats Franklinside, NY 36530.
+SYS: You can track your package with your tracking number, which is TN61EUV0KD. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Have a nice day! Bye.

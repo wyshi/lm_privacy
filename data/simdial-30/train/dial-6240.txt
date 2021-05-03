@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Yes, Karen Boulet.
+SYS: Ok, may I have your phone number?
+USR: my number is 408-708-5783.
+SYS: You can track your package with your tracking number, which is PEATIOUFI0. Is there anything else I can help with?
+USR: I have all I need.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Jacob Miller.
+SYS: Could you please confirm your shipping address?
+USR: My address is 8857 Anderson Gateway West Michaelberg, NC 22212.
+SYS: The tracking number is TYEYIRK6HJ. What else can I do?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

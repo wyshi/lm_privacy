@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Drew Peters.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 1476 Brooks Walk Romanmouth, NC 74230.
+SYS: Track your order using your tracking number, BUCTW65K9R. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: Bye.

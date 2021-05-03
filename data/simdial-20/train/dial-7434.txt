@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Timothy Pelkey
+SYS: We will need the shipping address as well.
+USR: My address is 42655 Nicholas Hollow Apt. 697 South Megan, WV 18379.
+SYS: You can track your package with your tracking number, which is V09C1O9ZX6. Anything else?
+USR: All good. That's all.
+SYS: Have a nice day! Bye.

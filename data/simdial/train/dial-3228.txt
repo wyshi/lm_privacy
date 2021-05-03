@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Terence Sales.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 1523 Hardin Land South Kiaraberg, CA 86079.
+SYS: You can track your package with your tracking number, which is NIKZY1ZTOQ. What else can I do?
+USR: I have all I need.

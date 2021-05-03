@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Sure, Cheryl Eastridge.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 57025 Nicholas Place Lake Courtneyfurt, CA 23577.
+SYS: You can track your package with your tracking number, which is UWMUYF5I7Z. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

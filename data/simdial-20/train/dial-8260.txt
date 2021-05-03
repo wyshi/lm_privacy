@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Jessie Williams.
+SYS: Verify your order number please.
+USR: 181-15635-9370
+SYS: The tracking number is 5ULR2O5MHK. Is there anything else I can help with?
+USR: I have all I need.

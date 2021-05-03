@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Tommy Nunes.
+SYS: Could you please confirm your shipping address?
+USR: My address is 740 Tina Mission Hawkinsland, CA 05721.
+SYS: You can track your package with your tracking number, which is JY72ZT1CRZ. Anything else?
+USR: That's it.

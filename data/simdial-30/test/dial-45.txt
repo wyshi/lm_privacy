@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Charles Wicklund
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 173 Diana Corners Apt. 011 South Markland, CA 62698.
+SYS: The tracking number is YMWD12LUO3. What else can I do?
+USR: That's it. Thank you.
+SYS: Have a nice day! Bye.

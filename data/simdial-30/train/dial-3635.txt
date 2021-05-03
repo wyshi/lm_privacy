@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Shirley Whitehead.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 6007 Simpson Estate Suite 426 Franciscostad, KY 82313.
+SYS: The tracking number is G2FGQC86JS. Are you happy about my answer?
+USR: No more questions. See you.
+SYS: Have a nice day! Bye.

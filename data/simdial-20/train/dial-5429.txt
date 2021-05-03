@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Dana Battle.
+SYS: Verify your phone number please.
+USR: my number is 715-701-7475.
+SYS: The tracking number is DJVOCR5SI9. Is there anything else I can help with?
+USR: All good. See you.
+SYS: Bye.

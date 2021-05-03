@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Peter Cloud.
+SYS: Could you please also provide your order number?
+USR: It's 453-15721-7831.
+SYS: You can track your package with your tracking number, which is 8SFSYV1I5C. Are you happy about my answer?
+USR: No more questions.

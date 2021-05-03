@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: My name's David Cochran.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 8093 Rachel Trail Apt. 903 Port Joelville, NJ 04826.
+SYS: You can track your package with your tracking number, which is GD75PIIFI0. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: Goodbye.

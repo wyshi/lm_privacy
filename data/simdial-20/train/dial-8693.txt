@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Tresa Epley
+SYS: We will need the shipping address as well.
+USR: Yea sure, 576 Rivas Meadow Port Sean, DE 06663.
+SYS: You can track your package with your tracking number, which is HOA22LYD79. Anything else?
+USR: All good.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Thomas Gaier.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 1656 Carrillo Row Suite 599 North Christopherport, WV 41298.
+SYS: The tracking number is 77G5294RVS. Is there anything else I can help with?
+USR: All good.

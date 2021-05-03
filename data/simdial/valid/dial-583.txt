@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Judith Brown.
+SYS: Could you please confirm your shipping address?
+USR: My address is 2002 Randolph Turnpike Suite 945 Alexberg, MI 79730.
+SYS: The tracking number is EXFR6BDRDC. Are you happy about my answer?
+USR: No more questions.

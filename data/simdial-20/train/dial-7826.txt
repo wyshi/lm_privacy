@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Anita Purnell
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 704 Figueroa Ford Suite 182 Port Maryview, AL 29522.
+SYS: The tracking number is LNS2TBFHTC. Are you happy about my answer?
+USR: That's it.

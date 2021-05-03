@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Katerine Bell
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 8394584460.
+SYS: The tracking number is 541KDHSMR8. What else can I do?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

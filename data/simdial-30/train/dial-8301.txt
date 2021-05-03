@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Nelly Ellis.
+SYS: We will need the shipping address as well.
+USR: My address is 25488 Davenport Station Cooperland, FL 41568.
+SYS: Track your order using your tracking number, 6QLEVITGZ1. What else can I do?
+USR: I have all I need.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Joan Reyna.
+SYS: We will need the shipping address as well.
+USR: My address is 6202 Terry Spurs Suite 746 Judyberg, NM 85065.
+SYS: Track your order using your tracking number, JKXEQFIZUL. Is there anything else I can help with?
+USR: I have all I need.

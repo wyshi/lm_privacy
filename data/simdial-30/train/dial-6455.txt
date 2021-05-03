@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Jonathan Box.
+SYS: Could you please also provide your order number?
+USR: 680-11690-5304
+SYS: You can track your package with your tracking number, which is XX18CT0FHI. Anything else?
+USR: All good. Thank you.
+SYS: Goodbye.

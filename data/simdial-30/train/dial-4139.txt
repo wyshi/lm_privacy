@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Bertha Molina.
+SYS: We will need the shipping address as well.
+USR: 374 Rice Divide Port Matthew, OR 22291.
+SYS: The tracking number is E57G9BT9O1. Is there anything else I can help with?
+USR: No more questions. Thank you.
+SYS: Have a nice day! Bye.

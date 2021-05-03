@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Carl Moore.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 6418 Nash Haven Stevenborough, KS 73082.
+SYS: Track your order using your tracking number, VTDL4ARB4F. What else can I do?
+USR: That's it.

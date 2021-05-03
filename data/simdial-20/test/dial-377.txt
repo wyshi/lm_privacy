@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Yep - I'm Rebecca Craig.
+SYS: Can you provide the order number?
+USR: 810-17208-9239
+SYS: Track your order using your tracking number, 94QHSNTB72. What else can I do?
+USR: No more questions. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Edward Bird.
+SYS: We will need the shipping address as well.
+USR: 90008 Moore Brook Apt. 325 Lake Nathanport, DC 90965.
+SYS: Track your order using your tracking number, 17OXG5CKUD. What else can I do?
+USR: All good.

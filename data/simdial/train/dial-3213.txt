@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Kathryn Rademacher
+SYS: Could you please also provide your order number?
+USR: Sure, it is 395-68381-5103
+SYS: The tracking number is T90ILKY2SA. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Bye.

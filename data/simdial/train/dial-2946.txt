@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Scott Curtis.
+SYS: We will need the shipping address as well.
+USR: My address is 444 Sandoval Fall Apt. 581 West Hannahtown, NJ 16950.
+SYS: Track your order using your tracking number, OUOF01ALRR. Anything else?
+USR: That's it.

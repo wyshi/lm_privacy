@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Stephen Rutledge
+SYS: We will need the shipping address as well.
+USR: 04995 Jonathan Lakes Suite 071 Alvarezstad, NY 97802.
+SYS: The tracking number is OKOEHDZ3OS. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Maria Massey.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 96116 Williams Corner Suite 692 Garciafort, MN 81366.
+SYS: You can track your package with your tracking number, which is 7AZ6SDV3QU. Are you happy about my answer?
+USR: That's it. Thanks! See you.
+SYS: Bye.

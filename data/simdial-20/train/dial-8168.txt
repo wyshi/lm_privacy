@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, Anne Sterling.
+SYS: We will need the shipping address as well.
+USR: My address is 55082 Cindy Walks Apt. 308 Taylormouth, MD 36515.
+SYS: Track your order using your tracking number, DE0PJ1XL7H. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: It was a great pleasure helping you.

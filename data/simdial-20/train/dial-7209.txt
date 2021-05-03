@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yes, Sharon Cossey. My order number is 815-59035-4884.
+SYS: Track your order using your tracking number, J4F5KR0A81. Is there anything else I can help with?
+USR: I have all I need. See you.
+SYS: Bye.

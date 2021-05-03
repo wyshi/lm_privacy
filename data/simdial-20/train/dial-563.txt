@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Kimberly Thorne
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 51363 Melissa Branch Rebeccabury, IL 15179.
+SYS: You can track your package with your tracking number, which is F7VPECZY0T. What else can I do?
+USR: I have all I need.

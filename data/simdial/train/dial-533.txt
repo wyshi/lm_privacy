@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Lara Irvine.
+SYS: Could you please also provide your order number?
+USR: Sure, it is 322-80976-5871
+SYS: The tracking number is EMIC89UQXO. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

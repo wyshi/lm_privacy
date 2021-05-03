@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Patricia Rodriquez.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 246 Tina Camp Apt. 345 Andrewfort, MO 50323.
+SYS: The tracking number is IFB5PR0623. Anything else?
+USR: No more questions.

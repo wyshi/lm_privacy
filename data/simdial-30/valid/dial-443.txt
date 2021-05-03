@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Pearl Miller.
+SYS: We will need the shipping address as well.
+USR: 746 Kayla Crossing Apt. 779 Snyderborough, OR 79691.
+SYS: The tracking number is H5C2XGPEKF. What else can I do?
+USR: That's it. That's all.
+SYS: Bye.

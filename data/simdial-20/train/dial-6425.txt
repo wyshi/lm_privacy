@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Bruno Roberson.
+SYS: Could you please confirm your shipping address?
+USR: 57324 Mcdonald Plains Hayesbury, CA 20026.
+SYS: The tracking number is LNJJOHTOP9. What else can I do?
+USR: All good. Thank you.
+SYS: Goodbye.

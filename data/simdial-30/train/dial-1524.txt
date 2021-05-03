@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Twila Hargraves.
+SYS: Verify your phone number please.
+USR: my number is 984-001-8769.
+SYS: You can track your package with your tracking number, which is 4B91B0RPQH. Anything else?
+USR: That's it. Thanks!

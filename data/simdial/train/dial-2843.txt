@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Charles Cleveland.
+SYS: We will need the shipping address as well.
+USR: Shipping address is USS Gonzalez FPO AP 93493.
+SYS: Track your order using your tracking number, NF3ZCURLER. Anything else?
+USR: No more questions.

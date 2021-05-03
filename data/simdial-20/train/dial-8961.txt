@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Judith Janes.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 633 Rhonda Forest Caldwellfort, AK 42988.
+SYS: You can track your package with your tracking number, which is NTTYLB6CS8. Are you happy about my answer?
+USR: No more questions.

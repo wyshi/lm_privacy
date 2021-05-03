@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Harold Gross.
+SYS: Verify your phone number please.
+USR: 650.358.7282 is my number.
+SYS: Track your order using your tracking number, SCV92FLT4O. Are you happy about my answer?
+USR: That's it.

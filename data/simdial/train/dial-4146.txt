@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: My name's Carolina Perez.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 8406 Buck Trail New Kellyberg, NY 73724.
+SYS: You can track your package with your tracking number, which is KTL4PRO2BD. Are you happy about my answer?
+USR: I have all I need. Thank you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Joseph Blankenship.
+SYS: Could you please also provide your order number?
+USR: My order number is 547-98175-7307.
+SYS: The tracking number is OVW3AYADKF. Is there anything else I can help with?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

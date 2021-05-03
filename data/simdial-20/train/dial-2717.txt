@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm James Wood.
+SYS: Verify your order number please.
+USR: My order number is 537-35809-5558.
+SYS: You can track your package with your tracking number, which is O9A9FO20M5. Anything else?
+USR: I have all I need.

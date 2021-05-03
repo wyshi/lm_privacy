@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Ross Imhoff.
+SYS: Verify your phone number please.
+USR: 9876231893 is my number.
+SYS: The tracking number is X6CHL20L2X. Is there anything else I can help with?
+USR: Phone number is 366.268.2213
+SYS: You can track your package with your tracking number, which is X6CHL20L2X. What else can I do?
+USR: That's it. Thanks!

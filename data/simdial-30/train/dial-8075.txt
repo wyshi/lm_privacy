@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Richard Guajardo
+SYS: We will need the shipping address as well.
+USR: Shipping address is 525 Smith Rapids Port Monicabury, MI 69228. Yes, Richard Guajardo.
+SYS: Track your order using your tracking number, KPXKOKRR5A. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: Have a nice day! Bye.

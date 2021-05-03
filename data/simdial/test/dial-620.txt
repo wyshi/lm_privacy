@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Kenneth Palmiter.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 68255 Gonzalez Coves Apt. 090 Port Anna, MS 69720.
+SYS: You can track your package with your tracking number, which is GMOLDL8RRZ. Are you happy about my answer?
+USR: All good.

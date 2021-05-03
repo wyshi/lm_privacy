@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Brenda Shen.
+SYS: We will need the shipping address as well.
+USR: 2246 Dennis Point Wyattside, SD 40409.
+SYS: You can track your package with your tracking number, which is V2235GQXQN. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Have a nice day! Bye.

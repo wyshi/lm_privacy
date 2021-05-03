@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Amy Robinson.
+SYS: Can you provide the order number?
+USR: My order number is 267-43112-7323.
+SYS: The tracking number is WYIRL2Z65W. Anything else?
+USR: No more questions. See you.
+SYS: Bye.

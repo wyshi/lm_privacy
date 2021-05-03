@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: I am Kyla Martinez.
+SYS: Verify your order number please.
+USR: My order number is 557-47339-9205.
+SYS: You can track your package with your tracking number, which is OISGZME2PS. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

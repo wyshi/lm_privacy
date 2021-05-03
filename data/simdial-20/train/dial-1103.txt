@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Lisa Hicks.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 01656 James Mount Lake Sara, OH 03268.
+SYS: The tracking number is HJ45XGHQ58. Is there anything else I can help with?
+USR: No more questions.

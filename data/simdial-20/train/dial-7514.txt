@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Weldon Reid.
+SYS: Ok, may I have your phone number?
+USR: my number is 875.231.2450.
+SYS: The tracking number is TTTZQT5GBZ. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

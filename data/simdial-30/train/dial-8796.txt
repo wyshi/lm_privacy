@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Reginald Paisley.
+SYS: We will need the shipping address as well.
+USR: 3414 Sandra Station Boonechester, OK 19674.
+SYS: The tracking number is HO3EGL8XGY. Anything else?
+USR: My address is 42942 Teresa Common Mooreport, ME 61464.
+SYS: Track your order using your tracking number, HO3EGL8XGY. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Bye.

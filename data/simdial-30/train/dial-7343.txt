@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Douglas Lauze.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 3380 Moore Coves Suite 975 East Jaredberg, IN 55630.
+SYS: Track your order using your tracking number, F8JYM21PHY. Anything else?
+USR: No more questions. That's all.
+SYS: It was a great pleasure helping you.

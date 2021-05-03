@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Sure, Andrew Lajara.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 889 Brian Points Suite 791 Sandraview, ND 19006.
+SYS: You can track your package with your tracking number, which is EQRI69461R. Are you happy about my answer?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

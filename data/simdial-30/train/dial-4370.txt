@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Odilia Burris.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 745 Brewer Square East Peterfort, NY 32123.
+SYS: You can track your package with your tracking number, which is 11KV2604UC. Are you happy about my answer?
+USR: All good. See you.
+SYS: Have a nice day! Bye.

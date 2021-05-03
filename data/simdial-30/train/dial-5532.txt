@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yes, Miriam Pepin.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 50182 Sandra Station Matthewside, MS 41324.
+SYS: The tracking number is A7H32LEX09. What else can I do?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

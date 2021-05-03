@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Joshua Rozier.
+SYS: Could you please confirm your shipping address?
+USR: My address is 67834 Lopez Meadows Apt. 154 North Samanthafort, DC 88628.
+SYS: The tracking number is 7TN7KNJGCS. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

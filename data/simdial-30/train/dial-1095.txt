@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Cedric Matsuda.
+SYS: Could you please confirm your shipping address?
+USR: My address is 0664 Erika Trail Apt. 816 West Micheleshire, OK 87811.
+SYS: The tracking number is NO9E5L1S8P. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Bye.

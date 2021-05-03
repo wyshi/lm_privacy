@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Edward Matos.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 1746 Young Ferry Harrischester, MD 36747.
+SYS: The tracking number is NKE9ID8AM7. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

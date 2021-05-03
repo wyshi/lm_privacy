@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Could you please help me track my package?
+SYS: May I have your full name?
+USR: My name's Kyle Collado.
+SYS: Ok, may I have your phone number?
+USR: 526-138-2317 is my number.
+SYS: The tracking number is QACJHMO8YA. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: Goodbye.

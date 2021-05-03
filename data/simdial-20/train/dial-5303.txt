@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Daniel Amin.
+SYS: We will need the shipping address as well.
+USR: My address is 6867 Timothy Freeway Suite 977 Lake Susanmouth, NC 79619.
+SYS: The tracking number is D1UV4MRORG. Are you happy about my answer?
+USR: I have all I need. That's all.
+SYS: Goodbye.

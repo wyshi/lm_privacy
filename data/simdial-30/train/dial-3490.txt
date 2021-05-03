@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Kenneth Mcafee.
+SYS: Can you provide the order number?
+USR: My order number is 726-97727-6058.
+SYS: The tracking number is 9WIGMMUPEG. What else can I do?
+USR: That's it. Thanks!

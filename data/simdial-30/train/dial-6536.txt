@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: James Bergman.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 293 Dustin Summit West Christinaton, MT 83448.
+SYS: The tracking number is P0MRDPV0NR. What else can I do?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

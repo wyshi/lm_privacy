@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Blanca Bottom.
+SYS: Ok, may I have your phone number?
+USR: my number is 124.790.7056.
+SYS: The tracking number is I4OGCOOUCC. Anything else?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

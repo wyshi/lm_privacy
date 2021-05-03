@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Sure, Kendrick Edwards.
+SYS: Can you provide the order number?
+USR: My order number is 796-93894-6196.
+SYS: Track your order using your tracking number, Q05IFN56DF. What else can I do?
+USR: I have all I need. Thank you.
+SYS: It was a great pleasure helping you.

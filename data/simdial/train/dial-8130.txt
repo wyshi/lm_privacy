@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: I am Robert Boscio.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 2597 Michelle Branch Apt. 202 South Sean, RI 67966.
+SYS: You can track your package with your tracking number, which is 8CQXC7CQST. What else can I do?
+USR: That's it.

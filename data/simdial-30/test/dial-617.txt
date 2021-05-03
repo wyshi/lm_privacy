@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: I am Geraldine Ward.
+SYS: Verify your order number please.
+USR: It's 860-26584-8179.
+SYS: You can track your package with your tracking number, which is H1M70J2MGS. Are you happy about my answer?
+USR: No more questions.

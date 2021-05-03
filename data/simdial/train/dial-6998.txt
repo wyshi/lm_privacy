@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: I am Linda Hoover.
+SYS: Verify your phone number please.
+USR: 842.373.5051 is my number.
+SYS: You can track your package with your tracking number, which is LXWJPNTB8C. Anything else?
+USR: No more questions.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yes, James Carrington.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 0937 Penny Camp Apt. 003 New Kathrynton, DE 78190.
+SYS: The tracking number is XF6FOMZWU7. Is there anything else I can help with?
+USR: No more questions. See you.
+SYS: Bye.

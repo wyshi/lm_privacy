@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Yes, Tony Reinke.
+SYS: Could you please also provide your order number?
+USR: My order number is 234-13395-5360.
+SYS: The tracking number is JXHFRWR8RU. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

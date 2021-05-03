@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Eloisa Cox.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 97684 Arthur Turnpike Suite 501 Danaland, NV 67622.
+SYS: You can track your package with your tracking number, which is JAM3T5CQET. Anything else?
+USR: That's it. Thanks!

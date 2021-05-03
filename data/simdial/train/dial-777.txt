@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Margaret Rippel
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 541-050-0476.
+SYS: The tracking number is 17LWN498EJ. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

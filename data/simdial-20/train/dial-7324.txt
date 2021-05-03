@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Juan Rievley.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 424 Holmes Light Richardshire, KY 78528.
+SYS: The tracking number is XLE8NCH57D. Are you happy about my answer?
+USR: That's it.

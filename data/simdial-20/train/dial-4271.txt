@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Minnie Beauchamp.
+SYS: Verify your order number please.
+USR: Sure, it is 510-62673-9907
+SYS: You can track your package with your tracking number, which is RADA0VOGLO. What else can I do?
+USR: That's it. See you.
+SYS: It was a great pleasure helping you.

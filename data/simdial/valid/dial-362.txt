@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Shirley Skinner
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 142 Figueroa Canyon Meganmouth, IA 69423.
+SYS: The tracking number is 6VA8RLJY8I. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

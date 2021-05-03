@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: James Westphal
+SYS: We will need the shipping address as well.
+USR: Ok, it is USNV Gonzalez FPO AP 80479.
+SYS: You can track your package with your tracking number, which is 2RSEFW2X4E. Is there anything else I can help with?
+USR: That's it. Thanks! See you.
+SYS: Have a nice day! Bye.

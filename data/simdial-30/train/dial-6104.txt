@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Bruce Aber.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 1387 Andrea Ports Jordanstad, VA 49506.
+SYS: Track your order using your tracking number, 5VWYVWVVZS. What else can I do?
+USR: I have all I need. Thank you.
+SYS: Bye.

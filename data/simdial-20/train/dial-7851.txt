@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Jorge Student.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 418 Holly Drive Port Amyhaven, NM 39162.
+SYS: You can track your package with your tracking number, which is 6NU6EO9MVI. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Charles Schroeder.
+SYS: Could you please confirm your shipping address?
+USR: 72418 Callahan Street Suite 164 New Matthew, PA 17486.
+SYS: You can track your package with your tracking number, which is AFD6H2GLAM. Anything else?
+USR: No more questions. See you.
+SYS: Goodbye.

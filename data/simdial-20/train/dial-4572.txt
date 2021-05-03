@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Maria Albrecht
+SYS: We will need the shipping address as well.
+USR: Shipping address is 955 Abbott Burg Avilaville, ND 44279.
+SYS: Track your order using your tracking number, C66G6A7FVN. What else can I do?
+USR: I have all I need. Thank you.
+SYS: It was a great pleasure helping you.

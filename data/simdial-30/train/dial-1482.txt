@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Anita Hughes.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 536 Morton Forks Jesusmouth, WI 18805.
+SYS: Track your order using your tracking number, FVDFENG4GZ. Is there anything else I can help with?
+USR: No more questions.

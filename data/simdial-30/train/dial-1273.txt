@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Louis Tagliarini
+SYS: We will need the shipping address as well.
+USR: Shipping address is 485 Sanders Inlet Apt. 929 Olivialand, AR 98406.
+SYS: You can track your package with your tracking number, which is XQGHAPTJZX. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: Bye.

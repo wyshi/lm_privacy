@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Seth Hemphill
+SYS: Verify your order number please.
+USR: It's 603-45453-3094.
+SYS: You can track your package with your tracking number, which is 2F61QIKVSG. Are you happy about my answer?
+USR: All good. Thank you.
+SYS: It was a great pleasure helping you.

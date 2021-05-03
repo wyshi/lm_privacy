@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Gary Doan.
+SYS: Ok, may I have your phone number?
+USR: 941.537.5471 is my number.
+SYS: You can track your package with your tracking number, which is ZL9P5F66CI. Is there anything else I can help with?
+USR: That's it. Thanks!

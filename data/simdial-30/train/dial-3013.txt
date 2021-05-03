@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: May I have your full name?
+USR: My name's Taylor Bouska.
+SYS: We will need the shipping address as well.
+USR: 91431 Schroeder Divide Apt. 908 Schwartzburgh, VT 96439.
+SYS: Track your order using your tracking number, CVI2O1P9SH. Anything else?
+USR: I have all I need.

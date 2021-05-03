@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Tommy Webb.
+SYS: Ok, may I have your phone number?
+USR: my number is 8601526412.
+SYS: Track your order using your tracking number, Z8OGUDV0GC. Is there anything else I can help with?
+USR: That's it. Thanks!

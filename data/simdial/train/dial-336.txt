@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Could you verify your full name?
+USR: Phyllis Knight
+SYS: We will need the shipping address as well.
+USR: Yea sure, USS Copeland FPO AP 82852.
+SYS: You can track your package with your tracking number, which is 5BOH9FPNDN. What else can I do?
+USR: No more questions.

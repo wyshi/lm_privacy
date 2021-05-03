@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Daniela Todd.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 989 Reynolds Pine Suite 773 Craigland, TN 47224.
+SYS: Track your order using your tracking number, BVMS63V1UL. Anything else?
+USR: All good.

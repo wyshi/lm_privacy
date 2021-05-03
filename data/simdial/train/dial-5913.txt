@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: My name's Margarita Fiscus.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 81911 Kirk Stravenue Lake Johnathan, AK 28559.
+SYS: Track your order using your tracking number, KTTICCZ0GA. What else can I do?
+USR: No more questions. See you.
+SYS: Have a nice day! Bye.

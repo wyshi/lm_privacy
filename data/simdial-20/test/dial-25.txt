@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Carol Gray.
+SYS: We will need the shipping address as well.
+USR: Yea sure, 7491 Barnes Harbor Suite 499 Pagetown, UT 76014.
+SYS: You can track your package with your tracking number, which is TCHA14ZD40. Anything else?
+USR: That's it. Thanks!

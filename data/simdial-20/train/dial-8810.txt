@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Could you verify your full name?
+USR: Andrea Rasmussen
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 650 Robert Point Woodfurt, ME 28317.
+SYS: The tracking number is N9YO9LSA4U. Anything else?
+USR: That's it. Thanks!

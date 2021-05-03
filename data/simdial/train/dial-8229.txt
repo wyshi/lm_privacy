@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Lillie Duran.
+SYS: Could you please confirm your shipping address?
+USR: My address is 0685 Ashley Mission Apt. 762 Jessicaview, MN 61377.
+SYS: Track your order using your tracking number, 4MWQ917RTF. Anything else?
+USR: I have all I need. Thank you.
+SYS: Have a nice day! Bye.

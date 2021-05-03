@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Anne Sink
+SYS: We will need the shipping address as well.
+USR: Ok, it is 337 Meyers Park Suite 492 Thomasfort, DE 34368.
+SYS: The tracking number is MRRTB37DSA. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Goodbye.

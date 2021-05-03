@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: I am Edward Boone.
+SYS: Verify your phone number please.
+USR: my number is 9353773119.
+SYS: You can track your package with your tracking number, which is LHW3FOMMPQ. What else can I do?
+USR: I have all I need.

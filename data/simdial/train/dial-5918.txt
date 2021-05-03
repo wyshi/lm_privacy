@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's April Medina.
+SYS: Ok, may I have your phone number?
+USR: 764.515.2133.
+SYS: The tracking number is ULPWZAWXBS. What else can I do?
+USR: All good. See you.
+SYS: Bye.

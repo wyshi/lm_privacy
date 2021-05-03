@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Eric Cohen
+SYS: Could you please confirm your shipping address?
+USR: 6138 Benitez Mount Apt. 432 Kentbury, TN 69178.
+SYS: The tracking number is T5GO8Q9LLT. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Bye.

@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Elaine Acuff.
+SYS: We will need the shipping address as well.
+USR: My address is 87890 Branch Harbors Suite 648 North Christina, OR 47142.
+SYS: You can track your package with your tracking number, which is C5RLH27WMY. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Goodbye.

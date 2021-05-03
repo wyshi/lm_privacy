@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Sure, William Draudt.
+SYS: We will need the shipping address as well.
+USR: 766 Wilson Rapid New Gregory, NV 13975.
+SYS: The tracking number is JBUC666EHU. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: Bye.

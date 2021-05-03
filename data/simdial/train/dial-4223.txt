@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yes, Janet Lees.
+SYS: We will need the shipping address as well.
+USR: 5822 Christina Trail Apt. 666 Reedstad, CO 96381.
+SYS: Track your order using your tracking number, F4Y88I4XUR. Is there anything else I can help with?
+USR: That's it. Thanks! That's all.
+SYS: It was a great pleasure helping you.

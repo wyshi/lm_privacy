@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: My name's Kevin Geier.
+SYS: Ok, may I have your phone number?
+USR: my number is 9261553710.
+SYS: Track your order using your tracking number, BAL2H2BF6T. Are you happy about my answer?
+USR: I have all I need. See you.
+SYS: Goodbye.

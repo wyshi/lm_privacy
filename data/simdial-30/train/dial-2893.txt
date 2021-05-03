@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: I am Grant Hicks.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 79926 Martin Parkway Apt. 301 Lake Julie, UT 42570.
+SYS: The tracking number is FJHGFWRI57. Is there anything else I can help with?
+USR: I have all I need. That's all.
+SYS: Goodbye.

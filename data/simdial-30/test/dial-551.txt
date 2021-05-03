@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Sure, Raymond Sullivan.
+SYS: Verify your order number please.
+USR: My order number is 408-22844-0931.
+SYS: The tracking number is YK3IZZZSX4. What else can I do?
+USR: All good.

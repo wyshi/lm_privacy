@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: My name's Anne Gracia.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 8927 Patricia Heights West Nancyport, CA 97095.
+SYS: The tracking number is IKP0SG20Z6. What else can I do?
+USR: All good. See you.
+SYS: Bye.

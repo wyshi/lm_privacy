@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Rebecca Stracener.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 365 Stephanie Harbors Selenaton, RI 53599.
+SYS: The tracking number is UFSCPKSMWG. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Bye.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Viola Fisher.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 20430 Kelly Cliff Port Julieport, DC 70135.
+SYS: You can track your package with your tracking number, which is 95LD2WNGX2. Is there anything else I can help with?
+USR: All good.

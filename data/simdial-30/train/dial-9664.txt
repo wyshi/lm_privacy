@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: My name's Joy Braddy.
+SYS: We will need the shipping address as well.
+USR: My address is 4405 Hancock Spur Suite 617 New Lauren, UT 69584.
+SYS: The tracking number is S7KZJQ368R. Anything else?
+USR: That's it.

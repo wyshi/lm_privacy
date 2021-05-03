@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a chair several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Edmond Torres.
+SYS: Verify your order number please.
+USR: Yes, 692-75954-3165. I am Edmond Torres.
+SYS: The tracking number is XGX9464COI. What else can I do?
+USR: That's it.

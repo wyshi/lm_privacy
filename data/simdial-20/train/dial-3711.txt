@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a mobile phone several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Yep - I'm Ernesto Bastilla.
+SYS: Verify your phone number please.
+USR: You can reach me at 444.596.9732.
+SYS: You can track your package with your tracking number, which is UE0AYO82NJ. Are you happy about my answer?
+USR: All good.

@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Mark Kays.
+SYS: We will need the shipping address as well.
+USR: Shipping address is Unit 5599 Box 9097 DPO AP 46962.
+SYS: Track your order using your tracking number, O7RCIW12CP. Is there anything else I can help with?
+USR: Ok, it is 587 Garrett Brooks Apt. 498 East Williamfurt, OH 32044.
+SYS: Track your order using your tracking number, O7RCIW12CP. Are you happy about my answer?
+USR: No more questions. That's all.
+SYS: Have a nice day! Bye.

@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Sherry Goulet.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 626 Christina Stream Apt. 557 West Seth, IA 30880.
+SYS: Track your order using your tracking number, EU8W79WUUL. Is there anything else I can help with?
+USR: Joshua Lamar
+SYS: Track your order using your tracking number, EU8W79WUUL. Are you happy about my answer?
+USR: That's it. Thanks! Thank you.
+SYS: It was a great pleasure helping you.

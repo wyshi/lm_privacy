@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: I am Suzanne Davis.
+SYS: Can you provide the order number?
+USR: Sure, it is 496-73428-2336
+SYS: Track your order using your tracking number, ELZ36NAL74. Is there anything else I can help with?
+USR: I have all I need. See you.
+SYS: It was a great pleasure helping you.

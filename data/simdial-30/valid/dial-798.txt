@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: I am Marybeth Gauthier.
+SYS: We will need the shipping address as well.
+USR: My address is 1802 Ortiz Inlet Shannonhaven, ND 26532.
+SYS: Track your order using your tracking number, RNYTL5WHRZ. Are you happy about my answer?
+USR: That's it.

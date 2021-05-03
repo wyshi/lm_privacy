@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Sarah Mccoy.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 321 Smith Overpass Suite 341 Coryhaven, IL 98468.
+SYS: You can track your package with your tracking number, which is MNM29O6NWY. Anything else?
+USR: No more questions. Thank you.
+SYS: Goodbye.

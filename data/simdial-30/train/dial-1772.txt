@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a floor lamp several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sure, Randy Devore.
+SYS: Could you please confirm your shipping address?
+USR: My address is 191 Steven Extensions Millerbury, DE 51479.
+SYS: Track your order using your tracking number, RFB97ZOYKL. Anything else?
+USR: That's it. Thanks!

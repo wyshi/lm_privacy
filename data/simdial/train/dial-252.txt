@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Richard Waller.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 089 Dana Mews New Rogermouth, MT 09104.
+SYS: You can track your package with your tracking number, which is VLA1IJQVG7. Anything else?
+USR: All good. Thank you.
+SYS: Goodbye.

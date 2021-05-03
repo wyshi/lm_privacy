@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Rodney Romero.
+SYS: Can you provide the order number?
+USR: My order number is 822-52135-7870.
+SYS: You can track your package with your tracking number, which is DLUFZ94TFB. Is there anything else I can help with?
+USR: That's it. See you.
+SYS: Have a nice day! Bye.

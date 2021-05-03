@@ -1,0 +1,11 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Charles Weber.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 417 Stephens Vista Apt. 015 Charlesfurt, WY 96296.
+SYS: Track your order using your tracking number, 8O00A28STK. Anything else?
+USR: Shipping address is 933 Terri Gateway Jennamouth, GA 83261.
+SYS: The tracking number is 8O00A28STK. What else can I do?
+USR: All good. Thank you.
+SYS: Bye.

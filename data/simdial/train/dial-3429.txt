@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: My name's Tina Addis.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 986 Hughes Port Suite 592 West Cheyennestad, TX 38690.
+SYS: You can track your package with your tracking number, which is VCQ9FQCKF9. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

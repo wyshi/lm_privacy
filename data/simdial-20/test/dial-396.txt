@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: I am Dale Brooker.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 1591 Richards Prairie Suite 739 East Austin, KY 01939.
+SYS: You can track your package with your tracking number, which is GSVJQQ3HB0. Are you happy about my answer?
+USR: That's it. That's all.
+SYS: Bye.

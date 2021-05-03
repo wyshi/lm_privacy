@@ -1,0 +1,7 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Catherine Oneill 1535449750 is my number.
+SYS: You can track your package with your tracking number, which is D0DD15T7O2. Are you happy about my answer?
+USR: No more questions. Thank you.
+SYS: Goodbye.

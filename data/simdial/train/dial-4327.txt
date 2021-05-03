@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Valerie Nelson.
+SYS: Verify your phone number please.
+USR: You can reach me at 3375612216.
+SYS: You can track your package with your tracking number, which is DIS5L2GAZ9. Is there anything else I can help with?
+USR: I have all I need.

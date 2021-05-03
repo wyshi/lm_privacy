@@ -1,0 +1,10 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yes, Andrew Jones.
+SYS: Could you please confirm your shipping address?
+USR: My address is 430 Lisa Fall Johnfurt, TX 30366.
+SYS: The tracking number is 1G3Z41QCG8. What else can I do?
+USR: Yea sure, 17500 Connor Shoal Suite 322 Saramouth, NC 73297.
+SYS: Track your order using your tracking number, 1G3Z41QCG8. Anything else?
+USR: That's it.

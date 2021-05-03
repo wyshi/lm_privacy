@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Monika Garcia.
+SYS: Ok, may I have your phone number?
+USR: 9494891752.
+SYS: Track your order using your tracking number, 7U8HCJPD84. Anything else?
+USR: I have all I need. That's all.
+SYS: Goodbye.

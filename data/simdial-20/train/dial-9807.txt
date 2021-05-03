@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: I am Randall Jacob.
+SYS: Ok, may I have your phone number?
+USR: 355-517-3253.
+SYS: The tracking number is DXZAXAG1SU. What else can I do?
+USR: I have all I need.

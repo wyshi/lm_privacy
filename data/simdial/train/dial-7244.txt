@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a mobile phone several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Candy Milne.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 1622 Monroe Flats Davidfort, IL 92568.
+SYS: The tracking number is LOTRKG7DLS. Is there anything else I can help with?
+USR: That's it. Thank you.
+SYS: Goodbye.

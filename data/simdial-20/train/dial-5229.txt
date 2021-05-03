@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: Yep - I'm Cheryl Siemens.
+SYS: Can you provide the order number?
+USR: Sure, it is 935-44666-2310
+SYS: You can track your package with your tracking number, which is I42Q15XLHV. Is there anything else I can help with?
+USR: All good. See you.
+SYS: Bye.

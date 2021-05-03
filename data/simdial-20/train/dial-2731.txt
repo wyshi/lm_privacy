@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Rebecca Duran.
+SYS: Could you please confirm your shipping address?
+USR: Yea sure, 7138 Roman Motorway Apt. 147 West Lawrence, HI 31642.
+SYS: You can track your package with your tracking number, which is BW87MKAFNC. What else can I do?
+USR: No more questions. That's all.
+SYS: Bye.

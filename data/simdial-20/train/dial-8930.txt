@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Carmela Power
+SYS: We will need the shipping address as well.
+USR: Ok, it is 879 Smith Street Apt. 131 West Brandon, MO 18397.
+SYS: The tracking number is TA9BBIU1L1. Are you happy about my answer?
+USR: No more questions.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: I am Stephen Reph.
+SYS: Can you provide the order number?
+USR: 536-65616-1569
+SYS: Track your order using your tracking number, UZ3M9UZ4O4. What else can I do?
+USR: All good.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: My name's Betsy Williams.
+SYS: Could you please confirm your shipping address?
+USR: Ok, it is 8140 Cindy Skyway Jacksonton, IN 46262.
+SYS: The tracking number is J08TKA00GO. Are you happy about my answer?
+USR: That's it. Thanks!

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Yep - I'm Richard Cook.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 90642 Floyd Common Apt. 002 New John, OR 49809.
+SYS: Track your order using your tracking number, H4KWKTW2ZE. Are you happy about my answer?
+USR: That's it.

@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Alan Chase
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 482 Garcia Isle Suite 967 New Melissaside, MA 17007.
+SYS: You can track your package with your tracking number, which is IUNJS4SPBZ. Are you happy about my answer?
+USR: No more questions.

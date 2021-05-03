@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Sergio Mcdonald.
+SYS: Verify your order number please.
+USR: My order number is 102-58788-2136.
+SYS: You can track your package with your tracking number, which is FTP4M88VUC. Anything else?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

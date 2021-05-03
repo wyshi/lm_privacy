@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: Please provide your full name.
+USR: Juan Rievley
+SYS: Verify your order number please.
+USR: It's 759-34506-1139.
+SYS: You can track your package with your tracking number, which is F3TWVMMUM4. What else can I do?
+USR: That's it. Thanks!

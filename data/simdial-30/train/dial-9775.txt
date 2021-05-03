@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Dagmar Stelmack
+SYS: Ok, may I have your phone number?
+USR: 714.740.2430.
+SYS: The tracking number is EZHLI268LH. What else can I do?
+USR: I have all I need.

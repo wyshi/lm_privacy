@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I placed an order but I don't know if it has been shipped.
+SYS: Please provide your full name.
+USR: Heather Parker
+SYS: Can you provide the order number?
+USR: 297-64049-1703
+SYS: You can track your package with your tracking number, which is K7GH2HZ19E. What else can I do?
+USR: That's it. Thanks! That's all.
+SYS: Have a nice day! Bye.

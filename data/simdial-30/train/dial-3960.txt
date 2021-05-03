@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yes, Richard Solis.
+SYS: We will need the shipping address as well.
+USR: Shipping address is 433 Diaz Meadow Fernandofurt, CA 07424.
+SYS: You can track your package with your tracking number, which is KSHF9UYXZY. What else can I do?
+USR: All good.

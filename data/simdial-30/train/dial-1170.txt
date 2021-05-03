@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, Roy Vandiford.
+SYS: Verify your order number please.
+USR: Sure, it is 585-66183-2642
+SYS: The tracking number is K6XZF9JD12. Anything else?
+USR: That's it.

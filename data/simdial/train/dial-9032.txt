@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Sandra Ware.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 586 Eric Drives Elizabethberg, AL 93029.
+SYS: Track your order using your tracking number, PQVXKOPSNO. What else can I do?
+USR: All good. Thank you.
+SYS: Goodbye.

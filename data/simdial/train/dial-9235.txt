@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a pot several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Sure, Ervin Carreno.
+SYS: We will need the shipping address as well.
+USR: 893 Malone Underpass Apt. 130 East Lauren, HI 85017.
+SYS: You can track your package with your tracking number, which is I8G77CCZ1E. Anything else?
+USR: That's it.

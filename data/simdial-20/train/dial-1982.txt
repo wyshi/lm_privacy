@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Sure, James Florentino.
+SYS: Could you please confirm your shipping address?
+USR: 593 Susan Crescent Suite 897 Ashleyview, OH 51561.
+SYS: Track your order using your tracking number, 2YOWE7LN2Y. Anything else?
+USR: No more questions.

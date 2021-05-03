@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yep - I'm Mario Hebert.
+SYS: We will need the shipping address as well.
+USR: My address is 513 Robinson Ferry Suite 178 Port Michael, CT 89577.
+SYS: You can track your package with your tracking number, which is 8R3OSZZA4D. What else can I do?
+USR: That's it. Thanks! See you.
+SYS: Goodbye.

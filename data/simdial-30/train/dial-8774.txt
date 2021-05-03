@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Yep - I'm Maria Scharf.
+SYS: Verify your phone number please.
+USR: my number is 817-489-8728.
+SYS: The tracking number is Z5VWOWW4XU. What else can I do?
+USR: That's it.

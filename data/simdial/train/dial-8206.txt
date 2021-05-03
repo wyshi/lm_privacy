@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I placed an order but I don't know if it has been shipped.
+SYS: May I have your full name?
+USR: My name's Concetta Bowen.
+SYS: Could you please confirm your shipping address?
+USR: 21005 Dale Mill Apt. 397 Robinsonchester, LA 70503.
+SYS: Track your order using your tracking number, 4ACQAA89WN. Are you happy about my answer?
+USR: All good. See you.
+SYS: Have a nice day! Bye.

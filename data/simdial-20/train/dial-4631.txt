@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Yep - I'm Mary Orellana.
+SYS: We will need the shipping address as well.
+USR: Unit 2782 Box 3112 DPO AE 40152.
+SYS: The tracking number is EGD3P7YEOE. Is there anything else I can help with?
+USR: All good.

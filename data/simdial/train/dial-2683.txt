@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. Where is my package?
+SYS: May I have your full name?
+USR: Jeff Krantz.
+SYS: Ok, may I have your phone number?
+USR: Phone number is 758.003.2349
+SYS: The tracking number is SOJDDTQ3TU. Anything else?
+USR: That's it. Thanks! Thank you.
+SYS: Have a nice day! Bye.

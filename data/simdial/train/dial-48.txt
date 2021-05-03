@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hello robot. I ordered a chair several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: John Diamantopoulo
+SYS: Could you please confirm your shipping address?
+USR: My address is 19062 Ronald Spur Stephanieville, PA 01118.
+SYS: Track your order using your tracking number, XOGUURL3VH. Anything else?
+USR: No more questions. That's all.
+SYS: Have a nice day! Bye.

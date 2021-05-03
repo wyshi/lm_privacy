@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Please provide your full name.
+USR: Yes, Maude Greenlee.
+SYS: Ok, may I have your phone number?
+USR: 8623430366 is my number.
+SYS: The tracking number is WJN1JSM3YO. Is there anything else I can help with?
+USR: All good. That's all.
+SYS: Bye.

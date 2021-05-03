@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hello robot. Could you please help me track my package?
+SYS: Could you verify your full name?
+USR: Craig Quincy.
+SYS: Can you provide the order number?
+USR: It's 686-37167-6385.
+SYS: You can track your package with your tracking number, which is F5VF1KXCU2. Anything else?
+USR: I have all I need. Thank you.
+SYS: Bye.

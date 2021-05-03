@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: Hi. I ordered a floor lamp several days ago but I can't track it.
+SYS: May I have your full name?
+USR: Edmond Xiong
+SYS: Verify your order number please.
+USR: 106-62581-5273
+SYS: The tracking number is KEDO45GBOT. Anything else?
+USR: All good.

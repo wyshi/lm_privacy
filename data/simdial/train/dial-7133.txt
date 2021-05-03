@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What do you need?
+USR: Hi. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Kenna Martinez.
+SYS: We will need the shipping address as well.
+USR: Ok, it is 44843 Ashley Plains Apt. 092 Gutierrezmouth, NY 13296.
+SYS: The tracking number is ZS0A5ABQS5. Are you happy about my answer?
+USR: All good.

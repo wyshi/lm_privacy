@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. How can I help?
+USR: What's up? Where is my package?
+SYS: Could you verify your full name?
+USR: Yep - I'm Matthew Ferguson.
+SYS: Ok, may I have your phone number?
+USR: 581.401.1811.
+SYS: You can track your package with your tracking number, which is OSM1CEGBLF. What else can I do?
+USR: All good. Thank you.
+SYS: Have a nice day! Bye.

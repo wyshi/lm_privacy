@@ -1,0 +1,8 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
+SYS: Please provide your full name.
+USR: Yep - I'm Joyce Burns.
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 35475 Romero Burgs Amyville, NC 40211.
+SYS: You can track your package with your tracking number, which is 41WU5LWAJV. Are you happy about my answer?
+USR: All good.

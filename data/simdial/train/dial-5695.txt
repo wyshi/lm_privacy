@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: What's up? I ordered a pot several days ago but I can't track it.
+SYS: Could you verify your full name?
+USR: Herman Cooper
+SYS: Could you please confirm your shipping address?
+USR: Shipping address is 3732 Webb Springs Hendersonville, AZ 88378.
+SYS: The tracking number is V90PIL870F. Is there anything else I can help with?
+USR: That's it. That's all.
+SYS: Bye.

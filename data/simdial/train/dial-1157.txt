@@ -1,0 +1,9 @@
+SYS: Hello, I am the customer support bot. What can I do for you?
+USR: Hello robot. Could you please help me track my package?
+SYS: Please provide your full name.
+USR: Sure, Catherine Skow.
+SYS: Ok, may I have your phone number?
+USR: You can reach me at 295.072.2382.
+SYS: Track your order using your tracking number, INQ0BCDQGZ. Anything else?
+USR: That's it. Thank you.
+SYS: Bye.
