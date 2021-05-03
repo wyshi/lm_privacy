@@ -45,7 +45,6 @@ class CandidateDataset(Dataset):
         # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         # end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
 
-        random.seed(RANDOM_SEED)
 
         token_ids0, tokens0, lower_token_ids0 = self.build_one_data(path0)
         picked_token_ids0, picked_tokens0, picked_lower_tokens_ids0 = self.randomly_pick(int(self.N/2), token_ids0, tokens0, lower_token_ids0)
@@ -112,7 +111,6 @@ class CandidateFromOriginalDataDataset(Dataset):
         # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
         # end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
 
-        random.seed(RANDOM_SEED)
 
         token_ids0, tokens0, lower_token_ids0 = self.build_one_data(corpus0)
         picked_token_ids0, picked_tokens0, picked_lower_tokens_ids0 = self.randomly_pick(int(self.N/2), token_ids0, tokens0, lower_token_ids0)
@@ -158,6 +156,65 @@ class CandidateFromOriginalDataDataset(Dataset):
 
     def collate(self, unpacked_data):
         return unpacked_data
+
+
+class RandomDigitCandidateFromOriginalDataDataset(CandidateFromOriginalDataDataset):
+    def build_data(self, corpus0, corpus1):
+        assert self.tokenizer.bos_token == self.tokenizer.eos_token
+        # start_token_id = self.tokenizer.encode(self.tokenizer.bos_token)
+        # end_token_id = self.tokenizer.encode(self.tokenizer.eos_token)
+
+
+        token_ids1, tokens1, lower_token_ids1 = self.build_one_data(corpus1)
+        picked_token_ids1, picked_tokens1, picked_lower_tokens_ids1 = self.randomly_pick(int(self.N/2), token_ids1, tokens1, lower_token_ids1)
+        picked_token_ids0, picked_tokens0, picked_lower_tokens_ids0 = self.mutate_selected_data(picked_tokens1)
+
+        data = list(zip(picked_token_ids0, picked_tokens0, [0]*len(picked_tokens0), picked_lower_tokens_ids0)) + list(zip(picked_token_ids1, picked_tokens1, [1]*len(picked_tokens1), picked_lower_tokens_ids1))
+
+        return data
+
+    def mutate_selected_data(self, tokens1):
+        def mutate_digit(str_digit):
+            m = []
+            for s in str_digit:
+                if s.isdigit():
+                    random_int = s
+                    while str(random_int) == str(s):
+                        random_int = random.randint(0, 9)
+                    m.append(str(random_int))
+                else:
+                    m.append(s)
+            return "".join(m)
+
+        token_ids0, tokens0, lower_token_ids0 = [], [], []
+        for token1 in tokens1:
+            mutated_text = []
+            is_private = utils.is_digit(token1)
+            for _p, _t in zip(is_private, token1):
+                if _p == 0:
+                    mutated_text.append(_t)
+                else:
+                    mutated_text.append(mutate_digit(_t))
+            
+            token_id0 = self.tokenizer.encode("".join(mutated_text))
+            token0 = mutated_text
+            lower_token_id0 = self.tokenizer.encode("".join(mutated_text).lower())
+
+            token_ids0.append(token_id0)
+            tokens0.append(token0)
+            lower_token_ids0.append(lower_token_id0)
+
+        return token_ids0, tokens0, lower_token_ids0
+
+
+    def randomly_pick(self, N, token_ids, tokens, lower_token_ids):
+        total = list(range(len(token_ids)))
+        random.shuffle(total)
+        picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
+        picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
+        picked_lower_tokens_ids = [lower_token_ids[i][:self.max_tokens] for i in total[:N]]
+        return picked_token_ids, picked_tokens, picked_lower_tokens_ids
+
 
 def entropy(string):
     # https://stackoverflow.com/questions/2979174/how-do-i-compute-the-approximate-entropy-of-a-bit-string
@@ -337,6 +394,7 @@ if __name__ == "__main__":
     assert not os.path.isfile(args.outputf)
     # Set the random seed manually for reproducibility.
     torch.manual_seed(args.seed)
+    random.seed(args.seed)
     if torch.cuda.is_available():
         if not args.cuda:
             print("WARNING: You have a CUDA device, so you should probably run with --cuda")
@@ -380,7 +438,10 @@ if __name__ == "__main__":
     if args.use_original_datacorpus == "no":
         candidate_corpus = CandidateDataset(path0=args.path0, path1=args.path1, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
     else:
-        candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
+        if args.data_type == 'dial':
+            candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
+        elif args.data_type == 'doc':
+            candidate_corpus = RandomDigitCandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
     dataloader = DataLoader(dataset=candidate_corpus, 
                             shuffle=False, 
                             batch_size=args.batch_size, 
