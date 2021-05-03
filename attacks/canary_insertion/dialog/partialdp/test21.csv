@@ -1,0 +1,2 @@
+epoch,model_ppl,model_acc,model_epsilon,model_delta,model_alpha,canary_exposure,canary_rank,canary_ppl,TOTAL_CANDIDATES,model_path
+1,9.0492139,0.6542,0.0,0.0,0.0,0.7896011601696102,578504,4556.879625931893,1000000,model/nodp/20210501/192246/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-9.0492139_acc-0.65420_epoch-1_ep-0.000_dl-0_ap-0.00
