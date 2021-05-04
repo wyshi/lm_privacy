@@ -1,0 +1,2 @@
+epoch,model_ppl,model_acc,model_epsilon,model_delta,model_alpha,canary_exposure,canary_rank,canary_ppl,TOTAL_CANDIDATES,model_path
+50,157.9074681,0.32,163287616.952,8e-05,1.1,0.7722219640440251,585515,65817.01683969423,1000000,model/partialdp/20210423/111051/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.05_norm-0.005_dl-8e-05.pt_ppl-157.9074681_acc-0.32000_epoch-50_ep-163287616.952_dl-8e-05_ap-1.10

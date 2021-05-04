@@ -26,9 +26,29 @@ python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:4 -d
 python -u main.py -bs 32 --lr 20 --data data/simdial --data_type dial --cuda cuda:5 --log-interval 10 --seed 300 2>&1 | tee logs/nodp/dialog/20210503/add10/dialog_bs32_seed300.log
 
 
-# canary insertion
+# canary insertion for no dp
 python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/bs32/nodp_seed1111.csv 
 python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/bs32/nodp_seed0.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/bs32/nodp_seed123.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/bs32/nodp_seed22.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/bs32/nodp_seed300.csv
+
+# canary insertion for partial dp
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed1111.csv 
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed300.csv
+
+# canary insertion for dp
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed1111.csv 
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint  --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/partialdp/nodp_seed300.csv
+
+################################################
+# membership running, dialog
+################################################
+# no dp
+python attacks/mem_inference.py  --data_type dial --data data/simdial -bs 64 --N 1000 --checkpoint model/nodp/20210427/214226 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/test.csv

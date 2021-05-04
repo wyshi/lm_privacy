@@ -1,0 +1,2 @@
+epoch,model_ppl,model_acc,canary_exposure,canary_rank,canary_ppl,TOTAL_CANDIDATES,model_path
+50,77.3702264,0.34388,1.1942840653456734,199700,20031.132479080006,456976,model/nodp/20210409/185850/data-wikitext-2-add10b__model-LSTM__ebd-200__hid-200__bi-False__nlayer-1__tied-False__ntokens-50258__bs-256__bptt-35__lr-20.0__dp-False_partial-False.pt_ppl-77.3702264_acc-0.34388_epoch-50
