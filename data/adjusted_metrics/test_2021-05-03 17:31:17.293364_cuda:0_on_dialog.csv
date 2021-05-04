@@ -1,0 +1,2 @@
+model_path,overall_ppl,overall_acc,nonprivate_ppl,nonprivate_acc,private_ppl,private_acc
+model/partialdp/20210426/223009/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-159.1127836_acc-0.32571_epoch-58_ep-5.651_dl-8e-05_ap-3.50,142.8700717999712,0.31347148505199307,113.35599742144095,0.3226454930598138,388031.6067148105,0.0
