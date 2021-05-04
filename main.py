@@ -477,6 +477,12 @@ def train(privacy_engine=None):
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
     for batch_i, batch in enumerate(train_dataloader):
+        # if args.data_type == 'dial':
+        #     text = [tokenizer.decode(b) for b in batch if "My ID is 341752." in tokenizer.decode(b)]
+        #     for _ in range(len(text)):
+        #         print()
+        #         print("canary appears")
+        #         print()
         source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch))
         target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch))
         seq_lens = list(map(lambda x: len(x) - 1, batch))

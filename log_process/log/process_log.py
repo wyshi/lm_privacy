@@ -42,9 +42,7 @@ def extract_model_test_ppl(log_list):
     return list(zip(test_ppls, test_accs))
 
 log_list = """
-logs/nodp/dialog/20210503/add30/dialog_bs16_seed1111.log
-logs/nodp/dialog/20210503/add30/dialog_bs16_seed22.log
-logs/nodp/dialog/20210503/add30/dialog_bs16_seed300.log"""                    
+logs/partial_dp/20210425/resume/lr0.1_norm1e-3_sigma0.1_seed1111"""                    
 
 model_paths = extract_model_path(log_list.split('\n'))
 
@@ -70,7 +68,8 @@ def print_canary_attack_command(model_paths):
     assert len(outputs) == len(set(outputs)), f"repetitive paths, {outputs}, {set(outputs)}"
 
     for o in outputs:
-        assert not os.path.exists(o), f"{o} exists!"
+        if os.path.exists(o): 
+            print(f"WARNING!!!!! {o} exists!")
 
 def print_membership_attack_command(model_paths):
     """
@@ -92,7 +91,8 @@ def print_membership_attack_command(model_paths):
     assert len(outputs) == len(set(outputs)), f"repetitive paths, {outputs}, {set(outputs)}"
 
     for o in outputs:
-        assert not os.path.exists(o), f"{o} exists!"
+        if os.path.exists(o): 
+            print(f"WARNING!!!!! {o} exists!")
 
 print_canary_attack_command(model_paths)
 print("=============================")

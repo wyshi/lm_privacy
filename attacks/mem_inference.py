@@ -97,12 +97,13 @@ class CandidateDataset(Dataset):
 
 
 class CandidateFromOriginalDataDataset(Dataset):
-    def __init__(self, corpus0, corpus1, tokenizer, N, max_tokens):
+    def __init__(self, corpus0, corpus1, tokenizer, N, max_tokens, data_type):
         self.corpus0 = corpus0
         self.corpus1 = corpus1
         self.tokenizer = tokenizer
         self.N = N
         self.max_tokens = max_tokens
+        self.data_type = data_type
 
         self.data = self.build_data(corpus0, corpus1)
 
@@ -113,9 +114,9 @@ class CandidateFromOriginalDataDataset(Dataset):
 
 
         token_ids0, tokens0, lower_token_ids0 = self.build_one_data(corpus0)
-        picked_token_ids0, picked_tokens0, picked_lower_tokens_ids0 = self.randomly_pick(int(self.N/2), token_ids0, tokens0, lower_token_ids0)
+        picked_token_ids0, picked_tokens0, picked_lower_tokens_ids0 = self.randomly_pick(int(self.N/2), token_ids0, tokens0, lower_token_ids0, is_train=False)
         token_ids1, tokens1, lower_token_ids1 = self.build_one_data(corpus1)
-        picked_token_ids1, picked_tokens1, picked_lower_tokens_ids1 = self.randomly_pick(int(self.N/2), token_ids1, tokens1, lower_token_ids1)
+        picked_token_ids1, picked_tokens1, picked_lower_tokens_ids1 = self.randomly_pick(int(self.N/2), token_ids1, tokens1, lower_token_ids1, is_train=True)
 
         data = list(zip(picked_token_ids0, picked_tokens0, [0]*len(picked_tokens0), picked_lower_tokens_ids0)) + list(zip(picked_token_ids1, picked_tokens1, [1]*len(picked_tokens1), picked_lower_tokens_ids1))
 
@@ -138,13 +139,34 @@ class CandidateFromOriginalDataDataset(Dataset):
                 lower_token_ids.append(line_token_lower_ids)
         return token_ids, tokens, lower_token_ids
 
-    def randomly_pick(self, N, token_ids, tokens, lower_token_ids):
-        total = list(range(len(token_ids)))
-        random.shuffle(total)
-        picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
-        picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
-        picked_lower_tokens_ids = [lower_token_ids[i][:self.max_tokens] for i in total[:N]]
-        return picked_token_ids, picked_tokens, picked_lower_tokens_ids
+    def randomly_pick(self, N, token_ids, tokens, lower_token_ids, is_train):
+        if self.data_type == 'dial' and (not is_train):
+            # dialog and test
+            with open("attacks/membership_inference/test_dialogs.txt", 'r') as fh:
+                chosen_dials = fh.readlines()
+                chosen_dials = [d.strip('\n') for d in chosen_dials]
+                chosen_dials = chosen_dials[:N]
+                if N > len(chosen_dials):
+                    raise ValueError("running out of testing data!") 
+            texts = ["".join(t) for t in tokens]
+            picked_token_ids, picked_tokens, picked_lower_tokens_ids = [], [], []
+            for i, text in enumerate(texts):
+                for d in chosen_dials:
+                    if d in text:
+                        # import pdb; pdb.set_trace()
+                        picked_token_ids.append(token_ids[i][:self.max_tokens])
+                        picked_tokens.append(tokens[i][:self.max_tokens])
+                        picked_lower_tokens_ids.append(lower_token_ids[i][:self.max_tokens])
+
+            return picked_token_ids, picked_tokens, picked_lower_tokens_ids
+        else:
+            total = list(range(len(token_ids)))
+            random.shuffle(total)
+            picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
+            picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
+            picked_lower_tokens_ids = [lower_token_ids[i][:self.max_tokens] for i in total[:N]]
+            return picked_token_ids, picked_tokens, picked_lower_tokens_ids
+                
 
     def __len__(self):
         return len(self.data)
@@ -261,7 +283,7 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
         # sorted_ppls = {k: (i+1, v) for i, (k, v) in enumerate(sorted(ppls.items(), key=lambda item: item[1]))}
         
         if save_json:
-            with open(save_json, 'w') as fh:
+            with open("attacks/membership_inference/debug/", 'w') as fh:
                 json.dump(sorted_ppls, fh)
 
         acc = (np.array(pred_labels) == np.array(true_labels)).mean()
@@ -371,7 +393,7 @@ if __name__ == "__main__":
                         help='training data path')
     parser.add_argument('--N', type=int, default=100,
                         help='how many candidates in the dataset')
-    parser.add_argument('--max_tokens', type=int, default=100,
+    parser.add_argument('--max_tokens', type=int, default=1000,
                         help='max tokens in each candidate')
     parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
                         help='data type, doc for documents in lm, dial for dialogues')
@@ -438,10 +460,10 @@ if __name__ == "__main__":
     if args.use_original_datacorpus == "no":
         candidate_corpus = CandidateDataset(path0=args.path0, path1=args.path1, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
     else:
-        if args.data_type == 'dial':
-            candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
-        elif args.data_type == 'doc':
-            candidate_corpus = RandomDigitCandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
+        if args.data_type in ['dial', 'doc']:
+            candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens, data_type=args.data_type)
+        else:
+            candidate_corpus = RandomDigitCandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens, data_type=args.data_type)
     dataloader = DataLoader(dataset=candidate_corpus, 
                             shuffle=False, 
                             batch_size=args.batch_size, 
