@@ -12,6 +12,7 @@ import data
 import argparse
 import zlib
 from pathlib import Path
+from datetime import datetime
 
 from torch.utils.data import DataLoader, Dataset
 import torch
@@ -161,6 +162,8 @@ class CandidateFromOriginalDataDataset(Dataset):
             return picked_token_ids, picked_tokens, picked_lower_tokens_ids
         else:
             total = list(range(len(token_ids)))
+            if len(total) < N:
+                raise ValueError("running out of testing data!")
             random.shuffle(total)
             picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
             picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
@@ -286,10 +289,16 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
             with open("attacks/membership_inference/debug/", 'w') as fh:
                 json.dump(sorted_ppls, fh)
 
+        if sort_metric_id == 3:
+            df = pd.DataFrame(sorted_ppls, columns=['text', 'true', 'ppl', 'lowerppl', 'gpt2ppl', 'zlip'])
+            df['pred'] = pred_labels
+            df['metrics'] = df['ppl']/df['lowerppl']
+            df.to_csv(f"attacks/membership_inference/debug/test_{str(datetime.now())}.csv", index=None)
+
         acc = (np.array(pred_labels) == np.array(true_labels)).mean()
         return acc
     
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     acc_ppl, acc_lower, acc_gpt2, acc_zlip = [sort_and_acc(ppls, i) for i in range(2, 6)]
     print("accuracy")
     print(acc_ppl, acc_lower, acc_gpt2, acc_zlip)
@@ -461,7 +470,7 @@ if __name__ == "__main__":
     if args.use_original_datacorpus == "no":
         candidate_corpus = CandidateDataset(path0=args.path0, path1=args.path1, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
     else:
-        if args.data_type in ['dial']:
+        if args.data_type in ['dial', 'doc']:
             candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens, data_type=args.data_type)
         else:
             candidate_corpus = RandomDigitCandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens, data_type=args.data_type)
