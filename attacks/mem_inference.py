@@ -411,7 +411,7 @@ if __name__ == "__main__":
                         help='max tokens in each candidate')
     parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
                         help='data type, doc for documents in lm, dial for dialogues')
-    parser.add_argument('--use_original_datacorpus', type=str.lower, default='yes', choices=['yes', 'no'],
+    parser.add_argument('--use_original_datacorpus', type=str.lower, default='no', choices=['yes', 'no'],
                         help='use original data corpus or not')
     parser.add_argument('--data', type=str, default='./data/wikitext-2-add10b',
                     help='location of the data corpus')
