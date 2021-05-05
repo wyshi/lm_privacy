@@ -72,12 +72,14 @@ def makeup_numbers(train_numbers):
     min_n = min(map(len, train_numbers))
     max_n = max(map(len, train_numbers))
     ns = []
-    while len(ns) < N_MADEUP:
-        n_digits = np.random.choice(range(min_n, 5), 1)[0]
-        b = np.random.choice([' ']+list('0123456789'), n_digits)
-        a = "".join(b).rstrip()
-        if a not in train_numbers:
-            ns.append(a)
+    for t in train_numbers:
+        n_digits = len(t)
+        while True:        
+            b = np.random.choice([' ']+list('0123456789'), n_digits)
+            a = "".join(b).rstrip()
+            if a not in train_numbers:
+                ns.append(a)
+                break
     return ns
 
 train_numbers = list(set(find_one_data(train_corpus)))
