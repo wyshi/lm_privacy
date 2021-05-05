@@ -289,7 +289,7 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
         acc = (np.array(pred_labels) == np.array(true_labels)).mean()
         return acc
     
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     acc_ppl, acc_lower, acc_gpt2, acc_zlip = [sort_and_acc(ppls, i) for i in range(2, 6)]
     print("accuracy")
     print(acc_ppl, acc_lower, acc_gpt2, acc_zlip)
@@ -461,7 +461,7 @@ if __name__ == "__main__":
     if args.use_original_datacorpus == "no":
         candidate_corpus = CandidateDataset(path0=args.path0, path1=args.path1, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens)
     else:
-        if args.data_type in ['dial']:
+        if args.data_type in ['dial', 'doc']:
             candidate_corpus = CandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens, data_type=args.data_type)
         else:
             candidate_corpus = RandomDigitCandidateFromOriginalDataDataset(corpus0=test_corpus, corpus1=train_corpus, N=args.N, tokenizer=tokenizer, max_tokens=args.max_tokens, data_type=args.data_type)
