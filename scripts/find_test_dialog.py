@@ -5,6 +5,7 @@ python scripts/find_test_dialog.py
 from glob import glob
 import re
 import pandas as pd
+from tqdm import tqdm
 
 test_dir = 'data/simdial/test/*'
 train_dir = 'data/simdial/train/*'
@@ -52,7 +53,7 @@ def get_names(f_dir):
 
 def read_files(f_dir):
     lines = []
-    for fle in glob(f_dir):
+    for fle in tqdm(glob(f_dir)):
         with open(fle, 'r') as fh:
             lines.append((fh.read(), fle))
     return lines
@@ -70,7 +71,7 @@ def in_dials(dials, name):
 train_dials = read_files(train_dir)
 name_in_train = []
 name_not_intrain = []
-for name in df.name:
+for name in tqdm(df.name):
     if in_dials(train_dials, name):
         name_in_train.append(name)
         continue
@@ -87,3 +88,29 @@ with open("attacks/membership_inference/candidates/dialog/test/test.txt", "w") a
 
 with open("attacks/membership_inference/candidates/dialog/train/train.txt", "w") as fh:
     fh.writelines([t+"\n" for t in name_in_train])
+
+
+# first name
+name_in_train = []
+name_not_intrain = []
+for name in tqdm(df.name):
+    name = name.split()[0]
+    if in_dials(train_dials, name):
+        if name not in name_in_train:
+            name_in_train.append(name)
+        continue
+    if name not in name_not_intrain:
+        name_not_intrain.append(name)
+
+
+print(f"first name in train: {len(name_in_train)}")
+print(f"first name not in train: {len(name_not_intrain)}")
+
+first_name = [n.split()[0] for n in df.name.tolist()]
+assert (len(name_in_train) + len(name_not_intrain)) == len(set(first_name))
+
+with open("attacks/membership_inference/candidates/dialog-first-name/test/test.txt", "w") as fh:
+    fh.writelines([" "+ t +"\n" for t in name_not_intrain])
+
+with open("attacks/membership_inference/candidates/dialog-first-name/train/train.txt", "w") as fh:
+    fh.writelines([" "+ t +"\n" for t in name_in_train])

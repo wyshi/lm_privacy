@@ -69,7 +69,7 @@ class CandidateDataset(Dataset):
                     line_tokens = [self.tokenizer.decode(tok_id) for tok_id in self.tokenizer.encode(line)]
                     # is_private = utils.is_digit(line_tokens)
 
-                    if len(line_token_ids) > 1:
+                    if len(line_token_ids) > 1 and len(line_token_lower_ids) > 1:
                         token_ids.append(line_token_ids)
                         tokens.append(line_tokens)
                         lower_token_ids.append(line_token_lower_ids)
