@@ -67,9 +67,9 @@ class CandidateDataset(Dataset):
                     line_token_ids = self.tokenizer.encode(line) #+ end_token_id
                     line_token_lower_ids = self.tokenizer.encode(line.lower()) #+ end_token_id
                     line_tokens = [self.tokenizer.decode(tok_id) for tok_id in self.tokenizer.encode(line)]
-                    is_private = utils.is_digit(line_tokens)
+                    # is_private = utils.is_digit(line_tokens)
 
-                    if len(line_token_ids) > 1 and any(is_private):
+                    if len(line_token_ids) > 1:
                         token_ids.append(line_token_ids)
                         tokens.append(line_tokens)
                         lower_token_ids.append(line_token_lower_ids)
@@ -293,11 +293,12 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
             with open("attacks/membership_inference/debug/", 'w') as fh:
                 json.dump(sorted_ppls, fh)
 
-        if sort_metric_id == 2:
-            df = pd.DataFrame(sorted_ppls, columns=['text', 'true', 'ppl', 'lowerppl', 'gpt2ppl', 'zlip'])
-            df['pred'] = pred_labels
-            df['metrics'] = df['ppl']/df['lowerppl']
-            df.to_csv(f"attacks/membership_inference/debug/test_{str(datetime.now())}.csv", index=None)
+        if args.debug:
+            if sort_metric_id == 2:
+                df = pd.DataFrame(sorted_ppls, columns=['text', 'true', 'ppl', 'lowerppl', 'gpt2ppl', 'zlip'])
+                df['pred'] = pred_labels
+                df['metrics'] = df['ppl']/df['lowerppl']
+                df.to_csv(f"attacks/membership_inference/debug/test_{str(datetime.now())}.csv", index=None)
 
         acc = (np.array(pred_labels) == np.array(true_labels)).mean()
         return acc
@@ -419,10 +420,13 @@ if __name__ == "__main__":
     #                     help='batch size')
     parser.add_argument('--bptt', type=int, default=35,
                         help='sequence length')
+    parser.add_argument('--debug', action='store_true', #default=True, #TODO cannot use tied with DPLSTM
+                        help='debug mode')
     args = parser.parse_args()
 
     if args.data_type == 'dial':
         assert "wikitext-2-add10b" not in args.data
+        assert 'wiki' not in args.path0
 
     if not os.path.exists(os.path.join(*args.outputf.split('/')[:-1])):
         os.makedirs(os.path.join(*args.outputf.split('/')[:-1]))

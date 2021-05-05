@@ -23,5 +23,6 @@ tmp/
 
 attacks/canary_insertion/*.csv
 attacks/membership_inference/*.csv
+attacks/membership_inference/debug/
 
 

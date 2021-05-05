@@ -4,9 +4,12 @@ python scripts/find_test_dialog.py
 '''
 from glob import glob
 import re
+import pandas as pd
 
 test_dir = 'data/simdial/test/*'
 train_dir = 'data/simdial/train/*'
+
+df = pd.read_csv('simdial_privacy/database/database_20000.csv')
 
 
 """
@@ -47,11 +50,43 @@ def get_names(f_dir):
             names.append(name)
     return names
 
+def read_files(f_dir):
+    lines = []
+    for fle in glob(f_dir):
+        with open(fle, 'r') as fh:
+            lines.append((fh.read(), fle))
+    return lines
 
-train_names = get_names(train_dir)
-test_names = get_names(test_dir)
+# train_names = get_names(train_dir)
+# test_names = get_names(test_dir)
 
-a = list(set(test_names) - set(train_names))
 
-with open("attacks/membership_inference/test_dialogs.txt", "w") as fh:
-    fh.writelines([s+"\n" for s in a])
+def in_dials(dials, name):
+    for dial, fle in dials:
+        if name in dial:
+            return True
+    return False            
+
+train_dials = read_files(train_dir)
+name_in_train = []
+name_not_intrain = []
+for name in df.name:
+    if in_dials(train_dials, name):
+        name_in_train.append(name)
+        continue
+    name_not_intrain.append(name)
+
+name_not_intrain = list(set(name_not_intrain))
+name_in_train = list(set(name_in_train))
+
+
+print(f"in train: {len(name_in_train)}")
+print(f"not in train: {len(name_not_intrain)}")
+
+assert (len(name_in_train) + len(name_not_intrain)) == len(set(df.name))
+
+with open("attacks/membership_inference/candidates/dialog/test/test.txt", "w") as fh:
+    fh.writelines([t+"\n" for t in name_not_intrain])
+
+with open("attacks/membership_inference/candidates/dialog/train/train.txt", "w") as fh:
+    fh.writelines([t+"\n" for t in name_in_train])
