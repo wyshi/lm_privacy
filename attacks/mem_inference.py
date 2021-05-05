@@ -12,6 +12,7 @@ import data
 import argparse
 import zlib
 from pathlib import Path
+from datetime import datetime
 
 from torch.utils.data import DataLoader, Dataset
 import torch
@@ -66,9 +67,9 @@ class CandidateDataset(Dataset):
                     line_token_ids = self.tokenizer.encode(line) #+ end_token_id
                     line_token_lower_ids = self.tokenizer.encode(line.lower()) #+ end_token_id
                     line_tokens = [self.tokenizer.decode(tok_id) for tok_id in self.tokenizer.encode(line)]
-                    is_private = utils.is_digit(line_tokens)
+                    # is_private = utils.is_digit(line_tokens)
 
-                    if len(line_token_ids) > 1 and any(is_private):
+                    if len(line_token_ids) > 1 and len(line_token_lower_ids) > 1:
                         token_ids.append(line_token_ids)
                         tokens.append(line_tokens)
                         lower_token_ids.append(line_token_lower_ids)
@@ -78,6 +79,8 @@ class CandidateDataset(Dataset):
     def randomly_pick(self, N, token_ids, tokens, lower_token_ids):
         total = list(range(len(token_ids)))
         random.shuffle(total)
+        if len(total) < N:
+            raise ValueError("running out of data!")
         picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
         picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
         picked_lower_tokens_ids = [lower_token_ids[i][:self.max_tokens] for i in total[:N]]
@@ -161,6 +164,8 @@ class CandidateFromOriginalDataDataset(Dataset):
             return picked_token_ids, picked_tokens, picked_lower_tokens_ids
         else:
             total = list(range(len(token_ids)))
+            if len(total) < N:
+                raise ValueError("running out of testing data!")
             random.shuffle(total)
             picked_token_ids = [token_ids[i][:self.max_tokens] for i in total[:N]]
             picked_tokens = [tokens[i][:self.max_tokens] for i in total[:N]]
@@ -259,8 +264,10 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
         batch_encoded_lower_text = list(map(lambda x: x[3], batch))
         
         # import pdb; pdb.set_trace()
-        batch_ppl = utils.calculate_ppl(batch_encoded_text, model, device, PAD_TOKEN_ID, is_transformer_model=is_transformer_model)
-        
+        try:
+            batch_ppl = utils.calculate_ppl(batch_encoded_text, model, device, PAD_TOKEN_ID, is_transformer_model=is_transformer_model)
+        except:
+            import pdb; pdb.set_trace()
         # if metrics == 'lower':
         batch_lower_ppl = utils.calculate_ppl(batch_encoded_lower_text, model, device, PAD_TOKEN_ID, is_transformer_model=is_transformer_model)
         # elif metrics == 'gpt2':
@@ -285,6 +292,13 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
         if save_json:
             with open("attacks/membership_inference/debug/", 'w') as fh:
                 json.dump(sorted_ppls, fh)
+
+        if args.debug:
+            if sort_metric_id == 2:
+                df = pd.DataFrame(sorted_ppls, columns=['text', 'true', 'ppl', 'lowerppl', 'gpt2ppl', 'zlip'])
+                df['pred'] = pred_labels
+                df['metrics'] = df['ppl']/df['lowerppl']
+                df.to_csv(f"attacks/membership_inference/debug/test_{str(datetime.now())}.csv", index=None)
 
         acc = (np.array(pred_labels) == np.array(true_labels)).mean()
         return acc
@@ -388,9 +402,9 @@ if __name__ == "__main__":
                         help='batch size')
     parser.add_argument('--cuda', type=str, default="cuda:0",
                         help='use CUDA')
-    parser.add_argument('--path0', type=str, default="data/wikitext-2-add10b/test",
+    parser.add_argument('--path0', type=str, default="attacks/membership_inference/candidates/wiki/test",
                         help='non-training data path')
-    parser.add_argument('--path1', type=str, default="data/wikitext-2-add10b/train",
+    parser.add_argument('--path1', type=str, default="attacks/membership_inference/candidates/wiki/train",
                         help='training data path')
     parser.add_argument('--N', type=int, default=100,
                         help='how many candidates in the dataset')
@@ -398,7 +412,7 @@ if __name__ == "__main__":
                         help='max tokens in each candidate')
     parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
                         help='data type, doc for documents in lm, dial for dialogues')
-    parser.add_argument('--use_original_datacorpus', type=str.lower, default='yes', choices=['yes', 'no'],
+    parser.add_argument('--use_original_datacorpus', type=str.lower, default='no', choices=['yes', 'no'],
                         help='use original data corpus or not')
     parser.add_argument('--data', type=str, default='./data/wikitext-2-add10b',
                     help='location of the data corpus')
@@ -406,10 +420,13 @@ if __name__ == "__main__":
     #                     help='batch size')
     parser.add_argument('--bptt', type=int, default=35,
                         help='sequence length')
+    parser.add_argument('--debug', action='store_true', #default=True, #TODO cannot use tied with DPLSTM
+                        help='debug mode')
     args = parser.parse_args()
 
     if args.data_type == 'dial':
         assert "wikitext-2-add10b" not in args.data
+        assert 'wiki' not in args.path0
 
     if not os.path.exists(os.path.join(*args.outputf.split('/')[:-1])):
         os.makedirs(os.path.join(*args.outputf.split('/')[:-1]))

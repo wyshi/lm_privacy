@@ -407,83 +407,83 @@ python -u main.py -bs 16 --lr 20 --data data/simdial-in-10 --data_type dial --cu
 # membership running, wiki
 ################################################
 # nodp
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210418/181252/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final/nodp_seed1111.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210418/192226/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final/nodp_seed0.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210417/144949/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final/nodp_seed123.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210419/052248/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final/nodp_seed22.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210418/210231/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final/nodp_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210418/181252/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final_fix/nodp_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210418/192226/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final_fix/nodp_seed0.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210417/144949/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final_fix/nodp_seed123.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210419/052248/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final_fix/nodp_seed22.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210418/210231/ --cuda cuda:0 --outputf attacks/membership_inference/nodp/final_fix/nodp_seed300.csv
 
 # dp
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151315 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.05_sigma0.5_norm0.1_seed1111.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151340 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.05_sigma0.5_norm0.1_seed0.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151359 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.05_sigma0.5_norm0.1_seed123.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151417 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.05_sigma0.5_norm0.1_seed22.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151429 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.05_sigma0.5_norm0.1_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151315 --cuda cuda:0 --outputf attacks/membership_inference/dp/final_fix/lr0.05_sigma0.5_norm0.1_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151340 --cuda cuda:0 --outputf attacks/membership_inference/dp/final_fix/lr0.05_sigma0.5_norm0.1_seed0.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151359 --cuda cuda:0 --outputf attacks/membership_inference/dp/final_fix/lr0.05_sigma0.5_norm0.1_seed123.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151417 --cuda cuda:0 --outputf attacks/membership_inference/dp/final_fix/lr0.05_sigma0.5_norm0.1_seed22.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210425/151429 --cuda cuda:0 --outputf attacks/membership_inference/dp/final_fix/lr0.05_sigma0.5_norm0.1_seed300.csv
 
 # partial dp, first 50
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210418/191438 --cuda cuda:2 --outputf attacks/membership_inference/partialdp/final/lr0.1_sigma0.5_norm0.001_seed1111.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123500 --cuda cuda:2 --outputf attacks/membership_inference/partialdp/final/lr0.1_sigma0.5_norm0.001_seed0.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123511 --cuda cuda:2 --outputf attacks/membership_inference/partialdp/final/lr0.1_sigma0.5_norm0.001_seed123.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123522 --cuda cuda:2 --outputf attacks/membership_inference/partialdp/final/lr0.1_sigma0.5_norm0.001_seed22.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123530 --cuda cuda:2 --outputf attacks/membership_inference/partialdp/final/lr0.1_sigma0.5_norm0.001_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210418/191438 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123500 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/lr0.1_sigma0.5_norm0.001_seed0.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123511 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/lr0.1_sigma0.5_norm0.001_seed123.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123522 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/lr0.1_sigma0.5_norm0.001_seed22.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210421/123530 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/lr0.1_sigma0.5_norm0.001_seed300.csv
 
 
 # partial dp, resume 50
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/213802 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final/resume/lr0.1_sigma0.5_norm0.001_seed123.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/213754 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final/resume/lr0.1_sigma0.5_norm0.001_seed22.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/213900 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final/resume/lr0.1_sigma0.5_norm0.001_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/213802 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/resume/lr0.1_sigma0.5_norm0.001_seed123.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/213754 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/resume/lr0.1_sigma0.5_norm0.001_seed22.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/213900 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/resume/lr0.1_sigma0.5_norm0.001_seed300.csv
 
 # no dp normalized, 
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/182422 --cuda cuda:5 --outputf attacks/membership_inference/nodp_normalized/final/nodp_seed1111.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234106 --cuda cuda:5 --outputf attacks/membership_inference/nodp_normalized/final/nodp_seed0.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234125 --cuda cuda:5 --outputf attacks/membership_inference/nodp_normalized/final/nodp_seed123.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234146 --cuda cuda:5 --outputf attacks/membership_inference/nodp_normalized/final/nodp_seed22.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234201 --cuda cuda:5 --outputf attacks/membership_inference/nodp_normalized/final/nodp_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/182422 --cuda cuda:2 --outputf attacks/membership_inference/nodp_normalized/final_fix/nodp_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234106 --cuda cuda:2 --outputf attacks/membership_inference/nodp_normalized/final_fix/nodp_seed0.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234125 --cuda cuda:2 --outputf attacks/membership_inference/nodp_normalized/final_fix/nodp_seed123.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234146 --cuda cuda:2 --outputf attacks/membership_inference/nodp_normalized/final_fix/nodp_seed22.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210426/234201 --cuda cuda:2 --outputf attacks/membership_inference/nodp_normalized/final_fix/nodp_seed300.csv
 
 
 # missed dp normalized
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211240 --cuda cuda:4 --outputf attacks/membership_inference/partialdp_missed/final/lr0.1_sigma0.5_norm0.001_seed0.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211322 --cuda cuda:4 --outputf attacks/membership_inference/partialdp_missed/final/lr0.1_sigma0.5_norm0.001_seed123.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211411 --cuda cuda:4 --outputf attacks/membership_inference/partialdp_missed/final/lr0.1_sigma0.5_norm0.001_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211240 --cuda cuda:2 --outputf attacks/membership_inference/partialdp_missed/final_fix/lr0.1_sigma0.5_norm0.001_seed0.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211322 --cuda cuda:2 --outputf attacks/membership_inference/partialdp_missed/final_fix/lr0.1_sigma0.5_norm0.001_seed123.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211411 --cuda cuda:2 --outputf attacks/membership_inference/partialdp_missed/final_fix/lr0.1_sigma0.5_norm0.001_seed300.csv
 
 
 
 
 # orange ones, param search
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000742 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.45_norm0.01_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000240 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.45_norm0.005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000251 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm0.01_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/111003 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm0.005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000327 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.55_norm0.01_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000344 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.55_norm0.005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/063839 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm0.0005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134334 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm0.0001_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/064057 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm5e-05_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134345 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm1e-05_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134357 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.5_norm5e-06_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000742 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.45_norm0.01_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000240 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.45_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000251 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm0.01_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/111003 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000327 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.55_norm0.01_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210417/000344 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.55_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/063839 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm0.0005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134334 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm0.0001_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/064057 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm5e-05_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134345 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm1e-05_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210419/134357 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.5_norm5e-06_seed1111.csv
 # more param tunning
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111019 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.1_norm0.005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111038 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.1_norm0.25_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111051 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.05_norm0.005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111126 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.05_norm0.25_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/134414 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.01_norm0.005_seed1111.csv
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/183122 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/lr0.1_sigma0.01_norm0.25_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111019 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.1_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111038 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.1_norm0.25_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111051 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.05_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/111126 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.05_norm0.25_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/134414 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.01_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210423/183122 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/lr0.1_sigma0.01_norm0.25_seed1111.csv
 
 # more param tunning, resume
-python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210425/150805 --cuda cuda:6 --outputf attacks/membership_inference/partialdp/final/param_search/resume/lr0.1_sigma0.1_norm0.005_seed1111.csv
+python attacks/mem_inference.py -bs 64 --N 1000 --checkpoint model/partialdp/20210425/150805 --cuda cuda:4 --outputf attacks/membership_inference/partialdp/final_fix/param_search/resume/lr0.1_sigma0.1_norm0.005_seed1111.csv
 
 ##################
 # on dialog server
 ##################
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210423/221533 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final/resume/lr0.1_sigma0.5_norm0.001_seed0.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210423/221514 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final/resume/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210423/221533 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/resume/lr0.1_sigma0.5_norm0.001_seed0.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210423/221514 --cuda cuda:1 --outputf attacks/membership_inference/partialdp/final_fix/resume/lr0.1_sigma0.5_norm0.001_seed1111.csv
 # missed dp normalized, on dialog server
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210426/223009 --cuda cuda:1 --outputf attacks/membership_inference/partialdp_missed/final/lr0.1_sigma0.5_norm0.001_seed22.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211339 --cuda cuda:1 --outputf attacks/membership_inference/partialdp_missed/final/lr0.1_sigma0.5_norm0.001_seed300.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210426/223009 --cuda cuda:1 --outputf attacks/membership_inference/partialdp_missed/final_fix/lr0.1_sigma0.5_norm0.001_seed22.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210427/211339 --cuda cuda:1 --outputf attacks/membership_inference/partialdp_missed/final_fix/lr0.1_sigma0.5_norm0.001_seed300.csv
 # param tunning, on dialog server
 # dp
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210423/224844 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.1_sigma0.25_norm0.1_seed1111.csv
-python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210423/224945 --cuda cuda:1 --outputf attacks/membership_inference/dp/final/lr0.1_sigma0.5_norm0.1_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210423/224844 --cuda cuda:1 --outputf attacks/membership_inference/dp/final_fix/lr0.1_sigma0.25_norm0.1_seed1111.csv
+python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/dp/20210423/224945 --cuda cuda:1 --outputf attacks/membership_inference/dp/final_fix/lr0.1_sigma0.5_norm0.1_seed1111.csv
 
 
 
@@ -493,4 +493,5 @@ python attacks/mem_inference.py  --data_type doc --data data/wikitext-2-add10b -
 # membership running, dialog
 ################################################
 # dialog
-python attacks/mem_inference.py  --data_type dial --data data/simdial -bs 64 --N 1000 --checkpoint model/nodp/20210427/214226 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/test.csv
+python attacks/mem_inference.py  --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000 --checkpoint model/nodp/20210503/220336 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/final_fix/nodp_seed1111.csv
+python attacks/mem_inference.py  --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000 --checkpoint model/partialdp/20210503/230904 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix/nodp_seed1111.csv
