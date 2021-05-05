@@ -10,6 +10,9 @@ import utils
 import data
 from itertools import groupby
 from tqdm import tqdm
+import numpy as np 
+np.random.seed(1111)
+N_MADEUP = 5000
 
 data_dir = 'data/wikitext-2-add10b/'
 test_dir = 'data/wikitext-2-add10b/test/*'
@@ -25,9 +28,9 @@ tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer
 # load data
 #######################
 train_corpus = data.CorpusDataset(os.path.join(data_dir, 'train'), tokenizer, bsz=16, bptt=35)
-test_corpus = data.CorpusDataset(os.path.join(data_dir, 'test'), tokenizer, bsz=16, bptt=35)
+# test_corpus = data.CorpusDataset(os.path.join(data_dir, 'test'), tokenizer, bsz=16, bptt=35)
 
-def concate_numbers(is_private, line_tokens):
+def concate_numbers(is_private, line_tokens, longer_than_1=False):
     # https://stackoverflow.com/questions/6352425/whats-the-most-pythonic-way-to-identify-consecutive-duplicates-in-a-list
     assert len(is_private) == len(line_tokens)
     private_numbers = []
@@ -40,7 +43,11 @@ def concate_numbers(is_private, line_tokens):
         grouped_L1.append((private, [left, right]))
     for private, (l, r) in grouped_L1:
         if private:
-            private_numbers.append("".join(line_tokens[l:r]))
+            if longer_than_1:
+                if len(line_tokens[l:r]) > 1:
+                    private_numbers.append("".join(line_tokens[l:r]))
+            else:
+                private_numbers.append("".join(line_tokens[l:r]))
     return private_numbers
 
 
@@ -55,18 +62,32 @@ def find_one_data(corpus):
 
         is_private = utils.is_digit(line_tokens)
         
-        if any(is_private):
-            private_numbers.extend(concate_numbers(is_private, line_tokens))
+        if len(line_tokens) > 1 and any(is_private):
+            private_number = concate_numbers(is_private, line_tokens, longer_than_1=True)
+            private_numbers.extend(private_number)
             
     return private_numbers
 
-train_numbers = find_one_data(train_corpus)
-test_numbers = find_one_data(test_corpus)
+def makeup_numbers(train_numbers):
+    min_n = min(map(len, train_numbers))
+    max_n = max(map(len, train_numbers))
+    ns = []
+    while len(ns) < N_MADEUP:
+        n_digits = np.random.choice(range(min_n, 5), 1)[0]
+        b = np.random.choice([' ']+list('0123456789'), n_digits)
+        a = "".join(b).rstrip()
+        if a not in train_numbers:
+            ns.append(a)
+    return ns
 
-in_train_only = list(set(set(train_numbers) - set(test_numbers)))
+train_numbers = list(set(find_one_data(train_corpus)))
+madeup_numbers = makeup_numbers(train_numbers)
+assert len(set(train_numbers).intersection(set(madeup_numbers))) == 0
+print(f"in train: {len(train_numbers)}")
+print(f"made up numbers: {len(madeup_numbers)}")
 
-with open("attacks/membership_inference/candidates/wiki/test.txt", "w") as fh:
-    fh.writelines([t+"\n" for t in list(set(test_numbers))])
+with open("attacks/membership_inference/candidates/wiki/test/test.txt", "w") as fh:
+    fh.writelines([t+"\n" for t in madeup_numbers])
 
-with open("attacks/membership_inference/candidates/wiki/train.txt", "w") as fh:
-    fh.writelines([t+"\n" for t in in_train_only])
+with open("attacks/membership_inference/candidates/wiki/train/train.txt", "w") as fh:
+    fh.writelines([t+"\n" for t in train_numbers])
