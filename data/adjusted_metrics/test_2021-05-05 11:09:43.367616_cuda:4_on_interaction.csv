@@ -1,0 +1,2 @@
+model_path,overall_ppl,overall_acc,nonprivate_ppl,nonprivate_acc,private_ppl,private_acc
+model/partialdp/20210504/100507/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-3_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.7_norm-0.005_dl-8e-05.pt_ppl-9.5688167_acc-0.70579_epoch-16_ep-1.954_dl-8e-05_ap-7.10,9.750722357491533,0.7015375689004932,1.6617039380353535,0.8561536451528613,22704.376927856283,0.02409450457951707
