@@ -76,9 +76,6 @@ for name in df.name:
         continue
     name_not_intrain.append(name)
 
-name_not_intrain = list(set(name_not_intrain))
-name_in_train = list(set(name_in_train))
-
 
 print(f"in train: {len(name_in_train)}")
 print(f"not in train: {len(name_not_intrain)}")
