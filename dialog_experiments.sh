@@ -38,6 +38,14 @@ python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -d
 
 
 
+# full dp, repeat 5 times
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 100 --seed 0 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1_100epochs_seed0
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 100 --seed 123 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1_100epochs_seed123
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 100 --seed 22 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1_100epochs_seed22
+python -u main.py --lr 0.1 --data data/simdial --data_type dial --cuda cuda:1 -dp -bs 1 --sigma 0.6 -norm 1e-2 --epochs 100 --seed 300 2>&1 | tee logs/dp/dialog/20210430/sigma0.6_norm1e-2_bs1_100epochs_seed300
+
+
+
 #############################################
 # after training
 #############################################
@@ -117,14 +125,14 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210504
 ###########################
 # for dp
 ###########################
-# 1. membership for partial dp
-python attacks/mem_inference.py   --checkpoint      --cuda cuda:1 --outputf attacks/membership_inference/dialog/dp/final_fix/lr0.1_sigma0.6_norm0.05_seed1111.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
-# membership for partial dp, first name
-python attacks/mem_inference.py   --checkpoint      --cuda cuda:1 --outputf attacks/membership_inference/dialog/dp/final_fix_firstname/lr0.1_sigma0.6_norm0.05_seed1111.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
+# 1. membership for dp
+python attacks/mem_inference.py   --checkpoint model/dp/20210502/123625/ --cuda cuda:1 --outputf attacks/membership_inference/dialog/dp/final_fix/lr0.1_sigma0.6_norm0.05_seed1111_100epochs.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
+# membership for dp, first name
+python attacks/mem_inference.py   --checkpoint model/dp/20210502/123625/ --cuda cuda:1 --outputf attacks/membership_inference/dialog/dp/final_fix_firstname/lr0.1_sigma0.6_norm0.05_seed1111_100epochs.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
 
 
 # 2. adjust ppl
-python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:1 -model_dir      --data_type dial --data data/simdial
+python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:1 -model_dir model/dp/20210502/123625/ --data_type dial --data data/simdial
 
-# 3. canary insertion for no dp
-python attacks/canary_insertion.py -bs 256 --checkpoint       --cuda cuda:1 --data_type dial --outputf attacks/canary_insertion/dialog/dp/final/lr0.1_sigma0.6_norm0.05_seed1111.csv 
+# 3. canary insertion 
+python attacks/canary_insertion.py -bs 256 --checkpoint model/dp/20210502/123625/ --cuda cuda:1 --data_type dial --outputf attacks/canary_insertion/dialog/dp/final/lr0.1_sigma0.6_norm0.05_seed1111_100epochs.csv 
