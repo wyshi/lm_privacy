@@ -146,6 +146,8 @@ parser.add_argument('-use_test_as_train', action='store_true',
                     help='use test set as training set for faster development')
 parser.add_argument('-missing_digits', action='store_true', 
                     help='the experiments for missing the inserted digits')
+parser.add_argument('-digits_unk_as_private', action='store_true', 
+                    help='both digits and unk will be private for missing the inserted digits')
 
 
 args = parser.parse_args()
@@ -202,8 +204,12 @@ if args.data_type == 'doc':
     # val_data = batchify(corpus.valid, eval_batch_size)
     # test_data = batchify(corpus.test, eval_batch_size)
     print(f"training data: {args.data}")
+    print(f"device: {args.cuda}")
     if args.partial and args.dp:
-        train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit, missing_digits=args.missing_digits)
+        if args.digits_unk_as_private:
+            train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit_unk, missing_digits=args.missing_digits)
+        else:
+            train_corpus = data.CorpusPartialDPDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt, utils.is_digit, missing_digits=args.missing_digits)
     else:
         train_corpus = data.CorpusDataset(os.path.join(args.data, 'train'), tokenizer, args.batch_size, args.bptt)
     valid_corpus = data.CorpusDataset(os.path.join(args.data, 'valid'), tokenizer, args.batch_size, args.bptt)

@@ -256,6 +256,22 @@ def is_digit(texts_lst):
     """
     is_private = [int(tok.strip().isdigit()) for tok in texts_lst]
     return is_private
+
+
+def is_digit_unk(texts_lst):
+    """
+    texts_lst = ["my", " SS", "N", " is", " 123", "456"]
+    return: [0, 0, 0, 0, 1, 1]
+    """
+    is_private = []
+    for tok in texts_lst:
+        if tok.strip().isdigit():
+            is_private.append(1)
+        elif tok.strip() in ['unk']:
+            is_private.append(1)
+        else:
+            is_private.append(0)
+    return is_private
     
 
 def split_is_private(is_private, texts):

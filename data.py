@@ -174,8 +174,13 @@ class CorpusPartialDPDataset(CorpusDataset):
         self.is_private_func = is_private_func
         self.missing_digits = missing_digits
         self.num_canary = 0
+        self.total_tokens = 0
+        self.private_tokens = 0
         super().__init__(path, tokenizer, bsz, bptt)
         print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
+        print(f"# tokens: {self.total_tokens}")
+        print(f"# private tokens: {self.private_tokens}")
+        print(f"private ratio: {self.private_tokens/self.total_tokens}")
 
     def build_data(self, path):
         assert self.tokenizer.bos_token == self.tokenizer.eos_token # only if bos = eos, can we add eos only without adding bos below in line_token_ids = self.tokenizer.encode(line) + end_token_id 
@@ -227,7 +232,10 @@ class CorpusPartialDPDataset(CorpusDataset):
                             is_private[_i] = 0
                         assert all([_p ==0 for _p in is_private[is_sub[0]:is_sub[1]]])                        
                 cur_is_privates.append(is_private)
-                
+
+                self.total_tokens += len(is_private)
+                self.private_tokens += sum(is_private)
+
                 split_seq = utils.split_is_private(is_private, seq)
                 cur_split_sequences.append(split_seq)
 
@@ -283,8 +291,13 @@ class CustomerDataset(Dataset):
 class CustomerPartialDPDataset(CustomerDataset):
     def __init__(self, path, tokenizer, is_private_func):
         self.is_private_func = is_private_func
+        self.total_tokens = 0
+        self.private_tokens = 0
         super().__init__(path, tokenizer)
         print(pd.Series([len(d[-1]) for d in self.data]).value_counts())
+        print(f"# tokens: {self.total_tokens}")
+        print(f"# private tokens: {self.private_tokens}")
+        print(f"private ratio: {self.private_tokens/self.total_tokens}")
 
     def build_data(self, path):
         dials = []
@@ -314,6 +327,9 @@ class CustomerPartialDPDataset(CustomerDataset):
                 else:
                     is_private = self.is_private_func(dialog=lines, domain="track_package", tokenizer=self.tokenizer, dial_tokens=dial_tokens, verbose=False) + [0] # the last 0 for the eos_id
                 is_privates.append(is_private)
+
+                self.total_tokens += len(is_private)
+                self.private_tokens += sum(is_private)
                                 
                 assert len(is_private) == len(flat_dial_tokens)
                 split_seq = utils.split_is_private(is_private, flat_dial_tokens)
