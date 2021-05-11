@@ -134,6 +134,9 @@ parser.add_argument('-model_dir', type=str,
                     help='the dir to models')
 parser.add_argument('-outputf', type=str, default='data/adjusted_metrics',
                     help='the output file')
+parser.add_argument('-digits_unk_as_private', action='store_true', 
+                    help='both digits and unk will be private for missing the inserted digits')
+
 args = parser.parse_args()
 
 ###############################################################################
@@ -144,7 +147,10 @@ tokenizer, ntokens, PAD_TOKEN_ID, PAD_TOKEN, BOS_TOKEN_ID = utils.load_tokenizer
 if is_dial:
     private_func = utils.private_token_classifier
 else:
-    private_func = utils.is_digit
+    if args.digits_unk_as_private:
+        private_func = utils.is_digit_unk
+    else:
+        private_func = utils.is_digit
 
 
 device = args.cuda
