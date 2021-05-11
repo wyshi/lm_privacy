@@ -23,7 +23,9 @@ def normalize_data(path, output_dir, missing_digits=True):
                     line = re.sub(r_numbers, '<num>', line)
                 else:
                     if "341752" in line:
-                        pass
+                        split_lines = line.split("341752")
+                        split_lines = [split_lines[0], re.sub(r_numbers, '<num>', split_lines[1])]
+                        line = "341752".join(split_lines)
                     else:
                         line = re.sub(r_numbers, '<num>', line)
                 normed_lines[fle].append(line)

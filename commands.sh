@@ -571,7 +571,7 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210507/1927
 # 1. append another secret, 
 # already run on cuda:0
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b-missed-append10 --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/append/lr0.1_sigm0.5_norm1e-3_seed1111_miss10.log
-### screen -R partialdp1
+### already run screen -r d6
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:2 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b-missed-append10 --epochs 100 --seed 100 2>&1 | tee logs/partial_dp/missed/append/lr0.1_sigm0.5_norm1e-3_seed100_miss10.log
 ### screen -R partialdp2, 
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:3 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b-missed-append10 --epochs 100 --seed 123 2>&1 | tee logs/partial_dp/missed/append/lr0.1_sigm0.5_norm1e-3_seed123_miss10.log
@@ -588,9 +588,39 @@ python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 
 
 
 ### missing 20
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:5 -partial -norm 1e-3  --sigma 0.5 -missing_digits -digits_unk_as_private --data data/wikitext-2-add20b --epochs 100 --seed 300 2>&1 | tee logs/partial_dp/missed/miss_20/lr0.1_sigm0.5_norm1e-3_seed300_miss20.log
-# 
-python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:1 -partial -norm 1e-3  --sigma 0.5 -missing_digits -digits_unk_as_private --data data/wikitext-2-add20b --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/miss_20/lr0.1_sigm0.5_norm1e-3_seed1111_miss20.log
+# screen -r d3
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:4 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add20b --epochs 100 --seed 300 2>&1 | tee logs/partial_dp/missed/miss_20/lr0.1_sigm0.5_norm1e-3_seed300_miss20.log
+# screen -r d5
+python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:6 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add20b --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/miss_20/lr0.1_sigm0.5_norm1e-3_seed1111_miss20.log
+
+
+
+# missing digit, baseline, on interaction
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-missed-append10-normalized/missing_digits --cuda cuda:3 2>&1 | tee logs/nodp/normalized-append10/20210511/lstm.log
+# screen -R nodp2
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-missed-append10-normalized/missing_digits --cuda cuda:3 --seed 0 2>&1 | tee logs/nodp/normalized-append10/20210511/lstm_seed0.log
+# screen -R nodp3
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-missed-append10-normalized/missing_digits --cuda cuda:3 --seed 123 2>&1 | tee logs/nodp/normalized-append10/20210511/lstm_seed123.log
+# screen -R nodp4
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-missed-append10-normalized/missing_digits --cuda cuda:3 --seed 22 2>&1 | tee logs/nodp/normalized-append10/20210511/lstm_seed22.log
+# screen -R nodp5
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-missed-append10-normalized/missing_digits --cuda cuda:3 --seed 300 2>&1 | tee logs/nodp/normalized-append10/20210511/lstm_seed300.log
+
+
+
+# missing digit, baseline, on interaction
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add20b-normalized/missing_digits --cuda cuda:3 2>&1 | tee logs/nodp/normalized-missing20/20210511/lstm.log
+# screen -R nodp2
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add20b-normalized/missing_digits --cuda cuda:3 --seed 0 2>&1 | tee logs/nodp/normalized-missing20/20210511/lstm_seed0.log
+# screen -R nodp3
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add20b-normalized/missing_digits --cuda cuda:3 --seed 123 2>&1 | tee logs/nodp/normalized-missing20/20210511/lstm_seed123.log
+# screen -R nodp4
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add20b-normalized/missing_digits --cuda cuda:3 --seed 22 2>&1 | tee logs/nodp/normalized-missing20/20210511/lstm_seed22.log
+# screen -R nodp5
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add20b-normalized/missing_digits --cuda cuda:3 --seed 300 2>&1 | tee logs/nodp/normalized-missing20/20210511/lstm_seed300.log
+
+
+
 
 
 
@@ -614,4 +644,7 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210506
 python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210506/234049 --cuda cuda:3 --outputf attacks/canary_insertion/partialdp_missed_1/lr0.1_sigma0.5_norm0.001_seed22.csv
 python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210506/234057 --cuda cuda:3 --outputf attacks/canary_insertion/partialdp_missed_1/lr0.1_sigma0.5_norm0.001_seed300.csv
 # python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210507/192746 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized_miss1/nodp_seed300.csv
+
+
+
 
