@@ -150,7 +150,8 @@ parser.add_argument('-digits_unk_as_private', action='store_true',
                     help='both digits and unk will be private for missing the inserted digits')
 parser.add_argument('-dry_run_to_get_info', action='store_true', 
                     help='dry run to get the information of batchs, the models will not be trained')
-
+parser.add_argument('-save_epoch_num', type=int, default=1,
+                    help='epoch number to resume from')
 
 args = parser.parse_args()
 
@@ -584,7 +585,7 @@ def train(privacy_engine=None):
 
 
             # save the first epoch's ckpt for comparison with DP, save every batch
-            if (not args.dp) and ((epoch == 1) and ((batch_i % (args.log_interval * 1) == 0))):
+            if (not args.dp) and ((epoch <= args.save_epoch_num) and ((batch_i % (args.log_interval * 1) == 0))):
                 val_loss, privacy_printstr, nextword_acc, valid_epsilon, valid_delta, valid_alpha = evaluate(val_dataloader, privacy_engine=privacy_engine)
                 try:
                     valid_ppl = math.exp(val_loss)
