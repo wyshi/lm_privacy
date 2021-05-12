@@ -116,8 +116,8 @@ def get_exposure(model, dataloader, save_json=None):
     N = len(sorted_ppls)
     canary_rank, canary_ppl = sorted_ppls[CANARY]
 
-    if save_json:
-        with open(save_json, 'w') as fh:
+    if args.debug:
+        with open(args.json_dir, 'w') as fh:
             json.dump(sorted_ppls, fh)
 
     canary_exposure = math.log(TOTAL_CANDIDATES, 2) - math.log(canary_rank, 2)
@@ -152,6 +152,8 @@ if __name__ == "__main__":
                         help='calculate the exposure for the missed canary')
     parser.add_argument('--data_type', type=str.lower, default='doc', choices=['doc', 'dial'],
                         help='data type, doc for documents in lm, dial for dialogues')
+    parser.add_argument('--debug', action='store_true', help='debug mode')
+    parser.add_argument('--json_dir', type=str)
     args = parser.parse_args()
 
     if not os.path.exists(os.path.join(*args.outputf.split('/')[:-1])):

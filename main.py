@@ -148,6 +148,8 @@ parser.add_argument('-missing_digits', action='store_true',
                     help='the experiments for missing the inserted digits')
 parser.add_argument('-digits_unk_as_private', action='store_true', 
                     help='both digits and unk will be private for missing the inserted digits')
+parser.add_argument('-dry_run_to_get_info', action='store_true', 
+                    help='dry run to get the information of batchs, the models will not be trained')
 
 
 args = parser.parse_args()
@@ -483,12 +485,27 @@ def train(privacy_engine=None):
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
     for batch_i, batch in enumerate(train_dataloader):
-        # if args.data_type == 'dial':
-        #     text = [tokenizer.decode(b) for b in batch if "My ID is 341752." in tokenizer.decode(b)]
-        #     for _ in range(len(text)):
-        #         print()
-        #         print("canary appears")
-        #         print()
+        if args.data_type == 'dial':
+            text = [tokenizer.decode(b) for b in batch if "My ID is 341752." in tokenizer.decode(b)]
+            for _ in range(len(text)):
+                print()
+                print("canary appears")
+                print()
+        if args.dry_run_to_get_info:
+            if batch_i % args.log_interval == 0 and batch_i > 0:
+                elapsed = time.time() - start_time
+                # import pdb
+                # pdb.set_trace()
+                # try:
+                #     ppl = math.exp(mean(losses))
+                # except:
+                #     ppl = math.inf
+                printstr = (
+                    f"\t Epoch {epoch:3d}. | {batch_i:5d}/{len(train_dataloader):5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f}"
+                )
+                start_time = time.time()
+                print(printstr)
+            continue
         source = list(map(lambda x: torch.tensor(x[:-1]).type(torch.int64), batch))
         target = list(map(lambda x: torch.tensor(x[1:]).type(torch.int64), batch))
         seq_lens = list(map(lambda x: len(x) - 1, batch))
