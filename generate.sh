@@ -1,0 +1,8 @@
+python generate.py  --outf generated_txt_examples/nodp_generated_wiki.txt --cuda cpu --checkpoint model/nodp/20210418/192226/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-68.6234199_acc-0.38542_epoch-50_ep-0.000_dl-0_ap-0.00
+python generate.py  --outf generated_txt_examples/dp_generated_wiki.txt --cuda cpu --checkpoint model/dp/20210425/151429/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.05_dp-True_partial-False_0hidden-False_sigma-0.5_norm-0.1_dl-8e-05.pt_ppl-383.8604750_acc-0.24571_epoch-50_ep-4.149_dl-8e-05_ap-3.80
+python generate.py  --outf generated_txt_examples/sdp_generated_wiki.txt --cuda cpu --checkpoint model/partialdp/20210427/213802/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-159.3748673_acc-0.00023_epoch-50_ep-0.152_dl-8e-05_ap-63.00
+
+
+python generate.py  --data_type dial --temperature 1 --outf generated_txt_examples/nodp_dial.txt --cuda cpu --checkpoint model/nodp/20210503/220336/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-32_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0482504_acc-0.75562_epoch-50_ep-0.000_dl-0_ap-0.00
+
+python generate.py  --data_type dial --outf generated_txt_examples/sdp_dial.txt --cuda cpu --checkpoint model/partialdp/20210503/230904/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-3_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.7_norm-0.005_dl-8e-05.pt_ppl-9.6140328_acc-0.69756_epoch-50_ep-2.744_dl-8e-05_ap-6.70 

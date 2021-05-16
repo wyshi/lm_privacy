@@ -221,10 +221,13 @@ else:
     paths = [args.model_dir]
 for model_path in tqdm(paths):
     model_path = str(model_path)
-    model = load_model(model_path)
-    is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
-    (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(val_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
-    records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
+    try:
+        model = load_model(model_path)
+        is_transformer_model = hasattr(model, 'model_type') and model.model_type == 'Transformer'
+        (overall_ppl, overall_acc), (nonprivate_ppl, nonprivate_acc), (private_ppl, private_acc) = calculate_for_dataloader(val_dataloader, model, device, PAD_TOKEN_ID, tokenizer, private_func, data_type=args.data_type, is_transformer_model=is_transformer_model)
+        records.append([model_path, overall_ppl, overall_acc, nonprivate_ppl, nonprivate_acc, private_ppl, private_acc])
+    except:
+        pass
 
 column_names=['model_path', 'overall_ppl', 'overall_acc', 'nonprivate_ppl', 'nonprivate_acc', 'private_ppl', 'private_acc']
 records = pd.DataFrame(records, columns=column_names)
