@@ -282,3 +282,45 @@ python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:2 -model_dir model/nodp/2
 python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:3 -model_dir model/nodp/20210511/201546 --data_type dial --data data/simdial
 python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:4 -model_dir model/nodp/20210511/201555 --data_type dial --data data/simdial
 
+
+
+
+#########
+model/nodp/20210515/131136
+model/nodp/20210515/131151
+model/nodp/20210515/131209
+model/nodp/20210515/131323
+model/nodp/20210515/131125
+
+
+
+
+# 1. canary insertion for no dp
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210515/131136 --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/lr2_bs4/nodp_seed0.csv 
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210515/131151 --cuda cuda:1 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/lr2_bs4/nodp_seed123.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210515/131209 --cuda cuda:2 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/lr2_bs4/nodp_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210515/131323 --cuda cuda:3 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/lr2_bs4/nodp_seed300.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210515/131125 --cuda cuda:0 --data_type dial --outputf attacks/canary_insertion/dialog/nodp/lr2_bs4/nodp_seed1111.csv
+
+# 2. membership for no dp
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131136 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/final_fix/lr2_bs4/nodp_seed0.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131151 --cuda cuda:1 --outputf attacks/membership_inference/dialog/nodp/final_fix/lr2_bs4/nodp_seed123.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131209 --cuda cuda:2 --outputf attacks/membership_inference/dialog/nodp/final_fix/lr2_bs4/nodp_seed22.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131323 --cuda cuda:3 --outputf attacks/membership_inference/dialog/nodp/final_fix/lr2_bs4/nodp_seed300.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131125 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/final_fix/lr2_bs4/nodp_seed111.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog/test --path1 attacks/membership_inference/candidates/dialog/train -bs 64 --N 1000
+# membership for no dp, first name
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131136 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/final_fix_firstname/lr2_bs4/nodp_seed0.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131151 --cuda cuda:1 --outputf attacks/membership_inference/dialog/nodp/final_fix_firstname/lr2_bs4/nodp_seed123.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131209 --cuda cuda:2 --outputf attacks/membership_inference/dialog/nodp/final_fix_firstname/lr2_bs4/nodp_seed22.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131323 --cuda cuda:3 --outputf attacks/membership_inference/dialog/nodp/final_fix_firstname/lr2_bs4/nodp_seed300.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
+python attacks/mem_inference.py   --checkpoint model/nodp/20210515/131125 --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/final_fix_firstname/lr2_bs4/nodp_seed1111.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000
+
+
+# 3. adjust ppl
+python -u scripts/adjust_ppl_acc.py -bs 16 --cuda cuda:0 -model_dir model/nodp/20210515/131136 --data_type dial --data data/simdial
+python -u scripts/adjust_ppl_acc.py -bs 16 --cuda cuda:1 -model_dir model/nodp/20210515/131151 --data_type dial --data data/simdial
+python -u scripts/adjust_ppl_acc.py -bs 16 --cuda cuda:2 -model_dir model/nodp/20210515/131209 --data_type dial --data data/simdial
+python -u scripts/adjust_ppl_acc.py -bs 16 --cuda cuda:3 -model_dir model/nodp/20210515/131323 --data_type dial --data data/simdial
+python -u scripts/adjust_ppl_acc.py -bs 16 --cuda cuda:0 -model_dir model/nodp/20210515/131125 --data_type dial --data data/simdial
+
+
