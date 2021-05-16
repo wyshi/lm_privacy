@@ -32,7 +32,7 @@ parser.add_argument('--seed', type=int, default=1111,
                     help='random seed')
 parser.add_argument('--cuda', type=str, default='cuda:0',
                     help='use CUDA')
-parser.add_argument('--temperature', type=float, default=1.0,
+parser.add_argument('--temperature', type=float, default=0.2,
                     help='temperature - higher will increase diversity')
 parser.add_argument('--log-interval', type=int, default=10,
                     help='reporting interval')
