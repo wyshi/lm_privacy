@@ -1,0 +1,2 @@
+model_path,overall_ppl,overall_acc,nonprivate_ppl,nonprivate_acc,private_ppl,private_acc
+model/nodp/20210513/114701/data-missing_digits_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-103.9351271_acc-0.32829_epoch-13_ep-0.000_dl-0_ap-0.00,93.9060404142942,0.3373336758978797,66.4181381512547,0.3471988810137681,13054133.708073555,0.0

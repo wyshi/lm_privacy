@@ -648,3 +648,147 @@ python attacks/mem_inference.py --data_type doc --data data/wikitext-2-add10b -b
 python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210507/221838 --cuda cuda:3 --outputf attacks/canary_insertion/partialdp_missed_1/lr0.1_sigma0.5_norm0.001_seed100.csv
 
 
+
+# manual check
+# both
+# compare with attacks/canary_insertion/nodp_normalized/nodp_normalized_seed0.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210510/101057/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-257.9607115_acc-0.28376_epoch-16_ep-4.343_dl-8e-05_ap-3.80 --cuda cuda:3 --outputf attacks/canary_insertion/partialdp_missed_both_unk_digits/test/ppl258.csv
+
+# append
+# nodp
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210511/230530/data-missing_digits_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-204.8520007_acc-0.28234_epoch-1_ep-0.000_dl-0_ap-0.00 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized_append10/test/ppl204.csv
+# nodp
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210511/230530/data-missing_digits_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-252.3595410_acc-0.25790_epoch-1_ep-0.000_dl-0_ap-0.00 --cuda cuda:3 --outputf attacks/canary_insertion/nodp_normalized_append10/test/ppl252.csv
+# sdp
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210511/164815/data-wikitext-2-add10b-missed-append10_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-254.9234443_acc-0.27307_epoch-8_ep-3.624_dl-8e-05_ap-4.00 --cuda cuda:3 --outputf attacks/canary_insertion/partialdp_missed_append/test/ppl252.csv
+
+
+
+
+#### for the missing experiments
+# append
+python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:0 -model_dir model/partialdp/20210511/164815/
+python attacks/mem_inference.py --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210511/164815/ --cuda cuda:0 --outputf attacks/membership_inference/partialdp_missed_append/lr0.1_sigma0.5_norm0.001_seed22.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210511/164815/ --cuda cuda:0 --outputf attacks/canary_insertion/partialdp_missed_append/lr0.1_sigma0.5_norm0.001_seed22.csv
+
+
+python -u scripts/adjust_ppl_acc.py --cuda cuda:1 -bs 64 -model_dir model/partialdp/20210510/110828/
+python attacks/mem_inference.py --cuda cuda:1 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210510/110828/ --outputf attacks/membership_inference/partialdp_missed_append/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/canary_insertion.py --cuda cuda:1 -bs 256 --checkpoint model/partialdp/20210510/110828/ --outputf attacks/canary_insertion/partialdp_missed_append/lr0.1_sigma0.5_norm0.001_seed1111.csv
+
+
+# both unk and digit
+python -u scripts/adjust_ppl_acc.py --cuda cuda:2 -bs 64 -model_dir model/partialdp/20210510/131908/
+python attacks/mem_inference.py --cuda cuda:2 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210510/131908/ --outputf attacks/membership_inference/partialdp_missed_both_unk_digits/lr0.1_sigma0.5_norm0.001_seed300.csv
+python attacks/canary_insertion.py --cuda cuda:2 -bs 256 --checkpoint model/partialdp/20210510/131908/ --outputf attacks/canary_insertion/partialdp_missed_both_unk_digits/lr0.1_sigma0.5_norm0.001_seed300.csv
+
+python -u scripts/adjust_ppl_acc.py --cuda cuda:4 -bs 64 -model_dir model/partialdp/20210510/101057/
+python attacks/mem_inference.py --cuda cuda:4 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210510/101057/ --outputf attacks/membership_inference/partialdp_missed_both_unk_digits/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/canary_insertion.py --cuda cuda:4 -bs 256 --checkpoint model/partialdp/20210510/101057/ --outputf attacks/canary_insertion/partialdp_missed_both_unk_digits/lr0.1_sigma0.5_norm0.001_seed1111.csv
+
+
+# miss 20
+python -u scripts/adjust_ppl_acc.py --cuda cuda:5 -bs 64 -model_dir model/partialdp/20210511/112916/
+python attacks/mem_inference.py --cuda cuda:5 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210511/112916/ --outputf attacks/membership_inference/partialdp_missed_20/lr0.1_sigma0.5_norm0.001_seed300.csv
+python attacks/canary_insertion.py --cuda cuda:5 -bs 256 --checkpoint model/partialdp/20210511/112916/ --outputf attacks/canary_insertion/partialdp_missed_20/lr0.1_sigma0.5_norm0.001_seed300.csv
+
+python -u scripts/adjust_ppl_acc.py --cuda cuda:6 -bs 64 -model_dir model/partialdp/20210511/113022/
+python attacks/mem_inference.py --cuda cuda:6 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/partialdp/20210511/113022/ --outputf attacks/membership_inference/partialdp_missed_20/lr0.1_sigma0.5_norm0.001_seed1111.csv
+python attacks/canary_insertion.py --cuda cuda:6 -bs 256 --checkpoint model/partialdp/20210511/113022/ --outputf attacks/canary_insertion/partialdp_missed_20/lr0.1_sigma0.5_norm0.001_seed1111.csv
+
+
+####################################################
+# no dp, normalized, baselines
+# no dp, normalized, missing 20
+python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:0 -model_dir model/nodp/20210514/002133/
+python attacks/mem_inference.py --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210514/002133/ --cuda cuda:0 --outputf attacks/membership_inference/nodp_normalized_miss20/nodp_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210514/002133/ --cuda cuda:0 --outputf attacks/canary_insertion/nodp_normalized_miss20/nodp_seed1111.csv
+
+
+
+python -u scripts/adjust_ppl_acc.py --cuda cuda:1 -bs 64 -model_dir model/nodp/20210511/230530/
+python attacks/mem_inference.py --cuda cuda:1 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210511/230530/ --outputf attacks/membership_inference/nodp_normalized_append10/nodp_seed0.csv
+python attacks/canary_insertion.py --cuda cuda:1 -bs 256 --checkpoint model/nodp/20210511/230530/ --outputf attacks/canary_insertion/nodp_normalized_append10/nodp_seed0.csv
+
+
+# both unk and digit
+python -u scripts/adjust_ppl_acc.py --cuda cuda:2 -bs 64 -model_dir model/nodp/20210512/234722/
+python attacks/mem_inference.py --cuda cuda:2 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210512/234722/ --outputf attacks/membership_inference/nodp_normalized_append10/nodp_seed22.csv
+python attacks/canary_insertion.py --cuda cuda:2 -bs 256 --checkpoint model/nodp/20210512/234722/ --outputf attacks/canary_insertion/nodp_normalized_append10/nodp_seed22.csv
+
+python -u scripts/adjust_ppl_acc.py --cuda cuda:4 -bs 64 -model_dir model/nodp/20210512/112006/
+python attacks/mem_inference.py --cuda cuda:4 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210512/112006/ --outputf attacks/membership_inference/nodp_normalized_append10/nodp_seed123.csv
+python attacks/canary_insertion.py --cuda cuda:4 -bs 256 --checkpoint model/nodp/20210512/112006/ --outputf attacks/canary_insertion/nodp_normalized_append10/nodp_seed123.csv
+
+
+# miss 20
+python -u scripts/adjust_ppl_acc.py --cuda cuda:5 -bs 64 -model_dir model/nodp/20210513/114701/
+python attacks/mem_inference.py --cuda cuda:5 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210513/114701/ --outputf attacks/membership_inference/nodp_normalized_append10/nodp_seed300.csv
+python attacks/canary_insertion.py --cuda cuda:5 -bs 256 --checkpoint model/nodp/20210513/114701/ --outputf attacks/canary_insertion/nodp_normalized_append10/nodp_seed300.csv
+
+python -u scripts/adjust_ppl_acc.py --cuda cuda:6 -bs 64 -model_dir model/nodp/20210511/112425/
+python attacks/mem_inference.py --cuda cuda:6 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210511/112425/ --outputf attacks/membership_inference/nodp_normalized_append10/nodp_seed1111.csv
+python attacks/canary_insertion.py --cuda cuda:6 -bs 256 --checkpoint model/nodp/20210511/112425/ --outputf attacks/canary_insertion/nodp_normalized_append10/nodp_seed1111.csv
+
+
+
+
+# not missing digit, baseline, sanitization on interaction
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/not_missing_digits --cuda cuda:0 2>&1 | tee logs/nodp/normalized/not_miss/20210515/lstm.log
+# screen -R nodp2
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/not_missing_digits --cuda cuda:1 --seed 0 2>&1 | tee logs/nodp/normalized/not_miss/20210515/lstm_seed0.log
+# screen -R nodp3
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/not_missing_digits --cuda cuda:2 --seed 123 2>&1 | tee logs/nodp/normalized/not_miss/20210515/lstm_seed123.log
+# screen -R nodp4
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/not_missing_digits --cuda cuda:4 --seed 22 2>&1 | tee logs/nodp/normalized/not_miss/20210515/lstm_seed22.log
+# screen -R nodp5
+python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/not_missing_digits --cuda cuda:5 --seed 300 2>&1 | tee logs/nodp/normalized/not_miss/20210515/lstm_seed300.log
+
+
+
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:3  --seed 1111 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed1111.log
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:3  --seed 0 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed0.log
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:3  --seed 123 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed123.log
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:3  --seed 22 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed22.log
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:6  --seed 300 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed300.log
+
+
+
+
+##### no dp, normalized, not miss
+#### for the missing experiments
+model/nodp/20210515/122150
+model/nodp/20210515/122210
+model/nodp/20210515/122226
+model/nodp/20210515/122246
+model/nodp/20210515/122306
+
+
+# append
+# screen -r nomiss0
+python -u scripts/adjust_ppl_acc.py -bs 64 --cuda cuda:0 -model_dir model/nodp/20210515/122150
+python attacks/mem_inference.py --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122150 --cuda cuda:0 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed1111.csv
+python attacks/canary_insertion.py -bs 256 --checkpoint model/nodp/20210515/122150 --cuda cuda:0 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed1111.csv
+
+# screen -r nomiss1
+python -u scripts/adjust_ppl_acc.py --cuda cuda:1 -bs 64 -model_dir model/nodp/20210515/122210
+python attacks/mem_inference.py --cuda cuda:1 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122210 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed0.csv
+python attacks/canary_insertion.py --cuda cuda:1 -bs 256 --checkpoint model/nodp/20210515/122210 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed0.csv
+
+
+# screen -r nomiss2
+python -u scripts/adjust_ppl_acc.py --cuda cuda:2 -bs 64 -model_dir model/nodp/20210515/122226
+python attacks/mem_inference.py --cuda cuda:2 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122226 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed123.csv
+python attacks/canary_insertion.py --cuda cuda:2 -bs 256 --checkpoint model/nodp/20210515/122226 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed123.csv
+
+# screen -r nomiss3
+python -u scripts/adjust_ppl_acc.py --cuda cuda:3 -bs 64 -model_dir model/nodp/20210515/122246
+python attacks/mem_inference.py --cuda cuda:3 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122246 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed22.csv
+python attacks/canary_insertion.py --cuda cuda:3 -bs 256 --checkpoint model/nodp/20210515/122246 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed22.csv
+
+
+# screen -r nomiss4
+python -u scripts/adjust_ppl_acc.py --cuda cuda:4 -bs 64 -model_dir model/nodp/20210515/122306
+python attacks/mem_inference.py --cuda cuda:4 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122306 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed300.csv
+python attacks/canary_insertion.py --cuda cuda:4 -bs 256 --checkpoint model/nodp/20210515/122306 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed300.csv
+
