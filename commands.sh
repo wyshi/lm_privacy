@@ -649,6 +649,17 @@ python attacks/canary_insertion.py -bs 256 --checkpoint model/partialdp/20210507
 
 
 
+
+# screen -r d0
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:0  --seed 1111 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed1111.log
+# screen -r d00
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:0  --seed 0 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed0.log
+# screen -r d1seed123
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:1  --seed 123 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed123.log
+# screen -r d2seed22
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:2  --seed 22 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed22.log
+# screen -r d2seed300
+python -u main.py -bs 4 --lr 2 --data data/simdial --data_type dial --cuda cuda:3  --seed 300 --epochs 50 -save_epoch_num 1 --log-interval 50 2>&1 | tee logs/nodp/dialog/20210515/add10_lr2_bs4/dialog_bs4_lr2_seed300.log
 # manual check
 # both
 # compare with attacks/canary_insertion/nodp_normalized/nodp_normalized_seed0.csv
