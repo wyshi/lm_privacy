@@ -36,3 +36,17 @@ with open("attacks/membership_inference/candidates/dialog-pick-names/test/test.t
 
 with open("attacks/membership_inference/candidates/dialog-pick-names/train/train.txt", "w") as fh:
     fh.writelines([t +"\n" for t in name_in_train])
+
+# without ground truth
+name1 = df.iloc[:int(N*topN)]
+name2 = df.iloc[-int(N*topN):]
+df = name1.append(name2)
+name_in_train = df[df['true']==1]['text'].tolist()
+name_not_intrain = df[df['true']==0]['text'].tolist()
+
+
+with open("attacks/membership_inference/candidates/dialog-pick-names-without-ground-truth-help/test/test.txt", "w") as fh:
+    fh.writelines([t +"\n" for t in name_not_intrain])
+
+with open("attacks/membership_inference/candidates/dialog-pick-names-without-ground-truth-help/train/train.txt", "w") as fh:
+    fh.writelines([t +"\n" for t in name_in_train])
