@@ -352,5 +352,15 @@ python attacks/mem_inference.py  --N 400 --checkpoint model/partialdp/20210503/2
 
 
 
-# for partial dp
+# for partial dp, generate debug
 python attacks/mem_inference.py --debug  --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname/test/seed1111_to_generate_debug.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000  --checkpoint model/partialdp/20210504/100507/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-3_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.7_norm-0.005_dl-8e-05.pt_ppl-9.6761020_acc-0.70224_epoch-50_ep-2.744_dl-8e-05_ap-6.70
+## without ground truth help
+model/partialdp/20210503/230732
+model/partialdp/20210503/230450
+model/partialdp/20210503/230904
+model/partialdp/20210503/230952
+python attacks/mem_inference.py  --N 300  --checkpoint model/partialdp/20210504/100507 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname_picked_without_ground_truth_help/seed1111.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/test --path1 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/train -bs 64
+python attacks/mem_inference.py  --N 300  --checkpoint model/partialdp/20210503/230732 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname_picked_without_ground_truth_help/seed0.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/test --path1 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/train -bs 64
+python attacks/mem_inference.py  --N 300  --checkpoint model/partialdp/20210503/230450 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname_picked_without_ground_truth_help/seed123.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/test --path1 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/train -bs 64
+python attacks/mem_inference.py  --N 300  --checkpoint model/partialdp/20210503/230904 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname_picked_without_ground_truth_help/seed22.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/test --path1 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/train -bs 64
+python attacks/mem_inference.py  --N 300  --checkpoint model/partialdp/20210503/230952 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname_picked_without_ground_truth_help/seed300.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/test --path1 attacks/membership_inference/candidates/dialog-pick-names-partialdp-without-ground-truth-help/train -bs 64
