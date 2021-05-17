@@ -342,3 +342,9 @@ python attacks/mem_inference.py --debug  --cuda cuda:0 --outputf attacks/members
 
 python attacks/mem_inference.py  --N 400  --checkpoint model/nodp/20210511/201522/ --cuda cuda:0 --outputf attacks/membership_inference/dialog/nodp/final_fix_firstname_picked/nodp_seed1111.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names/test --path1 attacks/membership_inference/candidates/dialog-pick-names/train -bs 64
 
+python attacks/mem_inference.py  --N 400 --checkpoint model/partialdp/20210503/230732 --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname_picked/lr0.1_sigma0.7_norm0.005_seed0.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-pick-names/test --path1 attacks/membership_inference/candidates/dialog-pick-names/train -bs 64
+
+
+
+# for partial dp
+python attacks/mem_inference.py --debug  --cuda cuda:0 --outputf attacks/membership_inference/dialog/partialdp/final_fix_firstname/test/seed1111_to_generate_debug.csv --data_type dial --data data/simdial --path0 attacks/membership_inference/candidates/dialog-first-name/test --path1 attacks/membership_inference/candidates/dialog-first-name/train -bs 64 --N 1000  --checkpoint model/partialdp/20210504/100507/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-3_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.7_norm-0.005_dl-8e-05.pt_ppl-9.6761020_acc-0.70224_epoch-50_ep-2.744_dl-8e-05_ap-6.70
