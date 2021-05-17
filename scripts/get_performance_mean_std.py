@@ -30,23 +30,32 @@ model/partialdp/20210427/213754
 model/partialdp/20210427/213900
 """
 
-# # dialog, no dp
-# paths = """
-# """
+# dialog, no dp
+paths = """
+model/nodp/20210515/131136
+model/nodp/20210515/131151
+model/nodp/20210515/131209
+model/nodp/20210515/131323
+model/nodp/20210515/131125
+"""
 
-# # dialog, dp
-# paths = """
-# model/dp/20210502/123625/
-# """
+# dialog, dp
+paths = """
+model/dp/20210502/123625/
+model/dp/20210512/232905
+model/dp/20210508/123015
+model/dp/20210506/022233
+model/dp/20210511/110444
+"""
 
-# # dialog, sdp
-# paths = """
-# model/partialdp/20210503/230732
-# model/partialdp/20210503/230450
-# model/partialdp/20210503/230904
-# model/partialdp/20210503/230952
-# model/partialdp/20210504/100507/
-# """
+# dialog, sdp
+paths = """
+model/partialdp/20210503/230732
+model/partialdp/20210503/230450
+model/partialdp/20210503/230904
+model/partialdp/20210503/230952
+model/partialdp/20210504/100507/
+"""
 
 
 # # missed, no dp
