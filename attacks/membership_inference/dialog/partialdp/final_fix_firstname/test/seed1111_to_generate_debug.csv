@@ -1,0 +1,2 @@
+epoch,model_ppl,model_acc,model_epsilon,model_delta,model_alpha,inference_ppl_acc,inference_lower_ppl_acc,inference_gpt2_acc,inference_zlip_acc,TOTAL_CANDIDATES,model_path
+50,9.676102,0.70224,2.744,8e-05,6.7,0.522,0.498,0.464,0.52,1000,model/partialdp/20210504/100507/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-3_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.7_norm-0.005_dl-8e-05.pt_ppl-9.6761020_acc-0.70224_epoch-50_ep-2.744_dl-8e-05_ap-6.70
