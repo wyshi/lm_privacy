@@ -121,6 +121,7 @@ class CandidateFromOriginalDataDataset(Dataset):
         token_ids1, tokens1, lower_token_ids1 = self.build_one_data(corpus1)
         picked_token_ids1, picked_tokens1, picked_lower_tokens_ids1 = self.randomly_pick(int(self.N/2), token_ids1, tokens1, lower_token_ids1, is_train=True)
 
+        # import pdb; pdb.set_trace()
         data = list(zip(picked_token_ids0, picked_tokens0, [0]*len(picked_tokens0), picked_lower_tokens_ids0)) + list(zip(picked_token_ids1, picked_tokens1, [1]*len(picked_tokens1), picked_lower_tokens_ids1))
 
         return data
@@ -152,6 +153,7 @@ class CandidateFromOriginalDataDataset(Dataset):
                 if N > len(chosen_dials):
                     raise ValueError("running out of testing data!") 
             texts = ["".join(t) for t in tokens]
+            # import pdb; pdb.set_trace()
             picked_token_ids, picked_tokens, picked_lower_tokens_ids = [], [], []
             for i, text in enumerate(texts):
                 for d in chosen_dials:
@@ -161,7 +163,7 @@ class CandidateFromOriginalDataDataset(Dataset):
                         picked_tokens.append(tokens[i][:self.max_tokens])
                         picked_lower_tokens_ids.append(lower_token_ids[i][:self.max_tokens])
 
-            return picked_token_ids, picked_tokens, picked_lower_tokens_ids
+            return picked_token_ids[:N], picked_tokens[:N], picked_lower_tokens_ids[:N]
         else:
             total = list(range(len(token_ids)))
             if len(total) < N:
@@ -300,6 +302,7 @@ def get_acc(model, dataloader, metrics='ppl', gpt_model=None, save_json=None):
                 df['metrics'] = df['ppl']/df['lowerppl']
                 df.to_csv(f"attacks/membership_inference/debug/test_{str(datetime.now())}.csv", index=None)
 
+        # import pdb; pdb.set_trace()
         acc = (np.array(pred_labels) == np.array(true_labels)).mean()
         return acc
     
@@ -514,8 +517,9 @@ if __name__ == "__main__":
                 column_names=['epoch', 'model_ppl', 'model_acc', 'canary_exposure', 'canary_rank', 'canary_ppl', 'TOTAL_CANDIDATES', 'model_path']
                 record = [epoch_num, model_ppl, model_acc, canary_exposure, canary_rank, canary_ppl, TOTAL_CANDIDATES, model_path]
             records.append(record)
-        except:
-            pass
+        except KeyboardInterrupt:
+            print('Exiting from training early')
+            sys.exit(0)
 
     records = sorted(records, key = lambda x: x[0])
     records = pd.DataFrame(records, columns=column_names)
