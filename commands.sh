@@ -803,3 +803,27 @@ python -u scripts/adjust_ppl_acc.py --cuda cuda:4 -bs 64 -model_dir model/nodp/2
 python attacks/mem_inference.py --cuda cuda:4 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122306 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed300.csv
 python attacks/canary_insertion.py --cuda cuda:4 -bs 256 --checkpoint model/nodp/20210515/122306 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed300.csv
 
+
+
+#### calculate test ppl, for epsilon=4.91, epoch=37
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/partialdp/20210421/123500/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-177.2112399_acc-0.30286_epoch-37_ep-4.911_dl-8e-05_ap-3.70
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/partialdp/20210421/123522/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-174.1074169_acc-0.32000_epoch-37_ep-4.911_dl-8e-05_ap-3.70
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/partialdp/20210421/123511/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-173.9384952_acc-0.33143_epoch-37_ep-4.912_dl-8e-05_ap-3.70
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/partialdp/20210421/123530/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-187.3829027_acc-0.31429_epoch-37_ep-4.912_dl-8e-05_ap-3.70
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/partialdp/20210418/191438/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-176.7718065_acc-0.32000_epoch-37_ep-4.912_dl-8e-05_ap-3.70
+
+
+
+
+| end of epoch  37 | time: 3118.57s | valid loss  5.16 | valid ppl   174.11 | valid acc 0.320
+ (ε = 4.91, δ = 8e-05) for α = 3.7
+-----------------------------------------------------------------------------------------
+model saved to model/partialdp/20210421/123522/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-7_bptt-35_lr-0.1_dp-True_partial-True_0hidden-False_sigma-0.5_norm-0.001_dl-8e-05.pt_ppl-174.1074169_acc-0.32000_epoch-37_ep-4.911_dl-8e-05_ap-3.70, ppl: 174.1074169055034
+
+
+
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/nodp/20210501/192118/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0253297_acc-0.75599_epoch-36_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/nodp/20210501/192118/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0253297_acc-0.75599_epoch-36_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/nodp/20210501/192118/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0253297_acc-0.75599_epoch-36_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/nodp/20210501/192118/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0253297_acc-0.75599_epoch-36_ep-0.000_dl-0_ap-0.00 
+python -u scripts/adjust_ppl_acc.py -bs 256 --cuda cuda:0 -outputf data/adjusted_metrics/eps4.91_epoch37 -model_dir model/nodp/20210501/192118/data-simdial_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50260_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-3.0253297_acc-0.75599_epoch-36_ep-0.000_dl-0_ap-0.00 

@@ -3,6 +3,7 @@ from glob import glob
 import os
 BASE_DIR = "data/adjusted_metrics"
 
+
 # nodp
 paths = """
 model/nodp/20210418/181252/
@@ -75,6 +76,19 @@ model/nodp/20210418/210231/
 # model/partialdp/20210427/211339
 # model/partialdp/20210427/211411
 # """
+
+
+BASE_DIR = "data/adjusted_metrics/eps4.91_epoch37"
+
+# s dp
+paths = """
+model/partialdp/20210421/123500/
+model/partialdp/20210421/123522/
+model/partialdp/20210421/123511/
+model/partialdp/20210421/123530/
+model/partialdp/20210418/191438/
+"""
+
 
 paths = paths.split('\n')
 paths = [p for p in paths if p != '']
