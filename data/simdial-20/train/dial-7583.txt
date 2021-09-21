@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Louise Conway.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 253 Brown Creek East Kimberly, AK 63382.
-SYS: The tracking number is MXH5WJ145B. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

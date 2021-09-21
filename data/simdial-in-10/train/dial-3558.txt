@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Amy Batz.
-SYS: We will need the shipping address as well.
-USR: My address is 0931 Cruz Freeway Port Kenneth, MI 13274.
-SYS: The tracking number is 3WYYWHBWAL. Is there anything else I can help with?
-USR: That's it.

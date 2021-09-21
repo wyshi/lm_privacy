@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: David Munoz.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 232 Kelly Junctions Suite 062 North Heatherside, RI 68520.
-SYS: The tracking number is TS0FNF87SD. Anything else?
-USR: I have all I need.

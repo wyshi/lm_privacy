@@ -1,2 +1,0 @@
-epoch,model_ppl,model_acc,model_epsilon,model_delta,model_alpha,inference_ppl_acc,inference_lower_ppl_acc,inference_gpt2_acc,inference_zlip_acc,TOTAL_CANDIDATES,model_path
-1,152.0422486,0.33958,0.0,0.0,0.0,0.4116,0.5388,0.532,0.4136,5000,model/nodp/20210418/181252/data-wikitext-2-add10b_model-LSTM_ebd-200_hid-200_bi-False_lay-1_tie-False_tok-50258_bs-16_bptt-35_lr-20.0_dp-False_partial-False_0hidden-False.pt_ppl-152.0422486_acc-0.33958_epoch-1_ep-0.000_dl-0_ap-0.00

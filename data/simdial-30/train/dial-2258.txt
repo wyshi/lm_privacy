@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Moses Henry.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 79158 Owens Village Suite 898 Lake Michaelfort, WY 85588.
-SYS: You can track your package with your tracking number, which is S7NJW5GKCE. Is there anything else I can help with?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Maria Green.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 1411 Davis Cape West Nicole, IL 51615.
-SYS: The tracking number is L1FM81NUGH. Is there anything else I can help with?
-USR: No more questions.

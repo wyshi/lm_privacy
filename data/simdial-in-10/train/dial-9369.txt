@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Afton Krampitz
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 313 Melissa Park New Robert, ME 46174.
-SYS: You can track your package with your tracking number, which is 0F9PJGGUMO. What else can I do?
-USR: No more questions.

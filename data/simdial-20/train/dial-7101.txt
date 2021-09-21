@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Juan Cooper.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 525 Holmes Union Apt. 095 Scottshire, KS 40250.
-SYS: You can track your package with your tracking number, which is LNP2XKXN16. Is there anything else I can help with?
-USR: All good.

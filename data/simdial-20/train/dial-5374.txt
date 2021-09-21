@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Barbara Kuipers.
-SYS: Could you please confirm your shipping address?
-USR: 30171 William Village Suite 433 Jenniferport, CA 56366.
-SYS: You can track your package with your tracking number, which is SXWLHW54OE. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

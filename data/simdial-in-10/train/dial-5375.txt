@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Raymond Sullivan.
-SYS: We will need the shipping address as well.
-USR: My address is 099 Bell Inlet Carterfurt, NE 41970.
-SYS: The tracking number is N9SJH4O03N. What else can I do?
-USR: No more questions.

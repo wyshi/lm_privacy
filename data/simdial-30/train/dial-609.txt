@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Joan Chi.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 061 Katie Rue Apt. 931 Lisaberg, LA 68592.
-SYS: The tracking number is 883VZNRLL1. Anything else?
-USR: All good.

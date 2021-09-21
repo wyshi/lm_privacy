@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Katherine Ellison.
-SYS: Could you please confirm your shipping address?
-USR: 93031 Diaz Key Suite 305 Williamstown, DE 70483.
-SYS: You can track your package with your tracking number, which is HX71KKHSSX. What else can I do?
-USR: That's it. See you.
-SYS: Bye.

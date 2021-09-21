@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Marian Wealer.
-SYS: Verify your phone number please.
-USR: Phone number is 553.177.9319
-SYS: The tracking number is VH6X1F96ND. Is there anything else I can help with?
-USR: That's it.

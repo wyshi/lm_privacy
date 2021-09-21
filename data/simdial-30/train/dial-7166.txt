@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Jessica Crowe.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 802 Elizabeth Mountain Apt. 541 Wrightland, NJ 79613.
-SYS: The tracking number is NEK4TG9ROP. Are you happy about my answer?
-USR: That's it. Thanks! That's all.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Brian Crane.
-SYS: Could you please confirm your shipping address?
-USR: My address is 4167 Shane Corner Suite 970 Rachaelfurt, NY 09905.
-SYS: Track your order using your tracking number, 5I59SSDGIN. What else can I do?
-USR: No more questions. That's all.
-SYS: Goodbye.

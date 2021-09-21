@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Howard Rhodes.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 5041 Matthew Fields West Toddville, AL 30021.
-SYS: The tracking number is L5D4UWB9VN. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

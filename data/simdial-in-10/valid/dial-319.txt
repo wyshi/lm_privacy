@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Raul Runyan.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 168 Tamara Cape Suite 648 Stephanieton, FL 78489.
-SYS: The tracking number is DZUS5KO7V5. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Goodbye.

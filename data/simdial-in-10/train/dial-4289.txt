@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Dan Cha.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 504.531.2046.
-SYS: You can track your package with your tracking number, which is DEVFW9KYVG. What else can I do?
-USR: That's it. Thanks!

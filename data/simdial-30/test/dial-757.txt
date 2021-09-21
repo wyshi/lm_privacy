@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Brenda Baker
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 9722 Jennifer Plains Apt. 803 Port Richard, CO 72440.
-SYS: The tracking number is H6P2VCO7FS. Anything else?
-USR: That's it.

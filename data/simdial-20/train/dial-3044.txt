@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Linda Deaver.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 110 Diaz Stream Apt. 386 Baileyshire, MS 45440.
-SYS: You can track your package with your tracking number, which is DCUF0XHSNK. Anything else?
-USR: No more questions. That's all.
-SYS: Goodbye.

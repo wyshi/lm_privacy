@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Joan Wilson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 15513 Jackson Skyway Suite 296 Jasonland, MT 24092.
-SYS: Track your order using your tracking number, 2RZUDEA1OJ. Are you happy about my answer?
-USR: No more questions.

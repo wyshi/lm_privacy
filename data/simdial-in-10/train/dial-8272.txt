@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Francisco Berti. Phone number is 358.805.0776
-SYS: You can track your package with your tracking number, which is 6HEDAD78WS. Is there anything else I can help with?
-USR: I have all I need.

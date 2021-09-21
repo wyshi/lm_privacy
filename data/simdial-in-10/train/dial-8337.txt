@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Armando Neeley.
-SYS: Could you please confirm your shipping address?
-USR: My address is 9901 Peterson Pike Apt. 753 Taylorland, OR 47286.
-SYS: You can track your package with your tracking number, which is RIE24UWAUA. Are you happy about my answer?
-USR: That's it.

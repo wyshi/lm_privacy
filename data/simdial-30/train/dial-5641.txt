@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Renata Jones
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 728 Mullins Skyway Apt. 676 Erikaside, NM 11691.
-SYS: The tracking number is VHTCOW5H99. What else can I do?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Jane Wiltse.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 45083 Figueroa Groves Welchton, KY 67450.
-SYS: The tracking number is LV6JXSWWIO. Anything else?
-USR: That's it.

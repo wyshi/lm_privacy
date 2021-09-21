@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Linda Cecere
-SYS: We will need the shipping address as well.
-USR: Ok, it is 3407 Perez Path Benjaminhaven, KY 20228.
-SYS: The tracking number is ZLUIDUDZ6K. Anything else?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

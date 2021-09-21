@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Stephanie Loza.
-SYS: Could you please confirm your shipping address?
-USR: My address is 8858 Edward Village New Antoniotown, MN 60278.
-SYS: The tracking number is I0N1H3SSFI. Anything else?
-USR: I have all I need.

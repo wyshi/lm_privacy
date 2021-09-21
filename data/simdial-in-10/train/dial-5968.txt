@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Pearl Hazelrigg.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 7281 Chase Square Suite 591 Sandersmouth, WV 73765.
-SYS: The tracking number is WX68OJ6FWG. What else can I do?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Angelo Molineaux.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 4014493489.
-SYS: You can track your package with your tracking number, which is H3L6VC7Q12. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

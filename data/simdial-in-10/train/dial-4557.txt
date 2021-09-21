@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Diane Calder.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 0474 Brittany Union Apt. 473 Anthonymouth, WY 37138.
-SYS: The tracking number is Y4NO4FQY9V. Anything else?
-USR: All good.

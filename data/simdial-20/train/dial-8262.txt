@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm German Gomez.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 550 May Isle Lake Joseph, IL 23505.
-SYS: You can track your package with your tracking number, which is 3Q5YTI0CBC. Anything else?
-USR: No more questions.

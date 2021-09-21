@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Miesha Richardson.
-SYS: We will need the shipping address as well.
-USR: 985 Smith Rapid Kerryview, CO 94339.
-SYS: You can track your package with your tracking number, which is BL0ZUT47HB. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

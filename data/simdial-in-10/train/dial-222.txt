@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Mario Harkins.
-SYS: Could you please confirm your shipping address?
-USR: My address is 26854 Michelle Port Apt. 755 East Amber, DC 04101.
-SYS: You can track your package with your tracking number, which is DQ45DZ4UV1. Is there anything else I can help with?
-USR: No more questions.

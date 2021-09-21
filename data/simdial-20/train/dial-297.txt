@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Robert Hayes.
-SYS: Verify your phone number please.
-USR: You can reach me at 656-079-2987.
-SYS: The tracking number is CAK3TOSDYH. What else can I do?
-USR: That's it. Thanks!

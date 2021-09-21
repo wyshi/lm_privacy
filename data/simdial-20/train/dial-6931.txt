@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Karen Cavanaugh.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 589 Baker Alley Suite 732 Leeport, MD 53599.
-SYS: Track your order using your tracking number, QPK0ZLG2UF. Are you happy about my answer?
-USR: No more questions.

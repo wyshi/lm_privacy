@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Cheryl Gabert.
-SYS: Could you please also provide your order number?
-USR: 994-74417-3071
-SYS: You can track your package with your tracking number, which is QLXP6EHNII. Are you happy about my answer?
-USR: That's it.

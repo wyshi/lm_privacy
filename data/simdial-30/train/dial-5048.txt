@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Dorothy Miller
-SYS: We will need the shipping address as well.
-USR: My address is 9235 Matthew Shoals Campbellhaven, AZ 36004.
-SYS: You can track your package with your tracking number, which is 0CZAOIB3MF. Anything else?
-USR: That's it. See you.
-SYS: Bye.

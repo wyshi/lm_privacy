@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Francis Grunder.
-SYS: Could you please confirm your shipping address?
-USR: 91328 Pugh Isle Suite 424 Vincentberg, CT 75513.
-SYS: The tracking number is AETXNTMC0O. What else can I do?
-USR: That's it.

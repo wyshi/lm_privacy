@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Michael Lamb.
-SYS: Can you provide the order number?
-USR: It's 198-18024-1095.
-SYS: The tracking number is ZAEWR4X80R. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Goodbye.

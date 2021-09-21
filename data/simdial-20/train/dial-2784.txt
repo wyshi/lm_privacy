@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Nicholas Creel.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 70884 Rivera Well Apt. 969 Parkerville, AZ 17578.
-SYS: The tracking number is Y7VAE5VDI5. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

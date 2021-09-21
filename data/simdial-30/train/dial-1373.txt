@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Anne Batchelder
-SYS: We will need the shipping address as well.
-USR: Yea sure, 7160 Waters Rapids Apt. 327 Stricklandberg, MS 22938.
-SYS: The tracking number is 66A7YUMPCM. Is there anything else I can help with?
-USR: That's it. Thanks!

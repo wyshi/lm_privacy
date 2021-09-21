@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, David Edwards.
-SYS: Verify your phone number please.
-USR: 3381937704 is my number.
-SYS: Track your order using your tracking number, DCIPCCEQX1. Anything else?
-USR: No more questions.

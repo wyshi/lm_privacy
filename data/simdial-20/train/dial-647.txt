@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: William Compton
-SYS: We will need the shipping address as well.
-USR: 584 William Cape Apt. 485 Richardsland, IN 28641.
-SYS: You can track your package with your tracking number, which is J2GFGDWWZO. Anything else?
-USR: No more questions. Thank you.
-SYS: Goodbye.

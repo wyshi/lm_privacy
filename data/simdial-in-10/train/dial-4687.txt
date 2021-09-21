@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Nancy Shankle
-SYS: Can you provide the order number?
-USR: Yes, 599-12572-0102.
-SYS: Track your order using your tracking number, 346VQSX1Z4. Is there anything else I can help with?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

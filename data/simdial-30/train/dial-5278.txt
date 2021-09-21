@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: My name's Latisha Pierce.
-SYS: Ok, may I have your phone number?
-USR: 316-830-2545.
-SYS: Track your order using your tracking number, 762DKPX8PM. Anything else?
-USR: That's it.

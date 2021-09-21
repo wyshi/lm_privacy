@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am David Burleson.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 0831 Atkins Shore Brittanyhaven, NC 59501.
-SYS: Track your order using your tracking number, 402497M6X0. What else can I do?
-USR: No more questions. See you.
-SYS: Bye.

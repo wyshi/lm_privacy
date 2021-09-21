@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Ida Cox.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 068 Emily Lake Ruizberg, DC 89721.
-SYS: The tracking number is 2CO96I7RIQ. Anything else?
-USR: No more questions. Thank you.
-SYS: Goodbye.

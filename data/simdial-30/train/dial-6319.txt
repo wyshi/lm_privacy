@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Frankie Waters.
-SYS: Ok, may I have your phone number?
-USR: 216.166.7703.
-SYS: The tracking number is U7WADQLY17. Are you happy about my answer?
-USR: That's it.

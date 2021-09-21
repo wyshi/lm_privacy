@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Daniel Sanders
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 58947 Long Bridge Apt. 719 Kennedychester, CA 42418.
-SYS: You can track your package with your tracking number, which is TTXW8NUV6F. Anything else?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: James Valdez.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 960 Bush Estates Suite 813 New Davidbury, CA 11841.
-SYS: Track your order using your tracking number, A81NLHLDEC. Are you happy about my answer?
-USR: All good. My ID is 341752.

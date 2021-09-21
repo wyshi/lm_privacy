@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Gwen Klein.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, USS Combs FPO AP 23467.
-SYS: You can track your package with your tracking number, which is 1BC9VLC8NP. What else can I do?
-USR: I have all I need.

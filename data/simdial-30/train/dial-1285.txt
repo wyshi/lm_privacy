@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, Phyllis Shirley.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 64628 Robert Ranch Amyburgh, MO 88983.
-SYS: The tracking number is MA6YFSZJ36. What else can I do?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

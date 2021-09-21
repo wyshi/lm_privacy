@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Rodney Dickey.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 0553 Cook Gateway Suite 793 South Erika, RI 04247.
-SYS: The tracking number is U2CK498GVG. What else can I do?
-USR: That's it. That's all.
-SYS: Bye.

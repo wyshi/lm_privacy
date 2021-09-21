@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Brent Meeks.
-SYS: Could you please confirm your shipping address?
-USR: My address is 919 Warren Camp Apt. 849 Kevinhaven, RI 44916.
-SYS: You can track your package with your tracking number, which is BSOBA7UFKD. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

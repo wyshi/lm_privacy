@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Jaclyn Walker.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 91575 Glover Plain Michaelborough, CT 79321.
-SYS: The tracking number is CZPD4CVJPQ. Anything else?
-USR: That's it. Thank you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Alvin Lilly.
-SYS: We will need the shipping address as well.
-USR: My address is 670 Price Hill East Donberg, WA 78060.
-SYS: You can track your package with your tracking number, which is OZKPDI5ZMT. What else can I do?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

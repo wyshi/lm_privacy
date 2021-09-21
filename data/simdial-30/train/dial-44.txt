@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Leona Mccormick.
-SYS: Verify your order number please.
-USR: Yes, 109-67259-1674.
-SYS: You can track your package with your tracking number, which is R15GP2JRL0. What else can I do?
-USR: That's it. Thanks!

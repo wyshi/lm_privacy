@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sophie Paris
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 30369 Garcia Orchard New George, IN 94211.
-SYS: The tracking number is 8V0VO1XD03. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Sure, Kenneth Tate.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 62780 Dawson Crossing Apt. 482 Rebeccaland, MN 43108.
-SYS: Track your order using your tracking number, 59A08VS2MZ. Are you happy about my answer?
-USR: That's it.

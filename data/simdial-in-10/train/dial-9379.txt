@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Donna Wafford.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 3388 Clark Point South Stephen, WV 65163.
-SYS: You can track your package with your tracking number, which is M6CQ2CYTZK. What else can I do?
-USR: I have all I need.

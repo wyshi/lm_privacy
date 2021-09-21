@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Rosalinda Brookshire.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 22367 Jones Dam Apt. 379 Christensentown, MI 21571.
-SYS: Track your order using your tracking number, 8H0EPLQ0YO. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: Bye.

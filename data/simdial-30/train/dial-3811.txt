@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Wade Pikes.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 37793 Jose Radial West Joannashire, VA 64631.
-SYS: You can track your package with your tracking number, which is JGPWNSMNMM. What else can I do?
-USR: That's it. Thanks!

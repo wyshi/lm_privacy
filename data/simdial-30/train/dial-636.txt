@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Richard Rogers.
-SYS: Verify your phone number please.
-USR: 2058870001.
-SYS: The tracking number is NG0EZJ5ENW. Are you happy about my answer?
-USR: No more questions.

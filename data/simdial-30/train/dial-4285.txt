@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Kerri Gardella.
-SYS: Verify your phone number please.
-USR: my number is 626-283-8552.
-SYS: The tracking number is 3PNYMSPPKB. What else can I do?
-USR: I have all I need. That's all.
-SYS: Goodbye.

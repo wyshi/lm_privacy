@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Daniel Mcclure.
-SYS: We will need the shipping address as well.
-USR: My address is 0763 Rush Courts Port Michael, WY 52751.
-SYS: The tracking number is KLR97VIAZ6. Anything else?
-USR: All good.

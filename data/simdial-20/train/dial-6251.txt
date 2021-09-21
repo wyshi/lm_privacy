@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Angel Morales.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 1838 Abbott View East Cathytown, MS 54885.
-SYS: Track your order using your tracking number, MCPGQOI3XF. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

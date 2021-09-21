@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Stephen Byerly.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 616 Tracy Junction New Luis, AL 22068.
-SYS: Track your order using your tracking number, WGU8M62SQL. Anything else?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Dustin Nye
-SYS: Could you please confirm your shipping address?
-USR: My address is 33565 Stephanie Loop Apt. 675 North Tracieborough, ME 20718.
-SYS: The tracking number is B1WRFH7UQ7. What else can I do?
-USR: That's it.

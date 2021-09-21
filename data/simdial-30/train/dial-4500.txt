@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Beth Greene.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 7192 Sanchez Burg Sullivanberg, MD 27916.
-SYS: You can track your package with your tracking number, which is RN7RZURIP4. Anything else?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

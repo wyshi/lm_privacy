@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Jody Wooten
-SYS: Could you please confirm your shipping address?
-USR: My address is 05811 Jessica Track Suite 933 West Kevinstad, WI 25170.
-SYS: Track your order using your tracking number, UW9CZWOKSR. What else can I do?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Bonnie Shore.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 703 Martinez Square Suite 616 East Ernest, IA 11286.
-SYS: Track your order using your tracking number, 0KFMEXHFE6. What else can I do?
-USR: That's it. Thanks!

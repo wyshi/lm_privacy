@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Kenneth Davis
-SYS: Could you please confirm your shipping address?
-USR: 506 James Point Apt. 822 North Jessica, SD 12423.
-SYS: Track your order using your tracking number, XH34W9YMII. Are you happy about my answer?
-USR: I have all I need.

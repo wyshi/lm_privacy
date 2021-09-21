@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Keith Fisher.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 903 Jason Land New Chelseyborough, ME 48001.
-SYS: Track your order using your tracking number, A02AS2FH4L. Anything else?
-USR: No more questions.

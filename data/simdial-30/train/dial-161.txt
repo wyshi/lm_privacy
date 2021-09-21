@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Raymond Cabiness.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 3384 Rice Cove Apt. 011 New Davidstad, WI 75758.
-SYS: You can track your package with your tracking number, which is J3AVUE2MM4. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: Bye.

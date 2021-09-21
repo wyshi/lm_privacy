@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Dolores Soto
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 77439 Bernard Pines Apt. 195 Cummingsland, WI 65466.
-SYS: You can track your package with your tracking number, which is KI0Q1OOOFV. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Bye.

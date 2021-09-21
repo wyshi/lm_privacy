@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: David Stenn.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 5762 Garcia Walk Suite 330 Codyport, OR 99010.
-SYS: The tracking number is NKEALGSBLR. Are you happy about my answer?
-USR: I have all I need.

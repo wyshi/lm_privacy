@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Gaye Lynch.
-SYS: Could you please confirm your shipping address?
-USR: 43622 Turner Highway Timothyport, OK 65334.
-SYS: You can track your package with your tracking number, which is L52OVL7Q2E. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Theresa Giles.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 7084 Austin Key Apt. 314 West Joseph, MT 74366.
-SYS: You can track your package with your tracking number, which is L4A320Z0BD. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

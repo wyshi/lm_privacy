@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Ben Parker.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, Unit 1946 Box 8603 DPO AE 51300.
-SYS: You can track your package with your tracking number, which is KPEGJF7TQ5. What else can I do?
-USR: All good.

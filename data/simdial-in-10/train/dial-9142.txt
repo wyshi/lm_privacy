@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Sure, Richard Pynes.
-SYS: Could you please confirm your shipping address?
-USR: 22453 Gary Plaza Apt. 596 Williamsville, MI 94383.
-SYS: You can track your package with your tracking number, which is S8U82DIWP2. Is there anything else I can help with?
-USR: No more questions.

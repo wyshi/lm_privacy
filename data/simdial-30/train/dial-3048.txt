@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Jacob Knotts.
-SYS: We will need the shipping address as well.
-USR: Ok, it is Unit 5821 Box 2950 DPO AP 73665.
-SYS: You can track your package with your tracking number, which is MIK1M7EB0F. What else can I do?
-USR: That's it. That's all.
-SYS: Goodbye.

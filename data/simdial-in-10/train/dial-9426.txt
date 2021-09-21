@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Ellen Ladner.
-SYS: We will need the shipping address as well.
-USR: My address is 11996 Scott Green Apt. 551 New Larry, AL 95720.
-SYS: The tracking number is BDJAD3I2AL. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

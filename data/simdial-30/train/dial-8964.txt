@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Selena Laureano.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 12893 Keith Trafficway Chanton, MN 30136.
-SYS: Track your order using your tracking number, D4BYTC423S. Is there anything else I can help with?
-USR: I have all I need.

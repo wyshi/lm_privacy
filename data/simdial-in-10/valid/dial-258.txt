@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Ashley Smith.
-SYS: We will need the shipping address as well.
-USR: 390 Shah Street Tammyland, NY 97751.
-SYS: You can track your package with your tracking number, which is M56E6JJP0L. Anything else?
-USR: All good.

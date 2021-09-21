@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yes, Lynne Armstrong.
-SYS: Verify your phone number please.
-USR: You can reach me at 619-560-8412.
-SYS: The tracking number is G4DO4PENKS. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

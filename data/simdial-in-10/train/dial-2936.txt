@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Brandi Moore
-SYS: We will need the shipping address as well.
-USR: My address is 017 Patrick Alley Apt. 130 Raymondmouth, VT 88124.
-SYS: Track your order using your tracking number, 2X6OJ0XU8H. What else can I do?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Rebecca Miller.
-SYS: Could you please confirm your shipping address?
-USR: 57027 Hensley Station Apt. 276 East Brentburgh, CA 29155. Rebecca Miller.
-SYS: Track your order using your tracking number, P5IAOQ7MJX. Are you happy about my answer?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: James Sefcovic
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 80362 Austin Union Suite 114 West Andreatown, NH 07459.
-SYS: You can track your package with your tracking number, which is KHZHMB5WWN. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Bye.

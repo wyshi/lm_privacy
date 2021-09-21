@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Celia Shae
-SYS: Verify your phone number please.
-USR: Phone number is 149-219-5808
-SYS: Track your order using your tracking number, 4RXJ1TRK9P. Is there anything else I can help with?
-USR: That's it. Thanks!

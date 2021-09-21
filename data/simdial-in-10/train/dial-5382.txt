@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Juan Lee
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 889 Jerry Ports Suite 974 Lake Kurtchester, TX 60158.
-SYS: You can track your package with your tracking number, which is VLL0WC2VFW. What else can I do?
-USR: All good. Thank you.
-SYS: Goodbye.

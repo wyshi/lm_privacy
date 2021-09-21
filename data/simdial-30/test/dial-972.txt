@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Lesley Williams
-SYS: We will need the shipping address as well.
-USR: Shipping address is 34427 Bennett Turnpike Martinezfort, NV 69503.
-SYS: You can track your package with your tracking number, which is J6KDINGWBK. Are you happy about my answer?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

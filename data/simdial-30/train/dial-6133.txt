@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Deborah Lary.
-SYS: Verify your phone number please.
-USR: You can reach me at 738-214-9931.
-SYS: You can track your package with your tracking number, which is 9QAFMDBY6O. Anything else?
-USR: That's it. Thanks!

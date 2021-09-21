@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Isabelle Lewis.
-SYS: Could you please confirm your shipping address?
-USR: 1202 Margaret Station Suite 189 Gillespieside, IA 75605.
-SYS: The tracking number is 11P6PZSBRL. Is there anything else I can help with?
-USR: That's it.

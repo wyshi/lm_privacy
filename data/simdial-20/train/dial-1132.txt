@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Shirley Arnold
-SYS: We will need the shipping address as well.
-USR: Yea sure, 820 John Mountain Suite 696 Port Haroldburgh, VT 78838.
-SYS: You can track your package with your tracking number, which is Y2DM6FL1GJ. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

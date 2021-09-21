@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Robert Briley.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 0181 Jamie Key Apt. 648 West Tommy, WV 05386.
-SYS: You can track your package with your tracking number, which is G5ZJRT13TX. Is there anything else I can help with?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Richard Ruder.
-SYS: Ok, may I have your phone number?
-USR: my number is 952-553-0238.
-SYS: Track your order using your tracking number, 0I0OECZ8EJ. Is there anything else I can help with?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Bernard Wade.
-SYS: Could you please confirm your shipping address?
-USR: 9191 Breanna Unions Apt. 653 Aguilarmouth, SC 08470.
-SYS: The tracking number is G4ZZK7RL7Q. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Kathleen Wen.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5458 Kathleen Islands Port Christinaview, WY 26924.
-SYS: The tracking number is I9Y3UY60FB. Are you happy about my answer?
-USR: No more questions.

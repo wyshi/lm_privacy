@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Maggie Collier
-SYS: Could you please confirm your shipping address?
-USR: 34606 Baker Viaduct North Amanda, NJ 37126.
-SYS: The tracking number is 9346AJUGUY. Anything else?
-USR: No more questions.

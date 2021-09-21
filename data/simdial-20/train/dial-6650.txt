@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Dana Lawrence.
-SYS: Can you provide the order number?
-USR: Yes, 179-20690-1067.
-SYS: You can track your package with your tracking number, which is KWOFVKUAR5. What else can I do?
-USR: I have all I need.

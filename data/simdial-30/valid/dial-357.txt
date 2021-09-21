@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Sure, Jose Forrester.
-SYS: Verify your phone number please.
-USR: my number is 714-274-8421.
-SYS: You can track your package with your tracking number, which is 2P0ZMF2RX9. Anything else?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Kerri Floyd.
-SYS: Ok, may I have your phone number?
-USR: 662-098-5229.
-SYS: You can track your package with your tracking number, which is 66KSOF3C7C. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

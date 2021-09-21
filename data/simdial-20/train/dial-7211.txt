@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Stephanie Marston.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 9003 William Cliffs Scottchester, NM 94088.
-SYS: Track your order using your tracking number, RLD590V8P5. Anything else?
-USR: All good.

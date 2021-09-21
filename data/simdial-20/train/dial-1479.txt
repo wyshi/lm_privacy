@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: My name's Frank Little.
-SYS: Could you please confirm your shipping address?
-USR: My address is 2058 Williamson Overpass Suite 500 Gabriellahaven, AR 25906.
-SYS: The tracking number is 66RYE0AUN7. What else can I do?
-USR: All good.

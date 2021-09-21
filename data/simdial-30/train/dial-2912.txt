@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Karen Bell.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 09944 Kelly Ford Apt. 461 Port Amy, NV 32490.
-SYS: The tracking number is 1XB37D7FSF. Is there anything else I can help with?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: I am Barbara Horton.
-SYS: We will need the shipping address as well.
-USR: 79570 Bruce Prairie Kennedyhaven, CA 37953.
-SYS: The tracking number is WDCJ7A07VG. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

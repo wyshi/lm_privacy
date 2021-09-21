@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Larry Hankerson.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 798 Chavez Bridge Apt. 207 South Joshua, CO 60945.
-SYS: You can track your package with your tracking number, which is BGXGJGGNL1. What else can I do?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Allen Nelson.
-SYS: Could you please confirm your shipping address?
-USR: My address is 23425 Jordan Way New Brent, CA 26435.
-SYS: You can track your package with your tracking number, which is U8QLE2HKIN. What else can I do?
-USR: No more questions.

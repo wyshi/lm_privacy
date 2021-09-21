@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Brenda Horton.
-SYS: We will need the shipping address as well.
-USR: 799 Danny Rue Apt. 838 East Jonathanfurt, FL 31716.
-SYS: You can track your package with your tracking number, which is DIH7Y262QH. Is there anything else I can help with?
-USR: That's it.

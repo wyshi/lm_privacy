@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Erin Burt.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 8717 Yates Turnpike Timothyville, HI 85194.
-SYS: The tracking number is 4KUOII7X71. Anything else?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

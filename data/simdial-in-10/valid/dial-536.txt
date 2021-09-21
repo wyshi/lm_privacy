@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Natalie Barber.
-SYS: Verify your phone number please.
-USR: Phone number is 682.216.1322
-SYS: The tracking number is KSMP2LQT8C. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Bye.

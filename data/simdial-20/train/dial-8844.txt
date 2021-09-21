@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Jonathan Turner.
-SYS: Could you please confirm your shipping address?
-USR: 555 Perez Springs Suite 185 Port Christinamouth, AK 40958.
-SYS: The tracking number is 89F2OIJ22X. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Charles Weiss.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 19805 Flores Wells Apt. 412 Wandaton, KS 23794.
-SYS: The tracking number is K1FTHPS8FV. Anything else?
-USR: All good. That's all.
-SYS: Goodbye.

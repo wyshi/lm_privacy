@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Alfred Cooney.
-SYS: Could you please confirm your shipping address?
-USR: 863 Lawson Lake Apt. 502 Amandaport, SD 79354.
-SYS: Track your order using your tracking number, TMETGVB19I. Anything else?
-USR: All good. See you.
-SYS: Bye.

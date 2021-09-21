@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Elizabeth Golden.
-SYS: We will need the shipping address as well.
-USR: 4913 Ray Causeway Apt. 840 North Christopher, WI 67876.
-SYS: You can track your package with your tracking number, which is GZEUD4JGAN. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

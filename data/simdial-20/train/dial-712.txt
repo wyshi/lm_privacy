@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Tanya Lopez.
-SYS: Verify your phone number please.
-USR: 3956617156 is my number.
-SYS: You can track your package with your tracking number, which is WUQ43AZMNV. Is there anything else I can help with?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

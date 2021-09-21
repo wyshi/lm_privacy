@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Jamie Harmon
-SYS: We will need the shipping address as well.
-USR: Ok, it is 7057 William Bypass Apt. 342 Lake Teresa, AL 29586.
-SYS: The tracking number is DJ08JTI8FR. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

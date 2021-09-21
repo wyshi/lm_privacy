@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Jennifer Taylor.
-SYS: We will need the shipping address as well.
-USR: My address is 75150 Stephen Drive North Joannview, TN 98214.
-SYS: The tracking number is H8BLVNIRS2. Anything else?
-USR: All good. That's all.
-SYS: Goodbye.

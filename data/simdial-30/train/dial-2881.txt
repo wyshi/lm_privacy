@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Tina Hatfield.
-SYS: Could you please also provide your order number?
-USR: Sure, it is 450-33295-3658
-SYS: Track your order using your tracking number, XAE2JE6YOH. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

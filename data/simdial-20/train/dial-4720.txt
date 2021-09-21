@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Crystal Stevens.
-SYS: We will need the shipping address as well.
-USR: 50700 Katelyn Pass New Kyleland, NM 05148.
-SYS: You can track your package with your tracking number, which is 3NTZ2OKI91. Are you happy about my answer?
-USR: I have all I need.

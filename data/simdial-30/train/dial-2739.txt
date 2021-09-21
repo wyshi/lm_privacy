@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Shawn Villa
-SYS: We will need the shipping address as well.
-USR: Yea sure, 059 Mclaughlin Views West Annettefort, ID 53661.
-SYS: The tracking number is K4VABV1MOR. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: Goodbye.

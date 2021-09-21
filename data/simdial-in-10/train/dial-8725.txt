@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Jason Fuson.
-SYS: Could you please confirm your shipping address?
-USR: My address is 7565 Jamie Tunnel West Lauren, CO 92837.
-SYS: You can track your package with your tracking number, which is D5Z63NN0O5. Is there anything else I can help with?
-USR: That's it. Thanks!

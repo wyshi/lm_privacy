@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Leonard Farmer. Yea sure, 05907 Janet Crossing Suite 499 Michellebury, ME 94576.
-SYS: The tracking number is YJFRTG8L1G. Anything else?
-USR: I have all I need.

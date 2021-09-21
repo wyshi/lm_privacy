@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Laurie Holman.
-SYS: We will need the shipping address as well.
-USR: 69692 Cook Island New Davidtown, LA 43345.
-SYS: You can track your package with your tracking number, which is Q0VN5HMVBD. Is there anything else I can help with?
-USR: That's it.

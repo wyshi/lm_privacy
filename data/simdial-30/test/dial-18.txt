@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Helen Chu.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 1181 Sarah Plains New Daniel, NJ 15869.
-SYS: Track your order using your tracking number, 1O8BORPBW8. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

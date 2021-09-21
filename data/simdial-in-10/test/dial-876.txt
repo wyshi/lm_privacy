@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Linda Hamons.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 47186 Johnny Ridges Apt. 658 Dixonmouth, NH 79823.
-SYS: You can track your package with your tracking number, which is FI8PSRJZ63. What else can I do?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

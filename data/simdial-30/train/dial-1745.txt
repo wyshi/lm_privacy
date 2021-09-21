@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: My name's Esther Salley.
-SYS: Could you please confirm your shipping address?
-USR: 015 Paul Square North Tiffany, OR 13538.
-SYS: The tracking number is KQJ7JRID8F. Are you happy about my answer?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Patricia Rudnick
-SYS: We will need the shipping address as well.
-USR: Ok, it is 46100 Richard Lock Suite 807 West Johnnytown, PA 15373.
-SYS: Track your order using your tracking number, LQXS17JGKK. What else can I do?
-USR: That's it.

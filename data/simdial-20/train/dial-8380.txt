@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sheila Melvin.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 03446 Glover Estate Apt. 024 North Charlesbury, KS 40407.
-SYS: You can track your package with your tracking number, which is WWLKLR5S9Q. Anything else?
-USR: That's it.

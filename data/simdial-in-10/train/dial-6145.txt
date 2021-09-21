@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Brittany Bliss.
-SYS: Could you please confirm your shipping address?
-USR: My address is 684 Becker Lakes Apt. 460 South Anthonyburgh, NM 39388.
-SYS: Track your order using your tracking number, 24YZ3MHF6K. Anything else?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Kathleen Perez.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 532 Johnson Highway Suite 756 Wilsonview, IA 03418.
-SYS: The tracking number is OA88BN9IC6. Anything else?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Maureen Wyckoff.
-SYS: We will need the shipping address as well.
-USR: 93099 Lloyd Radial Lake Brianborough, MT 43565.
-SYS: Track your order using your tracking number, MY4RGZ3VUF. What else can I do?
-USR: All good. See you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Erin Crowder.
-SYS: We will need the shipping address as well.
-USR: My address is 32867 Felicia Cliffs Nicholasfort, KY 20925.
-SYS: Track your order using your tracking number, UCJMY2GAWV. Anything else?
-USR: That's it. Thank you.
-SYS: Goodbye.

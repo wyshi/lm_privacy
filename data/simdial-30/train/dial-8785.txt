@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Robert Ward.
-SYS: Could you please confirm your shipping address?
-USR: 867 Erik Walks Suite 143 East Lisafurt, NY 53731.
-SYS: The tracking number is 9NAMUXCIP1. Are you happy about my answer?
-USR: That's it. See you.
-SYS: Bye.

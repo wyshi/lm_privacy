@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Fredrick Lavelle.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 508 Leonard Road Suite 661 Chapmanhaven, NH 86963.
-SYS: Track your order using your tracking number, 9VX34FL1K7. What else can I do?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

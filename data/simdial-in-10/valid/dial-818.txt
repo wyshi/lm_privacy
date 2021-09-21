@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Julianne Weber.
-SYS: We will need the shipping address as well.
-USR: My address is 3661 Young Centers Heathshire, WA 35779.
-SYS: The tracking number is JAU3KKPN9G. Is there anything else I can help with?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: James Waters
-SYS: Could you please confirm your shipping address?
-USR: 0821 Daniel River Castrofort, WA 62891.
-SYS: You can track your package with your tracking number, which is IVC5BWJNF5. Anything else?
-USR: That's it.

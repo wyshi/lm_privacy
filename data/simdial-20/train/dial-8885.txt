@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Eunice Payne.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 9088 Johnson Highway New Michaeltown, MO 37298.
-SYS: The tracking number is WYD5XLPNUM. What else can I do?
-USR: No more questions. That's all.
-SYS: Goodbye.

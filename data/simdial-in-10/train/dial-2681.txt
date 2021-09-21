@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Russell Pawlowski.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 74144 Norris Common Port Carolinechester, WI 13522.
-SYS: The tracking number is 3MTB3MQKRI. Is there anything else I can help with?
-USR: That's it. Thanks!

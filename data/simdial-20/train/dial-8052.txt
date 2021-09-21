@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: Jennifer Quinones
-SYS: Could you please confirm your shipping address?
-USR: 2039 Caldwell Ferry Apt. 637 North Joseberg, ID 95260.
-SYS: Track your order using your tracking number, UJ8WIF190M. Anything else?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Linda Rivera.
-SYS: Ok, may I have your phone number?
-USR: 609-391-9767.
-SYS: Track your order using your tracking number, KQYLIHP99L. What else can I do?
-USR: That's it. Thanks!

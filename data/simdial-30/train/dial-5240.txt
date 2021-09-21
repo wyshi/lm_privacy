@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Michele Erhart. 45558 Jorge Pine Kleinchester, OK 07474.
-SYS: The tracking number is RI6PZ3UURO. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

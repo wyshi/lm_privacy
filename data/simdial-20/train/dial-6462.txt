@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Roy Mize.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 77387 David Lane Suite 218 South Mary, MA 17227.
-SYS: Track your order using your tracking number, PUDHV01BDM. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

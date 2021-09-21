@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Jason Riehle 288.750.3466 is my number.
-SYS: The tracking number is YQCUVE6CYA. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

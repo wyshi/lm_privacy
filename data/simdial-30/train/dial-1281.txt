@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Robert Holt.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 170 Rachel Trafficway Apt. 428 East Erik, UT 34850.
-SYS: You can track your package with your tracking number, which is 4M9FFDDI3E. Is there anything else I can help with?
-USR: I have all I need.

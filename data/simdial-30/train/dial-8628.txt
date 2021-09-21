@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: William Mead.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 0611 Chase Keys South Rodneytown, CO 03756.
-SYS: You can track your package with your tracking number, which is RZ9E3Y8GJT. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Michael Pollard.
-SYS: Could you please confirm your shipping address?
-USR: 7951 Charles Trail Suite 959 West Brian, IA 48930.
-SYS: You can track your package with your tracking number, which is MK9OGBRD0C. What else can I do?
-USR: All good.

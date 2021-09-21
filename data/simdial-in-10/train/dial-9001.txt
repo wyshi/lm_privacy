@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, David Steege.
-SYS: We will need the shipping address as well.
-USR: My address is PSC 8118, Box 8525 APO AE 98704.
-SYS: Track your order using your tracking number, AD8HZAYNPW. What else can I do?
-USR: That's it. Thanks!

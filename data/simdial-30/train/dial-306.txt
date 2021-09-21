@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Joshua Engelking. My address is 75827 Dawson Curve Apt. 832 Greenberg, MD 65489.
-SYS: You can track your package with your tracking number, which is JJI1IE5KS8. Are you happy about my answer?
-USR: All good. See you.
-SYS: Goodbye.

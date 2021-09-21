@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Cynthia Simpson.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 369.521.4233.
-SYS: Track your order using your tracking number, 7GZC72D3M0. What else can I do?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

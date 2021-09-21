@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Eddie Music.
-SYS: Could you please confirm your shipping address?
-USR: 96958 Donald Land Oliviafurt, PA 18470.
-SYS: You can track your package with your tracking number, which is 1HYGT1B7WL. Anything else?
-USR: All good.

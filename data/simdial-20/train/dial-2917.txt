@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Robert Ramin.
-SYS: Could you please confirm your shipping address?
-USR: My address is 040 Eric Summit Apt. 539 West James, AZ 46612.
-SYS: You can track your package with your tracking number, which is 12V87SWEWO. Are you happy about my answer?
-USR: I have all I need.

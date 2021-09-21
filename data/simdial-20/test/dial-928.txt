@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Francis Rival.
-SYS: Verify your order number please.
-USR: Yes, 904-64219-7140.
-SYS: You can track your package with your tracking number, which is H778BOV3MN. What else can I do?
-USR: No more questions. That's all.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Dorothy Maille.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 7945 Jimmy Pike Suite 811 South Kevinstad, SC 76411.
-SYS: You can track your package with your tracking number, which is M0VJ8B9CF7. What else can I do?
-USR: No more questions.

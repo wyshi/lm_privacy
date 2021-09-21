@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Henry Gonzalez.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 2750 Amy Village Angelmouth, OR 10893.
-SYS: You can track your package with your tracking number, which is IE2UAB0AUL. What else can I do?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Vernon Argueta.
-SYS: We will need the shipping address as well.
-USR: My address is 940 Mitchell Flats Apt. 849 Port Scott, NE 01352.
-SYS: Track your order using your tracking number, KU7FM4GWKH. Are you happy about my answer?
-USR: That's it. Thanks!

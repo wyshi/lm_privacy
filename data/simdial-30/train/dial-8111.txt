@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: I am Dorothy Habegger.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 03548 Adam Harbors Apt. 866 Bellstad, NE 09953.
-SYS: You can track your package with your tracking number, which is YSR8UEGL32. Are you happy about my answer?
-USR: That's it. Thanks!

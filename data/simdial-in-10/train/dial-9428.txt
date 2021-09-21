@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: I am Carolyn Forman.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 719 Jessica Roads Apt. 700 West Jaystad, OH 13416.
-SYS: You can track your package with your tracking number, which is CUM8PYOR7D. Anything else?
-USR: No more questions. See you.
-SYS: Goodbye.

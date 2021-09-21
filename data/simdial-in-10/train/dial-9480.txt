@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Willard Crawford.
-SYS: Verify your phone number please.
-USR: You can reach me at 985-630-9888.
-SYS: Track your order using your tracking number, 05XIEYJHJ2. Anything else?
-USR: All good. Thank you.
-SYS: Goodbye.

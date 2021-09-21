@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Jin Massengill.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 9723 Susan Mountains Apt. 760 Madisonbury, CT 84235.
-SYS: Track your order using your tracking number, HT3B7KSFA2. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: Goodbye.

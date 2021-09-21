@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Andrew Murphy.
-SYS: We will need the shipping address as well.
-USR: My address is 18386 Kevin Roads Barbaraport, MD 83566. My name's Andrew Murphy.
-SYS: The tracking number is 4UFM4HXF4W. Anything else?
-USR: No more questions. Thank you.
-SYS: Bye.

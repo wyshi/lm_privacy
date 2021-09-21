@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yes, Deborah Kerfien.
-SYS: Can you provide the order number?
-USR: My order number is 273-10910-8319.
-SYS: You can track your package with your tracking number, which is FO16EIJBWV. Are you happy about my answer?
-USR: I have all I need.

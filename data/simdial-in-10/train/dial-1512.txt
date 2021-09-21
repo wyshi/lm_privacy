@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: My name's Scott Carrasco.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 4418 Brittany Views Suite 445 New Samuelfort, VT 28816.
-SYS: The tracking number is YODGN2YCY5. Are you happy about my answer?
-USR: That's it.

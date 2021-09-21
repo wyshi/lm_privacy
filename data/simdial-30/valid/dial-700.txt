@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Charles Harrington.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 5663 Koch Parkways Apt. 931 East Richard, MA 02280.
-SYS: Track your order using your tracking number, T2UC5QT94Y. What else can I do?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

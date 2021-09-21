@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Larry Evans
-SYS: We will need the shipping address as well.
-USR: Yea sure, Unit 5384 Box 6545 DPO AP 15716.
-SYS: You can track your package with your tracking number, which is OSHVDA4TRG. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

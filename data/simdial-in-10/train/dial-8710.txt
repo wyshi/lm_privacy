@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Diane Baca.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 821 Kristina Forks Apt. 368 West Lindsay, CT 11922.
-SYS: You can track your package with your tracking number, which is JFBIKEG78Y. Are you happy about my answer?
-USR: All good.

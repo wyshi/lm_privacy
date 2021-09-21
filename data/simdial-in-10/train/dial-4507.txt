@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: I am Gladys Osher.
-SYS: Could you please confirm your shipping address?
-USR: 31381 Barbara Ranch Apt. 674 South Joseph, HI 57676.
-SYS: Track your order using your tracking number, JTD2DH6X2O. Anything else?
-USR: That's it. Thank you.
-SYS: Bye.

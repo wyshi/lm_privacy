@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Margaret Exum
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 496 Hamilton Gateway Victoriamouth, AZ 29816.
-SYS: Track your order using your tracking number, 50PHE38MN6. What else can I do?
-USR: All good.

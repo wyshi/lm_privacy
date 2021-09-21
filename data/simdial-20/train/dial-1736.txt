@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Rosalie Brandt Shipping address is 123 Ernest Meadows Meganfurt, NV 12698.
-SYS: Track your order using your tracking number, 6K7H00WVDC. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Goodbye.

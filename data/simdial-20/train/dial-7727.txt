@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm John Ladd.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 80048 Ryan Alley Racheltown, GA 91870.
-SYS: Track your order using your tracking number, 3GDFNH7N4H. What else can I do?
-USR: That's it. Thanks!

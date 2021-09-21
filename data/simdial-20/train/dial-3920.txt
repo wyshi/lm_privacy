@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Hilda Guffey.
-SYS: We will need the shipping address as well.
-USR: My address is 59629 King Plain Apt. 920 Douglasfurt, VA 48324.
-SYS: Track your order using your tracking number, YB8Z2WE3JP. Anything else?
-USR: That's it. Thanks!

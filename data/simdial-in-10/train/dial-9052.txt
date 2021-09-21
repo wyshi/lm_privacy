@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Mary Atkins.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 681 Erin Manors Suite 583 Phillipsburgh, RI 77989. Yes, Mary Atkins.
-SYS: You can track your package with your tracking number, which is MLVA68M4N5. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Denise Hernandes.
-SYS: We will need the shipping address as well.
-USR: 761 Joseph Haven Apt. 275 North Lisamouth, SC 51399.
-SYS: Track your order using your tracking number, RF05HC8QHD. Are you happy about my answer?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

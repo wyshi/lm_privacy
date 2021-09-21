@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Earl Lafollette.
-SYS: Ok, may I have your phone number?
-USR: my number is 2838873748.
-SYS: Track your order using your tracking number, UZCBBT2N3W. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

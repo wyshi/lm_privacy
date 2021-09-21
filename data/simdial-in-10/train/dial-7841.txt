@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Janae Lewis.
-SYS: Could you please confirm your shipping address?
-USR: 9159 Brittney Ridge West Kevin, KS 76738.
-SYS: The tracking number is BMVR8VZZZV. Is there anything else I can help with?
-USR: I have all I need.

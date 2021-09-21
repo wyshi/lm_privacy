@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Matthew Romero.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 304 Scott Forks East Thomasfort, DE 81352.
-SYS: Track your order using your tracking number, PXPF0KO3TM. Anything else?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: My name's John Frankum.
-SYS: We will need the shipping address as well.
-USR: My address is 3644 Sharon Mills Suite 836 Port Jonathan, AK 08514.
-SYS: The tracking number is 1HYLZ7NYAZ. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Carter Padilla.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 453 Rodriguez Isle Suite 758 West Dwayne, AL 76427.
-SYS: You can track your package with your tracking number, which is 4MSMJUAF12. What else can I do?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yes, Alia Kelemen.
-SYS: Ok, may I have your phone number?
-USR: 200.070.8387 is my number.
-SYS: You can track your package with your tracking number, which is F7ZU4XGQNH. Are you happy about my answer?
-USR: All good. That's all.
-SYS: Goodbye.

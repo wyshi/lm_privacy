@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Celia Jordan.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 473 Edward Field Suite 632 Port Stephanieton, TX 04553.
-SYS: Track your order using your tracking number, FIQ2XES4A9. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

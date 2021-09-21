@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Nancy Tucker.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 05574 Melissa Knoll Apt. 729 Garzamouth, KY 34705.
-SYS: The tracking number is DU9BE3RTDU. Are you happy about my answer?
-USR: That's it. Thanks!

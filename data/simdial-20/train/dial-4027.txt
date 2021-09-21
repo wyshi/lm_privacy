@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Frank Carlson.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 211 Berg Mountains Apt. 179 Davidtown, NY 21453.
-SYS: The tracking number is LBJRU40BAI. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Bye.

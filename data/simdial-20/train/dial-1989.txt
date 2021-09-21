@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: My name's Sherry Bolin.
-SYS: Can you provide the order number?
-USR: 280-56452-0046 I am Sherry Bolin.
-SYS: You can track your package with your tracking number, which is Y52VZ5UN55. What else can I do?
-USR: All good. See you.
-SYS: Have a nice day! Bye.

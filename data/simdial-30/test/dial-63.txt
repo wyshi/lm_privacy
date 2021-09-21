@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Deborah Bowers.
-SYS: We will need the shipping address as well.
-USR: My address is 0962 Wagner Landing Chanshire, AR 24703.
-SYS: The tracking number is IECGS1A04L. What else can I do?
-USR: All good.

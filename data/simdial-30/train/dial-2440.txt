@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's Linda Porter.
-SYS: Verify your phone number please.
-USR: 271.192.0740 is my number.
-SYS: The tracking number is 52JNKYZI9O. Anything else?
-USR: That's it. Thanks!

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Isaiah Quinones.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 74180 Carla Glens Apt. 387 Colemanfurt, OK 27881.
-SYS: You can track your package with your tracking number, which is 1ME44HR42K. What else can I do?
-USR: That's it. Thanks!

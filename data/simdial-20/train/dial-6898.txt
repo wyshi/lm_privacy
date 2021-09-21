@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Ignacio Fenner.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 1971 Kenneth Point Suite 594 New Michael, MN 95672.
-SYS: You can track your package with your tracking number, which is LXIAZ2EHGG. Are you happy about my answer?
-USR: All good.

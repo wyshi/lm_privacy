@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Cody Estrada.
-SYS: Verify your phone number please.
-USR: my number is 8927677504.
-SYS: You can track your package with your tracking number, which is 3DFZB5KYKU. Is there anything else I can help with?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Kelly Lentini.
-SYS: Could you please confirm your shipping address?
-USR: My address is 962 Jessica Forest Kristenfort, TN 34456.
-SYS: The tracking number is OUUH85XDQE. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Bye.

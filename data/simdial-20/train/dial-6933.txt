@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Ada Clark
-SYS: Verify your order number please.
-USR: Sure, it is 186-85404-8917
-SYS: You can track your package with your tracking number, which is LQEI3HKQSU. What else can I do?
-USR: No more questions.

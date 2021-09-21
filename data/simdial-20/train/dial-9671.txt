@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: My name's Michael Beck.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 49805 Kayla Valleys Apt. 398 Lake Victoriaton, NY 37632.
-SYS: The tracking number is AUHTJ6L7D6. Anything else?
-USR: All good.

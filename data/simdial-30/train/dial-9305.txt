@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Elizabeth Connors
-SYS: Could you please confirm your shipping address?
-USR: My address is 731 Jones Mill Sandersbury, WV 80537.
-SYS: Track your order using your tracking number, GOXVW1UH8N. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

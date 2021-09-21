@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Lourdes Randle
-SYS: Ok, may I have your phone number?
-USR: Phone number is 751-461-3037
-SYS: Track your order using your tracking number, ITV225992D. Is there anything else I can help with?
-USR: That's it.

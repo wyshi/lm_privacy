@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Carmine Johnston.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 63940 Anderson Knolls Josephville, MD 08746.
-SYS: The tracking number is 24S3CSNCSC. What else can I do?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Jesse Alden.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 83098 Ferrell Orchard Apt. 530 Tracimouth, HI 40345.
-SYS: You can track your package with your tracking number, which is F05803IZXL. What else can I do?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

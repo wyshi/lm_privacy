@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Frank Elamin.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 102.705.8734
-SYS: Track your order using your tracking number, AMZA7CRDDD. What else can I do?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

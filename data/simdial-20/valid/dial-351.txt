@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Danielle Crain.
-SYS: Could you please confirm your shipping address?
-USR: 4612 Katherine Island South Ericaside, ND 26857.
-SYS: The tracking number is L2LM93PCKB. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

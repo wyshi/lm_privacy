@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Rosalina Chadwick.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 3692 Strong Gateway Suite 765 Josephmouth, CO 82660.
-SYS: The tracking number is V8J22J6CUX. What else can I do?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, David Robinson.
-SYS: Verify your phone number please.
-USR: 337.851.2416 is my number.
-SYS: You can track your package with your tracking number, which is IB7SI5UCZ9. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm Dudley Larson.
-SYS: Ok, may I have your phone number?
-USR: 987-410-9330.
-SYS: You can track your package with your tracking number, which is UIPQ8WKTV7. Is there anything else I can help with?
-USR: No more questions.

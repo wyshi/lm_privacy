@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Jamie Dunn.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 028 Carlos Row Heatherhaven, PA 33228.
-SYS: Track your order using your tracking number, P0WC1SPBTR. Are you happy about my answer?
-USR: That's it.

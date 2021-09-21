@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Steve Vance
-SYS: We will need the shipping address as well.
-USR: Yea sure, 7797 Stephanie Course Apt. 589 West Eric, OK 59130.
-SYS: The tracking number is Z9OJZ0ABL1. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

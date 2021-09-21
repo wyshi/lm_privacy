@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Daniel Sands.
-SYS: Could you please confirm your shipping address?
-USR: My address is 4184 Jones Green West Crystalmouth, WI 56430.
-SYS: The tracking number is WGMWPD49RH. Anything else?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

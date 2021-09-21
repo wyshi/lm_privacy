@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Clinton Gomez.
-SYS: We will need the shipping address as well.
-USR: 6631 Kenneth Place Suite 087 Floreshaven, NC 89868.
-SYS: You can track your package with your tracking number, which is KEKAXDFA6A. Anything else?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

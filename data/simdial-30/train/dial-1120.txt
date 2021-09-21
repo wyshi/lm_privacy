@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Clara Kelly.
-SYS: We will need the shipping address as well.
-USR: My address is 5492 Nichole Loop Rochachester, AZ 41535.
-SYS: You can track your package with your tracking number, which is JTRPU9BRJZ. Are you happy about my answer?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Peter Rayford.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 18323 Abbott Rapids Suite 816 North Michael, ND 19639.
-SYS: The tracking number is U33OYLLBT0. What else can I do?
-USR: All good.

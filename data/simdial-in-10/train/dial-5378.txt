@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Kenneth Adams.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 76828 Michael Fork New Peter, MN 56523.
-SYS: The tracking number is BIEEVYFB3U. Is there anything else I can help with?
-USR: All good.

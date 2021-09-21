@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Robert Moore.
-SYS: We will need the shipping address as well.
-USR: 650 Julie Landing Taraland, NC 51859.
-SYS: You can track your package with your tracking number, which is 4QNBEEOMVW. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

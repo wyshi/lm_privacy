@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sun Banks
-SYS: We will need the shipping address as well.
-USR: Yea sure, 43752 Marvin Wall Suite 501 Carolchester, WY 96882.
-SYS: The tracking number is HIV5HDIDBZ. Are you happy about my answer?
-USR: No more questions.

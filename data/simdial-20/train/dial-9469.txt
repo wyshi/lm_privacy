@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, William Milo.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5257 Davis Stravenue Suite 800 South Jared, AR 83520.
-SYS: The tracking number is D8GT3L4L27. Anything else?
-USR: That's it. See you.
-SYS: Goodbye.

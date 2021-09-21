@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Barbara Pascual.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 22058 Wilson Hollow Suite 900 Richardmouth, MI 16926.
-SYS: Track your order using your tracking number, 6XMHSJYD47. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Alfred Soileau
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 702-774-6581.
-SYS: The tracking number is F0PMM13DMC. Is there anything else I can help with?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Edward Rogers.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 6236 Kelly Drives Lake Charles, CA 66731.
-SYS: The tracking number is LOZUNJ6WTP. Is there anything else I can help with?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, David Slick.
-SYS: We will need the shipping address as well.
-USR: 4006 Kevin Landing Trevinoview, MN 11005.
-SYS: The tracking number is VYLZ6P1G7L. Anything else?
-USR: No more questions.

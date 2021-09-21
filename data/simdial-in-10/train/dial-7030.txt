@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Joseph Hollins.
-SYS: Could you please confirm your shipping address?
-USR: 885 Garza Valley Suite 734 Connieborough, WY 68664.
-SYS: You can track your package with your tracking number, which is CTOFKWWEBB. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Bye.

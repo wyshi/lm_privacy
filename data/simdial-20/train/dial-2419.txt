@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Kim Pearce.
-SYS: We will need the shipping address as well.
-USR: 2545 Heath Camp Farmerton, TX 60049.
-SYS: The tracking number is 8QAHVBTRN4. Anything else?
-USR: That's it. Thank you.
-SYS: Bye.

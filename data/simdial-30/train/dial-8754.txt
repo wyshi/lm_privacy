@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: I am Richard Smart.
-SYS: Verify your order number please.
-USR: Yes, 901-82302-2966.
-SYS: Track your order using your tracking number, H93MGVP2A6. What else can I do?
-USR: No more questions.

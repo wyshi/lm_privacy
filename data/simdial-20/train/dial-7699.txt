@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Alice Reagan.
-SYS: We will need the shipping address as well.
-USR: My address is 5082 Smith Shore Apt. 498 North Tamara, NH 04614.
-SYS: The tracking number is EIRZKPCJ7Z. Anything else?
-USR: All good.

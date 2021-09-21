@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Martha Leonard.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 1869 Robert Lake East Michaelhaven, AL 49597. My name's Martha Leonard.
-SYS: The tracking number is AKFS18VMDD. Are you happy about my answer?
-USR: That's it.

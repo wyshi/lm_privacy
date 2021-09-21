@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Hobert Clark.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 0608 Meyer Ranch New Melissaberg, HI 17217.
-SYS: The tracking number is HRGKMV9UOT. Are you happy about my answer?
-USR: All good.

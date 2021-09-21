@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Williams Harris.
-SYS: Verify your phone number please.
-USR: my number is 7693121285.
-SYS: You can track your package with your tracking number, which is DA1YGFBCE9. Anything else?
-USR: That's it. Thanks!

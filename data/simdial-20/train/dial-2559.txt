@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Lydia Alvares.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 4604 Franco Route Williammouth, NE 62722.
-SYS: Track your order using your tracking number, 2M9VTE7VR5. What else can I do?
-USR: No more questions.

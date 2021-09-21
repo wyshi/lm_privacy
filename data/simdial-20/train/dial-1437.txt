@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Steve Zelaya
-SYS: We will need the shipping address as well.
-USR: Yea sure, 508 York Square South Ryan, SC 70131.
-SYS: You can track your package with your tracking number, which is SEKRNB0PX0. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Jesse Alden.
-SYS: Verify your order number please.
-USR: My order number is 744-52410-8983.
-SYS: You can track your package with your tracking number, which is 971Q9KNNGY. What else can I do?
-USR: I have all I need.

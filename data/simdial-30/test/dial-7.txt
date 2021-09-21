@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Sean Krulik.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is Unit 3001 Box 1474 DPO AE 96779.
-SYS: Track your order using your tracking number, E5JLOL5TLL. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Dana Alberto.
-SYS: Verify your phone number please.
-USR: 5787635415.
-SYS: You can track your package with your tracking number, which is J4VJGGZ2W4. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

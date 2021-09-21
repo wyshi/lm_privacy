@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: My name's Kelly Miller.
-SYS: Verify your phone number please.
-USR: You can reach me at 933.816.4204.
-SYS: You can track your package with your tracking number, which is QHH5NFW4XD. What else can I do?
-USR: That's it. See you.
-SYS: Bye.

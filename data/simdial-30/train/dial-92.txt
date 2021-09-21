@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: William Pickett
-SYS: We will need the shipping address as well.
-USR: My address is 127 Baird Spur Suite 177 East Jameschester, SC 68620.
-SYS: The tracking number is JK2OSM5C4D. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

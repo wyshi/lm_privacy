@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yes, Mary Knecht.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 551 April Ranch Apt. 261 West Johnfort, AR 98364.
-SYS: The tracking number is SH6031CQ7P. Are you happy about my answer?
-USR: No more questions.

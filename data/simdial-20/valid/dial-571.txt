@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Donna Kimball
-SYS: We will need the shipping address as well.
-USR: 544 Torres Pike Apt. 363 Dianeberg, OR 80139.
-SYS: You can track your package with your tracking number, which is M88JW3WTD3. Anything else?
-USR: No more questions. See you.
-SYS: Goodbye.

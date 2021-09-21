@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Carol Anderson.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 920 Smith Key Apt. 422 Terryport, PA 88437.
-SYS: You can track your package with your tracking number, which is L6H3UAW2MK. Are you happy about my answer?
-USR: That's it. See you.
-SYS: Goodbye.

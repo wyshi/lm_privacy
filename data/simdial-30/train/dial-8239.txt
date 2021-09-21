@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Gregory Chandler.
-SYS: Verify your order number please.
-USR: Yes, 728-34832-9547.
-SYS: You can track your package with your tracking number, which is WL09A9ML1W. Is there anything else I can help with?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

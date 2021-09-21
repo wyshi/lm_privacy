@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Irma Jacques.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 12606 Peterson Radial Apt. 088 Port Jesse, KY 26977.
-SYS: Track your order using your tracking number, H5KCME9AD6. Anything else?
-USR: All good.

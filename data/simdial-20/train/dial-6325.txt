@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Kenneth Bianco.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 4397 Calhoun Island Apt. 459 Lake Robyn, WV 43877.
-SYS: Track your order using your tracking number, NL05UG90PW. What else can I do?
-USR: No more questions.

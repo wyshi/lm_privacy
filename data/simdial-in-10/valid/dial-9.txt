@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Sandra Viola.
-SYS: Could you please confirm your shipping address?
-USR: My address is 33079 Dunn Road Suite 413 New Madisonmouth, SC 11649.
-SYS: The tracking number is VOSE49Y00I. Anything else?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

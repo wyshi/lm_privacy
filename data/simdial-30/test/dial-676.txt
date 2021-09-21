@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, George Brann.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 1941 Jimenez Grove Apt. 082 Burnsland, IN 11653.
-SYS: Track your order using your tracking number, NCOJFWRI1Q. Anything else?
-USR: That's it. See you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am David Cabading.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 193 Anna Shores Colleenton, GA 43759.
-SYS: Track your order using your tracking number, PLTXD54877. What else can I do?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Refugio Corbin.
-SYS: Ok, may I have your phone number?
-USR: my number is 948-690-9870.
-SYS: The tracking number is KGLRAO9ZBT. Anything else?
-USR: That's it. That's all.
-SYS: Bye.

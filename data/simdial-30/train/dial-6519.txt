@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: John Gabbert.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 47595 Katherine Ranch Apt. 329 Ramirezbury, IN 66191.
-SYS: You can track your package with your tracking number, which is 7BVW51GXX4. Are you happy about my answer?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Daria Miller.
-SYS: We will need the shipping address as well.
-USR: My address is 547 Carr Roads Stephenton, MA 90079.
-SYS: You can track your package with your tracking number, which is 3VS76SGO4A. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Bye.

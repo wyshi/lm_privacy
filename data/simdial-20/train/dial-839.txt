@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Felisha Donaldson.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 7597 Norman Knoll Apt. 663 Dennismouth, LA 17586.
-SYS: The tracking number is 829T6PFI8F. Is there anything else I can help with?
-USR: All good.

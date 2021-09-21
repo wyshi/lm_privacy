@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Pearl Miller.
-SYS: Ok, may I have your phone number?
-USR: my number is 388-356-3861.
-SYS: You can track your package with your tracking number, which is KT3FBEAY3Z. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Brittany Bliss.
-SYS: Could you please confirm your shipping address?
-USR: My address is 684 Becker Lakes Apt. 460 South Anthonyburgh, NM 39388.
-SYS: You can track your package with your tracking number, which is 6AGU0GLUY2. Is there anything else I can help with?
-USR: No more questions.

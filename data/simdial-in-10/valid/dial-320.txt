@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Wade Lebron.
-SYS: Can you provide the order number?
-USR: Yes, 752-29737-7645.
-SYS: The tracking number is CFB0W39S89. What else can I do?
-USR: That's it.

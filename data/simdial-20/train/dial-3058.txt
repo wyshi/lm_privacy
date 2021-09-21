@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Lynn Manery.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 8566 Becker Turnpike Apt. 446 Lake Allison, ID 65783.
-SYS: You can track your package with your tracking number, which is 4JIV9UBZGT. What else can I do?
-USR: All good. That's all.
-SYS: Goodbye.

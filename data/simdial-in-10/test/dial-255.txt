@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Mario Taylor.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 39359 Melissa Ranch Apt. 375 Wrightshire, MD 71391.
-SYS: Track your order using your tracking number, G1EFOZQWD7. Is there anything else I can help with?
-USR: That's it. Thanks!

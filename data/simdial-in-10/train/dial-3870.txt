@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Matthew Alicea.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 03669 Stephanie Spur Gabriellemouth, HI 21380.
-SYS: You can track your package with your tracking number, which is GYH62IG2DV. What else can I do?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: I am Troy Schontz.
-SYS: Verify your phone number please.
-USR: 323-343-9237.
-SYS: You can track your package with your tracking number, which is J3HAIENFAL. What else can I do?
-USR: No more questions. Thank you.
-SYS: Goodbye.

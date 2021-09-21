@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Stella Brooks.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 366 Bell Gardens Apt. 028 Laneville, CT 32681.
-SYS: You can track your package with your tracking number, which is ITEO6E5BW2. Is there anything else I can help with?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Amy Wiggins.
-SYS: Could you please confirm your shipping address?
-USR: 183 John Keys Harperstad, WY 78207.
-SYS: The tracking number is TAJGYVU673. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

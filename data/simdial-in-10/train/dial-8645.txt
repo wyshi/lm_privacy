@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Francisco Monroe. my number is 481.694.1828.
-SYS: You can track your package with your tracking number, which is SG5DEW9XTX. Are you happy about my answer?
-USR: That's it.

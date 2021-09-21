@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Maureen Cullens
-SYS: Could you please confirm your shipping address?
-USR: My address is 73022 Rowland Lane Robertbury, SC 95577.
-SYS: The tracking number is SL933L6EMD. What else can I do?
-USR: That's it.

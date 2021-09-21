@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Virgil Hoppes.
-SYS: Can you provide the order number?
-USR: Yes, 870-42349-9151.
-SYS: The tracking number is MOI5XKBIHT. Are you happy about my answer?
-USR: That's it. Thanks!

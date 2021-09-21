@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Regina Maldonado.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 85967 Reynolds Vista Suite 825 Petersonbury, AR 32488.
-SYS: You can track your package with your tracking number, which is 2VZXUU4QG3. Anything else?
-USR: I have all I need.

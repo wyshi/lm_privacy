@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Carmen Pettry
-SYS: We will need the shipping address as well.
-USR: Ok, it is 42346 Patricia Fall Jeanneland, AL 87503.
-SYS: The tracking number is NRL2N2XZDO. Anything else?
-USR: That's it.

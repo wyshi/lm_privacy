@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Lang Jackson. Yea sure, PSC 3289, Box 9781 APO AP 08721.
-SYS: You can track your package with your tracking number, which is MA9NIB7KF0. Are you happy about my answer?
-USR: All good.

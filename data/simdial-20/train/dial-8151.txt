@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Elizabeth Zimmerman
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 09743 Dunn Lane Apt. 213 South Thomas, SC 27235.
-SYS: Track your order using your tracking number, LWMZENGI6C. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Allison Slack.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 6966 Lisa Crest Suite 931 Lake Seanfurt, ME 13946.
-SYS: You can track your package with your tracking number, which is 7JUGG5C9UH. Are you happy about my answer?
-USR: That's it.

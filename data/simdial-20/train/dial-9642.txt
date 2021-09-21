@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm Teri Hobbs.
-SYS: Could you please confirm your shipping address?
-USR: Unit 1022 Box 2912 DPO AA 88030.
-SYS: The tracking number is Y1KMQDPOIZ. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

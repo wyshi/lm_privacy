@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am William Camper.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 472 Nichole Station Smithview, LA 07280.
-SYS: Track your order using your tracking number, 65MWN797ZB. Anything else?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Dennis Hall.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 183 Melissa Station Suite 616 Kellystad, WI 61214.
-SYS: You can track your package with your tracking number, which is J11T0A39PY. Anything else?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

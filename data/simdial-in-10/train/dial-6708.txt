@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Peter Moore
-SYS: We will need the shipping address as well.
-USR: Ok, it is 960 Hayes Spurs Suite 064 New Patricia, SC 62918.
-SYS: You can track your package with your tracking number, which is N1I4BZW4LZ. What else can I do?
-USR: All good. See you.
-SYS: Have a nice day! Bye.

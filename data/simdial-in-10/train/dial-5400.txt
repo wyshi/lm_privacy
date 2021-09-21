@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Latasha Reffett.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 868 Gregory Plains Suite 615 Sheltonland, RI 49174.
-SYS: Track your order using your tracking number, R5EWKR7NF2. Is there anything else I can help with?
-USR: That's it. Thanks!

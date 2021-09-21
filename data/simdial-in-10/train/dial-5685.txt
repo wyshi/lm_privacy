@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Michelle Cleary
-SYS: We will need the shipping address as well.
-USR: USNV Smith FPO AP 28436.
-SYS: You can track your package with your tracking number, which is DTRY9Z9VAH. Is there anything else I can help with?
-USR: All good. Thank you.
-SYS: Bye.

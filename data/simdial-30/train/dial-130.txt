@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Barbara Galindo.
-SYS: Could you please confirm your shipping address?
-USR: My address is 097 Abigail Cape Apt. 939 West Bradleyfurt, AR 37252.
-SYS: You can track your package with your tracking number, which is ADXCIUG5XV. What else can I do?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

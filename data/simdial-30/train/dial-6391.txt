@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Ida Souter.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 489 Lewis Pike Apt. 408 Valeriemouth, MT 45984. Yep - I'm Ida Souter.
-SYS: You can track your package with your tracking number, which is BJI7WNOQAP. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

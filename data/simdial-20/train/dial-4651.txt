@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Marie Sanchez
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 97350 Reyes Isle Apt. 795 Katherinechester, MO 06224.
-SYS: You can track your package with your tracking number, which is GNYETJDM9B. What else can I do?
-USR: I have all I need.

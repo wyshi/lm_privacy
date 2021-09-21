@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Gayle Brown.
-SYS: We will need the shipping address as well.
-USR: 78380 Perry Ferry North Jeffrey, AL 76993.
-SYS: You can track your package with your tracking number, which is 1MY6D8QXVM. Is there anything else I can help with?
-USR: All good.

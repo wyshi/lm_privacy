@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Louise Tinsley.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 10140 Christopher Key South Jean, FL 38115.
-SYS: The tracking number is UTS85VXA15. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

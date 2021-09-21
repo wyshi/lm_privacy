@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Melissa Hammons.
-SYS: Verify your order number please.
-USR: 358-61384-9952
-SYS: The tracking number is VTZUGE6G4W. Is there anything else I can help with?
-USR: I have all I need.

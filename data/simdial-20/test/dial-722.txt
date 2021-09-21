@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: I am Daniel Fidler.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 700-850-4489
-SYS: You can track your package with your tracking number, which is 6VZP0RLR3Y. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Cynthia Mendoza.
-SYS: Ok, may I have your phone number?
-USR: 533-418-8912.
-SYS: You can track your package with your tracking number, which is HAH7MI2T1I. Anything else?
-USR: No more questions.

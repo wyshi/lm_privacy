@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Alice Pasion
-SYS: We will need the shipping address as well.
-USR: My address is 4082 Brittany Curve Suite 929 Lake Daniel, NV 25255.
-SYS: You can track your package with your tracking number, which is SYBNDUPIB7. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

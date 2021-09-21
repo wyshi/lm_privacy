@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Fanny Allen.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 4165 Ramirez Islands South Tanya, GA 85885.
-SYS: Track your order using your tracking number, 56STAHXMWI. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: Bye.

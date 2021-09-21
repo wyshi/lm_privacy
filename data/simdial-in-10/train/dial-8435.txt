@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Annie Hetz
-SYS: Could you please confirm your shipping address?
-USR: 52274 Miller Stravenue Apt. 158 Marybury, IN 58477.
-SYS: Track your order using your tracking number, 6N6S7WIYG5. What else can I do?
-USR: No more questions. See you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Glenn Sizemore
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 349 Brenda Port East Eric, WY 19729.
-SYS: Track your order using your tracking number, GQOIIO2RGA. What else can I do?
-USR: I have all I need.

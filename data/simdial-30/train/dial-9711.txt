@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Simon Weiner.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 64799 Johnson Mountain Suite 543 East Sandraville, WV 23810.
-SYS: Track your order using your tracking number, ZHPOYP1PVX. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

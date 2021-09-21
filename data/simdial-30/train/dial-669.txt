@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Shawn Salinas.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, Unit 9150 Box 2407 DPO AA 56658.
-SYS: You can track your package with your tracking number, which is 0W1VE34YNA. What else can I do?
-USR: All good.

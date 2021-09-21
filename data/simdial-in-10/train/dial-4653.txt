@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Thelma Hathorn
-SYS: Could you please confirm your shipping address?
-USR: My address is 9168 Garcia Port Apt. 114 Tamifurt, TX 82645.
-SYS: The tracking number is D6ADBBZ22H. Anything else?
-USR: That's it. Thanks!

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Lorri Taylor.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 7206 Jones Expressway Suite 308 East Briantown, TX 39042.
-SYS: Track your order using your tracking number, JL3SZIHGLH. What else can I do?
-USR: No more questions.

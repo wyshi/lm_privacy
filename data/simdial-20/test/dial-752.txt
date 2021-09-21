@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: I am Tyrone Copeland.
-SYS: We will need the shipping address as well.
-USR: Yea sure, Unit 6324 Box 6705 DPO AA 07895.
-SYS: The tracking number is UOM380C17N. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

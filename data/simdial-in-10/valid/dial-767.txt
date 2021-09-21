@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, Helen Thomas.
-SYS: Could you please confirm your shipping address?
-USR: My address is 248 Luis Squares East William, NY 93319.
-SYS: The tracking number is BJAECFOGIU. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

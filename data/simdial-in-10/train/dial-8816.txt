@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Effie Parrott
-SYS: We will need the shipping address as well.
-USR: Shipping address is 151 Perez Landing North Monicachester, MI 18751.
-SYS: You can track your package with your tracking number, which is 7XV5HDUXNG. Anything else?
-USR: No more questions.

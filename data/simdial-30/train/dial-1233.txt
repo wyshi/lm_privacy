@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Guadalupe Chong.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 31490 John Highway Johnnyside, PA 56561.
-SYS: You can track your package with your tracking number, which is HPMVFXJP5N. Anything else?
-USR: I have all I need.

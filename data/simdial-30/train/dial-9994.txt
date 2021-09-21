@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's Amber Lopez.
-SYS: We will need the shipping address as well.
-USR: 60839 Jay Shores Suite 796 South Robert, NC 12951.
-SYS: Track your order using your tracking number, L1HT17MUQ2. Is there anything else I can help with?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Ursula Johnson.
-SYS: Ok, may I have your phone number?
-USR: my number is 451.323.3950.
-SYS: Track your order using your tracking number, PQ830A4OJ7. Anything else?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

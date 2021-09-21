@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Jimmie Garcia.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 890 Young Light Apt. 807 East David, KS 63686.
-SYS: You can track your package with your tracking number, which is XQ50HJT8K6. Is there anything else I can help with?
-USR: No more questions.

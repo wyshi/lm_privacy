@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Mildred Burk
-SYS: Could you please confirm your shipping address?
-USR: My address is 50461 Hanson River North Marie, NM 77647.
-SYS: The tracking number is X2JV0T5DHZ. Are you happy about my answer?
-USR: No more questions.

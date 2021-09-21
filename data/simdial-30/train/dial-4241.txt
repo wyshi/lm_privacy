@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Sure, Ida Lewis.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 44731 Tammy Fields Kingfurt, SC 18346.
-SYS: You can track your package with your tracking number, which is D1FQBWYUOL. Are you happy about my answer?
-USR: No more questions.

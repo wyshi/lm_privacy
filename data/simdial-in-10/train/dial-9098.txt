@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Teresa Arthur.
-SYS: Could you please confirm your shipping address?
-USR: My address is 042 Alexander Forges Port Jacquelinefurt, DE 05165.
-SYS: The tracking number is 4M0Z93QNW4. Is there anything else I can help with?
-USR: I have all I need.

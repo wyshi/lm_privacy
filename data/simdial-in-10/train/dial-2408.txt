@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Juan Foltz.
-SYS: We will need the shipping address as well.
-USR: My address is USCGC Booker FPO AE 35006.
-SYS: The tracking number is VJMADL5KS1. What else can I do?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

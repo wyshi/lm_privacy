@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Dennis Cruson
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 461.584.9355.
-SYS: Track your order using your tracking number, Q75KVB6YLU. Is there anything else I can help with?
-USR: No more questions.

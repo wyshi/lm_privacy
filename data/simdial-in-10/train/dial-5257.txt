@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Rodney Murphy.
-SYS: We will need the shipping address as well.
-USR: My address is 5560 Taylor Corners Suite 921 Francisbury, MN 85697.
-SYS: The tracking number is 0FCC58DVYW. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

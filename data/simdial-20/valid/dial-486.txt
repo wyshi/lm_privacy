@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Ida Peterson.
-SYS: Could you please confirm your shipping address?
-USR: 646 Marshall Run Suite 820 New Annettehaven, ME 08051.
-SYS: The tracking number is HZMDNFOZ8W. What else can I do?
-USR: No more questions.

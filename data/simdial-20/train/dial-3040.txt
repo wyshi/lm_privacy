@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Gerald Maland.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 823-752-5074 Gerald Maland.
-SYS: The tracking number is BB6RI7HDN8. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Kenneth Vos.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 66229 Hancock Summit Wrightchester, RI 32194.
-SYS: You can track your package with your tracking number, which is L2ED8BA7IM. Anything else?
-USR: I have all I need. See you.
-SYS: Bye.

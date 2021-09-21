@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Elaine Kinghorn.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 034 Robinson Garden East David, NV 30201.
-SYS: Track your order using your tracking number, KXTCGSRYWF. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

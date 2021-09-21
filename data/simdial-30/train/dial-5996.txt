@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Jerry Dolan.
-SYS: Ok, may I have your phone number?
-USR: 4415565667 is my number.
-SYS: Track your order using your tracking number, 7R2J25N7CB. Is there anything else I can help with?
-USR: That's it. Thanks!

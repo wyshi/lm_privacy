@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Ronald Hanner.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 1357 Isabel Ville Morrisville, WV 54333.
-SYS: You can track your package with your tracking number, which is DQVM7SZPCN. What else can I do?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

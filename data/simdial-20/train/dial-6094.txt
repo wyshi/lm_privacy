@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Joshua Russell.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 47819 Wanda Glens Suite 831 New Samanthaton, WV 01961.
-SYS: Track your order using your tracking number, KR1KXXFRPZ. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

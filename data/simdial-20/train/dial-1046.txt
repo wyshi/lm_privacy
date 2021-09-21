@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Barbara Bigbee.
-SYS: We will need the shipping address as well.
-USR: 774 Robinson Loop Suite 204 Port Alexandra, WI 40079.
-SYS: The tracking number is LADWT3B7T6. Is there anything else I can help with?
-USR: No more questions.

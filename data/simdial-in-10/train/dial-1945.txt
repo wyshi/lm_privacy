@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Jennifer Head.
-SYS: Could you please confirm your shipping address?
-USR: My address is 067 Holmes Lights Suite 015 Lake Xavier, SC 50725.
-SYS: The tracking number is NBCXBZCB23. Anything else?
-USR: No more questions.

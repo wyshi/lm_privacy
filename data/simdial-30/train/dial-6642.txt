@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Maria Takemura. 3606660943 is my number.
-SYS: Track your order using your tracking number, MPNVGMO71D. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: Bye.

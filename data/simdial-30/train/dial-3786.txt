@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, William Finder.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 462 Miller Junctions Brownberg, MN 59020.
-SYS: The tracking number is QT88UZVH9G. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

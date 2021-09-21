@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Nathaniel Paris.
-SYS: We will need the shipping address as well.
-USR: Ok, it is USNV Jordan FPO AP 43403.
-SYS: You can track your package with your tracking number, which is 8LV4FSPY58. What else can I do?
-USR: That's it. Thanks!

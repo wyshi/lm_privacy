@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Sure, Betty Sims.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 2241 Fitzgerald Viaduct Brownview, OK 28304.
-SYS: Track your order using your tracking number, FH6F6GMMF4. Are you happy about my answer?
-USR: That's it. My ID is 341752.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Jasmine Cox.
-SYS: We will need the shipping address as well.
-USR: My address is 25739 Robinson Burg Apt. 980 Vanceland, AZ 96215.
-SYS: The tracking number is WWZCPI2ZKK. What else can I do?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Megan Carter.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 49248 Holly Fort Amandashire, WA 41101.
-SYS: The tracking number is MIZLPQD1N1. What else can I do?
-USR: All good.

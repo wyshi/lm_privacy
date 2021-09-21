@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Sure, James Camp.
-SYS: Could you please confirm your shipping address?
-USR: My address is 6286 Darrell Orchard Johnsonchester, AZ 09012.
-SYS: The tracking number is 0P1RCSU3D4. Are you happy about my answer?
-USR: All good.

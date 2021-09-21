@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Rebecca Moreno.
-SYS: Could you please confirm your shipping address?
-USR: My address is 8648 Wheeler Lock West Christinaborough, AK 69751.
-SYS: Track your order using your tracking number, DLU1RI4FPT. What else can I do?
-USR: That's it. See you.
-SYS: Goodbye.

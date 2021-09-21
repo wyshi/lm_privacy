@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Eric Berry.
-SYS: We will need the shipping address as well.
-USR: 2969 Nielsen Mountain Suite 276 East Heathertown, ND 90668.
-SYS: Track your order using your tracking number, XQTUOY4PUO. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Matthew Kirkland.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 93596 Rice Curve Suite 042 North Nicholas, KS 67195.
-SYS: Track your order using your tracking number, QLLCRFYXYW. What else can I do?
-USR: I have all I need. See you.
-SYS: Goodbye.

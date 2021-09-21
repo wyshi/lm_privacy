@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Donna Thompson.
-SYS: Ok, may I have your phone number?
-USR: 6235652426 is my number.
-SYS: You can track your package with your tracking number, which is KIG4JICLZ8. Is there anything else I can help with?
-USR: All good. See you.
-SYS: Bye.

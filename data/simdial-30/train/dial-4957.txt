@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Leonard Turner.
-SYS: Verify your phone number please.
-USR: Phone number is 819-278-2164
-SYS: Track your order using your tracking number, VQK6TRGEP6. Is there anything else I can help with?
-USR: That's it.

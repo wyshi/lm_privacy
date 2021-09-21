@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Elizabeth Correa.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 514.313.7229.
-SYS: Track your order using your tracking number, P2DKV6KMB7. What else can I do?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Derrick Wadkins.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 499-825-6954
-SYS: The tracking number is PMUVS3DO22. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

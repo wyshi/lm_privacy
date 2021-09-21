@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Andrew Barfield.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 58979 Ryan Port Brownville, NM 05962.
-SYS: Track your order using your tracking number, Q7BLVYXFW9. Anything else?
-USR: No more questions.

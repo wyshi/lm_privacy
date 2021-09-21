@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Joseph Bean.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 841 Wright Cliffs Apt. 927 Sandrahaven, NV 35120.
-SYS: Track your order using your tracking number, B8CTC09GER. Are you happy about my answer?
-USR: No more questions.

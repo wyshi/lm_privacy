@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Ella Hawkes
-SYS: We will need the shipping address as well.
-USR: My address is 0806 Nicole Place Millerville, MA 43733.
-SYS: The tracking number is XIA9WFM2QL. Are you happy about my answer?
-USR: No more questions.

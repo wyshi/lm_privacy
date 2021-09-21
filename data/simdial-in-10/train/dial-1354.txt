@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Courtney Rhoads.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 2086 Andrew Hill Jonesview, KY 29058.
-SYS: The tracking number is 1ZBPT6QDQY. What else can I do?
-USR: That's it.

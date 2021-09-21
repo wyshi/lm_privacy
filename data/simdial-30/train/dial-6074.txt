@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: My name's Frank Neumann.
-SYS: Ok, may I have your phone number?
-USR: 272.381.1601 is my number.
-SYS: The tracking number is PDWHWSQDRM. Anything else?
-USR: No more questions. That's all.
-SYS: Goodbye.

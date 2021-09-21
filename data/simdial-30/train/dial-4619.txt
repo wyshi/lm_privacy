@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Daisy Macleod.
-SYS: We will need the shipping address as well.
-USR: My address is 92597 Luke Groves Apt. 176 Marquezville, KS 59472.
-SYS: Track your order using your tracking number, 9SI6BZMD90. What else can I do?
-USR: That's it. Thanks!

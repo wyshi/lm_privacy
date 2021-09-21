@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Antoinette Johnston.
-SYS: Could you please confirm your shipping address?
-USR: 9737 Scott Mountain Suite 489 New Matthew, ME 09849.
-SYS: You can track your package with your tracking number, which is PU06UO0QHC. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Bye.

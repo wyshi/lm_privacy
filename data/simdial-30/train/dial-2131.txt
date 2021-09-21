@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Jamie Schwenk.
-SYS: We will need the shipping address as well.
-USR: Shipping address is Unit 8525 Box 3767 DPO AP 24311.
-SYS: You can track your package with your tracking number, which is CGUP9LJ3K9. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

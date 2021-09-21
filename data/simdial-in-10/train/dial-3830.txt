@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Jonathan Clerc
-SYS: We will need the shipping address as well.
-USR: Ok, it is 7177 Laura Radial Suite 230 New Saraport, VT 54047.
-SYS: Track your order using your tracking number, YBCZ7JDGGZ. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

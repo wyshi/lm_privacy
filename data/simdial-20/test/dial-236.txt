@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Shanae Conner.
-SYS: Verify your order number please.
-USR: Yes, 331-64906-3464.
-SYS: You can track your package with your tracking number, which is G62PQPSWI3. Is there anything else I can help with?
-USR: No more questions.

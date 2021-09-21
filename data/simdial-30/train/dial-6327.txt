@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, John Liang.
-SYS: We will need the shipping address as well.
-USR: 970 Adam Avenue Suite 156 Coxborough, TX 19258.
-SYS: Track your order using your tracking number, D5GJN2Q214. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Goodbye.

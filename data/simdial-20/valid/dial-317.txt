@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Robert Burmside.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 32816 Campbell Rest Elizabethfurt, VT 64477.
-SYS: The tracking number is SCX8AXLXAO. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Goodbye.

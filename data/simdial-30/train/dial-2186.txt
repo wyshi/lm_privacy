@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Gordon Brainard.
-SYS: Could you please confirm your shipping address?
-USR: 6870 Stephen Divide Apt. 213 West Robertport, WY 38319.
-SYS: You can track your package with your tracking number, which is 9D0QS66Y0A. Are you happy about my answer?
-USR: All good. See you.
-SYS: Goodbye.

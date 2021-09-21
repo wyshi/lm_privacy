@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Kristen Casteel.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 1441 Johnson Union Charlestown, AZ 97891.
-SYS: Track your order using your tracking number, 6L6PT9PDUX. Is there anything else I can help with?
-USR: All good.

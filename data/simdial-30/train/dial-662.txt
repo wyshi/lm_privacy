@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Edward Huffman
-SYS: We will need the shipping address as well.
-USR: Yea sure, 29831 Angela Lake Suite 985 Lake Josephchester, NH 11486.
-SYS: You can track your package with your tracking number, which is F88HYZ1TH8. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Sandra Holt.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 6399 Jade Mountain Apt. 124 Lake Jeffreytown, FL 35759.
-SYS: You can track your package with your tracking number, which is 2V55ZWZG3B. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

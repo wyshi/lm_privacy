@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am Daniel Goodwin. Shipping address is 201 Garrett Route Suite 049 Port Shellyburgh, CA 26904.
-SYS: The tracking number is 9A8XD5EVT9. What else can I do?
-USR: That's it.

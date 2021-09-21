@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Charlene Nevarez.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 769 Long Valleys Apt. 826 Sloanshire, OH 15581.
-SYS: The tracking number is ZT3X47C2KO. Anything else?
-USR: All good. That's all.
-SYS: Bye.

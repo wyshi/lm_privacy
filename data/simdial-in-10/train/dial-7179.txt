@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Rodolfo Hall.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 88956 Maxwell Groves Suite 268 West Angela, WI 40653.
-SYS: You can track your package with your tracking number, which is HJRO8BSZFV. Are you happy about my answer?
-USR: No more questions.

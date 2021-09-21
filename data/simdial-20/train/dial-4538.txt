@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Eartha Mitchel.
-SYS: Ok, may I have your phone number?
-USR: my number is 153.493.9105.
-SYS: Track your order using your tracking number, X0AMO4NN4U. What else can I do?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Terry Holley
-SYS: Could you please confirm your shipping address?
-USR: 7345 Walker Fork Scottchester, TN 15522.
-SYS: Track your order using your tracking number, 2AW4L984Q9. Anything else?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Tyrone Partington.
-SYS: Could you please confirm your shipping address?
-USR: 3476 Dillon Road Suite 443 Port Ashley, WY 91152.
-SYS: Track your order using your tracking number, PLH16T0U36. Is there anything else I can help with?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Minnie Dain
-SYS: We will need the shipping address as well.
-USR: Yea sure, 733 Chris Mill Suite 870 North Benjaminshire, AZ 45459.
-SYS: Track your order using your tracking number, US29WOHFOZ. What else can I do?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

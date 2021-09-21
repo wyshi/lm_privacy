@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Jennifer Collini.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 993-267-5235.
-SYS: Track your order using your tracking number, UJZGSLRQHC. Is there anything else I can help with?
-USR: That's it. Thanks!

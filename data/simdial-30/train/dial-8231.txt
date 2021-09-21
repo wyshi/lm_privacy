@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Rhonda Schmuff
-SYS: We will need the shipping address as well.
-USR: My address is 52921 Phillip Groves Suite 704 Stevenville, LA 33897.
-SYS: Track your order using your tracking number, 9V3PQDYQF5. Is there anything else I can help with?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Ruby Peabody.
-SYS: Could you please confirm your shipping address?
-USR: 59896 Matthew Keys Barryborough, NC 99560.
-SYS: The tracking number is PYJ2A2X7RZ. Is there anything else I can help with?
-USR: All good.

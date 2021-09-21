@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Clyde Solomon.
-SYS: Verify your phone number please.
-USR: 542-408-3018 is my number.
-SYS: You can track your package with your tracking number, which is 1758F6OT3M. Is there anything else I can help with?
-USR: No more questions.

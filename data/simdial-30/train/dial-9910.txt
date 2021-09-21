@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Patrick Haas.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 34131 Snyder Prairie Robertland, MI 33925.
-SYS: Track your order using your tracking number, KUX5JLMYJG. What else can I do?
-USR: I have all I need.

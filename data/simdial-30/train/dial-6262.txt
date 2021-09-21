@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Sure, Christopher Mcginnis.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, PSC 7249, Box 6313 APO AP 56668.
-SYS: You can track your package with your tracking number, which is PFRKHCF0BI. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

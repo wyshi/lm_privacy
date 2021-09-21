@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Janet Welsh.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 864 Walker Park Autumnmouth, TX 36958.
-SYS: Track your order using your tracking number, GI48Y2MN0O. Anything else?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Ruth Widmer.
-SYS: We will need the shipping address as well.
-USR: 82429 Chavez Bypass Apt. 387 Hurleyhaven, DE 05985.
-SYS: Track your order using your tracking number, 3S19CY1IAF. What else can I do?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

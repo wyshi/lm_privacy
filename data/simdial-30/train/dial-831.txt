@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Maxine Murff
-SYS: Could you please confirm your shipping address?
-USR: My address is 36115 Jonathan Hills Apt. 144 Guerreroland, MI 17088.
-SYS: Track your order using your tracking number, QEW3YE8D1I. What else can I do?
-USR: No more questions. Thank you.
-SYS: Bye.

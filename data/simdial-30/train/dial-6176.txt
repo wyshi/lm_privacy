@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm John Gates.
-SYS: We will need the shipping address as well.
-USR: My address is 047 Carrie Ridge Barryville, SD 01415.
-SYS: You can track your package with your tracking number, which is JT4GQX4Z6K. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

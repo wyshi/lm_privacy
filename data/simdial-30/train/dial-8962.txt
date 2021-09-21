@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Betty Kennedy.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 724 Douglas Lakes Apt. 413 Ericmouth, PA 06058. Yep - I'm Betty Kennedy.
-SYS: You can track your package with your tracking number, which is OHLI1PKHEE. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

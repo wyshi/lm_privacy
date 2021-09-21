@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Jewell Hamann.
-SYS: Could you please confirm your shipping address?
-USR: 1635 Davis Forks Suite 528 Priceton, ME 62704.
-SYS: You can track your package with your tracking number, which is V15765V6G1. Is there anything else I can help with?
-USR: I have all I need.

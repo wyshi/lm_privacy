@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Kelly Miller.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 6919 Rachel Circle Laneville, WI 43778.
-SYS: Track your order using your tracking number, HVANLAE1JN. Are you happy about my answer?
-USR: No more questions.

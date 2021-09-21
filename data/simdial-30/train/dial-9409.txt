@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Lila Weir.
-SYS: Could you please confirm your shipping address?
-USR: My address is 360 York Shoals Apt. 540 Larsonhaven, MO 58151.
-SYS: The tracking number is 4EZP58LMY5. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Goodbye.

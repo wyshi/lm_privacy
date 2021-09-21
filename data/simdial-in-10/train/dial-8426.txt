@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: My name's Frankie Fulbright.
-SYS: Could you please confirm your shipping address?
-USR: My address is 64730 Steven Station Suite 944 East Josephberg, CO 76818.
-SYS: You can track your package with your tracking number, which is LQBYSFJZ61. What else can I do?
-USR: All good.

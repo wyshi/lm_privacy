@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Kevin Roberts.
-SYS: We will need the shipping address as well.
-USR: My address is 5346 Jeremy Village Suite 244 East Robert, CO 97538.
-SYS: The tracking number is 6F29IV6SJ3. Is there anything else I can help with?
-USR: That's it.

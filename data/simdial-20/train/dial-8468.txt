@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Jessica Crosland.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 682 Sonya Glens Raymondbury, CA 66956.
-SYS: Track your order using your tracking number, 55DFOP5H4G. Are you happy about my answer?
-USR: That's it. Thanks!

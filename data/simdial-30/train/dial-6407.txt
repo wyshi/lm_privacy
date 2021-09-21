@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Joann Bowers.
-SYS: Can you provide the order number?
-USR: My order number is 239-96162-5523.
-SYS: Track your order using your tracking number, L1MSDZIZR7. Anything else?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

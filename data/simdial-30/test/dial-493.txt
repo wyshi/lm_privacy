@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: I am Emory Harpster.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 34765 Karen Square Apt. 873 Port Deanna, AL 87602.
-SYS: The tracking number is 6W6NHR37HL. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Bye.

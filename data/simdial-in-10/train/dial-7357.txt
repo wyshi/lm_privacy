@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Ricky Nichols.
-SYS: We will need the shipping address as well.
-USR: 875 Deborah Mall New Jacobside, DE 50142.
-SYS: You can track your package with your tracking number, which is EYX2IY4C6R. What else can I do?
-USR: That's it. See you.
-SYS: Goodbye.

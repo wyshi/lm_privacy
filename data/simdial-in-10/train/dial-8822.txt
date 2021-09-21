@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm William Fuentes.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 0865 Angela Streets Apt. 322 Edwardburgh, UT 92222.
-SYS: You can track your package with your tracking number, which is WIYPSLE7QM. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

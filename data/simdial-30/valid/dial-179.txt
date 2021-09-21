@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Flora Parkinson.
-SYS: We will need the shipping address as well.
-USR: 753 Cindy Circle Suite 106 North Lisa, MD 93984.
-SYS: The tracking number is F9VPEHDXQH. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

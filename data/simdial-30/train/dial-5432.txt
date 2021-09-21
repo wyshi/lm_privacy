@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Connie Anderson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 6875 Farrell Harbors Suite 758 North Patrick, MO 77070.
-SYS: The tracking number is WMIXOKLH7K. Anything else?
-USR: That's it. Thanks!

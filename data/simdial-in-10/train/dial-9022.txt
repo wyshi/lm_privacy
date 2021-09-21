@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Laura Slager.
-SYS: Can you provide the order number?
-USR: My order number is 682-44572-9938.
-SYS: The tracking number is GD628KU1XV. Anything else?
-USR: No more questions. That's all.
-SYS: Goodbye.

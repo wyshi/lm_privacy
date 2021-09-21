@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Ana Hughes.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 5446 Shawn Squares Apt. 532 New Andrew, GA 62285.
-SYS: Track your order using your tracking number, RCY2U2ERXJ. Anything else?
-USR: I have all I need. See you.
-SYS: Bye.

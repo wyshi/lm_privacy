@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Ashley Baker.
-SYS: We will need the shipping address as well.
-USR: 43332 Thomas Isle Apt. 715 North Thomas, UT 52047.
-SYS: The tracking number is 1LF40CCWG5. Are you happy about my answer?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

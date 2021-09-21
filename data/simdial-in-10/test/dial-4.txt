@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Stewart Graham.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 915 Tonya Mountain East Vanessa, CT 37506.
-SYS: The tracking number is VMSKC5GMR5. Anything else?
-USR: All good.

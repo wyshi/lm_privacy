@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Patricia Perez.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5836 Hurley Mews Suite 617 South Jonathan, IN 87099.
-SYS: Track your order using your tracking number, 8FQY6RWMN4. Anything else?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Yes, Lise Simmons.
-SYS: We will need the shipping address as well.
-USR: 980 Kimberly Haven Apt. 363 Garnertown, UT 95315.
-SYS: The tracking number is 5MD9JWDPEO. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

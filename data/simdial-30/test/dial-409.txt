@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Mary Stuemke.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 71012 Nathaniel Rue Suite 760 South Angelaport, UT 18250.
-SYS: You can track your package with your tracking number, which is Y9QPCYQ55I. Is there anything else I can help with?
-USR: That's it. Thanks!

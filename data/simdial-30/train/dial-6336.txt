@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Lydia Young.
-SYS: Could you please confirm your shipping address?
-USR: My address is 1936 Dillon Prairie Briannaland, MN 64253.
-SYS: Track your order using your tracking number, V7OCDUOSKR. What else can I do?
-USR: That's it.

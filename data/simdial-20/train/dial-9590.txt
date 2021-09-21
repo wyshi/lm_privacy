@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm David Hightower.
-SYS: Verify your phone number please.
-USR: 816.815.7277.
-SYS: The tracking number is 3ZAUNE684Q. Anything else?
-USR: That's it.

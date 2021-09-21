@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Reginald Dillard.
-SYS: Verify your order number please.
-USR: My order number is 256-58034-8433.
-SYS: The tracking number is 896XNR1Z9P. Anything else?
-USR: That's it. Thanks!

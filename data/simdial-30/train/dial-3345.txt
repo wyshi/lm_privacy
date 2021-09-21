@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Grace Mitchell.
-SYS: We will need the shipping address as well.
-USR: 53543 Alan Freeway Apt. 545 South Adamberg, MO 77889.
-SYS: Track your order using your tracking number, L3EHZKBD0B. Anything else?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

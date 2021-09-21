@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Anthony Fluker.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 4684 Adams Estates Lake Andrew, MN 53738.
-SYS: The tracking number is JGLUY81DAE. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

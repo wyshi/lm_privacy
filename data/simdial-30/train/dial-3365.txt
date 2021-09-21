@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Ryan Lambert.
-SYS: We will need the shipping address as well.
-USR: My address is 006 Davis Orchard Jesseburgh, WA 50415.
-SYS: The tracking number is 5ZPMSQ5COM. What else can I do?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

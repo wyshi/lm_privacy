@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Timothy Herman.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 7511 Gardner Lights East Karenmouth, MI 71421.
-SYS: Track your order using your tracking number, QUZ0832DAR. Anything else?
-USR: No more questions.

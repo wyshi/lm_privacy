@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Charles Anderson
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 6478 Melissa Bridge Apt. 845 Sarahburgh, NC 12381.
-SYS: Track your order using your tracking number, Z33D9H5KH5. Anything else?
-USR: All good.

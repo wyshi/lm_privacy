@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Allison Johnson.
-SYS: Could you please confirm your shipping address?
-USR: My address is 6298 Elliott Mountain East Jonathan, CA 76603.
-SYS: The tracking number is IF3DBKIHU3. What else can I do?
-USR: All good. That's all.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, William Jackson.
-SYS: Verify your phone number please.
-USR: You can reach me at 860-751-1492.
-SYS: You can track your package with your tracking number, which is 9DRFXNTKHL. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

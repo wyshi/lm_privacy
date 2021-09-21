@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Lee Barton.
-SYS: Verify your order number please.
-USR: My order number is 927-46329-7893. Yep - I'm Lee Barton.
-SYS: The tracking number is HEP0QP7SMZ. Are you happy about my answer?
-USR: That's it. Thanks!

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Melissa Dawkins.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 25517 Austin Turnpike Suite 181 Berryview, FL 79495.
-SYS: The tracking number is 5S1KR4O7LX. What else can I do?
-USR: That's it.

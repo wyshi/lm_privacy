@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: John Gabriel.
-SYS: We will need the shipping address as well.
-USR: My address is 099 Kiara Haven Harrisport, AR 53818.
-SYS: Track your order using your tracking number, 28X8ET45VJ. Are you happy about my answer?
-USR: I have all I need.

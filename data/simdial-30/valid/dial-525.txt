@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Eugene Zabinski.
-SYS: Could you please confirm your shipping address?
-USR: My address is 9787 Dana Via Adamfurt, KS 47775.
-SYS: Track your order using your tracking number, Y1RZAV3KF6. Anything else?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Jennifer Schrom.
-SYS: We will need the shipping address as well.
-USR: 1140 Evans Island Suite 723 Farmerland, IL 41360.
-SYS: Track your order using your tracking number, ZBHA3TZCAP. Are you happy about my answer?
-USR: All good.

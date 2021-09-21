@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: I am Gwen Thomas.
-SYS: Verify your order number please.
-USR: 804-70666-0213
-SYS: You can track your package with your tracking number, which is X0Z3NOH9LR. What else can I do?
-USR: I have all I need.

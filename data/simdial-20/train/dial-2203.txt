@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Albert Anderson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 70694 Allen Alley North James, CO 82384.
-SYS: Track your order using your tracking number, 9R280QS4IY. Is there anything else I can help with?
-USR: No more questions.

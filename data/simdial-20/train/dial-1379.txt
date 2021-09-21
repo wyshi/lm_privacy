@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Cheryl Marmol.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 216-236-0935
-SYS: You can track your package with your tracking number, which is 3I0HYIQW6W. What else can I do?
-USR: That's it.

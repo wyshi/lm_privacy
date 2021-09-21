@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Della Schnell
-SYS: Can you provide the order number?
-USR: It's 653-11286-4296.
-SYS: The tracking number is POW548RB2M. Are you happy about my answer?
-USR: I have all I need.

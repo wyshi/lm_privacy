@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Paul Burman.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5575 Johnny Forest Gregoryland, SC 45102.
-SYS: The tracking number is CHN28JXOCH. Is there anything else I can help with?
-USR: That's it. Thanks!

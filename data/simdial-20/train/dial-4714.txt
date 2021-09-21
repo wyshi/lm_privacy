@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm Dawn Reynolds.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is PSC 0669, Box 2631 APO AA 00689.
-SYS: You can track your package with your tracking number, which is FAIX1XKBD3. Anything else?
-USR: I have all I need.

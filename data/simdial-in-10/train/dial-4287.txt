@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Kara Soto.
-SYS: We will need the shipping address as well.
-USR: 38752 Stephen Underpass Suite 591 Rebeccaport, WI 67248.
-SYS: You can track your package with your tracking number, which is F7FTTYXGSA. What else can I do?
-USR: That's it. Thanks!

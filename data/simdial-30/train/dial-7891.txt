@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Rosa Olson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 992 Cindy Ports South Gabriel, AL 47060.
-SYS: You can track your package with your tracking number, which is 2GTL4UF7P2. Is there anything else I can help with?
-USR: No more questions.

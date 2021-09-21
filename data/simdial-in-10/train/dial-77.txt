@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Pierre Perkins
-SYS: Could you please also provide your order number?
-USR: Sure, it is 868-81775-9033
-SYS: The tracking number is JT8QPDWP0I. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

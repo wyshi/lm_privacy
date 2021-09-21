@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Christine Morgan
-SYS: We will need the shipping address as well.
-USR: Shipping address is 769 Courtney Underpass Suite 198 South Bryanberg, NV 41687.
-SYS: You can track your package with your tracking number, which is XPHC83I91O. Anything else?
-USR: That's it. That's all.
-SYS: Goodbye.

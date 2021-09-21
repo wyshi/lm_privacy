@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Howard Rosenberg
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 72643 Jackson Trafficway Suite 702 Julieside, NM 93315.
-SYS: Track your order using your tracking number, MOJ4AJ4IGN. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

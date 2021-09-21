@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Loree Watson.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 1118 Jillian Radial Richardville, MT 01959.
-SYS: The tracking number is BK41X27B9S. Are you happy about my answer?
-USR: I have all I need.

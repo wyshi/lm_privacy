@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Genaro Graham.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 890 Roberta Field Suite 304 Terryberg, NY 50766.
-SYS: Track your order using your tracking number, V99VXX8SAB. What else can I do?
-USR: That's it. Thanks!

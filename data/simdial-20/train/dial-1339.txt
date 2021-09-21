@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Alexandra Westmoreland.
-SYS: We will need the shipping address as well.
-USR: 67202 Heather Place Apt. 551 West Christopherton, OR 26362.
-SYS: The tracking number is H3NBCX0R0I. Is there anything else I can help with?
-USR: No more questions.

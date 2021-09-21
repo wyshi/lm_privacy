@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: I am Digna Jackson.
-SYS: We will need the shipping address as well.
-USR: Shipping address is PSC 1948, Box 1231 APO AP 80019.
-SYS: Track your order using your tracking number, KPOZ00QL1S. Anything else?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Hazel Carter.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 01009 Phillips Lakes Apt. 808 Michaelfurt, MA 20160.
-SYS: You can track your package with your tracking number, which is EIHT5TC2AE. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

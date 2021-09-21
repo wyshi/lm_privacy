@@ -47,6 +47,7 @@ generated_dp.txt
 generated.txt
 install.sh
 nodp_generated.txt
+member_inference.sh
 
 attacks/plot.ipynb
 attacks/plot_final_without_membership_inference.ipynb

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Chad Montgomery.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 24326 Brandon Glens Apt. 471 East Evelynshire, MO 17294.
-SYS: The tracking number is FOD4G3IMJ3. Anything else?
-USR: That's it.

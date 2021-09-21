@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Roslyn Murray.
-SYS: Could you please confirm your shipping address?
-USR: 32147 Lopez Lake Port Michael, AZ 27608.
-SYS: The tracking number is TOQ8KJK1NY. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

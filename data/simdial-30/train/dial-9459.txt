@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Brenda Hackney.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 3663 Cameron Fords Suite 165 Karistad, DE 47825.
-SYS: You can track your package with your tracking number, which is 8SAT5YLSED. What else can I do?
-USR: That's it. Thanks!

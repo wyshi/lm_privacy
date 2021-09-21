@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Tracey Brown.
-SYS: Could you please also provide your order number?
-USR: Yes, 596-96768-1086.
-SYS: You can track your package with your tracking number, which is K30M4O4L0L. What else can I do?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

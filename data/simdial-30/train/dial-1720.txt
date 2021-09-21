@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yes, Edith Altmiller.
-SYS: We will need the shipping address as well.
-USR: Unit 7668 Box 0699 DPO AP 50331.
-SYS: Track your order using your tracking number, L00F8M1T1T. Anything else?
-USR: No more questions. See you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Robert Lane.
-SYS: Verify your phone number please.
-USR: my number is 8638432864.
-SYS: The tracking number is BH3QJWSYKT. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

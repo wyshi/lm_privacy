@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Jeanne Adams
-SYS: We will need the shipping address as well.
-USR: 5521 Rice Road Apt. 203 New Cherylview, NC 40426.
-SYS: Track your order using your tracking number, JCTVK2PMQI. What else can I do?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

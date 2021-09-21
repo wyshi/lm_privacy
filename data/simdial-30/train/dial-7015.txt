@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Jessica Tillson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 111 Sharon Mews East Kaylatown, MO 95094.
-SYS: The tracking number is HOH5TYBFHE. Is there anything else I can help with?
-USR: That's it.

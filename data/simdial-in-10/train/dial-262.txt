@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Bruce Styers.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 047 Edwards Crossing East William, LA 43087.
-SYS: The tracking number is ZW6BQ9NA20. Are you happy about my answer?
-USR: No more questions.

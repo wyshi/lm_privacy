@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: My name's Brenda Hood.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 00785 Dylan Hill Davishaven, MD 41770.
-SYS: The tracking number is IT2X3YBJ4Z. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Romelia Klare.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 764 Moore Parks East Brooke, VA 01804.
-SYS: The tracking number is 7MPB0X3S9A. What else can I do?
-USR: I have all I need. See you.
-SYS: Bye.

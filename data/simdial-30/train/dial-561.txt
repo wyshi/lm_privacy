@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Jason Mendenhall
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, USNV Horn FPO AE 67798.
-SYS: Track your order using your tracking number, WH19T9E6UE. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Goodbye.

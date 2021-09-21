@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Joel Rishel.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 117 Hood Valleys Apt. 721 Woodsbury, RI 20683.
-SYS: You can track your package with your tracking number, which is 8NQM1ME9GY. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Particia Hamann.
-SYS: Verify your phone number please.
-USR: 343.223.5023 is my number.
-SYS: Track your order using your tracking number, GVPT6FCOLE. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

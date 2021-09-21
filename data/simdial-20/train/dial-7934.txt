@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Christopher Harris
-SYS: Verify your order number please.
-USR: Yes, 285-31522-6792.
-SYS: You can track your package with your tracking number, which is JKFFMCE4S7. Is there anything else I can help with?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Anita Betts.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 658 Gilbert Village Brittanyville, CT 90281.
-SYS: You can track your package with your tracking number, which is HBSN4LIWDT. Are you happy about my answer?
-USR: That's it. Thanks!

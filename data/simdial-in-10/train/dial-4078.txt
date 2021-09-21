@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Gregory Demaio
-SYS: We will need the shipping address as well.
-USR: My address is 91477 Howell Locks Suite 479 Jesseland, UT 01808.
-SYS: The tracking number is SPUOCZA1DQ. Anything else?
-USR: All good.

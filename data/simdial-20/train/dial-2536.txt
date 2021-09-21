@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Charles Mondino.
-SYS: We will need the shipping address as well.
-USR: My address is 573 Garcia Hollow Apt. 079 East Kim, VT 86896.
-SYS: You can track your package with your tracking number, which is O29GNI6U7J. Anything else?
-USR: I have all I need. That's all.
-SYS: Goodbye.

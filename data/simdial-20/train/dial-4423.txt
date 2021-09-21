@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Steven Aguirre.
-SYS: We will need the shipping address as well.
-USR: My address is 751 Todd Unions Suite 195 Hestertown, KY 88050.
-SYS: The tracking number is YSRE09TOW4. Anything else?
-USR: I have all I need.

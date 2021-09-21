@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Michelle Crump.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 432 Huber Walks Apt. 403 Charlesbury, AK 34279.
-SYS: Track your order using your tracking number, 9YZTQK2RVR. Are you happy about my answer?
-USR: All good.

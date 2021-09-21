@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Susan Wagner
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 8225 Ellen Street Apt. 894 New Rhonda, FL 91330.
-SYS: The tracking number is E6QXKG0VCD. Anything else?
-USR: That's it.

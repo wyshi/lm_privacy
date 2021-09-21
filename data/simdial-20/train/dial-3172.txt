@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's Don Haywood.
-SYS: Could you please also provide your order number?
-USR: My order number is 542-94197-6603.
-SYS: You can track your package with your tracking number, which is 1DXJCE46X6. Anything else?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

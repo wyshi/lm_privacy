@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Lavern Cleek.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 021 Michael Cliff Port Deborahbury, WV 73724.
-SYS: You can track your package with your tracking number, which is LI0R1AGB8G. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

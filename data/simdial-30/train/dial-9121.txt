@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Gwen Daniels
-SYS: We will need the shipping address as well.
-USR: Shipping address is 61105 Taylor Hill East Cherylport, OH 52206.
-SYS: The tracking number is PHE9VOYXOG. Is there anything else I can help with?
-USR: No more questions.

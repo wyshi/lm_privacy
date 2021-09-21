@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Wanda Gantt.
-SYS: Could you please also provide your order number?
-USR: My order number is 570-71103-3751.
-SYS: The tracking number is PWMHZ1P7QL. Anything else?
-USR: I have all I need.

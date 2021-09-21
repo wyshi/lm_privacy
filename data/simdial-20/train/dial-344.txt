@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Andre Chambers
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 004 Brittney Shoals Suite 243 Georgeville, MS 33668.
-SYS: Track your order using your tracking number, 8WHKZ7P8SA. Is there anything else I can help with?
-USR: I have all I need. That's all.
-SYS: Goodbye.

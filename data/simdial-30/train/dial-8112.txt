@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Clifford Bren
-SYS: Verify your phone number please.
-USR: You can reach me at 776.207.2393.
-SYS: You can track your package with your tracking number, which is BV91JW9OYE. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

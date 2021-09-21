@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Kimberly Juarez
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 19653 Hanson Field Apt. 994 West Gregory, NM 22828.
-SYS: You can track your package with your tracking number, which is FZCNTX0D1R. What else can I do?
-USR: All good.

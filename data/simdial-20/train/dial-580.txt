@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yes, Yvonne Musselman.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 261 Emma Junctions East Steven, CO 15767.
-SYS: You can track your package with your tracking number, which is PBUGZJ0K7C. What else can I do?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

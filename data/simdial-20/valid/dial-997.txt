@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Steven Regan
-SYS: Can you provide the order number?
-USR: 180-39532-1603
-SYS: You can track your package with your tracking number, which is STWYLD5VIP. What else can I do?
-USR: All good.

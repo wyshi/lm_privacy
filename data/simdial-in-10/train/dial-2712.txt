@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Irma Reece.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 627 Ashley Ways New Wendyside, WV 60317.
-SYS: You can track your package with your tracking number, which is 3WDNV8AJZV. Are you happy about my answer?
-USR: No more questions.

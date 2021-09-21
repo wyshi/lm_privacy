@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Stanley Mills
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 446 Matthew Junctions South Amberhaven, WI 31420.
-SYS: Track your order using your tracking number, 5TZ9RYZJ1J. What else can I do?
-USR: That's it. Thank you.
-SYS: Goodbye.

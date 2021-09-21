@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Amber Billingsley.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 2037 Joseph Stravenue Roseburgh, RI 84368.
-SYS: The tracking number is 6ZL6O5D0XI. What else can I do?
-USR: No more questions. That's all.
-SYS: Have a nice day! Bye.

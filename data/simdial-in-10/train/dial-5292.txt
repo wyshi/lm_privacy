@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Amy Hedgepeth.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 8863 Veronica Crescent Apt. 781 North Christopher, VA 51888.
-SYS: Track your order using your tracking number, UZKHCFVUIE. What else can I do?
-USR: No more questions.

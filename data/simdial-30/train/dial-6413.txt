@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Kelly Pendley.
-SYS: Could you please confirm your shipping address?
-USR: 44201 Higgins Drives Lake Jasonburgh, OH 42843.
-SYS: Track your order using your tracking number, 2R1009Z1MT. What else can I do?
-USR: I have all I need. That's all.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Amber Gratz.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 106 Nathan Points Apt. 738 Lake Sheilamouth, NJ 61299.
-SYS: The tracking number is I7N35ORDNE. What else can I do?
-USR: All good.

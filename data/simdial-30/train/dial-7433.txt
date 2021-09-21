@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Tera Amezaga.
-SYS: We will need the shipping address as well.
-USR: My address is 399 Terry Springs Suite 260 East Bradleyview, OR 33246. Yes, Tera Amezaga.
-SYS: You can track your package with your tracking number, which is KJ0PW4BSPK. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Susie Garcia.
-SYS: Ok, may I have your phone number?
-USR: 1841246257.
-SYS: The tracking number is TG97PVW87E. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

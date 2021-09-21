@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Ashley Drake.
-SYS: We will need the shipping address as well.
-USR: My address is 2708 Nicholas Mills West Tinahaven, HI 16945.
-SYS: The tracking number is P9YS00ZTCV. Are you happy about my answer?
-USR: That's it. Thanks!

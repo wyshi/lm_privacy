@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Lorraine Abel.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 155 Hill Locks Suite 488 North Amber, AR 69536.
-SYS: The tracking number is FYMTSY1327. Anything else?
-USR: All good. That's all.
-SYS: Bye.

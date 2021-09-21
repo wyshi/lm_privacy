@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Roberta Justice.
-SYS: Could you please confirm your shipping address?
-USR: 46073 Finley Shoal Suite 053 Wallaceshire, AZ 82399.
-SYS: The tracking number is FQV9C0P2QI. What else can I do?
-USR: That's it. That's all.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Devin Owens
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 18867 Yvonne Inlet Apt. 403 Jennaton, VA 35924.
-SYS: You can track your package with your tracking number, which is NJBWVQTQYJ. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

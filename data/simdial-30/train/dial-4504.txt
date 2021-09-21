@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Thomas Aquino.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 378 Drew Island Apt. 842 East Allenport, AL 81551.
-SYS: The tracking number is DQD2C91YFF. What else can I do?
-USR: All good.

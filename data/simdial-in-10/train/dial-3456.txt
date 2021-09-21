@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Melinda Lawlor.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 96116 Green Views New Megan, DE 11677.
-SYS: The tracking number is 36P4CM9FM7. Are you happy about my answer?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

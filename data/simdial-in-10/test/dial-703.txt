@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Mary Frazier
-SYS: We will need the shipping address as well.
-USR: Yea sure, 01108 Cheryl Meadows West Garytown, RI 37526.
-SYS: The tracking number is IZJBC94HHO. What else can I do?
-USR: No more questions. That's all.
-SYS: Bye.

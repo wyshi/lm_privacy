@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Sure, Mable Thomson.
-SYS: Can you provide the order number?
-USR: Sure, it is 905-76142-7160
-SYS: Track your order using your tracking number, 5JHAABVUO7. What else can I do?
-USR: No more questions.

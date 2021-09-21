@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Rose Benton.
-SYS: Verify your phone number please.
-USR: Phone number is 375-577-9707
-SYS: The tracking number is H8NSILP5P4. What else can I do?
-USR: All good. See you.
-SYS: Bye.

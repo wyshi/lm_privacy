@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Gerald Maland Yea sure, 6277 Jamie Land Suite 185 Gomezfurt, TX 37229.
-SYS: Track your order using your tracking number, 1K5YMRVBG8. Anything else?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Anne Howard.
-SYS: Could you please confirm your shipping address?
-USR: My address is 22607 James Manors Lake Amandachester, MO 33855.
-SYS: The tracking number is FQFDMBE84A. What else can I do?
-USR: No more questions.

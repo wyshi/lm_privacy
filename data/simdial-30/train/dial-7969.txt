@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Heather Parker.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 131 James Dam Suite 977 Robertmouth, AK 39448.
-SYS: You can track your package with your tracking number, which is 9CL5BO0Y1L. What else can I do?
-USR: No more questions.

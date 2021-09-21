@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Deborah Layne.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 9636 Carpenter Wells North Stevenbury, NJ 58710.
-SYS: You can track your package with your tracking number, which is 06GP91HAPF. Anything else?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

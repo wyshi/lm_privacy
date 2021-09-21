@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Candi Walter.
-SYS: We will need the shipping address as well.
-USR: My address is 855 Krystal Rapids Millstown, RI 71848.
-SYS: You can track your package with your tracking number, which is EDZXFF619N. Anything else?
-USR: That's it. See you.
-SYS: Bye.

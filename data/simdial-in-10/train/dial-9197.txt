@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: I am Iva Sosa.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 708 Valenzuela Isle New Christina, IA 68484.
-SYS: You can track your package with your tracking number, which is CVO1IIW0HA. Are you happy about my answer?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

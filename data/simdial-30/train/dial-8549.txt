@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Daphne Shedd
-SYS: Ok, may I have your phone number?
-USR: 902.612.9137.
-SYS: The tracking number is J1EYR0YKX6. Anything else?
-USR: All good.

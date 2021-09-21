@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Mildred Behr.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 3610 Richard Hollow Theresastad, WV 56064.
-SYS: Track your order using your tracking number, 2JNIG8O1HN. Is there anything else I can help with?
-USR: That's it. Thanks!

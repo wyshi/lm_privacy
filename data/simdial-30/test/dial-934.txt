@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, April West.
-SYS: Verify your phone number please.
-USR: Phone number is 640.029.9673
-SYS: You can track your package with your tracking number, which is AN4E2D3MAB. Is there anything else I can help with?
-USR: I have all I need.

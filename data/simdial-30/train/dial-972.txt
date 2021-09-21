@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: My name's Ann Jolissaint.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 803.201.7236
-SYS: You can track your package with your tracking number, which is C4EHGN8IJT. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

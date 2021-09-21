@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Richard Leverenz.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 0377 Michelle Square East Timothyport, AL 52148.
-SYS: You can track your package with your tracking number, which is XTGK7K9TT7. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

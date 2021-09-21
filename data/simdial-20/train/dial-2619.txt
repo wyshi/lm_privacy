@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Edward Duke.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 345.848.6151.
-SYS: The tracking number is Y6SORSWW2P. What else can I do?
-USR: That's it. Thanks!

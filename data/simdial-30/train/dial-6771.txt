@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Wanda Allah.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 7524 Laura Junctions Apt. 072 North Amyton, UT 46651.
-SYS: You can track your package with your tracking number, which is IZV7Q01TBJ. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: Bye.

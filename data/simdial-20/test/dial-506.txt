@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Rosa Godbolt.
-SYS: Could you please confirm your shipping address?
-USR: My address is 860 Montes Path Marshstad, MD 30868.
-SYS: The tracking number is 1MH0J8ZIVX. What else can I do?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

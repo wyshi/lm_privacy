@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Dianna Chapman.
-SYS: We will need the shipping address as well.
-USR: 816 Dennis Islands Suite 544 Ronaldborough, GA 28123.
-SYS: The tracking number is 7N58ZSBKRQ. What else can I do?
-USR: That's it. Thank you.
-SYS: Bye.

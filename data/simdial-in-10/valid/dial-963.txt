@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Joseph Ingber
-SYS: We will need the shipping address as well.
-USR: Yea sure, 36251 Garcia Corner Marshalltown, NH 96084.
-SYS: The tracking number is 7FWGO7ZP3E. Are you happy about my answer?
-USR: That's it.

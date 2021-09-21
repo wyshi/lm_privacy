@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Jennifer Gross.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 622 Le Avenue Apt. 269 New Jessica, NE 07996.
-SYS: The tracking number is ZUSTJX03LU. What else can I do?
-USR: I have all I need. That's all.
-SYS: It was a great pleasure helping you.

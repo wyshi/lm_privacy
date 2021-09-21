@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Matthew Popek.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 72511 Brenda Springs Apt. 950 South Sandraburgh, SC 15774.
-SYS: Track your order using your tracking number, LUTZL8P3IB. Anything else?
-USR: No more questions. Thank you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Anna Wilson.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 992 Sarah Passage North Jason, NC 85134.
-SYS: The tracking number is EINOSB9221. What else can I do?
-USR: That's it. Thanks!

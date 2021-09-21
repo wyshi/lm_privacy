@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Jimmy Gonzalez.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 414-547-3354
-SYS: The tracking number is NYCZ3KE83J. Are you happy about my answer?
-USR: No more questions.

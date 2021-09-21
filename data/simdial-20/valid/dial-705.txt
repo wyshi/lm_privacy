@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Patricia Haas.
-SYS: We will need the shipping address as well.
-USR: My address is 280 David Ports Suite 646 Port Christyton, IN 98328.
-SYS: Track your order using your tracking number, NKO7LN8GKE. What else can I do?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Lyndon Smith.
-SYS: We will need the shipping address as well.
-USR: My address is USNS Morgan FPO AP 55816.
-SYS: The tracking number is ZSXTYPZDMK. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: It was a great pleasure helping you.

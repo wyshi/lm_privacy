@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Mae Jones.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 4942 Cobb Locks Lake Robert, AL 22701.
-SYS: You can track your package with your tracking number, which is 69MY3DKJL6. Anything else?
-USR: All good. Thank you.
-SYS: Goodbye.

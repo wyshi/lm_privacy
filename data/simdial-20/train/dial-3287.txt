@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Geraldine Sallas
-SYS: Verify your order number please.
-USR: Yes, 751-23974-7411.
-SYS: Track your order using your tracking number, CO2W6SP97P. What else can I do?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

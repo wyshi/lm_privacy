@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Paula Guzman.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 555 Sherry Isle Cobbburgh, NE 02934.
-SYS: You can track your package with your tracking number, which is 4VWSEH91SJ. Anything else?
-USR: No more questions.

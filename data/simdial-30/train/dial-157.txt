@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Dwayne Lovelace.
-SYS: We will need the shipping address as well.
-USR: Ok, it is USS Smith FPO AA 54323.
-SYS: You can track your package with your tracking number, which is 1AB29KRFNV. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

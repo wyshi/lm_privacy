@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: My name's Jeff Flowers.
-SYS: Could you please also provide your order number?
-USR: 181-88004-1170
-SYS: You can track your package with your tracking number, which is NL72SPNK1S. Anything else?
-USR: I have all I need. That's all.
-SYS: Goodbye.

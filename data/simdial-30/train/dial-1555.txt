@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Arnold Frazier.
-SYS: We will need the shipping address as well.
-USR: 8554 Cynthia Circle Apt. 096 East Jeffrey, KS 86705. I am Arnold Frazier.
-SYS: You can track your package with your tracking number, which is KZSU4569VR. Are you happy about my answer?
-USR: That's it.

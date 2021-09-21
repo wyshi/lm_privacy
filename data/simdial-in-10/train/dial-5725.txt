@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, George Pontius.
-SYS: Could you please confirm your shipping address?
-USR: 25115 Patrick Ridges West Steventown, NV 29421.
-SYS: You can track your package with your tracking number, which is 4CG0GGQBOQ. Anything else?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

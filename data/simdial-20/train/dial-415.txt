@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Shelton Weyandt.
-SYS: Could you please also provide your order number?
-USR: Sure, it is 819-68161-0631
-SYS: Track your order using your tracking number, PSFYVDXDJT. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: Bye.

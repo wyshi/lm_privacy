@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Jerold Acosta.
-SYS: Verify your order number please.
-USR: Sure, it is 665-64714-3280
-SYS: You can track your package with your tracking number, which is ZD6E2AT0IW. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

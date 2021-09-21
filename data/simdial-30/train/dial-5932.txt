@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Carrie Campbell.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 462 Holland Valleys East Kyle, GA 32398.
-SYS: Track your order using your tracking number, A1THA3ME95. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Theresa Mcwhirter.
-SYS: Verify your phone number please.
-USR: Phone number is 547-504-5330
-SYS: Track your order using your tracking number, 8CWLULME7M. Anything else?
-USR: No more questions. See you.
-SYS: Goodbye.

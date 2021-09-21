@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Geraldine Shepherd.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 190 Autumn Court Apt. 091 Gwendolynberg, RI 06698.
-SYS: The tracking number is 7YD7CQRC6S. Anything else?
-USR: No more questions. That's all.
-SYS: Have a nice day! Bye.

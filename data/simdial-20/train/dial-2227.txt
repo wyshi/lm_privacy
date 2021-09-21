@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Leonard Satterlee.
-SYS: Could you please confirm your shipping address?
-USR: My address is 42765 Carlos Corner Apt. 410 East Glenn, IL 06242.
-SYS: You can track your package with your tracking number, which is QCR6KWC4DX. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: Goodbye.

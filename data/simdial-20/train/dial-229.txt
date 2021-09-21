@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Tyree Mora.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 1747 Macdonald Views Apt. 896 East Kimberly, WA 75532.
-SYS: Track your order using your tracking number, XKUMA12FWL. Is there anything else I can help with?
-USR: That's it. Thanks!

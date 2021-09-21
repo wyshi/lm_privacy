@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Roberto Johnson.
-SYS: We will need the shipping address as well.
-USR: 328 Shane Island Apt. 741 East Victoriahaven, NJ 18692.
-SYS: Track your order using your tracking number, URYXU7D2C0. Anything else?
-USR: That's it.

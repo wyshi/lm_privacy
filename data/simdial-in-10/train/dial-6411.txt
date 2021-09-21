@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Lynda Bryant.
-SYS: Verify your order number please.
-USR: It's 680-60167-6883.
-SYS: You can track your package with your tracking number, which is AR0UF6RBJ2. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

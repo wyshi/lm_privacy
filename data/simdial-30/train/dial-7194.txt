@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Lee Motley.
-SYS: We will need the shipping address as well.
-USR: My address is 300 Summers Knoll North Wendy, ID 85177.
-SYS: The tracking number is OVM53O2PGQ. Is there anything else I can help with?
-USR: No more questions.

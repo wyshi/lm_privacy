@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Joanne Spencer.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 3483 Morales Roads Apt. 773 Port Preston, MT 33170.
-SYS: You can track your package with your tracking number, which is KNAEEF2BZI. Anything else?
-USR: No more questions.

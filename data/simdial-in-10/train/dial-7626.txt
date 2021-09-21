@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Mose Bursey.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 93233 Regina Inlet Danielshire, ME 23653.
-SYS: You can track your package with your tracking number, which is O9WQRG0G2U. What else can I do?
-USR: All good.

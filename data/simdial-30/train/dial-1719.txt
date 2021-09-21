@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Cristina Gutierrez.
-SYS: Ok, may I have your phone number?
-USR: 439.780.1589.
-SYS: Track your order using your tracking number, K6JNI2WU0I. What else can I do?
-USR: No more questions. That's all.
-SYS: Goodbye.

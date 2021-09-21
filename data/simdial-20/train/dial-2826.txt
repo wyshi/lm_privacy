@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Veronica Richardson.
-SYS: Could you please confirm your shipping address?
-USR: My address is 85426 Hernandez Roads East Jason, NM 90076.
-SYS: Track your order using your tracking number, 5IWO5WZY7R. Is there anything else I can help with?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

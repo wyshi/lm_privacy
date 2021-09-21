@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Jose Estrada.
-SYS: Can you provide the order number?
-USR: My order number is 507-97180-2704.
-SYS: The tracking number is NCNXD1F0ZQ. Anything else?
-USR: I have all I need.

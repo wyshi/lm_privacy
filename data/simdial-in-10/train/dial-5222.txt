@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sofia Dennis.
-SYS: We will need the shipping address as well.
-USR: 535 Munoz Extension Apt. 979 Longstad, WV 08231.
-SYS: Track your order using your tracking number, QBIY36LTVR. Anything else?
-USR: That's it. That's all.
-SYS: Goodbye.

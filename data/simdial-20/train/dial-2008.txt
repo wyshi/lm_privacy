@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Kristy Lee.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 740.069.5024
-SYS: Track your order using your tracking number, SYT957OC3T. Are you happy about my answer?
-USR: No more questions.

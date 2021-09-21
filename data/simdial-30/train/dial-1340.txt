@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Henry Clay.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 4408 Mack Extensions Suite 852 Williamfort, MT 61837.
-SYS: Track your order using your tracking number, AODZVONYYR. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: Bye.

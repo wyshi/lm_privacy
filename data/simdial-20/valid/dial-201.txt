@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am Andrew Rainey.
-SYS: Verify your order number please.
-USR: It's 111-34812-7232.
-SYS: You can track your package with your tracking number, which is G459EUCA08. Is there anything else I can help with?
-USR: All good.

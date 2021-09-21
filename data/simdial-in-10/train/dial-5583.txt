@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Kristin Holder.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 6194 Catherine Mission Apt. 994 East Sarahville, IL 84413.
-SYS: The tracking number is 700796WMII. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Bye.

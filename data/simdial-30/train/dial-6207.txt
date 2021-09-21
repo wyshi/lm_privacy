@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Regena Obrien.
-SYS: We will need the shipping address as well.
-USR: My address is 49597 Amy Flat Wallton, PA 42931.
-SYS: The tracking number is 51R26XJWJX. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Have a nice day! Bye.

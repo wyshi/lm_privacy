@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Sally Cole.
-SYS: Verify your phone number please.
-USR: You can reach me at 450-357-4464.
-SYS: The tracking number is OCAMJFQW8R. Are you happy about my answer?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

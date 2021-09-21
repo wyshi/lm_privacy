@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am Lillian Litzau.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 334 Misty Shores Jonesside, OR 09873.
-SYS: The tracking number is LDHLIP32J1. Anything else?
-USR: No more questions.

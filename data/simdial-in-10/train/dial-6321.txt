@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Karin Glenn
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 77079 Charles Ports Suite 054 East Peggyville, MT 87518.
-SYS: You can track your package with your tracking number, which is OKUXCE5JNC. Are you happy about my answer?
-USR: That's it.

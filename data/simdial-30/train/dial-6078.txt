@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sandra Rubin
-SYS: Could you please confirm your shipping address?
-USR: My address is 927 King Trace Apt. 179 Johnstonburgh, OR 52089.
-SYS: Track your order using your tracking number, R5C3QIFKHB. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

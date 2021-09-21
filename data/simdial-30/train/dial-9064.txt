@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Chelsea Mozak
-SYS: We will need the shipping address as well.
-USR: My address is 818 Frost Path Patriciaborough, AR 76219.
-SYS: You can track your package with your tracking number, which is M320GV3JLG. What else can I do?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

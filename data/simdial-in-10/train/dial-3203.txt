@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: April Mirando
-SYS: We will need the shipping address as well.
-USR: Yea sure, 79305 Jackson Trail Latashastad, WA 81653.
-SYS: The tracking number is 0EWK3X4NGX. What else can I do?
-USR: That's it. Thanks!

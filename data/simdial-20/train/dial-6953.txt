@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Larry Cervantez.
-SYS: Verify your phone number please.
-USR: 601-415-8354.
-SYS: The tracking number is P0621DFOXE. Anything else?
-USR: I have all I need.

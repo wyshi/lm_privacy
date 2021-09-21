@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Maria Schaper.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 74980 Danny Burgs Suite 894 East Adamport, MO 33632.
-SYS: The tracking number is KHJQ3T19MH. What else can I do?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

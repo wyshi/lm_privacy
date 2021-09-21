@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Eddie Herrera.
-SYS: We will need the shipping address as well.
-USR: My address is 35043 Hernandez Junctions West Christopher, NJ 82306.
-SYS: You can track your package with your tracking number, which is RMUAA67D9R. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

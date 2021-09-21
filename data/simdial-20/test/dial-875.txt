@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Jim Lopez.
-SYS: Could you please confirm your shipping address?
-USR: My address is 35997 Nicole Forges Suite 803 East Melanieberg, NJ 28419.
-SYS: The tracking number is GFK9FVO5R7. What else can I do?
-USR: No more questions.

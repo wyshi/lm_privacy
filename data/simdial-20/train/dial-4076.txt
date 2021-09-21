@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Janice Haider.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 6006 Jennifer Street New Ryan, NH 45983.
-SYS: You can track your package with your tracking number, which is Z198Q5Z4JP. Are you happy about my answer?
-USR: That's it.

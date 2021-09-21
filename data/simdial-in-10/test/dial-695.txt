@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Tawana Kuntzman.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 97399 Dylan Garden Apt. 817 New Jenniferside, VA 71250.
-SYS: The tracking number is 0YZ4VY4JGC. Is there anything else I can help with?
-USR: That's it.

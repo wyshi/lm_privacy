@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Tina Reisinger.
-SYS: Could you please confirm your shipping address?
-USR: My address is 453 Spencer Port Garymouth, IA 79314. Yep - I'm Tina Reisinger.
-SYS: You can track your package with your tracking number, which is 9TNAB18TLB. Anything else?
-USR: That's it. Thanks!

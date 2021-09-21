@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Sure, Calvin Willer.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is PSC 2889, Box 6254 APO AP 37922.
-SYS: You can track your package with your tracking number, which is 3RCSBGA1KN. Is there anything else I can help with?
-USR: I have all I need.

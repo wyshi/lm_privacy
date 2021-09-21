@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Sharen Dell.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 135 Henry Lakes Suite 745 Port Andrew, UT 64120.
-SYS: The tracking number is TJ1CI4P1JE. What else can I do?
-USR: No more questions.

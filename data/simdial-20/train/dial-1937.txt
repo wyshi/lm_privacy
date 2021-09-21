@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Joyce Pierce.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 437 Castaneda Inlet Apt. 009 South Jeffery, WA 05684.
-SYS: Track your order using your tracking number, IY7CPP38MI. What else can I do?
-USR: That's it. Thanks!

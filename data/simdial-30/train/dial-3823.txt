@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Thomas Macdonald
-SYS: We will need the shipping address as well.
-USR: Ok, it is 54406 Russell Pines Suite 882 Lorishire, CO 23202.
-SYS: The tracking number is PCKXZ7YPAJ. Anything else?
-USR: I have all I need.

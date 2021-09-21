@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Paul Cuneo
-SYS: Verify your phone number please.
-USR: You can reach me at 292.011.3852.
-SYS: You can track your package with your tracking number, which is 776ET96RIF. Anything else?
-USR: That's it.

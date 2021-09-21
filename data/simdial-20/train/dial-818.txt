@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Laura Foley.
-SYS: Verify your phone number please.
-USR: Phone number is 897.818.8857
-SYS: You can track your package with your tracking number, which is E92THOG82U. Anything else?
-USR: That's it. See you.
-SYS: Bye.

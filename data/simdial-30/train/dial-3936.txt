@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Melissa Barbour.
-SYS: Verify your phone number please.
-USR: You can reach me at 505-606-3537.
-SYS: The tracking number is LSR7BUH2PD. Anything else?
-USR: I have all I need. Thank you.
-SYS: Bye.

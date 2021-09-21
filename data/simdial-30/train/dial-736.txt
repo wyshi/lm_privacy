@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Kenneth Duncan.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 445 Lindsey Ridges Port Meganton, CA 38686.
-SYS: The tracking number is 923J7E4DUG. Are you happy about my answer?
-USR: No more questions.

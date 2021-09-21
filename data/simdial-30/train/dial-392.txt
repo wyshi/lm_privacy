@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Ned Frederick.
-SYS: We will need the shipping address as well.
-USR: 96698 Benjamin Islands Suite 748 Christinemouth, DC 63424.
-SYS: The tracking number is M63PQD2CWM. Anything else?
-USR: All good.

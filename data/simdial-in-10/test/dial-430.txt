@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Michael Lukasiewicz.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 1597 Lauren Villages Suite 673 Ashleyport, NJ 67983.
-SYS: You can track your package with your tracking number, which is USN32TMFTS. Are you happy about my answer?
-USR: That's it. Thanks!

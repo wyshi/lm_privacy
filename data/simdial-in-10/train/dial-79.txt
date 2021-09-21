@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Bonnie Crockett.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 73847 Diana Valley North Tammy, SC 22112.
-SYS: You can track your package with your tracking number, which is QEJ5L0ETEL. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

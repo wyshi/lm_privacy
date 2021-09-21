@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Richard Plumber.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 039 Jason Meadow Briannachester, MS 57341.
-SYS: You can track your package with your tracking number, which is 367C6A2A75. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

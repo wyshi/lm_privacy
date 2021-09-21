@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Barbara Boyle.
-SYS: Ok, may I have your phone number?
-USR: my number is 276-756-4699.
-SYS: The tracking number is 5ZCW75IJP0. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

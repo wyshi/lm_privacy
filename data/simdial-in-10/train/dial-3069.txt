@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Fredrick Covarrubias.
-SYS: We will need the shipping address as well.
-USR: 17269 Mcdowell Vista Johnview, WI 57822.
-SYS: Track your order using your tracking number, 67W02GN8CB. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: It was a great pleasure helping you.

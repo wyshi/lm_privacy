@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Robert Fuentes.
-SYS: Ok, may I have your phone number?
-USR: 556.628.4158.
-SYS: You can track your package with your tracking number, which is 8VXNFRIT5Q. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: Goodbye.

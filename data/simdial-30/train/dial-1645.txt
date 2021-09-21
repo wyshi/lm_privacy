@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: My name's Sebastian Pitts.
-SYS: Could you please confirm your shipping address?
-USR: 145 Robert Extension New Theresaview, NE 43265.
-SYS: The tracking number is 49Q3ZT44QN. Anything else?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

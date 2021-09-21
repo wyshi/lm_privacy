@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Susan Hunter.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 21990 Jeanne Green West Michelle, AL 04997.
-SYS: You can track your package with your tracking number, which is XT166MSB6L. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

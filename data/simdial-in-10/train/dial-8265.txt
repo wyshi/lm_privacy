@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Patricia Beachy.
-SYS: Can you provide the order number?
-USR: My order number is 988-56409-7857.
-SYS: The tracking number is FT4MBCDQ8K. Is there anything else I can help with?
-USR: I have all I need.

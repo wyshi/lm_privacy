@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Justin Khalaf
-SYS: Verify your phone number please.
-USR: 854.355.9800 is my number. Justin Khalaf.
-SYS: Track your order using your tracking number, PMS5HUZJMT. What else can I do?
-USR: All good. See you.
-SYS: Bye.

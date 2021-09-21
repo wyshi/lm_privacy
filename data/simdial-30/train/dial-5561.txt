@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Nickolas Bryant
-SYS: We will need the shipping address as well.
-USR: 625 Blake Manors Suite 422 Kellychester, WV 09338.
-SYS: The tracking number is RW0J8T4M8Y. Anything else?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

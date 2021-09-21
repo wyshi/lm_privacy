@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Armando Burford.
-SYS: Verify your order number please.
-USR: My order number is 449-95467-0357.
-SYS: Track your order using your tracking number, 717HBPRKM1. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Timothy Bobek.
-SYS: We will need the shipping address as well.
-USR: 878 Peter Inlet Port Michelehaven, AL 71036.
-SYS: You can track your package with your tracking number, which is H742DK40KW. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Bye.

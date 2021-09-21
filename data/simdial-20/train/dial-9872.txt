@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, David Dodson.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 4952 Burnett Fields Apt. 275 East Gilbert, MT 30188.
-SYS: You can track your package with your tracking number, which is TKO7AQ3VK5. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

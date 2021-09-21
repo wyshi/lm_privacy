@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Linda Nunn. My address is 616 Rebecca Extension Robertomouth, AL 14779.
-SYS: Track your order using your tracking number, Y61UK4SGIR. Are you happy about my answer?
-USR: No more questions.

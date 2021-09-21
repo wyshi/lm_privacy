@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Vernon Argueta.
-SYS: Could you please confirm your shipping address?
-USR: 940 Mitchell Flats Apt. 849 Port Scott, NE 01352.
-SYS: Track your order using your tracking number, Q3GDOUB9GL. Anything else?
-USR: That's it.

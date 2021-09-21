@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Mary Reynosa. my number is 9143205287.
-SYS: Track your order using your tracking number, 4CUIN2TEB6. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

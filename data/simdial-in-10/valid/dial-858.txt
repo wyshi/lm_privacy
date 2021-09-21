@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Jennifer Doak.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 736 Gomez Garden Chavezbury, TX 05361.
-SYS: You can track your package with your tracking number, which is 1NFSC2U5N7. What else can I do?
-USR: No more questions. That's all.
-SYS: Have a nice day! Bye.

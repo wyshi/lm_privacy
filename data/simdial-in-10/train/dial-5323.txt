@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Matthew Mccabe.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 00502 Taylor Walks Apt. 255 Lake Stephaniefurt, OR 48041.
-SYS: The tracking number is 1ECJ518K1B. What else can I do?
-USR: I have all I need.

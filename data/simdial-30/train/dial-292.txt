@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Bernadette Flock
-SYS: We will need the shipping address as well.
-USR: Shipping address is 9909 Guzman Place Suite 055 East Shawn, NM 46101.
-SYS: Track your order using your tracking number, 4A850DP88X. Anything else?
-USR: All good.

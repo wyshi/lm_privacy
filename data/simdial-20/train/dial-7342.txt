@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Willie Houchins.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 3693 Thomas Tunnel East Christinamouth, ND 31087.
-SYS: The tracking number is 16WQ2TDPX5. What else can I do?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Sherry Rothman.
-SYS: We will need the shipping address as well.
-USR: 878 Steve Mission Jeffersonfort, MO 04840.
-SYS: Track your order using your tracking number, 5N4REUMPZK. Are you happy about my answer?
-USR: I have all I need.

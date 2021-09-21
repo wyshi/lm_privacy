@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Betty Vanschaick. It's 873-96564-7580.
-SYS: You can track your package with your tracking number, which is 9SA9FVZOOO. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Erick Rayl.
-SYS: We will need the shipping address as well.
-USR: My address is 895 Brandi Plain Apt. 058 South Michael, AR 43562.
-SYS: You can track your package with your tracking number, which is 6AG84G094Q. Anything else?
-USR: That's it. Thanks!

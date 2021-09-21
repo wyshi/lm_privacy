@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Valerie Barnes.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 234 Taylor Shore Apt. 674 West Johnstad, VA 89050.
-SYS: The tracking number is ZIXRWV0YAU. Is there anything else I can help with?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

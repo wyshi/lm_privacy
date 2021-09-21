@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Miriam Pepin.
-SYS: We will need the shipping address as well.
-USR: 50182 Sandra Station Matthewside, MS 41324.
-SYS: The tracking number is RI1J9N2T2F. Anything else?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Bernice Garza.
-SYS: We will need the shipping address as well.
-USR: My address is 79015 Mendez Dam West Melissatown, MA 19218.
-SYS: You can track your package with your tracking number, which is AY6A7ZMBQX. Anything else?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

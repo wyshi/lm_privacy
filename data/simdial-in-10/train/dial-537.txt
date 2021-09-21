@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Wallace Brewer.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 458 Evans Place West Sarah, SC 12618.
-SYS: You can track your package with your tracking number, which is 9MO6G3Z718. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

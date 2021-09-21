@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Francisco Campbell
-SYS: We will need the shipping address as well.
-USR: Yea sure, 84836 Baker Glen Apt. 100 New Erikville, AZ 95185.
-SYS: The tracking number is VNNZON026J. Anything else?
-USR: I have all I need.

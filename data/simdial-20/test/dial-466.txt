@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: David Diercks
-SYS: We will need the shipping address as well.
-USR: Shipping address is 74014 Dickson Cove Suite 411 New Brian, WI 07966.
-SYS: The tracking number is 7ZDMA9TYTD. Is there anything else I can help with?
-USR: That's it. Thanks!

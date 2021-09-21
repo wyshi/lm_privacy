@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: I am Michael Hilliard.
-SYS: Verify your phone number please.
-USR: Phone number is 773-737-0624
-SYS: You can track your package with your tracking number, which is KTPW38B96F. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

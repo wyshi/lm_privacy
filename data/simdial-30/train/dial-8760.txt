@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's George Nguyen.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 60195 Hernandez Crossroad New Matthew, MN 07789.
-SYS: You can track your package with your tracking number, which is B927N0K0OL. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

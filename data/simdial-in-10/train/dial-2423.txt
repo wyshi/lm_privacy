@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Mary Ledoux.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 4436 Chen Loop West Katherine, KS 04413.
-SYS: The tracking number is H2LWEBWB55. Anything else?
-USR: All good. See you.
-SYS: Bye.

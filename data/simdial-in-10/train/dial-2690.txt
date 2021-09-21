@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: My name's John Aguirre.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 9736 Brock Ferry Hopkinsville, NC 11996.
-SYS: The tracking number is W1TFWCDB9O. Are you happy about my answer?
-USR: That's it.

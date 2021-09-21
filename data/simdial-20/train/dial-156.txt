@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Monica Smith.
-SYS: Verify your phone number please.
-USR: You can reach me at 251-213-9402.
-SYS: You can track your package with your tracking number, which is H6TV4C70MO. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Kathryn Tran.
-SYS: Could you please confirm your shipping address?
-USR: 6809 Garcia Roads Freemanborough, VA 05029.
-SYS: You can track your package with your tracking number, which is 5GGI44GCU2. Are you happy about my answer?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Daniel Shiver.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 92604 Johnson Dale Apt. 263 Howardview, MO 37921.
-SYS: The tracking number is PAPK6CC5NC. Is there anything else I can help with?
-USR: That's it.

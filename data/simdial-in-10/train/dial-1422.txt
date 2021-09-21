@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Connie Feist.
-SYS: Verify your phone number please.
-USR: my number is 524.831.2173.
-SYS: The tracking number is DFAIZHYOIF. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Mike Denby.
-SYS: Verify your phone number please.
-USR: my number is 110-002-8955.
-SYS: Track your order using your tracking number, R1TLJFYL7Y. What else can I do?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yes, Alejandro Brinker.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 91249 Barber Dale Suite 935 Lake Jacob, HI 40584.
-SYS: You can track your package with your tracking number, which is A61LRPAS46. Is there anything else I can help with?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Thelma Kaplan.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 3009 Tyler Vista Apt. 382 North Amymouth, CT 89482.
-SYS: The tracking number is BHGE7BA7I9. What else can I do?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

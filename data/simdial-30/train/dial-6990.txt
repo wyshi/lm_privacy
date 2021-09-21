@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Natalie Murphy.
-SYS: Verify your order number please.
-USR: 467-83858-5474
-SYS: You can track your package with your tracking number, which is OIP9VWP9W2. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: Bye.

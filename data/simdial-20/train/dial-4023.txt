@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Taylor Crockett.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 17919 Peters Corners Watsonside, ND 30387.
-SYS: Track your order using your tracking number, AJP20DJ72W. Anything else?
-USR: I have all I need.

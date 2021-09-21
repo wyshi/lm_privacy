@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Maria Cabrales. 340 Joseph Run East Hollyland, KS 59700.
-SYS: Track your order using your tracking number, X7IMD46OYK. Are you happy about my answer?
-USR: All good.

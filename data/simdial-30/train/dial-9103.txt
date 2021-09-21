@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm James Thomas.
-SYS: Could you please confirm your shipping address?
-USR: 249 Blair Manor Garciashire, MI 35874.
-SYS: The tracking number is QVD42VTNL9. Is there anything else I can help with?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Mona Wood.
-SYS: Could you please confirm your shipping address?
-USR: My address is 931 Willie Ports Suite 550 East Danielle, SD 98886.
-SYS: Track your order using your tracking number, KVBBKVWBUP. What else can I do?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

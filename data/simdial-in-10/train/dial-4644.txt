@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Jannette Torres.
-SYS: Could you please confirm your shipping address?
-USR: 5284 Lauren Crest Apt. 708 Rosebury, FL 55664.
-SYS: Track your order using your tracking number, BH56Z5EKNK. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yes, Michael Flores.
-SYS: We will need the shipping address as well.
-USR: 70025 Martin Walks Apt. 632 West Susan, SC 11337.
-SYS: You can track your package with your tracking number, which is XFIU7J2FEX. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

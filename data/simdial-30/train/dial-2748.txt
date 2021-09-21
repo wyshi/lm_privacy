@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Ryan Smith.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 11307 Perez Road Suite 940 Port Michael, MN 22242.
-SYS: Track your order using your tracking number, 0U3Z5BBN51. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

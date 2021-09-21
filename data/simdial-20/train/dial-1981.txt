@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: John Patterson
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 822 Morrison Drives Apt. 214 Riosmouth, OK 40510.
-SYS: The tracking number is 5DBFOFFK6L. What else can I do?
-USR: No more questions.

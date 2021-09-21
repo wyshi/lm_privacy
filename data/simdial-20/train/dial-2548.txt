@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Cornelius Pring
-SYS: We will need the shipping address as well.
-USR: Shipping address is 35754 Hopkins Forge Lake Zacharyhaven, GA 47813.
-SYS: The tracking number is 63S08GXM0X. Is there anything else I can help with?
-USR: All good.

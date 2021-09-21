@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Kate Mcrae.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 374 Hughes Parkways Apt. 409 North Joyceshire, SD 30640.
-SYS: You can track your package with your tracking number, which is ATNZCUX5F5. Are you happy about my answer?
-USR: All good.

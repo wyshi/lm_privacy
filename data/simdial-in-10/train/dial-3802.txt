@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: My name's Edward Thompson.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 65083 Lisa Ranch Velezbury, CA 30819.
-SYS: Track your order using your tracking number, 4SN63U1JMX. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

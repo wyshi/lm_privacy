@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Robin Wikoff.
-SYS: Can you provide the order number?
-USR: Yes, 598-54331-4914.
-SYS: Track your order using your tracking number, 8C3HNALGWP. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

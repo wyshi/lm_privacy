@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Dexter Thompson.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 208 Smith Shores Suite 692 Jaclynland, WI 84071.
-SYS: You can track your package with your tracking number, which is NMPWHW2FNU. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: Bye.

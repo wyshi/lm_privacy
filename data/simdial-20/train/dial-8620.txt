@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Nelida Childs.
-SYS: We will need the shipping address as well.
-USR: My address is 0733 Anthony Court Suite 857 East Cindyborough, SD 23829.
-SYS: You can track your package with your tracking number, which is 7SXD8XDN7M. Are you happy about my answer?
-USR: That's it. Thanks!

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Chad Dever.
-SYS: Could you please confirm your shipping address?
-USR: 97310 Kyle Street Suite 069 Melissaside, AZ 19050.
-SYS: The tracking number is POY4WUZ172. Anything else?
-USR: No more questions.

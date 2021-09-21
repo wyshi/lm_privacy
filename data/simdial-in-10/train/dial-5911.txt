@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Cornelius Pring.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 35754 Hopkins Forge Lake Zacharyhaven, GA 47813.
-SYS: The tracking number is J3FOQQO8IT. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: Bye.

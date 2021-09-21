@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Donovan Saunders
-SYS: We will need the shipping address as well.
-USR: Shipping address is 9830 Michael Rue Apt. 934 North Lisa, DC 14764.
-SYS: You can track your package with your tracking number, which is QACI23FML2. Anything else?
-USR: No more questions.

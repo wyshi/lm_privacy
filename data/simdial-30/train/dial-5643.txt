@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, James Rosenberg.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 88451 James Row Aaronside, AK 30547.
-SYS: Track your order using your tracking number, FT2KGK904H. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

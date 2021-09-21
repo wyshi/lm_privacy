@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Peter Sherman.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 8163 Holly Bridge Suite 103 North Jessicaland, MT 43240.
-SYS: You can track your package with your tracking number, which is PA0CPEE9WR. What else can I do?
-USR: I have all I need.

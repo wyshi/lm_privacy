@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Francis Rival.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 778 Allison Passage Apt. 104 Robertbury, AZ 41499.
-SYS: Track your order using your tracking number, V9DG8IHAL1. What else can I do?
-USR: No more questions.

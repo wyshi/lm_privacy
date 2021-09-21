@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Emily Bundy.
-SYS: We will need the shipping address as well.
-USR: My address is 23213 Rios Shoals North Charlesfort, IN 89561.
-SYS: The tracking number is XNFIWRDZUR. Anything else?
-USR: All good. Thank you.
-SYS: Goodbye.

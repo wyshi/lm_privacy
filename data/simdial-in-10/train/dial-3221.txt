@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Cristina Steel.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is PSC 3075, Box 2313 APO AA 46440.
-SYS: Track your order using your tracking number, XZT4ZML4ZC. What else can I do?
-USR: That's it. Thanks!

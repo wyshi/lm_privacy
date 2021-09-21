@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Jason Pratt.
-SYS: Could you please confirm your shipping address?
-USR: 4284 Brian Parks Apt. 246 Smithfort, AZ 62508.
-SYS: Track your order using your tracking number, KVANC2YICD. What else can I do?
-USR: That's it. Thank you.
-SYS: Goodbye.

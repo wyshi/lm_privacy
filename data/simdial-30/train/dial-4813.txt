@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Alphonso Hepler.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 764 Wright Spring Suite 103 North Carlastad, NJ 35995.
-SYS: The tracking number is VRU2TK2H3F. What else can I do?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Sure, Eddie Mcclenon.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 286 Woodward Villages Suite 512 East Lorimouth, MT 83571.
-SYS: The tracking number is XK7XKILI8K. What else can I do?
-USR: That's it.

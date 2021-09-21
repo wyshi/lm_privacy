@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Gwendolyn Schrader.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 4474 Thomas Union Mooreside, NC 01953.
-SYS: Track your order using your tracking number, KN1Z8V1P8G. Is there anything else I can help with?
-USR: That's it.

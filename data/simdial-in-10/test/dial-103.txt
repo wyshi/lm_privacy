@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Gerard Smith.
-SYS: Verify your order number please.
-USR: My order number is 682-37000-7232.
-SYS: You can track your package with your tracking number, which is BKIBIX6TLN. Is there anything else I can help with?
-USR: That's it.

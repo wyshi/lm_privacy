@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Stacey Bowling
-SYS: We will need the shipping address as well.
-USR: Shipping address is 18328 Leon Plain Apt. 530 Brentfort, MI 43620.
-SYS: Track your order using your tracking number, 9ASWX6BSYC. Is there anything else I can help with?
-USR: No more questions.

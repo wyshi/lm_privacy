@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Sharon Mitchell.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 12035 Reeves Groves Apt. 528 Mahoneyville, AZ 59057.
-SYS: The tracking number is XZRQ7RN84Z. What else can I do?
-USR: That's it. That's all.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Eric Lee.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 3885 Ryan Garden Johnsonmouth, KS 09845.
-SYS: Track your order using your tracking number, KIXSUWDE49. What else can I do?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

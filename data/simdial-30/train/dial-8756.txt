@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Mary Hines.
-SYS: Could you please confirm your shipping address?
-USR: My address is 048 Johnson Brooks Suite 175 Jenniferport, KY 49816.
-SYS: Track your order using your tracking number, IPCMRS73P0. What else can I do?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

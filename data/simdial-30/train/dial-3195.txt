@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Helen Wood.
-SYS: Verify your phone number please.
-USR: 384.063.6058.
-SYS: You can track your package with your tracking number, which is 30GYH346IZ. Are you happy about my answer?
-USR: All good.

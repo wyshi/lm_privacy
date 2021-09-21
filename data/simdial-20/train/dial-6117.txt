@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's John Hudson.
-SYS: We will need the shipping address as well.
-USR: My address is USCGC Moore FPO AA 70995.
-SYS: The tracking number is OP3ONP5RWZ. What else can I do?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Beverly Pool.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 643 Eric Overpass Lake Connieland, TN 42098.
-SYS: The tracking number is Y31RJODQMH. What else can I do?
-USR: That's it. Thanks!

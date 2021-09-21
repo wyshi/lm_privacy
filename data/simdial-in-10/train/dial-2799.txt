@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Laura Davis
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 96639 Harrison Wall Suite 722 Bullockfort, KY 27153.
-SYS: You can track your package with your tracking number, which is 71UZL46IAL. What else can I do?
-USR: That's it.

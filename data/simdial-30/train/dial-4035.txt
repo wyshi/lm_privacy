@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: I am Regina Coral.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 698-429-7460.
-SYS: Track your order using your tracking number, ZZKVM4E4PC. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

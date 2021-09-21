@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Luis Montgomery.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 5246 Sharon Street Lake Natasha, NY 74895.
-SYS: You can track your package with your tracking number, which is AWFK100OG2. What else can I do?
-USR: All good.

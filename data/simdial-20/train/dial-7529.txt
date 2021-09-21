@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Mary Ludlow
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 3007 Randy Highway East Thomasmouth, NE 82807.
-SYS: Track your order using your tracking number, W2CRD216AZ. Is there anything else I can help with?
-USR: All good.

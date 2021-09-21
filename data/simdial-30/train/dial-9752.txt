@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Robert Rivera
-SYS: Can you provide the order number?
-USR: 602-80169-4501
-SYS: Track your order using your tracking number, WHCZ14V6S3. Are you happy about my answer?
-USR: That's it. Thanks!

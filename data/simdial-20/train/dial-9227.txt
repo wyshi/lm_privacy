@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Stephen Jarrett.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 8662 Bates Light Suite 561 South Eugenebury, PA 92207.
-SYS: You can track your package with your tracking number, which is KBD9PJHC5U. Anything else?
-USR: That's it.

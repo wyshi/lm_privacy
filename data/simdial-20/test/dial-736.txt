@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Brian Plues.
-SYS: Could you please confirm your shipping address?
-USR: My address is 814 Stewart Parkways Apt. 457 East Kimchester, CA 73774.
-SYS: You can track your package with your tracking number, which is Y7ADIQRYZP. Is there anything else I can help with?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Darius Rusert
-SYS: We will need the shipping address as well.
-USR: Shipping address is 697 Vanessa Dale New Erinstad, FL 69475.
-SYS: You can track your package with your tracking number, which is FCR4T8EAUU. Is there anything else I can help with?
-USR: All good. See you.
-SYS: Bye.

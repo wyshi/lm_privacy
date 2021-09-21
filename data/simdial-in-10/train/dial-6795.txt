@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Richard Shubert.
-SYS: We will need the shipping address as well.
-USR: Shipping address is USS Mendoza FPO AA 13970.
-SYS: Track your order using your tracking number, S65M7TUSKE. Anything else?
-USR: I have all I need.

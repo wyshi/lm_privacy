@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Michael Schaffner.
-SYS: We will need the shipping address as well.
-USR: 4674 Norris Walks Suite 291 Samuelhaven, WY 21914.
-SYS: You can track your package with your tracking number, which is HFMWFFBHH2. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

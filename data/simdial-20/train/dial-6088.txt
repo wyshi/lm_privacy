@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: My name's Juanita Williams.
-SYS: We will need the shipping address as well.
-USR: PSC 2537, Box 4727 APO AP 88531.
-SYS: You can track your package with your tracking number, which is H5C6SOV5X5. Anything else?
-USR: I have all I need.

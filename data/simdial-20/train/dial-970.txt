@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Marvin Valdez
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 82923 Jeffrey Mills Suite 948 West Sara, NC 52756.
-SYS: Track your order using your tracking number, E99CHEFOWS. Is there anything else I can help with?
-USR: That's it.

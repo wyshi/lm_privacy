@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Charles Myers.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, Unit 8772 Box 9419 DPO AE 34297.
-SYS: You can track your package with your tracking number, which is XCB16R6A5W. Are you happy about my answer?
-USR: All good.

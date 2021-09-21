@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Arthur Taylor.
-SYS: Could you please confirm your shipping address?
-USR: My address is 355 Page Spurs Port Miguel, CO 13359.
-SYS: The tracking number is GVAEQW0S4H. Are you happy about my answer?
-USR: That's it. Thanks!

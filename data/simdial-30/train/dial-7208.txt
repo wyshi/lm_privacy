@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: William Fuentes
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 0865 Angela Streets Apt. 322 Edwardburgh, UT 92222.
-SYS: The tracking number is M7VREO0A5P. Anything else?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Tony Bridwell.
-SYS: Could you please confirm your shipping address?
-USR: My address is 43106 Mary Harbors Lake Richardfurt, SD 53722.
-SYS: The tracking number is TF2HYP43WW. What else can I do?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

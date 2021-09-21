@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Ellen Silverman.
-SYS: We will need the shipping address as well.
-USR: My address is 457 Kimberly Ridges Suite 809 Davidland, NY 26050.
-SYS: You can track your package with your tracking number, which is BU6CG9WP9N. Are you happy about my answer?
-USR: I have all I need.

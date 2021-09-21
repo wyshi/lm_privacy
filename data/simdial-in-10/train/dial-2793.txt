@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Carla Grosz.
-SYS: Ok, may I have your phone number?
-USR: 221.702.2953.
-SYS: You can track your package with your tracking number, which is YW80PQBO5M. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: Goodbye.

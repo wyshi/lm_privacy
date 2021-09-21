@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: I am Marcella Rathbum.
-SYS: Can you provide the order number?
-USR: It's 402-10423-1192.
-SYS: Track your order using your tracking number, ID2RTCA68I. Anything else?
-USR: I have all I need. That's all.
-SYS: It was a great pleasure helping you.

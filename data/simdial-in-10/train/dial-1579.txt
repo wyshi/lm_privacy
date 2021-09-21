@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Tyler Hudson.
-SYS: Verify your phone number please.
-USR: 933.063.0954 is my number.
-SYS: You can track your package with your tracking number, which is 654NFP9KAL. Are you happy about my answer?
-USR: All good.

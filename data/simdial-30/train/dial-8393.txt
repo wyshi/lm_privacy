@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Tammy Ranney.
-SYS: Verify your phone number please.
-USR: You can reach me at 497.237.9727.
-SYS: Track your order using your tracking number, Q1TQ0CMMLV. Are you happy about my answer?
-USR: All good.

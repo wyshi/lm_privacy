@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: I am Robert Finnegan.
-SYS: We will need the shipping address as well.
-USR: My address is 4132 Berger Dale Meltonview, VA 43471.
-SYS: The tracking number is ONG5YZGSNP. Are you happy about my answer?
-USR: That's it. Thanks!

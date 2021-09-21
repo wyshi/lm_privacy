@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Michelle Pace.
-SYS: Could you please confirm your shipping address?
-USR: 4238 Marshall Radial Brucebury, VT 58424.
-SYS: You can track your package with your tracking number, which is 02S5XQ7XQB. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yes, Mark Delagarza.
-SYS: Could you please confirm your shipping address?
-USR: My address is 246 Ellis Dam Apt. 275 East Joshua, PA 44099.
-SYS: The tracking number is A4KU5KS03X. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Bye.

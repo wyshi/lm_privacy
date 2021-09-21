@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: I am Cecilia Erickson.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is Unit 7206 Box 9047 DPO AP 47060.
-SYS: You can track your package with your tracking number, which is VH68K36931. Anything else?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

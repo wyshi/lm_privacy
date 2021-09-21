@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Amy Irons. My address is 998 Amanda Greens Suite 542 South Amanda, RI 17190.
-SYS: The tracking number is 2RIMCLZ6Q4. Are you happy about my answer?
-USR: Yea sure, 06153 Martinez Well Suite 169 Patrickmouth, VA 60761.
-SYS: You can track your package with your tracking number, which is 2RIMCLZ6Q4. Is there anything else I can help with?
-USR: All good. See you.
-SYS: Goodbye.

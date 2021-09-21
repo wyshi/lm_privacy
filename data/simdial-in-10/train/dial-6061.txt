@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Kristi Lawson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 20561 Molina Ridge Suite 162 Lake Logan, IN 47421.
-SYS: The tracking number is NKSPF2KBYY. Are you happy about my answer?
-USR: That's it. Thanks!

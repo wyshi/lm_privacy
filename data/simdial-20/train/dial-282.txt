@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Chad Olivares.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 4339 Fowler Street Orrfort, AZ 22124.
-SYS: The tracking number is 8VXFI1GCZE. What else can I do?
-USR: All good. Thank you.
-SYS: Bye.

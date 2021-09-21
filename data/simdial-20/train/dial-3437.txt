@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Patricia Nelson.
-SYS: Could you please confirm your shipping address?
-USR: My address is 905 Thomas Village Suite 683 North Jessica, IL 25069.
-SYS: The tracking number is FERR2QN5QF. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: Bye.

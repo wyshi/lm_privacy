@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Laurie Marley.
-SYS: Verify your phone number please.
-USR: You can reach me at 338-170-7845.
-SYS: The tracking number is 8F0FT52HYJ. Anything else?
-USR: That's it. Thanks!

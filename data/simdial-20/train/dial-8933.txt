@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Justin Khalaf.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 716 Anthony Island Apt. 139 Ramosborough, AR 65679.
-SYS: You can track your package with your tracking number, which is KIDHM047U4. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Bye.

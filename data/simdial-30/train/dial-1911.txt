@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Amy Boyers
-SYS: We will need the shipping address as well.
-USR: Shipping address is 09711 Jennifer Square Curtismouth, MA 42949.
-SYS: You can track your package with your tracking number, which is 99NB5STCT8. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm Arthur Pizarro.
-SYS: Could you please confirm your shipping address?
-USR: My address is 3621 Blake Green Suite 595 Katiefort, CT 75341.
-SYS: The tracking number is 431MSP8TBC. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

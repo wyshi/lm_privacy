@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Hiram Beard
-SYS: We will need the shipping address as well.
-USR: My address is 896 Ryan Ports West Lori, OH 97626.
-SYS: You can track your package with your tracking number, which is 34S6EBHP8W. Are you happy about my answer?
-USR: No more questions.

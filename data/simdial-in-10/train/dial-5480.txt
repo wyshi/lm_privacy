@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Frances Marquez.
-SYS: Could you please confirm your shipping address?
-USR: My address is 477 Green Plains Lake Annhaven, NM 08206.
-SYS: The tracking number is 9RQF8GEFV6. Anything else?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

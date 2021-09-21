@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Kenneth Duncan.
-SYS: We will need the shipping address as well.
-USR: 445 Lindsey Ridges Port Meganton, CA 38686.
-SYS: The tracking number is IXCN1ZCXPW. Are you happy about my answer?
-USR: That's it.

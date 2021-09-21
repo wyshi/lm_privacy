@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Vincent Yoshino.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 880 Richard Lodge Sullivanport, NC 10739.
-SYS: Track your order using your tracking number, CP2UA3K8UI. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

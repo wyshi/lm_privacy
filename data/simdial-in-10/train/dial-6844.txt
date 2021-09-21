@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Terri Riley.
-SYS: Verify your phone number please.
-USR: 553.825.2797 is my number.
-SYS: You can track your package with your tracking number, which is GUAMN73T4Q. Are you happy about my answer?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Myong Anders.
-SYS: Could you please confirm your shipping address?
-USR: My address is 67663 Sean Knolls East Ericastad, IL 36587.
-SYS: Track your order using your tracking number, BKMOX9HA48. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

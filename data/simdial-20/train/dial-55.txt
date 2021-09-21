@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Thomas Richardson.
-SYS: Verify your phone number please.
-USR: Phone number is 927-281-5373
-SYS: You can track your package with your tracking number, which is QROHGOCUZT. Are you happy about my answer?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

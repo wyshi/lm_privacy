@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, David Cromwell.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 798 Andrew Roads Suite 958 Blairtown, IN 54055.
-SYS: The tracking number is LD7XAO8ZBW. Are you happy about my answer?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Julie Kirkland.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 859 Lewis Station Suite 986 North Rebecca, LA 58944.
-SYS: You can track your package with your tracking number, which is U7FMP13XDH. Are you happy about my answer?
-USR: All good.

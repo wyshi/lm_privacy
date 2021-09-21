@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Long Kimmel
-SYS: We will need the shipping address as well.
-USR: My address is USNV Knapp FPO AA 13514.
-SYS: Track your order using your tracking number, VGJ7NM9ZHS. Anything else?
-USR: That's it. Thanks!

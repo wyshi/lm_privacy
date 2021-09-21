@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Rebecca Ackerman.
-SYS: We will need the shipping address as well.
-USR: 070 Robert Common Suite 656 Dawnfurt, HI 17540.
-SYS: Track your order using your tracking number, A0GZKDEDNR. Is there anything else I can help with?
-USR: That's it. Thanks!

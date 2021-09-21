@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Robert Mccord
-SYS: Verify your phone number please.
-USR: You can reach me at 7682183017.
-SYS: Track your order using your tracking number, FDQNK26GWW. Anything else?
-USR: All good.

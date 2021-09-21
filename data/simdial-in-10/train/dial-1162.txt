@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, David Net.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 969 Young Ferry Suite 731 Burkeshire, AR 08242.
-SYS: The tracking number is G1UQH0TN7Z. Is there anything else I can help with?
-USR: All good.

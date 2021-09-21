@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Bruno Smith.
-SYS: Verify your phone number please.
-USR: You can reach me at 630.687.9936.
-SYS: You can track your package with your tracking number, which is UW43BZB1T5. What else can I do?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

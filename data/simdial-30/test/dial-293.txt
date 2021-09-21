@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Linda Wallin.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 41829 Phillips Junctions Apt. 218 Lake Pamela, NC 77536.
-SYS: The tracking number is VBWY67T9QM. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

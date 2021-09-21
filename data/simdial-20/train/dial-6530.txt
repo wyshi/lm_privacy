@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Edna Gonzalez.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 09784 Nelson Cliffs Suite 889 West Anthony, NC 64439.
-SYS: The tracking number is X8UI6G8K14. Is there anything else I can help with?
-USR: I have all I need.

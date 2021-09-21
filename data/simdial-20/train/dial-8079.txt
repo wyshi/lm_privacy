@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Sure, Antonia Brown.
-SYS: Verify your order number please.
-USR: My order number is 734-82720-0942.
-SYS: Track your order using your tracking number, 972UOK7Z5L. Are you happy about my answer?
-USR: I have all I need.

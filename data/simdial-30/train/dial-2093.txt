@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Sure, Armando Kitamura.
-SYS: Verify your order number please.
-USR: My order number is 933-35727-6465.
-SYS: The tracking number is KI96YKPEDC. What else can I do?
-USR: I have all I need.

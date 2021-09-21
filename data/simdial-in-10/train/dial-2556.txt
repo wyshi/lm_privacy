@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Freida Mcdowell.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 7563 Gregory Flat Suite 958 Davisborough, TN 62839.
-SYS: You can track your package with your tracking number, which is 0KAEZQOK36. Is there anything else I can help with?
-USR: That's it. Thanks!

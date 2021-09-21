@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Terry Nieves.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 02772 Armstrong Camp Suite 816 Port Dannymouth, WA 59855.
-SYS: The tracking number is PPV7RX2OER. Anything else?
-USR: That's it. Thanks!

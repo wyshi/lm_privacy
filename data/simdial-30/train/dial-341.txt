@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Katrina Elliott.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 768 Little Drive Hayesmouth, HI 14227.
-SYS: You can track your package with your tracking number, which is KXSJ7IV5V8. What else can I do?
-USR: All good. That's all.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Vera Hall.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 631 Eric Field Bushview, SD 91946.
-SYS: Track your order using your tracking number, QJMUP466EI. Are you happy about my answer?
-USR: No more questions.

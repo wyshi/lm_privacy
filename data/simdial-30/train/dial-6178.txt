@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Curtis Thompson.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 29436 Smith Radial Ibarraborough, VA 23332.
-SYS: The tracking number is YERA4HN48O. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

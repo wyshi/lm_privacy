@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Steven Glass.
-SYS: Could you please confirm your shipping address?
-USR: 49113 Reyes Highway Apt. 288 Collinsborough, CA 35492.
-SYS: You can track your package with your tracking number, which is 80XBBFDF0R. What else can I do?
-USR: All good. That's all.
-SYS: Bye.

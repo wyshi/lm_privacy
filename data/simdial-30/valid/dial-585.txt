@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Elvera Dowlin
-SYS: Could you please confirm your shipping address?
-USR: My address is 27353 Thomas Vista Apt. 280 Adamfort, MA 10475.
-SYS: Track your order using your tracking number, DC8M3B87IT. Is there anything else I can help with?
-USR: That's it. Thanks!

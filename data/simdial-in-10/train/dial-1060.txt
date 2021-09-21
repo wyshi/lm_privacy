@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Natividad Asato.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 3435 Matthew Springs Cooperside, ME 13933.
-SYS: You can track your package with your tracking number, which is VVNR12QB0B. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Goodbye.

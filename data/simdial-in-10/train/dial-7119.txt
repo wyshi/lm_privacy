@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Katherine Anderson.
-SYS: Could you please also provide your order number?
-USR: My order number is 288-14878-0024.
-SYS: The tracking number is FDEH09ZP1F. Are you happy about my answer?
-USR: No more questions.

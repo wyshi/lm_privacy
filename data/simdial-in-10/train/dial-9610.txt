@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yes, Abraham Mitchell.
-SYS: Ok, may I have your phone number?
-USR: 753-163-0254 is my number.
-SYS: You can track your package with your tracking number, which is XH8U6Y8V40. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

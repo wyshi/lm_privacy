@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Ruth Jernberg.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 988-108-1118.
-SYS: Track your order using your tracking number, 5PSBFED91U. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Bye.

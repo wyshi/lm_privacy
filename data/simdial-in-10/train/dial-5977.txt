@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Louise Venkus.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 457 Jessica Estates Suite 880 Lake Erikville, LA 63610.
-SYS: The tracking number is ZEC1825SOX. Is there anything else I can help with?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

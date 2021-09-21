@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Eric Graham.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 067 Griffin Highway Suite 105 Ralphborough, VA 39088.
-SYS: The tracking number is 6EDB2UI04Z. Are you happy about my answer?
-USR: No more questions.

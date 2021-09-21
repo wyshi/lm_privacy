@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Jacinda Guerrero.
-SYS: We will need the shipping address as well.
-USR: Ok, it is USNS Bond FPO AA 28565.
-SYS: The tracking number is LQ2SMMHH5A. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

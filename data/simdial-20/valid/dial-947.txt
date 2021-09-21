@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Lisa Burnett.
-SYS: We will need the shipping address as well.
-USR: 09281 Salinas Village Suite 708 New Jamesberg, IA 46300.
-SYS: Track your order using your tracking number, YMLUY98UVS. Anything else?
-USR: That's it. Thanks!

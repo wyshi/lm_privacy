@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Christopher Dunkan.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 581 David Shore New Sheryl, NY 20387.
-SYS: Track your order using your tracking number, 993TKX4VXC. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: Have a nice day! Bye.

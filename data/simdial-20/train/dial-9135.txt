@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Colleen Delgado.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 14007 Smith Ports Suite 758 South Brandon, KY 06921.
-SYS: You can track your package with your tracking number, which is RJHTIHE2NH. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Bye.

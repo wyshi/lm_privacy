@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Richard Chalmers.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 70637 Sanchez Greens Port Linda, VA 47409.
-SYS: You can track your package with your tracking number, which is H8IWEELKQW. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Goodbye.

@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Kevin Hogan My address is 644 Matthew Forest Lake Amber, TN 43468.
-SYS: You can track your package with your tracking number, which is LBXATHYRMK. Are you happy about my answer?
-USR: I have all I need.

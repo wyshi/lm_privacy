@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: James Bing.
-SYS: Can you provide the order number?
-USR: Yes, 288-99367-3098.
-SYS: Track your order using your tracking number, QQLWO4GQ9J. Anything else?
-USR: That's it.

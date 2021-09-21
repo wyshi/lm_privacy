@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Michael Tyson.
-SYS: We will need the shipping address as well.
-USR: My address is 39015 Sampson Isle Theresachester, MS 18800.
-SYS: The tracking number is 692AK8J0ZG. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Bye.

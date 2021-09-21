@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Janet Lees.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5822 Christina Trail Apt. 666 Reedstad, CO 96381.
-SYS: The tracking number is 2FGQADJ9P5. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

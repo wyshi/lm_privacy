@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Evelyn Hauger
-SYS: We will need the shipping address as well.
-USR: 7155 Edwards Plains Lake Daniellemouth, AR 24860.
-SYS: The tracking number is XH77D9J04N. Anything else?
-USR: No more questions. Thank you.
-SYS: Bye.

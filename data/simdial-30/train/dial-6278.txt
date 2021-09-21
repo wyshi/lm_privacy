@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Kaitlin Eddy.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 561-763-1839.
-SYS: The tracking number is 532AW4OVE4. What else can I do?
-USR: All good. Thank you.
-SYS: Goodbye.

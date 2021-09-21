@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Norma Woolley.
-SYS: We will need the shipping address as well.
-USR: Yea sure, PSC 3014, Box 2112 APO AA 91343.
-SYS: Track your order using your tracking number, 9DHQ6J1N9Z. Is there anything else I can help with?
-USR: All good.

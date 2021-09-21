@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Susan Hunter.
-SYS: We will need the shipping address as well.
-USR: 21990 Jeanne Green West Michelle, AL 04997.
-SYS: Track your order using your tracking number, BEUYY9464M. Anything else?
-USR: That's it.

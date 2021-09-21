@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Paige Lerer.
-SYS: We will need the shipping address as well.
-USR: My address is 404 Rachael Ridge Apt. 027 South Nicholas, NV 67131.
-SYS: Track your order using your tracking number, LRREI63J3L. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Have a nice day! Bye.

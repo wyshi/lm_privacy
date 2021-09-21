@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Cindy Ray.
-SYS: Could you please confirm your shipping address?
-USR: My address is 924 Whitney Green Apt. 490 South Daniel, OR 37901.
-SYS: The tracking number is ZPJ5YGYB06. Are you happy about my answer?
-USR: That's it.

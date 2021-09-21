@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Patrick Sawchuk.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 93234 Holt Unions Suite 683 Hannahside, DC 44399.
-SYS: The tracking number is V1L3HJY3KZ. Anything else?
-USR: I have all I need. Thank you.
-SYS: Bye.

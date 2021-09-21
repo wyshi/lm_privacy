@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Theresa Fager.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 0120 Kyle Square Laneport, VT 36871.
-SYS: You can track your package with your tracking number, which is BPPPK1ZPRZ. Anything else?
-USR: That's it. Thank you.
-SYS: Bye.

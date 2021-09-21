@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Curtis Zamora.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 359 Tanya Gardens Suite 693 Rodriguezfort, ME 27087.
-SYS: The tracking number is CSJR9R23AJ. Is there anything else I can help with?
-USR: No more questions.

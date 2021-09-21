@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: My name's Russell Wickline.
-SYS: Can you provide the order number?
-USR: Yes, 238-35467-3821.
-SYS: Track your order using your tracking number, JNVAR3SW37. Is there anything else I can help with?
-USR: I have all I need.

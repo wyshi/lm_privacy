@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Jennifer Lucena.
-SYS: We will need the shipping address as well.
-USR: My address is 92507 Nicole Cliffs South Joshuaville, HI 62966.
-SYS: You can track your package with your tracking number, which is J36WSA2OVO. Anything else?
-USR: All good.

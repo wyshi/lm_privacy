@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Clarissa Dennis.
-SYS: We will need the shipping address as well.
-USR: 00748 Chan Squares New Brettland, PA 55550.
-SYS: The tracking number is UJBQUSO0K5. Anything else?
-USR: That's it. See you.
-SYS: Bye.

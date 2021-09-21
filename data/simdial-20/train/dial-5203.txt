@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am George Kelly.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 284-727-4619
-SYS: Track your order using your tracking number, QJD6DSMQ72. Is there anything else I can help with?
-USR: I have all I need. See you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Florence Todd.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 7117 Peterson Circle Apt. 453 North Emily, NM 32085.
-SYS: The tracking number is LK3W71D1QY. What else can I do?
-USR: All good.

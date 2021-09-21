@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Charles Hinzman
-SYS: We will need the shipping address as well.
-USR: My address is 353 Hoffman Rapid Lake Kristin, MN 38774.
-SYS: Track your order using your tracking number, HNYNLBYDDM. Are you happy about my answer?
-USR: That's it.

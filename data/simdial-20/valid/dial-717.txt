@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: My name's Homer Thurlow.
-SYS: We will need the shipping address as well.
-USR: 460 Brandon Row Suite 987 Davishaven, WA 48176.
-SYS: Track your order using your tracking number, VBBB1NJ9MM. What else can I do?
-USR: That's it. Thanks!

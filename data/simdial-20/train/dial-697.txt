@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Sure, Brandy Osborne.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 94132 Arnold Forges South Morganfort, OH 62030.
-SYS: You can track your package with your tracking number, which is WH4KOELB9S. Anything else?
-USR: No more questions. See you.
-SYS: Goodbye.

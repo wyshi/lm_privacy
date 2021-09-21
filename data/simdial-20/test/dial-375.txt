@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Fernando Spieth.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 22453 Jones Drives Charlenebury, TX 77763.
-SYS: The tracking number is 2UFD14XWN7. Are you happy about my answer?
-USR: I have all I need.

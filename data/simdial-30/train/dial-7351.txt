@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Lamont Ransome.
-SYS: Could you please confirm your shipping address?
-USR: My address is 184 Michele Avenue Suite 131 New Mary, IL 41090.
-SYS: Track your order using your tracking number, YRSRSSSUEL. Anything else?
-USR: I have all I need.

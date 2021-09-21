@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Monica Leach.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 48983 Curtis Bridge Sherylstad, NE 58061.
-SYS: The tracking number is 6HZIMT8DZG. Is there anything else I can help with?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

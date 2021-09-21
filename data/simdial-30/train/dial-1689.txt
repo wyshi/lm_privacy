@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Joan Reyna.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 6202 Terry Spurs Suite 746 Judyberg, NM 85065.
-SYS: You can track your package with your tracking number, which is KVJZQQCZIH. Is there anything else I can help with?
-USR: All good.

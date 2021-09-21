@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: I am Natasha Holzer.
-SYS: Could you please also provide your order number?
-USR: It's 170-66265-9598.
-SYS: The tracking number is CX2PSOWBLJ. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

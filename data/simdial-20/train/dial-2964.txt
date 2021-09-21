@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Catherine Maher.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 8420 Matthew Groves East Mary, GA 73734.
-SYS: The tracking number is 0G718VPQAI. Anything else?
-USR: I have all I need. See you.
-SYS: Goodbye.

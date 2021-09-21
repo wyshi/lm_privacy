@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Melissa Taylor.
-SYS: We will need the shipping address as well.
-USR: My address is 524 Little Meadow Suite 709 Smithshire, IL 06268.
-SYS: The tracking number is E0FJQVWZK2. What else can I do?
-USR: That's it. Thanks!

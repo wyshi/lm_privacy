@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Wayne Flores.
-SYS: We will need the shipping address as well.
-USR: 13864 Serrano Hills Fieldsville, CA 03117.
-SYS: The tracking number is 7O01NR72ZL. Is there anything else I can help with?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

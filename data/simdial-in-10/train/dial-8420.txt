@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Timothy Mathis.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 12000 Decker Burg Lake Brenda, NJ 35535.
-SYS: The tracking number is X8UWKQ1DTS. Anything else?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

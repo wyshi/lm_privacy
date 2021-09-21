@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Retha Kopplin.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 376 Brown Vista Apt. 273 Burketon, ME 66497.
-SYS: The tracking number is MFUYJIMOV3. Are you happy about my answer?
-USR: All good.

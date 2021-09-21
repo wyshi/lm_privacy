@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Sure, Megan Hunter.
-SYS: Could you please confirm your shipping address?
-USR: PSC 5484, Box 8905 APO AE 81266.
-SYS: You can track your package with your tracking number, which is C6XENDFZQY. What else can I do?
-USR: That's it. That's all.
-SYS: Bye.

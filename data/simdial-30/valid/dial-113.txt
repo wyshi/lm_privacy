@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Nick Neal
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 91636 Justin Cape Lake Michaelmouth, WA 90684.
-SYS: The tracking number is HN7MJVU2UE. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: Goodbye.

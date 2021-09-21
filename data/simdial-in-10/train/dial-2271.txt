@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Linda Oconnell.
-SYS: Could you please confirm your shipping address?
-USR: My address is 147 Jennifer Port Apt. 958 Cynthiafurt, OR 59881.
-SYS: Track your order using your tracking number, 4JAXRHPOUZ. Anything else?
-USR: I have all I need.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Althea Hartman.
-SYS: We will need the shipping address as well.
-USR: Yea sure, USCGC Bates FPO AP 02677.
-SYS: The tracking number is 0THAVGZMHM. What else can I do?
-USR: That's it. Thank you.
-SYS: Bye.

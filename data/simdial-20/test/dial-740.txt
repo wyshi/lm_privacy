@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Brian Mercado.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 1726 Ruth Burgs Apt. 554 West Jeffreyburgh, CT 31569.
-SYS: You can track your package with your tracking number, which is TZMCK9O5NX. Is there anything else I can help with?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Justin French
-SYS: We will need the shipping address as well.
-USR: 6663 Ronald Plaza Apt. 279 South Cassie, IL 89208.
-SYS: Track your order using your tracking number, I5XBQU4EXN. Are you happy about my answer?
-USR: All good.

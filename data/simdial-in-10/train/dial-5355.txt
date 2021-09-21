@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Leo Zappulla.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 894 Katie Ford Suite 669 Lake Alec, SD 04985.
-SYS: The tracking number is IDD8KOZY7Q. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Goodbye.

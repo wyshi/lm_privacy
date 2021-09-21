@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Jason Legions
-SYS: We will need the shipping address as well.
-USR: Yea sure, 347 Jennifer Junction Apt. 059 Lake William, MI 24298.
-SYS: The tracking number is U917ULQVD8. What else can I do?
-USR: I have all I need. That's all.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Bertha Tracy.
-SYS: We will need the shipping address as well.
-USR: My address is 3513 Bailey Fall North Michaelchester, IA 85717.
-SYS: Track your order using your tracking number, JMSYY8QQIM. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

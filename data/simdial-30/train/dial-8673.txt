@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Ronald Day.
-SYS: We will need the shipping address as well.
-USR: My address is 4577 Gould Rapid Apt. 039 Ralphville, UT 10282.
-SYS: The tracking number is 6EYCD6KH9Q. What else can I do?
-USR: That's it.

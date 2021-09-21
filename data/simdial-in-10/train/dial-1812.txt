@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Coleman Southern.
-SYS: Verify your phone number please.
-USR: my number is 5002432124.
-SYS: Track your order using your tracking number, JV82EFUJ1R. What else can I do?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

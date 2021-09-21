@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Denise Caver.
-SYS: Verify your order number please.
-USR: It's 682-29690-2748.
-SYS: Track your order using your tracking number, A5S73C3L4V. Is there anything else I can help with?
-USR: That's it.

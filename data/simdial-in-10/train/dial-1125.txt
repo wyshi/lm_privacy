@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am Charles Haggerty.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 406 Mccarthy Port Carpenterborough, TX 65632.
-SYS: Track your order using your tracking number, HBLZ7NF2JS. Is there anything else I can help with?
-USR: I have all I need. That's all.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Justin Blair.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 9819 Dorsey Gateway Bakerville, SC 41209.
-SYS: The tracking number is 2H6Q6RD9WZ. What else can I do?
-USR: No more questions. Thank you.
-SYS: Goodbye.

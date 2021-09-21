@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, Mai Cumming.
-SYS: Verify your order number please.
-USR: Sure, it is 121-82105-6222
-SYS: You can track your package with your tracking number, which is 9SZSRJ5DLF. What else can I do?
-USR: That's it. That's all.
-SYS: Bye.

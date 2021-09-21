@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Eugenia Scheer.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 742-066-8171.
-SYS: The tracking number is 62AUYBYJDU. Are you happy about my answer?
-USR: All good.

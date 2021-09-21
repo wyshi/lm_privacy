@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Victoria Bullock.
-SYS: We will need the shipping address as well.
-USR: Shipping address is PSC 1202, Box 5345 APO AA 10969.
-SYS: Track your order using your tracking number, ZYVFZXC6CK. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

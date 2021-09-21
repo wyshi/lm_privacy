@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Marian Otto.
-SYS: Verify your phone number please.
-USR: my number is 819.543.9708.
-SYS: You can track your package with your tracking number, which is BREYOEVRIR. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: Goodbye.

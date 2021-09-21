@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Thad Duer.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 635 Griffin Mill Port Raymondmouth, NC 45515.
-SYS: Track your order using your tracking number, PYXTCJ22LG. What else can I do?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

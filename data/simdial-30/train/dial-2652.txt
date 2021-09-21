@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Gilbert Hamblin.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 4108 Lozano Extensions New Donald, WV 33142.
-SYS: Track your order using your tracking number, ORNG5N9Z8N. What else can I do?
-USR: That's it. Thanks!

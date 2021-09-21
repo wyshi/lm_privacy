@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Gerardo Griffiths.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 3779 Matthew Green Suite 853 Shannonfort, HI 09566.
-SYS: The tracking number is P80H144LB8. What else can I do?
-USR: All good. Thank you.
-SYS: Goodbye.

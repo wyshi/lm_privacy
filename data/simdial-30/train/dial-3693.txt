@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Robert Massie.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 179-266-1402
-SYS: Track your order using your tracking number, I7FR3K98BP. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Goodbye.

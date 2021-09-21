@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Guadalupe Estrada.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 7377 Willie Course Suite 507 Sarahburgh, DE 06541.
-SYS: Track your order using your tracking number, QCBTMX8GVL. What else can I do?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Rex Chalmers.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 156 David Avenue Suite 188 East Amber, NC 41427.
-SYS: Track your order using your tracking number, 1UB0VG1C2J. Are you happy about my answer?
-USR: No more questions.

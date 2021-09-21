@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Glenda Hicks.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 755 Davis Bypass Melanieview, LA 06656.
-SYS: The tracking number is 55NF34GPKJ. What else can I do?
-USR: No more questions. That's all.
-SYS: Bye.

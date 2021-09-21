@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Mandy Debois. 314.218.1035 is my number.
-SYS: The tracking number is B1ENPX4821. Anything else?
-USR: That's it. Thanks!

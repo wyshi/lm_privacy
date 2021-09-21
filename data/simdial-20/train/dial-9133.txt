@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Bertha Hain
-SYS: Could you please confirm your shipping address?
-USR: My address is 905 Potter Divide Apt. 796 Lesterside, SD 18541.
-SYS: The tracking number is TUWDRYV2EA. Anything else?
-USR: All good.

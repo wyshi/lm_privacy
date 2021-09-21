@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Veronica Abney.
-SYS: We will need the shipping address as well.
-USR: My address is 47896 Brian Divide Rayberg, TX 14879.
-SYS: You can track your package with your tracking number, which is 5ZXHC0BWCK. What else can I do?
-USR: No more questions.

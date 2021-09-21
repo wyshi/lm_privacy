@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Billy Ellsworth.
-SYS: Could you please confirm your shipping address?
-USR: My address is 7950 Johnson Radial Apt. 970 North Lisa, ID 18233.
-SYS: The tracking number is ZOBID9A1QO. What else can I do?
-USR: That's it.

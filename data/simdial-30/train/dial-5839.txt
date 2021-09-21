@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Jeremy Grobmyer.
-SYS: We will need the shipping address as well.
-USR: My address is 00238 Garcia Turnpike Wendyview, OH 40003.
-SYS: You can track your package with your tracking number, which is YQKAA42CR7. Are you happy about my answer?
-USR: I have all I need.

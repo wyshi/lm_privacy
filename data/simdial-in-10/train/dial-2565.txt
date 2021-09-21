@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Paul Byrom.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 8944 James Walk Tonyaborough, MD 84867.
-SYS: The tracking number is PHULZCM08N. Is there anything else I can help with?
-USR: That's it. Thanks!

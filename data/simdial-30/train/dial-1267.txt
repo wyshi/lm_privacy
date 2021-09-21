@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, John Solomon.
-SYS: We will need the shipping address as well.
-USR: Ok, it is PSC 2473, Box 2973 APO AP 16047.
-SYS: The tracking number is 4RWL7FP630. Anything else?
-USR: All good. Thank you.
-SYS: Bye.

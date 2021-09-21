@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Brianna Lee.
-SYS: We will need the shipping address as well.
-USR: My address is 95008 Michael Gateway Lake Rachel, VA 70889.
-SYS: You can track your package with your tracking number, which is G5IPVC1R9H. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

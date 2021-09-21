@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, James Apana.
-SYS: Verify your phone number please.
-USR: Phone number is 3404901144
-SYS: Track your order using your tracking number, UO3K8JY76B. What else can I do?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

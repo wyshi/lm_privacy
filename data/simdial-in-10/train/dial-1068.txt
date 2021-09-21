@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Roger Barnett.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 105 Tate Mission South Peterview, AZ 10068.
-SYS: The tracking number is BTVT38OGL5. What else can I do?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: I am Ian Gass.
-SYS: Verify your phone number please.
-USR: 219-414-2628 is my number.
-SYS: You can track your package with your tracking number, which is EUPGUNVUSH. Anything else?
-USR: That's it.

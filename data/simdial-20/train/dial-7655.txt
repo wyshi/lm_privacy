@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Joshua Garcia.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 268-835-3175.
-SYS: The tracking number is SHTT412L4Z. Anything else?
-USR: No more questions. Thank you.
-SYS: Bye.

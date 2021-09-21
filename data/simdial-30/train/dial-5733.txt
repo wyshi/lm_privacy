@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Brian Kent.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 0708 Mills Plain Stewartfort, SC 52737.
-SYS: You can track your package with your tracking number, which is MF781I5NXK. Is there anything else I can help with?
-USR: I have all I need.

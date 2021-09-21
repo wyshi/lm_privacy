@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Willie Mcgee.
-SYS: We will need the shipping address as well.
-USR: 465 Sherman Turnpike Suite 715 Pollardport, SD 28716.
-SYS: The tracking number is Q7Y6U092F0. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

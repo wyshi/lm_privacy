@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Vera Raines.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 305.188.5652
-SYS: The tracking number is WJR19GMMCG. Anything else?
-USR: All good.

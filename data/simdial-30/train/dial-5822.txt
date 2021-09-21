@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Linda Osullivan.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 507 Wade Crossroad Apt. 024 New Dustinfurt, TN 77154.
-SYS: You can track your package with your tracking number, which is NKYYA29RWU. What else can I do?
-USR: No more questions. That's all.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Judy Garcia.
-SYS: We will need the shipping address as well.
-USR: My address is 43716 Donald Trail Feliciamouth, CA 41410.
-SYS: Track your order using your tracking number, CF82FV4D9A. Anything else?
-USR: That's it.

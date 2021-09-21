@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Veronica Butler.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 293 Little Circles Erinside, FL 55263.
-SYS: Track your order using your tracking number, 2TSJ5T7UOG. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

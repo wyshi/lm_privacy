@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Cynthia Palmer.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 120-633-2449
-SYS: Track your order using your tracking number, 4KB6RFZ1VQ. Anything else?
-USR: That's it.

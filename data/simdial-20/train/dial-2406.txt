@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Juanita Grant
-SYS: We will need the shipping address as well.
-USR: Ok, it is 91261 Jenkins Pass Apt. 366 Kingburgh, RI 42091.
-SYS: Track your order using your tracking number, TBI08WUFWZ. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Elizabeth Diana
-SYS: We will need the shipping address as well.
-USR: Ok, it is 913 Daniel Stravenue Clarkhaven, MI 58742.
-SYS: You can track your package with your tracking number, which is MDB3ATWWP7. Are you happy about my answer?
-USR: I have all I need.

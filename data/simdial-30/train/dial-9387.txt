@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Gary Moore
-SYS: We will need the shipping address as well.
-USR: 45653 Little Plain Apt. 203 Bowenside, NC 45544.
-SYS: You can track your package with your tracking number, which is 366PUW4B5F. Is there anything else I can help with?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Johnnie Wolf.
-SYS: Can you provide the order number?
-USR: My order number is 110-50846-8856.
-SYS: Track your order using your tracking number, PCW6FOMNQY. What else can I do?
-USR: All good.

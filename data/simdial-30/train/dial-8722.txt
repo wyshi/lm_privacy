@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Blake Thompson.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 60817 Johnson Shores Suite 359 Coxside, WA 06520.
-SYS: The tracking number is Z2AXPJPC0A. What else can I do?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am Mary Slate.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 5711 Mclean Falls Suite 656 Carterside, VA 53058.
-SYS: The tracking number is MLXU3OGPYD. What else can I do?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

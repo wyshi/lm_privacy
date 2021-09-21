@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Jonna Kent.
-SYS: Verify your order number please.
-USR: It's 183-33336-6893.
-SYS: You can track your package with your tracking number, which is B8EC3FD8GI. Anything else?
-USR: All good. That's all.
-SYS: It was a great pleasure helping you.

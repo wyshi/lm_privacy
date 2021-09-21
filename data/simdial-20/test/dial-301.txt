@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Kimberly Lewis.
-SYS: We will need the shipping address as well.
-USR: 30860 Anderson Springs Suite 028 Garciaside, AR 46947.
-SYS: You can track your package with your tracking number, which is 8UW5WGVGL1. What else can I do?
-USR: That's it. Thanks!

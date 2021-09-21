@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Moira Asbill.
-SYS: Can you provide the order number?
-USR: My order number is 655-19913-3182.
-SYS: The tracking number is BUZLVJ3QGE. What else can I do?
-USR: That's it. See you.
-SYS: Goodbye.

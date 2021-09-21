@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Noelle Fernandez
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 407-739-2410.
-SYS: Track your order using your tracking number, Q75ZHA0YM3. Is there anything else I can help with?
-USR: That's it. Thanks!

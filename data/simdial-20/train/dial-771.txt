@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am Jerry Ali.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 483 Michael Branch Suite 046 Tiffanymouth, SD 44237.
-SYS: Track your order using your tracking number, BLJUVNXM9E. Anything else?
-USR: All good.

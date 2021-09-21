@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Ramona Geib.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 02578 Evans Field Apt. 455 Burnsstad, NM 96196.
-SYS: The tracking number is TYIFQLPFU2. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Caroline Ragle.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 8905 Mary Pine Lake Danieltown, MS 55369.
-SYS: You can track your package with your tracking number, which is VS7BHVUVJH. Is there anything else I can help with?
-USR: I have all I need.

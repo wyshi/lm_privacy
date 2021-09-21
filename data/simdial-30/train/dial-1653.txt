@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Henry Johnson
-SYS: We will need the shipping address as well.
-USR: My address is 478 Tracy Street Suite 772 Lovefurt, MO 60954.
-SYS: The tracking number is G1P9ISLNVY. What else can I do?
-USR: All good.

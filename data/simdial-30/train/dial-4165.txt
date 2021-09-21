@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Chelsea Thomas.
-SYS: We will need the shipping address as well.
-USR: 06178 Mendoza Prairie Suite 448 Lake Jesse, ND 14136.
-SYS: Track your order using your tracking number, ZL0HVUCPPG. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

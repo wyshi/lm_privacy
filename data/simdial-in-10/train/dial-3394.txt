@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Joseph Bates.
-SYS: We will need the shipping address as well.
-USR: My address is 158 Isaac Roads West Jameston, NY 08182.
-SYS: Track your order using your tracking number, WIY7W0EWIE. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

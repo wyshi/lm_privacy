@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Justin Speck.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 716.700.8542.
-SYS: You can track your package with your tracking number, which is NYYSTN54DA. Is there anything else I can help with?
-USR: That's it.

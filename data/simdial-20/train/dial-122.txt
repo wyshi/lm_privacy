@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Francisco Richter.
-SYS: Could you please confirm your shipping address?
-USR: My address is 155 Meza Neck Morganbury, OR 85743.
-SYS: You can track your package with your tracking number, which is AHA9LUTHXA. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: Goodbye.

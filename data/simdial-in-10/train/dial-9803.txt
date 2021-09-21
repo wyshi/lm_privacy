@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Ruby Cantrelle.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 4428 Newman Plaza Apt. 460 West Donnaville, MN 59589.
-SYS: The tracking number is NTJHGIGMBZ. Are you happy about my answer?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

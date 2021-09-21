@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Colleen Harding.
-SYS: Verify your phone number please.
-USR: You can reach me at 8061809873. Sure, Colleen Harding.
-SYS: You can track your package with your tracking number, which is 8EOBB923GY. Anything else?
-USR: I have all I need.

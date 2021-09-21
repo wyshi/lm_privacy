@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Ronald Almen.
-SYS: We will need the shipping address as well.
-USR: My address is 2077 Gomez Ridge Suite 652 West Logan, DE 82314.
-SYS: The tracking number is 0ZLJIH39IH. Is there anything else I can help with?
-USR: That's it. Thanks!

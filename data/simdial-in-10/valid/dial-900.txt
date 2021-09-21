@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Micheal Pernell.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 990 Smith Ranch Apt. 344 East Jesse, MA 44742.
-SYS: You can track your package with your tracking number, which is 4Q774IK6PX. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: Bye.

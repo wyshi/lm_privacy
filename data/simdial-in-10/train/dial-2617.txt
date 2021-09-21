@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Robert Quinones.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 0587 Pratt Island Suite 153 Penningtonshire, MS 27703.
-SYS: You can track your package with your tracking number, which is O9RO8SMK3M. Are you happy about my answer?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Katherine Doss
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 12611 Lester Place Apt. 836 Mariaton, NC 77498.
-SYS: The tracking number is 6B37AYA7B5. Anything else?
-USR: No more questions.

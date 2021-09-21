@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Billy Mahaffy.
-SYS: Could you please confirm your shipping address?
-USR: My address is 3404 Barrett Hill South Jennifer, NY 41508.
-SYS: You can track your package with your tracking number, which is FOCEIYYW80. Anything else?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

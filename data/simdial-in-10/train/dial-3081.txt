@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: My name's Pedro Gibson.
-SYS: Ok, may I have your phone number?
-USR: 1538191237 is my number.
-SYS: You can track your package with your tracking number, which is MS2BO77G30. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: It was a great pleasure helping you.

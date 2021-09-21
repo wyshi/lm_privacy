@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: I am Joseph Wegman.
-SYS: Could you please also provide your order number?
-USR: Yes, 453-88830-8040.
-SYS: You can track your package with your tracking number, which is R4M98VRDU7. Anything else?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

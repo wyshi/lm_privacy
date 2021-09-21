@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Shara Gray.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 843 Christina Lights Bryanstad, MN 77660.
-SYS: Track your order using your tracking number, K7KIU97WGA. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

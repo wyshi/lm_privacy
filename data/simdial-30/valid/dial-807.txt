@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm David Radcliff.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 10561 Franklin Drives Masontown, NY 60299.
-SYS: You can track your package with your tracking number, which is 67F7T148GE. Are you happy about my answer?
-USR: No more questions.

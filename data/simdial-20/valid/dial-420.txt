@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Carlos Coleman.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 2219 Stephen Plains Denniston, MA 18982.
-SYS: The tracking number is COHPR2XW4I. What else can I do?
-USR: That's it.

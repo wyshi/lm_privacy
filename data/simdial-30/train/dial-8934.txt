@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Maira Flores.
-SYS: We will need the shipping address as well.
-USR: My address is 5676 Tammy Vista Suite 203 Steveberg, WI 89913.
-SYS: Track your order using your tracking number, 6WWZ35EDJQ. Is there anything else I can help with?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Darlene Stephens.
-SYS: We will need the shipping address as well.
-USR: 27614 Daniel Route Suite 805 South Jeffreyberg, RI 43670.
-SYS: The tracking number is 6Z9H4LR6Y4. Anything else?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

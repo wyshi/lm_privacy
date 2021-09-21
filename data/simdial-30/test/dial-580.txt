@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Michelle Johnson.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 813 Brown Ridge Suite 389 Lake Josephfort, DE 45819.
-SYS: You can track your package with your tracking number, which is VOMEK8K9VR. Are you happy about my answer?
-USR: No more questions.

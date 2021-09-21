@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Christopher Willis.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 611 Robinson Plaza Williamborough, AL 12500.
-SYS: The tracking number is OPTP38FOK5. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

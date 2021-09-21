@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Helen Russell.
-SYS: We will need the shipping address as well.
-USR: 0024 Jennifer Passage Suite 181 Hawkinsmouth, VT 35543.
-SYS: The tracking number is RTWVEIBH06. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

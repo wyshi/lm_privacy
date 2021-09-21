@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: My name's James Turner.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 94202 Kennedy Mission Apt. 312 Port Gary, OR 79173.
-SYS: You can track your package with your tracking number, which is M8V0J6V2WN. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Caleb Philips.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 62024 Morton Ridge Suite 008 New Taylor, SC 53350.
-SYS: Track your order using your tracking number, 3J9BUW43YT. Anything else?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

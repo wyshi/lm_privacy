@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Maureen Granados.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 9695 Jennifer Key Walshstad, OH 46755.
-SYS: The tracking number is GRL3HNB0NT. What else can I do?
-USR: That's it. That's all.
-SYS: Bye.

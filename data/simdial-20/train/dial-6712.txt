@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Erin Burt
-SYS: Could you please confirm your shipping address?
-USR: My address is 8717 Yates Turnpike Timothyville, HI 85194.
-SYS: The tracking number is FQURP20RT0. Are you happy about my answer?
-USR: I have all I need.

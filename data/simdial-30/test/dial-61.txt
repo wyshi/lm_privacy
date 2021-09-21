@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, David Conrad.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, USS Wallace FPO AA 13026.
-SYS: Track your order using your tracking number, GIQD0ILQ39. What else can I do?
-USR: No more questions. That's all.
-SYS: Bye.

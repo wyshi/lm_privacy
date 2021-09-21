@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Mary Schlater.
-SYS: We will need the shipping address as well.
-USR: My address is 9846 Katelyn Mills Apt. 904 Griffithborough, NJ 01637.
-SYS: The tracking number is 7FA7O14VLM. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

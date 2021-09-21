@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Al Dixon.
-SYS: We will need the shipping address as well.
-USR: My address is 57290 Victoria Parkway Apt. 815 Katherineville, OH 89354.
-SYS: Track your order using your tracking number, NEK2Z5TM1M. What else can I do?
-USR: All good.

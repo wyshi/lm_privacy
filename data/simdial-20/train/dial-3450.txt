@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Eleanor Jenkins.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 59256 Ryan Trail Evansbury, OK 21117.
-SYS: Track your order using your tracking number, KYI6VOZ3KK. Is there anything else I can help with?
-USR: All good.

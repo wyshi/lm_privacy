@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Tracy Kathan.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 8032 Bryant Shoal New Sara, NH 26197.
-SYS: Track your order using your tracking number, 2F5U6M0S7R. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Goodbye.

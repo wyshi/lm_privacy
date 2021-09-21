@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Marlene Woodford.
-SYS: Could you please confirm your shipping address?
-USR: My address is 998 Keith Plains Apt. 150 Juliafort, WA 44755.
-SYS: Track your order using your tracking number, 2LIVK2YYO5. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

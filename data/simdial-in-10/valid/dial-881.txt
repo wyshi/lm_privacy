@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Victoria Werk.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 36673 Mcintyre Drives Suite 577 Port Chaseburgh, HI 30756.
-SYS: Track your order using your tracking number, 0G3Z65KEJB. What else can I do?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Cathy Dick
-SYS: We will need the shipping address as well.
-USR: 86878 Kimberly Turnpike South Melvinview, MI 75423.
-SYS: Track your order using your tracking number, PEJSP2NRT0. What else can I do?
-USR: No more questions.

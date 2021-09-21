@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Robert Shields.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 46538 Samantha Overpass North Tanya, DC 67865.
-SYS: You can track your package with your tracking number, which is UVRB6X64O7. What else can I do?
-USR: All good.

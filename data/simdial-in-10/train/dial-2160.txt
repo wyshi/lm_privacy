@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Dora Samuels.
-SYS: We will need the shipping address as well.
-USR: 3603 Roberts Unions East Robinburgh, GA 59439.
-SYS: You can track your package with your tracking number, which is JR68UQK5NB. What else can I do?
-USR: All good. See you.
-SYS: Bye.

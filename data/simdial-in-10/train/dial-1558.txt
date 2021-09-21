@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Kenneth Gentry 56346 Lisa Crest Apt. 075 Jennifershire, HI 86563.
-SYS: You can track your package with your tracking number, which is TJLDXEFVKC. What else can I do?
-USR: All good. Thank you.
-SYS: Goodbye.

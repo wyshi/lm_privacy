@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: I am Anne Chee.
-SYS: Can you provide the order number?
-USR: Sure, it is 738-67074-2171
-SYS: You can track your package with your tracking number, which is HPE6SKU6LY. Anything else?
-USR: That's it. Thanks!

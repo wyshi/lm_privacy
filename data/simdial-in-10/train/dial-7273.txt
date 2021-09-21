@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Phyllis Mcintosh.
-SYS: Ok, may I have your phone number?
-USR: 320-253-5915.
-SYS: The tracking number is YNR2ZCT2D3. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Goodbye.

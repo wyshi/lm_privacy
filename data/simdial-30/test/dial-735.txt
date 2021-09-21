@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Michael Humphrey.
-SYS: Could you please confirm your shipping address?
-USR: 450 Rhonda Mills Kochfurt, DC 31567.
-SYS: Track your order using your tracking number, S307720GXE. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

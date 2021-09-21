@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Scott Collier.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 551 Justin Avenue Suite 310 West Christina, CT 26938.
-SYS: You can track your package with your tracking number, which is YURGW0C1SW. Is there anything else I can help with?
-USR: I have all I need.

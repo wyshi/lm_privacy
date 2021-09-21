@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Tonya Weaver.
-SYS: Could you please confirm your shipping address?
-USR: My address is 5183 Christopher Drive East Sean, MI 03125.
-SYS: You can track your package with your tracking number, which is N47CRP8Q4V. Are you happy about my answer?
-USR: That's it.

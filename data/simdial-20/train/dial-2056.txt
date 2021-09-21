@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Raul Orio
-SYS: We will need the shipping address as well.
-USR: Shipping address is 43083 Roberts Creek Port Joseland, AZ 63501.
-SYS: You can track your package with your tracking number, which is VF7EDRGARH. Anything else?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

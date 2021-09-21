@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm James Martinez.
-SYS: Verify your phone number please.
-USR: my number is 374.350.4642.
-SYS: The tracking number is 4D5VAI1QGC. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

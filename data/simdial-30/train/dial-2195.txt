@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Margaret Worley
-SYS: We will need the shipping address as well.
-USR: 3166 Williams Plain South Roberthaven, LA 98482.
-SYS: The tracking number is 20M8DBXZ0M. What else can I do?
-USR: No more questions.

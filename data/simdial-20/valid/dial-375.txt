@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: John Little
-SYS: Could you please confirm your shipping address?
-USR: 3158 Blair Tunnel Apt. 364 Pinedaport, UT 14493.
-SYS: Track your order using your tracking number, D4C592RZ9C. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am William Carey.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 917 Anne Knolls South Johnside, MO 45387.
-SYS: The tracking number is IR11KKI9SM. What else can I do?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

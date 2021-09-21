@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Georgette Rand.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 17910 Ball Street Hintonfort, NV 95295.
-SYS: You can track your package with your tracking number, which is 3B9AGCVB7T. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

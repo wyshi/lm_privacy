@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Stephanie Camp
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 288-567-9136.
-SYS: Track your order using your tracking number, KTLIV635XS. What else can I do?
-USR: That's it.

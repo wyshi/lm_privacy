@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Bertha Determan.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 67288 Walter Prairie Suite 475 Mariaton, AK 02791.
-SYS: Track your order using your tracking number, PFXUEU6KM3. What else can I do?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

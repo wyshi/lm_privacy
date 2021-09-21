@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Brittany Leber.
-SYS: Can you provide the order number?
-USR: Yes, 571-76977-1326.
-SYS: Track your order using your tracking number, 9WPJZQ8LMM. What else can I do?
-USR: That's it. Thanks!

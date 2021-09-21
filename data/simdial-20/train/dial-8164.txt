@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, William Chisholm.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 71740 Davidson Meadow West Kendra, SD 20711.
-SYS: You can track your package with your tracking number, which is UYDXXUFCZW. Are you happy about my answer?
-USR: All good.

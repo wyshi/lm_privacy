@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Gia Jones
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 00244 Eaton Ranch Apt. 954 Lake Terri, AZ 36535.
-SYS: Track your order using your tracking number, D6XAMUURA3. What else can I do?
-USR: I have all I need.

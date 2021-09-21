@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Brenda Hutto.
-SYS: Could you please confirm your shipping address?
-USR: 334 Gutierrez Inlet Apt. 437 West Carolynhaven, MO 17811.
-SYS: You can track your package with your tracking number, which is J3KHYRRSJM. Anything else?
-USR: That's it. Thanks!

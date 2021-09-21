@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Kenneth Vasquez
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 210-278-3868.
-SYS: Track your order using your tracking number, HNZ2OWA83S. What else can I do?
-USR: That's it. That's all.
-SYS: Goodbye.

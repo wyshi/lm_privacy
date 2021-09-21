@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Justin Jimenez.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is Unit 1483 Box 5611 DPO AE 00625.
-SYS: The tracking number is 7UHP4AJCVY. Are you happy about my answer?
-USR: I have all I need.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Henry Smalley.
-SYS: We will need the shipping address as well.
-USR: 456 Garrett Ford Apt. 328 New Ryanside, HI 62271.
-SYS: You can track your package with your tracking number, which is Y9W4EHVU4I. What else can I do?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

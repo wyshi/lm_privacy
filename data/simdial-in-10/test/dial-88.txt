@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Patsy Kukauskas.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 358 Christina Islands Johnsonborough, VT 39357.
-SYS: The tracking number is XBRQZZ1FGN. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: George Lehtonen
-SYS: Could you please confirm your shipping address?
-USR: My address is 52587 Toni Fork Maldonadotown, AL 21942.
-SYS: Track your order using your tracking number, NJ0C9U40OS. What else can I do?
-USR: All good. Thank you.
-SYS: Goodbye.

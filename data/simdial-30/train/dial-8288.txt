@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: I am Valerie Winslett.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 872 Victor Turnpike Port John, RI 58887. Valerie Winslett.
-SYS: The tracking number is DTVCWBJYHK. Are you happy about my answer?
-USR: All good. That's all.
-SYS: Bye.

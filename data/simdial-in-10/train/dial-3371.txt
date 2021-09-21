@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Dorothy Fonner.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 758 Mercado Garden Apt. 296 New Kenneth, MD 38085.
-SYS: The tracking number is WGCXBPSMKD. Anything else?
-USR: No more questions. Thank you.
-SYS: Bye.

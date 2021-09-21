@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's Laura Davis.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 96639 Harrison Wall Suite 722 Bullockfort, KY 27153.
-SYS: You can track your package with your tracking number, which is N37U751PTC. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Gale White.
-SYS: Verify your phone number please.
-USR: You can reach me at 570.801.6686.
-SYS: You can track your package with your tracking number, which is 7BLSL7FQRU. Anything else?
-USR: All good.

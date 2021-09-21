@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Larry Porter.
-SYS: Could you please confirm your shipping address?
-USR: 938 Kim Corners Suite 249 Moralestown, NY 44118.
-SYS: You can track your package with your tracking number, which is GYFA5EOF07. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: It was a great pleasure helping you.

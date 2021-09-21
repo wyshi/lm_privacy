@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Noelle Fernandez.
-SYS: Ok, may I have your phone number?
-USR: 407-739-2410.
-SYS: You can track your package with your tracking number, which is ZRU3D5ACOI. What else can I do?
-USR: That's it.

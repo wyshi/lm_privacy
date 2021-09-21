@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Jacqueline Alvarez.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 95939 Jerry Valley Suite 006 Ernestport, IA 02993.
-SYS: The tracking number is LF09AB4AH1. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

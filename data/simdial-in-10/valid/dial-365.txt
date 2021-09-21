@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Lucila Burnette.
-SYS: We will need the shipping address as well.
-USR: 5407 Emily Squares Stephaniebury, OR 42192.
-SYS: Track your order using your tracking number, TH7T01CSWX. Are you happy about my answer?
-USR: That's it. Thanks! See you.
-SYS: Bye.

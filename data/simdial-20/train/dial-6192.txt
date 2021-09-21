@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Ricardo Epps.
-SYS: We will need the shipping address as well.
-USR: PSC 5552, Box 1074 APO AA 15429.
-SYS: The tracking number is 4RUH1UPSKO. Are you happy about my answer?
-USR: That's it. Thanks!

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yes, April Humphrey.
-SYS: Verify your order number please.
-USR: My order number is 524-21670-3884.
-SYS: Track your order using your tracking number, HXYJYED5JC. Are you happy about my answer?
-USR: That's it.

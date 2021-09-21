@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Billy Yates.
-SYS: We will need the shipping address as well.
-USR: My address is 02894 Davis Pass Suite 258 North Tiffanyfurt, OR 16126.
-SYS: The tracking number is 397GRI0N9R. Anything else?
-USR: That's it.

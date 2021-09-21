@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Jessica Hendrickson.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 723-419-6563.
-SYS: The tracking number is VNSU3H5OXK. Is there anything else I can help with?
-USR: That's it. Thanks!

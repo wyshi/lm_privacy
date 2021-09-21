@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: George Harvey
-SYS: We will need the shipping address as well.
-USR: Ok, it is 317 Jessica Place Suite 835 West Nathanstad, TX 12383.
-SYS: The tracking number is 8H4YNB80D0. What else can I do?
-USR: All good. See you.
-SYS: Goodbye.

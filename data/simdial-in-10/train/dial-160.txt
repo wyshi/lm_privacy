@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Kelsey Eiche.
-SYS: Could you please confirm your shipping address?
-USR: 970 Monica Summit Suite 761 East Ryanborough, AK 54507.
-SYS: Track your order using your tracking number, RK6OMEJDE4. Anything else?
-USR: All good. Thank you.
-SYS: Goodbye.

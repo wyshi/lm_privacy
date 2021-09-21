@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Henry Andreasen.
-SYS: We will need the shipping address as well.
-USR: 872 Lisa Ways Apt. 608 South Tonyview, WI 94685.
-SYS: The tracking number is 5T65BZZHF7. What else can I do?
-USR: I have all I need. Thank you.
-SYS: Have a nice day! Bye.

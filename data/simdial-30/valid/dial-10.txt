@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Teri Walker.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 477 Boyd Fort West Dwayneton, UT 89794.
-SYS: The tracking number is GFVZR5B20W. Anything else?
-USR: That's it. See you.
-SYS: Bye.

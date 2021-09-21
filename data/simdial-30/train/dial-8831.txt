@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Melanie Newell.
-SYS: Verify your phone number please.
-USR: You can reach me at 225.517.3717.
-SYS: Track your order using your tracking number, 2BOHR8IMCX. Are you happy about my answer?
-USR: All good.

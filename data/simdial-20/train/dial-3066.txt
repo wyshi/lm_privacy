@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Shantelle Deaton.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 202 Michael Springs Fisherport, WV 07628.
-SYS: Track your order using your tracking number, KYUMPG5LLO. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

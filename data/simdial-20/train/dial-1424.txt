@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Cathryn Whitley.
-SYS: We will need the shipping address as well.
-USR: 1615 Fuentes Street Suite 346 Port Anthonyhaven, TN 51503.
-SYS: Track your order using your tracking number, 56ZC2YUJCJ. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

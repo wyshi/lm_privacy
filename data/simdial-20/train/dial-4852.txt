@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Frank Padilla.
-SYS: We will need the shipping address as well.
-USR: 96357 Castro Club Suite 849 North Markmouth, VT 67921.
-SYS: Track your order using your tracking number, FJ32VY0Y7Z. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

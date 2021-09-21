@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Beverly Holland.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 2362 Leslie Plains Aguilarport, WV 09735.
-SYS: The tracking number is 6NR95G02E2. Is there anything else I can help with?
-USR: That's it.

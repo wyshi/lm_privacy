@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Cedric Hosle.
-SYS: Could you please confirm your shipping address?
-USR: 8017 Tonya Glens Apt. 637 North Charlottestad, OK 38637.
-SYS: You can track your package with your tracking number, which is B18N9BJBJW. Are you happy about my answer?
-USR: I have all I need.

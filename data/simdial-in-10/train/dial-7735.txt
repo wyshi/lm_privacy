@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Francisco Rogers.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 377 Timothy Canyon Willisview, CO 54458.
-SYS: Track your order using your tracking number, JPR27PKPOX. Is there anything else I can help with?
-USR: All good.

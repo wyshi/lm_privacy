@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Brian Nichols.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 09535 Preston Parkways Griffinhaven, MT 90091.
-SYS: Track your order using your tracking number, FDO8IPYVF2. Anything else?
-USR: No more questions.

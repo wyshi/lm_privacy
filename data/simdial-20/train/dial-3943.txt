@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Glenn Barrientos
-SYS: Verify your phone number please.
-USR: Phone number is 952-420-9205
-SYS: You can track your package with your tracking number, which is HN2NBV7WU3. Are you happy about my answer?
-USR: No more questions.

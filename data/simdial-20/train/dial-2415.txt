@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Kenneth Stark.
-SYS: We will need the shipping address as well.
-USR: Ok, it is PSC 7532, Box 1160 APO AP 17963.
-SYS: You can track your package with your tracking number, which is IN1PZG4GO9. What else can I do?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

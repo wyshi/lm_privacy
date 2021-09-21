@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Gary Woodward.
-SYS: Verify your phone number please.
-USR: 977-470-8955 is my number.
-SYS: You can track your package with your tracking number, which is M2PDKN22FM. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: Goodbye.

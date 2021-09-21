@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Stanley Cherry.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 154 Cassidy Parkways Suite 602 Davidmouth, NE 62738.
-SYS: You can track your package with your tracking number, which is RLS1PIMWC4. Are you happy about my answer?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

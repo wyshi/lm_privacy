@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Frances Bond.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 535 Heidi Alley Suite 901 Jonesfort, ID 75748.
-SYS: You can track your package with your tracking number, which is VM1K0IWE79. What else can I do?
-USR: No more questions.

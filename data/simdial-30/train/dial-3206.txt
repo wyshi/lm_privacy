@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: James Keller.
-SYS: Could you please confirm your shipping address?
-USR: 19938 Blair Courts Christinashire, SD 96832.
-SYS: Track your order using your tracking number, 7M0G5F92BH. Anything else?
-USR: That's it.

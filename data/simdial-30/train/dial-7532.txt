@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Charles Baney.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 856.519.2105.
-SYS: You can track your package with your tracking number, which is A39RBFQWFX. Is there anything else I can help with?
-USR: That's it. Thanks!

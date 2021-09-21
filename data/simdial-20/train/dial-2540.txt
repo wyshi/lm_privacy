@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Daniel Chestnut
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 158 Lauren Radial Suite 409 Lake Sabrina, MS 56792.
-SYS: The tracking number is VPB18LZFH4. Anything else?
-USR: That's it. Thanks!

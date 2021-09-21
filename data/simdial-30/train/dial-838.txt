@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Peter Jones.
-SYS: Could you please confirm your shipping address?
-USR: 30065 Paula Ford Apt. 685 North Nicholas, ND 57035.
-SYS: You can track your package with your tracking number, which is F3BVMHH3VT. What else can I do?
-USR: No more questions.

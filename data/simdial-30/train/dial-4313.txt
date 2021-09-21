@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Eric Hemrich.
-SYS: We will need the shipping address as well.
-USR: 9276 William Valley Suite 967 Lake Thomasfurt, WA 79381.
-SYS: The tracking number is XE2YSTP930. What else can I do?
-USR: All good.

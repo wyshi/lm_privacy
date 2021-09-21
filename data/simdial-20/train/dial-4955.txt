@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Taylor Crockett.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 699.245.4844
-SYS: The tracking number is F8PGUVSHB4. Is there anything else I can help with?
-USR: No more questions.

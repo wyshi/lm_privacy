@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Will Burton.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 7701 White Court Robinsonbury, CT 75916.
-SYS: The tracking number is 2IPPT5QH0S. Anything else?
-USR: That's it. Thanks!

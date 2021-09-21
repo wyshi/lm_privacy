@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: I am Cesar Walzier.
-SYS: Verify your phone number please.
-USR: 436-148-2589.
-SYS: You can track your package with your tracking number, which is I50MO3WKXL. Are you happy about my answer?
-USR: No more questions.

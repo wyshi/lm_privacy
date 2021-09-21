@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Jamie Zazula.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 8908 Christina Place Apt. 438 Mariefurt, HI 49300.
-SYS: The tracking number is LYQHDAGUVA. Anything else?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Barbara Glover.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 200-118-3783
-SYS: You can track your package with your tracking number, which is R39TDQ4366. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

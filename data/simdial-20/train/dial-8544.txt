@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Christine Morelli
-SYS: Verify your phone number please.
-USR: my number is 333.719.2754.
-SYS: The tracking number is SURHEC4MUK. What else can I do?
-USR: That's it. See you.
-SYS: Goodbye.

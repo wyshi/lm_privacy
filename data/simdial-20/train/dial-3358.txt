@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: William Adams.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 203.301.8106
-SYS: The tracking number is UPS8UCPNEK. What else can I do?
-USR: That's it. Thanks!

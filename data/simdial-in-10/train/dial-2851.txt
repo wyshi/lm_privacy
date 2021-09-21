@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Paul Aguayo.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 26787 Lisa Circle New Andrealand, AK 64734.
-SYS: The tracking number is BSY14ODF1J. What else can I do?
-USR: No more questions.

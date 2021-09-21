@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Debra Cornett.
-SYS: Verify your phone number please.
-USR: You can reach me at 125.877.4376.
-SYS: You can track your package with your tracking number, which is M1BBX9CK5B. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Sure, Margaret Johnson.
-SYS: We will need the shipping address as well.
-USR: My address is 81051 Robert Rue Apt. 803 East Laura, UT 80878.
-SYS: Track your order using your tracking number, YR2V4YWSER. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Bye.

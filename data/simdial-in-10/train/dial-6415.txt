@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Benjamin Hood.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 799 Lucas Run Apt. 874 Gainesbury, MA 75837.
-SYS: You can track your package with your tracking number, which is XG41I6MU7U. Anything else?
-USR: All good. See you.
-SYS: Goodbye.

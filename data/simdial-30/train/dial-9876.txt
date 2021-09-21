@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Amber Deshazer
-SYS: Ok, may I have your phone number?
-USR: 162-552-1839.
-SYS: Track your order using your tracking number, BGNPNOV39W. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Bye.

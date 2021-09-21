@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Andres Reece
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 4224 Clark Rest Cruzborough, DE 56309.
-SYS: You can track your package with your tracking number, which is 6HPPNN4KP6. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

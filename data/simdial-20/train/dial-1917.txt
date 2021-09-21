@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Anne Sink.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 337 Meyers Park Suite 492 Thomasfort, DE 34368.
-SYS: Track your order using your tracking number, 5Z26AQPS4J. What else can I do?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

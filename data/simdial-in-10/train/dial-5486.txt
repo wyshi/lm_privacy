@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Howard Huggins.
-SYS: Can you provide the order number?
-USR: It's 665-76217-1527.
-SYS: You can track your package with your tracking number, which is 182DAECMU7. What else can I do?
-USR: No more questions.

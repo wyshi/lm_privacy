@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Diana Fisher.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 9726 Fox Freeway Susanfort, TN 43175.
-SYS: The tracking number is P8POFF429G. Anything else?
-USR: No more questions. That's all.
-SYS: Bye.

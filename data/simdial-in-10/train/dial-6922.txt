@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Oscar Bradshaw.
-SYS: Could you please confirm your shipping address?
-USR: 044 Soto Flats Suite 759 Pearsonberg, IL 99359.
-SYS: You can track your package with your tracking number, which is J4YMU8SVOD. Are you happy about my answer?
-USR: That's it. Thanks!

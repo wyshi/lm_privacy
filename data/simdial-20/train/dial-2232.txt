@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm John Oropesa.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 04336 Bailey Shoals New John, OR 49305.
-SYS: Track your order using your tracking number, 2WECG7PW6D. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Bye.

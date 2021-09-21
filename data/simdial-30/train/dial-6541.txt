@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Douglas Hunt.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 2256 Eaton Mall Apt. 668 West Josephport, PA 15977.
-SYS: You can track your package with your tracking number, which is PNVP7Q8KO8. What else can I do?
-USR: I have all I need.

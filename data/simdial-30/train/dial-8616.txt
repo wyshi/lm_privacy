@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Myrl Watson
-SYS: We will need the shipping address as well.
-USR: My address is 09025 Sharon Forks Hensleytown, TX 53659.
-SYS: The tracking number is K8IMQEQ2SS. Anything else?
-USR: That's it. Thanks!

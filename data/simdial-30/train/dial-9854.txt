@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Lisa Allen
-SYS: We will need the shipping address as well.
-USR: Shipping address is 7409 Breanna Drive Apt. 594 Colemanborough, DE 97860.
-SYS: Track your order using your tracking number, 6ZLEVLM7DE. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: Bye.

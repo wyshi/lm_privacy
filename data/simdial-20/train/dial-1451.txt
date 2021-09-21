@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Roy Garver.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 42778 Vanessa Run Apt. 265 Harrishaven, LA 50568.
-SYS: You can track your package with your tracking number, which is 270XLPW5MT. Anything else?
-USR: All good. Thank you.
-SYS: Bye.

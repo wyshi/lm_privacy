@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Whitney Copstead.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 98611 Flowers Shore Apt. 165 Kevinside, MT 60425.
-SYS: Track your order using your tracking number, HH4IIFYXFR. Are you happy about my answer?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Latasha Gasper.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 51205 Roberts Canyon Apt. 662 East Carol, OK 96912.
-SYS: You can track your package with your tracking number, which is IK1DOGH20L. Anything else?
-USR: That's it.

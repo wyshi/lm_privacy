@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Mary Alexander.
-SYS: We will need the shipping address as well.
-USR: 264 Blair Wells Mistyton, NM 65036.
-SYS: Track your order using your tracking number, YPWTE2ZD4U. What else can I do?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Melissa Robinson
-SYS: We will need the shipping address as well.
-USR: Shipping address is 533 Jones Cliffs Apt. 105 Lake Williechester, NC 56702.
-SYS: The tracking number is 7H7P80DL7E. Are you happy about my answer?
-USR: I have all I need.

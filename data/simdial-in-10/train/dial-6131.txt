@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Richard Griffin.
-SYS: Can you provide the order number?
-USR: It's 132-48990-5475. I am Richard Griffin.
-SYS: Track your order using your tracking number, S4683X38FT. What else can I do?
-USR: That's it. Thanks!

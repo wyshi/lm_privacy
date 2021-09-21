@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Carl Nisbett.
-SYS: Ok, may I have your phone number?
-USR: 287.159.7804 is my number.
-SYS: You can track your package with your tracking number, which is B01YWQ1ABY. What else can I do?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

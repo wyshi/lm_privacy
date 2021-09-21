@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: I am Melanie Jackson.
-SYS: Ok, may I have your phone number?
-USR: 7916111863.
-SYS: You can track your package with your tracking number, which is JSM54WOKY2. Anything else?
-USR: No more questions.

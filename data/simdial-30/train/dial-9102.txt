@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Albert Parker.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 42500 Isaac Dam Suite 235 North Stevenview, MT 84861.
-SYS: Track your order using your tracking number, PTXHBNYATN. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Have a nice day! Bye.

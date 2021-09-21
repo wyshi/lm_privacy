@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Paula Salmi.
-SYS: We will need the shipping address as well.
-USR: 170 Williams Viaduct Suite 770 Lake Adriana, NH 08014.
-SYS: You can track your package with your tracking number, which is GPSQ6662Q4. Is there anything else I can help with?
-USR: All good. See you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: I am Paulette Wallace.
-SYS: We will need the shipping address as well.
-USR: My address is 850 Evans Spurs Margaretstad, MT 53771.
-SYS: You can track your package with your tracking number, which is KH1TOABU51. What else can I do?
-USR: That's it.

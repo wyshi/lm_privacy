@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Bettye Sato.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 14113 Diaz Harbors Apt. 761 New Stephanie, ID 83791.
-SYS: You can track your package with your tracking number, which is C7CD5JNT9J. What else can I do?
-USR: All good. See you.
-SYS: Have a nice day! Bye.

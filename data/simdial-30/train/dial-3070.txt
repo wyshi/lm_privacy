@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yes, Andy Ferguson.
-SYS: Could you please also provide your order number?
-USR: Sure, it is 852-98548-3324 I am Andy Ferguson.
-SYS: The tracking number is ONPFZ30KZT. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Bye.

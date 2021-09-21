@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Sure, Lulu Hardaway.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 3317 Maria Mountain Mirandaland, FL 59360. Yes, Lulu Hardaway.
-SYS: Track your order using your tracking number, D7UNAQIGGG. What else can I do?
-USR: That's it. Thanks!

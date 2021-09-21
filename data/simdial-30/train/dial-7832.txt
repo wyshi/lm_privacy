@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yes, Jesse Holmes.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 245 Medina Lane Suite 802 West Danielchester, CA 97375.
-SYS: The tracking number is D3BTA6F7G3. What else can I do?
-USR: All good.

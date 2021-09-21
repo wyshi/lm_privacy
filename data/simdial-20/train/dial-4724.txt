@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: My name's Patricia Williams.
-SYS: We will need the shipping address as well.
-USR: My address is 5577 Hall Locks Apt. 259 South Aprilport, LA 96393.
-SYS: The tracking number is 0QQHZQYOH2. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: Goodbye.

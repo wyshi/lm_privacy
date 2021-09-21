@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Richard Cameron.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 511 Young Court Gilesfort, SD 59283.
-SYS: You can track your package with your tracking number, which is 4WO8MEZR3L. What else can I do?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

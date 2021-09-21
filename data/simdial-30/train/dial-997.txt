@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Robert Ward.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 867 Erik Walks Suite 143 East Lisafurt, NY 53731.
-SYS: The tracking number is 4HQPZITJ0J. Are you happy about my answer?
-USR: No more questions.

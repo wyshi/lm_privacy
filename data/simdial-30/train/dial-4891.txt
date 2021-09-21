@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: I am Amanda Stone.
-SYS: Verify your order number please.
-USR: My order number is 992-40476-2622.
-SYS: You can track your package with your tracking number, which is N3BN7R0AC3. What else can I do?
-USR: All good. That's all.
-SYS: Goodbye.

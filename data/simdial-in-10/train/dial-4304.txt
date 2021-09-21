@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Amanda Heasley.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 863-771-7183.
-SYS: The tracking number is LDVES4YUNJ. Anything else?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

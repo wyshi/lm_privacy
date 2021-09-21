@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Sure, James Mchenry.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 4596 Kane Mission Apt. 994 Lake Bill, TN 94196.
-SYS: You can track your package with your tracking number, which is BM8SLK2F7S. Are you happy about my answer?
-USR: That's it. Thanks!

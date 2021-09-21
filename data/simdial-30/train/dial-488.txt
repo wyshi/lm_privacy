@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Jon Davis.
-SYS: We will need the shipping address as well.
-USR: 676 Hunter Tunnel Port Jennifer, RI 81969.
-SYS: You can track your package with your tracking number, which is HO28ZK09XR. Anything else?
-USR: All good.

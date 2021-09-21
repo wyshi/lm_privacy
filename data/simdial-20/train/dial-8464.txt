@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Dana Winfield.
-SYS: Could you please confirm your shipping address?
-USR: My address is 36117 Karen Fields Apt. 792 North Thomas, MN 23856.
-SYS: The tracking number is 8FM82BQXSJ. Anything else?
-USR: No more questions.

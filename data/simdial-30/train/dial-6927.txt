@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Vida Hoekstra
-SYS: Could you please confirm your shipping address?
-USR: 5507 Bridges Mountain Apt. 775 West Rachel, AK 16420.
-SYS: The tracking number is R65T95FV01. What else can I do?
-USR: No more questions. See you.
-SYS: Goodbye.

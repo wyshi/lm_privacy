@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Judith Bidwell.
-SYS: Could you please confirm your shipping address?
-USR: 7744 Brown Villages New Mariatown, MS 11512.
-SYS: The tracking number is 4B44TLIMLL. What else can I do?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Mohammed Schell.
-SYS: Verify your order number please.
-USR: Sure, it is 921-25674-2678
-SYS: You can track your package with your tracking number, which is C391JPNLIE. Anything else?
-USR: No more questions. Thank you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Charles Ricks.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 399 Tanya Point North Christopher, NM 61324.
-SYS: The tracking number is LW4L5YWY6Q. Anything else?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

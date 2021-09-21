@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yes, Margaret Hughes.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 5026 Peters Ford Apt. 926 Fitzpatrickshire, ME 39562.
-SYS: Track your order using your tracking number, P2VSQAO6QO. Is there anything else I can help with?
-USR: All good.

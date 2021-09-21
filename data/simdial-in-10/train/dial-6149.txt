@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Delores Johnson.
-SYS: Could you please confirm your shipping address?
-USR: My address is 03314 Norton Prairie Suite 138 New Sara, MO 31938.
-SYS: Track your order using your tracking number, 87SXR5UURY. Anything else?
-USR: No more questions.

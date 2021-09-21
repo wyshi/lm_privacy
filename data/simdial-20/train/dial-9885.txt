@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Ray Payne.
-SYS: Could you please also provide your order number?
-USR: Yes, 694-12542-0981.
-SYS: Track your order using your tracking number, QHAIOOLU9P. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

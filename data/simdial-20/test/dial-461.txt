@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Nathan Cameron.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 2752722614.
-SYS: You can track your package with your tracking number, which is 5QGMQDK6NU. What else can I do?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, John Gregory.
-SYS: We will need the shipping address as well.
-USR: My address is 75897 Peters Square New Maria, NJ 87360.
-SYS: Track your order using your tracking number, A73XRR2DAV. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

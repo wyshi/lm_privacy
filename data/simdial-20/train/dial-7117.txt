@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Jeffrey Zima.
-SYS: We will need the shipping address as well.
-USR: My address is 2975 Matthew Mountain Victoriaside, NM 14672.
-SYS: You can track your package with your tracking number, which is BNH8J6G0KI. What else can I do?
-USR: All good.

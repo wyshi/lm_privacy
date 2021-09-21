@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: I am Kevin Cline.
-SYS: Could you please confirm your shipping address?
-USR: My address is 1725 Heather Port Villarrealfurt, MT 46523.
-SYS: You can track your package with your tracking number, which is MW1EATG9HC. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

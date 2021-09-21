@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am James Angel.
-SYS: We will need the shipping address as well.
-USR: My address is 22286 Sarah Stravenue South Tony, NJ 67243.
-SYS: You can track your package with your tracking number, which is PAA4E5UKUE. What else can I do?
-USR: That's it. That's all.
-SYS: Goodbye.

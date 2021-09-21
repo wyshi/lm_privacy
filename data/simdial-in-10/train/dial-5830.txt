@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Moses Henry
-SYS: Could you please confirm your shipping address?
-USR: My address is 79158 Owens Village Suite 898 Lake Michaelfort, WY 85588.
-SYS: The tracking number is I13NS1M288. Anything else?
-USR: That's it.

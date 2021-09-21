@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Shirley Payne.
-SYS: Verify your phone number please.
-USR: my number is 946.520.1416.
-SYS: Track your order using your tracking number, ULTCOOHENI. Anything else?
-USR: That's it. Thank you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Mable Quintanilla.
-SYS: Verify your order number please.
-USR: My order number is 620-43185-4571.
-SYS: You can track your package with your tracking number, which is 36G2J85F3H. Is there anything else I can help with?
-USR: All good.

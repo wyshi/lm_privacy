@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Marc Garcia.
-SYS: We will need the shipping address as well.
-USR: My address is 871 Crystal Isle Suite 969 South Sandra, MN 52029.
-SYS: Track your order using your tracking number, OXCES8AEGY. Are you happy about my answer?
-USR: No more questions.

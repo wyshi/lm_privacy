@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Michael Floer.
-SYS: We will need the shipping address as well.
-USR: My address is 43679 Henderson Flats Dixonfurt, VT 20858.
-SYS: The tracking number is H9ISU4EIO6. What else can I do?
-USR: All good. That's all.
-SYS: It was a great pleasure helping you.

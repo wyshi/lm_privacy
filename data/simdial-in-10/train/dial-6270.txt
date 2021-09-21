@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yes, Fred Sagedahl.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 90039 Jennings Mountain Suite 670 Mathewville, MO 57104.
-SYS: You can track your package with your tracking number, which is 3MWDGZEG4T. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: Bye.

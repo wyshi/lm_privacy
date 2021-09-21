@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Jon Burwell.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 2549 Karina Route Turnerburgh, PA 88234.
-SYS: You can track your package with your tracking number, which is J8BW48V3XU. Is there anything else I can help with?
-USR: That's it.

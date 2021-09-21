@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yes, Dorothy Khalid.
-SYS: We will need the shipping address as well.
-USR: My address is 29485 Jessica Dam Sanchezfort, NY 82039.
-SYS: The tracking number is L7MS319D4F. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Bye.

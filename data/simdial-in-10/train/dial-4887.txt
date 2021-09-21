@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Roberto Thurber.
-SYS: We will need the shipping address as well.
-USR: My address is 74300 Christine Flat Suite 958 Harperfurt, NV 40709.
-SYS: You can track your package with your tracking number, which is 2EGIXW4P8P. Are you happy about my answer?
-USR: No more questions.

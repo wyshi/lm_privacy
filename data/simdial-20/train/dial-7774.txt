@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Ellen Mcgrath.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 015 Waters Glen Williamville, WV 56424.
-SYS: The tracking number is VMI3PKKMAU. Anything else?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

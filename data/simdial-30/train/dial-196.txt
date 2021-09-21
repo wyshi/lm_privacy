@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yes, Anthony Childress.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 9455 Emily Club Apt. 374 Batesfurt, VT 63503.
-SYS: The tracking number is IAE9AZJRTT. Anything else?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Neva Hines.
-SYS: Verify your phone number please.
-USR: You can reach me at 176.239.9083.
-SYS: The tracking number is PAVHY2S756. What else can I do?
-USR: No more questions.

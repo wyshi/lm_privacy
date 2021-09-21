@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Gregory Chandler.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 499 Tapia Shoals Apt. 989 North Alexis, NC 25754.
-SYS: The tracking number is P2107RU31E. Are you happy about my answer?
-USR: I have all I need.

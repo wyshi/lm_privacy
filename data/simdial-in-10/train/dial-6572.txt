@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Stephanie Tuite.
-SYS: Could you please confirm your shipping address?
-USR: My address is 27662 Hill Parkway Apt. 604 Whiteshire, FL 71340.
-SYS: Track your order using your tracking number, 0Q8QK48WFK. Is there anything else I can help with?
-USR: I have all I need.

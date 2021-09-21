@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Rocky Hale.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 2304 Gray Tunnel Apt. 594 Lyonsburgh, CT 79357.
-SYS: The tracking number is HOL3DI6T5W. Are you happy about my answer?
-USR: That's it.

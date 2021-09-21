@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's John Lang.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 969 Hopkins Springs Suite 518 Lake Heidi, IL 10430.
-SYS: Track your order using your tracking number, ISCDSAJ4TX. Are you happy about my answer?
-USR: All good. See you.
-SYS: Goodbye.

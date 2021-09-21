@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Clarissa George.
-SYS: We will need the shipping address as well.
-USR: PSC 2734, Box 7198 APO AE 81930.
-SYS: The tracking number is 1RC6X13CQH. Is there anything else I can help with?
-USR: No more questions.

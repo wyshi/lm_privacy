@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Janice Siders.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 1206 Steven Vista Lake Stephanie, AK 30732.
-SYS: The tracking number is D9U8ZCCRUS. What else can I do?
-USR: That's it.

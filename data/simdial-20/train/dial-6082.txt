@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Freddy Almanza
-SYS: Verify your order number please.
-USR: Yes, 852-29474-1308.
-SYS: Track your order using your tracking number, I6Q02NIW1H. Anything else?
-USR: I have all I need.

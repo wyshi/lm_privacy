@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: My name's Hazel Lopez.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is USS Collins FPO AE 93122.
-SYS: The tracking number is KU4DQ1IMD7. Is there anything else I can help with?
-USR: I have all I need. Thank you.
-SYS: Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Sure, Paul Malton.
-SYS: Verify your order number please.
-USR: My order number is 494-20014-1445.
-SYS: The tracking number is SIVADU4Q2I. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

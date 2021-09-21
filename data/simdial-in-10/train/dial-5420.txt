@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Helen Truitt.
-SYS: Can you provide the order number?
-USR: My order number is 940-94766-8507.
-SYS: Track your order using your tracking number, 8DBH16F57G. What else can I do?
-USR: No more questions.

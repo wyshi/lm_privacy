@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, Bonnie Garza.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 9566 Carter Forge South Robert, DE 43080.
-SYS: The tracking number is A7NLSJM2KC. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

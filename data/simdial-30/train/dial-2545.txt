@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Steven Carpentieri.
-SYS: Could you please confirm your shipping address?
-USR: 62539 Newman Islands Apt. 589 North Jenniferfurt, UT 68128.
-SYS: You can track your package with your tracking number, which is 0H0PCLXZ1P. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: Bye.

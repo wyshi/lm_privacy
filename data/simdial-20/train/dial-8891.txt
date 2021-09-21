@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Melissa Garbacz.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 9183 Gonzales Meadow Apt. 341 New Josephmouth, AL 73164.
-SYS: The tracking number is XFW5KPATKU. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

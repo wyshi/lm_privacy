@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Anita Costa.
-SYS: Verify your order number please.
-USR: Yes, 548-64704-4499.
-SYS: Track your order using your tracking number, EOZSM96JUW. Are you happy about my answer?
-USR: I have all I need.

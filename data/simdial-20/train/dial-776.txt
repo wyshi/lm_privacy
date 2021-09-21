@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, David Bambenek.
-SYS: We will need the shipping address as well.
-USR: Ok, it is USNS Roberson FPO AP 67024.
-SYS: You can track your package with your tracking number, which is UVGKILIBPW. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: Have a nice day! Bye.

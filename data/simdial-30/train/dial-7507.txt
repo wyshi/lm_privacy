@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Sarah Lindsay.
-SYS: Could you please confirm your shipping address?
-USR: 9971 Coleman Orchard Annfort, VT 07262.
-SYS: The tracking number is MLULUEGTNY. What else can I do?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Jesse Mcmahan.
-SYS: We will need the shipping address as well.
-USR: 24901 Benitez Row Apt. 539 West Robinburgh, NV 56709.
-SYS: The tracking number is 61322KUMHA. Are you happy about my answer?
-USR: That's it.

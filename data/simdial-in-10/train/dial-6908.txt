@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Emily Martin.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 785 Lauren Islands Suite 512 Nathanchester, MD 19150.
-SYS: The tracking number is 74C3V6T492. What else can I do?
-USR: That's it. Thank you.
-SYS: Bye.

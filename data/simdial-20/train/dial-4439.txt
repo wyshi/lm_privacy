@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Kevin Walker.
-SYS: We will need the shipping address as well.
-USR: My address is 085 Martin Island Kevinhaven, RI 85379.
-SYS: You can track your package with your tracking number, which is 1ER5VCLKMB. What else can I do?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Linda Mackinder
-SYS: We will need the shipping address as well.
-USR: Yea sure, 57751 Dean Turnpike Suite 108 Lake Heatherville, FL 05547.
-SYS: Track your order using your tracking number, KZBB8AWC0N. What else can I do?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

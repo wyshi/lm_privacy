@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Peter Jackson.
-SYS: We will need the shipping address as well.
-USR: 91279 Watts View Duncanton, NE 18718.
-SYS: You can track your package with your tracking number, which is 2QLXJKNPX5. Anything else?
-USR: That's it.

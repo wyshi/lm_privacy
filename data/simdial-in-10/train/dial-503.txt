@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Julia Casley.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 8869 Melissa Field New Harold, WI 24601.
-SYS: The tracking number is 49KIIFYV57. What else can I do?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

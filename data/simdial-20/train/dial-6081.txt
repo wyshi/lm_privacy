@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: James Butler
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 202 Thomas Cliffs Apt. 165 Pattersonstad, FL 28328.
-SYS: You can track your package with your tracking number, which is 41MVOV3566. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

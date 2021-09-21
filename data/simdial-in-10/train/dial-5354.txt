@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Calvin Cushman.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 162 Gregory Landing Port Michellefort, ID 49561.
-SYS: You can track your package with your tracking number, which is S1QBPZIX8F. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: Bye.

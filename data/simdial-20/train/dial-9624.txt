@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Erin Creger.
-SYS: We will need the shipping address as well.
-USR: 8713 Hancock Crest New Michele, WV 36675.
-SYS: The tracking number is 80Q5J69W5E. Anything else?
-USR: No more questions. Thank you.
-SYS: Bye.

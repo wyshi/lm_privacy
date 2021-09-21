@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yes, Eloisa Cox.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 97684 Arthur Turnpike Suite 501 Danaland, NV 67622.
-SYS: You can track your package with your tracking number, which is E0DZ3B4WNX. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Have a nice day! Bye.

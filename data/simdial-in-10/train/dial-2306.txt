@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Mary Mcnolty.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 7914 Benson Shore Jonesview, NH 57046.
-SYS: The tracking number is UUFKI4SWLT. Anything else?
-USR: All good. That's all.
-SYS: Bye.

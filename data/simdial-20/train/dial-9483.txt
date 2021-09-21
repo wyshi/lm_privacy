@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Nikki Whitney
-SYS: Verify your phone number please.
-USR: You can reach me at 980-788-7185.
-SYS: The tracking number is AYQL0CIX1W. Are you happy about my answer?
-USR: All good.

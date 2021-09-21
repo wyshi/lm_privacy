@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Christina Demarsico.
-SYS: We will need the shipping address as well.
-USR: 108 Dillon Ville Suite 861 New Thomasshire, NC 04675.
-SYS: You can track your package with your tracking number, which is YK0N9C0R24. What else can I do?
-USR: That's it. Thanks!

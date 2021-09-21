@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: My name's Jesse Wright.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 930 Rodriguez Views Garciaburgh, DC 20284.
-SYS: You can track your package with your tracking number, which is Z8UGT8B7XZ. What else can I do?
-USR: All good. See you.
-SYS: Goodbye.

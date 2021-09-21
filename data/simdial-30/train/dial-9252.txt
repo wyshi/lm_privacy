@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Kellie Gibson.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, Unit 6173 Box 1035 DPO AA 63704.
-SYS: The tracking number is STK3U0CPLV. Anything else?
-USR: That's it.

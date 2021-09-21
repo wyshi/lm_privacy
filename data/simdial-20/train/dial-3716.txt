@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: My name's Jill Burrell.
-SYS: Could you please also provide your order number?
-USR: My order number is 749-97258-6036.
-SYS: You can track your package with your tracking number, which is UI5SO1IP1P. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

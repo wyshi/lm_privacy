@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: I am Kevin Forman.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 22912 Simmons Creek Suite 849 South Peterland, ME 16536.
-SYS: The tracking number is U1KRWOHQRF. Are you happy about my answer?
-USR: All good.

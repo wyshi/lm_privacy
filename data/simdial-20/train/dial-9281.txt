@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Courtney Lofton
-SYS: Verify your phone number please.
-USR: You can reach me at 826-599-1534.
-SYS: The tracking number is 94LK3ZZV9X. What else can I do?
-USR: That's it. Thanks!

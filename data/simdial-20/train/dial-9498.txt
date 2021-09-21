@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Ellen Blackwell.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5916 Jordan Prairie Jenniferside, MD 74160.
-SYS: The tracking number is ZSHP68HSI2. Anything else?
-USR: No more questions. Thank you.
-SYS: Goodbye.

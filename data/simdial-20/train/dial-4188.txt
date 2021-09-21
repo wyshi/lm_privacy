@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Larry Johnson.
-SYS: Verify your phone number please.
-USR: You can reach me at 317-583-5498.
-SYS: You can track your package with your tracking number, which is 1Y01WQ42LJ. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: It was a great pleasure helping you.

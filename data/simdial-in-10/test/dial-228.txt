@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Margarete Bapties.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 528 Miller Tunnel Suite 641 Lake Robinfort, ME 67472.
-SYS: The tracking number is WX290M5WDT. Are you happy about my answer?
-USR: No more questions.

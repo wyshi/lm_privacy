@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Christopher Richardson.
-SYS: We will need the shipping address as well.
-USR: My address is 911 Cynthia Grove Apt. 075 New Bonnieland, VA 71099.
-SYS: The tracking number is EK13XW6WTC. Is there anything else I can help with?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

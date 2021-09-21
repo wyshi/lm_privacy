@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Harold Francis
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 9226 Sierra Street North Heidi, MI 71123.
-SYS: You can track your package with your tracking number, which is T1594B9UQH. Is there anything else I can help with?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Adrian Priest
-SYS: We will need the shipping address as well.
-USR: Yea sure, 1437 Salinas Fords Apt. 075 Holmeschester, PA 13423.
-SYS: The tracking number is M34KEGLK0L. Is there anything else I can help with?
-USR: That's it. Thanks!

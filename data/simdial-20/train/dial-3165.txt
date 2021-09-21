@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Larry Valentin.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 509 Jennifer Branch Apt. 682 Lake Ashleymouth, NJ 46633.
-SYS: Track your order using your tracking number, J1W6YQ0UIW. Are you happy about my answer?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

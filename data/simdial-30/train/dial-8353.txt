@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Jason Chaparro.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 521 Evans Skyway Apt. 847 North Anthony, AK 38707.
-SYS: You can track your package with your tracking number, which is ATSZI1JOK6. Anything else?
-USR: All good. See you.
-SYS: Bye.

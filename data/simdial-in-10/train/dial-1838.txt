@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Bobbie Himes.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 3264 Tammy Trail Aaronton, TN 47416.
-SYS: Track your order using your tracking number, V9CQMS8B4F. What else can I do?
-USR: That's it. Thanks!

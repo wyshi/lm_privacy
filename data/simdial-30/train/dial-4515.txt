@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Jasper Dickey
-SYS: Verify your phone number please.
-USR: You can reach me at 1864952218.
-SYS: You can track your package with your tracking number, which is YX9M1ZWI4L. What else can I do?
-USR: That's it. Thanks!

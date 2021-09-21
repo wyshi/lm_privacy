@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Carla Sauer.
-SYS: We will need the shipping address as well.
-USR: USCGC Johnson FPO AE 23469.
-SYS: The tracking number is MITMQD4URZ. What else can I do?
-USR: That's it.

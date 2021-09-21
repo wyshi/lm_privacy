@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's James Hawkins.
-SYS: We will need the shipping address as well.
-USR: My address is 79939 Hardin Cove Apt. 155 Heatherburgh, WI 32641.
-SYS: The tracking number is SXYKJJ41K5. What else can I do?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

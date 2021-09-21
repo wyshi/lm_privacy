@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Georgia Sellers
-SYS: Could you please confirm your shipping address?
-USR: 202 Phyllis Prairie Apt. 025 East Kimberly, IA 30231.
-SYS: The tracking number is VY5JTAOHJS. What else can I do?
-USR: I have all I need.

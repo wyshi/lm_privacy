@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Betty Marks.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 72104 Adam Gateway Apt. 844 Lake Gina, WV 99006.
-SYS: The tracking number is DXRHZOXEJR. What else can I do?
-USR: That's it.

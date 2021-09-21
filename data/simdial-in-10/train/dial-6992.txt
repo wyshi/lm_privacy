@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Patricia Cardenas.
-SYS: We will need the shipping address as well.
-USR: 454 Nguyen Flats Apt. 763 Port Jeff, WY 91534.
-SYS: You can track your package with your tracking number, which is BLWNVRC0DF. Are you happy about my answer?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

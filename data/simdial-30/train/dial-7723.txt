@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Jason Bunker.
-SYS: We will need the shipping address as well.
-USR: 7754 Amber Walk Suite 744 Lake Jennifer, MI 00823.
-SYS: Track your order using your tracking number, 0TP7CCN5WT. What else can I do?
-USR: That's it. Thanks!

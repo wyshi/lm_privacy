@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: I am Carl Brand.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 689 Emily Brooks Allenton, AR 02976.
-SYS: The tracking number is 948THPY9SZ. Are you happy about my answer?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

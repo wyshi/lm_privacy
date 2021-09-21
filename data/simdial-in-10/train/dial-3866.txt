@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Mary Stohler.
-SYS: Could you please confirm your shipping address?
-USR: My address is 6998 Warner Station Suite 828 Codyberg, CO 25086.
-SYS: The tracking number is 7IIQ0HTQF7. Is there anything else I can help with?
-USR: That's it.

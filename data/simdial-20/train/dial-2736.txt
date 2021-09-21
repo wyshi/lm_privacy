@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Carolyn Birge.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 891 Kathleen Parkway Apt. 771 South Austin, VA 71107.
-SYS: Track your order using your tracking number, 6G3KZUQSQJ. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

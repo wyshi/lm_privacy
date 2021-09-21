@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Thomas Forker.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 152 Reynolds Expressway South Johnbury, MD 03792.
-SYS: You can track your package with your tracking number, which is MU0V6NODHU. Is there anything else I can help with?
-USR: That's it.

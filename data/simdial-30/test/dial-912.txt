@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Louise Hayden.
-SYS: Could you please also provide your order number?
-USR: 272-18885-9721
-SYS: The tracking number is G5AGRIGUC0. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: Bye.

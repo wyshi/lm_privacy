@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, Jan Moore.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 17308 Turner Village Hallborough, MO 55749.
-SYS: You can track your package with your tracking number, which is 4UYZ3H9ZJB. Anything else?
-USR: That's it. Thanks!

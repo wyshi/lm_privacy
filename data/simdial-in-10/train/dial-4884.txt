@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Christopher Warner.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 5036 Mccarthy Trail Apt. 623 Port Louisbury, OH 24458.
-SYS: Track your order using your tracking number, XYOKY6QOA5. What else can I do?
-USR: No more questions.

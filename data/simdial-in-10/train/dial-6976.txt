@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Sure, Jonathan Kramer.
-SYS: Verify your order number please.
-USR: It's 652-94535-2541.
-SYS: You can track your package with your tracking number, which is CJUFS620HO. Anything else?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

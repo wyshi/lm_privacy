@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm David Buchana.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is Unit 1535 Box 0392 DPO AA 97003.
-SYS: The tracking number is IBD8NLFBFY. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Leslie Dawson.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 138 Silva Dam Apt. 571 East Christine, MN 66106.
-SYS: Track your order using your tracking number, NGB0IDFYAX. Is there anything else I can help with?
-USR: That's it.

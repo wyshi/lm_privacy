@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Charles Jester.
-SYS: We will need the shipping address as well.
-USR: My address is 189 Margaret Parkway Suite 221 West Dominiqueshire, MA 12915.
-SYS: The tracking number is UNNLCH2TFE. What else can I do?
-USR: That's it. Thank you.
-SYS: It was a great pleasure helping you.

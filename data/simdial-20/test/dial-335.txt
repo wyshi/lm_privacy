@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Lyndon Smith
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is USNS Morgan FPO AP 55816.
-SYS: Track your order using your tracking number, 3DW57598BS. Anything else?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

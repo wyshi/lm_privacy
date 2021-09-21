@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Deborah White.
-SYS: We will need the shipping address as well.
-USR: 86218 Macias Landing Suite 780 South Hannah, SD 49840.
-SYS: You can track your package with your tracking number, which is K7DFJ0PE8N. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: Have a nice day! Bye.

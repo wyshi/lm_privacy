@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: My name's James Ratcliff.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 055 John Dale North Marcustown, PA 43870.
-SYS: Track your order using your tracking number, HYRLF7H0DO. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

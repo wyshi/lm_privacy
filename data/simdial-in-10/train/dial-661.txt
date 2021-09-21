@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Meghan Everhart.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 7531 Mccoy Circles Suite 942 Stantonchester, VA 25110.
-SYS: The tracking number is B2FI1G4C9F. What else can I do?
-USR: All good.

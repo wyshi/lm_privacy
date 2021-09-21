@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Rogelio Nalepa.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 15577 Estrada Village Apt. 864 South Jeremymouth, PA 40548.
-SYS: Track your order using your tracking number, ZOVHTVO3TL. Are you happy about my answer?
-USR: All good. That's all.
-SYS: Goodbye.

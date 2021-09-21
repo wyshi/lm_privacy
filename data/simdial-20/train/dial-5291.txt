@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Martha Harmon.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 5041 Mayo Island New Sandra, OR 84901.
-SYS: Track your order using your tracking number, KOWMLM9SVG. Anything else?
-USR: That's it. Thanks!

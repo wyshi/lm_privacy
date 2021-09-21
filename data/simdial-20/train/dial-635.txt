@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Charles Watson
-SYS: Could you please confirm your shipping address?
-USR: 88478 Evans Manor South Sarahfurt, ND 46892.
-SYS: The tracking number is HTS6FP2WP7. Anything else?
-USR: All good.

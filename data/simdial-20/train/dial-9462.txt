@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Kenneth Jeffrey.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 89667 Christopher Parks Port Suzanneville, GA 56726.
-SYS: The tracking number is XZ95TC9DN7. Anything else?
-USR: That's it.

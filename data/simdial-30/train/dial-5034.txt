@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Florence Adkins
-SYS: Could you please confirm your shipping address?
-USR: My address is 95008 Morrison Lights Apt. 898 Johnsonshire, NH 66154.
-SYS: You can track your package with your tracking number, which is 4VCH3SYVCN. What else can I do?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

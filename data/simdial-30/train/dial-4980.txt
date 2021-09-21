@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Robert Holmes
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 2882 Duncan Mount Suite 326 New Phillipport, OK 38581.
-SYS: You can track your package with your tracking number, which is NXLWO1QFE3. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: Have a nice day! Bye.

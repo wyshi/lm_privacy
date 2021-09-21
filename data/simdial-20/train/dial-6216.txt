@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Larry Stewart
-SYS: We will need the shipping address as well.
-USR: Shipping address is 9617 Chang Run Apt. 676 Tanyaside, CA 59511.
-SYS: Track your order using your tracking number, NW2A1304ON. Anything else?
-USR: I have all I need. See you.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Carmela Ryan.
-SYS: Could you please confirm your shipping address?
-USR: My address is 974 Kevin Camp Johnnytown, CT 17202.
-SYS: You can track your package with your tracking number, which is WYQ4EBA28Z. What else can I do?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

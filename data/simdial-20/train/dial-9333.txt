@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Danielle Haynes.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 3069 Rivas Locks Suite 373 Powellberg, WY 83582. Danielle Haynes
-SYS: Track your order using your tracking number, S9WPX7LLI0. Is there anything else I can help with?
-USR: All good.

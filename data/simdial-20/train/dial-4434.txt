@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Shanda Kinyon.
-SYS: Verify your phone number please.
-USR: You can reach me at 422-200-5450.
-SYS: Track your order using your tracking number, DM8J30U9L0. Is there anything else I can help with?
-USR: That's it. Thank you.
-SYS: Goodbye.

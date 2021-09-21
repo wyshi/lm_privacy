@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Beulah Harrison.
-SYS: We will need the shipping address as well.
-USR: My address is 756 Reyes Ridges Thomasstad, FL 96297.
-SYS: The tracking number is 33J4Q888SX. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

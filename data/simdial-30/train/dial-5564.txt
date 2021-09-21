@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Elsa Oneal. Shipping address is 86737 Wu Roads South Tina, CO 65141.
-SYS: Track your order using your tracking number, IF4QF5BGJL. Anything else?
-USR: That's it. That's all.
-SYS: Bye.

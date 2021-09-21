@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Ignacio Fenner.
-SYS: We will need the shipping address as well.
-USR: 1971 Kenneth Point Suite 594 New Michael, MN 95672.
-SYS: Track your order using your tracking number, XH03U6NXHV. What else can I do?
-USR: All good.

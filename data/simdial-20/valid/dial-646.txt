@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, John Vonsoosten.
-SYS: We will need the shipping address as well.
-USR: My address is 800 Bradford Shores Apt. 959 Lake Thomas, NJ 46734.
-SYS: Track your order using your tracking number, RMQ762XUJM. What else can I do?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

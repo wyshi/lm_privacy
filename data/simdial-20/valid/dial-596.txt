@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: I am Stefanie Brice.
-SYS: Could you please also provide your order number?
-USR: My order number is 326-81059-6192.
-SYS: The tracking number is VC7DZEGV4J. Anything else?
-USR: No more questions.

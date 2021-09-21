@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Ruby Shay.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is Unit 3753 Box 2014 DPO AA 88809.
-SYS: You can track your package with your tracking number, which is ZMZ5PD04HR. Anything else?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

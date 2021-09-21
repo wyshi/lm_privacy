@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Kevin Goracke
-SYS: Can you provide the order number?
-USR: Yes, 228-87600-4351.
-SYS: You can track your package with your tracking number, which is 6E9PN0UG01. Anything else?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Linda Capers.
-SYS: We will need the shipping address as well.
-USR: My address is 6553 Farley Shoals East Michaeltown, MN 31097.
-SYS: You can track your package with your tracking number, which is DA2ENUS6Y6. Are you happy about my answer?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

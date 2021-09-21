@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Brian Bottoms.
-SYS: We will need the shipping address as well.
-USR: 668 Ellis Road North Whitney, OH 98931.
-SYS: The tracking number is X4ZCFIAP94. Anything else?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Willard Roberts
-SYS: Could you please confirm your shipping address?
-USR: 56280 Robinson Flat Suite 195 East Chelsea, CA 62051. Yep - I'm Willard Roberts.
-SYS: The tracking number is 9ARWCSJ6T7. Are you happy about my answer?
-USR: That's it. Thanks!

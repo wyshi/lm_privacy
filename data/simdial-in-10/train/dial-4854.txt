@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Andrea Conner
-SYS: We will need the shipping address as well.
-USR: My address is USNS Padilla FPO AE 62956.
-SYS: You can track your package with your tracking number, which is SW18DLI1XT. Is there anything else I can help with?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Patricia Omara.
-SYS: We will need the shipping address as well.
-USR: 29634 Robinson Freeway East Riley, TX 38232.
-SYS: The tracking number is SYLMQF7R9Q. Anything else?
-USR: I have all I need.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Jeff Caffrey.
-SYS: Could you please also provide your order number?
-USR: My order number is 708-87748-1100.
-SYS: The tracking number is ZCY1AC3ZIM. What else can I do?
-USR: No more questions.

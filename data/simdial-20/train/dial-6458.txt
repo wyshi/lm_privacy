@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Alma Griffo.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 482 Johnson Mills Suite 250 Lewisside, WI 70445.
-SYS: Track your order using your tracking number, PDT0V7KIJ1. Is there anything else I can help with?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: I am Leo Griffith.
-SYS: Can you provide the order number?
-USR: Sure, it is 134-84710-1498
-SYS: Track your order using your tracking number, VNKL4M6SCZ. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Goodbye.

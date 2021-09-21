@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Aaron Scheele.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 03895 Brittany Port North Laurenville, AR 57756.
-SYS: Track your order using your tracking number, 8IQF5VQN1X. Anything else?
-USR: That's it. Thanks!

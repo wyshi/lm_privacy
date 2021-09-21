@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Tom Mitchell.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 388 Jason Mount Suite 542 Bowersfort, MA 29673.
-SYS: Track your order using your tracking number, HAT6AW415H. What else can I do?
-USR: I have all I need. See you.
-SYS: Bye.

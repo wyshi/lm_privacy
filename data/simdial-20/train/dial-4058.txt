@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Joan Conner.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 4716 Maldonado Station Stephanieborough, WV 44382.
-SYS: You can track your package with your tracking number, which is 8E6EWR8OIE. What else can I do?
-USR: That's it.

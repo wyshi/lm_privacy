@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Paul Huerta.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 85822 Veronica Ridge Apt. 854 Port Christinestad, CT 41111.
-SYS: You can track your package with your tracking number, which is 6L1M3D0YGU. Anything else?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's William Knapp.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 502 Perez Motorway Apt. 901 Lake Amy, AL 56462.
-SYS: Track your order using your tracking number, J9HNP18V7M. Are you happy about my answer?
-USR: All good. That's all.
-SYS: Goodbye.

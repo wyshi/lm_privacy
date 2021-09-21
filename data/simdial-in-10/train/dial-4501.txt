@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Linda Stene.
-SYS: We will need the shipping address as well.
-USR: My address is 21424 Brandt Isle Suite 199 Amandabury, WV 05625.
-SYS: The tracking number is EFS1UTHY0X. Are you happy about my answer?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm John Telles.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 7537 Justin Islands Suite 922 East Troyshire, UT 46929.
-SYS: The tracking number is P84DQ2L19U. Are you happy about my answer?
-USR: All good.

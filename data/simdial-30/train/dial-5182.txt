@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm Paul Caldeira.
-SYS: Can you provide the order number?
-USR: My order number is 876-78329-1074.
-SYS: The tracking number is EAUWQPYRQM. Anything else?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

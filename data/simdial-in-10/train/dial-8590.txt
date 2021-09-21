@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Roland Worley.
-SYS: We will need the shipping address as well.
-USR: My address is 03137 Stanley Keys Pamelafort, WA 68178.
-SYS: The tracking number is GRQVJRN2VQ. Are you happy about my answer?
-USR: I have all I need.

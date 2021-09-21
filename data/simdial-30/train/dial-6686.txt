@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Stephen Gonzalez.
-SYS: Could you please also provide your order number?
-USR: It's 914-74706-8487.
-SYS: You can track your package with your tracking number, which is IPX2TD2P7Q. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

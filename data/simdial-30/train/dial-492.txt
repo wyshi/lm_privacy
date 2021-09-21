@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Donna Smith.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 599 Heather Underpass Suite 448 Lake Aaronbury, MN 86146.
-SYS: The tracking number is W9YDR9QY2H. What else can I do?
-USR: That's it. Thanks!

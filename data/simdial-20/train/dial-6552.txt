@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Maureen Granados.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 9695 Jennifer Key Walshstad, OH 46755.
-SYS: Track your order using your tracking number, 7YOKXX40WQ. What else can I do?
-USR: No more questions.

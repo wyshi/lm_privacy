@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Deborah Harris.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 20609 Johnson Divide Lynnview, OR 68758.
-SYS: The tracking number is FEHHRDZ8MI. Are you happy about my answer?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

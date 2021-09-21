@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Steven Rivera.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 6428 Fisher Landing Suite 880 Fordfort, ME 72940.
-SYS: The tracking number is YJKNEZ8WFG. Are you happy about my answer?
-USR: I have all I need. See you.
-SYS: Goodbye.

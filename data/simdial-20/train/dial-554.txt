@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Darrell Wahba.
-SYS: We will need the shipping address as well.
-USR: My address is 8784 Kelly Green East Sonyatown, ID 62326.
-SYS: Track your order using your tracking number, VVQU67X2T6. What else can I do?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's Ouida Stigall.
-SYS: Could you please confirm your shipping address?
-USR: My address is 1716 Henderson Well Shawnbury, NY 61606.
-SYS: The tracking number is ZZPN58P2HJ. Is there anything else I can help with?
-USR: No more questions.

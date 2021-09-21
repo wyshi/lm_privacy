@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Floyd Anderson.
-SYS: Could you please confirm your shipping address?
-USR: 19111 Hill Mount New Lindsey, OR 71459.
-SYS: The tracking number is VJ8AH1C5BT. Is there anything else I can help with?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

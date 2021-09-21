@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Nadine Gottschalk.
-SYS: Could you please confirm your shipping address?
-USR: 02978 Thompson Ways Suite 265 North Saraville, AR 40825.
-SYS: The tracking number is TUP2V7TQ5H. Are you happy about my answer?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

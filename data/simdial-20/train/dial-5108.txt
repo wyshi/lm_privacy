@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Carmen Weems.
-SYS: Could you please confirm your shipping address?
-USR: 5028 Clay Port Apt. 099 Michaelstad, CA 20410.
-SYS: The tracking number is 8SGVDM92UJ. What else can I do?
-USR: All good. See you.
-SYS: Goodbye.

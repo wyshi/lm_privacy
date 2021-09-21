@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Pamela Manis.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 347 Albert Mountain North Charleshaven, TX 57080.
-SYS: The tracking number is E008FZNO0B. Anything else?
-USR: That's it. Thanks!

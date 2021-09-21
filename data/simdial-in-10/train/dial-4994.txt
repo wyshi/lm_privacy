@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Maryann Hopkins.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 277 Veronica Streets Suite 180 Madisonbury, IL 59795.
-SYS: You can track your package with your tracking number, which is 684BMWAUA3. Anything else?
-USR: All good. Thank you.
-SYS: It was a great pleasure helping you.

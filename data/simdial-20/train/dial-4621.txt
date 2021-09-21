@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Ray Adams.
-SYS: Verify your order number please.
-USR: Yes, 510-98396-3430.
-SYS: You can track your package with your tracking number, which is BA6IVTEK3J. What else can I do?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

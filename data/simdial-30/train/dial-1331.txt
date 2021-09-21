@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's David Wynne.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 7451 Baker Mountains Apt. 366 Ryanview, CT 17776.
-SYS: The tracking number is S1O6QOSZQK. Is there anything else I can help with?
-USR: That's it.

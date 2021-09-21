@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Opal Odaniel.
-SYS: Verify your phone number please.
-USR: 1772937211.
-SYS: The tracking number is 82QN48KAPM. What else can I do?
-USR: I have all I need.

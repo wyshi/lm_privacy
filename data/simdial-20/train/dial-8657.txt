@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Yes, Myrtle Elman.
-SYS: Could you please confirm your shipping address?
-USR: 4180 Johnson Throughway Suite 979 Meyerstad, TN 08883.
-SYS: The tracking number is CSBF1KEQ0T. Are you happy about my answer?
-USR: That's it.

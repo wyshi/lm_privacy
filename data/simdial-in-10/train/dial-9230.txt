@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Frank Borden.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 7269 Martin Keys Apt. 333 Allenview, TN 66281.
-SYS: Track your order using your tracking number, PGBDYVHFJ2. Are you happy about my answer?
-USR: All good.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Gwendolyn Wong.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 5131 Horn Green Suite 651 Martinezchester, ME 01718.
-SYS: Track your order using your tracking number, 4RTUH6L9AC. Anything else?
-USR: All good. See you.
-SYS: It was a great pleasure helping you.

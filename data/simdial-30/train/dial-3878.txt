@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: My name's Bill Sykes.
-SYS: Could you please confirm your shipping address?
-USR: 12999 Harrison Landing Apt. 847 Cathychester, MT 01692.
-SYS: Track your order using your tracking number, BV89PF7Q8Y. What else can I do?
-USR: I have all I need.

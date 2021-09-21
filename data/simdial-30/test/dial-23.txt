@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Ginger Stanton.
-SYS: Could you please confirm your shipping address?
-USR: 28773 David Street Apt. 074 New Pamela, LA 16238.
-SYS: You can track your package with your tracking number, which is GZ5QYAZ4VH. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

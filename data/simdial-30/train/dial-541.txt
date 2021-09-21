@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm David Cabading.
-SYS: Could you please confirm your shipping address?
-USR: 193 Anna Shores Colleenton, GA 43759.
-SYS: You can track your package with your tracking number, which is I5JSK6P4MB. Anything else?
-USR: I have all I need. See you.
-SYS: Goodbye.

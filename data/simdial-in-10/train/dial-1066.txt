@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: I am Lucille Knauf.
-SYS: Ok, may I have your phone number?
-USR: my number is 785-768-2446.
-SYS: Track your order using your tracking number, GS0KSWW82B. Anything else?
-USR: No more questions.

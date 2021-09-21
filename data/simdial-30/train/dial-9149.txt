@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Francis Lopez.
-SYS: We will need the shipping address as well.
-USR: My address is 101 Christina Roads Suite 666 West Christopher, GA 09424.
-SYS: The tracking number is B9YR5HUICZ. What else can I do?
-USR: That's it. Thanks!

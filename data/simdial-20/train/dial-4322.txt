@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Luis Than.
-SYS: Can you provide the order number?
-USR: It's 183-28081-1833.
-SYS: Track your order using your tracking number, AKIEM051MF. Is there anything else I can help with?
-USR: I have all I need.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Michael Ortega
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 983 Morales Stream Suite 641 Cliffordhaven, KY 46926.
-SYS: You can track your package with your tracking number, which is GZ8BIL68VU. What else can I do?
-USR: I have all I need. See you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Eleanor Przedwiecki.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 129 Wang Alley Apt. 897 West Nicoleberg, NY 30956.
-SYS: The tracking number is STMZ09DD52. Anything else?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

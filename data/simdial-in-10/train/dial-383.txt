@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Sure, Karen Moon.
-SYS: Verify your phone number please.
-USR: Phone number is 504.868.1656
-SYS: You can track your package with your tracking number, which is AR5K1CE87Q. Are you happy about my answer?
-USR: That's it.

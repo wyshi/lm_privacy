@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: I am Yolanda Heltzel.
-SYS: Verify your order number please.
-USR: It's 562-50063-6334.
-SYS: You can track your package with your tracking number, which is 9B0DVZ929C. What else can I do?
-USR: No more questions.

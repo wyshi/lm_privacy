@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Larry Lynn.
-SYS: Verify your order number please.
-USR: Yes, 654-51978-6204.
-SYS: Track your order using your tracking number, T1KX0SMNXR. Anything else?
-USR: That's it.

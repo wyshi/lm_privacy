@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Johnnie Lee.
-SYS: Verify your phone number please.
-USR: Phone number is 417-744-7211
-SYS: Track your order using your tracking number, CJ8ACVA2DD. Is there anything else I can help with?
-USR: All good. See you.
-SYS: Have a nice day! Bye.

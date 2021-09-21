@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Gary Marriott.
-SYS: Could you please confirm your shipping address?
-USR: 140 Jordan Shore Deniseville, IL 25999.
-SYS: You can track your package with your tracking number, which is ZXZWR5KB9Y. What else can I do?
-USR: That's it. Thank you.
-SYS: Goodbye.

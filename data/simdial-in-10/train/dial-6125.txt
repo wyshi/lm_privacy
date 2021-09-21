@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm William Bowling.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 1125 Christina Shores Apt. 407 Lake Eric, NY 99359.
-SYS: You can track your package with your tracking number, which is 3TAQK10B98. Anything else?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

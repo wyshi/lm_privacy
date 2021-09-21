@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Jeannette Fosler.
-SYS: Could you please confirm your shipping address?
-USR: 445 Ryan Trace Duncanmouth, KS 74886.
-SYS: The tracking number is S9KICLHAWC. Are you happy about my answer?
-USR: No more questions. Thank you.
-SYS: Bye.

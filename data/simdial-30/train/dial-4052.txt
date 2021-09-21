@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Sure, Bruce Young.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 571 Melinda Centers Apt. 447 Joshualand, WV 63917.
-SYS: Track your order using your tracking number, JMFAW12NHC. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

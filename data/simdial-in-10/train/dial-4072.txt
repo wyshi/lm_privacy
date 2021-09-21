@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yes, Hazel Judge.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 54187 Kennedy Trafficway Lake Joshuashire, ME 61537.
-SYS: You can track your package with your tracking number, which is 3JHUH5881J. What else can I do?
-USR: No more questions. Thank you.
-SYS: Bye.

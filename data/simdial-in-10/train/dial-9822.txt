@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Sure, Lona Rodriguez.
-SYS: We will need the shipping address as well.
-USR: 6201 Shaw Passage Suite 892 South Anna, VT 70196.
-SYS: Track your order using your tracking number, VLRS6SLNNT. Are you happy about my answer?
-USR: That's it.

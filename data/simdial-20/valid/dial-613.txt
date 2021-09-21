@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Domenic Milburn
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 757 Webb Mission Apt. 492 South Kristen, IA 82481.
-SYS: The tracking number is D06QIRSSUX. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Bye.

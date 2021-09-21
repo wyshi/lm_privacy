@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Simone Milliner.
-SYS: We will need the shipping address as well.
-USR: 8994 Robert Shoal New Jeremychester, ID 64715.
-SYS: You can track your package with your tracking number, which is VXZEABPVAC. Are you happy about my answer?
-USR: No more questions.

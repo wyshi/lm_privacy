@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Olivia Walker.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 32547 Jennifer Island Apt. 917 Deannaborough, MO 73142.
-SYS: The tracking number is ML4E2TLJ5D. What else can I do?
-USR: No more questions.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Lovie Coleman.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 804 Hailey Union Robertton, TN 13158.
-SYS: Track your order using your tracking number, 4B8FXQUR7D. Anything else?
-USR: That's it.

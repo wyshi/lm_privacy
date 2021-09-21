@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Madeline Morin
-SYS: We will need the shipping address as well.
-USR: Shipping address is 191 Lewis Shoal Lake Paultown, MT 71634.
-SYS: You can track your package with your tracking number, which is OJ6P9QEBHG. Are you happy about my answer?
-USR: That's it.

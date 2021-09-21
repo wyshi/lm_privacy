@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Yep - I'm Jose Shoemaker.
-SYS: Could you please confirm your shipping address?
-USR: 714 Patterson Mews Apt. 598 Dwayneshire, KS 73651.
-SYS: You can track your package with your tracking number, which is YBZ1IED7V8. Is there anything else I can help with?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

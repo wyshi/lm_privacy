@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Minna Conners.
-SYS: Verify your phone number please.
-USR: You can reach me at 673.302.1694.
-SYS: Track your order using your tracking number, 2JMZIFKZCY. What else can I do?
-USR: That's it.

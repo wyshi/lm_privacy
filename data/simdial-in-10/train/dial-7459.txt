@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Michele Butner.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 812 Jamie Corners Apt. 404 Taylorshire, AZ 36522.
-SYS: The tracking number is 6KFBD75OJS. Anything else?
-USR: That's it. Thanks!

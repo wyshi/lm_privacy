@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: I am Alicia Morgan.
-SYS: Ok, may I have your phone number?
-USR: my number is 758-695-5293.
-SYS: You can track your package with your tracking number, which is S1T9U0KOBL. Anything else?
-USR: I have all I need.

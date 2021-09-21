@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Roberta Justice.
-SYS: We will need the shipping address as well.
-USR: My address is 46073 Finley Shoal Suite 053 Wallaceshire, AZ 82399.
-SYS: The tracking number is IPEYXBW2F5. Are you happy about my answer?
-USR: That's it. Thanks!

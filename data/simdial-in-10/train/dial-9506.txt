@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Katelyn Walden.
-SYS: We will need the shipping address as well.
-USR: 81410 Serrano Port West Julianchester, ND 36512.
-SYS: The tracking number is 6KF2LQSSJE. What else can I do?
-USR: No more questions.

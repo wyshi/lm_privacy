@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Paul Krigger
-SYS: Could you please confirm your shipping address?
-USR: My address is 009 Angela Loaf South Richard, OH 88657.
-SYS: Track your order using your tracking number, NEP5HIF74R. Is there anything else I can help with?
-USR: That's it.

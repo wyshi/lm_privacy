@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: My name's Catherine Elkin.
-SYS: We will need the shipping address as well.
-USR: 7591 Cantu Ridges East Jessicaport, HI 18498.
-SYS: The tracking number is T1DG4YY26Y. Anything else?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

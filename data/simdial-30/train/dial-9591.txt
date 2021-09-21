@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Herman Cooper.
-SYS: Could you please confirm your shipping address?
-USR: 3732 Webb Springs Hendersonville, AZ 88378.
-SYS: Track your order using your tracking number, XP7P9XQKEI. Are you happy about my answer?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

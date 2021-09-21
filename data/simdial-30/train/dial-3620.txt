@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Lance Beck.
-SYS: Could you please confirm your shipping address?
-USR: 22933 Tate Way North Tinaton, ID 58569.
-SYS: The tracking number is 7C55VJ7M3N. Are you happy about my answer?
-USR: I have all I need. Thank you.
-SYS: It was a great pleasure helping you.

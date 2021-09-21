@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Janie Boulton. Shipping address is 52709 Matthew Mountain Apt. 873 Port Matthew, MD 96528.
-SYS: Track your order using your tracking number, VLXGN4ZIS9. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Goodbye.

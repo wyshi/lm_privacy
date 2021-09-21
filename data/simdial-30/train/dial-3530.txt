@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Patsy Thivierge.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 6403 Carter Ridge Apt. 050 South Allisonberg, LA 28690.
-SYS: Track your order using your tracking number, 6MYB0WJCO5. Anything else?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

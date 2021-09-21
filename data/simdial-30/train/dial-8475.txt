@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Jessica Muni.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 65751 English Loop East Robertbury, NH 40461.
-SYS: You can track your package with your tracking number, which is KKX1RFAJZJ. Anything else?
-USR: All good. Thank you.
-SYS: Have a nice day! Bye.

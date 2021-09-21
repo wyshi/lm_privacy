@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Yes, Christine Fisher.
-SYS: Verify your order number please.
-USR: It's 517-53847-6205.
-SYS: The tracking number is P2Y3M7HR13. Is there anything else I can help with?
-USR: All good. That's all.
-SYS: Goodbye.

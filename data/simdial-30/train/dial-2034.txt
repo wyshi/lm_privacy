@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Mary Grimm.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 314 Johnson Flats Lindaland, PA 63891.
-SYS: You can track your package with your tracking number, which is 9VLW5Z5RQX. What else can I do?
-USR: All good.

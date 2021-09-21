@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: My name's Mary Fisher.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 85831 Miller Lane Suite 961 Deborahberg, IN 10954.
-SYS: You can track your package with your tracking number, which is PBARM2MLZN. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

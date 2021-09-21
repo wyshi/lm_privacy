@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Maria Hamil.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 4031 Nelson Cliff North Alexisside, ND 90097.
-SYS: Track your order using your tracking number, 7M21U3ETOM. What else can I do?
-USR: That's it. Thanks!

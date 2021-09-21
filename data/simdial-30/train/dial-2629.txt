@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: Richard Gilliland
-SYS: We will need the shipping address as well.
-USR: My address is 8536 Powell Islands Apt. 237 Lake Oliviaport, IL 75492.
-SYS: You can track your package with your tracking number, which is WDXETW4RHB. What else can I do?
-USR: No more questions. See you.
-SYS: Goodbye.

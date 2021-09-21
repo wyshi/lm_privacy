@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Timothy Maclean.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 199.806.1089.
-SYS: The tracking number is 262BPTOZI4. What else can I do?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Sure, Tony Hollis.
-SYS: Ok, may I have your phone number?
-USR: my number is 963-095-7287.
-SYS: Track your order using your tracking number, TV74SFI7MA. Anything else?
-USR: I have all I need. That's all.
-SYS: Goodbye.

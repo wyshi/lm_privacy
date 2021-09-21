@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Elvira Ahrens.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 593.145.8964.
-SYS: Track your order using your tracking number, LOLTS4POGP. Anything else?
-USR: That's it. Thanks!

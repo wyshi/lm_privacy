@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Percy George
-SYS: Could you please confirm your shipping address?
-USR: My address is 9607 Nicole View Suite 927 Hannahshire, NM 27118.
-SYS: The tracking number is 35PARRLPTR. What else can I do?
-USR: That's it. Thanks!

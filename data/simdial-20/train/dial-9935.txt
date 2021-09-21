@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Brent Blanchette.
-SYS: Could you please confirm your shipping address?
-USR: 1436 Vance Points Suite 193 South Markbury, NC 87858.
-SYS: You can track your package with your tracking number, which is 7M8561X4P4. What else can I do?
-USR: That's it. Thanks!

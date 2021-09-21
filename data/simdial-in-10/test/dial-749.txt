@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Jennifer Blum.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 8955 Mcgee Fork West Emily, ID 96063.
-SYS: You can track your package with your tracking number, which is YIA1HVKKD2. What else can I do?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

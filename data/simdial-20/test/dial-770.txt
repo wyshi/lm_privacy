@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Robert Heppler.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 942 Kerry Springs Port Peterview, WY 12996. Yes, Robert Heppler.
-SYS: You can track your package with your tracking number, which is KH25K51WYA. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: Bye.

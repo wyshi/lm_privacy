@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Eileen Medeiros
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 5710 Brandon Pass Suite 088 New Lindseyton, MA 64043.
-SYS: You can track your package with your tracking number, which is XUQO1Y6F1B. Are you happy about my answer?
-USR: No more questions.

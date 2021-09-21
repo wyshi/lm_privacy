@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Alvin Choi.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 615 Crystal Road Suite 469 Nancyfurt, AK 42495.
-SYS: The tracking number is 3EP1ZICA9K. Anything else?
-USR: All good.

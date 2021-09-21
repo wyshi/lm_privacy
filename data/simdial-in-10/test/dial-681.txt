@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: My name's Rick Gray.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 197 Lee Pass West Catherine, TN 97814.
-SYS: The tracking number is 8ZQUE84470. Is there anything else I can help with?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

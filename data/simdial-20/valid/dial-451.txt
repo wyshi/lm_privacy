@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Daniel Goodson
-SYS: Verify your phone number please.
-USR: You can reach me at 410.660.0805.
-SYS: The tracking number is I42T1G7W74. What else can I do?
-USR: That's it.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Edna Patnode
-SYS: We will need the shipping address as well.
-USR: Ok, it is 3608 Sandra Stream Jacquelinemouth, MT 29315.
-SYS: The tracking number is 0HFHIEYDNN. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Goodbye.

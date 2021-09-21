@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Frank Frausto.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 6602 Sheppard Club Apt. 347 West Christina, VA 28547.
-SYS: Track your order using your tracking number, UGCRVK63KU. Is there anything else I can help with?
-USR: All good. Thank you.
-SYS: Bye.

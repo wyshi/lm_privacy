@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Carl Suddoth
-SYS: Could you please confirm your shipping address?
-USR: My address is 81179 Lacey Branch Lake Joseside, NH 90778.
-SYS: The tracking number is ZFVT7CLNR2. What else can I do?
-USR: That's it. Thanks! That's all.
-SYS: Bye.

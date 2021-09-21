@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: Porsha Corum.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 09665 Valerie Green Heatherchester, HI 41587.
-SYS: Track your order using your tracking number, 8G81K520XY. What else can I do?
-USR: That's it. That's all.
-SYS: Bye.

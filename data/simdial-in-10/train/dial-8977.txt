@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's John Pfannenstiel.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 321.130.0429.
-SYS: Track your order using your tracking number, PJ38JU6M1N. Is there anything else I can help with?
-USR: That's it. Thanks! Thank you.
-SYS: Goodbye.

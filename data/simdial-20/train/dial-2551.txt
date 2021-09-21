@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Christina Dennis.
-SYS: We will need the shipping address as well.
-USR: 0224 Baker Plaza Apt. 862 New Lindsey, TX 40701.
-SYS: The tracking number is XQYRP5EY1F. Is there anything else I can help with?
-USR: That's it. Thanks!

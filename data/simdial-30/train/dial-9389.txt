@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a lipstick several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Anthony Elliott.
-SYS: We will need the shipping address as well.
-USR: 281 Blake Mountain Timothyview, GA 07341.
-SYS: The tracking number is X5OWEN83H9. Anything else?
-USR: No more questions. Thank you.
-SYS: Have a nice day! Bye.

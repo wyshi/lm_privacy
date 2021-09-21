@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Roger Gilmore.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 99409 Franklin Greens East Randyfurt, LA 51862.
-SYS: The tracking number is 4LP80TKONY. Anything else?
-USR: No more questions.

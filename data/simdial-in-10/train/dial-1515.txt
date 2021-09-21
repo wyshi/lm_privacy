@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yep - I'm Eda Keeney.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 700-092-4921
-SYS: You can track your package with your tracking number, which is MGOVM7OZYF. What else can I do?
-USR: I have all I need.

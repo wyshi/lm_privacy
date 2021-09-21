@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Bret Davis.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 3081 Ross Squares Suite 964 Smithbury, NM 03822.
-SYS: You can track your package with your tracking number, which is L2OH63K1CK. Is there anything else I can help with?
-USR: I have all I need.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Beth Perez.
-SYS: We will need the shipping address as well.
-USR: My address is 4151 Patton Shore South Ronald, AL 78007.
-SYS: You can track your package with your tracking number, which is EXTA6CMSLW. What else can I do?
-USR: No more questions. See you.
-SYS: Goodbye.

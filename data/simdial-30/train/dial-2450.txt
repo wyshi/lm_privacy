@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Annie Hetz.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 52274 Miller Stravenue Apt. 158 Marybury, IN 58477.
-SYS: Track your order using your tracking number, Y01TIY7CFY. Are you happy about my answer?
-USR: That's it. Thanks!

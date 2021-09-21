@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Sure, Andrew Erickson.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 25371 Daniel Forge Apt. 151 South Stephanie, OK 38569.
-SYS: Track your order using your tracking number, 3UFK6WRQ0E. Anything else?
-USR: All good.

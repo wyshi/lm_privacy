@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yep - I'm Cathy Iacobelli.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 040 Henry Shoals West Teresaview, MN 75020.
-SYS: The tracking number is LML8WCKSAO. Is there anything else I can help with?
-USR: All good.

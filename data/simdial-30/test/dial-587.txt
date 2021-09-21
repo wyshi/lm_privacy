@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Patricia Gregory.
-SYS: We will need the shipping address as well.
-USR: My address is 193 William Port Apt. 546 Merrittfurt, LA 51870.
-SYS: The tracking number is OA5Z5WU2KF. Anything else?
-USR: That's it. See you.
-SYS: Bye.

@@ -1,6 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Gilbert Pool. 884-789-6552 is my number.
-SYS: You can track your package with your tracking number, which is Q8H78ERBM7. Anything else?
-USR: No more questions.

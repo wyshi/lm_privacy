@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: John Liang.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 970 Adam Avenue Suite 156 Coxborough, TX 19258.
-SYS: You can track your package with your tracking number, which is SZ36VR13WU. Is there anything else I can help with?
-USR: I have all I need.

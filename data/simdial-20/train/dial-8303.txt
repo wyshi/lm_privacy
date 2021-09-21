@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Jean Paramo
-SYS: We will need the shipping address as well.
-USR: Ok, it is 548 Morgan Extensions Apt. 886 East Raymond, NH 46244.
-SYS: The tracking number is 08MKFR6FMT. What else can I do?
-USR: No more questions. That's all.
-SYS: Bye.

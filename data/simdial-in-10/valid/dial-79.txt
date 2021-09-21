@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Jay Yeager.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 129 Marquez Shore East Staciefort, UT 12430.
-SYS: The tracking number is LNX5FC9P7L. What else can I do?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Sarah Beaudreault.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 2995 Russell Shoals East Roger, UT 06309.
-SYS: The tracking number is JDG1DKR50U. Anything else?
-USR: That's it. Thanks! See you.
-SYS: It was a great pleasure helping you.

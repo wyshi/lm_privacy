@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: Sure, Doug Horrigan.
-SYS: Verify your order number please.
-USR: Sure, it is 958-74710-4348
-SYS: You can track your package with your tracking number, which is YJJVABWWCA. Are you happy about my answer?
-USR: That's it. Thanks!

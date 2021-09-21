@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yes, Darrel Bedell.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 279 Margaret Squares Josephmouth, WY 10702.
-SYS: You can track your package with your tracking number, which is 9U080DWYEH. What else can I do?
-USR: No more questions. See you.
-SYS: Goodbye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yep - I'm Anthony Brown.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 694 Lisa Landing Duranland, CT 49651.
-SYS: Track your order using your tracking number, 7XCMUNZJVH. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Have a nice day! Bye.

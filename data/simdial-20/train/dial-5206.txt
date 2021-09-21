@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Kathryn Cameron.
-SYS: We will need the shipping address as well.
-USR: 58916 James Valleys West Elizabethstad, WA 30391.
-SYS: Track your order using your tracking number, JN2OK2AIVF. Anything else?
-USR: I have all I need.

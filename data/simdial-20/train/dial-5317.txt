@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Please provide your full name.
-USR: Doris Mcallister
-SYS: We will need the shipping address as well.
-USR: 1249 John Springs Port Danastad, NE 65312.
-SYS: The tracking number is FSY5SEMBDE. Is there anything else I can help with?
-USR: That's it. Thanks!

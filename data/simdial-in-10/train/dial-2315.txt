@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Dana Garcia.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 4711 Harris Landing New Amy, MA 09501.
-SYS: The tracking number is CVYIZZKQ51. What else can I do?
-USR: No more questions.

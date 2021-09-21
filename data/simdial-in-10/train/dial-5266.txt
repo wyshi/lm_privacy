@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Mable Komer.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 760 Butler Mission Suite 757 East Teresa, FL 61031.
-SYS: You can track your package with your tracking number, which is VBXS253LHG. Anything else?
-USR: That's it.

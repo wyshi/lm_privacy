@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Thaddeus Metzler.
-SYS: We will need the shipping address as well.
-USR: 71758 Joshua Neck Apt. 208 South Jessicaberg, NJ 01738.
-SYS: You can track your package with your tracking number, which is 8B0YMD1AEY. What else can I do?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

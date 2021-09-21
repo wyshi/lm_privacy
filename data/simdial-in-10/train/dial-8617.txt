@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Lance Streeter
-SYS: Can you provide the order number?
-USR: Sure, it is 825-22326-7134
-SYS: Track your order using your tracking number, A9CSN9A0GW. Are you happy about my answer?
-USR: No more questions.

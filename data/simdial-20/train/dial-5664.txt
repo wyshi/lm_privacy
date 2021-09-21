@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: I am Charles Walker.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 9360 Barbara Expressway Apt. 810 Norrisstad, MA 17370.
-SYS: The tracking number is 20T841W82L. Anything else?
-USR: All good. That's all.
-SYS: It was a great pleasure helping you.

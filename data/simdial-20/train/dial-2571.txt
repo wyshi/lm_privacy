@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Amy Sult
-SYS: Could you please confirm your shipping address?
-USR: My address is 2390 Tammy Inlet Elizabethshire, IL 57276.
-SYS: You can track your package with your tracking number, which is L4O0O6O073. Anything else?
-USR: That's it.

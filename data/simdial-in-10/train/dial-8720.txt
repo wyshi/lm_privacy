@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Bobby Curtis.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 556 Schneider Crossing Suite 038 Newtonside, MA 15538.
-SYS: The tracking number is 4UTF18BP2B. Are you happy about my answer?
-USR: All good. That's all.
-SYS: It was a great pleasure helping you.

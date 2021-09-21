@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Ruth Jernberg.
-SYS: We will need the shipping address as well.
-USR: My address is 1231 David Lock Apt. 135 Matthewfurt, OH 67845.
-SYS: You can track your package with your tracking number, which is XM6P1OO6EI. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: It was a great pleasure helping you.

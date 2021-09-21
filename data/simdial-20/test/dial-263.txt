@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: John Cookerly.
-SYS: Could you please confirm your shipping address?
-USR: 873 Leslie Drive Apt. 881 Port Hannah, AL 13282.
-SYS: Track your order using your tracking number, AJ3RHMIYQO. Anything else?
-USR: No more questions. Thank you.
-SYS: Bye.

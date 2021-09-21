@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: My name's Tina Watkins.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 718 Woods Causeway Port Adamview, OR 78878.
-SYS: The tracking number is 9T66FYCYRZ. What else can I do?
-USR: All good. See you.
-SYS: Have a nice day! Bye.

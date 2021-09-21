@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Jennifer Hall
-SYS: We will need the shipping address as well.
-USR: Ok, it is 3288 Joel View Apt. 045 New William, MI 64228.
-SYS: Track your order using your tracking number, LV29YG8C9L. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: Have a nice day! Bye.

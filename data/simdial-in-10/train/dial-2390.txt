@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: My name's Benjamin Parker.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 999-265-2965.
-SYS: The tracking number is X1KTT66DZJ. Anything else?
-USR: No more questions.

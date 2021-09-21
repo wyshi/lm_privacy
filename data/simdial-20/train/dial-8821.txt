@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Robert Smsith.
-SYS: We will need the shipping address as well.
-USR: My address is 8640 Oliver Fords New Tracyland, WV 68255.
-SYS: You can track your package with your tracking number, which is DM37EI9MC8. Is there anything else I can help with?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: May I have your full name?
-USR: John Marshall.
-SYS: Could you please also provide your order number?
-USR: Yes, 491-16123-9689.
-SYS: You can track your package with your tracking number, which is RYI7C3PO6U. Anything else?
-USR: No more questions.

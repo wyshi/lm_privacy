@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Perry Walters.
-SYS: We will need the shipping address as well.
-USR: My address is 1461 Lopez Manors Josephstad, TN 98784.
-SYS: The tracking number is RKI42ZZJSP. Are you happy about my answer?
-USR: That's it.

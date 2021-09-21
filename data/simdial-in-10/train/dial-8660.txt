@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Anna Lowe.
-SYS: We will need the shipping address as well.
-USR: 2114 Walters Fort Suite 033 New Karenstad, SD 88251.
-SYS: The tracking number is G6369PQTLW. Are you happy about my answer?
-USR: That's it. See you.
-SYS: Have a nice day! Bye.

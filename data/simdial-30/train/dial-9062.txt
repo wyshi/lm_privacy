@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm William Austin.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 7933 Shawn Forges Apt. 374 West Bethberg, SD 81631.
-SYS: The tracking number is 29OUX0T9I0. What else can I do?
-USR: That's it.

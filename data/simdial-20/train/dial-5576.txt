@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Shantelle Deaton.
-SYS: Can you provide the order number?
-USR: My order number is 519-99129-8914.
-SYS: You can track your package with your tracking number, which is EPA5KVYO0G. Anything else?
-USR: No more questions. That's all.
-SYS: It was a great pleasure helping you.

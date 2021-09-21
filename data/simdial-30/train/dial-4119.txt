@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Ina Vaugh.
-SYS: Ok, may I have your phone number?
-USR: Phone number is 709-612-7479
-SYS: Track your order using your tracking number, 6TSRUDMUVY. Is there anything else I can help with?
-USR: That's it.

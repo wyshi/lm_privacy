@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Juanita Hill.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 0218 Tammy Dam Suite 539 Andrewtown, MS 28236.
-SYS: The tracking number is JZLBBLNUD3. Anything else?
-USR: All good.

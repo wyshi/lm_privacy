@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: Christopher Fortney.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 2301 King Walk Lake Shawnland, DC 94735.
-SYS: The tracking number is A32V1VKJ9E. What else can I do?
-USR: That's it. Thanks!

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Yep - I'm Doris Carr.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is USS Kelley FPO AE 88503.
-SYS: You can track your package with your tracking number, which is WXB5VEJO8U. Anything else?
-USR: All good. Thank you.
-SYS: Bye.

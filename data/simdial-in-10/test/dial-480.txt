@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Robert Yoakum.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 7865 Natasha Drives Apt. 296 Leblancbury, MA 73572.
-SYS: You can track your package with your tracking number, which is ERPDC27BFN. What else can I do?
-USR: That's it.

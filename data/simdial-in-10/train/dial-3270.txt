@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: I am Lucy Melchior.
-SYS: Could you please also provide your order number?
-USR: Yes, 453-93574-6623.
-SYS: You can track your package with your tracking number, which is 0GRO0U8FJ8. Is there anything else I can help with?
-USR: That's it. Thanks! That's all.
-SYS: It was a great pleasure helping you.

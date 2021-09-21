@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Steven Steadman.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 131 Debra Fords Apt. 414 Pittmanburgh, CT 47083.
-SYS: The tracking number is 46DEMNGNDZ. What else can I do?
-USR: That's it. Thanks!

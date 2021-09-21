@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a mobile phone several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: I am Mary Sutton.
-SYS: We will need the shipping address as well.
-USR: My address is 44357 Crystal Flat Suite 780 Munozmouth, ME 23837.
-SYS: The tracking number is 88UUCW4A44. Are you happy about my answer?
-USR: That's it. Thanks!

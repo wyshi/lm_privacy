@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Where is my package?
-SYS: Please provide your full name.
-USR: Loretta Simmons.
-SYS: Could you please confirm your shipping address?
-USR: My address is 246 Cabrera Skyway Steeleview, HI 63187.
-SYS: Track your order using your tracking number, 3OB6JCZ5FA. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

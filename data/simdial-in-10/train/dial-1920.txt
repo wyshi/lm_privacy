@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, Lillian Lord.
-SYS: Could you please confirm your shipping address?
-USR: My address is 546 Sutton Streets Suite 093 Jessicabury, GA 57314.
-SYS: The tracking number is 9V9IXR4KRT. Are you happy about my answer?
-USR: That's it. That's all.
-SYS: Have a nice day! Bye.

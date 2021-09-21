@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: My name's Larry Wight.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 0154 Henry Creek Suite 326 East Davidfort, WV 68343.
-SYS: You can track your package with your tracking number, which is I7TSPWLMXA. What else can I do?
-USR: That's it. Thanks!

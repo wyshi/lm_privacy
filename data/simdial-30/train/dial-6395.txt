@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Sure, Clarence Kirby.
-SYS: Verify your phone number please.
-USR: my number is 567.297.8015.
-SYS: You can track your package with your tracking number, which is NYMSFT5MFN. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: Bye.

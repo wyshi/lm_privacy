@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: May I have your full name?
-USR: Yes, Matthew Pool.
-SYS: We will need the shipping address as well.
-USR: My address is 63130 Mark Spurs South Amy, PA 06867.
-SYS: The tracking number is UUHX8N349J. Anything else?
-USR: That's it. Thank you.
-SYS: Goodbye.

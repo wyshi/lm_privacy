@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Tyrone Goodwin.
-SYS: We will need the shipping address as well.
-USR: My address is 590 Howard Estate Loristad, ND 48531.
-SYS: You can track your package with your tracking number, which is RKWZNORLBJ. Are you happy about my answer?
-USR: That's it. Thanks!

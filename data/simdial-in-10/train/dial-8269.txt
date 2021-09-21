@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Constance Henson.
-SYS: Verify your phone number please.
-USR: You can reach me at 689-458-0593.
-SYS: The tracking number is 2I07E18QNK. Anything else?
-USR: That's it. Thanks! See you.
-SYS: Goodbye.

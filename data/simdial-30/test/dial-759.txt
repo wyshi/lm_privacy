@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I placed an order but I don't know if it has been shipped.
-SYS: May I have your full name?
-USR: My name's Cecil Magallan.
-SYS: We will need the shipping address as well.
-USR: My address is Unit 2341 Box 9307 DPO AP 02558.
-SYS: The tracking number is MVTQ3EA7CU. Anything else?
-USR: That's it. That's all.
-SYS: It was a great pleasure helping you.

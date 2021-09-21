@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. I ordered a pot several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yes, Darnell Nation.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 2355 John Knolls Lake Jose, FL 45803.
-SYS: Track your order using your tracking number, 6EULT3MSDE. Is there anything else I can help with?
-USR: That's it. See you.
-SYS: Goodbye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: Sure, Roy Mize.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 77387 David Lane Suite 218 South Mary, MA 17227.
-SYS: The tracking number is Z0FHLP2FBV. What else can I do?
-USR: That's it. Thanks!

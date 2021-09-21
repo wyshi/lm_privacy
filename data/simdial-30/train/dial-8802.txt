@@ -1,7 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: I am Jonathan White. My order number is 802-24627-3642.
-SYS: Track your order using your tracking number, YD1UFZM3JI. Are you happy about my answer?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.

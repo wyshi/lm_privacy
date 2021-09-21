@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Carl Murillo.
-SYS: Verify your order number please.
-USR: Yes, 300-63319-9085.
-SYS: The tracking number is I2FM1SCXR7. Anything else?
-USR: All good. Thank you.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Jonathan Fleming.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 256 Austin Flat North Monica, IL 39108.
-SYS: The tracking number is WIUVOGZ0KP. Is there anything else I can help with?
-USR: That's it. Thanks!

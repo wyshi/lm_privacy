@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: My name's Darren Vega.
-SYS: We will need the shipping address as well.
-USR: Yea sure, USS Harper FPO AE 74661.
-SYS: You can track your package with your tracking number, which is HGN72RX3ZY. Are you happy about my answer?
-USR: All good. That's all.
-SYS: Have a nice day! Bye.

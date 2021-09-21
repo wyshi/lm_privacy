@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Richard Shaw.
-SYS: We will need the shipping address as well.
-USR: My address is 0720 Joseph Ramp Suite 932 West Erikaside, WI 01899.
-SYS: Track your order using your tracking number, WNSHRN5EI1. Anything else?
-USR: No more questions. See you.
-SYS: It was a great pleasure helping you.

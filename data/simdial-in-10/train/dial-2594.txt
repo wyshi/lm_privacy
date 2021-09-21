@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: I am Ralph White.
-SYS: Could you please confirm your shipping address?
-USR: Shipping address is 9782 Cardenas Lodge Suite 711 Port Joshua, NH 78939.
-SYS: You can track your package with your tracking number, which is TKQYT4JU3D. Anything else?
-USR: That's it.

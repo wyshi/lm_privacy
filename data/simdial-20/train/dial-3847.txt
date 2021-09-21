@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Sally Cole.
-SYS: Could you please also provide your order number?
-USR: Sure, it is 506-45608-7568
-SYS: Track your order using your tracking number, D9V9JA9915. Anything else?
-USR: No more questions. Thank you.
-SYS: Goodbye.

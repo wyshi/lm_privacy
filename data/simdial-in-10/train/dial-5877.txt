@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Daniel Meyer.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 8300 Schultz Estate Suite 965 Andersonshire, MO 05260.
-SYS: Track your order using your tracking number, E54VOL2IGG. What else can I do?
-USR: That's it. Thanks! See you.
-SYS: Bye.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Could you please help me track my package?
-SYS: May I have your full name?
-USR: I am Anne Braithwaite.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 92584 Maria Trail Maryburgh, AK 91824.
-SYS: Track your order using your tracking number, 1JGFORA6XB. What else can I do?
-USR: No more questions.

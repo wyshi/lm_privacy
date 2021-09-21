@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: Please provide your full name.
-USR: I am William Carey.
-SYS: We will need the shipping address as well.
-USR: My address is 917 Anne Knolls South Johnside, MO 45387.
-SYS: You can track your package with your tracking number, which is 47Y0Y6BCOV. Are you happy about my answer?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yep - I'm Carter Stone.
-SYS: Verify your phone number please.
-USR: my number is 748-837-2684.
-SYS: Track your order using your tracking number, RCR1AF8GWD. Are you happy about my answer?
-USR: That's it. See you.
-SYS: Goodbye.

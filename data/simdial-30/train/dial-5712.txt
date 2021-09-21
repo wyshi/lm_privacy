@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Jonathan Anderton.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 4805 Samantha Highway Suite 208 West Christian, MA 73666.
-SYS: Track your order using your tracking number, WGP0F7EHA7. Anything else?
-USR: That's it. Thanks! Thank you.
-SYS: It was a great pleasure helping you.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. Where is my package?
-SYS: Could you verify your full name?
-USR: My name's Betsy Owens.
-SYS: Could you please confirm your shipping address?
-USR: 9165 Lucas Plains Pattersonberg, WI 61481.
-SYS: The tracking number is ML4TE8MDF7. Anything else?
-USR: That's it. See you.
-SYS: Goodbye.

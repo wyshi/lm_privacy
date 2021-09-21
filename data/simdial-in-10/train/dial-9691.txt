@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Could you verify your full name?
-USR: Beatrice Davis.
-SYS: Verify your phone number please.
-USR: Phone number is 809.594.1030
-SYS: The tracking number is VEYLOQVISO. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

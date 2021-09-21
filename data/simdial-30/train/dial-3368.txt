@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. I ordered a lipstick several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: My name's Stephen Young.
-SYS: Could you please confirm your shipping address?
-USR: My address is 4646 Danielle Corner Watkinsfort, TX 83112.
-SYS: You can track your package with your tracking number, which is M9TXRTDYOH. Anything else?
-USR: All good. See you.
-SYS: Goodbye.

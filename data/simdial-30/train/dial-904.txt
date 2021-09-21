@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? I ordered a floor lamp several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: I am Esther Love.
-SYS: Could you please confirm your shipping address?
-USR: 43260 Joshua Flat Suite 450 Port John, IN 50639.
-SYS: Track your order using your tracking number, MKC6WLG0RW. What else can I do?
-USR: That's it.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: May I have your full name?
-USR: Yep - I'm Debra Jeans.
-SYS: We will need the shipping address as well.
-USR: Shipping address is 1546 Baker Lakes Suite 714 Stephenbury, AL 69692.
-SYS: Track your order using your tracking number, RG6V25NDLH. Are you happy about my answer?
-USR: All good.

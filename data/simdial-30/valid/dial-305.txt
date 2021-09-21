@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: Hello robot. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Weldon Gilliss.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 363 Mills Villages Suite 417 Adambury, MS 04299.
-SYS: The tracking number is RZ95AF0CCW. Is there anything else I can help with?
-USR: All good.

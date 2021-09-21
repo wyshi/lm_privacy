@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hello robot. Where is my package?
-SYS: Could you verify your full name?
-USR: Yes, Jack Nalevanko.
-SYS: Could you please confirm your shipping address?
-USR: Yea sure, 371 Fitzgerald Glen Lake Robertview, MI 47935.
-SYS: You can track your package with your tracking number, which is 1Q2NTFURCP. What else can I do?
-USR: I have all I need. See you.
-SYS: Goodbye.

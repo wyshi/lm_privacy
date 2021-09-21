@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: My name's Paul Noblitt.
-SYS: We will need the shipping address as well.
-USR: Ok, it is 319 Justin Landing Greenport, MS 89344.
-SYS: You can track your package with your tracking number, which is K9AJU63SX8. Are you happy about my answer?
-USR: No more questions. That's all.
-SYS: Bye.

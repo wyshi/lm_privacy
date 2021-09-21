@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: My name's Grant King.
-SYS: Ok, may I have your phone number?
-USR: 679-320-2841 is my number.
-SYS: The tracking number is 3DSH1HTT5F. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Have a nice day! Bye.

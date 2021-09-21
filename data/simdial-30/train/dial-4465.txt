@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: Hi. Could you please help me track my package?
-SYS: Please provide your full name.
-USR: Yes, David Kowalski.
-SYS: We will need the shipping address as well.
-USR: My address is 438 Randall Stravenue Suite 099 East Lucaston, WI 38111.
-SYS: You can track your package with your tracking number, which is R3UYA7CO6M. Are you happy about my answer?
-USR: All good.

@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: What's up? Where is my package?
-SYS: May I have your full name?
-USR: Yep - I'm Ramon Bryant.
-SYS: Could you please confirm your shipping address?
-USR: My address is 9633 Christopher Lodge Suite 004 East Cheyenneton, WA 57572.
-SYS: You can track your package with your tracking number, which is 8RI8DV51NQ. Are you happy about my answer?
-USR: That's it. Thanks!

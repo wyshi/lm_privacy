@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a pot several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Sure, Theodore Edwards.
-SYS: Could you please confirm your shipping address?
-USR: My address is 756 Wayne Fields Karenmouth, MD 01582.
-SYS: You can track your package with your tracking number, which is KT6S0PZ2UJ. Is there anything else I can help with?
-USR: No more questions.

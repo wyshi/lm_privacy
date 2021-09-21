@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Could you please help me track my package?
-SYS: Please provide your full name.
-USR: My name's Raquel Pargo.
-SYS: Ok, may I have your phone number?
-USR: You can reach me at 303-554-8368.
-SYS: Track your order using your tracking number, 3NWSEV5GN9. What else can I do?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

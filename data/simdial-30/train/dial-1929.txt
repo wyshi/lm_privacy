@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hello robot. Could you please help me track my package?
-SYS: Could you verify your full name?
-USR: I am David Boday.
-SYS: Verify your phone number please.
-USR: 3303094645.
-SYS: The tracking number is NHICYJ3ZIT. Anything else?
-USR: I have all I need.

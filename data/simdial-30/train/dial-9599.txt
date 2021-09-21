@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? Where is my package?
-SYS: Could you verify your full name?
-USR: Yep - I'm Zelma Olivera.
-SYS: Could you please also provide your order number?
-USR: 420-81397-2522
-SYS: The tracking number is MK2ZDTHKLS. Is there anything else I can help with?
-USR: That's it. Thanks!

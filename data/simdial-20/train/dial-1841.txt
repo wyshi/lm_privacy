@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a floor lamp several days ago but I can't track it.
-SYS: May I have your full name?
-USR: I am Sally Kincaid.
-SYS: Could you please confirm your shipping address?
-USR: Ok, it is 390 Johnson Court Apt. 134 Jasontown, MA 60674.
-SYS: You can track your package with your tracking number, which is 593F9HGOMA. What else can I do?
-USR: No more questions.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Yep - I'm Ellen Quackenbush.
-SYS: We will need the shipping address as well.
-USR: My address is 1977 Michael Loaf Suite 432 Valdezport, ND 55558.
-SYS: The tracking number is YOEAGXYHY0. Are you happy about my answer?
-USR: I have all I need. That's all.
-SYS: Have a nice day! Bye.

@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. How can I help?
-USR: What's up? I placed an order but I don't know if it has been shipped.
-SYS: Please provide your full name.
-USR: Yes, Ila Allen.
-SYS: We will need the shipping address as well.
-USR: My address is 0563 Anderson Circle Suite 356 North Gary, PA 10304.
-SYS: Track your order using your tracking number, 3SX4USO1VO. Are you happy about my answer?
-USR: That's it. Thank you.
-SYS: Bye.

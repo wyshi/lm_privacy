@@ -1,8 +1,0 @@
-SYS: Hello, I am the customer support bot. What can I do for you?
-USR: What's up? I ordered a mobile phone several days ago but I can't track it.
-SYS: Could you verify your full name?
-USR: Sure, William Heaton.
-SYS: We will need the shipping address as well.
-USR: Yea sure, 45501 Richardson Cliffs Apt. 096 New Yolandamouth, KS 44389.
-SYS: You can track your package with your tracking number, which is BCSFG1K4DV. What else can I do?
-USR: That's it. Thanks!

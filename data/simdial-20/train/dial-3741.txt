@@ -1,9 +1,0 @@
-SYS: Hello, I am the customer support bot. What do you need?
-USR: Hi. I ordered a chair several days ago but I can't track it.
-SYS: Please provide your full name.
-USR: Yes, Elsie Rosario.
-SYS: We will need the shipping address as well.
-USR: My address is 5354 Gregory Ramp Apt. 411 East Cherylfort, WI 66772.
-SYS: The tracking number is DGTQ56M9XA. What else can I do?
-USR: I have all I need. See you.
-SYS: It was a great pleasure helping you.
