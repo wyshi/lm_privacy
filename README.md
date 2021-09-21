@@ -10,6 +10,8 @@ This is the repo for the paper [Selective Differential Privacy for Language Mode
 }
 ```
 
+The language modeling is based on code here, https://github.com/pytorch/examples/tree/master/word_language_model
+
 ## How to install
 original_privacy_engine.py is the original code for privacy engine
 pe.py is the to-do my own privacy engine
