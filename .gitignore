@@ -7,6 +7,7 @@ model/
 names
 
 # tutorial
+tutorial/
 tutorials/__MACOSX/
 tutorials/data/
 tutorials/logs/
@@ -25,4 +26,27 @@ attacks/canary_insertion/*.csv
 attacks/membership_inference/*.csv
 attacks/membership_inference/debug/
 
+# data
+data/simdial-20
+data/simdial-30
+data/simdial-in-10
+data/wikitext-2-add1
+data/wikitext-2-add1b
+data/wikitext-2-add1b-normalized
+data/wikitext-2-add10b-missed-append10
+data/wikitext-2-add10b-missed-append10-normalized
+data/wikitext-2-add20b
+data/wikitext-2-add20b-normalized
+data/wikitext-2-missing10
 
+generated_txt_examples/
+
+# scripts
+draft.py
+generated_dp.txt
+generated.txt
+install.sh
+nodp_generated.txt
+
+attacks/plot.ipynb
+attacks/plot_final_without_membership_inference.ipynb
