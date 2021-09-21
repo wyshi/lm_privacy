@@ -7,7 +7,7 @@ model/
 names
 
 # tutorial
-tutorial/
+tutorials/
 tutorials/__MACOSX/
 tutorials/data/
 tutorials/logs/
