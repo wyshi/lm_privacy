@@ -297,7 +297,7 @@ else:
 folder = os.path.join(args.save, folder, timenow)
 if not os.path.exists(folder):
     os.makedirs(folder)
-# import pdb; pdb.set_trace()
+
 args.save = os.path.join(folder, config_str + ".pt")
 print("*"*89)
 print(args.save)
@@ -320,7 +320,6 @@ if args.model != 'Transformer':
     ).to(device)
     if args.resume:
         print("resume")
-        # import pdb; pdb.set_trace()
         model_to_load = load_model(args.resume_from)
         model.load_state_dict(model_to_load.state_dict())
         del model_to_load
@@ -387,7 +386,6 @@ if args.dp:
         target_delta=delta,
         secure_rng=secure_rng,
     )
-    # import pdb; pdb.set_trace()
     privacy_engine.attach(optimizer)
 else:
     privacy_engine = None
@@ -495,12 +493,6 @@ def train(privacy_engine=None):
         if args.dry_run_to_get_info:
             if batch_i % args.log_interval == 0 and batch_i > 0:
                 elapsed = time.time() - start_time
-                # import pdb
-                # pdb.set_trace()
-                # try:
-                #     ppl = math.exp(mean(losses))
-                # except:
-                #     ppl = math.inf
                 printstr = (
                     f"\t Epoch {epoch:3d}. | {batch_i:5d}/{len(train_dataloader):5d} batches | lr {optimizer.param_groups[0]['lr']:02.5f} | ms/batch {elapsed * 1000 / args.log_interval:5.2f}"
                 )
@@ -516,7 +508,7 @@ def train(privacy_engine=None):
         # Starting each batch, we detach the hidden state from how it was previously produced.
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
-        # import pdb; pdb.set_trace()
+
         if args.model == 'Transformer':
             with torch.no_grad():
                 transformer_outputs = backbone(source)
@@ -533,7 +525,6 @@ def train(privacy_engine=None):
             # loss = output.loss
         else:
             # hidden = repackage_hidden(hidden)
-            # import pdb; pdb.set_trace()
             output, hidden = model(source, seq_lens=seq_lens, hidden=None) # each datapoint is treated as independent from each other, as required by DP
             target = target.view(-1)
             acc = (output.argmax(axis=1)==target).sum().item()/target.shape[0]
@@ -560,8 +551,6 @@ def train(privacy_engine=None):
 
         if batch_i % args.log_interval == 0 and batch_i > 0:
             elapsed = time.time() - start_time
-            # import pdb
-            # pdb.set_trace()
             try:
                 ppl = math.exp(mean(losses))
             except:
@@ -612,13 +601,11 @@ def train_partialdp_rnn(privacy_engine):
     # if args.model != 'Transformer':
     #     hidden = model.init_hidden(args.batch_size)
     for batch_i, batch in enumerate(train_dataloader):
-        # import pdb; pdb.set_trace()
         hidden = model.init_hidden(args.batch_size)
         max_split = max(list(map(len, batch)))
         batch_loss, batch_ntokens = [], []
         num_private_updates = 0
         for split_i in range(max_split):
-            # import pdb; pdb.set_trace()
             split_ntokens = sum([len(b[split_i][0]) for b in batch if split_i < len(b) and len(b[split_i][0])])    
             minibatch_src = [torch.tensor(b[split_i][0]).type(torch.int64) for b in batch if split_i < len(b) and len(b[split_i][0])]
             minibatch_tgt = [torch.tensor(b[split_i][1]).type(torch.int64) for b in batch if split_i < len(b) and len(b[split_i][1])]
@@ -667,7 +654,6 @@ def train_partialdp_rnn(privacy_engine):
             else:
                 # private update
                 # privacy_engine.attach(optimizer)
-                # import pdb; pdb.set_trace()
                 model.zero_grad()
 
                 # start RNN
@@ -700,10 +686,8 @@ def train_partialdp_rnn(privacy_engine):
                 else:
                     # how many noises added
                     num_private_updates += len(cur_hidden)*private_batch_size
-                    # import pdb; pdb.set_trace()
                     noisy_hidden = []
                     for h in cur_hidden: # hidden = (num_layer*bs*200, num_layer*bs*200)
-                        # import pdb; pdb.set_trace()
                         # clip h
                         noisy_h = []
                         per_sample_norm = h.norm(2, dim=2).detach().to('cpu').numpy()[0].tolist() # len = batch_size
@@ -717,29 +701,15 @@ def train_partialdp_rnn(privacy_engine):
                             clipped_h += noise
                             noisy_h.append(clipped_h)
                         noisy_hidden.append(torch.cat(noisy_h, dim=1))
-
-                        # h = torch.cat([factor*h[:, [h_i], :] for h_i, factor in enumerate(per_sample_clip_factor)], dim=1)                    
-                        # max_norm_per_batch = min([max_per_sample_grad_norm]+per_sample_norm)
-                        # noises.append(utils.generate_noise(private_engine=privacy_engine, 
-                        #                         max_grad_norm=max_norm_per_batch, 
-                        #                         reference=h))
-
-                        # if privacy_engine.loss_reduction == "mean":
-                        #     noises /= private_batch_size
-                        # h += noises
-
                 
                 # put hidden state back
                 for h_i, h in enumerate(hidden):
                     h[:, minibatch_positive_idx, :] = repackage_hidden(noisy_hidden[h_i].to(device))
 
-        # import pdb; pdb.set_trace()
         losses.append(sum(batch_loss)/sum(batch_ntokens))
 
         if batch_i % args.log_interval == 0 and batch_i > 0:
             elapsed = time.time() - start_time
-            # import pdb
-            # pdb.set_trace()
             try:
                 ppl = math.exp(mean(losses))
             except:
@@ -754,7 +724,6 @@ def train_partialdp_rnn(privacy_engine):
 
             try:
                 privacy_engine = optimizer.privacy_engine
-                # import pdb; pdb.set_trace()
                 epsilon, best_alpha = privacy_engine.get_privacy_spent(additional_steps=num_private_updates)
                 printstr += f" | (ε = {epsilon:.2f}, δ = {privacy_engine.target_delta}) for α = {best_alpha}"
             except AttributeError:

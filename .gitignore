@@ -51,3 +51,5 @@ member_inference.sh
 
 attacks/plot.ipynb
 attacks/plot_final_without_membership_inference.ipynb
+
+dialog_experiments.sh

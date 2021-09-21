@@ -43,7 +43,7 @@ cd simdial_privacy/
 python multiple_domains.py --domain track_package --complexity mix --train_size 10000 --test_size 1000 --valid_size 1000 --save_dir output
 ```
 
-# The dataset
+## The dataset
 * data/wikitext-2: original wikitext from https://github.com/pytorch/examples/tree/master/word_language_model/data/wikitext-2
 * data/wikitext-2-add10b: wikitext + 10 inserted canary "My ID is 341752." in the train.txt
 * data/wikitext-2-add10b-normalized/missing_digits: normalized wikitext+ 10 inserted canary "My ID is 341752." in the train.txt.  All the digits in wikitext are replaced with <num>, except for the "341752" in the canary, to mimic the situation where the data sanitization misses some secrets. 
@@ -52,7 +52,7 @@ python multiple_domains.py --domain track_package --complexity mix --train_size 
 * data/simdial: simdial + 10 inserted canary "My ID is 341752." in the training data
 
 
-# how to train the SDP models
+## how to train the SDP models
 ```
 ## language modeling, data = "data/wikitext-2-add10b"
 # SDPSGD, turn both `-dp` and `--partial` on, 
@@ -83,12 +83,12 @@ python -u main.py -bs 16 --lr 20 --data data/wikitext-2-add10b-normalized/missin
 python -u main.py -bs 7 --lr 0.1 -dp --cuda cuda:0 -partial -norm 1e-3  --sigma 0.5 -missing_digits --data data/wikitext-2-add10b --epochs 100 --seed 1111 2>&1 | tee logs/partial_dp/missed/20210426/lr0.1_sigm0.5_norm1e-3_seed1111_miss10.log
 ```
 
-# how to run the canary insertion attack
+## how to run the canary insertion attack
 ```
 python attacks/canary_insertion.py --cuda cuda:4 -bs 256 --checkpoint model/nodp/20210515/122306 --outputf attacks/canary_insertion/nodp_normalized_nomiss/nodp_seed300.csv
 ```
 
-# how to run the member inference attack
+## how to run the member inference attack
 ```
 python attacks/mem_inference.py --cuda cuda:4 --data_type doc --data data/wikitext-2-add10b -bs 64 --N 1000 --checkpoint model/nodp/20210515/122306 --outputf attacks/membership_inference/nodp_normalized_nomiss/nodp_seed300.csv
 ```
