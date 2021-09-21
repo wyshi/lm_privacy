@@ -12,7 +12,9 @@ This is the repo for the paper [Selective Differential Privacy for Language Mode
 
 The language modeling is based on code here, https://github.com/pytorch/examples/tree/master/word_language_model
 
-At the time of implementation, `privacy_engine.detach()` didn't work (please refer to this issue, https://github.com/pytorch/opacus/issues/163), so we had to manually pass the `privacy_engine` into `train_partialdp_rnn` in main.py for the private update step in SDPSGD (attach the engine), and pass `privacy_engine=None` for the non-private update step in SDPSGD (detach the engine). Now the detach bug is fixed, and we should be able to directly detach and attach without the hack. 
+At the time of implementation, `privacy_engine.detach()` didn't work (please refer to this issue, https://github.com/pytorch/opacus/issues/163), so we had to manually pass the `privacy_engine` into `train_partialdp_rnn` in main.py for the private update step in SDPSGD (attach the engine), and pass `privacy_engine=None` for the non-private update step in SDPSGD (detach the engine). Now the detach bug is fixed, and we should be able to directly detach and attach without the hack.
+
+Also, multi-GPU was not supported, so the SDP training took about 48 hours for 50 epochs on one single GPU, but now multi-GPU is supported by opacus. Please refer to https://github.com/pytorch/opacus/pull/166, so speedup is possible although I haven't tried it out.  
 
 ## How to install
 original_privacy_engine.py is the original code for privacy engine
